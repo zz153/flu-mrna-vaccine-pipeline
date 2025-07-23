@@ -1,6 +1,6 @@
 # mRNA Influenza Vaccine Target Identification Pipeline
 
-A reproducible bioinformatics workflow for the identification of conserved antigenic regions in Influenza A hemagglutinin proteins—enabling the rational design of mRNA vaccine candidates.
+A reproducible bioinformatics workflow for the identification of conserved antigenic regions in Influenza A hemagglutinin proteins enabling the rational design of mRNA vaccine candidates.
 
 ---
 
