@@ -4,7 +4,6 @@
 This document describes how to install and activate the Conda environment for the **FluHub: Vaccine Design and Evolutionary Analysis Pipeline**.  
 It ensures that all required tools and packages are installed with the correct versions for reproducibility.
 
----
 
 ## 🧩 1. Install Conda (if not already installed)
 
