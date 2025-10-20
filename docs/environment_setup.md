@@ -1,5 +1,11 @@
 📄 docs/environment_setup.md 
-# ⚙️ Environment Setup Guide This document describes how to install and activate the Conda environment for the **FluHub: Vaccine Design and Evolutionary Analysis Pipeline**. It ensures that all required tools and packages are installed with the correct versions for reproducibility. --- ## 🧩 1. Install Conda (if not already installed) If you don’t already have Conda on your system: ### 🪟 Windows Download and install **Miniconda** from: 👉 [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html) ### 🍎 macOS / 🐧 Linux Run in your terminal:
+# ⚙️ Environment Setup Guide This document describes how to install and activate the Conda environment for the **FluHub: Vaccine Design and Evolutionary Analysis Pipeline**. 
+It ensures that all required tools and packages are installed with the correct versions for reproducibility. --- 
+## 🧩 1. Install Conda (if not already installed)
+If you don’t already have Conda on your system: 
+### 🪟 Windows Download and install **Miniconda** 
+from: 👉 [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html) 
+### 🍎 macOS / 🐧 Linux Run in your terminal:
 bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
