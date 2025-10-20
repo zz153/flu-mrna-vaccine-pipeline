@@ -54,15 +54,15 @@ seqkit version
 ## 🐍 3. Python Packages and Versions
 The following Python libraries were used in analyses:
 
-Package	Version	Purpose
-biopython	1.83	FASTA parsing, sequence manipulation, alignment handling
-pandas	2.3.3	Data wrangling and summary tables
-numpy	2.0.1	Matrix operations and entropy calculations
-matplotlib	3.10.7	Plot generation for distances and entropy
-seaborn	0.13.2	Statistical visualization
-scipy	1.16.2	Shannon entropy and numerical utilities
-tqdm	4.67.1	Progress bars for computations
-logomaker	0.8.7	Sequence logo generation from alignments
+| **Package** |	**Version** |	**Purpose** |
+| biopython |	1.83	| FASTA parsing, sequence manipulation, alignment handling |
+| pandas	| 2.3.3	| Data wrangling and summary tables |
+| numpy	| 2.0.1	| Matrix operations and entropy calculations |
+| matplotlib	| 3.10.7	| Plot generation for distances and entropy |
+| seaborn	| 0.13.2	| Statistical visualization |
+| scipy	| 1.16.2	| Shannon entropy and numerical utilities |
+| tqdm	| 4.67.1	| Progress bars for computations |
+| logomaker	| 0.8.7 | Sequence logo generation from alignments |
 
 Installation
 Install all packages at once:
