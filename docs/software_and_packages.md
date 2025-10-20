@@ -55,6 +55,7 @@ seqkit version
 The following Python libraries were used in analyses:
 
 | **Package** |	**Version** |	**Purpose** |
+|-------------|-------------|-------------|
 | biopython |	1.83	| FASTA parsing, sequence manipulation, alignment handling |
 | pandas	| 2.3.3	| Data wrangling and summary tables |
 | numpy	| 2.0.1	| Matrix operations and entropy calculations |
