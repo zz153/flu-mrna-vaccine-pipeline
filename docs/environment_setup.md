@@ -5,16 +5,17 @@ This document describes how to install and activate the Conda environment for th
 It ensures that all required tools and packages are installed with the correct versions for reproducibility.
 
 
-## 🧩 1. Install Conda (if not already installed)
+# 🧩 1. Install Conda (if not already installed)
 
 If you don’t already have Conda on your system:
 
-### 🪟 Windows
+# 🪟 Windows
 Download and install **Miniconda** from:  
 👉 [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
 
-### 🍎 macOS / 🐧 Linux
+🍎 macOS / 🐧 Linux
 Run in your terminal:
+
 ```bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
@@ -24,11 +25,11 @@ Then restart your terminal and verify:
 
 conda --version
 
-## 🧪 2. Clone this repository
+# 🧪 2. Clone this repository
 git clone https://github.com/<your-username>/Fluhub_Vaccine_design_and_evolutionary_analyses.git
 cd Fluhub_Vaccine_design_and_evolutionary_analyses
 
-## 🧱 3. Create the Conda environment
+🧱 3. Create the Conda environment
 
 Run the following command from the repository root:
 
@@ -43,7 +44,7 @@ Install all bioinformatics tools (MAFFT, IQ-TREE, CD-HIT, SeqKit)
 
 Install all required Python packages with exact versions
 
-## 🚀 4. Activate the environment
+🚀 4. Activate the environment
 
 After successful installation:
 
