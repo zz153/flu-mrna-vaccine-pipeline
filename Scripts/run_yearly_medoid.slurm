@@ -57,3 +57,49 @@ for year_dir in ${OUT_DIR}/*; do
     # --- Calculate MEDOID ---
     echo "[INFO] Calculating MEDOID for ${year} (${seqs} seqs) ..."
     $PY <<EOF
+from collections import Counter
+from Bio import AlignIO, SeqIO
+from Bio.SeqRecord import SeqRecord
+from Bio.Seq import Seq
+
+# Read alignment
+aln = AlignIO.read("${aln}", "fasta")
+seq_ids = [r.id for r in aln]
+seqs = [str(r.seq) for r in aln]
+
+if not seqs:
+    import sys
+    sys.stderr.write("[ERROR] No sequences in alignment for ${year}\n")
+    sys.exit(1)
+
+# Hamming distance (ignoring gaps on either side)
+def hamming_ungapped(a, b):
+    return sum((x != y) and (x != '-') and (y != '-') for x, y in zip(a, b))
+
+# ===== MEDOID =====
+# Find sequence that minimizes sum of distances to all others
+scores = [sum(hamming_ungapped(s, t) for t in seqs) for s in seqs]
+medoid_idx = scores.index(min(scores))
+medoid_seq = seqs[medoid_idx].replace('-', 'X')  # ungap
+medoid_id = seq_ids[medoid_idx]
+
+medoid_record = SeqRecord(
+    Seq(medoid_seq),
+    id="${PREFIX}_${year}_MEDOID",
+    description=f"(from {medoid_id})"
+)
+
+# Write output
+SeqIO.write([medoid_record], "${designdir}/${PREFIX}_${year}_MEDOID.fasta", "fasta")
+
+print(f"[OK] MEDOID written to ${designdir}/${PREFIX}_${year}_MEDOID.fasta")
+EOF
+
+    if [[ $? -eq 0 ]]; then
+        echo "[DONE] ${year} MEDOID complete ✅"
+    else
+        echo "[ERROR] Failed to calculate MEDOID for ${year}"
+    fi
+done
+
+echo "=== All yearly MEDOID calculations complete 🚀 ==="
