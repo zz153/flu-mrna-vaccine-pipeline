@@ -1,24 +1,35 @@
-📄 docs/environment_setup.md 
-# ⚙️ Environment Setup Guide This document describes how to install and activate the Conda environment for the **FluHub: Vaccine Design and Evolutionary Analysis Pipeline**. 
-It ensures that all required tools and packages are installed with the correct versions for reproducibility. --- 
+📄 docs/environment_setup.md
+# ⚙️ Environment Setup Guide
+
+This document describes how to install and activate the Conda environment for the **FluHub: Vaccine Design and Evolutionary Analysis Pipeline**.  
+It ensures that all required tools and packages are installed with the correct versions for reproducibility.
+
+---
+
 ## 🧩 1. Install Conda (if not already installed)
-If you don’t already have Conda on your system: 
-### 🪟 Windows Download and install **Miniconda** 
-from: 👉 [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html) 
-### 🍎 macOS / 🐧 Linux Run in your terminal:
-bash
+
+If you don’t already have Conda on your system:
+
+### 🪟 Windows
+Download and install **Miniconda** from:  
+👉 [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
+
+### 🍎 macOS / 🐧 Linux
+Run in your terminal:
+```bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
+
 
 Then restart your terminal and verify:
 
 conda --version
 
-🧪 2. Clone this repository
+## 🧪 2. Clone this repository
 git clone https://github.com/<your-username>/Fluhub_Vaccine_design_and_evolutionary_analyses.git
 cd Fluhub_Vaccine_design_and_evolutionary_analyses
 
-🧱 3. Create the Conda environment
+## 🧱 3. Create the Conda environment
 
 Run the following command from the repository root:
 
@@ -33,7 +44,7 @@ Install all bioinformatics tools (MAFFT, IQ-TREE, CD-HIT, SeqKit)
 
 Install all required Python packages with exact versions
 
-🚀 4. Activate the environment
+## 🚀 4. Activate the environment
 
 After successful installation:
 
@@ -47,7 +58,7 @@ You should now see something like:
 
 This prefix (flu_design) means you’re working inside the correct environment.
 
-🧠 5. Verify installation
+## 🧠 5. Verify installation
 
 Run the following commands to ensure all tools are available:
 
@@ -74,7 +85,7 @@ python -c "import Bio, pandas, numpy, matplotlib, seaborn, logomaker, scipy, tqd
 
 If that prints the success message, your environment is fully working!
 
-📦 6. (Optional) Export the exact environment snapshot
+## 📦 6. (Optional) Export the exact environment snapshot
 
 If you later add or upgrade packages, export the environment again to keep it up to date:
 
@@ -83,8 +94,13 @@ conda env export > environment.lock.yml
 
 This captures the exact versions of everything you used — ideal for reproducibility or publication.
 
-🧹 7. Deactivate and remove (if needed)
+## 🧹 7. Deactivate and remove (if needed)
 
 Deactivate:
 
 conda deactivate
+
+
+Remove entirely:
+
+conda env remove -n flu_design
