@@ -1,0 +1,230 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_clustered/H3N2/alignments/H3N2_2014_aligned.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 113687
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 29 sequences with 578 amino-acid sites
+Number of constant sites: 228 (= 39.4464% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 228 (= 39.4464% of all sites)
+Number of parsimony informative sites: 319
+Number of distinct site patterns: 279
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 1.0345
+
+ Category  Relative_rate  Proportion
+  1         0.1438         0.2500
+  2         0.4869         0.2500
+  3         1.0055         0.2500
+  4         2.3639         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4155.2577 (s.e. 126.2794)
+Unconstrained log-likelihood (without tree): -2975.5763
+Number of free parameters (#branches + #model parameters): 56
+Akaike information criterion (AIC) score: 8422.5154
+Corrected Akaike information criterion (AICc) score: 8434.7687
+Bayesian information criterion (BIC) score: 8666.6515
+
+Total tree length (sum of branch lengths): 1.8390
+Sum of internal branch lengths: 1.6233 (88.2694% of tree length)
+
+WARNING: 5 near-zero internal branches (<0.0017) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI536470|HA|A/YAMAGATA/104/2014|EPI_ISL_164290|A_/_H3N2' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**EPI536470|HA|A/YAMAGATA/104/2014|EPI_ISL_164290|A_/_H3N2
+|
+|        +--EPI536482|HA|A/NARA/38/2014|EPI_ISL_164296|A_/_H3N2
+|     +--| (94)
+|     |  |        +--EPI684843|HA|A/Thailand/CU-B10345/2014|EPI_ISL_205386|A_/_H3N2
+|     |  |     +--| (87)
+|     |  |     |  +--EPI684838|HA|A/Thailand/CU-CB166/2014|EPI_ISL_205392|A_/_H3N2
+|     |  |  +--| (72)
+|     |  |  |  +--EPI748168|HA|A/Singapore/GP1523/2014|EPI_ISL_219296|A_/_H3N2
+|     |  +--| (92)
+|     |     +--EPI684853|HA|A/Thailand/CU-B10828/2014|EPI_ISL_205389|A_/_H3N2
+|  +**| (52)
+|  |  |  +--EPI540125|HA|A/SAPPORO/117/2014|EPI_ISL_165765|A_/_H3N2
+|  |  +--| (92)
+|  |     |           +--EPI564758|HA|A/Vietnam/630/2014|EPI_ISL_172604|A_/_H3N2
+|  |     |        +--| (95)
+|  |     |        |  +--EPI629996|HA|A/Vietnam/2/2014|EPI_ISL_192828|A_/_H3N2
+|  |     |     +**| (66)
+|  |     |     |  |  +--EPI537717|HA|A/Palau/6720/2014|EPI_ISL_164632|A_/_H3N2
+|  |     |     |  +--| (94)
+|  |     |     |     +--EPI539691|HA|A/Tasmania/11/2014|EPI_ISL_165591|A_/_H3N2
+|  |     |  +--| (97)
+|  |     |  |  +--EPI684840|HA|A/Thailand/CU-B10283/2014|EPI_ISL_205447|A_/_H3N2
+|  |     +**| (51)
+|  |        +--EPI684844|HA|A/Thailand/CU-B10421/2014|EPI_ISL_205448|A_/_H3N2
++--| (75)
+|  |        +--EPI541955|HA|A/Laos/O034/2014|EPI_ISL_166391|A_/_H3N2
+|  |     +**| (62)
+|  |     |  +--EPI557631|HA|A/TOKYO/41724/2014|EPI_ISL_170446|A_/_H3N2
+|  |  +--| (59)
+|  |  |  +--EPI536416|HA|A/Ukraine/86/2014|EPI_ISL_164264|A_/_H3N2
+|  +--| (57)
+|     +--EPI551752|HA|A/VICTORIA/1012/2014|EPI_ISL_168936|A_/_H3N2
+|
+|     +**EPI689419|HA|A/Kumamoto/DS-182v/2014|EPI_ISL_206278|A_/_H3N2
+|  +--| (94)
+|  |  |           +--EPI806276|HA|A/Kanagawa/JP-2/2014|EPI_ISL_229119|A_/_H3N2
+|  |  |        +--| (57)
+|  |  |        |  +--EPI806292|HA|A/Gunma/DS-126/2014|EPI_ISL_229135|A_/_H3N2
+|  |  |     +--| (48)
+|  |  |     |  +**EPI806288|HA|A/Fukuoka/DS-47/2014|EPI_ISL_229131|A_/_H3N2
+|  |  |  +--| (56)
+|  |  |  |  |  +**EPI806290|HA|A/Fukuoka/DS-84/2014|EPI_ISL_229133|A_/_H3N2
+|  |  |  |  +--| (54)
+|  |  |  |     |                                                              +--EPI536847|HA|A/Ukraine/183/2014|EPI_ISL_164375|A_/_H1N1
+|  |  |  |     |                                                           +--| (58)
+|  |  |  |     |                                                           |  +--EPI677813|HA|A/England/40800135/2014|EPI_ISL_202969|A_/_H1N1
+|  |  |  |     |                                                        +--| (56)
+|  |  |  |     |                                                        |  |  +--EPI712166|HA|A/England/354/2014|EPI_ISL_212270|A_/_H1N1
+|  |  |  |     |                                                        |  +**| (58)
+|  |  |  |     |                                                        |     +--EPI504743|HA|A/Stockholm/3/2014|EPI_ISL_155656|A_/_H1N1
+|  |  |  |     +--------------------------------------------------------| (100)
+|  |  |  |                                                              +--EPI677893|HA|A/England/41420347/2014|EPI_ISL_202979|A_/_H1N1
+|  |  +--| (68)
+|  |     +--EPI806284|HA|A/Hyogo/JP-115/2014|EPI_ISL_229127|A_/_H3N2
++--| (75)
+   +--EPI689442|HA|A/Fukuoka/DS-524/2014|EPI_ISL_206301|A_/_H3N2
+
+Tree in newick format:
+
+(EPI536470|HA|A/YAMAGATA/104/2014|EPI_ISL_164290|A_/_H3N2:0.0000027729,(((EPI536482|HA|A/NARA/38/2014|EPI_ISL_164296|A_/_H3N2:0.0035852016,(((EPI684843|HA|A/Thailand/CU-B10345/2014|EPI_ISL_205386|A_/_H3N2:0.0076959436,EPI684838|HA|A/Thailand/CU-CB166/2014|EPI_ISL_205392|A_/_H3N2:0.0413325510)87:0.0023831055,EPI748168|HA|A/Singapore/GP1523/2014|EPI_ISL_219296|A_/_H3N2:0.0088380569)72:0.0031172659,EPI684853|HA|A/Thailand/CU-B10828/2014|EPI_ISL_205389|A_/_H3N2:0.0042165409)92:0.0029861036)94:0.0054245533,(EPI540125|HA|A/SAPPORO/117/2014|EPI_ISL_165765|A_/_H3N2:0.0053909909,((((EPI564758|HA|A/Vietnam/630/2014|EPI_ISL_172604|A_/_H3N2:0.0072148572,EPI629996|HA|A/Vietnam/2/2014|EPI_ISL_192828|A_/_H3N2:0.0054010953)95:0.0017936567,(EPI537717|HA|A/Palau/6720/2014|EPI_ISL_164632|A_/_H3N2:0.0053927628,EPI539691|HA|A/Tasmania/11/2014|EPI_ISL_165591|A_/_H3N2:0.0054178241)94:0.0017998367)66:0.0000020080,EPI684840|HA|A/Thailand/CU-B10283/2014|EPI_ISL_205447|A_/_H3N2:0.0072373328)97:0.0017921104,EPI684844|HA|A/Thailand/CU-B10421/2014|EPI_ISL_205448|A_/_H3N2:0.0072182689)51:0.0000014943)92:0.0054054360)52:0.0000023815,(((EPI541955|HA|A/Laos/O034/2014|EPI_ISL_166391|A_/_H3N2:0.0071952588,EPI557631|HA|A/TOKYO/41724/2014|EPI_ISL_170446|A_/_H3N2:0.0086653479)62:0.0000027856,EPI536416|HA|A/Ukraine/86/2014|EPI_ISL_164264|A_/_H3N2:0.0075455047)59:0.0018074145,EPI551752|HA|A/VICTORIA/1012/2014|EPI_ISL_168936|A_/_H3N2:0.0158790417)57:0.0021642160)75:0.0017977145,((EPI689419|HA|A/Kumamoto/DS-182v/2014|EPI_ISL_206278|A_/_H3N2:0.0000010000,((((EPI806276|HA|A/Kanagawa/JP-2/2014|EPI_ISL_229119|A_/_H3N2:0.0108131631,EPI806292|HA|A/Gunma/DS-126/2014|EPI_ISL_229135|A_/_H3N2:0.0053826810)57:0.0054155295,EPI806288|HA|A/Fukuoka/DS-47/2014|EPI_ISL_229131|A_/_H3N2:0.0000010000)48:0.0061185498,(EPI806290|HA|A/Fukuoka/DS-84/2014|EPI_ISL_229133|A_/_H3N2:0.0008587915,(((EPI536847|HA|A/Ukraine/183/2014|EPI_ISL_164375|A_/_H1N1:0.0017862314,EPI677813|HA|A/England/40800135/2014|EPI_ISL_202969|A_/_H1N1:0.0163440475)58:0.0017778341,(EPI712166|HA|A/England/354/2014|EPI_ISL_212270|A_/_H1N1:0.0071790750,EPI504743|HA|A/Stockholm/3/2014|EPI_ISL_155656|A_/_H1N1:0.0071330715)58:0.0000027358)56:0.0018230401,EPI677893|HA|A/England/41420347/2014|EPI_ISL_202979|A_/_H1N1:0.0053522311)100:1.5430530900)54:0.0111631384)56:0.0068776033,EPI806284|HA|A/Hyogo/JP-115/2014|EPI_ISL_229127|A_/_H3N2:0.0053935282)68:0.0057875167)94:0.0071933904,EPI689442|HA|A/Fukuoka/DS-524/2014|EPI_ISL_206301|A_/_H3N2:0.0072548790)75:0.0036114237);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -4155.261657
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--EPI536470|HA|A/YAMAGATA/104/2014|EPI_ISL_164290|A_/_H3N2
+|
+|        +--EPI536482|HA|A/NARA/38/2014|EPI_ISL_164296|A_/_H3N2
+|     +--| (94)
+|     |  |        +--EPI684843|HA|A/Thailand/CU-B10345/2014|EPI_ISL_205386|A_/_H3N2
+|     |  |     +--| (87)
+|     |  |     |  +--EPI684838|HA|A/Thailand/CU-CB166/2014|EPI_ISL_205392|A_/_H3N2
+|     |  |  +--| (72)
+|     |  |  |  +--EPI748168|HA|A/Singapore/GP1523/2014|EPI_ISL_219296|A_/_H3N2
+|     |  +--| (92)
+|     |     +--EPI684853|HA|A/Thailand/CU-B10828/2014|EPI_ISL_205389|A_/_H3N2
+|  +--| (52)
+|  |  |  +--EPI540125|HA|A/SAPPORO/117/2014|EPI_ISL_165765|A_/_H3N2
+|  |  +--| (92)
+|  |     |           +--EPI564758|HA|A/Vietnam/630/2014|EPI_ISL_172604|A_/_H3N2
+|  |     |        +--| (95)
+|  |     |        |  +--EPI629996|HA|A/Vietnam/2/2014|EPI_ISL_192828|A_/_H3N2
+|  |     |     +--| (66)
+|  |     |     |  |  +--EPI537717|HA|A/Palau/6720/2014|EPI_ISL_164632|A_/_H3N2
+|  |     |     |  +--| (94)
+|  |     |     |     +--EPI539691|HA|A/Tasmania/11/2014|EPI_ISL_165591|A_/_H3N2
+|  |     |  +--| (97)
+|  |     |  |  +--EPI684840|HA|A/Thailand/CU-B10283/2014|EPI_ISL_205447|A_/_H3N2
+|  |     +--| (51)
+|  |        +--EPI684844|HA|A/Thailand/CU-B10421/2014|EPI_ISL_205448|A_/_H3N2
++--| (75)
+|  |        +--EPI541955|HA|A/Laos/O034/2014|EPI_ISL_166391|A_/_H3N2
+|  |     +--| (62)
+|  |     |  +--EPI557631|HA|A/TOKYO/41724/2014|EPI_ISL_170446|A_/_H3N2
+|  |  +--| (59)
+|  |  |  +--EPI536416|HA|A/Ukraine/86/2014|EPI_ISL_164264|A_/_H3N2
+|  +--| (57)
+|     +--EPI551752|HA|A/VICTORIA/1012/2014|EPI_ISL_168936|A_/_H3N2
+|
+|     +--EPI689419|HA|A/Kumamoto/DS-182v/2014|EPI_ISL_206278|A_/_H3N2
+|  +--| (94)
+|  |  |           +--EPI806276|HA|A/Kanagawa/JP-2/2014|EPI_ISL_229119|A_/_H3N2
+|  |  |        +--| (57)
+|  |  |        |  +--EPI806292|HA|A/Gunma/DS-126/2014|EPI_ISL_229135|A_/_H3N2
+|  |  |     +--| (48)
+|  |  |     |  +--EPI806288|HA|A/Fukuoka/DS-47/2014|EPI_ISL_229131|A_/_H3N2
+|  |  |  +--| (56)
+|  |  |  |  |  +--EPI806290|HA|A/Fukuoka/DS-84/2014|EPI_ISL_229133|A_/_H3N2
+|  |  |  |  +--| (54)
+|  |  |  |     |                                                              +--EPI536847|HA|A/Ukraine/183/2014|EPI_ISL_164375|A_/_H1N1
+|  |  |  |     |                                                           +--| (58)
+|  |  |  |     |                                                           |  +--EPI677813|HA|A/England/40800135/2014|EPI_ISL_202969|A_/_H1N1
+|  |  |  |     |                                                        +--| (56)
+|  |  |  |     |                                                        |  |  +--EPI712166|HA|A/England/354/2014|EPI_ISL_212270|A_/_H1N1
+|  |  |  |     |                                                        |  +--| (58)
+|  |  |  |     |                                                        |     +--EPI504743|HA|A/Stockholm/3/2014|EPI_ISL_155656|A_/_H1N1
+|  |  |  |     +--------------------------------------------------------| (100)
+|  |  |  |                                                              +--EPI677893|HA|A/England/41420347/2014|EPI_ISL_202979|A_/_H1N1
+|  |  +--| (68)
+|  |     +--EPI806284|HA|A/Hyogo/JP-115/2014|EPI_ISL_229127|A_/_H3N2
++--| (75)
+   +--EPI689442|HA|A/Fukuoka/DS-524/2014|EPI_ISL_206301|A_/_H3N2
+
+
+Consensus tree in newick format: 
+
+(EPI536470|HA|A/YAMAGATA/104/2014|EPI_ISL_164290|A_/_H3N2:0.0000026916,(((EPI536482|HA|A/NARA/38/2014|EPI_ISL_164296|A_/_H3N2:0.0035852345,(((EPI684843|HA|A/Thailand/CU-B10345/2014|EPI_ISL_205386|A_/_H3N2:0.0076960083,EPI684838|HA|A/Thailand/CU-CB166/2014|EPI_ISL_205392|A_/_H3N2:0.0413330838)87:0.0023829635,EPI748168|HA|A/Singapore/GP1523/2014|EPI_ISL_219296|A_/_H3N2:0.0088373355)72:0.0031183713,EPI684853|HA|A/Thailand/CU-B10828/2014|EPI_ISL_205389|A_/_H3N2:0.0042163764)92:0.0029857696)94:0.0054243073,(EPI540125|HA|A/SAPPORO/117/2014|EPI_ISL_165765|A_/_H3N2:0.0053908670,((((EPI564758|HA|A/Vietnam/630/2014|EPI_ISL_172604|A_/_H3N2:0.0072147815,EPI629996|HA|A/Vietnam/2/2014|EPI_ISL_192828|A_/_H3N2:0.0054010097)95:0.0017936320,(EPI537717|HA|A/Palau/6720/2014|EPI_ISL_164632|A_/_H3N2:0.0053926778,EPI539691|HA|A/Tasmania/11/2014|EPI_ISL_165591|A_/_H3N2:0.0054177754)94:0.0017998033)66:0.0000026916,EPI684840|HA|A/Thailand/CU-B10283/2014|EPI_ISL_205447|A_/_H3N2:0.0072372042)97:0.0017920494,EPI684844|HA|A/Thailand/CU-B10421/2014|EPI_ISL_205448|A_/_H3N2:0.0072180908)51:0.0000026916)92:0.0054053545)52:0.0000026916,(((EPI541955|HA|A/Laos/O034/2014|EPI_ISL_166391|A_/_H3N2:0.0071961622,EPI557631|HA|A/TOKYO/41724/2014|EPI_ISL_170446|A_/_H3N2:0.0086665928)62:0.0000026916,EPI536416|HA|A/Ukraine/86/2014|EPI_ISL_164264|A_/_H3N2:0.0075452268)59:0.0018073040,EPI551752|HA|A/VICTORIA/1012/2014|EPI_ISL_168936|A_/_H3N2:0.0158796409)57:0.0021639451)75:0.0017975764,((EPI689419|HA|A/Kumamoto/DS-182v/2014|EPI_ISL_206278|A_/_H3N2:0.0000026916,((((EPI806276|HA|A/Kanagawa/JP-2/2014|EPI_ISL_229119|A_/_H3N2:0.0108135081,EPI806292|HA|A/Gunma/DS-126/2014|EPI_ISL_229135|A_/_H3N2:0.0053834387)57:0.0054152150,EPI806288|HA|A/Fukuoka/DS-47/2014|EPI_ISL_229131|A_/_H3N2:0.0000026952)48:0.0061395125,(EPI806290|HA|A/Fukuoka/DS-84/2014|EPI_ISL_229133|A_/_H3N2:0.0002415360,(((EPI536847|HA|A/Ukraine/183/2014|EPI_ISL_164375|A_/_H1N1:0.0017872494,EPI677813|HA|A/England/40800135/2014|EPI_ISL_202969|A_/_H1N1:0.0163488689)58:0.0017786503,(EPI712166|HA|A/England/354/2014|EPI_ISL_212270|A_/_H1N1:0.0071812159,EPI504743|HA|A/Stockholm/3/2014|EPI_ISL_155656|A_/_H1N1:0.0071352146)58:0.0000026916)56:0.0018559009,EPI677893|HA|A/England/41420347/2014|EPI_ISL_202979|A_/_H1N1:0.0053289088)100:1.5434803863)54:0.0117579957)56:0.0068780350,EPI806284|HA|A/Hyogo/JP-115/2014|EPI_ISL_229127|A_/_H3N2:0.0053706760)68:0.0058099411)94:0.0071940989,EPI689442|HA|A/Fukuoka/DS-524/2014|EPI_ISL_206301|A_/_H3N2:0.0072559511)75:0.0036111634);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_clustered/H3N2/trees/H3N2_2014.treefile -m "LG+G4{1.03449}" --length 578
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2014_aligned.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2014_aligned.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Nov 20 18:41:48 2025
+Total CPU time used: 472.378216 seconds (0h:7m:52s)
+Total wall-clock time used: 30.56999144 seconds (0h:0m:30s)
+

@@ -1,0 +1,314 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    rtis-hpc-r09.uod.otago.ac.nz (AVX2, FMA3, 1006 GB RAM)
+Command: iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2017_aligned.fasta -m LG+G4 -bb 1000 -nt 16 -pre results/per_year_clustered/H3N2/trees/H3N2_2017 -redo -quiet
+Seed:    885047 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Nov 20 18:44:29 2025
+Kernel:  AVX+FMA - 16 threads (16 CPU cores detected)
+
+Reading alignment file results/per_year_clustered/H3N2/alignments/H3N2_2017_aligned.fasta ... Fasta format detected
+Reading fasta file: done in 0.000542887 secs using 96.15% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000697967 secs using 99.57% CPU
+Alignment has 63 sequences with 578 columns, 309 distinct patterns
+324 parsimony-informative, 29 singleton sites, 225 constant sites
+                                                                        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0123221 secs using 987.7% CPU
+   1  EPI995630|HA|A/KANAGAWA/IC1623/2017|EPI_ISL_262988|A_/_H3N2               2.08%    passed    100.00%
+   2  EPI995638|HA|A/KANAGAWA/IC1624/2017|EPI_ISL_262989|A_/_H3N2               2.08%    passed    100.00%
+   3  EPI1161806|HA|A/Laos/2916/2017|EPI_ISL_295868|A_/_H3N2                    2.08%    passed    100.00%
+   4  EPI1899303|HA|A/Thailand/B24411/2017|EPI_ISL_4064283|A_/_H3N2             2.08%    passed    100.00%
+   5  EPI1163464|HA|A/Saitama/248/2017|EPI_ISL_296094|A_/_H3N2                  2.08%    passed    100.00%
+   6  EPI997213|HA|A/NIIGATA/186/2017|EPI_ISL_263364|A_/_H3N2                   2.08%    passed    100.00%
+   7  EPI1165778|HA|A/Laos/3620/2017|EPI_ISL_296448|A_/_H3N2                    2.08%    passed    100.00%
+   8  EPI1002850|HA|A/HOKKAIDO/16/2017|EPI_ISL_264332|A_/_H3N2                  2.08%    passed    100.00%
+   9  EPI1002842|HA|A/NIIGATA/170/2017|EPI_ISL_264328|A_/_H3N2                  2.08%    passed    100.00%
+  10  EPI1169063|HA|A/YOKOHAMA/179/2017|EPI_ISL_297229|A_/_H3N2                 2.08%    passed    100.00%
+  11  EPI2116870|HA|A/Saudi_Arabia/VRG-44/2017|EPI_ISL_14223941|A_/_H3N2        2.08%    passed    100.00%
+  12  EPI1174647|HA|A/Maldives/1428/2017|EPI_ISL_298386|A_/_H3N2                2.08%    passed    100.00%
+  13  EPI1179434|HA|A/Naknon_Si_Thammarat/2361/2017|EPI_ISL_299644|A_/_H3N2     2.08%    passed    100.00%
+  14  EPI1179572|HA|A/Philippines/16/2017|EPI_ISL_299690|A_/_H3N2               2.08%    passed    100.00%
+  15  EPI1195189|HA|A/KANAGAWA/ZC1709/2017|EPI_ISL_302790|A_/_H3N2              2.08%    passed    100.00%
+  16  EPI1030552|HA|A/South_Korea/5744/2017|EPI_ISL_270892|A_/_H3N2             2.08%    passed    100.00%
+  17  EPI1205442|HA|A/Philippines/0745/2017|EPI_ISL_305005|A_/_H3N2             2.08%    passed    100.00%
+  18  EPI1217842|HA|A/GUNMA/140/2017|EPI_ISL_307396|A_/_H3N2                    2.08%    passed    100.00%
+  19  EPI1224407|HA|A/KANAGAWA/AC1704/2017|EPI_ISL_308933|A_/_H3N2              2.08%    passed    100.00%
+  20  EPI1057808|HA|A/MIYAZAKI/89/2017|EPI_ISL_277432|A_/_H3N2                  2.08%    passed    100.00%
+  21  EPI1065016|HA|A/KANAGAWA/ZC1617/2017|EPI_ISL_279062|A_/_H3N2              2.08%    passed    100.00%
+  22  EPI1077131|HA|A/KANAGAWA/IC1610/2017|EPI_ISL_281381|A_/_H3N2              2.08%    passed    100.00%
+  23  EPI1086408|HA|A/IWATE/65/2017|EPI_ISL_282947|A_/_H3N2                     2.08%    passed    100.00%
+  24  EPI1087471|HA|A/Singapore/TT1336/2017|EPI_ISL_283100|A_/_H3N2             2.08%    passed    100.00%
+  25  EPI1133559|HA|A/Thailand/CU-B20712/2017|EPI_ISL_290131|A_/_H3N2           2.08%    passed    100.00%
+  26  EPI970848|HA|A/KANAGAWA/IC1633/2017|EPI_ISL_257923|A_/_H3N2               2.08%    passed    100.00%
+  27  EPI1142266|HA|A/Pakistan/197/2017|EPI_ISL_291705|A_/_H3N2                 2.08%    passed    100.00%
+  28  EPI990888|HA|A/MIE/9/2017|EPI_ISL_262076|A_/_H3N2                         2.08%    passed    100.00%
+  29  EPI1017017|HA|A/Khmelnitsky/136/2017|EPI_ISL_268363|A_/_H3N2              2.08%    passed    100.00%
+  30  EPI1029301|HA|A/England/19/2017|EPI_ISL_270527|A_/_H3N2                   2.08%    passed    100.00%
+  31  EPI1030436|HA|A/England/70400233/2017|EPI_ISL_270794|A_/_H3N2             2.08%    passed    100.00%
+  32  EPI2183841|HA|A/Catalonia/NSVH100560904/2017|EPI_ISL_15082402|A_/_H3N2    2.08%    passed    100.00%
+  33  EPI2183709|HA|A/Catalonia/NSVH100554954/2017|EPI_ISL_15082395|A_/_H3N2    2.08%    passed    100.00%
+  34  EPI1568949|HA|A/Basel/USB001585.4/2017|EPI_ISL_382177|A_/_H3N2            2.08%    passed    100.00%
+  35  EPI1568983|HA|A/Basel/USB002431.4/2017|EPI_ISL_382211|A_/_H3N2            2.08%    passed    100.00%
+  36  EPI1569197|HA|A/Basel/USB002874.4/2017|EPI_ISL_382425|A_/_H3N2            2.08%    passed    100.00%
+  37  EPI1569218|HA|A/Basel/USB002916.4/2017|EPI_ISL_382446|A_/_H3N2            2.08%    passed    100.00%
+  38  EPI1139155|HA|A/England/74680316/2017|EPI_ISL_291010|A_/_H3N2             2.08%    passed    100.00%
+  39  EPI1144853|HA|A/England/75260815/2017|EPI_ISL_292290|A_/_H3N2             2.08%    passed    100.00%
+  40  EPI1152227|HA|A/England/75240051/2017|EPI_ISL_293651|A_/_H3N2             2.08%    passed    100.00%
+  41  EPI1611599|HA|A/Brisbane/138/2017|EPI_ISL_396211|A_/_H3N2                 2.08%    passed    100.00%
+  42  EPI1612529|HA|A/Newcastle/113/2017|EPI_ISL_396327|A_/_H3N2                2.08%    passed    100.00%
+  43  EPI1612857|HA|A/Newcastle/179/2017|EPI_ISL_396369|A_/_H3N2                2.08%    passed    100.00%
+  44  EPI1615469|HA|A/Sydney/513/2017|EPI_ISL_396696|A_/_H3N2                   2.08%    passed    100.00%
+  45  EPI1615781|HA|A/Sydney/562/2017|EPI_ISL_396735|A_/_H3N2                   2.08%    passed    100.00%
+  46  EPI1616789|HA|A/Victoria/558/2017|EPI_ISL_396861|A_/_H3N2                 2.08%    passed    100.00%
+  47  EPI1616877|HA|A/Victoria/603/2017|EPI_ISL_396872|A_/_H3N2                 2.08%    passed    100.00%
+  48  EPI1617045|HA|A/Victoria/670/2017|EPI_ISL_396893|A_/_H3N2                 2.08%    passed    100.00%
+  49  EPI1179429|HA|A/Sydney/1200/2017|EPI_ISL_299642|A_/_H3N2                  2.08%    passed    100.00%
+  50  EPI1021933|HA|A/Darwin/1005/2017|EPI_ISL_269271|A_/_H3N2                  2.08%    passed    100.00%
+  51  EPI1022472|HA|A/South_Auckland/16/2017|EPI_ISL_269453|A_/_H3N2            2.08%    passed    100.00%
+  52  EPI1207923|HA|A/Brisbane/185/2017|EPI_ISL_305343|A_/_H3N2                 2.08%    passed    100.00%
+  53  EPI1044851|HA|A/Sydney/103/2017|EPI_ISL_274988|A_/_H3N2                   2.08%    passed    100.00%
+  54  EPI1044845|HA|A/Newcastle/35/2017|EPI_ISL_274985|A_/_H3N2                 2.08%    passed    100.00%
+  55  EPI1087569|HA|A/Brisbane/140/2017|EPI_ISL_283124|A_/_H3N2                 2.08%    passed    100.00%
+  56  EPI1126128|HA|A/Sydney/1123/2017|EPI_ISL_288906|A_/_H3N2                  2.08%    passed    100.00%
+  57  EPI1440492|HA|A/Newcastle/78/2017|EPI_ISL_355879|A_/_H3N2                 2.08%    passed    100.00%
+  58  EPI1140339|HA|A/Victoria/746/2017|EPI_ISL_291277|A_/_H3N2                 2.08%    passed    100.00%
+  59  EPI1319890|HA|A/Slovenia/2794/2017|EPI_ISL_331396|A_/_H1N1                2.08%    passed     12.01%
+  60  EPI1262191|HA|A/Halmstad/4/2017|EPI_ISL_316689|A_/_H1N1                   2.08%    passed     13.21%
+  61  EPI1112356|HA|A/England/56/2017|EPI_ISL_286831|A_/_H1N1                   2.08%    passed     31.71%
+  62  EPI1152187|HA|A/England/75180460/2017|EPI_ISL_293646|A_/_H1N1             2.08%    passed      9.69%
+  63  EPI1152235|HA|A/England/75240072/2017|EPI_ISL_293652|A_/_H1N1             2.08%    passed     28.95%
+****  TOTAL                                                                     2.08%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Checking for duplicate sequences: done in 0.0121255 secs using 1103% CPU
+Creating fast initial parsimony tree by random order stepwise addition...
+2.518 seconds, parsimony score: 589 (based on 353 sites)
+Generating 1000 samples for ultrafast bootstrap (seed: 885047)...
+
+NOTE: 14 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5123.487
+2. Current log-likelihood: -5113.604
+3. Current log-likelihood: -5112.626
+4. Current log-likelihood: -5112.486
+Optimal log-likelihood: -5112.460
+Gamma shape alpha: 0.704
+Parameters optimization took 4 rounds (0.168 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0263651 secs using 1587% CPU
+Computing ML distances took 0.026456 sec (of wall-clock time) 0.418592 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.00127751 secs using 88.84% CPU
+Constructing RapidNJ tree: done in 0.0909063 secs using 44.81% CPU
+Computing RapidNJ tree took 0.092272 sec (of wall-clock time) 0.041969 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5184.102
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.092 second
+Computing log-likelihood of 98 initial trees ... 1.295 seconds
+Current best score: -5088.554
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 0.142136 secs using 1589% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5083.928
+Optimizing NNI: done in 0.333805 secs using 1588% CPU
+Optimizing NNI: done in 0.210701 secs using 1592% CPU
+Optimizing NNI: done in 0.32865 secs using 1590% CPU
+Optimizing NNI: done in 0.28924 secs using 1588% CPU
+Optimizing NNI: done in 0.186809 secs using 1590% CPU
+Optimizing NNI: done in 0.291816 secs using 1591% CPU
+Optimizing NNI: done in 0.307969 secs using 1590% CPU
+Optimizing NNI: done in 0.317982 secs using 1590% CPU
+Optimizing NNI: done in 0.489961 secs using 1589% CPU
+Iteration 10 / LogL: -5091.114 / Time: 0h:0m:7s
+Optimizing NNI: done in 0.280825 secs using 1591% CPU
+Optimizing NNI: done in 0.216735 secs using 1590% CPU
+Optimizing NNI: done in 0.213174 secs using 1589% CPU
+Optimizing NNI: done in 0.34575 secs using 1590% CPU
+Optimizing NNI: done in 0.376437 secs using 1592% CPU
+Optimizing NNI: done in 0.315825 secs using 1589% CPU
+Optimizing NNI: done in 0.380526 secs using 1584% CPU
+Optimizing NNI: done in 0.208942 secs using 1589% CPU
+Optimizing NNI: done in 0.822913 secs using 1589% CPU
+Optimizing NNI: done in 0.275056 secs using 1586% CPU
+Iteration 20 / LogL: -5098.184 / Time: 0h:0m:11s
+Finish initializing candidate tree set (20)
+Current best tree score: -5083.928 / CPU time: 7.798
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 0.498063 secs using 1589% CPU
+Optimizing NNI: done in 0.377879 secs using 1586% CPU
+Optimizing NNI: done in 0.539851 secs using 1587% CPU
+Optimizing NNI: done in 0.444842 secs using 1589% CPU
+Optimizing NNI: done in 0.503815 secs using 1590% CPU
+Optimizing NNI: done in 0.397151 secs using 1588% CPU
+Optimizing NNI: done in 1.77186 secs using 1510% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 27: -5083.016
+Optimizing NNI: done in 0.336276 secs using 1593% CPU
+Optimizing NNI: done in 0.432231 secs using 1591% CPU
+Optimizing NNI: done in 0.379055 secs using 1588% CPU
+Iteration 30 / LogL: -5083.936 / Time: 0h:0m:17s (0h:0m:48s left)
+Optimizing NNI: done in 0.147845 secs using 1591% CPU
+Optimizing NNI: done in 0.384205 secs using 1592% CPU
+BETTER TREE FOUND at iteration 32: -5083.012
+Optimizing NNI: done in 0.577344 secs using 1588% CPU
+Optimizing NNI: done in 0.365012 secs using 1590% CPU
+Optimizing NNI: done in 0.550908 secs using 1589% CPU
+Optimizing NNI: done in 0.582082 secs using 1588% CPU
+Optimizing NNI: done in 0.338464 secs using 1586% CPU
+Optimizing NNI: done in 0.360641 secs using 1586% CPU
+Optimizing NNI: done in 0.511667 secs using 1589% CPU
+Optimizing NNI: done in 0.557829 secs using 1590% CPU
+Iteration 40 / LogL: -5090.005 / Time: 0h:0m:21s (0h:0m:44s left)
+Optimizing NNI: done in 0.28095 secs using 1588% CPU
+Optimizing NNI: done in 1.09713 secs using 1529% CPU
+Optimizing NNI: done in 0.336974 secs using 1589% CPU
+Optimizing NNI: done in 0.472646 secs using 1590% CPU
+Optimizing NNI: done in 0.392608 secs using 1586% CPU
+Optimizing NNI: done in 0.368052 secs using 1590% CPU
+Optimizing NNI: done in 0.420898 secs using 1589% CPU
+Optimizing NNI: done in 0.38345 secs using 1587% CPU
+Optimizing NNI: done in 0.322592 secs using 1585% CPU
+Optimizing NNI: done in 1.46556 secs using 1526% CPU
+Iteration 50 / LogL: -5083.017 / Time: 0h:0m:27s (0h:0m:41s left)
+Log-likelihood cutoff on original alignment: -5125.426
+Optimizing NNI: done in 0.652954 secs using 1589% CPU
+Optimizing NNI: done in 0.44033 secs using 1589% CPU
+Optimizing NNI: done in 0.317168 secs using 1588% CPU
+Optimizing NNI: done in 0.277302 secs using 1592% CPU
+Optimizing NNI: done in 0.628873 secs using 1589% CPU
+Optimizing NNI: done in 0.322693 secs using 1590% CPU
+Optimizing NNI: done in 0.416601 secs using 1590% CPU
+Optimizing NNI: done in 0.328453 secs using 1587% CPU
+Optimizing NNI: done in 0.349114 secs using 1585% CPU
+Optimizing NNI: done in 0.462531 secs using 1584% CPU
+Iteration 60 / LogL: -5084.326 / Time: 0h:0m:31s (0h:0m:35s left)
+Optimizing NNI: done in 0.490515 secs using 1584% CPU
+Optimizing NNI: done in 0.451427 secs using 1584% CPU
+Optimizing NNI: done in 0.508377 secs using 1588% CPU
+Optimizing NNI: done in 0.346408 secs using 1591% CPU
+Optimizing NNI: done in 0.394439 secs using 1586% CPU
+Optimizing NNI: done in 0.431962 secs using 1589% CPU
+Optimizing NNI: done in 0.454414 secs using 1590% CPU
+Optimizing NNI: done in 0.447005 secs using 1589% CPU
+Optimizing NNI: done in 0.523023 secs using 1589% CPU
+Optimizing NNI: done in 0.378654 secs using 1590% CPU
+Iteration 70 / LogL: -6093.804 / Time: 0h:0m:36s (0h:0m:30s left)
+Optimizing NNI: done in 0.501226 secs using 1588% CPU
+Optimizing NNI: done in 0.437556 secs using 1590% CPU
+Optimizing NNI: done in 0.279239 secs using 1589% CPU
+Optimizing NNI: done in 0.728962 secs using 1589% CPU
+Optimizing NNI: done in 0.318453 secs using 1592% CPU
+Optimizing NNI: done in 0.456338 secs using 1589% CPU
+Optimizing NNI: done in 0.211993 secs using 1587% CPU
+Optimizing NNI: done in 0.377143 secs using 1588% CPU
+Optimizing NNI: done in 0.345748 secs using 1588% CPU
+Optimizing NNI: done in 0.41912 secs using 1588% CPU
+Iteration 80 / LogL: -5090.004 / Time: 0h:0m:40s (0h:0m:24s left)
+Optimizing NNI: done in 0.341055 secs using 1589% CPU
+Optimizing NNI: done in 0.152884 secs using 1593% CPU
+Optimizing NNI: done in 0.499755 secs using 1585% CPU
+Optimizing NNI: done in 0.369384 secs using 1588% CPU
+Optimizing NNI: done in 0.328624 secs using 1583% CPU
+Optimizing NNI: done in 0.265745 secs using 1583% CPU
+Optimizing NNI: done in 0.341877 secs using 1590% CPU
+Optimizing NNI: done in 0.335616 secs using 1586% CPU
+Optimizing NNI: done in 0.516778 secs using 1587% CPU
+Optimizing NNI: done in 0.869568 secs using 1589% CPU
+Iteration 90 / LogL: -5083.731 / Time: 0h:0m:44s (0h:0m:19s left)
+Optimizing NNI: done in 0.332035 secs using 1588% CPU
+Optimizing NNI: done in 0.331736 secs using 1589% CPU
+Optimizing NNI: done in 0.681593 secs using 1587% CPU
+Optimizing NNI: done in 0.325538 secs using 1592% CPU
+Optimizing NNI: done in 0.338422 secs using 1588% CPU
+Optimizing NNI: done in 0.829119 secs using 1584% CPU
+Optimizing NNI: done in 0.515513 secs using 1586% CPU
+Optimizing NNI: done in 0.408003 secs using 1587% CPU
+Optimizing NNI: done in 0.394943 secs using 1586% CPU
+Optimizing NNI: done in 0.313367 secs using 1588% CPU
+Iteration 100 / LogL: -5106.834 / Time: 0h:0m:48s (0h:0m:14s left)
+Log-likelihood cutoff on original alignment: -5125.763
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.990
+Optimizing NNI: done in 0.336045 secs using 1587% CPU
+Optimizing NNI: done in 0.759765 secs using 1589% CPU
+Optimizing NNI: done in 0.48923 secs using 1587% CPU
+Optimizing NNI: done in 0.275169 secs using 1588% CPU
+Optimizing NNI: done in 0.542812 secs using 1589% CPU
+Optimizing NNI: done in 0.317518 secs using 1589% CPU
+Optimizing NNI: done in 0.347751 secs using 1586% CPU
+Optimizing NNI: done in 0.215525 secs using 1589% CPU
+Optimizing NNI: done in 0.314135 secs using 1592% CPU
+Optimizing NNI: done in 0.380719 secs using 1587% CPU
+Iteration 110 / LogL: -6095.165 / Time: 0h:0m:52s (0h:0m:41s left)
+Optimizing NNI: done in 0.663301 secs using 1588% CPU
+Optimizing NNI: done in 0.32893 secs using 1588% CPU
+Optimizing NNI: done in 0.434933 secs using 1589% CPU
+Optimizing NNI: done in 0.553954 secs using 1589% CPU
+Optimizing NNI: done in 0.553119 secs using 1588% CPU
+Optimizing NNI: done in 0.559163 secs using 1585% CPU
+Optimizing NNI: done in 0.333304 secs using 1588% CPU
+Optimizing NNI: done in 0.538064 secs using 1588% CPU
+Optimizing NNI: done in 0.524773 secs using 1590% CPU
+Optimizing NNI: done in 0.46411 secs using 1589% CPU
+Iteration 120 / LogL: -5084.298 / Time: 0h:0m:57s (0h:0m:37s left)
+Optimizing NNI: done in 0.958552 secs using 1555% CPU
+Optimizing NNI: done in 0.383923 secs using 1589% CPU
+Optimizing NNI: done in 0.35876 secs using 1590% CPU
+Optimizing NNI: done in 0.67934 secs using 1584% CPU
+Optimizing NNI: done in 0.269459 secs using 1587% CPU
+Optimizing NNI: done in 0.341042 secs using 1588% CPU
+Optimizing NNI: done in 0.274466 secs using 1592% CPU
+Optimizing NNI: done in 0.504557 secs using 1587% CPU
+Optimizing NNI: done in 0.316233 secs using 1589% CPU
+Optimizing NNI: done in 0.376164 secs using 1588% CPU
+Iteration 130 / LogL: -5083.014 / Time: 0h:1m:2s (0h:0m:32s left)
+Optimizing NNI: done in 0.461234 secs using 1588% CPU
+Optimizing NNI: done in 0.353571 secs using 1586% CPU
+Optimizing NNI: done in 0.543166 secs using 1582% CPU
+TREE SEARCH COMPLETED AFTER 133 ITERATIONS / Time: 0h:1m:3s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5083.012
+Optimal log-likelihood: -5083.012
+Gamma shape alpha: 0.716
+Parameters optimization took 1 rounds (0.023 sec)
+BEST SCORE FOUND : -5083.012
+Creating bootstrap support values...
+Split supports printed to NEXUS file results/per_year_clustered/H3N2/trees/H3N2_2017.splits.nex
+Total tree length: 2.449
+
+Total number of iterations: 133
+CPU time used for tree search: 950.569 sec (0h:15m:50s)
+Wall-clock time used for tree search: 60.339 sec (0h:1m:0s)
+Total CPU time used: 998.891 sec (0h:16m:38s)
+Total wall-clock time used: 64.065 sec (0h:1m:4s)
+
+Computing bootstrap consensus tree...
+Reading input file results/per_year_clustered/H3N2/trees/H3N2_2017.splits.nex...
+63 taxa and 1073 splits.
+Consensus tree written to results/per_year_clustered/H3N2/trees/H3N2_2017.contree
+Reading input trees file results/per_year_clustered/H3N2/trees/H3N2_2017.contree
+Log-likelihood of consensus tree: -5083.026
+
+Analysis results written to: 
+  IQ-TREE report:                results/per_year_clustered/H3N2/trees/H3N2_2017.iqtree
+  Maximum-likelihood tree:       results/per_year_clustered/H3N2/trees/H3N2_2017.treefile
+  Likelihood distances:          results/per_year_clustered/H3N2/trees/H3N2_2017.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          results/per_year_clustered/H3N2/trees/H3N2_2017.splits.nex
+  Consensus tree:                results/per_year_clustered/H3N2/trees/H3N2_2017.contree
+  Screen log file:               results/per_year_clustered/H3N2/trees/H3N2_2017.log
+
+Date and Time: Thu Nov 20 18:45:34 2025
