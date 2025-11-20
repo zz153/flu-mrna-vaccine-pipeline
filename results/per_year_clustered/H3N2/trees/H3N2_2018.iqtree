@@ -1,0 +1,350 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_clustered/H3N2/alignments/H3N2_2018_aligned.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 810733
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 59 sequences with 578 amino-acid sites
+Number of constant sites: 217 (= 37.5433% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 217 (= 37.5433% of all sites)
+Number of parsimony informative sites: 322
+Number of distinct site patterns: 320
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.6547
+
+ Category  Relative_rate  Proportion
+  1         0.0645         0.2500
+  2         0.3413         0.2500
+  3         0.9068         0.2500
+  4         2.6873         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -5340.9198 (s.e. 196.0512)
+Unconstrained log-likelihood (without tree): -3067.0414
+Number of free parameters (#branches + #model parameters): 116
+Akaike information criterion (AIC) score: 10913.8396
+Corrected Akaike information criterion (AICc) score: 10972.7203
+Bayesian information criterion (BIC) score: 11419.5502
+
+Total tree length (sum of branch lengths): 2.7445
+Sum of internal branch lengths: 2.2138 (80.6654% of tree length)
+
+WARNING: 28 near-zero internal branches (<0.0017) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI1899327|HA|A/Thailand/B29296/2018|EPI_ISL_4064286|A_/_H3N2' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--EPI1899327|HA|A/Thailand/B29296/2018|EPI_ISL_4064286|A_/_H3N2
+|
+|                                               +--EPI1899335|HA|A/Thailand/B30632/2018|EPI_ISL_4064287|A_/_H3N2
+|                                            +--| (46)
+|                                            |  |  +--EPI1365958|HA|A/Singapore/KK0699/2018|EPI_ISL_340479|A_/_H3N2
+|                                            |  +--| (50)
+|                                            |     |  +--EPI1614493|HA|A/South_Australia/85/2018|EPI_ISL_396574|A_/_H3N2
+|                                            |     +--| (68)
+|                                            |        |                                                                       +--EPI1158115|HA|A/Catalonia/NSVH100752088/2018|EPI_ISL_295029|A_/_H1N1
+|                                            |        |                                                                    +**| (57)
+|                                            |        |                                                                    |  +--EPI1318120|HA|A/Swansea/2666/2018|EPI_ISL_331112|A_/_H1N1
+|                                            |        |                                                                 +--| (74)
+|                                            |        |                                                                 |  +--EPI1354827|HA|A/Switzerland/8061/2018|EPI_ISL_338116|A_/_H1N1
+|                                            |        |                                                              +**| (37)
+|                                            |        |                                                              |  +--EPI1310082|HA|A/Northern_Ireland/16810/2018|EPI_ISL_329757|A_/_H1N1
+|                                            |        |                                                           +**| (7)
+|                                            |        |                                                           |  |  +--EPI1313536|HA|A/Cardiff/4607/2018|EPI_ISL_330359|A_/_H1N1
+|                                            |        |                                                           |  +--| (96)
+|                                            |        |                                                           |     +--EPI1258963|HA|A/Dnipro/409/2018|EPI_ISL_315701|A_/_H1N1
+|                                            |        |                                                        +--| (75)
+|                                            |        |                                                        |  |  +--EPI1328481|HA|A/Abertillery/6649/2018|EPI_ISL_332689|A_/_H1N1
+|                                            |        |                                                        |  +**| (29)
+|                                            |        |                                                        |     +--EPI1215686|HA|A/Sweden/15/2018|EPI_ISL_307076|A_/_H1N1
+|                                            |        +--------------------------------------------------------| (100)
+|                                            |                                                                 +**EPI2184776|HA|A/Catalonia/NSVH100809538/2018|EPI_ISL_15083894|A_/_H1N1
+|                                         +**| (3)
+|                                         |  +--EPI1614485|HA|A/South_Australia/82/2018|EPI_ISL_396573|A_/_H3N2
+|                                      +**| (3)
+|                                      |  |  +--EPI1351513|HA|A/HIROSHIMA/73/2018|EPI_ISL_336962|A_/_H3N2
+|                                      |  +**| (11)
+|                                      |     +--EPI1369190|HA|A/Nakhonsithammarat/336/2018|EPI_ISL_341170|A_/_H3N2
+|                                   +--| (59)
+|                                   |  |        +--EPI1482887|HA|A/Taiwan/81051/2018|EPI_ISL_362647|A_/_H3N2
+|                                   |  |     +--| (96)
+|                                   |  |     |  +--EPI1315673|HA|A/Zaragoza/1528894/2018|EPI_ISL_330683|A_/_H3N2
+|                                   |  |  +**| (51)
+|                                   |  |  |  |  +--EPI1482879|HA|A/Taiwan/79795/2018|EPI_ISL_362646|A_/_H3N2
+|                                   |  |  |  +--| (82)
+|                                   |  |  |     +--EPI1370427|HA|A/Chungbuk/1917/2018|EPI_ISL_341448|A_/_H3N2
+|                                   |  +**| (30)
+|                                   |     +--EPI1351533|HA|A/ISHIKAWA/78/2018|EPI_ISL_336967|A_/_H3N2
+|                                +**| (20)
+|                                |  |  +--EPI1210250|HA|A/Kazakhstan/103/2018|EPI_ISL_305845|A_/_H3N2
+|                                |  +**| (18)
+|                                |     +--EPI1275634|HA|A/Swansea/0699/2018|EPI_ISL_321581|A_/_H3N2
+|                             +--| (65)
+|                             |  +--EPI1241657|HA|A/NIIGATA-C/1/2018|EPI_ISL_311962|A_/_H3N2
+|                          +--| (82)
+|                          |  |     +**EPI1335535|HA|A/YOKOHAMA/112/2018|EPI_ISL_333926|A_/_H3N2
+|                          |  |  +--| (80)
+|                          |  |  |  +--EPI1550154|HA|A/Malaysia/RP4242/2018|EPI_ISL_378558|A_/_H3N2
+|                          |  +--| (79)
+|                          |     +--EPI1337103|HA|A/Sundsvall/1/2018|EPI_ISL_334183|A_/_H3N2
+|                       +--| (80)
+|                       |  +--EPI1804615|HA|A/Myanmar/18M090/2018|EPI_ISL_536403|A_/_H3N2
+|                    +--| (92)
+|                    |  +--EPI1614141|HA|A/South_Australia/22/2018|EPI_ISL_396530|A_/_H3N2
+|                 +--| (61)
+|                 |  |           +--EPI1310465|HA|A/Abu_Dhabi/014/2018|EPI_ISL_329832|A_/_H3N2
+|                 |  |        +--| (90)
+|                 |  |        |  +--EPI1173524|HA|A/England/80220360/2018|EPI_ISL_298073|A_/_H3N2
+|                 |  |     +**| (51)
+|                 |  |     |  |  +--EPI1224383|HA|A/KANAGAWA/IC1725/2018|EPI_ISL_308930|A_/_H3N2
+|                 |  |     |  +--| (89)
+|                 |  |     |     +--EPI1392930|HA|A/England/754/2018|EPI_ISL_347143|A_/_H3N2
+|                 |  |  +--| (97)
+|                 |  |  |  |     +--EPI1315822|HA|A/Philippines/44/2018|EPI_ISL_330736|A_/_H3N2
+|                 |  |  |  |  +**| (54)
+|                 |  |  |  |  |  |  +--EPI1272579|HA|A/Singapore/GP0454/2018|EPI_ISL_320960|A_/_H3N2
+|                 |  |  |  |  |  +--| (69)
+|                 |  |  |  |  |     +--EPI1311774|HA|A/Sydney/22/2018|EPI_ISL_330026|A_/_H3N2
+|                 |  |  |  +--| (75)
+|                 |  |  |     |     +--EPI1336988|HA|A/Abu_Dhabi/134/2018|EPI_ISL_334156|A_/_H3N2
+|                 |  |  |     |  +**| (25)
+|                 |  |  |     |  |  +--EPI1328675|HA|A/Christchurch/522/2018|EPI_ISL_332736|A_/_H3N2
+|                 |  |  |     +**| (20)
+|                 |  |  |        |  +--EPI1358998|HA|A/Philippines/48/2018|EPI_ISL_339064|A_/_H3N2
+|                 |  |  |        +**| (13)
+|                 |  |  |           +--EPI1613693|HA|A/South_Australia/117/2018|EPI_ISL_396474|A_/_H3N2
+|                 |  +**| (87)
+|                 |     +--EPI1613517|HA|A/Perth/4/2018|EPI_ISL_396452|A_/_H3N2
+|              +--| (90)
+|              |  +--EPI1188953|HA|A/England/80420847/2018|EPI_ISL_301474|A_/_H3N2
+|           +--| (95)
+|           |  |                 +--EPI1478195|HA|A/GUNMA/114/2018|EPI_ISL_361864|A_/_H3N2
+|           |  |              +**| (70)
+|           |  |              |  +--EPI1594423|HA|A/Singapore/GP2364/2018|EPI_ISL_391579|A_/_H3N2
+|           |  |           +--| (99)
+|           |  |           |  +--EPI1631894|HA|A/Newcastle/82/2018|EPI_ISL_398938|A_/_H3N2
+|           |  |        +**| (70)
+|           |  |        |  +--EPI1316661|HA|A/Maldives/1001/2018|EPI_ISL_330906|A_/_H3N2
+|           |  |     +--| (96)
+|           |  |     |  +--EPI1796769|HA|A/England/190161213/2018|EPI_ISL_513957|A_/_H3N2
+|           |  |  +--| (97)
+|           |  |  |  +--EPI1385788|HA|A/Vietnam/Lisn18022/2018|EPI_ISL_346042|A_/_H3N2
+|           |  +**| (68)
+|           |     +--EPI1203826|HA|A/England/80900492/2018|EPI_ISL_304782|A_/_H3N2
+|        +**| (5)
+|        |  +--EPI2047663|HA|A/Myanmar/18M66/2018|EPI_ISL_12951803|A_/_H3N2
+|     +**| (8)
+|     |  |     +--EPI2153930|HA|A/Saudi_Arabia/VRG-55/2018|EPI_ISL_14835629|A_/_H3N2
+|     |  |  +**| (25)
+|     |  |  |  +--EPI1189308|HA|A/England/80520648/2018|EPI_ISL_301542|A_/_H3N2
+|     |  +**| (4)
+|     |     +--EPI1614597|HA|A/Sydney/1000/2018|EPI_ISL_396587|A_/_H3N2
+|  +**| (16)
+|  |  |  +--EPI1319766|HA|A/Oman/3329/2018|EPI_ISL_331355|A_/_H3N2
+|  |  +**| (8)
+|  |     |  +--EPI1335515|HA|A/KANAGAWA/85/2018|EPI_ISL_333921|A_/_H3N2
+|  |     +**| (54)
+|  |        +--EPI1243337|HA|A/Ankara/110/2018|EPI_ISL_312306|A_/_H3N2
++--| (76)
+|  +--EPI1343237|HA|A/Vietnam/190/2018|EPI_ISL_335668|A_/_H3N2
+|
+|  +--EPI1319800|HA|A/Saudi_Arabia/604532786/2018|EPI_ISL_331372|A_/_H3N2
++**| (60)
+   +--EPI1337095|HA|A/Linkoping/58/2018|EPI_ISL_334182|A_/_H3N2
+
+Tree in newick format:
+
+(EPI1899327|HA|A/Thailand/B29296/2018|EPI_ISL_4064286|A_/_H3N2:0.0058134045,((((((((((((((((EPI1899335|HA|A/Thailand/B30632/2018|EPI_ISL_4064287|A_/_H3N2:0.0056996486,(EPI1365958|HA|A/Singapore/KK0699/2018|EPI_ISL_340479|A_/_H3N2:0.0038595235,(EPI1614493|HA|A/South_Australia/85/2018|EPI_ISL_396574|A_/_H3N2:0.1022363765,((((((EPI1158115|HA|A/Catalonia/NSVH100752088/2018|EPI_ISL_295029|A_/_H1N1:0.0056386662,EPI1318120|HA|A/Swansea/2666/2018|EPI_ISL_331112|A_/_H1N1:0.0094344601)57:0.0000028147,EPI1354827|HA|A/Switzerland/8061/2018|EPI_ISL_338116|A_/_H1N1:0.0075400230)74:0.0018715517,EPI1310082|HA|A/Northern_Ireland/16810/2018|EPI_ISL_329757|A_/_H1N1:0.0056343429)37:0.0000027732,(EPI1313536|HA|A/Cardiff/4607/2018|EPI_ISL_330359|A_/_H1N1:0.0074953942,EPI1258963|HA|A/Dnipro/409/2018|EPI_ISL_315701|A_/_H1N1:0.0074776896)96:0.0018719452)7:0.0000023766,(EPI1328481|HA|A/Abertillery/6649/2018|EPI_ISL_332689|A_/_H1N1:0.0056000445,EPI1215686|HA|A/Sweden/15/2018|EPI_ISL_307076|A_/_H1N1:0.0132105617)29:0.0000025792)75:0.0056371869,EPI2184776|HA|A/Catalonia/NSVH100809538/2018|EPI_ISL_15083894|A_/_H1N1:0.0000022838)100:2.0720564830)68:0.0586297728)50:0.0018653042)46:0.0019140781,EPI1614485|HA|A/South_Australia/82/2018|EPI_ISL_396573|A_/_H3N2:0.0057120339)3:0.0000010000,(EPI1351513|HA|A/HIROSHIMA/73/2018|EPI_ISL_336962|A_/_H3N2:0.0057425628,EPI1369190|HA|A/Nakhonsithammarat/336/2018|EPI_ISL_341170|A_/_H3N2:0.0076526501)11:0.0000028675)3:0.0000010000,(((EPI1482887|HA|A/Taiwan/81051/2018|EPI_ISL_362647|A_/_H3N2:0.0038294597,EPI1315673|HA|A/Zaragoza/1528894/2018|EPI_ISL_330683|A_/_H3N2:0.0076966408)96:0.0038187601,(EPI1482879|HA|A/Taiwan/79795/2018|EPI_ISL_362646|A_/_H3N2:0.0038076870,EPI1370427|HA|A/Chungbuk/1917/2018|EPI_ISL_341448|A_/_H3N2:0.0076439207)82:0.0057480107)51:0.0000029524,EPI1351533|HA|A/ISHIKAWA/78/2018|EPI_ISL_336967|A_/_H3N2:0.0057329955)30:0.0000020629)59:0.0019045298,(EPI1210250|HA|A/Kazakhstan/103/2018|EPI_ISL_305845|A_/_H3N2:0.0077469099,EPI1275634|HA|A/Swansea/0699/2018|EPI_ISL_321581|A_/_H3N2:0.0115337789)18:0.0000010000)20:0.0000010000,EPI1241657|HA|A/NIIGATA-C/1/2018|EPI_ISL_311962|A_/_H3N2:0.0076714710)65:0.0026498219,((EPI1335535|HA|A/YOKOHAMA/112/2018|EPI_ISL_333926|A_/_H3N2:0.0000010000,EPI1550154|HA|A/Malaysia/RP4242/2018|EPI_ISL_378558|A_/_H3N2:0.0115843387)80:0.0039226970,EPI1337103|HA|A/Sundsvall/1/2018|EPI_ISL_334183|A_/_H3N2:0.0260290213)79:0.0097384075)82:0.0045600610,EPI1804615|HA|A/Myanmar/18M090/2018|EPI_ISL_536403|A_/_H3N2:0.0081649513)80:0.0037450112,EPI1614141|HA|A/South_Australia/22/2018|EPI_ISL_396530|A_/_H3N2:0.0172300415)92:0.0062637183,((((EPI1310465|HA|A/Abu_Dhabi/014/2018|EPI_ISL_329832|A_/_H3N2:0.0057638530,EPI1173524|HA|A/England/80220360/2018|EPI_ISL_298073|A_/_H3N2:0.0077010263)90:0.0018783016,(EPI1224383|HA|A/KANAGAWA/IC1725/2018|EPI_ISL_308930|A_/_H3N2:0.0096161825,EPI1392930|HA|A/England/754/2018|EPI_ISL_347143|A_/_H3N2:0.0076683828)89:0.0038037680)51:0.0000010000,((EPI1315822|HA|A/Philippines/44/2018|EPI_ISL_330736|A_/_H3N2:0.0057581791,(EPI1272579|HA|A/Singapore/GP0454/2018|EPI_ISL_320960|A_/_H3N2:0.0097041606,EPI1311774|HA|A/Sydney/22/2018|EPI_ISL_330026|A_/_H3N2:0.0077821470)69:0.0037979903)54:0.0000028586,((EPI1336988|HA|A/Abu_Dhabi/134/2018|EPI_ISL_334156|A_/_H3N2:0.0057479501,EPI1328675|HA|A/Christchurch/522/2018|EPI_ISL_332736|A_/_H3N2:0.0057375762)25:0.0000028608,(EPI1358998|HA|A/Philippines/48/2018|EPI_ISL_339064|A_/_H3N2:0.0057597115,EPI1613693|HA|A/South_Australia/117/2018|EPI_ISL_396474|A_/_H3N2:0.0057379663)13:0.0000010000)20:0.0000010000)75:0.0019154858)97:0.0019117648,EPI1613517|HA|A/Perth/4/2018|EPI_ISL_396452|A_/_H3N2:0.0095983819)87:0.0000020667)61:0.0019136735,EPI1188953|HA|A/England/80420847/2018|EPI_ISL_301474|A_/_H3N2:0.0076624917)90:0.0019213480,((((((EPI1478195|HA|A/GUNMA/114/2018|EPI_ISL_361864|A_/_H3N2:0.0057760245,EPI1594423|HA|A/Singapore/GP2364/2018|EPI_ISL_391579|A_/_H3N2:0.0097558526)70:0.0000010000,EPI1631894|HA|A/Newcastle/82/2018|EPI_ISL_398938|A_/_H3N2:0.0058452933)99:0.0019241181,EPI1316661|HA|A/Maldives/1001/2018|EPI_ISL_330906|A_/_H3N2:0.0038374618)70:0.0000010000,EPI1796769|HA|A/England/190161213/2018|EPI_ISL_513957|A_/_H3N2:0.0077088008)96:0.0019263962,EPI1385788|HA|A/Vietnam/Lisn18022/2018|EPI_ISL_346042|A_/_H3N2:0.0058071512)97:0.0019035679,EPI1203826|HA|A/England/80900492/2018|EPI_ISL_304782|A_/_H3N2:0.0096540937)68:0.0000024174)95:0.0019170245,EPI2047663|HA|A/Myanmar/18M66/2018|EPI_ISL_12951803|A_/_H3N2:0.0057916772)5:0.0000010000,((EPI2153930|HA|A/Saudi_Arabia/VRG-55/2018|EPI_ISL_14835629|A_/_H3N2:0.0077074043,EPI1189308|HA|A/England/80520648/2018|EPI_ISL_301542|A_/_H3N2:0.0057803488)25:0.0000010000,EPI1614597|HA|A/Sydney/1000/2018|EPI_ISL_396587|A_/_H3N2:0.0057881607)4:0.0000010000)8:0.0000010000,(EPI1319766|HA|A/Oman/3329/2018|EPI_ISL_331355|A_/_H3N2:0.0077192903,(EPI1335515|HA|A/KANAGAWA/85/2018|EPI_ISL_333921|A_/_H3N2:0.0073021051,EPI1243337|HA|A/Ankara/110/2018|EPI_ISL_312306|A_/_H3N2:0.0073538205)54:0.0008619326)8:0.0000010000)16:0.0000010000,EPI1343237|HA|A/Vietnam/190/2018|EPI_ISL_335668|A_/_H3N2:0.0076961073)76:0.0019187043,(EPI1319800|HA|A/Saudi_Arabia/604532786/2018|EPI_ISL_331372|A_/_H3N2:0.0057651071,EPI1337095|HA|A/Linkoping/58/2018|EPI_ISL_334182|A_/_H3N2:0.0096843764)60:0.0000027219);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -5340.935135
+Robinson-Foulds distance between ML tree and consensus tree: 26
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--EPI1899327|HA|A/Thailand/B29296/2018|EPI_ISL_4064286|A_/_H3N2
+|
+|                                               +--EPI1899335|HA|A/Thailand/B30632/2018|EPI_ISL_4064287|A_/_H3N2
+|                                            +--| (46)
+|                                            |  |  +--EPI1365958|HA|A/Singapore/KK0699/2018|EPI_ISL_340479|A_/_H3N2
+|                                            |  +--| (50)
+|                                            |     |  +--EPI1614493|HA|A/South_Australia/85/2018|EPI_ISL_396574|A_/_H3N2
+|                                            |     +--| (68)
+|                                            |        |                                                                   +--EPI1158115|HA|A/Catalonia/NSVH100752088/2018|EPI_ISL_295029|A_/_H1N1
+|                                            |        |                                                                +--| (57)
+|                                            |        |                                                                |  +--EPI1318120|HA|A/Swansea/2666/2018|EPI_ISL_331112|A_/_H1N1
+|                                            |        |                                                             +--| (74)
+|                                            |        |                                                             |  +--EPI1354827|HA|A/Switzerland/8061/2018|EPI_ISL_338116|A_/_H1N1
+|                                            |        |                                                          +--| (37)
+|                                            |        |                                                          |  +--EPI1310082|HA|A/Northern_Ireland/16810/2018|EPI_ISL_329757|A_/_H1N1
+|                                            |        |                                                       +--| (75)
+|                                            |        |                                                       |  |     +--EPI1313536|HA|A/Cardiff/4607/2018|EPI_ISL_330359|A_/_H1N1
+|                                            |        |                                                       |  |  +--| (96)
+|                                            |        |                                                       |  |  |  +--EPI1258963|HA|A/Dnipro/409/2018|EPI_ISL_315701|A_/_H1N1
+|                                            |        |                                                       |  +--| (23)
+|                                            |        |                                                       |     |  +--EPI1328481|HA|A/Abertillery/6649/2018|EPI_ISL_332689|A_/_H1N1
+|                                            |        |                                                       |     +--| (29)
+|                                            |        |                                                       |        +--EPI1215686|HA|A/Sweden/15/2018|EPI_ISL_307076|A_/_H1N1
+|                                            |        +-------------------------------------------------------| (100)
+|                                            |                                                                +--EPI2184776|HA|A/Catalonia/NSVH100809538/2018|EPI_ISL_15083894|A_/_H1N1
+|                                         +--| (12)
+|                                         |  |  +--EPI1369190|HA|A/Nakhonsithammarat/336/2018|EPI_ISL_341170|A_/_H3N2
+|                                         |  +--| (22)
+|                                         |     +--EPI1614485|HA|A/South_Australia/82/2018|EPI_ISL_396573|A_/_H3N2
+|                                      +--| (25)
+|                                      |  |        +--EPI1482887|HA|A/Taiwan/81051/2018|EPI_ISL_362647|A_/_H3N2
+|                                      |  |     +--| (96)
+|                                      |  |     |  +--EPI1315673|HA|A/Zaragoza/1528894/2018|EPI_ISL_330683|A_/_H3N2
+|                                      |  |  +--| (51)
+|                                      |  |  |  |  +--EPI1482879|HA|A/Taiwan/79795/2018|EPI_ISL_362646|A_/_H3N2
+|                                      |  |  |  +--| (82)
+|                                      |  |  |     +--EPI1370427|HA|A/Chungbuk/1917/2018|EPI_ISL_341448|A_/_H3N2
+|                                      |  +--| (30)
+|                                      |     +--EPI1351533|HA|A/ISHIKAWA/78/2018|EPI_ISL_336967|A_/_H3N2
+|                                   +--| (59)
+|                                   |  +--EPI1351513|HA|A/HIROSHIMA/73/2018|EPI_ISL_336962|A_/_H3N2
+|                                +--| (22)
+|                                |  +--EPI1210250|HA|A/Kazakhstan/103/2018|EPI_ISL_305845|A_/_H3N2
+|                             +--| (65)
+|                             |  |  +--EPI1241657|HA|A/NIIGATA-C/1/2018|EPI_ISL_311962|A_/_H3N2
+|                             |  +--| (30)
+|                             |     +--EPI1275634|HA|A/Swansea/0699/2018|EPI_ISL_321581|A_/_H3N2
+|                          +--| (82)
+|                          |  |     +--EPI1335535|HA|A/YOKOHAMA/112/2018|EPI_ISL_333926|A_/_H3N2
+|                          |  |  +--| (80)
+|                          |  |  |  +--EPI1550154|HA|A/Malaysia/RP4242/2018|EPI_ISL_378558|A_/_H3N2
+|                          |  +--| (79)
+|                          |     +--EPI1337103|HA|A/Sundsvall/1/2018|EPI_ISL_334183|A_/_H3N2
+|                       +--| (80)
+|                       |  +--EPI1804615|HA|A/Myanmar/18M090/2018|EPI_ISL_536403|A_/_H3N2
+|                    +--| (92)
+|                    |  +--EPI1614141|HA|A/South_Australia/22/2018|EPI_ISL_396530|A_/_H3N2
+|                 +--| (61)
+|                 |  |           +--EPI1310465|HA|A/Abu_Dhabi/014/2018|EPI_ISL_329832|A_/_H3N2
+|                 |  |        +--| (90)
+|                 |  |        |  +--EPI1173524|HA|A/England/80220360/2018|EPI_ISL_298073|A_/_H3N2
+|                 |  |     +--| (51)
+|                 |  |     |  |  +--EPI1224383|HA|A/KANAGAWA/IC1725/2018|EPI_ISL_308930|A_/_H3N2
+|                 |  |     |  +--| (89)
+|                 |  |     |     +--EPI1392930|HA|A/England/754/2018|EPI_ISL_347143|A_/_H3N2
+|                 |  |  +--| (97)
+|                 |  |  |  |     +--EPI1315822|HA|A/Philippines/44/2018|EPI_ISL_330736|A_/_H3N2
+|                 |  |  |  |  +--| (54)
+|                 |  |  |  |  |  |  +--EPI1272579|HA|A/Singapore/GP0454/2018|EPI_ISL_320960|A_/_H3N2
+|                 |  |  |  |  |  +--| (69)
+|                 |  |  |  |  |     +--EPI1311774|HA|A/Sydney/22/2018|EPI_ISL_330026|A_/_H3N2
+|                 |  |  |  +--| (75)
+|                 |  |  |     |     +--EPI1336988|HA|A/Abu_Dhabi/134/2018|EPI_ISL_334156|A_/_H3N2
+|                 |  |  |     |  +--| (20)
+|                 |  |  |     |  |  +--EPI1613693|HA|A/South_Australia/117/2018|EPI_ISL_396474|A_/_H3N2
+|                 |  |  |     +--| (20)
+|                 |  |  |        |  +--EPI1358998|HA|A/Philippines/48/2018|EPI_ISL_339064|A_/_H3N2
+|                 |  |  |        +--| (29)
+|                 |  |  |           +--EPI1328675|HA|A/Christchurch/522/2018|EPI_ISL_332736|A_/_H3N2
+|                 |  +--| (87)
+|                 |     +--EPI1613517|HA|A/Perth/4/2018|EPI_ISL_396452|A_/_H3N2
+|              +--| (90)
+|              |  +--EPI1188953|HA|A/England/80420847/2018|EPI_ISL_301474|A_/_H3N2
+|           +--| (95)
+|           |  |                 +--EPI1478195|HA|A/GUNMA/114/2018|EPI_ISL_361864|A_/_H3N2
+|           |  |              +--| (70)
+|           |  |              |  +--EPI1594423|HA|A/Singapore/GP2364/2018|EPI_ISL_391579|A_/_H3N2
+|           |  |           +--| (99)
+|           |  |           |  +--EPI1631894|HA|A/Newcastle/82/2018|EPI_ISL_398938|A_/_H3N2
+|           |  |        +--| (70)
+|           |  |        |  +--EPI1316661|HA|A/Maldives/1001/2018|EPI_ISL_330906|A_/_H3N2
+|           |  |     +--| (96)
+|           |  |     |  +--EPI1796769|HA|A/England/190161213/2018|EPI_ISL_513957|A_/_H3N2
+|           |  |  +--| (97)
+|           |  |  |  +--EPI1385788|HA|A/Vietnam/Lisn18022/2018|EPI_ISL_346042|A_/_H3N2
+|           |  +--| (68)
+|           |     +--EPI1203826|HA|A/England/80900492/2018|EPI_ISL_304782|A_/_H3N2
+|        +--| (6)
+|        |  +--EPI1319766|HA|A/Oman/3329/2018|EPI_ISL_331355|A_/_H3N2
+|     +--| (4)
+|     |  |  +--EPI2153930|HA|A/Saudi_Arabia/VRG-55/2018|EPI_ISL_14835629|A_/_H3N2
+|     |  +--| (25)
+|     |     +--EPI1189308|HA|A/England/80520648/2018|EPI_ISL_301542|A_/_H3N2
+|  +--| (11)
+|  |  |     +--EPI1335515|HA|A/KANAGAWA/85/2018|EPI_ISL_333921|A_/_H3N2
+|  |  |  +--| (54)
+|  |  |  |  +--EPI1243337|HA|A/Ankara/110/2018|EPI_ISL_312306|A_/_H3N2
+|  |  +--| (11)
+|  |     +--EPI2047663|HA|A/Myanmar/18M66/2018|EPI_ISL_12951803|A_/_H3N2
++--| (76)
+|  |  +--EPI1343237|HA|A/Vietnam/190/2018|EPI_ISL_335668|A_/_H3N2
+|  +--| (18)
+|     +--EPI1614597|HA|A/Sydney/1000/2018|EPI_ISL_396587|A_/_H3N2
+|
+|  +--EPI1319800|HA|A/Saudi_Arabia/604532786/2018|EPI_ISL_331372|A_/_H3N2
++--| (60)
+   +--EPI1337095|HA|A/Linkoping/58/2018|EPI_ISL_334182|A_/_H3N2
+
+
+Consensus tree in newick format: 
+
+(EPI1899327|HA|A/Thailand/B29296/2018|EPI_ISL_4064286|A_/_H3N2:0.0058110383,((((((((((((((((EPI1899335|HA|A/Thailand/B30632/2018|EPI_ISL_4064287|A_/_H3N2:0.0056973476,(EPI1365958|HA|A/Singapore/KK0699/2018|EPI_ISL_340479|A_/_H3N2:0.0038572781,(EPI1614493|HA|A/South_Australia/85/2018|EPI_ISL_396574|A_/_H3N2:0.0999827427,(((((EPI1158115|HA|A/Catalonia/NSVH100752088/2018|EPI_ISL_295029|A_/_H1N1:0.0056368156,EPI1318120|HA|A/Swansea/2666/2018|EPI_ISL_331112|A_/_H1N1:0.0094302880)57:0.0000026925,EPI1354827|HA|A/Switzerland/8061/2018|EPI_ISL_338116|A_/_H1N1:0.0075366970)74:0.0018699020,EPI1310082|HA|A/Northern_Ireland/16810/2018|EPI_ISL_329757|A_/_H1N1:0.0056325409)37:0.0000026925,((EPI1313536|HA|A/Cardiff/4607/2018|EPI_ISL_330359|A_/_H1N1:0.0074921280,EPI1258963|HA|A/Dnipro/409/2018|EPI_ISL_315701|A_/_H1N1:0.0074744395)96:0.0018706108,(EPI1328481|HA|A/Abertillery/6649/2018|EPI_ISL_332689|A_/_H1N1:0.0055982567,EPI1215686|HA|A/Sweden/15/2018|EPI_ISL_307076|A_/_H1N1:0.0132048108)29:0.0000026925)23:0.0000026925)75:0.0056343871,EPI2184776|HA|A/Catalonia/NSVH100809538/2018|EPI_ISL_15083894|A_/_H1N1:0.0000026345)100:2.0702652643)68:0.0605121658)50:0.0018646592)46:0.0019136515,(EPI1369190|HA|A/Nakhonsithammarat/336/2018|EPI_ISL_341170|A_/_H3N2:0.0076494714,EPI1614485|HA|A/South_Australia/82/2018|EPI_ISL_396573|A_/_H3N2:0.0057097847)22:0.0000026925)12:0.0000026925,(((EPI1482887|HA|A/Taiwan/81051/2018|EPI_ISL_362647|A_/_H3N2:0.0038278020,EPI1315673|HA|A/Zaragoza/1528894/2018|EPI_ISL_330683|A_/_H3N2:0.0076927576)96:0.0038185882,(EPI1482879|HA|A/Taiwan/79795/2018|EPI_ISL_362646|A_/_H3N2:0.0038065516,EPI1370427|HA|A/Chungbuk/1917/2018|EPI_ISL_341448|A_/_H3N2:0.0076394131)82:0.0057457382)51:0.0000020714,EPI1351533|HA|A/ISHIKAWA/78/2018|EPI_ISL_336967|A_/_H3N2:0.0057307312)30:0.0000026925)25:0.0000026925,EPI1351513|HA|A/HIROSHIMA/73/2018|EPI_ISL_336962|A_/_H3N2:0.0057403103)59:0.0019029016,EPI1210250|HA|A/Kazakhstan/103/2018|EPI_ISL_305845|A_/_H3N2:0.0077429615)22:0.0000026925,(EPI1241657|HA|A/NIIGATA-C/1/2018|EPI_ISL_311962|A_/_H3N2:0.0076676046,EPI1275634|HA|A/Swansea/0699/2018|EPI_ISL_321581|A_/_H3N2:0.0115292246)30:0.0000026925)65:0.0026493395,((EPI1335535|HA|A/YOKOHAMA/112/2018|EPI_ISL_333926|A_/_H3N2:0.0000026925,EPI1550154|HA|A/Malaysia/RP4242/2018|EPI_ISL_378558|A_/_H3N2:0.0115785708)80:0.0039211799,EPI1337103|HA|A/Sundsvall/1/2018|EPI_ISL_334183|A_/_H3N2:0.0260195684)79:0.0097332977)82:0.0045584755,EPI1804615|HA|A/Myanmar/18M090/2018|EPI_ISL_536403|A_/_H3N2:0.0081608636)80:0.0037429530,EPI1614141|HA|A/South_Australia/22/2018|EPI_ISL_396530|A_/_H3N2:0.0172231482)92:0.0062609140,((((EPI1310465|HA|A/Abu_Dhabi/014/2018|EPI_ISL_329832|A_/_H3N2:0.0057614170,EPI1173524|HA|A/England/80220360/2018|EPI_ISL_298073|A_/_H3N2:0.0076971616)90:0.0018767818,(EPI1224383|HA|A/KANAGAWA/IC1725/2018|EPI_ISL_308930|A_/_H3N2:0.0096120928,EPI1392930|HA|A/England/754/2018|EPI_ISL_347143|A_/_H3N2:0.0076645429)89:0.0038012941)51:0.0000026925,((EPI1315822|HA|A/Philippines/44/2018|EPI_ISL_330736|A_/_H3N2:0.0057557470,(EPI1272579|HA|A/Singapore/GP0454/2018|EPI_ISL_320960|A_/_H3N2:0.0096999058,EPI1311774|HA|A/Sydney/22/2018|EPI_ISL_330026|A_/_H3N2:0.0077782456)69:0.0037958892)54:0.0000026925,((EPI1336988|HA|A/Abu_Dhabi/134/2018|EPI_ISL_334156|A_/_H3N2:0.0057454719,EPI1613693|HA|A/South_Australia/117/2018|EPI_ISL_396474|A_/_H3N2:0.0057355269)20:0.0000026925,(EPI1358998|HA|A/Philippines/48/2018|EPI_ISL_339064|A_/_H3N2:0.0057572552,EPI1328675|HA|A/Christchurch/522/2018|EPI_ISL_332736|A_/_H3N2:0.0057351309)29:0.0000026925)20:0.0000026925)75:0.0019138759)97:0.0019101507,EPI1613517|HA|A/Perth/4/2018|EPI_ISL_396452|A_/_H3N2:0.0095942716)87:0.0000026970)61:0.0019127887,EPI1188953|HA|A/England/80420847/2018|EPI_ISL_301474|A_/_H3N2:0.0076585953)90:0.0019205168,((((((EPI1478195|HA|A/GUNMA/114/2018|EPI_ISL_361864|A_/_H3N2:0.0057736670,EPI1594423|HA|A/Singapore/GP2364/2018|EPI_ISL_391579|A_/_H3N2:0.0097518674)70:0.0000026925,EPI1631894|HA|A/Newcastle/82/2018|EPI_ISL_398938|A_/_H3N2:0.0058428674)99:0.0019224994,EPI1316661|HA|A/Maldives/1001/2018|EPI_ISL_330906|A_/_H3N2:0.0038355308)70:0.0000026925,EPI1796769|HA|A/England/190161213/2018|EPI_ISL_513957|A_/_H3N2:0.0077048370)96:0.0019247703,EPI1385788|HA|A/Vietnam/Lisn18022/2018|EPI_ISL_346042|A_/_H3N2:0.0058047907)97:0.0019019719,EPI1203826|HA|A/England/80900492/2018|EPI_ISL_304782|A_/_H3N2:0.0096502035)68:0.0000026925)95:0.0019154424,EPI1319766|HA|A/Oman/3329/2018|EPI_ISL_331355|A_/_H3N2:0.0077153630)6:0.0000026925,(EPI2153930|HA|A/Saudi_Arabia/VRG-55/2018|EPI_ISL_14835629|A_/_H3N2:0.0077035200,EPI1189308|HA|A/England/80520648/2018|EPI_ISL_301542|A_/_H3N2:0.0057780715)25:0.0000026925)4:0.0000026925,((EPI1335515|HA|A/KANAGAWA/85/2018|EPI_ISL_333921|A_/_H3N2:0.0072992439,EPI1243337|HA|A/Ankara/110/2018|EPI_ISL_312306|A_/_H3N2:0.0073509342)54:0.0008614186,EPI2047663|HA|A/Myanmar/18M66/2018|EPI_ISL_12951803|A_/_H3N2:0.0057894011)11:0.0000026925)11:0.0000026925,(EPI1343237|HA|A/Vietnam/190/2018|EPI_ISL_335668|A_/_H3N2:0.0076922210,EPI1614597|HA|A/Sydney/1000/2018|EPI_ISL_396587|A_/_H3N2:0.0057859625)18:0.0000026925)76:0.0019178994,(EPI1319800|HA|A/Saudi_Arabia/604532786/2018|EPI_ISL_331372|A_/_H3N2:0.0057628297,EPI1337095|HA|A/Linkoping/58/2018|EPI_ISL_334182|A_/_H3N2:0.0096805212)60:0.0000026925);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_clustered/H3N2/trees/H3N2_2018.treefile -m "LG+G4{0.654692}" --length 578
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2018_aligned.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2018_aligned.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Nov 20 18:47:08 2025
+Total CPU time used: 1342.957066 seconds (0h:22m:22s)
+Total wall-clock time used: 86.46668218 seconds (0h:1m:26s)
+
