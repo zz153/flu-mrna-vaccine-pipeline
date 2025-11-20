@@ -1,0 +1,22 @@
+name: flu-vaccine-pipeline
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - python=3.11
+  - mafft
+  - iqtree
+  - cd-hit
+  - seqkit
+  - biopython
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scipy
+  - tqdm
+  - pip
+  - pip:
+    - logomaker
