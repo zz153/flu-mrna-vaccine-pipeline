@@ -1,0 +1,342 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_clustered/H1N1/alignments/H1N1_2009_aligned.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 299991
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 57 sequences with 567 amino-acid sites
+Number of constant sites: 352 (= 62.0811% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 352 (= 62.0811% of all sites)
+Number of parsimony informative sites: 135
+Number of distinct site patterns: 222
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.6944
+
+ Category  Relative_rate  Proportion
+  1         0.0730         0.2500
+  2         0.3609         0.2500
+  3         0.9228         0.2500
+  4         2.6433         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4058.5373 (s.e. 140.9457)
+Unconstrained log-likelihood (without tree): -2531.0908
+Number of free parameters (#branches + #model parameters): 112
+Akaike information criterion (AIC) score: 8341.0746
+Corrected Akaike information criterion (AICc) score: 8396.8279
+Bayesian information criterion (BIC) score: 8827.1948
+
+Total tree length (sum of branch lengths): 0.6874
+Sum of internal branch lengths: 0.3128 (45.5006% of tree length)
+
+WARNING: 49 near-zero internal branches (<0.0018) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI230121|HA|A/NIIGATA/1459/2009|EPI_ISL_65887|A_/_H1N1' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--EPI230121|HA|A/NIIGATA/1459/2009|EPI_ISL_65887|A_/_H1N1
+|
+|                                      +--EPI190831|HA|A/Taiwan/T1773/2009|EPI_ISL_33944|A_/_H1N1
+|                                   +**| (32)
+|                                   |  +--EPI213910|HA|A/Singapore/TLL53/2009|EPI_ISL_61492|A_/_H1N1
+|                                +**| (59)
+|                                |  +--EPI213909|HA|A/Singapore/TLL52/2009|EPI_ISL_61491|A_/_H1N1
+|                             +**| (1)
+|                             |  |     +--EPI232996|HA|A/SAPPORO/464/2009|EPI_ISL_66729|A_/_H1N1
+|                             |  |  +**| (64)
+|                             |  |  |  +--EPI255807|HA|A/Thailand/THB0405/2009|EPI_ISL_74415|A_/_H1N1
+|                             |  +**| (1)
+|                             |     |        +--EPI254654|HA|A/Daejeon/1871/2009|EPI_ISL_74102|A_/_H1N1
+|                             |     |     +**| (14)
+|                             |     |     |  +--EPI216866|HA|A/Idaho/08/2009|EPI_ISL_62246|A_/_H1N1
+|                             |     |  +**| (7)
+|                             |     |  |  +--EPI239613|HA|A/Minnesota/18/2009|EPI_ISL_68751|A_/_H1N1
+|                             |     +**| (35)
+|                             |        +--EPI233074|HA|A/VICTORIA/2081/2009|EPI_ISL_66775|A_/_H1N1
+|                          +**| (2)
+|                          |  |        +--EPI233003|HA|A/YAMAGUCHI/184/2009|EPI_ISL_66736|A_/_H1N1
+|                          |  |     +**| (89)
+|                          |  |     |  +--EPI217020|HA|A/Nevada/15/2009|EPI_ISL_62284|A_/_H1N1
+|                          |  |  +**| (68)
+|                          |  |  |  +--EPI2474217|HA|A/Tahiti/2032/2009|EPI_ISL_17264983|A_/_H1N1
+|                          |  +**| (38)
+|                          |     +--EPI323711|HA|A/England/H093780041/2009|EPI_ISL_93111|A_/_H1N1
+|                       +**| (2)
+|                       |  |           +--EPI240592|HA|A/HIROSHIMA-C/395/2009|EPI_ISL_69056|A_/_H1N1
+|                       |  |        +**| (12)
+|                       |  |        |  +--EPI245079|HA|A/Australia/58/2009|EPI_ISL_70708|A_/_H1N1
+|                       |  |     +**| (8)
+|                       |  |     |  +--EPI243737|HA|A/Montana/23/2009|EPI_ISL_70263|A_/_H1N1
+|                       |  |  +**| (0)
+|                       |  |  |  |  +--EPI241772|HA|A/TOCHIGI/356/2009|EPI_ISL_69740|A_/_H1N1
+|                       |  |  |  +**| (6)
+|                       |  |  |     |        +--EPI297101|HA|A/Sendai/TU396/2009|EPI_ISL_84684|A_/_H1N1
+|                       |  |  |     |     +**| (10)
+|                       |  |  |     |     |  +--EPI392087|HA|A/Scotland/EastKilbride_412770/2009|EPI_ISL_127996|A_/_H1N1
+|                       |  |  |     |  +**| (8)
+|                       |  |  |     |  |  |  +--EPI392060|HA|A/Scotland/Glasgow_412286/2009|EPI_ISL_127992|A_/_H1N1
+|                       |  |  |     |  |  +--| (88)
+|                       |  |  |     |  |     +--EPI392129|HA|A/Scotland/Glasgow_413886/2009|EPI_ISL_128004|A_/_H1N1
+|                       |  |  |     +**| (6)
+|                       |  |  |        +--EPI211577|HA|A/California/33/2009|EPI_ISL_60852|A_/_H1N1
+|                       |  +**| (4)
+|                       |     |  +--EPI230191|HA|A/Stockholm/107/2009|EPI_ISL_65945|A_/_H1N1
+|                       |     +**| (90)
+|                       |        +--EPI386933|HA|A/Scotland/Aberdeen_8/2009|EPI_ISL_125760|A_/_H1N1
+|                    +**| (2)
+|                    |  |  +--EPI243726|HA|A/Iowa/14/2009|EPI_ISL_70261|A_/_H1N1
+|                    |  +**| (77)
+|                    |     +--EPI258550|HA|A/California/VRDL89/2009|EPI_ISL_75124|A_/_H1N1
+|                 +**| (2)
+|                 |  |     +--EPI248540|HA|A/SHIZUOKA-C/172/2009|EPI_ISL_71613|A_/_H1N1
+|                 |  |  +**| (13)
+|                 |  |  |  |  +--EPI210034|HA|A/FUKUOKA-C/2/2009|EPI_ISL_60011|A_/_H1N1
+|                 |  |  |  +--| (94)
+|                 |  |  |     |                                                     +--EPI244706|HA|A/Sweden/1/2009|EPI_ISL_70643|A_/_H1N1
+|                 |  |  |     +-----------------------------------------------------| (100)
+|                 |  |  |                                                           +--EPI245697|HA|A/Stockholm/1/2009|EPI_ISL_70809|A_/_H1N1
+|                 |  +**| (36)
+|                 |     |  +--EPI212534|HA|A/Nagasaki/HA-14/2009|EPI_ISL_61244|A_/_H1N1
+|                 |     +**| (6)
+|                 |        |     +--EPI387030|HA|A/Scotland/Perth_09V501016/2009|EPI_ISL_125774|A_/_H1N1
+|                 |        |  +**| (88)
+|                 |        |  |  +--EPI336231|HA|A/England/918/2009|EPI_ISL_96255|A_/_H1N1
+|                 |        +**| (15)
+|                 |           +--EPI211398|HA|A/Alaska/30/2009|EPI_ISL_60785|A_/_H1N1
+|              +**| (22)
+|              |  |              +--EPI277593|HA|A/Amman/WR0060N/2009|EPI_ISL_78800|A_/_H1N1
+|              |  |           +**| (23)
+|              |  |           |  +--EPI277697|HA|A/California/WR1315P/2009|EPI_ISL_78813|A_/_H1N1
+|              |  |        +--| (99)
+|              |  |        |  |  +--EPI277641|HA|A/Bishkek/WR0881T/2009|EPI_ISL_78806|A_/_H1N1
+|              |  |        |  +**| (19)
+|              |  |        |     +--EPI277833|HA|A/Taipei/WR1472T/2009|EPI_ISL_78830|A_/_H1N1
+|              |  |     +**| (71)
+|              |  |     |  +--EPI277801|HA|A/Ankara/WR1429T/2009|EPI_ISL_78826|A_/_H1N1
+|              |  |  +--| (96)
+|              |  |  |  +**EPI277609|HA|A/Taipei/WR0193T/2009|EPI_ISL_78802|A_/_H1N1
+|              |  +**| (9)
+|              |     |  +--EPI297094|HA|A/Sendai/TU385/2009|EPI_ISL_84677|A_/_H1N1
+|              |     +**| (32)
+|              |        |     +--EPI297133|HA|A/Sendai/TU447/2009|EPI_ISL_84716|A_/_H1N1
+|              |        |  +**| (14)
+|              |        |  |  +--EPI297194|HA|A/Sendai/TU620/2009|EPI_ISL_84777|A_/_H1N1
+|              |        +**| (13)
+|              |           |  +--EPI297181|HA|A/Sendai/TU589/2009|EPI_ISL_84764|A_/_H1N1
+|              |           +**| (23)
+|              |              +--EPI274977|HA|A/Guam/NHRC0027/2009|EPI_ISL_77875|A_/_H1N1
+|           +**| (4)
+|           |  +--EPI349526|HA|A/Taiwan/11706/2009|EPI_ISL_101896|A_/_H1N1
+|        +**| (2)
+|        |  +--EPI263419|HA|A/Singapore/GP3441/2009|EPI_ISL_75728|A_/_H1N1
+|     +**| (0)
+|     |  |     +--EPI263429|HA|A/Singapore/GP4381/2009|EPI_ISL_75733|A_/_H1N1
+|     |  |  +**| (12)
+|     |  |  |  +--EPI386893|HA|A/Scotland/Aberdeen_2/2009|EPI_ISL_125732|A_/_H1N1
+|     |  +**| (2)
+|     |     |     +--EPI297185|HA|A/Sendai/TU587/2009|EPI_ISL_84768|A_/_H1N1
+|     |     |  +**| (58)
+|     |     |  |  +--EPI307264|HA|A/Taiwan/7949/2009|EPI_ISL_87441|A_/_H1N1
+|     |     +**| (17)
+|     |        +--EPI231372|HA|A/Idaho/13/2009|EPI_ISL_66276|A_/_H1N1
+|  +**| (3)
+|  |  |  +--EPI263435|HA|A/Singapore/GP4697/2009|EPI_ISL_75736|A_/_H1N1
+|  |  +**| (10)
+|  |     +--EPI336133|HA|A/England/909/2009|EPI_ISL_96157|A_/_H1N1
++**| (45)
+|  +--EPI349527|HA|A/Taiwan/1017/2009|EPI_ISL_101897|A_/_H1N1
+|
++--EPI297106|HA|A/Sendai/TU402/2009|EPI_ISL_84689|A_/_H1N1
+
+Tree in newick format:
+
+(EPI230121|HA|A/NIIGATA/1459/2009|EPI_ISL_65887|A_/_H1N1:0.0035011424,(((((((((((((EPI190831|HA|A/Taiwan/T1773/2009|EPI_ISL_33944|A_/_H1N1:0.0052597040,EPI213910|HA|A/Singapore/TLL53/2009|EPI_ISL_61492|A_/_H1N1:0.0070076163)32:0.0000023237,EPI213909|HA|A/Singapore/TLL52/2009|EPI_ISL_61491|A_/_H1N1:0.0070344470)59:0.0017467338,((EPI232996|HA|A/SAPPORO/464/2009|EPI_ISL_66729|A_/_H1N1:0.0052603656,EPI255807|HA|A/Thailand/THB0405/2009|EPI_ISL_74415|A_/_H1N1:0.0052538413)64:0.0017635347,(((EPI254654|HA|A/Daejeon/1871/2009|EPI_ISL_74102|A_/_H1N1:0.0052540648,EPI216866|HA|A/Idaho/08/2009|EPI_ISL_62246|A_/_H1N1:0.0052499405)14:0.0000027192,EPI239613|HA|A/Minnesota/18/2009|EPI_ISL_68751|A_/_H1N1:0.0070224184)7:0.0000027137,EPI233074|HA|A/VICTORIA/2081/2009|EPI_ISL_66775|A_/_H1N1:0.0052621353)35:0.0017500937)1:0.0000026514)1:0.0000027056,(((EPI233003|HA|A/YAMAGUCHI/184/2009|EPI_ISL_66736|A_/_H1N1:0.0034892502,EPI217020|HA|A/Nevada/15/2009|EPI_ISL_62284|A_/_H1N1:0.0070368969)89:0.0017351766,EPI2474217|HA|A/Tahiti/2032/2009|EPI_ISL_17264983|A_/_H1N1:0.0052535581)68:0.0017498645,EPI323711|HA|A/England/H093780041/2009|EPI_ISL_93111|A_/_H1N1:0.0070370267)38:0.0000026566)2:0.0000010000,((((EPI240592|HA|A/HIROSHIMA-C/395/2009|EPI_ISL_69056|A_/_H1N1:0.0070180420,EPI245079|HA|A/Australia/58/2009|EPI_ISL_70708|A_/_H1N1:0.0070105484)12:0.0000010000,EPI243737|HA|A/Montana/23/2009|EPI_ISL_70263|A_/_H1N1:0.0070406242)8:0.0000010000,(EPI241772|HA|A/TOCHIGI/356/2009|EPI_ISL_69740|A_/_H1N1:0.0070533499,(((EPI297101|HA|A/Sendai/TU396/2009|EPI_ISL_84684|A_/_H1N1:0.0088127956,EPI392087|HA|A/Scotland/EastKilbride_412770/2009|EPI_ISL_127996|A_/_H1N1:0.0070452319)10:0.0000010000,(EPI392060|HA|A/Scotland/Glasgow_412286/2009|EPI_ISL_127992|A_/_H1N1:0.0124019717,EPI392129|HA|A/Scotland/Glasgow_413886/2009|EPI_ISL_128004|A_/_H1N1:0.0124802978)88:0.0017690813)8:0.0000010000,EPI211577|HA|A/California/33/2009|EPI_ISL_60852|A_/_H1N1:0.0070262415)6:0.0000010000)6:0.0000010000)0:0.0000010000,(EPI230191|HA|A/Stockholm/107/2009|EPI_ISL_65945|A_/_H1N1:0.0052777115,EPI386933|HA|A/Scotland/Aberdeen_8/2009|EPI_ISL_125760|A_/_H1N1:0.0052681237)90:0.0017527097)4:0.0000010000)2:0.0000010000,(EPI243726|HA|A/Iowa/14/2009|EPI_ISL_70261|A_/_H1N1:0.0052676147,EPI258550|HA|A/California/VRDL89/2009|EPI_ISL_75124|A_/_H1N1:0.0052508130)77:0.0017523606)2:0.0000026990,((EPI248540|HA|A/SHIZUOKA-C/172/2009|EPI_ISL_71613|A_/_H1N1:0.0069896264,(EPI210034|HA|A/FUKUOKA-C/2/2009|EPI_ISL_60011|A_/_H1N1:0.0032408409,(EPI244706|HA|A/Sweden/1/2009|EPI_ISL_70643|A_/_H1N1:0.0194522063,EPI245697|HA|A/Stockholm/1/2009|EPI_ISL_70809|A_/_H1N1:0.0159949464)100:0.2755649769)94:0.0055739893)13:0.0000027077,(EPI212534|HA|A/Nagasaki/HA-14/2009|EPI_ISL_61244|A_/_H1N1:0.0053424042,((EPI387030|HA|A/Scotland/Perth_09V501016/2009|EPI_ISL_125774|A_/_H1N1:0.0105501873,EPI336231|HA|A/England/918/2009|EPI_ISL_96255|A_/_H1N1:0.0034915313)88:0.0017425399,EPI211398|HA|A/Alaska/30/2009|EPI_ISL_60785|A_/_H1N1:0.0070079337)15:0.0000010000)6:0.0000024878)36:0.0017454031)2:0.0000010000,(((((EPI277593|HA|A/Amman/WR0060N/2009|EPI_ISL_78800|A_/_H1N1:0.0052611697,EPI277697|HA|A/California/WR1315P/2009|EPI_ISL_78813|A_/_H1N1:0.0052724720)23:0.0000022927,(EPI277641|HA|A/Bishkek/WR0881T/2009|EPI_ISL_78806|A_/_H1N1:0.0053057148,EPI277833|HA|A/Taipei/WR1472T/2009|EPI_ISL_78830|A_/_H1N1:0.0052911363)19:0.0000010000)99:0.0053010742,EPI277801|HA|A/Ankara/WR1429T/2009|EPI_ISL_78826|A_/_H1N1:0.0088258589)71:0.0000029601,EPI277609|HA|A/Taipei/WR0193T/2009|EPI_ISL_78802|A_/_H1N1:0.0017548863)96:0.0035142938,(EPI297094|HA|A/Sendai/TU385/2009|EPI_ISL_84677|A_/_H1N1:0.0052589652,((EPI297133|HA|A/Sendai/TU447/2009|EPI_ISL_84716|A_/_H1N1:0.0070345061,EPI297194|HA|A/Sendai/TU620/2009|EPI_ISL_84777|A_/_H1N1:0.0052695203)14:0.0000010000,(EPI297181|HA|A/Sendai/TU589/2009|EPI_ISL_84764|A_/_H1N1:0.0070280014,EPI274977|HA|A/Guam/NHRC0027/2009|EPI_ISL_77875|A_/_H1N1:0.0052523119)23:0.0000026965)13:0.0000010000)32:0.0017490856)9:0.0000026965)22:0.0017462374,EPI349526|HA|A/Taiwan/11706/2009|EPI_ISL_101896|A_/_H1N1:0.0052568468)4:0.0000027033,EPI263419|HA|A/Singapore/GP3441/2009|EPI_ISL_75728|A_/_H1N1:0.0053159654)2:0.0000010000,((EPI263429|HA|A/Singapore/GP4381/2009|EPI_ISL_75733|A_/_H1N1:0.0052677435,EPI386893|HA|A/Scotland/Aberdeen_2/2009|EPI_ISL_125732|A_/_H1N1:0.0052518103)12:0.0000010000,((EPI297185|HA|A/Sendai/TU587/2009|EPI_ISL_84768|A_/_H1N1:0.0089412891,EPI307264|HA|A/Taiwan/7949/2009|EPI_ISL_87441|A_/_H1N1:0.0052513156)58:0.0000010000,EPI231372|HA|A/Idaho/13/2009|EPI_ISL_66276|A_/_H1N1:0.0070405086)17:0.0000010000)2:0.0000010000)0:0.0000010000,(EPI263435|HA|A/Singapore/GP4697/2009|EPI_ISL_75736|A_/_H1N1:0.0052409486,EPI336133|HA|A/England/909/2009|EPI_ISL_96157|A_/_H1N1:0.0052519712)10:0.0000010000)3:0.0000010000,EPI349527|HA|A/Taiwan/1017/2009|EPI_ISL_101897|A_/_H1N1:0.0052610068)45:0.0017618691,EPI297106|HA|A/Sendai/TU402/2009|EPI_ISL_84689|A_/_H1N1:0.0070591534);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -4060.485857
+Robinson-Foulds distance between ML tree and consensus tree: 69
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--EPI230121|HA|A/NIIGATA/1459/2009|EPI_ISL_65887|A_/_H1N1
+|
+|                    +--EPI190831|HA|A/Taiwan/T1773/2009|EPI_ISL_33944|A_/_H1N1
+|                 +--| (59)
+|                 |  |  +--EPI213909|HA|A/Singapore/TLL52/2009|EPI_ISL_61491|A_/_H1N1
+|                 |  +--| (61)
+|                 |     +--EPI213910|HA|A/Singapore/TLL53/2009|EPI_ISL_61492|A_/_H1N1
+|              +--| (12)
+|              |  |        +--EPI248540|HA|A/SHIZUOKA-C/172/2009|EPI_ISL_71613|A_/_H1N1
+|              |  |     +--| (39)
+|              |  |     |  +--EPI211398|HA|A/Alaska/30/2009|EPI_ISL_60785|A_/_H1N1
+|              |  |  +--| (26)
+|              |  |  |  +--EPI212534|HA|A/Nagasaki/HA-14/2009|EPI_ISL_61244|A_/_H1N1
+|              |  +--| (22)
+|              |     |     +--EPI387030|HA|A/Scotland/Perth_09V501016/2009|EPI_ISL_125774|A_/_H1N1
+|              |     |  +--| (88)
+|              |     |  |  +--EPI336231|HA|A/England/918/2009|EPI_ISL_96255|A_/_H1N1
+|              |     +--| (31)
+|              |        +--EPI243737|HA|A/Montana/23/2009|EPI_ISL_70263|A_/_H1N1
+|           +--| (4)
+|           |  +--EPI254654|HA|A/Daejeon/1871/2009|EPI_ISL_74102|A_/_H1N1
+|        +--| (6)
+|        |  |              +--EPI232996|HA|A/SAPPORO/464/2009|EPI_ISL_66729|A_/_H1N1
+|        |  |           +--| (64)
+|        |  |           |  +--EPI255807|HA|A/Thailand/THB0405/2009|EPI_ISL_74415|A_/_H1N1
+|        |  |        +--| (22)
+|        |  |        |  |  +--EPI233074|HA|A/VICTORIA/2081/2009|EPI_ISL_66775|A_/_H1N1
+|        |  |        |  +--| (29)
+|        |  |        |     +--EPI245079|HA|A/Australia/58/2009|EPI_ISL_70708|A_/_H1N1
+|        |  |     +--| (7)
+|        |  |     |  +--EPI240592|HA|A/HIROSHIMA-C/395/2009|EPI_ISL_69056|A_/_H1N1
+|        |  |  +--| (4)
+|        |  |  |  +--EPI392087|HA|A/Scotland/EastKilbride_412770/2009|EPI_ISL_127996|A_/_H1N1
+|        |  +--| (1)
+|        |     |     +--EPI241772|HA|A/TOCHIGI/356/2009|EPI_ISL_69740|A_/_H1N1
+|        |     |  +--| (13)
+|        |     |  |  |  +--EPI230191|HA|A/Stockholm/107/2009|EPI_ISL_65945|A_/_H1N1
+|        |     |  |  +--| (90)
+|        |     |  |     +--EPI386933|HA|A/Scotland/Aberdeen_8/2009|EPI_ISL_125760|A_/_H1N1
+|        |     +--| (13)
+|        |        |     +--EPI297101|HA|A/Sendai/TU396/2009|EPI_ISL_84684|A_/_H1N1
+|        |        |  +--| (24)
+|        |        |  |  |  +--EPI392060|HA|A/Scotland/Glasgow_412286/2009|EPI_ISL_127992|A_/_H1N1
+|        |        |  |  +--| (88)
+|        |        |  |     +--EPI392129|HA|A/Scotland/Glasgow_413886/2009|EPI_ISL_128004|A_/_H1N1
+|        |        +--| (7)
+|        |           +--EPI211577|HA|A/California/33/2009|EPI_ISL_60852|A_/_H1N1
+|     +--| (3)
+|     |  |              +--EPI233003|HA|A/YAMAGUCHI/184/2009|EPI_ISL_66736|A_/_H1N1
+|     |  |           +--| (89)
+|     |  |           |  +--EPI217020|HA|A/Nevada/15/2009|EPI_ISL_62284|A_/_H1N1
+|     |  |        +--| (68)
+|     |  |        |  +--EPI2474217|HA|A/Tahiti/2032/2009|EPI_ISL_17264983|A_/_H1N1
+|     |  |     +--| (38)
+|     |  |     |  +--EPI323711|HA|A/England/H093780041/2009|EPI_ISL_93111|A_/_H1N1
+|     |  |  +--| (12)
+|     |  |  |  |           +--EPI297094|HA|A/Sendai/TU385/2009|EPI_ISL_84677|A_/_H1N1
+|     |  |  |  |        +--| (23)
+|     |  |  |  |        |  +--EPI274977|HA|A/Guam/NHRC0027/2009|EPI_ISL_77875|A_/_H1N1
+|     |  |  |  |     +--| (8)
+|     |  |  |  |     |  |  +--EPI297181|HA|A/Sendai/TU589/2009|EPI_ISL_84764|A_/_H1N1
+|     |  |  |  |     |  +--| (20)
+|     |  |  |  |     |     +--EPI297194|HA|A/Sendai/TU620/2009|EPI_ISL_84777|A_/_H1N1
+|     |  |  |  |  +--| (32)
+|     |  |  |  |  |  +--EPI297133|HA|A/Sendai/TU447/2009|EPI_ISL_84716|A_/_H1N1
+|     |  |  |  +--| (22)
+|     |  |  |     |     +--EPI210034|HA|A/FUKUOKA-C/2/2009|EPI_ISL_60011|A_/_H1N1
+|     |  |  |     |  +--| (94)
+|     |  |  |     |  |  |                                                    +--EPI244706|HA|A/Sweden/1/2009|EPI_ISL_70643|A_/_H1N1
+|     |  |  |     |  |  +----------------------------------------------------| (100)
+|     |  |  |     |  |                                                       +--EPI245697|HA|A/Stockholm/1/2009|EPI_ISL_70809|A_/_H1N1
+|     |  |  |     +--| (41)
+|     |  |  |        +--EPI216866|HA|A/Idaho/08/2009|EPI_ISL_62246|A_/_H1N1
+|     |  +--| (12)
+|     |  |  |  +--EPI243726|HA|A/Iowa/14/2009|EPI_ISL_70261|A_/_H1N1
+|     |  |  +--| (77)
+|     |  |     +--EPI258550|HA|A/California/VRDL89/2009|EPI_ISL_75124|A_/_H1N1
+|     |  |
+|     |  |           +--EPI277593|HA|A/Amman/WR0060N/2009|EPI_ISL_78800|A_/_H1N1
+|     |  |        +--| (25)
+|     |  |        |  +--EPI277833|HA|A/Taipei/WR1472T/2009|EPI_ISL_78830|A_/_H1N1
+|     |  |     +--| (99)
+|     |  |     |  |  +--EPI277641|HA|A/Bishkek/WR0881T/2009|EPI_ISL_78806|A_/_H1N1
+|     |  |     |  +--| (37)
+|     |  |     |     +--EPI277697|HA|A/California/WR1315P/2009|EPI_ISL_78813|A_/_H1N1
+|     |  |  +--| (71)
+|     |  |  |  +--EPI277801|HA|A/Ankara/WR1429T/2009|EPI_ISL_78826|A_/_H1N1
+|     |  +--| (96)
+|     |     +--EPI277609|HA|A/Taipei/WR0193T/2009|EPI_ISL_78802|A_/_H1N1
+|  +--| (22)
+|  |  +--EPI239613|HA|A/Minnesota/18/2009|EPI_ISL_68751|A_/_H1N1
++--| (45)
+|  |        +--EPI349527|HA|A/Taiwan/1017/2009|EPI_ISL_101897|A_/_H1N1
+|  |     +--| (18)
+|  |     |  +--EPI263419|HA|A/Singapore/GP3441/2009|EPI_ISL_75728|A_/_H1N1
+|  |  +--| (3)
+|  |  |  +--EPI349526|HA|A/Taiwan/11706/2009|EPI_ISL_101896|A_/_H1N1
+|  +--| (16)
+|     |        +--EPI263429|HA|A/Singapore/GP4381/2009|EPI_ISL_75733|A_/_H1N1
+|     |     +--| (21)
+|     |     |  +--EPI336133|HA|A/England/909/2009|EPI_ISL_96157|A_/_H1N1
+|     |  +--| (5)
+|     |  |  |     +--EPI297185|HA|A/Sendai/TU587/2009|EPI_ISL_84768|A_/_H1N1
+|     |  |  |  +--| (58)
+|     |  |  |  |  +--EPI307264|HA|A/Taiwan/7949/2009|EPI_ISL_87441|A_/_H1N1
+|     |  |  +--| (17)
+|     |  |     +--EPI231372|HA|A/Idaho/13/2009|EPI_ISL_66276|A_/_H1N1
+|     +--| (2)
+|        |  +--EPI263435|HA|A/Singapore/GP4697/2009|EPI_ISL_75736|A_/_H1N1
+|        +--| (18)
+|           +--EPI386893|HA|A/Scotland/Aberdeen_2/2009|EPI_ISL_125732|A_/_H1N1
+|
++--EPI297106|HA|A/Sendai/TU402/2009|EPI_ISL_84689|A_/_H1N1
+
+
+Consensus tree in newick format: 
+
+(EPI230121|HA|A/NIIGATA/1459/2009|EPI_ISL_65887|A_/_H1N1:0.0035071997,(((((((EPI190831|HA|A/Taiwan/T1773/2009|EPI_ISL_33944|A_/_H1N1:0.0052673816,(EPI213909|HA|A/Singapore/TLL52/2009|EPI_ISL_61491|A_/_H1N1:0.0070447460,EPI213910|HA|A/Singapore/TLL53/2009|EPI_ISL_61492|A_/_H1N1:0.0070178454)61:0.0000025259)59:0.0017491461,(((EPI248540|HA|A/SHIZUOKA-C/172/2009|EPI_ISL_71613|A_/_H1N1:0.0069993764,EPI211398|HA|A/Alaska/30/2009|EPI_ISL_60785|A_/_H1N1:0.0070183175)39:0.0000025259,EPI212534|HA|A/Nagasaki/HA-14/2009|EPI_ISL_61244|A_/_H1N1:0.0053502534)26:0.0000023911,((EPI387030|HA|A/Scotland/Perth_09V501016/2009|EPI_ISL_125774|A_/_H1N1:0.0105356243,EPI336231|HA|A/England/918/2009|EPI_ISL_96255|A_/_H1N1:0.0034942877)88:0.0000022789,EPI243737|HA|A/Montana/23/2009|EPI_ISL_70263|A_/_H1N1:0.0070427367)31:0.0017460495)22:0.0017477825)12:0.0000025259,EPI254654|HA|A/Daejeon/1871/2009|EPI_ISL_74102|A_/_H1N1:0.0070531763)4:0.0000025259,(((((EPI232996|HA|A/SAPPORO/464/2009|EPI_ISL_66729|A_/_H1N1:0.0070037800,EPI255807|HA|A/Thailand/THB0405/2009|EPI_ISL_74415|A_/_H1N1:0.0035272125)64:0.0017630695,(EPI233074|HA|A/VICTORIA/2081/2009|EPI_ISL_66775|A_/_H1N1:0.0053132886,EPI245079|HA|A/Australia/58/2009|EPI_ISL_70708|A_/_H1N1:0.0052809714)29:0.0000026621)22:0.0017266346,EPI240592|HA|A/HIROSHIMA-C/395/2009|EPI_ISL_69056|A_/_H1N1:0.0070292208)7:0.0000025259,EPI392087|HA|A/Scotland/EastKilbride_412770/2009|EPI_ISL_127996|A_/_H1N1:0.0070564410)4:0.0000025259,((EPI241772|HA|A/TOCHIGI/356/2009|EPI_ISL_69740|A_/_H1N1:0.0070644455,(EPI230191|HA|A/Stockholm/107/2009|EPI_ISL_65945|A_/_H1N1:0.0052860271,EPI386933|HA|A/Scotland/Aberdeen_8/2009|EPI_ISL_125760|A_/_H1N1:0.0052764588)90:0.0017544343)13:0.0000025259,((EPI297101|HA|A/Sendai/TU396/2009|EPI_ISL_84684|A_/_H1N1:0.0088266717,(EPI392060|HA|A/Scotland/Glasgow_412286/2009|EPI_ISL_127992|A_/_H1N1:0.0124203792,EPI392129|HA|A/Scotland/Glasgow_413886/2009|EPI_ISL_128004|A_/_H1N1:0.0124989504)88:0.0017710105)24:0.0000025259,EPI211577|HA|A/California/33/2009|EPI_ISL_60852|A_/_H1N1:0.0070373416)7:0.0000025259)13:0.0000025259)1:0.0000025259)6:0.0000025259,(((((EPI233003|HA|A/YAMAGUCHI/184/2009|EPI_ISL_66736|A_/_H1N1:0.0034945720,EPI217020|HA|A/Nevada/15/2009|EPI_ISL_62284|A_/_H1N1:0.0070476921)89:0.0017380554,EPI2474217|HA|A/Tahiti/2032/2009|EPI_ISL_17264983|A_/_H1N1:0.0052615578)68:0.0017526130,EPI323711|HA|A/England/H093780041/2009|EPI_ISL_93111|A_/_H1N1:0.0070472696)38:0.0000025259,((((EPI297094|HA|A/Sendai/TU385/2009|EPI_ISL_84677|A_/_H1N1:0.0052674773,EPI274977|HA|A/Guam/NHRC0027/2009|EPI_ISL_77875|A_/_H1N1:0.0052604066)23:0.0000025259,(EPI297181|HA|A/Sendai/TU589/2009|EPI_ISL_84764|A_/_H1N1:0.0070388671,EPI297194|HA|A/Sendai/TU620/2009|EPI_ISL_84777|A_/_H1N1:0.0052778096)20:0.0000025259)8:0.0000025259,EPI297133|HA|A/Sendai/TU447/2009|EPI_ISL_84716|A_/_H1N1:0.0070456304)32:0.0000025259,((EPI210034|HA|A/FUKUOKA-C/2/2009|EPI_ISL_60011|A_/_H1N1:0.0016102630,(EPI244706|HA|A/Sweden/1/2009|EPI_ISL_70643|A_/_H1N1:0.0194694569,EPI245697|HA|A/Stockholm/1/2009|EPI_ISL_70809|A_/_H1N1:0.0160091969)100:0.2786408727)94:0.0054516503,EPI216866|HA|A/Idaho/08/2009|EPI_ISL_62246|A_/_H1N1:0.0035239602)41:0.0017311987)22:0.0017517476)12:0.0000025259,(EPI243726|HA|A/Iowa/14/2009|EPI_ISL_70261|A_/_H1N1:0.0052761063,EPI258550|HA|A/California/VRDL89/2009|EPI_ISL_75124|A_/_H1N1:0.0052593097)77:0.0017548138)12:0.0000025259,((((EPI277593|HA|A/Amman/WR0060N/2009|EPI_ISL_78800|A_/_H1N1:0.0052689401,EPI277833|HA|A/Taipei/WR1472T/2009|EPI_ISL_78830|A_/_H1N1:0.0052999013)25:0.0000025259,(EPI277641|HA|A/Bishkek/WR0881T/2009|EPI_ISL_78806|A_/_H1N1:0.0053145404,EPI277697|HA|A/California/WR1315P/2009|EPI_ISL_78813|A_/_H1N1:0.0052802856)37:0.0000025259)99:0.0053097806,EPI277801|HA|A/Ankara/WR1429T/2009|EPI_ISL_78826|A_/_H1N1:0.0088387918)71:0.0000025259,EPI277609|HA|A/Taipei/WR0193T/2009|EPI_ISL_78802|A_/_H1N1:0.0017578475)96:0.0035199742)3:0.0017496891,EPI239613|HA|A/Minnesota/18/2009|EPI_ISL_68751|A_/_H1N1:0.0070534159)22:0.0000025259,(((EPI349527|HA|A/Taiwan/1017/2009|EPI_ISL_101897|A_/_H1N1:0.0052691591,EPI263419|HA|A/Singapore/GP3441/2009|EPI_ISL_75728|A_/_H1N1:0.0053251341)18:0.0000025259,EPI349526|HA|A/Taiwan/11706/2009|EPI_ISL_101896|A_/_H1N1:0.0052649959)3:0.0000025259,(((EPI263429|HA|A/Singapore/GP4381/2009|EPI_ISL_75733|A_/_H1N1:0.0052768352,EPI336133|HA|A/England/909/2009|EPI_ISL_96157|A_/_H1N1:0.0052610633)21:0.0000025259,((EPI297185|HA|A/Sendai/TU587/2009|EPI_ISL_84768|A_/_H1N1:0.0089552597,EPI307264|HA|A/Taiwan/7949/2009|EPI_ISL_87441|A_/_H1N1:0.0052590028)58:0.0000025259,EPI231372|HA|A/Idaho/13/2009|EPI_ISL_66276|A_/_H1N1:0.0070505104)17:0.0000025259)5:0.0000025259,(EPI263435|HA|A/Singapore/GP4697/2009|EPI_ISL_75736|A_/_H1N1:0.0052500016,EPI386893|HA|A/Scotland/Aberdeen_2/2009|EPI_ISL_125732|A_/_H1N1:0.0052608539)18:0.0000025259)2:0.0000025259)16:0.0000025259)45:0.0017645998,EPI297106|HA|A/Sendai/TU402/2009|EPI_ISL_84689|A_/_H1N1:0.0070691577);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_clustered/H1N1/trees/H1N1_2009.treefile -m "LG+G4{0.694417}" --length 567
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2009_aligned.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2009_aligned.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Nov 20 16:42:29 2025
+Total CPU time used: 2057.75353 seconds (0h:34m:17s)
+Total wall-clock time used: 130.8883647 seconds (0h:2m:10s)
+
