@@ -19,6 +19,13 @@ results/*
 # But keep a small README to explain the structure of results/
 !results/README.md
 
+# Keep a small curated set of paper-level outputs
+!results/per_year_clustered/H1N1/analysis_summary.csv
+!results/per_year_clustered/H3N2/analysis_summary.csv
+!results/per_year_clustered/VicB/analysis_summary.csv
+!results/per_year_clustered/H1N1/distances/distance_summary_medoid.csv
+!results/per_year_clustered/H3N2/distances/distance_summary.csv
+
 # Pipeline & SLURM logs — users get their own when they run the pipeline
 logs/
 slurm-*.out

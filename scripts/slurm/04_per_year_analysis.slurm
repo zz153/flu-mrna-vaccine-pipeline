@@ -6,13 +6,16 @@
 #SBATCH --output=logs/per_year_%x_%j.out
 #SBATCH --error=logs/per_year_%x_%j.err
 
-# Usage: sbatch --export=LINEAGE=H3N2 scripts/slurm/04_per_year_analysis.slurm
-# Run from the repository root directory
+# Usage: 
+#   sbatch --export=LINEAGE=H3N2 scripts/slurm/04_per_year_analysis.slurm
+#   sbatch --export=LINEAGE=VicB,USE_UNCLUSTERED=true scripts/slurm/04_per_year_analysis.slurm
 
-# Get lineage from environment variable (default to H1N1)
+# Get parameters from environment variables
 LINEAGE=${LINEAGE:-H1N1}
+USE_UNCLUSTERED=${USE_UNCLUSTERED:-false}
 
 echo "Starting per-year analysis for ${LINEAGE}"
+echo "Use unclustered: ${USE_UNCLUSTERED}"
 echo "Job ID: ${SLURM_JOB_ID}"
 echo "Running on: ${SLURMD_NODENAME}"
 
@@ -20,11 +23,10 @@ echo "Running on: ${SLURMD_NODENAME}"
 mkdir -p logs
 
 # Activate conda environment
-# Note: User must have created the environment using env/environment.yml
 eval "$(conda shell.bash hook)"
 conda activate flu-vaccine-pipeline
 
-# Run the analysis (assumes script is run from repo root)
-bash scripts/04_per_year_analysis.sh ${LINEAGE} 2009 2025 16
+# Run the analysis
+bash scripts/04_per_year_analysis.sh ${LINEAGE} 2009 2025 16 ${USE_UNCLUSTERED}
 
 echo "Analysis complete for ${LINEAGE}"
