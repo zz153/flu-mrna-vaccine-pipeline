@@ -8,6 +8,10 @@
 #    - Consensus (most common amino acid at each position)
 #    - Medoid (actual strain with minimum distance to all others)
 #    - Ancestral (reconstructed ancestral sequence from tree root)
+#
+# Each design is saved in two formats:
+#    - *_design.fasta: Ungapped sequence (for vaccine production)
+#    - *_design_aligned.fasta: Gapped sequence (for distance calculations)
 
 set -e
 
@@ -101,9 +105,16 @@ for YEAR in $(seq ${YEAR_START} ${YEAR_END}); do
     
     ALIGNMENT="${OUTPUT_DIR}/alignments/${LINEAGE}_${YEAR}_aligned.fasta"
     TREE_PREFIX="${OUTPUT_DIR}/trees/${LINEAGE}_${YEAR}"
+    
+    # Design files (both gapped and ungapped versions)
     CONSENSUS="${OUTPUT_DIR}/designs/${LINEAGE}_${YEAR}_consensus.fasta"
+    CONSENSUS_ALIGNED="${OUTPUT_DIR}/designs/${LINEAGE}_${YEAR}_consensus_aligned.fasta"
+    
     MEDOID="${OUTPUT_DIR}/designs/${LINEAGE}_${YEAR}_medoid.fasta"
+    MEDOID_ALIGNED="${OUTPUT_DIR}/designs/${LINEAGE}_${YEAR}_medoid_aligned.fasta"
+    
     ANCESTRAL="${OUTPUT_DIR}/designs/${LINEAGE}_${YEAR}_ancestral.fasta"
+    ANCESTRAL_ALIGNED="${OUTPUT_DIR}/designs/${LINEAGE}_${YEAR}_ancestral_aligned.fasta"
     
     # --- Step 1: Alignment ---
     echo "Step 1/5: Aligning sequences..."
@@ -127,7 +138,7 @@ for YEAR in $(seq ${YEAR_START} ${YEAR_END}); do
     
     # --- Step 3: Consensus Sequence ---
     echo "Step 3/5: Creating consensus sequence..."
-    if [ -f "${CONSENSUS}" ]; then
+    if [ -f "${CONSENSUS}" ] && [ -f "${CONSENSUS_ALIGNED}" ]; then
         echo "  ✓ Consensus exists"
     else
         echo "  🔄 Creating consensus..."
@@ -136,23 +147,37 @@ from Bio import AlignIO
 from collections import Counter
 
 alignment = AlignIO.read("${ALIGNMENT}", "fasta")
-consensus_seq = []
 
+# Build consensus aligned (keeps alignment structure)
+consensus_aligned = []
 for i in range(alignment.get_alignment_length()):
-    column = [str(r.seq[i]) for r in alignment if str(r.seq[i]) != '-']
-    if column:
-        consensus_seq.append(Counter(column).most_common(1)[0][0])
+    column = [str(r.seq[i]) for r in alignment]
+    non_gaps = [c for c in column if c != '-']
+    if non_gaps:
+        consensus_aligned.append(Counter(non_gaps).most_common(1)[0][0])
+    else:
+        consensus_aligned.append('-')
+
+# Ungapped version for output
+consensus_ungapped = ''.join([c for c in consensus_aligned if c != '-'])
+
+# Save both versions
+with open("${CONSENSUS_ALIGNED}", 'w') as f:
+    f.write(">${LINEAGE}_${YEAR}_Consensus_Aligned\n")
+    f.write(''.join(consensus_aligned) + "\n")
 
 with open("${CONSENSUS}", 'w') as f:
     f.write(">${LINEAGE}_${YEAR}_Consensus\n")
-    f.write(''.join(consensus_seq) + "\n")
+    f.write(consensus_ungapped + "\n")
+
+print(f"  Consensus: {len(consensus_ungapped)} aa (ungapped), {len(consensus_aligned)} positions (aligned)")
 EOF
         echo "  ✅ Consensus created"
     fi
     
     # --- Step 4: Medoid Sequence ---
     echo "Step 4/5: Identifying medoid sequence..."
-    if [ -f "${MEDOID}" ]; then
+    if [ -f "${MEDOID}" ] && [ -f "${MEDOID_ALIGNED}" ]; then
         echo "  ✓ Medoid exists"
     else
         echo "  🔄 Finding medoid..."
@@ -164,7 +189,7 @@ alignment = AlignIO.read("${ALIGNMENT}", "fasta")
 alignment_list = list(alignment)
 n = len(alignment_list)
 
-# Calculate pairwise distances
+# Calculate pairwise distances (ungapped)
 distances = np.zeros((n, n))
 for i in range(n):
     for j in range(i+1, n):
@@ -177,24 +202,31 @@ for i in range(n):
             distances[i, j] = dist
             distances[j, i] = dist
 
-# Find medoid (sequence with minimum sum of distances)
+# Find medoid
 sum_distances = distances.sum(axis=1)
 medoid_idx = int(np.argmin(sum_distances))
 medoid_record = alignment_list[medoid_idx]
 
-# Write medoid
+# Save both versions
+seq_aligned = str(medoid_record.seq)
+seq_ungapped = seq_aligned.replace('-', '')
+
+with open("${MEDOID_ALIGNED}", 'w') as f:
+    f.write(f">${LINEAGE}_${YEAR}_Medoid_Aligned|{medoid_record.id}\n")
+    f.write(seq_aligned + "\n")
+
 with open("${MEDOID}", 'w') as f:
-    original_id = medoid_record.id
-    f.write(f">${LINEAGE}_${YEAR}_Medoid|{original_id}\n")
-    seq = str(medoid_record.seq).replace('-', '')
-    f.write(seq + "\n")
+    f.write(f">${LINEAGE}_${YEAR}_Medoid|{medoid_record.id}\n")
+    f.write(seq_ungapped + "\n")
+
+print(f"  Medoid: {medoid_record.id} - {len(seq_ungapped)} aa (ungapped), {len(seq_aligned)} positions (aligned)")
 EOF
         echo "  ✅ Medoid identified"
     fi
     
     # --- Step 5: Ancestral Sequence Reconstruction ---
     echo "Step 5/5: Reconstructing ancestral sequence..."
-    if [ -f "${ANCESTRAL}" ]; then
+    if [ -f "${ANCESTRAL}" ] && [ -f "${ANCESTRAL_ALIGNED}" ]; then
         echo "  ✓ Ancestral exists"
     else
         echo "  🔄 Running ASR..."
@@ -203,24 +235,21 @@ EOF
         
         # Extract root ancestral sequence
         python3 << EOF
-# Read the ancestral state file
 asr_file = "${TREE_PREFIX}_asr.state"
 try:
     with open(asr_file, 'r') as f:
         lines = f.readlines()
     
-    # Skip header and extract root node sequence
-    root_seq = []
+    # Extract root node sequence with alignment
+    root_seq_aligned = []
     current_node = None
     
     for line in lines:
-        # Skip empty lines and comments
         if not line.strip() or line.startswith('#'):
             continue
         
         parts = line.strip().split()
         
-        # Skip header line (contains "Node Site State")
         if len(parts) > 1 and parts[0] == "Node" and parts[1] == "Site":
             continue
             
@@ -231,31 +260,39 @@ try:
         site = parts[1]
         state = parts[2]
         
-        # Get the first node (root/oldest)
         if current_node is None:
             current_node = node_name
         
-        # Collect all states for this node
         if node_name == current_node:
-            root_seq.append(state)
+            root_seq_aligned.append(state)
         else:
-            # Moved to next node, stop
             break
     
-    if root_seq and len(root_seq) > 50:
+    if root_seq_aligned and len(root_seq_aligned) > 50:
+        # Ungapped version
+        root_seq_ungapped = ''.join([aa for aa in root_seq_aligned if aa != '-'])
+        
+        # Save both versions
+        with open("${ANCESTRAL_ALIGNED}", 'w') as f:
+            f.write(f">${LINEAGE}_${YEAR}_Ancestral_Aligned_{current_node}\n")
+            f.write(''.join(root_seq_aligned) + "\n")
+        
         with open("${ANCESTRAL}", 'w') as f:
             f.write(f">${LINEAGE}_${YEAR}_Ancestral_{current_node}\n")
-            f.write(''.join(root_seq) + "\n")
-        print(f"  Extracted {len(root_seq)} amino acids from {current_node}")
+            f.write(root_seq_ungapped + "\n")
+        
+        print(f"  Ancestral: {len(root_seq_ungapped)} aa (ungapped), {len(root_seq_aligned)} positions (aligned)")
     else:
-        print(f"Warning: Extracted only {len(root_seq)} amino acids, using consensus as fallback")
+        print(f"Warning: Only {len(root_seq_aligned)} amino acids, using consensus as fallback")
         import shutil
         shutil.copy("${CONSENSUS}", "${ANCESTRAL}")
+        shutil.copy("${CONSENSUS_ALIGNED}", "${ANCESTRAL_ALIGNED}")
         
 except Exception as e:
     print(f"ASR failed: {e}, using consensus as fallback")
     import shutil
     shutil.copy("${CONSENSUS}", "${ANCESTRAL}")
+    shutil.copy("${CONSENSUS_ALIGNED}", "${ANCESTRAL_ALIGNED}")
 EOF
         echo "  ✅ Ancestral reconstructed"
     fi
