@@ -1,12 +1,11 @@
 #############################
-# Data (fully version-controlled)
+# Data
 #############################
-# NOTE:
 # - data/raw/         → TRACKED (full raw data for paper-level reproducibility)
 # - data/processed/   → TRACKED (processed data / key intermediates)
-# - data/metadata/    → TRACKED (FASTA + metadata)
-#
-# Do NOT add ignore rules for these; they are intentionally part of the repo.
+# - data/metadata/    → not used (removed)
+
+data/metadata/
 
 
 #############################
