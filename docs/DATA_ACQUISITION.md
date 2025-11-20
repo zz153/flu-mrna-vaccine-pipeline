@@ -2,148 +2,115 @@
 
 ## Overview
 
-This pipeline requires hemagglutinin (HA) protein sequences for three influenza lineages:
-- **A/H1N1pdm09**
-- **A/H3N2**
-- **B/Victoria**
+This pipeline uses **hemagglutinin (HA) protein sequences** for three influenza lineages:
 
-**Time period:** 2009-2025  
+- A/H1N1pdm09
+- A/H3N2
+- B/Victoria (VicB)
+
+**Time period:** 2009–2025  
 **Geographic regions:** Europe, USA, Oceania, Asia (downloaded separately)
 
----
-
-## Step 1: Access GISAID Database
-
-1. Create a free account at [GISAID](https://www.gisaid.org/)
-2. Navigate to **EpiFlu** database
-3. Agree to the Data Access Agreement
+The data are downloaded **directly as protein FASTA files** from the GISAID EpiFlu database.
 
 ---
 
-## Step 2: Download Sequences by Region
+## Step 1: Access GISAID EpiFlu
 
-### Download Strategy
+1. Create a free account at **GISAID** (https://gisaid.org)  
+2. Log in and navigate to the **EpiFlu™** database  
+3. Read and accept the **Data Access Agreement (DAA)**
 
-For EACH lineage (H1N1, H3N2, VicB), download sequences SEPARATELY for each region.
-
-**Why region-specific downloads?**
-- Allows regional diversity analysis
-- Better quality control per region
-- Easier to track geographic patterns
+You must comply with GISAID’s terms of use.
 
 ---
 
-### Search Criteria (Repeat for Each Region)
+## Step 2: Set Search Criteria (per lineage & region)
 
-**For H1N1pdm09:**
-- **Type:** A
-- **Subtype:** H1N1pdm09
-- **Segment:** HA (Hemagglutinin)
-- **Host:** Human
-- **Collection Date:** 2009-01-01 to 2025-12-31
-- **Location:** [Select one: Europe / North America:USA / Oceania / Asia]
-- **Complete sequences only:** Yes
-- **High coverage only:** Yes
-- **Protein:** Check (to get amino acid sequences)
+For **each lineage** (H1N1, H3N2, VicB) and **each region** (Asia, Europe, USA, Oceania), run a separate query.
 
-**Download Format:**
-- Format: FASTA or XLS (Excel file with sequences and metadata)
-- File naming: `[Region]_[Lineage]_gisaid_epiflu_isolates.xls`
+### Example: A/H1N1pdm09 (HA protein)
 
-**Repeat for H3N2 and VicB**
+In EpiFlu search:
 
----
+- **Type:** A  
+- **Subtype:** H1N1pdm09  
+- **Segment:** HA (Hemagglutinin)  
+- **Host:** Human  
+- **Collection date:** `2009-01-01` to `2025-12-31`  
+- **Location:** One of:
+  - Asia  
+  - Europe  
+  - North America → USA  
+  - Oceania  
+- **Sequence completeness / quality:**
+  - Complete sequences only: **Yes**  
+  - High coverage only: **Yes** (or equivalent quality filter in the interface)
+- **Sequence type / output:**
+  - Protein / AA sequence view (HA protein)
+  - Export as **FASTA**
 
-## Step 3: Expected Downloaded Files
+Repeat analogous filters for:
 
-After downloading, you should have files like:
-```
-Asia_H1N1_gisaid_epiflu_isolates.xls
-Europe_H1N1_gisaid_epiflu_isolates.xls
-USA_H1N1_gisaid_epiflu_isolates.xls
-Oceania_H1N1_gisaid_epiflu_isolates.xls
-
-Asia_H3N2_gisaid_epiflu_isolates.xls
-Europe_H3N2_gisaid_epiflu_isolates.xls
-USA_H3N2_gisaid_epiflu_isolates.xls
-Oceania_H3N2_gisaid_epiflu_isolates.xls
-
-Asia_VicB_gisaid_epiflu_isolates.xls
-Europe_VicB_gisaid_epiflu_isolates.xls
-USA_VicB_gisaid_epiflu_isolates.xls
-Oceania_VicB_gisaid_epiflu_isolates.xls
-```
+- **A/H3N2** (Type A, Subtype H3N2, Segment HA)  
+- **B/Victoria** (Type B, Lineage Victoria, Segment HA)
 
 ---
 
-## Step 4: Extract FASTA Sequences
+## Step 3: Download as FASTA
 
-If you downloaded XLS files with metadata, extract the sequences:
+For each (lineage, region) combination:
 
-**Option 1: Manual (in Excel)**
-1. Open the XLS file
-2. Find the column with HA sequences
-3. Export as FASTA format
+1. Apply the filters above.
+2. Use the **Download** function to export **protein FASTA**.
+3. Save with a clear name, e.g.:
 
-**Option 2: Using Python** (we'll provide a script)
-```bash
-python scripts/utils/extract_sequences_from_xls.py --input Asia_H1N1_gisaid_epiflu_isolates.xls --output data/raw/H1N1/Asia_H1N1.fasta
-```
+For H1N1:
+
+- `Asia_H1N1_gisaid_epiflu_sequence.fasta`
+- `Europe_H1N1_gisaid_epiflu_sequence.fasta`
+- `USA_H1N1_HA_gisaid_epiflu_sequence.fasta`
+- `Oceania_H1N1_HA_gisaid_epiflu_sequence.fasta`
+
+For H3N2:
+
+- `Asia_H3N2_HA_gisaid_epiflu_sequence.fasta`
+- `Europe_H3N2_HA_gisaid_epiflu_sequence.fasta`
+- `USA_H3N2_HA_gisaid_epiflu_sequence.fasta`
+- `Oceania_H3N2_HA_gisaid_epiflu_sequence.fasta`
+
+For VicB:
+
+- `Asia_VicB_gisaid_epiflu_sequence.fasta`
+- `Europe_VicB_gisaid_epiflu_sequence.fasta`
+- `USA_VicB_gisaid_epiflu_sequence.fasta`
+- `Oceania_VicB_gisaid_epiflu_sequence.fasta`
+
+> The exact filenames do not matter as long as they match what your pipeline expects.
+> In this repository, we use the naming pattern above.
 
 ---
 
-## Step 5: Organize Data
+## Step 4: Organize Files in `data/raw/`
 
-Place extracted FASTA files in subdirectories by lineage:
-```
+After downloading, place files into lineage-specific subdirectories:
+
+```text
 data/raw/H1N1/
-  ├── Asia_H1N1.fasta
-  ├── Europe_H1N1.fasta
-  ├── USA_H1N1.fasta
-  └── Oceania_H1N1.fasta
+  ├── Asia_H1N1_gisaid_epiflu_sequence.fasta
+  ├── Europe_H1N1_gisaid_epiflu_sequence.fasta
+  ├── Oceania_H1N1_HA_gisaid_epiflu_sequence.fasta
+  └── USA_H1N1_HA_gisaid_epiflu_sequence.fasta
 
 data/raw/H3N2/
-  ├── Asia_H3N2.fasta
-  ├── Europe_H3N2.fasta
-  ├── USA_H3N2.fasta
-  └── Oceania_H3N2.fasta
+  ├── Asia_H3N2_HA_gisaid_epiflu_sequence.fasta
+  ├── Europe_H3N2_HA_gisaid_epiflu_sequence.fasta
+  ├── Oceania_H3N2_HA_gisaid_epiflu_sequence.fasta
+  └── USA_H3N2_HA_gisaid_epiflu_sequence.fasta
 
 data/raw/VicB/
-  ├── Asia_VicB.fasta
-  ├── Europe_VicB.fasta
-  ├── USA_VicB.fasta
-  └── Oceania_VicB.fasta
-```
+  ├── Asia_VicB_gisaid_epiflu_sequence.fasta
+  ├── Europe_VicB_gisaid_epiflu_sequence.fasta
+  ├── Oceania_VicB_gisaid_epiflu_sequence.fasta
+  └── USA_VicB_gisaid_epiflu_sequence.fasta
 
----
-
-## Step 6: Combine Regional Files (Optional)
-
-The pipeline can work with either:
-- **Individual regional files** (for region-specific analysis)
-- **Combined files per lineage** (for pan-temporal analysis)
-
-To combine all regions:
-```bash
-cat data/raw/H1N1/*.fasta > data/raw/H1N1/H1N1_all_regions.fasta
-```
-
----
-
-## Data Privacy
-
-⚠️ **IMPORTANT:** GISAID sequences are subject to terms of use:
-- Do not redistribute raw sequence files publicly
-- Acknowledge GISAID and submitting laboratories in publications
-- Raw data is `.gitignore`d and not included in this repository
-
----
-
-## Expected Data Volume
-
-Approximate sequences per lineage per region (as of 2025):
-- **H1N1:** 10,000-25,000 per region
-- **H3N2:** 20,000-40,000 per region  
-- **VicB:** 7,000-15,000 per region
-
-After quality filtering (≥550 aa) and CD-HIT clustering (99% identity), expect ~1,000-5,000 sequences per lineage per year.
