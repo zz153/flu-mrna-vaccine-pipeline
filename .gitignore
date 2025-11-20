@@ -1,11 +1,58 @@
+#############################
+# Data (large / not versioned)
+#############################
+
+# Raw & processed influenza sequences
+data/raw/
+data/processed/
+data/metadata/
+
+# Keep only tiny example data if you add it later
+# (do NOT ignore data/example/ so we can ship a small test dataset)
+# data/example/  # ← leave this UNignored on purpose
+
+
+#############################
+# Results & logs (generated)
+#############################
+
+# All result files (alignments, trees, designs, distances, figures, etc.)
+results/*
+# But keep a small README to explain the structure
+!results/README.md
+
+# All pipeline & SLURM logs
+logs/
+slurm-*.out
+slurm-*.err
+
 # CD-HIT cluster log files
 *.clstr
 
-# System files
-.DS_Store
+
+#############################
+# Environments & caches
+#############################
+
+# Conda env directory (keep only environment.yml tracked)
+env/*
+!env/environment.yml
+
+# Local virtualenvs / env files
+.venv/
+.env/
+
+# Python caches (in case you add Python utilities)
 __pycache__/
-*.pyc
-logs/
-logs/
-*.out
-*.err
+*.py[cod]
+.ipynb_checkpoints/
+
+
+#############################
+# OS / editor cruft
+#############################
+
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
