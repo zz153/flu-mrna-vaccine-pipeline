@@ -1,27 +1,25 @@
 #############################
-# Data (large / not versioned)
+# Data (fully version-controlled)
 #############################
-
-# Raw & processed influenza sequences
-data/raw/
-data/processed/
-data/metadata/
-
-# Keep only tiny example data if you add it later
-# (do NOT ignore data/example/ so we can ship a small test dataset)
-# data/example/  # ← leave this UNignored on purpose
+# NOTE:
+# - data/raw/         → TRACKED (full raw data for paper-level reproducibility)
+# - data/processed/   → TRACKED (processed data / key intermediates)
+# - data/metadata/    → TRACKED (FASTA + metadata)
+#
+# Do NOT add ignore rules for these; they are intentionally part of the repo.
 
 
 #############################
 # Results & logs (generated)
 #############################
 
-# All result files (alignments, trees, designs, distances, figures, etc.)
+# All generated results (alignments, trees, designs, distances, figures, etc.)
+# These can always be regenerated from data + scripts.
 results/*
-# But keep a small README to explain the structure
+# But keep a small README to explain the structure of results/
 !results/README.md
 
-# All pipeline & SLURM logs
+# Pipeline & SLURM logs — users get their own when they run the pipeline
 logs/
 slurm-*.out
 slurm-*.err
@@ -34,7 +32,7 @@ slurm-*.err
 # Environments & caches
 #############################
 
-# Conda env directory (keep only environment.yml tracked)
+# Conda env directory (we only track env/environment.yml)
 env/*
 !env/environment.yml
 
