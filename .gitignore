@@ -1,0 +1,7 @@
+# CD-HIT cluster log files
+*.clstr
+
+# System files
+.DS_Store
+__pycache__/
+*.pyc
