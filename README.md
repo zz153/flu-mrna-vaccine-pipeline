@@ -23,11 +23,19 @@ Each design is evaluated against circulating strains using both simple p-distanc
 
 ## 📊 Key Findings
 
-Analysis of H1N1 (2009-2025) reveals:
-- **Consensus design performs best**: 1.42% mean distance to circulating strains
+Analysis of H1N1 and H3N2 (2009-2025) reveals:
+
+**H1N1 (Lower evolutionary rate):**
+- **Consensus performs best**: 1.42% mean distance to circulating strains
 - **Medoid**: 1.79% mean distance
 - **Ancestral**: 1.80% mean distance  
-- **COBRA**: 2.99% mean distance (shows higher variability in recent years)
+- **COBRA**: 2.99% mean distance (higher variability in recent years)
+
+**H3N2 (Higher evolutionary rate - ~10× faster than H1N1):**
+- **Consensus performs best**: 13.20% mean distance
+- **COBRA**: 13.69% mean distance (better suited for high diversity)
+- **Medoid**: 13.84% mean distance
+- **Ancestral**: 18.31% mean distance (performs poorly in rapidly evolving lineages)
 
 ---
 
@@ -119,6 +127,9 @@ conda env create -f env/environment.yml
 
 # Activate environment
 conda activate flu-vaccine-pipeline
+
+# Verify installation
+bash scripts/run_full_pipeline.sh check
 ```
 
 ### 3. Add Your Data
@@ -131,11 +142,32 @@ data/raw/
 └── VicB_raw.fasta
 ```
 
-### 4. Run the Pipeline
+---
 
-#### For Local Execution:
+## 🎮 Execution Modes
+
+This pipeline supports **two execution modes**:
+
+| Mode | Best For | Time* | Requirements |
+|------|----------|-------|--------------|
+| **Bash (Local)** | Testing, debugging, no HPC | 6-12h | Linux/Mac, 8+ cores, 32GB RAM |
+| **SLURM (HPC)** | Production, parallel processing | 2-4h | HPC cluster with SLURM |
+
+*Complete 3-lineage analysis. Both modes produce **identical, reproducible results**.
+
+---
+
+### 🖥️ Option A: Local Execution (Bash)
+
+**Best for:** Testing, development, single-lineage analysis, or systems without SLURM access
+
+#### Complete Pipeline (All Lineages)
 ```bash
-# Run full pipeline for H1N1
+bash scripts/run_full_pipeline.sh local
+```
+
+#### Single Lineage (Example: H1N1)
+```bash
 bash scripts/01_filter_sequences.sh H1N1
 bash scripts/02_cluster_sequences.sh H1N1
 bash scripts/02b_split_by_year.sh H1N1
@@ -145,9 +177,44 @@ bash scripts/05_calculate_distances.sh H1N1 2009 2025 clustered
 bash scripts/06_visualize_distances.sh H1N1 clustered
 ```
 
-#### For HPC/SLURM:
+#### Quick Test (Single Year)
 ```bash
-# Submit all scripts sequentially
+# Test pipeline on 2023 data only
+bash scripts/04_per_year_analysis.sh H1N1 2023 2023 4
+bash scripts/05_calculate_distances.sh H1N1 2023 2023 clustered
+bash scripts/06_visualize_distances.sh H1N1 clustered
+```
+
+**Pros:** ✅ Immediate execution • ✅ Real-time output • ✅ Easy debugging  
+**Cons:** ⏳ Sequential (slower) • 🔒 Single lineage at a time
+
+---
+
+### ⚡ Option B: HPC Execution (SLURM)
+
+**Best for:** Production runs, complete analysis, parallel processing of all lineages
+
+#### Complete Pipeline (Recommended)
+```bash
+# Submit master orchestrator - handles everything automatically
+sbatch scripts/slurm/00_run_full_pipeline.slurm
+
+# Monitor all jobs
+squeue -u $USER
+
+# Check master log
+tail -f logs/pipeline_master_*.out
+```
+
+**What this does:**
+- ✅ Processes H1N1, H3N2, and VicB in parallel
+- ✅ Automatically sets up job dependencies
+- ✅ Manages resource allocation
+- ✅ Ensures correct execution order
+
+#### Individual Lineage
+```bash
+# Example: H1N1 complete pipeline
 sbatch --export=LINEAGE=H1N1 scripts/slurm/01_filter_sequences.slurm
 sbatch --export=LINEAGE=H1N1 scripts/slurm/02_cluster_sequences.slurm
 sbatch --export=LINEAGE=H1N1 scripts/slurm/02b_split_by_year.slurm
@@ -155,6 +222,21 @@ sbatch --export=LINEAGE=H1N1 scripts/slurm/03_combined_alignment.slurm
 sbatch --export=LINEAGE=H1N1 scripts/slurm/04_per_year_analysis.slurm
 sbatch --export=LINEAGE=H1N1 scripts/slurm/05_calculate_distances.slurm
 sbatch --export=LINEAGE=H1N1 scripts/slurm/06_visualize_distances.slurm
+```
+
+**Pros:** ⚡ Fast (parallel) • 🔄 Background processing • 📊 All lineages simultaneously  
+**Cons:** ⏰ Queue wait time • 🖥️ Requires HPC access
+
+---
+
+### 🔀 Hybrid Approach (Recommended for Development)
+```bash
+# 1. Test locally first
+bash scripts/04_per_year_analysis.sh H1N1 2023 2023 4
+bash scripts/05_calculate_distances.sh H1N1 2023 2023 clustered
+
+# 2. If successful, run full analysis on HPC
+sbatch scripts/slurm/00_run_full_pipeline.slurm
 ```
 
 ---
@@ -170,13 +252,14 @@ flu-mrna-vaccine-pipeline/
 │           ├── {LINEAGE}_clustered.fasta
 │           └── per_year/       # Split by year
 ├── results/
-│   └── per_year_clustered/
-│       └── {LINEAGE}/
-│           ├── alignments/     # MAFFT alignments
-│           ├── trees/          # IQ-TREE phylogenies & ML distances
-│           ├── designs/        # 4 vaccine designs (× 2 versions each)
-│           ├── distances/      # P-distance & ML distance CSVs
-│           └── figures/        # Publication-quality plots
+│   ├── per_year_clustered/     # H1N1, H3N2 results
+│   │   └── {LINEAGE}/
+│   │       ├── alignments/     # MAFFT alignments
+│   │       ├── trees/          # IQ-TREE phylogenies & ML distances
+│   │       ├── designs/        # 4 vaccine designs (× 2 versions each)
+│   │       ├── distances/      # P-distance & ML distance CSVs
+│   │       └── figures/        # Publication-quality plots
+│   └── per_year_unclustered/   # VicB results
 ├── scripts/
 │   ├── 01_filter_sequences.sh
 │   ├── 02_cluster_sequences.sh
@@ -185,10 +268,21 @@ flu-mrna-vaccine-pipeline/
 │   ├── 04_per_year_analysis.sh
 │   ├── 05_calculate_distances.sh
 │   ├── 06_visualize_distances.sh
-│   └── slurm/                  # SLURM wrappers for HPC
+│   ├── run_full_pipeline.sh        # Master bash script
+│   └── slurm/                      # SLURM wrappers for HPC
+│       ├── 00_run_full_pipeline.slurm  # Master orchestrator
+│       ├── 01_filter_sequences.slurm
+│       ├── 02_cluster_sequences.slurm
+│       ├── 02b_split_by_year.slurm
+│       ├── 03_combined_alignment.slurm
+│       ├── 04_per_year_analysis.slurm
+│       ├── 05_calculate_distances.slurm
+│       └── 06_visualize_distances.slurm
 ├── env/
 │   └── environment.yml         # Conda environment specification
-└── README.md
+├── README.md                   # This file
+├── REPRODUCIBILITY.md          # Detailed reproduction guide
+└── .gitignore
 ```
 
 ---
@@ -220,6 +314,7 @@ For each year and lineage:
 | `{LINEAGE}_{YEAR}_medoid.fasta` | Medoid vaccine design |
 | `{LINEAGE}_{YEAR}_ancestral.fasta` | Ancestral vaccine design (ASR) |
 | `{LINEAGE}_{YEAR}_cobra.fasta` | COBRA vaccine design |
+| `{LINEAGE}_{YEAR}_{design}_aligned.fasta` | Aligned version (for distances) |
 | `{LINEAGE}_{YEAR}_{design}_distances.csv` | Distances to all strains |
 
 ### Summary Files
@@ -257,19 +352,19 @@ Clean visualization of mean p-distances (no cluttered numbers).
 - **Method**: Most common amino acid at each position
 - **Pros**: Computationally efficient, represents population average
 - **Cons**: May not correspond to any real strain
-- **Performance**: **Best** (1.42% mean distance for H1N1)
+- **Performance**: **Best** (H1N1: 1.42%, H3N2: 13.20%)
 
 ### 2. Medoid Sequence
 - **Method**: Actual strain with minimum sum of distances to all others
 - **Pros**: Real sequence, exists in nature
 - **Cons**: May not capture all diversity
-- **Performance**: Good (1.79% mean distance for H1N1)
+- **Performance**: Good (H1N1: 1.79%, H3N2: 13.84%)
 
 ### 3. Ancestral Sequence (ASR)
 - **Method**: Maximum likelihood reconstruction of tree root sequence
 - **Pros**: Phylogenetically informed, evolutionary perspective
 - **Cons**: Hypothetical sequence from the past
-- **Performance**: Good (1.80% mean distance for H1N1)
+- **Performance**: Variable (H1N1: 1.80%, H3N2: 18.31%)
 
 ### 4. COBRA (Computationally Optimized Broadly Reactive Antigen)
 - **Method**: 2-round CD-HIT clustering (95% → 90% identity)
@@ -281,7 +376,7 @@ Clean visualization of mean p-distances (no cluttered numbers).
   6. Re-align to match original alignment gap structure
 - **Pros**: Designed for broad coverage across diversity
 - **Cons**: Complex, may over-optimize for past diversity
-- **Performance**: Variable (2.99% mean distance for H1N1, worse in recent years)
+- **Performance**: Variable (H1N1: 2.99%, H3N2: 13.69%)
 
 ---
 
@@ -313,16 +408,18 @@ This pipeline is designed for complete reproducibility:
 ✅ **Version-controlled scripts** - All analysis code in Git  
 ✅ **Conda environment** - Exact software versions specified  
 ✅ **Parameterized workflows** - No hard-coded paths  
-✅ **SLURM support** - HPC execution wrappers  
-✅ **Documented methods** - Clear README and code comments
+✅ **Dual execution modes** - Both bash and SLURM produce identical results  
+✅ **Documented methods** - Clear README and comprehensive [REPRODUCIBILITY.md](REPRODUCIBILITY.md)
 
 ### To Reproduce Results:
 
 1. Clone this repository
 2. Create conda environment from `env/environment.yml`
 3. Obtain HA sequences from GISAID (requires account)
-4. Run scripts 01-06 in sequence
+4. Run scripts 01-06 in sequence (bash or SLURM)
 5. Results should match published figures and statistics
+
+See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for detailed step-by-step instructions.
 
 ---
 
@@ -338,8 +435,9 @@ If you use this pipeline in your research, please cite:
 ## 👥 Authors
 
 **Zohaib Rana**  
-Postdoctoral Fellow, University of Otago  
+Postdoctoral Fellow  
 Department of Biochemistry  
+University of Otago  
 RNA & Cancer Therapeutics
 
 ---
@@ -375,4 +473,6 @@ For questions or issues:
 
 ---
 
-**Last Updated**: November 2025
+**Last Updated**: November 2025  
+**Pipeline Version**: v1.0  
+**Execution Modes**: Bash (local) & SLURM (HPC) - both fully supported
