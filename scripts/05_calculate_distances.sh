@@ -6,11 +6,12 @@
 #   - Consensus
 #   - Medoid
 #   - Ancestral
+#   - COBRA (NEW!)
 # 
 # Uses aligned versions of designs to ensure proper comparison
 # Distance methods:
 # 1. Simple p-distance (observed differences, ignoring gap-gap pairs)
-# 2. LG+G4 evolutionary distance (from IQ-TREE ML estimation, only for medoid)
+# 2. LG+G4 evolutionary distance (from IQ-TREE ML estimation for ALL designs using *_with_designs tree)
 
 set -e
 
@@ -37,8 +38,8 @@ INPUT_DIR="results/per_year_${SOURCE_TYPE}/${LINEAGE}"
 OUTPUT_DIR="${INPUT_DIR}/distances"
 mkdir -p ${OUTPUT_DIR}
 
-# Design types to analyze
-DESIGNS=("consensus" "medoid" "ancestral")
+# Design types to analyze (NOW INCLUDING COBRA!)
+DESIGNS=("consensus" "medoid" "ancestral" "cobra")
 
 # Summary file for each design type
 for DESIGN in "${DESIGNS[@]}"; do
@@ -49,11 +50,17 @@ done
 for YEAR in $(seq ${YEAR_START} ${YEAR_END}); do
     
     ALIGNMENT="${INPUT_DIR}/alignments/${LINEAGE}_${YEAR}_aligned.fasta"
-    MLDIST="${INPUT_DIR}/trees/${LINEAGE}_${YEAR}.mldist"
+    ALIGNMENT_WITH_DESIGNS="${INPUT_DIR}/alignments/${LINEAGE}_${YEAR}_with_designs.fasta"
+    MLDIST_WITH_DESIGNS="${INPUT_DIR}/trees/${LINEAGE}_${YEAR}_with_designs.mldist"
     
     # Skip if files don't exist
-    if [ ! -f "$ALIGNMENT" ] || [ ! -f "$MLDIST" ]; then
-        echo "⏭️  ${YEAR}: Missing required files"
+    if [ ! -f "$ALIGNMENT" ]; then
+        echo "⏭️  ${YEAR}: Missing alignment"
+        continue
+    fi
+    
+    if [ ! -f "$ALIGNMENT_WITH_DESIGNS" ]; then
+        echo "⏭️  ${YEAR}: Missing alignment with designs (run Script 04 first)"
         continue
     fi
     
@@ -81,51 +88,73 @@ import sys
 
 design_type = "${DESIGN}"
 
-# Read alignment
+# Read original alignment (strains only)
 try:
     alignment = AlignIO.read("${ALIGNMENT}", "fasta")
+    n_strains = len(alignment)
 except Exception as e:
     print(f"  ❌ Error reading alignment: {e}")
+    sys.exit(1)
+
+# Read alignment with designs
+try:
+    alignment_with_designs = AlignIO.read("${ALIGNMENT_WITH_DESIGNS}", "fasta")
+except Exception as e:
+    print(f"  ❌ Error reading alignment with designs: {e}")
     sys.exit(1)
 
 # Read design sequence (aligned version)
 try:
     design_record = SeqIO.read("${DESIGN_FILE}", "fasta")
     design_seq_aligned = str(design_record.seq)
+    design_id = design_record.id
 except Exception as e:
     print(f"  ❌ Error reading design: {e}")
     sys.exit(1)
 
-# Find design in alignment (for medoid - it's an actual strain)
+# Find design in alignment_with_designs
 design_idx = None
 alignment_list = list(alignment)
+alignment_with_designs_list = list(alignment_with_designs)
 
-for i, record in enumerate(alignment_list):
-    # For medoid, match by checking if IDs are similar
-    if design_type == "medoid" and "|" in design_record.id:
-        # Extract strain ID from medoid header
-        design_strain_id = design_record.id.split("|")[1] if "|" in design_record.id else design_record.id
-        if design_strain_id in record.id:
+for i, record in enumerate(alignment_with_designs_list):
+    # Match by ID pattern
+    if design_type == "medoid":
+        # Medoid has original strain ID embedded
+        if "Medoid" in record.id:
             design_idx = i
-            design_seq_aligned = str(record.seq)  # Use the one from alignment
             break
+    elif design_type == "consensus":
+        if "Consensus" in record.id:
+            design_idx = i
+            break
+    elif design_type == "ancestral":
+        if "Ancestral" in record.id:
+            design_idx = i
+            break
+    elif design_type == "cobra":
+        if "COBRA" in record.id or "Cobra" in record.id:
+            design_idx = i
+            break
+
+if design_idx is None:
+    print(f"  ❌ Could not find {design_type} in alignment with designs")
+    sys.exit(1)
+
+print(f"  Found {design_type} at position {design_idx} in alignment with designs")
 
 # Calculate p-distances using aligned sequences
 p_distances = []
 strain_ids = []
 
 for i, record in enumerate(alignment_list):
-    # Skip if this is the design itself (medoid case)
-    if design_idx is not None and i == design_idx:
-        continue
-    
     strain_seq_aligned = str(record.seq)
     
     # Compare aligned sequences, excluding gap-gap positions
     valid_positions = []
     for j in range(len(design_seq_aligned)):
         design_char = design_seq_aligned[j]
-        strain_char = strain_seq_aligned[j]
+        strain_char = strain_seq_aligned[j] if j < len(strain_seq_aligned) else '-'
         
         # Skip positions where both have gaps
         if design_char == '-' and strain_char == '-':
@@ -148,40 +177,48 @@ for i, record in enumerate(alignment_list):
 
 print(f"  Calculated p-distances for {len(p_distances)} strains")
 
-# Read ML distances (only available for medoid since it's in the tree)
+# Read ML distances from *_with_designs.mldist file
 ml_dist_to_design = []
 
-if design_idx is not None:
+if "${MLDIST_WITH_DESIGNS}" and design_idx is not None:
     try:
-        with open("${MLDIST}", 'r') as f:
+        with open("${MLDIST_WITH_DESIGNS}", 'r') as f:
             lines = f.readlines()
         
         n_seqs = int(lines[0].strip())
         
-        for i in range(n_seqs):
-            if i == design_idx:
-                continue
-            
-            if i > design_idx:
-                dist_line = lines[i + 1].strip().split()
-                if len(dist_line) > design_idx + 1:
-                    ml_dist_to_design.append(float(dist_line[design_idx + 1]))
-                else:
-                    ml_dist_to_design.append(np.nan)
-            elif i < design_idx:
-                dist_line = lines[design_idx + 1].strip().split()
-                if len(dist_line) > i + 1:
-                    ml_dist_to_design.append(float(dist_line[i + 1]))
-                else:
-                    ml_dist_to_design.append(np.nan)
+        # ML distances between design and each strain
+        # Strains are indices 0 to n_strains-1
+        # Design is at index design_idx
         
-        print(f"  Extracted {len(ml_dist_to_design)} ML distances")
+        for strain_idx in range(n_strains):
+            if strain_idx < design_idx:
+                # Strain before design in alignment
+                dist_line = lines[design_idx + 1].strip().split()
+                if len(dist_line) > strain_idx + 1:
+                    ml_dist = float(dist_line[strain_idx + 1])
+                else:
+                    ml_dist = np.nan
+            else:
+                # Strain after design in alignment (or same position)
+                dist_line = lines[strain_idx + 1].strip().split()
+                if len(dist_line) > design_idx + 1:
+                    ml_dist = float(dist_line[design_idx + 1])
+                else:
+                    ml_dist = np.nan
+            
+            ml_dist_to_design.append(ml_dist)
+        
+        print(f"  Extracted {len([x for x in ml_dist_to_design if not np.isnan(x)])} ML distances")
     
+    except FileNotFoundError:
+        print(f"  ⚠️  ML distance file not found")
+        ml_dist_to_design = [np.nan] * len(p_distances)
     except Exception as e:
         print(f"  ⚠️  Could not parse ML distances: {e}")
         ml_dist_to_design = [np.nan] * len(p_distances)
 else:
-    print(f"  ⚠️  Design not in tree, ML distances unavailable")
+    print(f"  ⚠️  ML distance file unavailable")
     ml_dist_to_design = [np.nan] * len(p_distances)
 
 # Ensure arrays are same length
@@ -250,7 +287,8 @@ for DESIGN in "${DESIGNS[@]}"; do
     SUMMARY="${OUTPUT_DIR}/distance_summary_${DESIGN}.csv"
     if [ -f "$SUMMARY" ]; then
         echo "=== ${DESIGN} Summary ==="
-        cat ${SUMMARY}
+        head -5 ${SUMMARY}
+        echo "..."
         echo ""
     fi
 done
