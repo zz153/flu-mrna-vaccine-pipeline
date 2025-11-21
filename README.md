@@ -1,92 +1,378 @@
-# FluHub: Vaccine Design and Evolutionary Analysis Pipeline
+# FluHub: Influenza Vaccine Design and Evolutionary Analysis Pipeline
 
-## 🧫 Sequence Acquisition and Pre-Processing
+A fully reproducible computational pipeline for designing and evaluating influenza vaccine candidates using evolutionary analysis, phylogenetic methods, and distance-based metrics.
 
-### 1️⃣ Obtain Sequences
-Download HA (hemagglutinin) protein sequences for the **main influenza lineages**:
-- **A/H1N1**
-- **A/H3N2**
-- **B/Victoria (VicB)**  
-
-from public databases (e.g., GISAID, NCBI, or Influenza Research Database), covering the regions:
-**Europe, USA, Oceania, and Asia**,  
-for the years **2009–2025**.
-
-Organize them by lineage and year (e.g. `H1N1_2025.fasta`, `H3N2_2018.fasta`, etc.).
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
+[![Conda](https://img.shields.io/badge/conda-environment-green.svg)](env/environment.yml)
 
 ---
 
-### 2️⃣ Clean Up Sequences
+## 🎯 Overview
 
-Perform stringent filtering to ensure data quality and consistency across years and lineages:
+FluHub generates and evaluates four distinct vaccine design strategies for influenza hemagglutinin (HA) sequences:
 
-- Remove sequences shorter than 550 amino acids
-- Remove duplicate sequences
-- Cluster sequences at 99% identity using `cd-hit`
-- Remove ambiguous amino acids (non-ACDEFGHIKLMNPQRSTVWY characters)
-- Retain only years 2009–2025
+1. **Consensus** - Computationally derived sequence with most common amino acids
+2. **Medoid** - Actual circulating strain with minimum distance to all others
+3. **Ancestral (ASR)** - Phylogenetically reconstructed ancestral sequence
+4. **COBRA** - Computationally Optimized Broadly Reactive Antigen (2-round clustering)
 
-### 3️⃣ Vaccine Design & Evolutionary Analyses
+Each design is evaluated against circulating strains using both simple p-distance and maximum likelihood evolutionary distances (LG+G4 model).
 
-For each lineage (H1N1, H3N2, VicB) and year (2009–2025, plus combined dataset):
+---
 
-**Design sequences**
+## 📊 Key Findings
 
-Consensus
+Analysis of H1N1 (2009-2025) reveals:
+- **Consensus design performs best**: 1.42% mean distance to circulating strains
+- **Medoid**: 1.79% mean distance
+- **Ancestral**: 1.80% mean distance  
+- **COBRA**: 2.99% mean distance (shows higher variability in recent years)
 
-Medoid
+---
 
-Ancestral (ASR)
+## 🧬 Sequence Data
 
-COBRA design
+### Lineages Analyzed
+- **A/H1N1** - 16 years (2009-2025, excluding 2015)
+- **A/H3N2** - 17 years (2009-2025)
+- **B/Victoria (VicB)** - 14-15 years (2009-2025)
 
-**Compute p-distances**
-Calculate pairwise genetic distances between:
+### Geographic Coverage
+- Europe
+- USA
+- Oceania
+- Asia
 
-Circulating strains
+### Data Source
+Sequences obtained from GISAID (requires authenticated access).
 
-Designed vaccine candidates
+---
 
-Generate **per-year** and **combined heatmaps** and summary tables of distances.
+## 🔬 Pipeline Workflow
+```
+┌─────────────────────────────────────────────────────────────┐
+│  Script 01: Filter & Clean Sequences                        │
+│  • Remove sequences < 550 aa                                │
+│  • Remove ambiguous amino acids                              │
+│  • Retain only 2009-2025                                    │
+└─────────────────┬───────────────────────────────────────────┘
+                  │
+┌─────────────────▼───────────────────────────────────────────┐
+│  Script 02: Cluster Sequences (CD-HIT 99%)                  │
+│  • Reduce redundancy while preserving diversity             │
+└─────────────────┬───────────────────────────────────────────┘
+                  │
+┌─────────────────▼───────────────────────────────────────────┐
+│  Script 02b: Split by Year                                  │
+│  • Create per-year datasets                                 │
+└─────────────────┬───────────────────────────────────────────┘
+                  │
+┌─────────────────▼───────────────────────────────────────────┐
+│  Script 03: Combined Alignment (MAFFT)                      │
+│  • Generate lineage-wide reference alignment                │
+└─────────────────┬───────────────────────────────────────────┘
+                  │
+┌─────────────────▼───────────────────────────────────────────┐
+│  Script 04: Per-Year Analysis & Vaccine Design              │
+│  • Align sequences (MAFFT)                                  │
+│  • Build phylogenetic tree (IQ-TREE, LG+G4)                │
+│  • Generate 4 vaccine designs:                              │
+│    1. Consensus (most common amino acids)                   │
+│    2. Medoid (minimum distance strain)                      │
+│    3. Ancestral (ASR from tree root)                        │
+│    4. COBRA (2-round CD-HIT clustering: 95% → 90%)          │
+│  • Re-align COBRA to match gap structure                    │
+│  • Rebuild tree with all designs for ML distance extraction │
+└─────────────────┬───────────────────────────────────────────┘
+                  │
+┌─────────────────▼───────────────────────────────────────────┐
+│  Script 05: Calculate Evolutionary Distances                │
+│  • P-distance (observed differences) for all 4 designs      │
+│  • ML distance (LG+G4 model) from trees with designs        │
+│  • Generate per-year and summary statistics                 │
+└─────────────────┬───────────────────────────────────────────┘
+                  │
+┌─────────────────▼───────────────────────────────────────────┐
+│  Script 06: Visualize Performance                           │
+│  • Year-by-year comparison plots                            │
+│  • Clean heatmaps (no cluttered numbers)                    │
+│  • Overall performance comparison                           │
+│  • Summary statistics tables                                │
+└─────────────────────────────────────────────────────────────┘
+```
 
-### 4️⃣ Sequence Diversity Analyses
+---
 
-To visualize evolutionary variability and antigenic drift:
+## 🚀 Quick Start
 
-**Shannon Entropy Plots:**
-Compute per-position Shannon entropy to quantify amino acid variability across alignments.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/zz153/flu-mrna-vaccine-pipeline.git
+cd flu-mrna-vaccine-pipeline
+```
 
-**Sequence Logos:**
-Generate sequence logo plots showing amino acid frequency and conservation patterns for each year or region.
+### 2. Set Up Environment
+```bash
+# Create conda environment
+conda env create -f env/environment.yml
 
-These analyses help identify conserved vs variable regions within HA and evaluate design robustness against circulating diversity.
+# Activate environment
+conda activate flu-vaccine-pipeline
+```
 
-### 5️⃣ Output Summary
+### 3. Add Your Data
 
-Each lineage produces:
+Place GISAID HA sequences in `data/raw/`:
+```
+data/raw/
+├── H1N1_raw.fasta
+├── H3N2_raw.fasta
+└── VicB_raw.fasta
+```
 
-**Output File	Description**
-*_aligned.fasta	Cleaned and aligned sequence data
-*_treefile	IQ-TREE phylogenetic tree
-*_asr.fasta	Ancestral sequence reconstruction
-*_designs.fasta	Consensus, medoid, COBRA, and ASR design sequences
-*_distance_analysis_*.png	Heatmaps of mean/median evolutionary and p-distance
-*_entropy_plot.png	Shannon entropy profile across positions
-*_sequence_logo.png	Sequence logo showing conservation and diversity
-*_summary.csv	Yearly and combined distance/entropy summaries
-### 🧩 Summary
+### 4. Run the Pipeline
 
-In short, the workflow:
+#### For Local Execution:
+```bash
+# Run full pipeline for H1N1
+bash scripts/01_filter_sequences.sh H1N1
+bash scripts/02_cluster_sequences.sh H1N1
+bash scripts/02b_split_by_year.sh H1N1
+bash scripts/03_combined_alignment.sh H1N1
+bash scripts/04_per_year_analysis.sh H1N1 2009 2025 4
+bash scripts/05_calculate_distances.sh H1N1 2009 2025 clustered
+bash scripts/06_visualize_distances.sh H1N1 clustered
+```
 
-- Downloads sequences (H1N1, H3N2, VicB; 2009–2025; global regions)
+#### For HPC/SLURM:
+```bash
+# Submit all scripts sequentially
+sbatch --export=LINEAGE=H1N1 scripts/slurm/01_filter_sequences.slurm
+sbatch --export=LINEAGE=H1N1 scripts/slurm/02_cluster_sequences.slurm
+sbatch --export=LINEAGE=H1N1 scripts/slurm/02b_split_by_year.slurm
+sbatch --export=LINEAGE=H1N1 scripts/slurm/03_combined_alignment.slurm
+sbatch --export=LINEAGE=H1N1 scripts/slurm/04_per_year_analysis.slurm
+sbatch --export=LINEAGE=H1N1 scripts/slurm/05_calculate_distances.slurm
+sbatch --export=LINEAGE=H1N1 scripts/slurm/06_visualize_distances.slurm
+```
 
-- Cleans and clusters them
+---
 
-- Designs vaccine candidates (consensus, medoid, ASR, COBRA)
+## 📁 Repository Structure
+```
+flu-mrna-vaccine-pipeline/
+├── data/
+│   ├── raw/                    # Raw GISAID sequences (user-provided)
+│   └── processed/              # Cleaned and clustered sequences
+│       └── {LINEAGE}/
+│           ├── {LINEAGE}_clean.fasta
+│           ├── {LINEAGE}_clustered.fasta
+│           └── per_year/       # Split by year
+├── results/
+│   └── per_year_clustered/
+│       └── {LINEAGE}/
+│           ├── alignments/     # MAFFT alignments
+│           ├── trees/          # IQ-TREE phylogenies & ML distances
+│           ├── designs/        # 4 vaccine designs (× 2 versions each)
+│           ├── distances/      # P-distance & ML distance CSVs
+│           └── figures/        # Publication-quality plots
+├── scripts/
+│   ├── 01_filter_sequences.sh
+│   ├── 02_cluster_sequences.sh
+│   ├── 02b_split_by_year.sh
+│   ├── 03_combined_alignment.sh
+│   ├── 04_per_year_analysis.sh
+│   ├── 05_calculate_distances.sh
+│   ├── 06_visualize_distances.sh
+│   └── slurm/                  # SLURM wrappers for HPC
+├── env/
+│   └── environment.yml         # Conda environment specification
+└── README.md
+```
 
-- Computes p-distances between design and circulating strains
+---
 
-- Generates entropy and sequence logo plots to visualize sequence diversity
+## 🔧 Dependencies
 
-This provides a **comprehensive evolutionary** and **antigenic landscape** for influenza vaccine design.
+All dependencies are specified in `env/environment.yml`:
 
+- **Python 3.11** with Biopython, NumPy, Pandas, Matplotlib, Seaborn
+- **MAFFT 7.526** - Multiple sequence alignment
+- **IQ-TREE 3.0.1** - Maximum likelihood phylogenetic inference
+- **CD-HIT 4.8.1** - Sequence clustering
+- **SeqKit 2.10.1** - Sequence manipulation
+
+---
+
+## 📈 Output Files
+
+### Per-Year Results
+
+For each year and lineage:
+
+| File | Description |
+|------|-------------|
+| `{LINEAGE}_{YEAR}_aligned.fasta` | MAFFT alignment of circulating strains |
+| `{LINEAGE}_{YEAR}.treefile` | IQ-TREE phylogenetic tree |
+| `{LINEAGE}_{YEAR}_with_designs.treefile` | Tree including all 4 designs |
+| `{LINEAGE}_{YEAR}_consensus.fasta` | Consensus vaccine design (ungapped) |
+| `{LINEAGE}_{YEAR}_medoid.fasta` | Medoid vaccine design |
+| `{LINEAGE}_{YEAR}_ancestral.fasta` | Ancestral vaccine design (ASR) |
+| `{LINEAGE}_{YEAR}_cobra.fasta` | COBRA vaccine design |
+| `{LINEAGE}_{YEAR}_{design}_distances.csv` | Distances to all strains |
+
+### Summary Files
+
+| File | Description |
+|------|-------------|
+| `distance_summary_{design}.csv` | Mean/median/SD distances per year |
+| `{LINEAGE}_yearly_comparison.png` | Year-by-year distance plots |
+| `{LINEAGE}_distance_heatmap.png` | Heatmap of all designs × years |
+| `{LINEAGE}_overall_comparison.png` | 4-panel summary comparison |
+| `{LINEAGE}_summary_statistics.csv` | Overall performance metrics |
+
+---
+
+## 🎨 Visualization Examples
+
+### Year-by-Year Comparison
+Shows mean p-distance and ML distance for all 4 designs across years.
+
+### Distance Heatmap
+Clean visualization of mean p-distances (no cluttered numbers).
+
+### Overall Comparison
+4-panel figure showing:
+- Average performance across all years
+- Median performance
+- Strain counts per year
+- Distance variability
+
+---
+
+## 🧪 Design Strategies Explained
+
+### 1. Consensus Sequence
+- **Method**: Most common amino acid at each position
+- **Pros**: Computationally efficient, represents population average
+- **Cons**: May not correspond to any real strain
+- **Performance**: **Best** (1.42% mean distance for H1N1)
+
+### 2. Medoid Sequence
+- **Method**: Actual strain with minimum sum of distances to all others
+- **Pros**: Real sequence, exists in nature
+- **Cons**: May not capture all diversity
+- **Performance**: Good (1.79% mean distance for H1N1)
+
+### 3. Ancestral Sequence (ASR)
+- **Method**: Maximum likelihood reconstruction of tree root sequence
+- **Pros**: Phylogenetically informed, evolutionary perspective
+- **Cons**: Hypothetical sequence from the past
+- **Performance**: Good (1.80% mean distance for H1N1)
+
+### 4. COBRA (Computationally Optimized Broadly Reactive Antigen)
+- **Method**: 2-round CD-HIT clustering (95% → 90% identity)
+  1. Cluster all strains at 95% identity
+  2. Align cluster representatives
+  3. Create consensus
+  4. Cluster again at 90% identity
+  5. Final consensus of representatives
+  6. Re-align to match original alignment gap structure
+- **Pros**: Designed for broad coverage across diversity
+- **Cons**: Complex, may over-optimize for past diversity
+- **Performance**: Variable (2.99% mean distance for H1N1, worse in recent years)
+
+---
+
+## 📊 Distance Metrics
+
+### P-Distance (Simple)
+```
+p = (number of differences) / (number of aligned positions)
+```
+- Ignores gap-gap positions
+- Ignores positions where either sequence has a gap
+- Fast, interpretable
+
+### ML Distance (Evolutionary)
+```
+Using LG+G4 model (IQ-TREE)
+```
+- Le-Gascuel amino acid substitution matrix
+- Gamma rate heterogeneity (4 categories)
+- Accounts for multiple substitutions at same site
+- More accurate for evolutionary distances
+
+---
+
+## 🔬 Reproducibility
+
+This pipeline is designed for complete reproducibility:
+
+✅ **Version-controlled scripts** - All analysis code in Git  
+✅ **Conda environment** - Exact software versions specified  
+✅ **Parameterized workflows** - No hard-coded paths  
+✅ **SLURM support** - HPC execution wrappers  
+✅ **Documented methods** - Clear README and code comments
+
+### To Reproduce Results:
+
+1. Clone this repository
+2. Create conda environment from `env/environment.yml`
+3. Obtain HA sequences from GISAID (requires account)
+4. Run scripts 01-06 in sequence
+5. Results should match published figures and statistics
+
+---
+
+## 📝 Citation
+
+If you use this pipeline in your research, please cite:
+```
+[Your citation information here]
+```
+
+---
+
+## 👥 Authors
+
+**Zohaib Rana**  
+Postdoctoral Fellow, University of Otago  
+Department of Biochemistry  
+RNA & Cancer Therapeutics
+
+---
+
+## 📄 License
+
+[Specify your license here - e.g., MIT, GPL, etc.]
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please:
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request with clear description of changes
+
+---
+
+## 📧 Contact
+
+For questions or issues:
+- Open an issue on GitHub
+- Email: zohaib.rana@otago.ac.nz
+
+---
+
+## 🙏 Acknowledgments
+
+- GISAID for sequence data access
+- University of Otago HPC facility (Aoraki)
+- Open-source bioinformatics community
+
+---
+
+**Last Updated**: November 2025
