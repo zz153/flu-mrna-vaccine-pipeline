@@ -1,3 +1,8 @@
+nano .gitignore
+```
+
+**Delete everything and paste this:**
+```
 #############################
 # Data
 #############################
@@ -15,8 +20,25 @@ data/metadata/
 # All generated results (alignments, trees, designs, distances, figures, etc.)
 # These can always be regenerated from data + scripts.
 results/*
+
 # But keep a small README to explain the structure of results/
 !results/README.md
+
+# Keep figures (publication-quality visualizations)
+!results/per_year_clustered/
+!results/per_year_clustered/H1N1/
+!results/per_year_clustered/H1N1/figures/
+!results/per_year_clustered/H1N1/figures/*.png
+!results/per_year_clustered/H1N1/figures/*.csv
+!results/per_year_clustered/H3N2/
+!results/per_year_clustered/H3N2/figures/
+!results/per_year_clustered/H3N2/figures/*.png
+!results/per_year_clustered/H3N2/figures/*.csv
+!results/per_year_unclustered/
+!results/per_year_unclustered/VicB/
+!results/per_year_unclustered/VicB/figures/
+!results/per_year_unclustered/VicB/figures/*.png
+!results/per_year_unclustered/VicB/figures/*.csv
 
 # Keep a small curated set of paper-level outputs
 !results/per_year_clustered/H1N1/analysis_summary.csv
