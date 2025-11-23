@@ -1,0 +1,94 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    rtis-hpc-r09.uod.otago.ac.nz (AVX2, FMA3, 1006 GB RAM)
+Command: iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2019_aligned.fasta -m LG+G4 -te results/per_year_clustered/H1N1/trees/H1N1_2019.treefile -asr -pre results/per_year_clustered/H1N1/trees/H1N1_2019_asr -redo -quiet
+Seed:    449472 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Nov 22 10:58:39 2025
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file results/per_year_clustered/H1N1/alignments/H1N1_2019_aligned.fasta ... Fasta format detected
+Reading fasta file: done in 0.000363661 secs using 97.62% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00028285 secs using 98.29% CPU
+Alignment has 41 sequences with 566 columns, 138 distinct patterns
+41 parsimony-informative, 78 singleton sites, 446 constant sites
+WARNING: Some sequence names are changed as follows:
+EPI1478325|HA|A/Kyrgyzstan,Osh/6/2019|EPI_ISL_361909|A_/_H1N1 -> EPI1478325|HA|A/Kyrgyzstan_Osh/6/2019|EPI_ISL_361909|A_/_H1N1
+
+                                                                      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.36259e-05 secs using 102.7% CPU
+   1  EPI1757684|HA|A/Laos/2794/2019|EPI_ISL_491747|A_/_H1N1                  0.00%    passed    100.00%
+   2  EPI1604762|HA|A/Lebanon/323/2019|EPI_ISL_394074|A_/_H1N1                0.00%    passed    100.00%
+   3  EPI1605036|HA|A/OKINAWA/64/2019|EPI_ISL_394196|A_/_H1N1                 0.00%    passed    100.00%
+   4  EPI1478325|HA|A/Kyrgyzstan_Osh/6/2019|EPI_ISL_361909|A_/_H1N1           0.00%    passed    100.00%
+   5  EPI1606793|HA|A/Vietnam/018/2019|EPI_ISL_394988|A_/_H1N1                0.00%    passed    100.00%
+   6  EPI1608337|HA|A/IBARAKI/93/2019|EPI_ISL_395217|A_/_H1N1                 0.00%    passed    100.00%
+   7  EPI1610319|HA|A/SAITAMA/173/2019|EPI_ISL_395546|A_/_H1N1                0.00%    passed    100.00%
+   8  EPI1763653|HA|A/Konya/820/2019|EPI_ISL_498330|A_/_H1N1                  0.00%    passed    100.00%
+   9  EPI1646278|HA|A/Singapore/GP2220/2019|EPI_ISL_401475|A_/_H1N1           0.00%    passed    100.00%
+  10  EPI1663791|HA|A/Laos/2879/2019|EPI_ISL_404786|A_/_H1N1                  0.00%    passed    100.00%
+  11  EPI1672598|HA|A/Philippines/34/2019|EPI_ISL_406964|A_/_H1N1             0.00%    passed    100.00%
+  12  EPI1679823|HA|A/KANAGAWA/AC1920/2019|EPI_ISL_408542|A_/_H1N1            0.00%    passed    100.00%
+  13  EPI1377837|HA|A/Karaganda_NRL/344/2019|EPI_ISL_343414|A_/_H1N1          0.00%    passed    100.00%
+  14  EPI1381335|HA|A/KANAGAWA/AC1823/2019|EPI_ISL_344515|A_/_H1N1            0.00%    passed    100.00%
+  15  EPI1852427|HA|A/Vietnam/Vnhcm-Gs394/2019|EPI_ISL_1296413|A_/_H1N1       0.00%    passed    100.00%
+  16  EPI1388093|HA|A/Singapore/NTF0009/2019|EPI_ISL_346413|A_/_H1N1          0.00%    passed    100.00%
+  17  EPI1566682|HA|A/Myanmar/19M064/2019|EPI_ISL_381708|A_/_H1N1             0.00%    passed    100.00%
+  18  EPI1797977|HA|A/Malaysia/RP_0718/2019|EPI_ISL_514735|A_/_H1N1           0.00%    passed    100.00%
+  19  EPI1584500|HA|A/Malaysia/RP2118/2019|EPI_ISL_389527|A_/_H1N1            0.00%    passed    100.00%
+  20  EPI1491300|HA|A/England/146/2019|EPI_ISL_364689|A_/_H1N1                0.00%    passed    100.00%
+  21  EPI1491298|HA|A/England/204/2019|EPI_ISL_364688|A_/_H1N1                0.00%    passed    100.00%
+  22  EPI1506890|HA|A/Linkoping/1/2019|EPI_ISL_367960|A_/_H1N1                0.00%    passed    100.00%
+  23  EPI1506986|HA|A/Ukraine/8294/2019|EPI_ISL_368008|A_/_H1N1               0.00%    passed    100.00%
+  24  EPI1508590|HA|A/Novi_Sad/4336/2019|EPI_ISL_368276|A_/_H1N1              0.00%    passed    100.00%
+  25  EPI1359897|HA|A/Barry/6142/2019|EPI_ISL_339323|A_/_H1N1                 0.00%    passed    100.00%
+  26  EPI1369937|HA|A/England/27/2019|EPI_ISL_341280|A_/_H1N1                 0.00%    passed    100.00%
+  27  EPI1370341|HA|A/Catalonia/NSVH100970317/2019|EPI_ISL_341417|A_/_H1N1    0.00%    passed    100.00%
+  28  EPI1378056|HA|A/Sweden/27/2019|EPI_ISL_343451|A_/_H1N1                  0.00%    passed    100.00%
+  29  EPI1443858|HA|A/Catalonia/NSVH100983893/2019|EPI_ISL_356453|A_/_H1N1    0.00%    passed    100.00%
+  30  EPI1484058|HA|A/South_Australia/297/2019|EPI_ISL_363162|A_/_H1N1        0.00%    passed    100.00%
+  31  EPI1647174|HA|A/Canberra/337/2019|EPI_ISL_401775|A_/_H1N1               0.00%    passed    100.00%
+  32  EPI1647539|HA|A/South_Australia/477/2019|EPI_ISL_401895|A_/_H1N1        0.00%    passed    100.00%
+  33  EPI1435941|HA|A/Sydney/41/2019|EPI_ISL_354709|A_/_H1N1                  0.00%    passed    100.00%
+  34  EPI1594066|HA|A/Victoria/1001/2019|EPI_ISL_391483|A_/_H1N1              0.00%    passed    100.00%
+  35  EPI1479960|HA|A/Montana/36/2019|EPI_ISL_362275|A_/_H1N1                 0.00%    passed    100.00%
+  36  EPI1480139|HA|A/Iowa/12/2019|EPI_ISL_362298|A_/_H1N1                    0.00%    passed    100.00%
+  37  EPI1487896|HA|A/Connecticut/33/2019|EPI_ISL_364053|A_/_H1N1             0.00%    passed    100.00%
+  38  EPI1636779|HA|A/California/206/2019|EPI_ISL_400059|A_/_H1N1             0.00%    passed    100.00%
+  39  EPI1642106|HA|A/California/208/2019|EPI_ISL_400899|A_/_H1N1             0.00%    passed    100.00%
+  40  EPI1559650|HA|A/Michigan/295/2019|EPI_ISL_380418|A_/_H1N1               0.00%    passed    100.00%
+  41  EPI1396930|HA|A/Arkansas/17/2019|EPI_ISL_348098|A_/_H1N1                0.00%    passed    100.00%
+****  TOTAL                                                                   0.00%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading input tree file results/per_year_clustered/H1N1/trees/H1N1_2019.treefile ...
+
+NOTE: 4 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3121.407
+2. Current log-likelihood: -3113.854
+Optimal log-likelihood: -3113.848
+Gamma shape alpha: 0.319
+Parameters optimization took 2 rounds (0.138 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -3113.848
+Ancestral state probabilities printed to results/per_year_clustered/H1N1/trees/H1N1_2019_asr.state
+Total tree length: 0.325
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 0.292 sec (0h:0m:0s)
+Total wall-clock time used: 0.343 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/per_year_clustered/H1N1/trees/H1N1_2019_asr.iqtree
+  Maximum-likelihood tree:       results/per_year_clustered/H1N1/trees/H1N1_2019_asr.treefile
+  Ancestral state:               results/per_year_clustered/H1N1/trees/H1N1_2019_asr.state
+  Screen log file:               results/per_year_clustered/H1N1/trees/H1N1_2019_asr.log
+
+Date and Time: Sat Nov 22 10:58:39 2025

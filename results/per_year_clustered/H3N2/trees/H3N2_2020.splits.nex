@@ -1,0 +1,82 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=11;
+TAXLABELS
+[1] 'EPI1846168|HA|A/Malaysia/RP2227/2020|EPI_ISL_985216|A_/_H3N2'
+[2] 'EPI1750818|HA|A/Singapore/KK272/2020|EPI_ISL_481342|A_/_H3N2'
+[3] 'EPI1806103|HA|A/North_Lebanon/NM_397_N/2020|EPI_ISL_582598|A_/_H3N2'
+[4] 'EPI2147049|HA|A/South_Korea/MDCK/2020|EPI_ISL_14771216|A_/_H3N2'
+[5] 'EPI1728265|HA|A/Sweden/62/2020|EPI_ISL_426374|A_/_H3N2'
+[6] 'EPI1704482|HA|A/Uppsala/7/2020|EPI_ISL_413661|A_/_H3N2'
+[7] 'EPI1727794|HA|A/Khmelnytskyi/12/2020|EPI_ISL_426220|A_/_H1N1'
+[8] 'EPI1727907|HA|A/Sweden/34/2020|EPI_ISL_426273|A_/_H1N1'
+[9] 'EPI1727956|HA|A/Sweden/17/2020|EPI_ISL_426280|A_/_H1N1'
+[10] 'EPI1750234|HA|A/England/200420376/2020|EPI_ISL_480532|A_/_H1N1'
+[11] 'EPI1754899|HA|A/England/46/2020|EPI_ISL_487070|A_/_H1N1'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=11 nsplits=56;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 4,
+	100	 7,
+	100	 8,
+	4	 7 8,
+	100	 10,
+	100	 11,
+	72	 10 11,
+	31	 7 8 10 11,
+	100	 9,
+	100	 7 8 9 10 11,
+	99	 1 2 3 5 6,
+	75	 1 2 5 6,
+	100	 5,
+	100	 6,
+	98	 5 6,
+	94	 1 2,
+	100	 1,
+	52	 7 10 11,
+	55	 8 9,
+	8	 7 10,
+	8	 7 11,
+	5	 8 9 10,
+	20	 8 9 10 11,
+	22	 1 2 3,
+	3	 2 5 6,
+	4	 8 9 11,
+	11	 7 9 10 11,
+	3	 8 10 11,
+	2	 9 10 11,
+	1	 7 8 10,
+	14	 7 8 9,
+	4	 7 8 9 10,
+	2	 1 3 5 6,
+	2	 3 5 6,
+	2	 8 10,
+	1	 1 2 3 5,
+	2	 1 5 6,
+	0	 7 9 10,
+	0	 1 2 4 5 6,
+	0	 4 5 6,
+	1	 8 11,
+	0	 1 3,
+	1	 1 2 3 6,
+	1	 7 8 11,
+	0	 9 11,
+	0	 7 9 11,
+	0	 1 2 5,
+	0	 3 4,
+	0	 9 10,
+	0	 2 3,
+	0	 7 8 9 11,
+	0	 1 2 6,
+	0	 2 3 5 6,
+	0	 7 9,
+;
+END; [Splits]
+

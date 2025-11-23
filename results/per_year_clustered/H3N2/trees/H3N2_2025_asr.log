@@ -1,0 +1,156 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    rtis-hpc-r01.uod.otago.ac.nz (AVX2, FMA3, 1007 GB RAM)
+Command: iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2025_aligned.fasta -m LG+G4 -te results/per_year_clustered/H3N2/trees/H3N2_2025.treefile -asr -pre results/per_year_clustered/H3N2/trees/H3N2_2025_asr -redo -quiet
+Seed:    170755 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Nov 22 11:13:17 2025
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file results/per_year_clustered/H3N2/alignments/H3N2_2025_aligned.fasta ... Fasta format detected
+Reading fasta file: done in 0.000862177 secs using 80.03% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000538739 secs using 33.41% CPU
+Alignment has 103 sequences with 580 columns, 364 distinct patterns
+343 parsimony-informative, 38 singleton sites, 199 constant sites
+                                                                                  Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 7.53924e-05 secs using 99.48% CPU
+   1  EPI4569411|HA|A/Nakhon_Phanom/P1846/2025|EPI_ISL_20087282|A_/_H3N2                  2.41%    passed    100.00%
+   2  EPI4569451|HA|A/Bangkok/P1892/2025|EPI_ISL_20087287|A_/_H3N2                        2.41%    passed    100.00%
+   3  EPI4569339|HA|A/Nakhon_Phanom/P1767/2025|EPI_ISL_20087273|A_/_H3N2                  2.41%    passed    100.00%
+   4  EPI4467231|HA|A/YAMAGATA/98/2025|EPI_ISL_20054881|A_/_H3N2                          2.41%    passed    100.00%
+   5  EPI4467199|HA|A/GUNMA/397/2025|EPI_ISL_20054877|A_/_H3N2                            2.41%    passed    100.00%
+   6  EPI4570392|HA|A/Laos/00819-3122/2025|EPI_ISL_20087471|A_/_H3N2                      2.41%    passed    100.00%
+   7  EPI4245779|HA|A/Vietnam/FP425102/2025|EPI_ISL_19826074|A_/_H3N2                     2.41%    passed    100.00%
+   8  EPI4156919|HA|A/Nakhon_Phanom/F659/2025|EPI_ISL_19794733|A_/_H3N2                   2.41%    passed    100.00%
+   9  EPI4155435|HA|A/Busan/461/2025|EPI_ISL_19794442|A_/_H3N2                            2.41%    passed    100.00%
+  10  EPI4156688|HA|A/Ulsan/334/2025|EPI_ISL_19794599|A_/_H3N2                            2.41%    passed    100.00%
+  11  EPI4156520|HA|A/Jeju/419/2025|EPI_ISL_19794578|A_/_H3N2                             2.41%    passed    100.00%
+  12  EPI4579624|HA|A/Nakhon_Phanom/P2091/2025|EPI_ISL_20090640|A_/_H3N2                  2.41%    passed    100.00%
+  13  EPI4470709|HA|A/Oman/CPHL_7252121/2025|EPI_ISL_20058106|A_/_H3N2                    2.41%    passed    100.00%
+  14  EPI4470393|HA|A/Oman/CPHL_7251116/2025|EPI_ISL_20058064|A_/_H3N2                    2.41%    passed    100.00%
+  15  EPI4582653|HA|A/Singapore/MAH0260/2025|EPI_ISL_20091123|A_/_H3N2                    2.41%    passed    100.00%
+  16  EPI4667606|HA|A/Maldives/1301/2025|EPI_ISL_20159078|A_/_H3N2                        2.41%    passed    100.00%
+  17  EPI4423073|HA|A/ABUDHABI/UAE/0004145/2025|EPI_ISL_19899658|A_/_H3N2                 2.41%    passed    100.00%
+  18  EPI4423026|HA|A/ABUDHABI/UAE/0003943/2025|EPI_ISL_19899652|A_/_H3N2                 2.41%    passed    100.00%
+  19  EPI4422745|HA|A/ABUDHABI/UAE/0004811/2025|EPI_ISL_19899616|A_/_H3N2                 2.41%    passed    100.00%
+  20  EPI4422563|HA|A/ABUDHABI/UAE/0004807/2025|EPI_ISL_19899593|A_/_H3N2                 2.41%    passed    100.00%
+  21  EPI4422533|HA|A/ABUDHABI/UAE/0004161/2025|EPI_ISL_19899589|A_/_H3N2                 2.41%    passed    100.00%
+  22  EPI4592181|HA|A/NIIGATA-C/25144/2025|EPI_ISL_20097267|A_/_H3N2                      2.41%    passed    100.00%
+  23  EPI4594611|HA|A/ABUDHABI/UAE/0013784/2025|EPI_ISL_20098101|A_/_H3N2                 2.41%    passed    100.00%
+  24  EPI4672093|HA|A/Nepal/S2163/2025|EPI_ISL_20164546|A_/_H3N2                          2.41%    passed    100.00%
+  25  EPI4191363|HA|A/Bangkok/F1046/2025|EPI_ISL_19806054|A_/_H3N2                        2.41%    passed    100.00%
+  26  EPI4434984|HA|A/ABUDHABI/UAE/0001511/2025|EPI_ISL_19904892|A_/_H3N2                 2.41%    passed    100.00%
+  27  EPI4435269|HA|A/ABUDHABI/UAE/0003162/2025|EPI_ISL_19904945|A_/_H3N2                 2.41%    passed    100.00%
+  28  EPI4435431|HA|A/ABUDHABI/UAE/0005127/2025|EPI_ISL_19904968|A_/_H3N2                 2.41%    passed    100.00%
+  29  EPI4358173|HA|A/Laos/00819-3001/2025|EPI_ISL_19871777|A_/_H3N2                      4.31%    passed    100.00%
+  30  EPI4358117|HA|A/Laos/00819-2987/2025|EPI_ISL_19871770|A_/_H3N2                      4.31%    passed    100.00%
+  31  EPI4435979|HA|A/ABUDHABI/UAE/0021340/2025|EPI_ISL_19905112|A_/_H3N2                 2.41%    passed    100.00%
+  32  EPI4436424|HA|A/ABUDHABI/UAE/0022701/2025|EPI_ISL_19905170|A_/_H3N2                 2.41%    passed    100.00%
+  33  EPI4600644|HA|A/Vietnam/5012/2025|EPI_ISL_20103021|A_/_H3N2                         2.41%    passed    100.00%
+  34  EPI4440167|HA|A/TOKYO/EIS11-849/2025|EPI_ISL_19907040|A_/_H3N2                      2.41%    passed    100.00%
+  35  EPI4111474|HA|A/Nepal/S178/2025|EPI_ISL_19780855|A_/_H3N2                           2.41%    passed    100.00%
+  36  EPI4212716|HA|A/Oman/CPHL_725676/2025|EPI_ISL_19814750|A_/_H3N2                     2.41%    passed    100.00%
+  37  EPI4212620|HA|A/Oman/CPHL_725560/2025|EPI_ISL_19814738|A_/_H3N2                     2.41%    passed    100.00%
+  38  EPI4387605|HA|A/Riyadh/329/2025|EPI_ISL_19881900|A_/_H3N2                           2.41%    passed    100.00%
+  39  EPI4387597|HA|A/Riyadh/221/2025|EPI_ISL_19881896|A_/_H3N2                           2.41%    passed    100.00%
+  40  EPI4114463|HA|A/Vietnam/PF424427/2025|EPI_ISL_19783198|A_/_H3N2                     2.41%    passed    100.00%
+  41  EPI4390916|HA|A/Malaysia/IMR-RM1203/2025|EPI_ISL_19883062|A_/_H3N2                  2.41%    passed    100.00%
+  42  EPI4547606|HA|A/Singapore/KK0398/2025|EPI_ISL_20079646|A_/_H3N2                     2.41%    passed    100.00%
+  43  EPI4559445|HA|A/Lebanon/AU-9301/2025|EPI_ISL_20084471|A_/_H3N2                      4.14%    passed    100.00%
+  44  EPI4722194|HA|A/Phra_Nakhon_Si_Ayutthaya/P3281/2025|EPI_ISL_20184477|A_/_H3N2       2.41%    passed    100.00%
+  45  EPI4649753|HA|A/England/3140745/2025|EPI_ISL_20152710|A_/_H3N2                      2.41%    passed    100.00%
+  46  EPI4148141|HA|A/Galicia/GA-CHUAC-323/2025|EPI_ISL_19792114|A_/_H3N2                 2.41%    passed    100.00%
+  47  EPI3957631|HA|A/Galicia/SCQ/123708/2025|EPI_ISL_19729391|A_/_H3N2                   2.41%    passed    100.00%
+  48  EPI4053421|HA|A/Catalonia/NSVH171625451/2025|EPI_ISL_19762458|A_/_H3N2              2.41%    passed    100.00%
+  49  EPI3867210|HA|A/Switzerland/UN-SNRCI-HUG-46890800/2025|EPI_ISL_19698200|A_/_H3N2    2.41%    passed    100.00%
+  50  EPI4411050|HA|A/Netherlands/00520/2025|EPI_ISL_19895646|A_/_H3N2                    2.41%    passed    100.00%
+  51  EPI4323571|HA|A/Galicia/GA-CHUAC-395/2025|EPI_ISL_19863520|A_/_H3N2                 2.41%    passed    100.00%
+  52  EPI4169874|HA|A/Canarias/715/2025|EPI_ISL_19798318|A_/_H3N2                         2.41%    passed    100.00%
+  53  EPI4324677|HA|A/Galicia/SCQ/164741/2025|EPI_ISL_19863712|A_/_H3N2                   2.41%    passed    100.00%
+  54  EPI4667852|HA|A/Kyiv/1735/2025|EPI_ISL_20159109|A_/_H3N2                            2.41%    passed    100.00%
+  55  EPI4417107|HA|A/PaisVasco/96047909/2025|EPI_ISL_19897769|A_/_H3N2                   2.41%    passed    100.00%
+  56  EPI4255709|HA|A/Badajoz/18682741/2025|EPI_ISL_19832057|A_/_H3N2                     2.24%    passed    100.00%
+  57  EPI4488726|HA|A/Galicia/22716870/2025|EPI_ISL_20063874|A_/_H3N2                     2.41%    passed    100.00%
+  58  EPI4427844|HA|A/Spain/VC-GRAL-002675/2025|EPI_ISL_19900569|A_/_H3N2                 2.41%    passed    100.00%
+  59  EPI4267031|HA|A/Asturias/1217/2025|EPI_ISL_19837366|A_/_H3N2                        2.41%    passed    100.00%
+  60  EPI3885934|HA|A/Ukraine/GIHSN-HCL025014452702/2025|EPI_ISL_19705870|A_/_H3N2        2.41%    passed    100.00%
+  61  EPI3885958|HA|A/Ukraine/GIHSN-HCL025014454802/2025|EPI_ISL_19705873|A_/_H3N2        2.41%    passed    100.00%
+  62  EPI4101046|HA|A/England/0780838/2025|EPI_ISL_19777674|A_/_H3N2                      2.41%    passed    100.00%
+  63  EPI3827479|HA|A/Galicia/GA-CHUAC-192/2025|EPI_ISL_19680892|A_/_H3N2                 2.41%    passed    100.00%
+  64  EPI4017249|HA|A/Murcia/364/2025|EPI_ISL_19747908|A_/_H3N2                           2.41%    passed    100.00%
+  65  EPI4298547|HA|A/England/1400693/2025|EPI_ISL_19853084|A_/_H3N2                      2.41%    passed    100.00%
+  66  EPI4560416|HA|A/Padeswood/4401/2025|EPI_ISL_20084767|A_/_H3N2                       2.41%    passed    100.00%
+  67  EPI4309762|HA|A/Sweden/SE25-50811/2025|EPI_ISL_19857207|A_/_H3N2                    2.41%    passed    100.00%
+  68  EPI4147226|HA|A/Catalonia/NSVH151063084/2025|EPI_ISL_19791509|A_/_H3N2              2.41%    passed     99.98%
+  69  EPI4569854|HA|A/Solomon_Islands/30/2025|EPI_ISL_20087352|A_/_H3N2                   2.41%    passed    100.00%
+  70  EPI4575178|HA|A/South_Australia/2510501305/2025|EPI_ISL_20089688|A_/_H3N2           2.41%    passed    100.00%
+  71  EPI4724371|HA|A/South_Australia/2525911555/2025|EPI_ISL_20188069|A_/_H3N2           2.41%    passed    100.00%
+  72  EPI4724347|HA|A/New_South_Wales/2525817216/2025|EPI_ISL_20188066|A_/_H3N2           2.41%    passed    100.00%
+  73  EPI4664988|HA|A/Tasmania/729/2025|EPI_ISL_20157940|A_/_H3N2                         2.41%    passed    100.00%
+  74  EPI4411302|HA|A/Tasmania/175/2025|EPI_ISL_19895764|A_/_H3N2                         2.41%    passed    100.00%
+  75  EPI4672004|HA|A/Darwin/1065/2025|EPI_ISL_20164520|A_/_H3N2                          2.41%    passed    100.00%
+  76  EPI4514373|HA|A/Victoria/397/2025|EPI_ISL_20070574|A_/_H3N2                         2.41%    passed    100.00%
+  77  EPI4627386|HA|A/New_Caledonia/67/2025|EPI_ISL_20138725|A_/_H3N2                     2.41%    passed    100.00%
+  78  EPI4308974|HA|A/Sydney/75/2025|EPI_ISL_19856609|A_/_H3N2                            2.41%    passed    100.00%
+  79  EPI4649713|HA|A/England/2820681/2025|EPI_ISL_20152705|A_/_H1N1                      2.41%    passed     36.13%
+  80  EPI4649552|HA|A/Catalonia/NSAV198332619/2025|EPI_ISL_20152344|A_/_H1N1              2.41%    passed     35.95%
+  81  EPI4467988|HA|A/Galicia/44224586/2025|EPI_ISL_20055313|A_/_H1N1                     2.41%    passed     31.99%
+  82  EPI4408183|HA|A/Madrid/HULP-200724254/2025|EPI_ISL_19893100|A_/_H1N1                2.41%    passed     45.52%
+  83  EPI4408167|HA|A/Madrid/HULP-200683958/2025|EPI_ISL_19893098|A_/_H1N1                2.41%    passed     21.51%
+  84  EPI3957602|HA|A/Galicia/SCQ/122721/2025|EPI_ISL_19729387|A_/_H1N1                   2.41%    passed     41.45%
+  85  EPI3957551|HA|A/Galicia/SCQ/118726/2025|EPI_ISL_19729380|A_/_H1N1                   2.41%    passed     45.35%
+  86  EPI4318575|HA|A/Galicia/GA-CHUAC-376/2025|EPI_ISL_19861830|A_/_H1N1                 2.41%    passed     48.29%
+  87  EPI4161523|HA|A/Aragon/598/2025|EPI_ISL_19796571|A_/_H1N1                           2.41%    passed     28.03%
+  88  EPI4322518|HA|A/Galicia/52502966/2025|EPI_ISL_19863007|A_/_H1N1                     2.41%    passed     38.97%
+  89  EPI4414758|HA|A/Spain/VC-HADV-002442/2025|EPI_ISL_19897333|A_/_H1N1                 2.41%    passed     43.65%
+  90  EPI4415749|HA|A/Spain/VC-GRAL-002617/2025|EPI_ISL_19897460|A_/_H1N1                 2.41%    passed     27.79%
+  91  EPI4064473|HA|A/Avila/1833/2025|EPI_ISL_19767618|A_/_H1N1                           2.41%    passed     24.35%
+  92  EPI4589108|HA|A/Alicante/VAHNSI-GIHSN-16_0431/2025|EPI_ISL_20095985|A_/_H1N1        2.41%    passed     32.13%
+  93  EPI4589578|HA|A/Valencia/VAHNSI-GIHSN-11_0539/2025|EPI_ISL_20096044|A_/_H1N1        2.41%    passed     48.60%
+  94  EPI4589474|HA|A/Valencia/VAHNSI-GIHSN-11_0289/2025|EPI_ISL_20096031|A_/_H1N1        2.41%    passed     31.60%
+  95  EPI4073754|HA|A/Galicia/SCQ/132102/2025|EPI_ISL_19770700|A_/_H1N1                   2.41%    passed     25.90%
+  96  EPI4265256|HA|A/ComunidadValenciana/990/2025|EPI_ISL_19836366|A_/_H1N1              2.41%    passed     34.01%
+  97  EPI4192158|HA|A/Andalucia/PMC-00768/2025|EPI_ISL_19806287|A_/_H1N1                  2.24%    passed     26.09%
+  98  EPI4503965|HA|A/Slovakia/uvzsr-40431/2025|EPI_ISL_20069003|A_/_H1N1                 2.41%    passed     37.85%
+  99  EPI4113781|HA|A/Sweden/SE25-50565/2025|EPI_ISL_19782067|A_/_H1N1                    2.41%    passed     49.15%
+ 100  EPI4116076|HA|A/England/0880117/2025|EPI_ISL_19783846|A_/_H1N1                      2.41%    passed     31.57%
+ 101  EPI4116152|HA|A/England/0920404/2025|EPI_ISL_19783857|A_/_H1N1                      2.41%    passed     40.88%
+ 102  EPI4116576|HA|A/Cwmifor/4078/2025|EPI_ISL_19784917|A_/_H1N1                         2.41%    passed     30.69%
+ 103  EPI4401545|HA|A/Catalonia/NSBE251037350/2025|EPI_ISL_19889540|A_/_H1N1              2.41%    passed     61.16%
+****  TOTAL                                                                               2.46%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading input tree file results/per_year_clustered/H3N2/trees/H3N2_2025.treefile ...
+
+NOTE: 24 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6490.069
+2. Current log-likelihood: -6484.815
+3. Current log-likelihood: -6483.669
+4. Current log-likelihood: -6483.546
+5. Current log-likelihood: -6483.530
+Optimal log-likelihood: -6483.528
+Gamma shape alpha: 0.700
+Parameters optimization took 5 rounds (2.128 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -6483.528
+Ancestral state probabilities printed to results/per_year_clustered/H3N2/trees/H3N2_2025_asr.state
+Total tree length: 2.923
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 2.514 sec (0h:0m:2s)
+Total wall-clock time used: 2.646 sec (0h:0m:2s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/per_year_clustered/H3N2/trees/H3N2_2025_asr.iqtree
+  Maximum-likelihood tree:       results/per_year_clustered/H3N2/trees/H3N2_2025_asr.treefile
+  Ancestral state:               results/per_year_clustered/H3N2/trees/H3N2_2025_asr.state
+  Screen log file:               results/per_year_clustered/H3N2/trees/H3N2_2025_asr.log
+
+Date and Time: Sat Nov 22 11:13:19 2025

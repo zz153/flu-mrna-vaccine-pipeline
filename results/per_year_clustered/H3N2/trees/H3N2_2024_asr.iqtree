@@ -1,0 +1,301 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_clustered/H3N2/alignments/H3N2_2024_aligned.fasta
+User tree file name: results/per_year_clustered/H3N2/trees/H3N2_2024.treefile
+Type of analysis: tree reconstruction
+Random seed number: 626420
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 105 sequences with 580 amino-acid sites
+Number of constant sites: 183 (= 31.5517% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 183 (= 31.5517% of all sites)
+Number of parsimony informative sites: 340
+Number of distinct site patterns: 393
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 1.1499
+
+ Category  Relative_rate  Proportion
+  1         0.1659         0.2500
+  2         0.5176         0.2500
+  3         1.0210         0.2500
+  4         2.2955         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -6639.2310 (s.e. 226.2769)
+Unconstrained log-likelihood (without tree): -3245.4024
+Number of free parameters (#branches + #model parameters): 208
+Akaike information criterion (AIC) score: 13694.4619
+Corrected Akaike information criterion (AICc) score: 13928.8123
+Bayesian information criterion (BIC) score: 14601.9718
+
+Total tree length (sum of branch lengths): 2.3484
+Sum of internal branch lengths: 1.6375 (69.7309% of tree length)
+
+WARNING: 55 near-zero internal branches (<0.0017) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI3476662|HA|A/Philippines/ILI24-1272/2024|EPI_ISL_19300813|A_/_H3N2' is drawn at root
+
++--EPI3476662|HA|A/Philippines/ILI24-1272/2024|EPI_ISL_19300813|A_/_H3N2
+| (Node1)
+|                                +--EPI3954964|HA|A/Laos/2825/2024|EPI_ISL_19727510|A_/_H3N2
+|                             +--| (Node12)
+|                             |  +--EPI3480424|HA|A/Darwin/916/2024|EPI_ISL_19301978|A_/_H3N2
+|                          +**| (Node11)
+|                          |  |              +--EPI3637488|HA|A/Malaysia/MKAI/CL37898/2024|EPI_ISL_19539819|A_/_H3N2
+|                          |  |           +**| (Node17)
+|                          |  |           |  +--EPI3904417|HA|A/ABUDHABI/UAE/0020453/2024|EPI_ISL_19711873|A_/_H3N2
+|                          |  |        +--| (Node16)
+|                          |  |        |  +--EPI3750151|HA|A/Seoul/4069/2024|EPI_ISL_19642622|A_/_H3N2
+|                          |  |     +**| (Node15)
+|                          |  |     |  +--EPI3558031|HA|A/TOKYO/EIS10-210/2024|EPI_ISL_19417558|A_/_H3N2
+|                          |  |  +--| (Node14)
+|                          |  |  |  +--EPI4387603|HA|A/Riyadh/45/2024|EPI_ISL_19881899|A_/_H3N2
+|                          |  +**| (Node13)
+|                          |     |  +**EPI4372560|HA|A/Myanmar/I264/2024|EPI_ISL_19874533|A_/_H3N2
+|                          |     +--| (Node18)
+|                          |        |  +--EPI3751097|HA|A/Switzerland/59652/2024|EPI_ISL_19643984|A_/_H3N2
+|                          |        +--| (Node19)
+|                          |           +--EPI3480055|HA|A/Sydney/289/2024|EPI_ISL_19301908|A_/_H3N2
+|                       +**| (Node10)
+|                       |  |     +--EPI3007297|HA|A/Sri_Lanka/38/2024|EPI_ISL_18876716|A_/_H3N2
+|                       |  |  +**| (Node21)
+|                       |  |  |  +--EPI3249927|HA|A/Malaysia/IMR-SARI0356/2024|EPI_ISL_19084229|A_/_H3N2
+|                       |  +**| (Node20)
+|                       |     |     +--EPI3957290|HA|A/KOBE/24328/2024|EPI_ISL_19729250|A_/_H3N2
+|                       |     |  +--| (Node23)
+|                       |     |  |  +--EPI4038595|HA|A/Madrid/342425187428/2024|EPI_ISL_19756825|A_/_H3N2
+|                       |     +--| (Node22)
+|                       |        |  +--EPI3844439|HA|A/Malaysia/TIDREC_KLA-AUFI286/2024|EPI_ISL_19689145|A_/_H3N2
+|                       |        +--| (Node24)
+|                       |           +--EPI3790919|HA|A/England/0100130/2024|EPI_ISL_19667487|A_/_H3N2
+|                    +--| (Node9)
+|                    |  +--EPI3585522|HA|A/South_Australia/168/2024|EPI_ISL_19458277|A_/_H3N2
+|                 +**| (Node8)
+|                 |  |  +--EPI3736128|HA|A/Oman/CPHL_7248732/2024|EPI_ISL_19631336|A_/_H3N2
+|                 |  +--| (Node25)
+|                 |     |           +--EPI3389082|HA|A/Abu_Dhabi/8914/2024|EPI_ISL_19208703|A_/_H3N2
+|                 |     |        +--| (Node29)
+|                 |     |        |  +--EPI3476488|HA|A/Singapore/KK1119/2024|EPI_ISL_19300350|A_/_H3N2
+|                 |     |     +--| (Node28)
+|                 |     |     |  |        +--EPI3475352|HA|A/Singapore/TT0237/2024|EPI_ISL_19299278|A_/_H3N2
+|                 |     |     |  |     +--| (Node32)
+|                 |     |     |  |     |  +--EPI3666891|HA|A/South_Australia/274/2024|EPI_ISL_19574581|A_/_H3N2
+|                 |     |     |  |  +--| (Node31)
+|                 |     |     |  |  |  +--EPI3508411|HA|A/South_Australia/136/2024|EPI_ISL_19338369|A_/_H3N2
+|                 |     |     |  +**| (Node30)
+|                 |     |     |     +--EPI3612870|HA|A/Queensland/IN000279/2024|EPI_ISL_19500707|A_/_H3N2
+|                 |     |  +--| (Node27)
+|                 |     |  |  |        +--EPI2958566|HA|A/Bangkok/P212/2024|EPI_ISL_18819751|A_/_H3N2
+|                 |     |  |  |     +**| (Node35)
+|                 |     |  |  |     |  +--EPI3640371|HA|A/Queensland/IN000647/2024|EPI_ISL_19543614|A_/_H3N2
+|                 |     |  |  |  +--| (Node34)
+|                 |     |  |  |  |  +--EPI3456819|HA|A/Singapore/KK0151/2024|EPI_ISL_19283577|A_/_H3N2
+|                 |     |  |  +--| (Node33)
+|                 |     |  |     |  +--EPI3456835|HA|A/Singapore/KK0210/2024|EPI_ISL_19283579|A_/_H3N2
+|                 |     |  |     +--| (Node36)
+|                 |     |  |        +--EPI3399783|HA|A/Timor-Leste/223/2024|EPI_ISL_19218236|A_/_H3N2
+|                 |     +**| (Node26)
+|                 |        |           +--EPI3726461|HA|A/Galicia/33348842/2024|EPI_ISL_19615419|A_/_H3N2
+|                 |        |        +--| (Node40)
+|                 |        |        |  |  +--EPI3726506|HA|A/Galicia/33156584/2024|EPI_ISL_19615425|A_/_H3N2
+|                 |        |        |  +**| (Node41)
+|                 |        |        |     +--EPI3726498|HA|A/Galicia/44143091/2024|EPI_ISL_19615424|A_/_H3N2
+|                 |        |     +--| (Node39)
+|                 |        |     |  +--EPI3726478|HA|A/Galicia/22347908/2024|EPI_ISL_19615421|A_/_H3N2
+|                 |        |  +--| (Node38)
+|                 |        |  |  +--EPI4304684|HA|A/Asturias/232461330/2024|EPI_ISL_19855166|A_/_H3N2
+|                 |        +--| (Node37)
+|                 |           |                                                                            +--EPI3680409|HA|A/England/4700123/2024|EPI_ISL_19596134|A_/_H1N1
+|                 |           |                                                                         +--| (Node49)
+|                 |           |                                                                         |  |  +--EPI3898109|HA|A/Baleares/250061/2024|EPI_ISL_19709436|A_/_H1N1
+|                 |           |                                                                         |  +--| (Node50)
+|                 |           |                                                                         |     +--EPI4038587|HA|A/Madrid/302425181704/2024|EPI_ISL_19756821|A_/_H1N1
+|                 |           |                                                                      +--| (Node48)
+|                 |           |                                                                      |  |  +--EPI3787123|HA|A/Catalonia/NSJO560000050/2024|EPI_ISL_19661810|A_/_H1N1
+|                 |           |                                                                      |  +**| (Node51)
+|                 |           |                                                                      |     +--EPI3828065|HA|A/England/5160975/2024|EPI_ISL_19680996|A_/_H1N1
+|                 |           |                                                                   +**| (Node47)
+|                 |           |                                                                   |  +--EPI3582939|HA|A/England/1940422/2024|EPI_ISL_19455545|A_/_H1N1
+|                 |           |                                                                +**| (Node46)
+|                 |           |                                                                |  |           +--EPI3680344|HA|A/England/4620270/2024|EPI_ISL_19596124|A_/_H1N1
+|                 |           |                                                                |  |        +--| (Node55)
+|                 |           |                                                                |  |        |  +--EPI3300584|HA|A/Madrid/HULP-072638331/2024|EPI_ISL_19147390|A_/_H1N1
+|                 |           |                                                                |  |     +**| (Node54)
+|                 |           |                                                                |  |     |  +--EPI3834736|HA|A/Segovia/167/2024|EPI_ISL_19685460|A_/_H1N1
+|                 |           |                                                                |  |  +**| (Node53)
+|                 |           |                                                                |  |  |  |  +--EPI3080459|HA|A/Aragon/558/2024|EPI_ISL_18942787|A_/_H1N1
+|                 |           |                                                                |  |  |  +**| (Node56)
+|                 |           |                                                                |  |  |     +--EPI3179398|HA|A/Madrid/HRYC-13069536/2024|EPI_ISL_19030052|A_/_H1N1
+|                 |           |                                                                |  +**| (Node52)
+|                 |           |                                                                |     |        +--EPI3441791|HA|A/Swansea/5888/2024|EPI_ISL_19269744|A_/_H1N1
+|                 |           |                                                                |     |     +**| (Node59)
+|                 |           |                                                                |     |     |  |              +--EPI3419895|HA|A/Cardiff/4190/2024|EPI_ISL_19243251|A_/_H1N1
+|                 |           |                                                                |     |     |  |           +**| (Node64)
+|                 |           |                                                                |     |     |  |           |  +--EPI3268826|HA|A/Trollhattan/SE24-04471/2024|EPI_ISL_19116439|A_/_H1N1
+|                 |           |                                                                |     |     |  |        +**| (Node63)
+|                 |           |                                                                |     |     |  |        |  +--EPI3522000|HA|A/Switzerland/46021/2024|EPI_ISL_19359901|A_/_H1N1
+|                 |           |                                                                |     |     |  |     +**| (Node62)
+|                 |           |                                                                |     |     |  |     |  |  +--EPI3326190|HA|A/Madrid/1058/2024|EPI_ISL_19159205|A_/_H1N1
+|                 |           |                                                                |     |     |  |     |  +**| (Node65)
+|                 |           |                                                                |     |     |  |     |     +--EPI3184267|HA|A/Slovakia/uvzsr-331/2024|EPI_ISL_19033719|A_/_H1N1
+|                 |           |                                                                |     |     |  |  +**| (Node61)
+|                 |           |                                                                |     |     |  |  |  +--EPI3197133|HA|A/Serbia/328/2024|EPI_ISL_19050842|A_/_H1N1
+|                 |           |                                                                |     |     |  +--| (Node60)
+|                 |           |                                                                |     |     |     +--EPI3100469|HA|A/England/240561251/2024|EPI_ISL_18961932|A_/_H1N1
+|                 |           |                                                                |     |  +--| (Node58)
+|                 |           |                                                                |     |  |  +--EPI3258270|HA|A/Serbia/113/2024|EPI_ISL_19093576|A_/_H1N1
+|                 |           |                                                                |     +--| (Node57)
+|                 |           |                                                                |        |                    +--EPI3080466|HA|A/Aragon/560/2024|EPI_ISL_18942788|A_/_H1N1
+|                 |           |                                                                |        |                 +--| (Node72)
+|                 |           |                                                                |        |                 |  +--EPI3687261|HA|A/Murcia/2159/2024|EPI_ISL_19603666|A_/_H1N1
+|                 |           |                                                                |        |              +**| (Node71)
+|                 |           |                                                                |        |              |  |     +--EPI3791769|HA|A/England/0120311/2024|EPI_ISL_19667609|A_/_H1N1
+|                 |           |                                                                |        |              |  |  +--| (Node74)
+|                 |           |                                                                |        |              |  |  |  |     +--EPI3054103|HA|A/Badajoz/18619790/2024|EPI_ISL_18918494|A_/_H1N1
+|                 |           |                                                                |        |              |  |  |  |  +**| (Node76)
+|                 |           |                                                                |        |              |  |  |  |  |  +--EPI3769322|HA|A/Catalonia/NSVH102488391/2024|EPI_ISL_19652392|A_/_H1N1
+|                 |           |                                                                |        |              |  |  |  +--| (Node75)
+|                 |           |                                                                |        |              |  |  |     +--EPI2978047|HA|A/Badajoz/18616368/2024|EPI_ISL_18854264|A_/_H1N1
+|                 |           |                                                                |        |              |  +**| (Node73)
+|                 |           |                                                                |        |              |     +--EPI3884129|HA|A/Catalonia/NSVH170145573/2024|EPI_ISL_19705055|A_/_H1N1
+|                 |           |                                                                |        |           +--| (Node70)
+|                 |           |                                                                |        |           |  +--EPI3050064|HA|A/Badajoz/18615142/2024|EPI_ISL_18912986|A_/_H1N1
+|                 |           |                                                                |        |        +**| (Node69)
+|                 |           |                                                                |        |        |  +--EPI3229553|HA|A/Galicia/GA-CHUAC-90/2024|EPI_ISL_19069709|A_/_H1N1
+|                 |           |                                                                |        |     +--| (Node68)
+|                 |           |                                                                |        |     |  |  +--EPI3082085|HA|A/Madrid/150/2024|EPI_ISL_18943819|A_/_H1N1
+|                 |           |                                                                |        |     |  +--| (Node77)
+|                 |           |                                                                |        |     |     +--EPI3889484|HA|A/Andalucia/PMC-00587/2024|EPI_ISL_19707937|A_/_H1N1
+|                 |           |                                                                |        |  +--| (Node67)
+|                 |           |                                                                |        |  |  |  +--EPI3330761|HA|A/Alicante/VAHNSI-GIHSN-16_3554/2024|EPI_ISL_19160593|A_/_H1N1
+|                 |           |                                                                |        |  |  +**| (Node78)
+|                 |           |                                                                |        |  |     +--EPI3183899|HA|A/Slovakia/uvzsr-457/2024|EPI_ISL_19033650|A_/_H1N1
+|                 |           |                                                                |        +--| (Node66)
+|                 |           |                                                                |           +--EPI3179470|HA|A/Madrid/HRYC-13089164/2024|EPI_ISL_19030061|A_/_H1N1
+|                 |           |                                                             +**| (Node45)
+|                 |           |                                                             |  |  +--EPI4318253|HA|A/Melilla/01677727/2024|EPI_ISL_19861764|A_/_H1N1
+|                 |           |                                                             |  +**| (Node79)
+|                 |           |                                                             |     +--EPI3197155|HA|A/Serbia/196/2024|EPI_ISL_19050845|A_/_H1N1
+|                 |           |                                                          +--| (Node44)
+|                 |           |                                                          |  +--EPI3493268|HA|A/Galicia/SCQ/140189/2024|EPI_ISL_19323908|A_/_H1N1
+|                 |           |                                                       +--| (Node43)
+|                 |           |                                                       |  +--EPI3513291|HA|A/England/243060223/2024|EPI_ISL_19348510|A_/_H1N1
+|                 |           +-------------------------------------------------------| (Node42)
+|                 |                                                                   +**EPI3512991|HA|A/England/242960235/2024|EPI_ISL_19345292|A_/_H1N1
+|              +**| (Node7)
+|              |  |  +--EPI3899532|HA|A/ABUDHABI/UAE/0012976/2024|EPI_ISL_19709691|A_/_H3N2
+|              |  +**| (Node80)
+|              |     +--EPI3558087|HA|A/TOKYO/EIS10-294/2024|EPI_ISL_19417565|A_/_H3N2
+|           +**| (Node6)
+|           |  |     +--EPI3662892|HA|A/Philippines/OBI24-0018/2024|EPI_ISL_19567669|A_/_H3N2
+|           |  |  +**| (Node82)
+|           |  |  |  +--EPI3616358|HA|A/YOKOHAMA/31/2024|EPI_ISL_19504976|A_/_H3N2
+|           |  +--| (Node81)
+|           |     |  +--EPI3794940|HA|A/Philippines/1597/2024|EPI_ISL_19668077|A_/_H3N2
+|           |     +**| (Node83)
+|           |        +--EPI3904018|HA|A/ABUDHABI/UAE/0017838/2024|EPI_ISL_19711823|A_/_H3N2
+|        +**| (Node5)
+|        |  |  +--EPI3480627|HA|A/Victoria/968/2024|EPI_ISL_19302029|A_/_H3N2
+|        |  +**| (Node84)
+|        |     +--EPI3817714|HA|A/Victoria/3318/2024|EPI_ISL_19676540|A_/_H3N2
+|     +**| (Node4)
+|     |  |     +--EPI3633261|HA|A/Auckland/257/2024|EPI_ISL_19534695|A_/_H3N2
+|     |  |  +**| (Node86)
+|     |  |  |  +--EPI3640446|HA|A/Queensland/IN000659/2024|EPI_ISL_19543624|A_/_H3N2
+|     |  +**| (Node85)
+|     |     |  +--EPI3509909|HA|A/Victoria/1534/2024|EPI_ISL_19341705|A_/_H3N2
+|     |     +**| (Node87)
+|     |        +--EPI3658048|HA|A/Victoria/3265/2024|EPI_ISL_19561258|A_/_H3N2
+|  +--| (Node3)
+|  |  +--EPI3786403|HA|A/Sydney/1321/2024|EPI_ISL_19661498|A_/_H3N2
++**| (Node2)
+|  +--EPI3739244|HA|A/Daejeon/3779/2024|EPI_ISL_19632813|A_/_H3N2
+|
+|              +--EPI3611454|HA|A/Phra_Nakhon_Si_Ayutthaya/B409/2024|EPI_ISL_19500366|A_/_H3N2
+|           +**| (Node92)
+|           |  +--EPI3817956|HA|A/Tasmania/874/2024|EPI_ISL_19676611|A_/_H3N2
+|        +**| (Node91)
+|        |  |  +--EPI4244815|HA|A/Perth/1111/2024|EPI_ISL_19825838|A_/_H3N2
+|        |  +**| (Node93)
+|        |     +--EPI3633230|HA|A/Auckland/242/2024|EPI_ISL_19534685|A_/_H3N2
+|     +**| (Node90)
+|     |  |     +--EPI4379883|HA|A/Malaysia/MKAI_CL47914/2024|EPI_ISL_19878697|A_/_H3N2
+|     |  |  +**| (Node95)
+|     |  |  |  |  +--EPI3866763|HA|A/Switzerland/UN-SNRCI-HUG-46747581/2024|EPI_ISL_19698113|A_/_H3N2
+|     |  |  |  +**| (Node96)
+|     |  |  |     |  +--EPI3786375|HA|A/Victoria/3124/2024|EPI_ISL_19661491|A_/_H3N2
+|     |  |  |     +--| (Node97)
+|     |  |  |        +--EPI3634645|HA|A/Wellington/80/2024|EPI_ISL_19539110|A_/_H3N2
+|     |  +**| (Node94)
+|     |     |     +--EPI3786387|HA|A/Victoria/3131/2024|EPI_ISL_19661494|A_/_H3N2
+|     |     |  +**| (Node99)
+|     |     |  |  +--EPI3633314|HA|A/Auckland/276/2024|EPI_ISL_19534716|A_/_H3N2
+|     |     +**| (Node98)
+|     |        |  +--EPI3539116|HA|A/Victoria/1588/2024|EPI_ISL_19383456|A_/_H3N2
+|     |        +--| (Node100)
+|     |           +--EPI3606682|HA|A/Brisbane/409/2024|EPI_ISL_19493393|A_/_H3N2
+|  +--| (Node89)
+|  |  |  +--EPI4409312|HA|A/Malaysia/MKAI_CL43218/2024|EPI_ISL_19893417|A_/_H3N2
+|  |  +**| (Node101)
+|  |     |  +--EPI3786347|HA|A/Perth/1144/2024|EPI_ISL_19661484|A_/_H3N2
+|  |     +--| (Node102)
+|  |        +--EPI3509982|HA|A/Victoria/1304/2024|EPI_ISL_19341743|A_/_H3N2
++**| (Node88)
+   |  +--EPI3913255|HA|A/Singapore/GP14277/2024|EPI_ISL_19715098|A_/_H3N2
+   +--| (Node103)
+      +--EPI3258732|HA|A/England/241560836/2024|EPI_ISL_19093779|A_/_H3N2
+
+Tree in newick format:
+
+(EPI3476662|HA|A/Philippines/ILI24-1272/2024|EPI_ISL_19300813|A_/_H3N2:0.0071372020,(((((((((((EPI3954964|HA|A/Laos/2825/2024|EPI_ISL_19727510|A_/_H3N2:0.0107541292,EPI3480424|HA|A/Darwin/916/2024|EPI_ISL_19301978|A_/_H3N2:0.0071331380)Node12:0.0017959660,(((((EPI3637488|HA|A/Malaysia/MKAI/CL37898/2024|EPI_ISL_19539819|A_/_H3N2:0.0053376538,EPI3904417|HA|A/ABUDHABI/UAE/0020453/2024|EPI_ISL_19711873|A_/_H3N2:0.0053260171)Node17:0.0000010000,EPI3750151|HA|A/Seoul/4069/2024|EPI_ISL_19642622|A_/_H3N2:0.0053576610)Node16:0.0017730245,EPI3558031|HA|A/TOKYO/EIS10-210/2024|EPI_ISL_19417558|A_/_H3N2:0.0071443643)Node15:0.0000027383,EPI4387603|HA|A/Riyadh/45/2024|EPI_ISL_19881899|A_/_H3N2:0.0198715752)Node14:0.0017730729,(EPI4372560|HA|A/Myanmar/I264/2024|EPI_ISL_19874533|A_/_H3N2:0.0000022808,(EPI3751097|HA|A/Switzerland/59652/2024|EPI_ISL_19643984|A_/_H3N2:0.0089092543,EPI3480055|HA|A/Sydney/289/2024|EPI_ISL_19301908|A_/_H3N2:0.0089121543)Node19:0.0017731846)Node18:0.0017739801)Node13:0.0000010000)Node11:0.0000026774,((EPI3007297|HA|A/Sri_Lanka/38/2024|EPI_ISL_18876716|A_/_H3N2:0.0089332744,EPI3249927|HA|A/Malaysia/IMR-SARI0356/2024|EPI_ISL_19084229|A_/_H3N2:0.0111055116)Node21:0.0000027114,((EPI3957290|HA|A/KOBE/24328/2024|EPI_ISL_19729250|A_/_H3N2:0.0053671153,EPI4038595|HA|A/Madrid/342425187428/2024|EPI_ISL_19756825|A_/_H3N2:0.0071470432)Node23:0.0017608862,(EPI3844439|HA|A/Malaysia/TIDREC_KLA-AUFI286/2024|EPI_ISL_19689145|A_/_H3N2:0.0053319635,EPI3790919|HA|A/England/0100130/2024|EPI_ISL_19667487|A_/_H3N2:0.0053138267)Node24:0.0017716628)Node22:0.0017823545)Node20:0.0000010000)Node10:0.0000010000,EPI3585522|HA|A/South_Australia/168/2024|EPI_ISL_19458277|A_/_H3N2:0.0089286393)Node9:0.0017753942,(EPI3736128|HA|A/Oman/CPHL_7248732/2024|EPI_ISL_19631336|A_/_H3N2:0.0107614753,((((EPI3389082|HA|A/Abu_Dhabi/8914/2024|EPI_ISL_19208703|A_/_H3N2:0.0017805158,EPI3476488|HA|A/Singapore/KK1119/2024|EPI_ISL_19300350|A_/_H3N2:0.0089758089)Node29:0.0053514095,(((EPI3475352|HA|A/Singapore/TT0237/2024|EPI_ISL_19299278|A_/_H3N2:0.0104056425,EPI3666891|HA|A/South_Australia/274/2024|EPI_ISL_19574581|A_/_H3N2:0.0074694051)Node32:0.0017623634,EPI3508411|HA|A/South_Australia/136/2024|EPI_ISL_19338369|A_/_H3N2:0.0069914781)Node31:0.0020214713,EPI3612870|HA|A/Queensland/IN000279/2024|EPI_ISL_19500707|A_/_H3N2:0.0108391609)Node30:0.0016585056)Node28:0.0017926496,(((EPI2958566|HA|A/Bangkok/P212/2024|EPI_ISL_18819751|A_/_H3N2:0.0071069557,EPI3640371|HA|A/Queensland/IN000647/2024|EPI_ISL_19543614|A_/_H3N2:0.0071195805)Node35:0.0000022101,EPI3456819|HA|A/Singapore/KK0151/2024|EPI_ISL_19283577|A_/_H3N2:0.0053536373)Node34:0.0017730749,(EPI3456835|HA|A/Singapore/KK0210/2024|EPI_ISL_19283579|A_/_H3N2:0.0053528481,EPI3399783|HA|A/Timor-Leste/223/2024|EPI_ISL_19218236|A_/_H3N2:0.0053329390)Node36:0.0017796175)Node33:0.0017744183)Node27:0.0017815293,((((EPI3726461|HA|A/Galicia/33348842/2024|EPI_ISL_19615419|A_/_H3N2:0.0145071996,(EPI3726506|HA|A/Galicia/33156584/2024|EPI_ISL_19615425|A_/_H3N2:0.0018004688,EPI3726498|HA|A/Galicia/44143091/2024|EPI_ISL_19615424|A_/_H3N2:0.0109190647)Node41:0.0000029822)Node40:0.0090943083,EPI3726478|HA|A/Galicia/22347908/2024|EPI_ISL_19615421|A_/_H3N2:0.0053338768)Node39:0.0165255251,EPI4304684|HA|A/Asturias/232461330/2024|EPI_ISL_19855166|A_/_H3N2:0.0053227612)Node38:0.0022319456,((((((((EPI3680409|HA|A/England/4700123/2024|EPI_ISL_19596134|A_/_H1N1:0.0035829087,(EPI3898109|HA|A/Baleares/250061/2024|EPI_ISL_19709436|A_/_H1N1:0.0072518613,EPI4038587|HA|A/Madrid/302425181704/2024|EPI_ISL_19756821|A_/_H1N1:0.0072013601)Node50:0.0035587126)Node49:0.0017952268,(EPI3787123|HA|A/Catalonia/NSJO560000050/2024|EPI_ISL_19661810|A_/_H1N1:0.0053733026,EPI3828065|HA|A/England/5160975/2024|EPI_ISL_19680996|A_/_H1N1:0.0053630410)Node51:0.0000026181)Node48:0.0017870221,EPI3582939|HA|A/England/1940422/2024|EPI_ISL_19455545|A_/_H1N1:0.0053595413)Node47:0.0000010000,((((EPI3680344|HA|A/England/4620270/2024|EPI_ISL_19596124|A_/_H1N1:0.0107769698,EPI3300584|HA|A/Madrid/HULP-072638331/2024|EPI_ISL_19147390|A_/_H1N1:0.0035699092)Node55:0.0017738045,EPI3834736|HA|A/Segovia/167/2024|EPI_ISL_19685460|A_/_H1N1:0.0053477141)Node54:0.0000027353,(EPI3080459|HA|A/Aragon/558/2024|EPI_ISL_18942787|A_/_H1N1:0.0071781264,EPI3179398|HA|A/Madrid/HRYC-13069536/2024|EPI_ISL_19030052|A_/_H1N1:0.0053534299)Node56:0.0000010000)Node53:0.0000010000,(((EPI3441791|HA|A/Swansea/5888/2024|EPI_ISL_19269744|A_/_H1N1:0.0035764994,(((((EPI3419895|HA|A/Cardiff/4190/2024|EPI_ISL_19243251|A_/_H1N1:0.0089565627,EPI3268826|HA|A/Trollhattan/SE24-04471/2024|EPI_ISL_19116439|A_/_H1N1:0.0053950126)Node64:0.0000010000,EPI3522000|HA|A/Switzerland/46021/2024|EPI_ISL_19359901|A_/_H1N1:0.0053674386)Node63:0.0000010000,(EPI3326190|HA|A/Madrid/1058/2024|EPI_ISL_19159205|A_/_H1N1:0.0053583003,EPI3184267|HA|A/Slovakia/uvzsr-331/2024|EPI_ISL_19033719|A_/_H1N1:0.0053553932)Node65:0.0000027151)Node62:0.0000010000,EPI3197133|HA|A/Serbia/328/2024|EPI_ISL_19050842|A_/_H1N1:0.0053688139)Node61:0.0000023352,EPI3100469|HA|A/England/240561251/2024|EPI_ISL_18961932|A_/_H1N1:0.0053675341)Node60:0.0017829677)Node59:0.0000025478,EPI3258270|HA|A/Serbia/113/2024|EPI_ISL_19093576|A_/_H1N1:0.0144095082)Node58:0.0035850524,(((((((EPI3080466|HA|A/Aragon/560/2024|EPI_ISL_18942788|A_/_H1N1:0.0053714533,EPI3687261|HA|A/Murcia/2159/2024|EPI_ISL_19603666|A_/_H1N1:0.0181518554)Node72:0.0035363645,((EPI3791769|HA|A/England/0120311/2024|EPI_ISL_19667609|A_/_H1N1:0.0071851805,((EPI3054103|HA|A/Badajoz/18619790/2024|EPI_ISL_18918494|A_/_H1N1:0.0071171152,EPI3769322|HA|A/Catalonia/NSVH102488391/2024|EPI_ISL_19652392|A_/_H1N1:0.0071343451)Node76:0.0000010000,EPI2978047|HA|A/Badajoz/18616368/2024|EPI_ISL_18854264|A_/_H1N1:0.0053366701)Node75:0.0017832329)Node74:0.0017736992,EPI3884129|HA|A/Catalonia/NSVH170145573/2024|EPI_ISL_19705055|A_/_H1N1:0.0143376657)Node73:0.0000026789)Node71:0.0000027262,EPI3050064|HA|A/Badajoz/18615142/2024|EPI_ISL_18912986|A_/_H1N1:0.0089121667)Node70:0.0071270288,EPI3229553|HA|A/Galicia/GA-CHUAC-90/2024|EPI_ISL_19069709|A_/_H1N1:0.0089509157)Node69:0.0000021441,(EPI3082085|HA|A/Madrid/150/2024|EPI_ISL_18943819|A_/_H1N1:0.0072268643,EPI3889484|HA|A/Andalucia/PMC-00587/2024|EPI_ISL_19707937|A_/_H1N1:0.0071697989)Node77:0.0071516119)Node68:0.0035591065,(EPI3330761|HA|A/Alicante/VAHNSI-GIHSN-16_3554/2024|EPI_ISL_19160593|A_/_H1N1:0.0071233521,EPI3183899|HA|A/Slovakia/uvzsr-457/2024|EPI_ISL_19033650|A_/_H1N1:0.0071212567)Node78:0.0000021085)Node67:0.0017821209,EPI3179470|HA|A/Madrid/HRYC-13089164/2024|EPI_ISL_19030061|A_/_H1N1:0.0053412354)Node66:0.0017820026)Node57:0.0017784372)Node52:0.0000010000)Node46:0.0000010000,(EPI4318253|HA|A/Melilla/01677727/2024|EPI_ISL_19861764|A_/_H1N1:0.0053521509,EPI3197155|HA|A/Serbia/196/2024|EPI_ISL_19050845|A_/_H1N1:0.0071732498)Node79:0.0000027418)Node45:0.0000028979,EPI3493268|HA|A/Galicia/SCQ/140189/2024|EPI_ISL_19323908|A_/_H1N1:0.0071422467)Node44:0.0017863366,EPI3513291|HA|A/England/243060223/2024|EPI_ISL_19348510|A_/_H1N1:0.0053346336)Node43:0.0053306772,EPI3512991|HA|A/England/242960235/2024|EPI_ISL_19345292|A_/_H1N1:0.0000025515)Node42:1.4769481101)Node37:0.0293431122)Node26:0.0000021773)Node25:0.0017655560)Node8:0.0000026761,(EPI3899532|HA|A/ABUDHABI/UAE/0012976/2024|EPI_ISL_19709691|A_/_H3N2:0.0071318340,EPI3558087|HA|A/TOKYO/EIS10-294/2024|EPI_ISL_19417565|A_/_H3N2:0.0071311081)Node80:0.0000027328)Node7:0.0003561844,((EPI3662892|HA|A/Philippines/OBI24-0018/2024|EPI_ISL_19567669|A_/_H3N2:0.0053519978,EPI3616358|HA|A/YOKOHAMA/31/2024|EPI_ISL_19504976|A_/_H3N2:0.0053535147)Node82:0.0000020149,(EPI3794940|HA|A/Philippines/1597/2024|EPI_ISL_19668077|A_/_H3N2:0.0053607879,EPI3904018|HA|A/ABUDHABI/UAE/0017838/2024|EPI_ISL_19711823|A_/_H3N2:0.0053710190)Node83:0.0000024440)Node81:0.0017267746)Node6:0.0014755258,(EPI3480627|HA|A/Victoria/968/2024|EPI_ISL_19302029|A_/_H3N2:0.0053673270,EPI3817714|HA|A/Victoria/3318/2024|EPI_ISL_19676540|A_/_H3N2:0.0071471568)Node84:0.0000022740)Node5:0.0000010000,((EPI3633261|HA|A/Auckland/257/2024|EPI_ISL_19534695|A_/_H3N2:0.0053507852,EPI3640446|HA|A/Queensland/IN000659/2024|EPI_ISL_19543624|A_/_H3N2:0.0071572910)Node86:0.0000026971,(EPI3509909|HA|A/Victoria/1534/2024|EPI_ISL_19341705|A_/_H3N2:0.0071332921,EPI3658048|HA|A/Victoria/3265/2024|EPI_ISL_19561258|A_/_H3N2:0.0053518118)Node87:0.0000010000)Node85:0.0000010000)Node4:0.0000010000,EPI3786403|HA|A/Sydney/1321/2024|EPI_ISL_19661498|A_/_H3N2:0.0053489628)Node3:0.0017774510,EPI3739244|HA|A/Daejeon/3779/2024|EPI_ISL_19632813|A_/_H3N2:0.0071418431)Node2:0.0000027457,(((((EPI3611454|HA|A/Phra_Nakhon_Si_Ayutthaya/B409/2024|EPI_ISL_19500366|A_/_H3N2:0.0053564833,EPI3817956|HA|A/Tasmania/874/2024|EPI_ISL_19676611|A_/_H3N2:0.0053539304)Node92:0.0000027392,(EPI4244815|HA|A/Perth/1111/2024|EPI_ISL_19825838|A_/_H3N2:0.0053513527,EPI3633230|HA|A/Auckland/242/2024|EPI_ISL_19534685|A_/_H3N2:0.0053435459)Node93:0.0000028058)Node91:0.0000010000,((EPI4379883|HA|A/Malaysia/MKAI_CL47914/2024|EPI_ISL_19878697|A_/_H3N2:0.0053565850,(EPI3866763|HA|A/Switzerland/UN-SNRCI-HUG-46747581/2024|EPI_ISL_19698113|A_/_H3N2:0.0053472695,(EPI3786375|HA|A/Victoria/3124/2024|EPI_ISL_19661491|A_/_H3N2:0.0072099788,EPI3634645|HA|A/Wellington/80/2024|EPI_ISL_19539110|A_/_H3N2:0.0035809571)Node97:0.0017599118)Node96:0.0000027369)Node95:0.0000027384,((EPI3786387|HA|A/Victoria/3131/2024|EPI_ISL_19661494|A_/_H3N2:0.0053419009,EPI3633314|HA|A/Auckland/276/2024|EPI_ISL_19534716|A_/_H3N2:0.0053540227)Node99:0.0000010000,(EPI3539116|HA|A/Victoria/1588/2024|EPI_ISL_19383456|A_/_H3N2:0.0071712796,EPI3606682|HA|A/Brisbane/409/2024|EPI_ISL_19493393|A_/_H3N2:0.0035611538)Node100:0.0017807897)Node98:0.0000027193)Node94:0.0000010000)Node90:0.0000027101,(EPI4409312|HA|A/Malaysia/MKAI_CL43218/2024|EPI_ISL_19893417|A_/_H3N2:0.0053769472,(EPI3786347|HA|A/Perth/1144/2024|EPI_ISL_19661484|A_/_H3N2:0.0071627466,EPI3509982|HA|A/Victoria/1304/2024|EPI_ISL_19341743|A_/_H3N2:0.0071762924)Node102:0.0017685513)Node101:0.0000010000)Node89:0.0017788148,(EPI3913255|HA|A/Singapore/GP14277/2024|EPI_ISL_19715098|A_/_H3N2:0.0053632404,EPI3258732|HA|A/England/241560836/2024|EPI_ISL_19093779|A_/_H3N2:0.0053458792)Node103:0.0017672441)Node88:0.0000024750)Node1;
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_clustered/H3N2/trees/H3N2_2024_asr.treefile -m "LG+G4{1.14991}" --length 580
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2024_aligned.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2024_aligned.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 22 11:07:31 2025
+Total CPU time used: 2.03699 seconds (0h:0m:2s)
+Total wall-clock time used: 2.20546 seconds (0h:0m:2s)
+

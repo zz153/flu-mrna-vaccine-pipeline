@@ -1,0 +1,195 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_clustered/H1N1/alignments/H1N1_2025_aligned.fasta
+User tree file name: results/per_year_clustered/H1N1/trees/H1N1_2025.treefile
+Type of analysis: tree reconstruction
+Random seed number: 640084
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 52 sequences with 567 amino-acid sites
+Number of constant sites: 434 (= 76.5432% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 434 (= 76.5432% of all sites)
+Number of parsimony informative sites: 39
+Number of distinct site patterns: 157
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.4321
+
+ Category  Relative_rate  Proportion
+  1         0.0216         0.2500
+  2         0.2053         0.2500
+  3         0.7638         0.2500
+  4         3.0092         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -3240.9266 (s.e. 127.2858)
+Unconstrained log-likelihood (without tree): -2247.3955
+Number of free parameters (#branches + #model parameters): 102
+Akaike information criterion (AIC) score: 6685.8532
+Corrected Akaike information criterion (AICc) score: 6731.1377
+Bayesian information criterion (BIC) score: 7128.5699
+
+Total tree length (sum of branch lengths): 0.3604
+Sum of internal branch lengths: 0.0531 (14.7388% of tree length)
+
+WARNING: 31 near-zero internal branches (<0.0018) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI4466040|HA|A/Bangkok/P1226/2025|EPI_ISL_20054439|A_/_H1N1' is drawn at root
+
++---------EPI4466040|HA|A/Bangkok/P1226/2025|EPI_ISL_20054439|A_/_H1N1
+| (Node1)
+|                                   +----EPI4569164|HA|A/Singapore/TT0288/2025|EPI_ISL_20087251|A_/_H1N1
+|                                +**| (Node13)
+|                                |  |                                                              +------EPI4569149|HA|A/Singapore/EN0019/2025|EPI_ISL_20087249|A_/_H1N1
+|                                |  |                                                           +--| (Node30)
+|                                |  |                                                           |  +------EPI3950584|HA|A/Michigan/02/2025|EPI_ISL_19726690|A_/_H1N1
+|                                |  |                                                        +**| (Node29)
+|                                |  |                                                        |  +-----------EPI4264577|HA|A/Illinois/15768/2025|EPI_ISL_19834964|A_/_H1N1
+|                                |  |                                                     +**| (Node28)
+|                                |  |                                                     |  +---------EPI4322518|HA|A/Galicia/52502966/2025|EPI_ISL_19863007|A_/_H1N1
+|                                |  |                                                  +--| (Node27)
+|                                |  |                                                  |  +---------EPI4235418|HA|A/Seoul/649/2025|EPI_ISL_19822408|A_/_H1N1
+|                                |  |                                             +----| (Node26)
+|                                |  |                                             |    |      +**EPI4570542|HA|A/Laos/00819-3151/2025|EPI_ISL_20087504|A_/_H1N1
+|                                |  |                                             |    +------| (Node31)
+|                                |  |                                             |           |      +---------EPI4592117|HA|A/YOKOHAMA/50/2025|EPI_ISL_20097259|A_/_H1N1
+|                                |  |                                             |           +------| (Node32)
+|                                |  |                                             |                  +------EPI4644732|HA|A/Tasmania/723/2025|EPI_ISL_20149200|A_/_H1N1
+|                                |  |                                +------------| (Node25)
+|                                |  |                                |            +----EPI3883721|HA|A/Catalonia/NSBE252734763/2025|EPI_ISL_19705001|A_/_H1N1
+|                                |  |                             +**| (Node24)
+|                                |  |                             |  +--------------EPI4103389|HA|A/KANAGAWA/AC2408/2025|EPI_ISL_19778353|A_/_H1N1
+|                                |  |                          +**| (Node23)
+|                                |  |                          |  +------EPI4011328|HA|A/Florida/ISC-1095/2025|EPI_ISL_19746130|A_/_H1N1
+|                                |  |                       +--| (Node22)
+|                                |  |                       |  +------EPI4439938|HA|A/TOKYO/EIS11-811/2025|EPI_ISL_19907006|A_/_H1N1
+|                                |  |                    +**| (Node21)
+|                                |  |                    |  +------EPI4569014|HA|A/Singapore/GP1040/2025|EPI_ISL_20087232|A_/_H1N1
+|                                |  |                 +**| (Node20)
+|                                |  |                 |  +---------EPI4569235|HA|A/Singapore/KK0385/2025|EPI_ISL_20087260|A_/_H1N1
+|                                |  |              +**| (Node19)
+|                                |  |              |  +------EPI4025735|HA|A/Chiang_Rai/F561/2025|EPI_ISL_19753506|A_/_H1N1
+|                                |  |           +**| (Node18)
+|                                |  |           |  +---------EPI4596675|HA|A/Singapore/KK0285/2025|EPI_ISL_20099737|A_/_H1N1
+|                                |  |        +--| (Node17)
+|                                |  |        |  +------EPI4503965|HA|A/Slovakia/uvzsr-40431/2025|EPI_ISL_20069003|A_/_H1N1
+|                                |  |     +**| (Node16)
+|                                |  |     |  +------EPI4111432|HA|A/Vietnam/PF324366/2025|EPI_ISL_19780804|A_/_H1N1
+|                                |  |  +**| (Node15)
+|                                |  |  |  +---------EPI4589108|HA|A/Alicante/VAHNSI-GIHSN-16_0431/2025|EPI_ISL_20095985|A_/_H1N1
+|                                |  +--| (Node14)
+|                                |     +--EPI4444085|HA|A/Lebanon/AU-8907/2025|EPI_ISL_19909660|A_/_H1N1
+|                             +**| (Node12)
+|                             |  |  +------EPI4335825|HA|A/YAMAGATA/72/2025|EPI_ISL_19867627|A_/_H1N1
+|                             |  +--| (Node33)
+|                             |     +---------EPI4414758|HA|A/Spain/VC-HADV-002442/2025|EPI_ISL_19897333|A_/_H1N1
+|                          +**| (Node11)
+|                          |  |  +---------EPI4668311|HA|A/Tak/1054/2025|EPI_ISL_20159167|A_/_H1N1
+|                          |  +**| (Node34)
+|                          |     +---------EPI4466278|HA|A/Queensland/IN001565/2025|EPI_ISL_20054702|A_/_H1N1
+|                       +**| (Node10)
+|                       |  |  +------EPI4111374|HA|A/Vietnam/PF124503/2025|EPI_ISL_19780795|A_/_H1N1
+|                       |  +--| (Node35)
+|                       |     +------EPI4277588|HA|A/Canberra/153/2025|EPI_ISL_19843969|A_/_H1N1
+|                    +**| (Node9)
+|                    |  +---------EPI4327500|HA|A/IBARAKI/9/2025|EPI_ISL_19864098|A_/_H1N1
+|                 +**| (Node8)
+|                 |  |  +---------EPI4585242|HA|A/Vietnam/5123/2025|EPI_ISL_20092435|A_/_H1N1
+|                 |  +--| (Node36)
+|                 |     |     +------EPI4585319|HA|A/Philippines/ILI25-0566/2025|EPI_ISL_20092445|A_/_H1N1
+|                 |     |  +**| (Node38)
+|                 |     |  |  +-----------EPI4408183|HA|A/Madrid/HULP-200724254/2025|EPI_ISL_19893100|A_/_H1N1
+|                 |     +**| (Node37)
+|                 |        |  +------EPI4634392|HA|A/Taiwan/S26883/2025|EPI_ISL_20142084|A_/_H1N1
+|                 |        +**| (Node39)
+|                 |           +------EPI4113781|HA|A/Sweden/SE25-50565/2025|EPI_ISL_19782067|A_/_H1N1
+|              +--| (Node7)
+|              |  +---------EPI4442386|HA|A/Lebanon/AU-9152/2025|EPI_ISL_19908717|A_/_H1N1
+|           +--| (Node6)
+|           |  +---------EPI4073754|HA|A/Galicia/SCQ/132102/2025|EPI_ISL_19770700|A_/_H1N1
+|        +**| (Node5)
+|        |  +---------EPI3940039|HA|A/Massachusetts/ISC-1012/2025|EPI_ISL_19724294|A_/_H1N1
+|     +**| (Node4)
+|     |  |     +----EPI4467988|HA|A/Galicia/44224586/2025|EPI_ISL_20055313|A_/_H1N1
+|     |  |  +--| (Node41)
+|     |  |  |  +---------EPI4064473|HA|A/Avila/1833/2025|EPI_ISL_19767618|A_/_H1N1
+|     |  +--| (Node40)
+|     |     |        +---------EPI4408167|HA|A/Madrid/HULP-200683958/2025|EPI_ISL_19893098|A_/_H1N1
+|     |     |     +--| (Node44)
+|     |     |     |  +----EPI4161523|HA|A/Aragon/598/2025|EPI_ISL_19796571|A_/_H1N1
+|     |     |  +**| (Node43)
+|     |     |  |  +------EPI4308767|HA|A/Tasmania/133/2025|EPI_ISL_19856557|A_/_H1N1
+|     |     +**| (Node42)
+|     |        |  +------EPI4265256|HA|A/ComunidadValenciana/990/2025|EPI_ISL_19836366|A_/_H1N1
+|     |        +**| (Node45)
+|     |           +------EPI4116576|HA|A/Cwmifor/4078/2025|EPI_ISL_19784917|A_/_H1N1
+|  +**| (Node3)
+|  |  |           +------EPI4466834|HA|A/Philippines/SARI25-0988/2025|EPI_ISL_20054796|A_/_H1N1
+|  |  |        +**| (Node49)
+|  |  |        |  +------EPI4624337|HA|A/Taiwan/S26887/2025|EPI_ISL_20136655|A_/_H1N1
+|  |  |     +**| (Node48)
+|  |  |     |  +------EPI4514388|HA|A/Victoria/42/2025|EPI_ISL_20070576|A_/_H1N1
+|  |  |  +**| (Node47)
+|  |  |  |  |  +---------EPI4409343|HA|A/Malaysia/MKAI_CL29911/2025|EPI_ISL_19893420|A_/_H1N1
+|  |  |  |  +**| (Node50)
+|  |  |  |     +------EPI4514610|HA|A/Victoria/628/2025|EPI_ISL_20070633|A_/_H1N1
+|  |  +--| (Node46)
+|  |     +------EPI4318575|HA|A/Galicia/GA-CHUAC-376/2025|EPI_ISL_19861830|A_/_H1N1
++**| (Node2)
+|  +----EPI4192158|HA|A/Andalucia/PMC-00768/2025|EPI_ISL_19806287|A_/_H1N1
+|
++---------EPI4650987|HA|A/Michigan/MIS-L386411975/2025|EPI_ISL_20153313|A_/_H1N1
+
+Tree in newick format:
+
+(EPI4466040|HA|A/Bangkok/P1226/2025|EPI_ISL_20054439|A_/_H1N1:0.0073007038,((((((((((((EPI4569164|HA|A/Singapore/TT0288/2025|EPI_ISL_20087251|A_/_H1N1:0.0035587779,(((((((((((((((((EPI4569149|HA|A/Singapore/EN0019/2025|EPI_ISL_20087249|A_/_H1N1:0.0052964766,EPI3950584|HA|A/Michigan/02/2025|EPI_ISL_19726690|A_/_H1N1:0.0053075233)Node30:0.0017659897,EPI4264577|HA|A/Illinois/15768/2025|EPI_ISL_19834964|A_/_H1N1:0.0088773630)Node29:0.0000010000,EPI4322518|HA|A/Galicia/52502966/2025|EPI_ISL_19863007|A_/_H1N1:0.0071246260)Node28:0.0017553090,EPI4235418|HA|A/Seoul/649/2025|EPI_ISL_19822408|A_/_H1N1:0.0071075556)Node27:0.0017816502,(EPI4570542|HA|A/Laos/00819-3151/2025|EPI_ISL_20087504|A_/_H1N1:0.0000010000,(EPI4592117|HA|A/YOKOHAMA/50/2025|EPI_ISL_20097259|A_/_H1N1:0.0071858104,EPI4644732|HA|A/Tasmania/723/2025|EPI_ISL_20149200|A_/_H1N1:0.0053251115)Node32:0.0053629112)Node31:0.0056553179)Node26:0.0037517214,EPI3883721|HA|A/Catalonia/NSBE252734763/2025|EPI_ISL_19705001|A_/_H1N1:0.0035612015)Node25:0.0094681764,EPI4103389|HA|A/KANAGAWA/AC2408/2025|EPI_ISL_19778353|A_/_H1N1:0.0106904866)Node24:0.0000027082,EPI4011328|HA|A/Florida/ISC-1095/2025|EPI_ISL_19746130|A_/_H1N1:0.0052904867)Node23:0.0000028491,EPI4439938|HA|A/TOKYO/EIS11-811/2025|EPI_ISL_19907006|A_/_H1N1:0.0052947212)Node22:0.0018678142,EPI4569014|HA|A/Singapore/GP1040/2025|EPI_ISL_20087232|A_/_H1N1:0.0053156308)Node21:0.0000026560,EPI4569235|HA|A/Singapore/KK0385/2025|EPI_ISL_20087260|A_/_H1N1:0.0071288724)Node20:0.0000010000,EPI4025735|HA|A/Chiang_Rai/F561/2025|EPI_ISL_19753506|A_/_H1N1:0.0053106620)Node19:0.0000010000,EPI4596675|HA|A/Singapore/KK0285/2025|EPI_ISL_20099737|A_/_H1N1:0.0071353203)Node18:0.0000021210,EPI4503965|HA|A/Slovakia/uvzsr-40431/2025|EPI_ISL_20069003|A_/_H1N1:0.0053430643)Node17:0.0018808892,EPI4111432|HA|A/Vietnam/PF324366/2025|EPI_ISL_19780804|A_/_H1N1:0.0053411664)Node16:0.0000010000,EPI4589108|HA|A/Alicante/VAHNSI-GIHSN-16_0431/2025|EPI_ISL_20095985|A_/_H1N1:0.0071717338)Node15:0.0000184850,EPI4444085|HA|A/Lebanon/AU-8907/2025|EPI_ISL_19909660|A_/_H1N1:0.0018336852)Node14:0.0018618839)Node13:0.0000010000,(EPI4335825|HA|A/YAMAGATA/72/2025|EPI_ISL_19867627|A_/_H1N1:0.0053798876,EPI4414758|HA|A/Spain/VC-HADV-002442/2025|EPI_ISL_19897333|A_/_H1N1:0.0071800416)Node33:0.0017681650)Node12:0.0000010000,(EPI4668311|HA|A/Tak/1054/2025|EPI_ISL_20159167|A_/_H1N1:0.0072278316,EPI4466278|HA|A/Queensland/IN001565/2025|EPI_ISL_20054702|A_/_H1N1:0.0071834201)Node34:0.0000010000)Node11:0.0000010000,(EPI4111374|HA|A/Vietnam/PF124503/2025|EPI_ISL_19780795|A_/_H1N1:0.0053509988,EPI4277588|HA|A/Canberra/153/2025|EPI_ISL_19843969|A_/_H1N1:0.0053669949)Node35:0.0017695451)Node10:0.0000020814,EPI4327500|HA|A/IBARAKI/9/2025|EPI_ISL_19864098|A_/_H1N1:0.0071827748)Node9:0.0000010000,(EPI4585242|HA|A/Vietnam/5123/2025|EPI_ISL_20092435|A_/_H1N1:0.0071656545,((EPI4585319|HA|A/Philippines/ILI25-0566/2025|EPI_ISL_20092445|A_/_H1N1:0.0053147308,EPI4408183|HA|A/Madrid/HULP-200724254/2025|EPI_ISL_19893100|A_/_H1N1:0.0088789654)Node38:0.0000010000,(EPI4634392|HA|A/Taiwan/S26883/2025|EPI_ISL_20142084|A_/_H1N1:0.0053343780,EPI4113781|HA|A/Sweden/SE25-50565/2025|EPI_ISL_19782067|A_/_H1N1:0.0053500076)Node39:0.0000027213)Node37:0.0000022667)Node36:0.0017751411)Node8:0.0000027246,EPI4442386|HA|A/Lebanon/AU-9152/2025|EPI_ISL_19908717|A_/_H1N1:0.0071409085)Node7:0.0019023776,EPI4073754|HA|A/Galicia/SCQ/132102/2025|EPI_ISL_19770700|A_/_H1N1:0.0071634615)Node6:0.0018664612,EPI3940039|HA|A/Massachusetts/ISC-1012/2025|EPI_ISL_19724294|A_/_H1N1:0.0071194590)Node5:0.0000021972,((EPI4467988|HA|A/Galicia/44224586/2025|EPI_ISL_20055313|A_/_H1N1:0.0035863736,EPI4064473|HA|A/Avila/1833/2025|EPI_ISL_19767618|A_/_H1N1:0.0071675574)Node41:0.0017979883,(((EPI4408167|HA|A/Madrid/HULP-200683958/2025|EPI_ISL_19893098|A_/_H1N1:0.0071660192,EPI4161523|HA|A/Aragon/598/2025|EPI_ISL_19796571|A_/_H1N1:0.0035830929)Node44:0.0017816383,EPI4308767|HA|A/Tasmania/133/2025|EPI_ISL_19856557|A_/_H1N1:0.0053736245)Node43:0.0000010000,(EPI4265256|HA|A/ComunidadValenciana/990/2025|EPI_ISL_19836366|A_/_H1N1:0.0054003686,EPI4116576|HA|A/Cwmifor/4078/2025|EPI_ISL_19784917|A_/_H1N1:0.0054069358)Node45:0.0000010000)Node42:0.0000026051)Node40:0.0017810621)Node4:0.0000028033,((((EPI4466834|HA|A/Philippines/SARI25-0988/2025|EPI_ISL_20054796|A_/_H1N1:0.0053345035,EPI4624337|HA|A/Taiwan/S26887/2025|EPI_ISL_20136655|A_/_H1N1:0.0053123274)Node49:0.0000010000,EPI4514388|HA|A/Victoria/42/2025|EPI_ISL_20070576|A_/_H1N1:0.0053310668)Node48:0.0000010000,(EPI4409343|HA|A/Malaysia/MKAI_CL29911/2025|EPI_ISL_19893420|A_/_H1N1:0.0071423419,EPI4514610|HA|A/Victoria/628/2025|EPI_ISL_20070633|A_/_H1N1:0.0053472432)Node50:0.0000027161)Node47:0.0000010000,EPI4318575|HA|A/Galicia/GA-CHUAC-376/2025|EPI_ISL_19861830|A_/_H1N1:0.0053163767)Node46:0.0017735524)Node3:0.0000010000,EPI4192158|HA|A/Andalucia/PMC-00768/2025|EPI_ISL_19806287|A_/_H1N1:0.0037673821)Node2:0.0016896176,EPI4650987|HA|A/Michigan/MIS-L386411975/2025|EPI_ISL_20153313|A_/_H1N1:0.0072252969)Node1;
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_clustered/H1N1/trees/H1N1_2025_asr.treefile -m "LG+G4{0.432146}" --length 567
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2025_aligned.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2025_aligned.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 22 11:09:18 2025
+Total CPU time used: 0.369788 seconds (0h:0m:0s)
+Total wall-clock time used: 0.445176 seconds (0h:0m:0s)
+

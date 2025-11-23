@@ -1,0 +1,770 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_unclustered/VicB/alignments/VicB_2011_with_designs.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 541901
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 164 sequences with 585 amino-acid sites
+Number of constant sites: 460 (= 78.6325% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 460 (= 78.6325% of all sites)
+Number of parsimony informative sites: 46
+Number of distinct site patterns: 145
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.2339
+
+ Category  Relative_rate  Proportion
+  1         0.0014         0.2500
+  2         0.0553         0.2500
+  3         0.4663         0.2500
+  4         3.4770         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -3585.1531 (s.e. 186.5154)
+Unconstrained log-likelihood (without tree): -2229.4843
+Number of free parameters (#branches + #model parameters): 326
+Akaike information criterion (AIC) score: 7822.3062
+Corrected Akaike information criterion (AICc) score: 8648.6783
+Bayesian information criterion (BIC) score: 9247.4517
+
+Total tree length (sum of branch lengths): 0.4174
+Sum of internal branch lengths: 0.0845 (20.2483% of tree length)
+
+WARNING: 126 near-zero internal branches (<0.0017) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI340813|HA|B/Bangladesh/4622/2011|EPI_ISL_98579|B' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**EPI340813|HA|B/Bangladesh/4622/2011|EPI_ISL_98579|B
+|
+|                                                 +**EPI340816|HA|B/Fujian-Tongan/1150/2011|EPI_ISL_98580|B
+|                                              +**| (1)
+|                                              |  |  +---EPI347854|HA|B/Guangdong-Luohu/1351/2011|EPI_ISL_100798|B
+|                                              |  +**| (32)
+|                                              |     |  +-------EPI354034|HA|B/Chongqing-Yuzhong/1651/2011|EPI_ISL_104047|B
+|                                              |     +**| (42)
+|                                              |        |  +**EPI354055|HA|B/Shanghai-Jingan/1392/2011|EPI_ISL_104052|B
+|                                              |        +**| (70)
+|                                              |           +------EPI330460|HA|B/Fujian-Cangshan/192/2011|EPI_ISL_94599|B
+|                                           +**| (0)
+|                                           |  |               +**EPI340828|HA|B/Sichuan-Maerkang/166/2011|EPI_ISL_98584|B
+|                                           |  |            +**| (70)
+|                                           |  |            |  +-------EPI330625|HA|B/Chongqing-Jiulongpo/39/2011|EPI_ISL_94624|B
+|                                           |  |     +------| (95)
+|                                           |  |     |      +-------EPI330364|HA|B/Sichuan-Jinjiang/277/2011|EPI_ISL_94587|B
+|                                           |  |  +**| (63)
+|                                           |  |  |  +**EPI332670|HA|B/NONG_KHAI/40/2011|EPI_ISL_95089|B
+|                                           |  +**| (3)
+|                                           |     |  +---EPI347877|HA|B/Hubei-Jingzhou/5104/2011|EPI_ISL_100810|B
+|                                           |     +**| (5)
+|                                           |        |   +**EPI304392|HA|B/DARWIN/11/2011|EPI_ISL_86448|B
+|                                           |        +---| (97)
+|                                           |            +---EPI331708|HA|B/SOUTH_AUSTRALIA/3/2011|EPI_ISL_94924|B
+|                                        +**| (0)
+|                                        |  |               +**EPI340825|HA|B/Fujian-Siming/1134/2011|EPI_ISL_98583|B
+|                                        |  |            +**| (95)
+|                                        |  |            |  +**VicB_2011_Ancestral_Aligned_Node20
+|                                        |  |        +---| (71)
+|                                        |  |        |   +---EPI347644|HA|B/Hunan-Lusong/1540/2011|EPI_ISL_100500|B
+|                                        |  |     +**| (1)
+|                                        |  |     |  |  +---EPI346108|HA|B/NONTHABURI/1766/2011|EPI_ISL_99676|B
+|                                        |  |     |  +**| (57)
+|                                        |  |     |     +---EPI312844|HA|B/Nevada/06/2011|EPI_ISL_88887|B
+|                                        |  |  +**| (1)
+|                                        |  |  |  +**VicB_2011_Medoid_Aligned|EPI340816|HA|B/Fujian-Tongan/1150/2011|EPI_ISL_98580|B
+|                                        |  +**| (0)
+|                                        |     |             +-------EPI340837|HA|B/Shizuoka/57/2011|EPI_ISL_98587|B
+|                                        |     |     +-------| (89)
+|                                        |     |     |       +**EPI357744|HA|B/Qatar/2311002267/2011|EPI_ISL_106898|B
+|                                        |     |  +**| (4)
+|                                        |     |  |  +-----------EPI347873|HA|B/Jiangsu-Tianning/1467/2011|EPI_ISL_100808|B
+|                                        |     +**| (1)
+|                                        |        |  +---EPI330372|HA|B/Fujian-Gulou/1174/2011|EPI_ISL_94588|B
+|                                        |        +**| (2)
+|                                        |           +---EPI370086|HA|B/FIJI/16/2011|EPI_ISL_118592|B
+|                                     +**| (0)
+|                                     |  |        +---EPI340840|HA|B/Anhui-Baohe/1421/2011|EPI_ISL_98588|B
+|                                     |  |     +**| (60)
+|                                     |  |     |  +-------EPI330833|HA|B/Guangdong-Chikan/1155/2011|EPI_ISL_94650|B
+|                                     |  |  +**| (2)
+|                                     |  |  |  |   +**EPI309224|HA|B/Michigan/01/2011|EPI_ISL_87838|B
+|                                     |  |  |  +---| (84)
+|                                     |  |  |      +----------------------------------------------EPI370098|HA|B/FIJI/11/2011|EPI_ISL_118596|B
+|                                     |  +**| (0)
+|                                     |     |  +---EPI346018|HA|B/SOUTH_AUSTRALIA/127/2011|EPI_ISL_99646|B
+|                                     |     +**| (3)
+|                                     |        +-------EPI331522|HA|B/PERTH/5/2011|EPI_ISL_94861|B
+|                                  +**| (0)
+|                                  |  |     +---EPI346763|HA|B/Sivas/TR-14/2011|EPI_ISL_99957|B
+|                                  |  |  +**| (7)
+|                                  |  |  |  +---EPI347834|HA|B/Hubei-Qiaokou/1393/2011|EPI_ISL_100788|B
+|                                  |  +**| (1)
+|                                  |     +---EPI902432|HA|B/Kazakhstan/2078/2011|EPI_ISL_246482|B
+|                               +**| (0)
+|                               |  |                    +**EPI340822|HA|B/Hubei-Fancheng/2277/2011|EPI_ISL_98582|B
+|                               |  |                 +**| (62)
+|                               |  |                 |  +---EPI330793|HA|B/Hunan-Yuhua/1265/2011|EPI_ISL_94645|B
+|                               |  |         +-------| (96)
+|                               |  |         |       +-----------EPI347893|HA|B/Shanghai-Chongming/1458/2011|EPI_ISL_100818|B
+|                               |  |     +---| (90)
+|                               |  |     |   |                 +---EPI346736|HA|B/Hong_Kong/591/2011|EPI_ISL_99943|B
+|                               |  |     |   |             +---| (63)
+|                               |  |     |   |             |   +**EPI347832|HA|B/Shanghai-Xuhui/1374/2011|EPI_ISL_100787|B
+|                               |  |     |   |         +---| (58)
+|                               |  |     |   |         |   +**EPI330116|HA|B/Shanghai-Songjiang/176/2011|EPI_ISL_94556|B
+|                               |  |     |   |      +**| (2)
+|                               |  |     |   |      |  +---EPI347917|HA|B/Jiangxi-Donghu/1468/2011|EPI_ISL_100830|B
+|                               |  |     |   |   +**| (2)
+|                               |  |     |   |   |  |  +**EPI346738|HA|B/Hong_Kong/591/2011|EPI_ISL_99944|B
+|                               |  |     |   |   |  +**| (0)
+|                               |  |     |   |   |     |         +**EPI347867|HA|B/Jiangxi-Donghu/1439/2011|EPI_ISL_100805|B
+|                               |  |     |   |   |     |     +---| (99)
+|                               |  |     |   |   |     |     |   |   +**EPI330388|HA|B/Hunan-Hecheng/1104/2011|EPI_ISL_94590|B
+|                               |  |     |   |   |     |     |   +---| (99)
+|                               |  |     |   |   |     |     |       +---EPI330737|HA|B/Hunan-Lusong/1325/2011|EPI_ISL_94638|B
+|                               |  |     |   |   |     |  +**| (2)
+|                               |  |     |   |   |     |  |  |  +---EPI347871|HA|B/Fujian-Zhangpu/319/2011|EPI_ISL_100807|B
+|                               |  |     |   |   |     |  |  +**| (8)
+|                               |  |     |   |   |     |  |     +---EPI347913|HA|B/Jiangsu-Canglang/1538/2011|EPI_ISL_100828|B
+|                               |  |     |   |   |     +**| (0)
+|                               |  |     |   |   |        |  +---EPI347911|HA|B/Hunan-Lusong/1645/2011|EPI_ISL_100827|B
+|                               |  |     |   |   |        +**| (3)
+|                               |  |     |   |   |           |   +---EPI352432|HA|B/Hong_Kong/1153/2011|EPI_ISL_103121|B
+|                               |  |     |   |   |           +---| (97)
+|                               |  |     |   |   |               +**EPI352431|HA|B/Hong_Kong/1129/2011|EPI_ISL_103120|B
+|                               |  |     |   +---| (94)
+|                               |  |     |       +---EPI354013|HA|B/Sichuan-Bazhou/1249/2011|EPI_ISL_104042|B
+|                               |  |  +**| (1)
+|                               |  |  |  +---EPI330969|HA|B/Jiangsu-Chongchuan/11150/2011|EPI_ISL_94667|B
+|                               |  +**| (0)
+|                               |     |         +---EPI346078|HA|B/CAMBODIA/23/2011|EPI_ISL_99666|B
+|                               |     |      +**| (35)
+|                               |     |      |  +**EPI330092|HA|B/Shanghai-Baoshan/152/2011|EPI_ISL_94553|B
+|                               |     |  +---| (46)
+|                               |     |  |   +---EPI346117|HA|B/PHILIPPINES/2519/2011|EPI_ISL_99679|B
+|                               |     +**| (1)
+|                               |        +-------EPI331531|HA|B/MACAU/200392/2011|EPI_ISL_94864|B
+|                            +**| (32)
+|                            |  |  +---EPI342010|HA|B/Kyrgyztan/01/2011|EPI_ISL_98931|B
+|                            |  +**| (1)
+|                            |     +-------EPI330124|HA|B/Shanghai-Huangpu/171/2011|EPI_ISL_94557|B
+|                        +---| (36)
+|                        |   |      +---EPI346099|HA|B/PHILIPPINES/2533/2011|EPI_ISL_99673|B
+|                        |   |   +**| (54)
+|                        |   |   |  +**EPI346096|HA|B/PHILIPPINES/2394/2011|EPI_ISL_99672|B
+|                        |   +---| (96)
+|                        |       +---EPI370315|HA|B/PHILIPPINES/3701/2011|EPI_ISL_118650|B
+|                     +**| (6)
+|                     |  |         +---EPI348464|HA|B/Gwangju/649/2011|EPI_ISL_101365|B
+|                     |  |      +**| (31)
+|                     |  |      |  +-------EPI378489|HA|B/Taiwan/1557/2011|EPI_ISL_122337|B
+|                     |  |  +---| (45)
+|                     |  |  |   +---EPI330745|HA|B/Shanghai-Luwan/1216/2011|EPI_ISL_94639|B
+|                     |  +**| (41)
+|                     |     +---EPI370063|HA|B/SRI_LANKA/15/2011|EPI_ISL_118584|B
+|                  +**| (0)
+|                  |  +---EPI309293|HA|B/Wisconsin/02/2011|EPI_ISL_87859|B
+|               +**| (0)
+|               |  |                                        +---EPI340849|HA|B/Vietnam/92/2011|EPI_ISL_98591|B
+|               |  |                                     +**| (11)
+|               |  |                                     |  +---EPI339399|HA|B/Vietnam/85/2011|EPI_ISL_97467|B
+|               |  |                                  +**| (2)
+|               |  |                                  |  |  +------EPI348452|HA|B/Cambodia/1412/2011|EPI_ISL_101361|B
+|               |  |                                  |  +**| (52)
+|               |  |                                  |     +**EPI2474360|HA|B/Hanoi/EL467/2011|EPI_ISL_17265036|B
+|               |  |                               +**| (26)
+|               |  |                               |  |      +**EPI2474332|HA|B/Cambodia/8/2011|EPI_ISL_17265023|B
+|               |  |                               |  |  +---| (61)
+|               |  |                               |  |  |   +---EPI331384|HA|B/CAMBODIA/30/2011|EPI_ISL_94816|B
+|               |  |                               |  +**| (0)
+|               |  |                               |     |  +---EPI331272|HA|B/CAMBODIA/2/2011|EPI_ISL_94780|B
+|               |  |                               |     +**| (6)
+|               |  |                               |        +-------EPI339387|HA|B/Vietnam/107/2011|EPI_ISL_97463|B
+|               |  |              +----------------| (100)
+|               |  |              |                +---EPI302435|HA|B/DARWIN/3/2011|EPI_ISL_86143|B
+|               |  |           +**| (21)
+|               |  |           |  +---EPI356968|HA|B/CHIBA/19/2011|EPI_ISL_106357|B
+|               |  |        +**| (0)
+|               |  |        |  |   +---EPI366201|HA|B/Bangladesh/8008/2011|EPI_ISL_115043|B
+|               |  |        |  +---| (97)
+|               |  |        |      +**EPI312921|HA|B/Texas/05/2011|EPI_ISL_88918|B
+|               |  |     +**| (0)
+|               |  |     |  |  +-------EPI346981|HA|B/Bangladesh/5004/2011|EPI_ISL_100089|B
+|               |  |     |  +**| (37)
+|               |  |     |     +---EPI341994|HA|B/Florida/02/2011|EPI_ISL_98926|B
+|               |  |  +**| (0)
+|               |  |  |  |        +---EPI346030|HA|B/SRI_LANKA/2/2011|EPI_ISL_99650|B
+|               |  |  |  |     +**| (1)
+|               |  |  |  |     |  +---EPI345978|HA|B/Washington/08/2011|EPI_ISL_99628|B
+|               |  |  |  |  +**| (0)
+|               |  |  |  |  |  +---EPI331376|HA|B/VICTORIA/502/2011|EPI_ISL_94813|B
+|               |  |  |  +**| (0)
+|               |  |  |     |         +---EPI353982|HA|B/India/5875/2011|EPI_ISL_104031|B
+|               |  |  |     |     +---| (91)
+|               |  |  |     |     |   +---EPI346959|HA|B/Alaska/09/2011|EPI_ISL_100081|B
+|               |  |  |     |  +**| (10)
+|               |  |  |     |  |  +-------EPI1399068|HA|B/Taiwan/6970/2011|EPI_ISL_348549|B
+|               |  |  |     +**| (8)
+|               |  |  |        +-------EPI331417|HA|B/BRISBANE/10/2011|EPI_ISL_94827|B
+|               |  +**| (0)
+|               |     |                  +**EPI346760|HA|B/Ankara/TR-10/2011|EPI_ISL_99955|B
+|               |     |               +**| (40)
+|               |     |               |  |      +-------EPI348417|HA|B/IBARAKI/18/2011|EPI_ISL_101352|B
+|               |     |               |  |  +---| (68)
+|               |     |               |  |  |   |        +---EPI370057|HA|B/CAMBODIA/122/2011|EPI_ISL_118581|B
+|               |     |               |  |  |   |     +**| (4)
+|               |     |               |  |  |   |     |  +---EPI370126|HA|B/CAMBODIA/116/2011|EPI_ISL_118605|B
+|               |     |               |  |  |   |  +**| (1)
+|               |     |               |  |  |   |  |  +---EPI370727|HA|B/Laos/I973/2011|EPI_ISL_118950|B
+|               |     |               |  |  |   +**| (7)
+|               |     |               |  |  |      |  +---EPI370095|HA|B/PHILIPPINES/3971/2011|EPI_ISL_118595|B
+|               |     |               |  |  |      +**| (4)
+|               |     |               |  |  |         +---EPI370731|HA|B/Laos/I1000/2011|EPI_ISL_118952|B
+|               |     |               |  +**| (63)
+|               |     |               |     +-------EPI356988|HA|B/OSAKA-C/1035/2011|EPI_ISL_106377|B
+|               |     |           +---| (50)
+|               |     |           |   +---EPI347665|HA|B/Cambodia/1402/2011|EPI_ISL_100508|B
+|               |     |        +**| (0)
+|               |     |        |  +---EPI357557|HA|B/SYDNEY/515/2011|EPI_ISL_106826|B
+|               |     |     +**| (0)
+|               |     |     |  +---EPI333093|HA|B/WAIKATO/1/2011|EPI_ISL_95244|B
+|               |     |  +**| (0)
+|               |     |  |  |  +---EPI366198|HA|B/Bangladesh/4013/2011|EPI_ISL_115042|B
+|               |     |  |  +**| (2)
+|               |     |  |     +-------EPI331382|HA|B/BRISBANE/3/2011|EPI_ISL_94815|B
+|               |     +**| (0)
+|               |        |        +---EPI902523|HA|B/Hong_Kong/767/2011|EPI_ISL_246527|B
+|               |        |     +**| (8)
+|               |        |     |  +---EPI346069|HA|B/NEWCASTLE/21/2011|EPI_ISL_99663|B
+|               |        |  +**| (0)
+|               |        |  |  |  +---EPI334449|HA|B/Bangladesh/1585/2011|EPI_ISL_93497|B
+|               |        |  |  +**| (7)
+|               |        |  |     +---EPI370160|HA|B/WELLINGTON/39/2011|EPI_ISL_118617|B
+|               |        +**| (0)
+|               |           +**VicB_2011_Consensus_Aligned
+|            +**| (0)
+|            |  |         +**EPI346979|HA|B/Bangladesh/1006/2011|EPI_ISL_100088|B
+|            |  |     +---| (65)
+|            |  |     |   +---EPI357742|HA|B/Qatar/2311005072/2011|EPI_ISL_106897|B
+|            |  |  +**| (32)
+|            |  |  |  |   +---EPI347875|HA|B/Jiangsu-Nanjinggulou/11208/2011|EPI_ISL_100809|B
+|            |  |  |  +---| (64)
+|            |  |  |      +**EPI366221|HA|B/Hong_Kong/746/2011|EPI_ISL_115049|B
+|            |  +**| (0)
+|            |     |  +-------EPI356973|HA|B/HYOGO/1123/2011|EPI_ISL_106362|B
+|            |     +**| (10)
+|            |        +-----------EPI2474338|HA|B/Christchurch/108/2011|EPI_ISL_17265026|B
+|         +**| (0)
+|         |  |     +---EPI346033|HA|B/SRI_LANKA/4/2011|EPI_ISL_99651|B
+|         |  |  +**| (0)
+|         |  |  |  +---EPI346968|HA|B/California/11/2011|EPI_ISL_100084|B
+|         |  +**| (0)
+|         |     +---EPI352465|HA|B/Israel/14/2011|EPI_ISL_103138|B
+|      +**| (1)
+|      |  |         +-------EPI348418|HA|B/TOKYO/91107/2011|EPI_ISL_101353|B
+|      |  |     +---| (94)
+|      |  |     |   |     +---EPI340843|HA|B/Utah/05/2011|EPI_ISL_98589|B
+|      |  |     |   |  +**| (24)
+|      |  |     |   |  |  |   +---EPI309180|HA|B/Florida/04/2011|EPI_ISL_87823|B
+|      |  |     |   |  |  +---| (91)
+|      |  |     |   |  |      +---EPI325110|HA|B/Idaho/03/2011|EPI_ISL_93509|B
+|      |  |     |   +**| (46)
+|      |  |     |      |                                  +-------EPI340967|HA|B/Minnesota/04/2011|EPI_ISL_98655|B
+|      |  |     |      |                              +---| (94)
+|      |  |     |      |                              |   +---EPI325270|HA|B/North_Dakota/02/2011|EPI_ISL_93552|B
+|      |  |     |      |                           +**| (1)
+|      |  |     |      |                           |  +---EPI325289|HA|B/Tennessee/02/2011|EPI_ISL_93559|B
+|      |  |     |      |                        +**| (0)
+|      |  |     |      |                        |  |     +---EPI342038|HA|B/Washington/01/2011|EPI_ISL_98939|B
+|      |  |     |      |                        |  |  +**| (2)
+|      |  |     |      |                        |  |  |  +---EPI333008|HA|B/SOUTH_AUSTRALIA/18/2011|EPI_ISL_95215|B
+|      |  |     |      |                        |  +**| (0)
+|      |  |     |      |                        |     |     +---EPI325116|HA|B/Idaho/05/2011|EPI_ISL_93511|B
+|      |  |     |      |                        |     |  +--| (100)
+|      |  |     |      |                        |     |  |  +**EPI325113|HA|B/Idaho/04/2011|EPI_ISL_93510|B
+|      |  |     |      |                        |     +**| (65)
+|      |  |     |      |                        |        +--EPI325334|HA|B/Washington/05/2011|EPI_ISL_93568|B
+|      |  |     |      |                     +**| (0)
+|      |  |     |      |                     |  |            +**EPI341981|HA|B/California/02/2011|EPI_ISL_98922|B
+|      |  |     |      |                     |  |        +---| (99)
+|      |  |     |      |                     |  |        |   +---EPI309236|HA|B/Nebraska/04/2011|EPI_ISL_87842|B
+|      |  |     |      |                     |  |     +**| (67)
+|      |  |     |      |                     |  |     |  +-----------EPI335738|HA|B/Indiana/09/2011|EPI_ISL_96039|B
+|      |  |     |      |                     |  |  +**| (6)
+|      |  |     |      |                     |  |  |  +---EPI335750|HA|B/Arizona/02/2011|EPI_ISL_96043|B
+|      |  |     |      |                     |  +**| (0)
+|      |  |     |      |                     |     |        +---EPI348444|HA|B/Wisconsin/06/2011|EPI_ISL_101358|B
+|      |  |     |      |                     |     |     +**| (1)
+|      |  |     |      |                     |     |     |  +---EPI307192|HA|B/North_Carolina/05/2011|EPI_ISL_87416|B
+|      |  |     |      |                     |     |  +**| (0)
+|      |  |     |      |                     |     |  |  +---EPI333043|HA|B/VICTORIA/1/2011|EPI_ISL_95226|B
+|      |  |     |      |                     |     +**| (0)
+|      |  |     |      |                     |        |  +---EPI312976|HA|B/Wyoming/02/2011|EPI_ISL_88933|B
+|      |  |     |      |                     |        +**| (1)
+|      |  |     |      |                     |           +---EPI325204|HA|B/Nevada/11/2011|EPI_ISL_93537|B
+|      |  |     |      |                  +**| (0)
+|      |  |     |      |                  |  |        +-------EPI342016|HA|B/Louisiana/05/2011|EPI_ISL_98933|B
+|      |  |     |      |                  |  |     +**| (1)
+|      |  |     |      |                  |  |     |  |      +**EPI346474|HA|B/Michigan/09/2011|EPI_ISL_99806|B
+|      |  |     |      |                  |  |     |  |   +**| (96)
+|      |  |     |      |                  |  |     |  |   |  +---EPI349749|HA|B/Michigan/09/2011|EPI_ISL_101914|B
+|      |  |     |      |                  |  |     |  +---| (77)
+|      |  |     |      |                  |  |     |      +---EPI331141|HA|B/Massachusetts/03/2011|EPI_ISL_94743|B
+|      |  |     |      |                  |  |  +**| (0)
+|      |  |     |      |                  |  |  |  +---EPI312948|HA|B/Utah/04/2011|EPI_ISL_88925|B
+|      |  |     |      |                  |  +**| (0)
+|      |  |     |      |                  |     |  +---EPI325191|HA|B/Nebraska/06/2011|EPI_ISL_93534|B
+|      |  |     |      |                  |     +**| (6)
+|      |  |     |      |                  |        +---EPI357563|HA|B/BRISBANE/83/2011|EPI_ISL_106828|B
+|      |  |     |      |               +**| (0)
+|      |  |     |      |               |  |     +---EPI312794|HA|B/Indiana/04/2011|EPI_ISL_88871|B
+|      |  |     |      |               |  |  +**| (1)
+|      |  |     |      |               |  |  |  |  +-------EPI312800|HA|B/Iowa/01/2011|EPI_ISL_88873|B
+|      |  |     |      |               |  |  |  +**| (14)
+|      |  |     |      |               |  |  |     +---EPI334431|HA|B/Ohio/03/2011|EPI_ISL_93553|B
+|      |  |     |      |               |  +**| (0)
+|      |  |     |      |               |     |  +---EPI312821|HA|B/Maine/05/2011|EPI_ISL_88879|B
+|      |  |     |      |               |     +**| (2)
+|      |  |     |      |               |        +---EPI331195|HA|B/Virginia/06/2011|EPI_ISL_94759|B
+|      |  |     |      |            +**| (0)
+|      |  |     |      |            |  |     +---EPI312761|HA|B/California/09/2011|EPI_ISL_88859|B
+|      |  |     |      |            |  |  +**| (11)
+|      |  |     |      |            |  |  |  +-------EPI325157|HA|B/Massachusetts/02/2011|EPI_ISL_93524|B
+|      |  |     |      |            |  +**| (2)
+|      |  |     |      |            |     +---EPI357548|HA|B/SOUTH_AUSTRALIA/258/2011|EPI_ISL_106823|B
+|      |  |     |      |         +**| (0)
+|      |  |     |      |         |  |     +**EPI312890|HA|B/North_Carolina/16/2011|EPI_ISL_88907|B
+|      |  |     |      |         |  |  +**| (68)
+|      |  |     |      |         |  |  |  |  +**EPI325078|HA|B/Colorado/03/2011|EPI_ISL_93499|B
+|      |  |     |      |         |  |  |  +**| (99)
+|      |  |     |      |         |  |  |     +---EPI331585|HA|B/SOUTH_AUSTRALIA/6/2011|EPI_ISL_94882|B
+|      |  |     |      |         |  +**| (2)
+|      |  |     |      |         |     +---EPI346075|HA|B/NEWCASTLE/27/2011|EPI_ISL_99665|B
+|      |  |     |      |      +**| (1)
+|      |  |     |      |      |  +---EPI325293|HA|B/Texas/08/2011|EPI_ISL_93560|B
+|      |  |     |      |  +---| (84)
+|      |  |     |      |  |   |   +-------EPI312918|HA|B/Tennessee/01/2011|EPI_ISL_88917|B
+|      |  |     |      |  |   +---| (97)
+|      |  |     |      |  |       +**EPI325143|HA|B/Louisiana/11/2011|EPI_ISL_93520|B
+|      |  |     |      +**| (85)
+|      |  |     |         +---EPI325083|HA|B/Connecticut/03/2011|EPI_ISL_93501|B
+|      |  |  +**| (0)
+|      |  |  |  +---EPI325061|HA|B/Alaska/08/2011|EPI_ISL_93493|B
+|      |  +**| (0)
+|      |     |      +**EPI354066|HA|B/Bangladesh/5549/2011|EPI_ISL_104055|B
+|      |     |  +---| (98)
+|      |     |  |   +---EPI330945|HA|B/Hunan-Yuhua/1316/2011|EPI_ISL_94664|B
+|      |     +**| (28)
+|      |        +----------------EPI312954|HA|B/Vermont/03/2011|EPI_ISL_88927|B
+|   +**| (2)
+|   |  +---EPI357554|HA|B/TASMANIA/16/2011|EPI_ISL_106825|B
++---| (99)
+|   +---EPI335759|HA|B/Bangladesh/9234/2011|EPI_ISL_96046|B
+|
++**VicB_2011_COBRA_Aligned
+
+Tree in newick format:
+
+(EPI340813|HA|B/Bangladesh/4622/2011|EPI_ISL_98579|B:0.0000010000,((((((((((((((((EPI340816|HA|B/Fujian-Tongan/1150/2011|EPI_ISL_98580|B:0.0000026764,(EPI347854|HA|B/Guangdong-Luohu/1351/2011|EPI_ISL_100798|B:0.0018896853,(EPI354034|HA|B/Chongqing-Yuzhong/1651/2011|EPI_ISL_104047|B:0.0037879544,(EPI354055|HA|B/Shanghai-Jingan/1392/2011|EPI_ISL_104052|B:0.0009059962,EPI330460|HA|B/Fujian-Cangshan/192/2011|EPI_ISL_94599|B:0.0032360035)70:0.0015275788)42:0.0000028772)32:0.0000022665)1:0.0000024892,((((EPI340828|HA|B/Sichuan-Maerkang/166/2011|EPI_ISL_98584|B:0.0000021725,EPI330625|HA|B/Chongqing-Jiulongpo/39/2011|EPI_ISL_94624|B:0.0037938421)70:0.0000027957,EPI330364|HA|B/Sichuan-Jinjiang/277/2011|EPI_ISL_94587|B:0.0037906144)95:0.0032607890,EPI332670|HA|B/NONG_KHAI/40/2011|EPI_ISL_95089|B:0.0008500432)63:0.0015712510,(EPI347877|HA|B/Hubei-Jingzhou/5104/2011|EPI_ISL_100810|B:0.0018872504,(EPI304392|HA|B/DARWIN/11/2011|EPI_ISL_86448|B:0.0000026764,EPI331708|HA|B/SOUTH_AUSTRALIA/3/2011|EPI_ISL_94924|B:0.0018911238)97:0.0018921996)5:0.0000028276)3:0.0000022055)0:0.0000018648,(((((EPI340825|HA|B/Fujian-Siming/1134/2011|EPI_ISL_98583|B:0.0000010000,VicB_2011_Ancestral_Aligned_Node20:0.0000010000)95:0.0000025199,EPI347644|HA|B/Hunan-Lusong/1540/2011|EPI_ISL_100500|B:0.0018917948)71:0.0018997237,(EPI346108|HA|B/NONTHABURI/1766/2011|EPI_ISL_99676|B:0.0018923628,EPI312844|HA|B/Nevada/06/2011|EPI_ISL_88887|B:0.0018861994)57:0.0000025656)1:0.0000026764,VicB_2011_Medoid_Aligned|EPI340816|HA|B/Fujian-Tongan/1150/2011|EPI_ISL_98580|B:0.0000026764)1:0.0000022215,(((EPI340837|HA|B/Shizuoka/57/2011|EPI_ISL_98587|B:0.0037862599,EPI357744|HA|B/Qatar/2311002267/2011|EPI_ISL_106898|B:0.0000020104)89:0.0037815437,EPI347873|HA|B/Jiangsu-Tianning/1467/2011|EPI_ISL_100808|B:0.0056812609)4:0.0000028374,(EPI330372|HA|B/Fujian-Gulou/1174/2011|EPI_ISL_94588|B:0.0018904552,EPI370086|HA|B/FIJI/16/2011|EPI_ISL_118592|B:0.0018886414)2:0.0000024885)1:0.0000020257)0:0.0000020602)0:0.0000021857,(((EPI340840|HA|B/Anhui-Baohe/1421/2011|EPI_ISL_98588|B:0.0018956489,EPI330833|HA|B/Guangdong-Chikan/1155/2011|EPI_ISL_94650|B:0.0037932824)60:0.0000025955,(EPI309224|HA|B/Michigan/01/2011|EPI_ISL_87838|B:0.0000027383,EPI370098|HA|B/FIJI/11/2011|EPI_ISL_118596|B:0.0207189870)84:0.0018998331)2:0.0000026764,(EPI346018|HA|B/SOUTH_AUSTRALIA/127/2011|EPI_ISL_99646|B:0.0018877360,EPI331522|HA|B/PERTH/5/2011|EPI_ISL_94861|B:0.0037806967)3:0.0000020859)0:0.0000020543)0:0.0000021277,((EPI346763|HA|B/Sivas/TR-14/2011|EPI_ISL_99957|B:0.0018872550,EPI347834|HA|B/Hubei-Qiaokou/1393/2011|EPI_ISL_100788|B:0.0018879659)7:0.0000026414,EPI902432|HA|B/Kazakhstan/2078/2011|EPI_ISL_246482|B:0.0018982641)1:0.0000020458)0:0.0000023009,(((((EPI340822|HA|B/Hubei-Fancheng/2277/2011|EPI_ISL_98582|B:0.0000026764,EPI330793|HA|B/Hunan-Yuhua/1265/2011|EPI_ISL_94645|B:0.0018790735)62:0.0000021848,EPI347893|HA|B/Shanghai-Chongming/1458/2011|EPI_ISL_100818|B:0.0056741684)96:0.0038067095,(((((EPI346736|HA|B/Hong_Kong/591/2011|EPI_ISL_99943|B:0.0018919256,EPI347832|HA|B/Shanghai-Xuhui/1374/2011|EPI_ISL_100787|B:0.0000027427)63:0.0018898364,EPI330116|HA|B/Shanghai-Songjiang/176/2011|EPI_ISL_94556|B:0.0000028730)58:0.0018878998,EPI347917|HA|B/Jiangxi-Donghu/1468/2011|EPI_ISL_100830|B:0.0018884537)2:0.0000028249,(EPI346738|HA|B/Hong_Kong/591/2011|EPI_ISL_99944|B:0.0000026764,(((EPI347867|HA|B/Jiangxi-Donghu/1439/2011|EPI_ISL_100805|B:0.0000023577,(EPI330388|HA|B/Hunan-Hecheng/1104/2011|EPI_ISL_94590|B:0.0000027905,EPI330737|HA|B/Hunan-Lusong/1325/2011|EPI_ISL_94638|B:0.0018831467)99:0.0018841603)99:0.0018912839,(EPI347871|HA|B/Fujian-Zhangpu/319/2011|EPI_ISL_100807|B:0.0018978553,EPI347913|HA|B/Jiangsu-Canglang/1538/2011|EPI_ISL_100828|B:0.0018889519)8:0.0000028331)2:0.0000028291,(EPI347911|HA|B/Hunan-Lusong/1645/2011|EPI_ISL_100827|B:0.0018899512,(EPI352432|HA|B/Hong_Kong/1153/2011|EPI_ISL_103121|B:0.0018894948,EPI352431|HA|B/Hong_Kong/1129/2011|EPI_ISL_103120|B:0.0000028549)97:0.0018918018)3:0.0000028264)0:0.0000020352)0:0.0000020789)2:0.0000028259,EPI354013|HA|B/Sichuan-Bazhou/1249/2011|EPI_ISL_104042|B:0.0018962232)94:0.0018889500)90:0.0018879583,EPI330969|HA|B/Jiangsu-Chongchuan/11150/2011|EPI_ISL_94667|B:0.0018869786)1:0.0000025324,(((EPI346078|HA|B/CAMBODIA/23/2011|EPI_ISL_99666|B:0.0018919636,EPI330092|HA|B/Shanghai-Baoshan/152/2011|EPI_ISL_94553|B:0.0000026764)35:0.0000022171,EPI346117|HA|B/PHILIPPINES/2519/2011|EPI_ISL_99679|B:0.0018984245)46:0.0018872355,EPI331531|HA|B/MACAU/200392/2011|EPI_ISL_94864|B:0.0037763996)1:0.0000024945)0:0.0000023000)0:0.0000026782,(EPI342010|HA|B/Kyrgyztan/01/2011|EPI_ISL_98931|B:0.0018935081,EPI330124|HA|B/Shanghai-Huangpu/171/2011|EPI_ISL_94557|B:0.0037770915)1:0.0000028398)32:0.0000020011,((EPI346099|HA|B/PHILIPPINES/2533/2011|EPI_ISL_99673|B:0.0018727173,EPI346096|HA|B/PHILIPPINES/2394/2011|EPI_ISL_99672|B:0.0000026764)54:0.0000023595,EPI370315|HA|B/PHILIPPINES/3701/2011|EPI_ISL_118650|B:0.0018812227)96:0.0018827606)36:0.0018880244,(((EPI348464|HA|B/Gwangju/649/2011|EPI_ISL_101365|B:0.0018855933,EPI378489|HA|B/Taiwan/1557/2011|EPI_ISL_122337|B:0.0038026759)31:0.0000020728,EPI330745|HA|B/Shanghai-Luwan/1216/2011|EPI_ISL_94639|B:0.0018856196)45:0.0018880466,EPI370063|HA|B/SRI_LANKA/15/2011|EPI_ISL_118584|B:0.0018802525)41:0.0000024969)6:0.0000021375,EPI309293|HA|B/Wisconsin/02/2011|EPI_ISL_87859|B:0.0018864105)0:0.0000027261,(((((((((EPI340849|HA|B/Vietnam/92/2011|EPI_ISL_98591|B:0.0018716903,EPI339399|HA|B/Vietnam/85/2011|EPI_ISL_97467|B:0.0018660994)11:0.0000026747,(EPI348452|HA|B/Cambodia/1412/2011|EPI_ISL_101361|B:0.0031891609,EPI2474360|HA|B/Hanoi/EL467/2011|EPI_ISL_17265036|B:0.0009010085)52:0.0015124127)2:0.0000024769,((EPI2474332|HA|B/Cambodia/8/2011|EPI_ISL_17265023|B:0.0000021949,EPI331384|HA|B/CAMBODIA/30/2011|EPI_ISL_94816|B:0.0018542109)61:0.0018628916,(EPI331272|HA|B/CAMBODIA/2/2011|EPI_ISL_94780|B:0.0018664075,EPI339387|HA|B/Vietnam/107/2011|EPI_ISL_97463|B:0.0037413160)6:0.0000026452)0:0.0000023692)26:0.0000028581,EPI302435|HA|B/DARWIN/3/2011|EPI_ISL_86143|B:0.0018663902)100:0.0076013408,EPI356968|HA|B/CHIBA/19/2011|EPI_ISL_106357|B:0.0018821842)21:0.0000028218,(EPI366201|HA|B/Bangladesh/8008/2011|EPI_ISL_115043|B:0.0018849643,EPI312921|HA|B/Texas/05/2011|EPI_ISL_88918|B:0.0000022681)97:0.0018838425)0:0.0000023815,(EPI346981|HA|B/Bangladesh/5004/2011|EPI_ISL_100089|B:0.0037797910,EPI341994|HA|B/Florida/02/2011|EPI_ISL_98926|B:0.0018826616)37:0.0000026764)0:0.0000026692,(((EPI346030|HA|B/SRI_LANKA/2/2011|EPI_ISL_99650|B:0.0018912313,EPI345978|HA|B/Washington/08/2011|EPI_ISL_99628|B:0.0018848342)1:0.0000026764,EPI331376|HA|B/VICTORIA/502/2011|EPI_ISL_94813|B:0.0018914182)0:0.0000020010,(((EPI353982|HA|B/India/5875/2011|EPI_ISL_104031|B:0.0018983129,EPI346959|HA|B/Alaska/09/2011|EPI_ISL_100081|B:0.0018936150)91:0.0018759133,EPI1399068|HA|B/Taiwan/6970/2011|EPI_ISL_348549|B:0.0037925624)10:0.0000023762,EPI331417|HA|B/BRISBANE/10/2011|EPI_ISL_94827|B:0.0037841809)8:0.0000021502)0:0.0000022575)0:0.0000021154,((((((EPI346760|HA|B/Ankara/TR-10/2011|EPI_ISL_99955|B:0.0000026764,((EPI348417|HA|B/IBARAKI/18/2011|EPI_ISL_101352|B:0.0037754205,(((EPI370057|HA|B/CAMBODIA/122/2011|EPI_ISL_118581|B:0.0018880655,EPI370126|HA|B/CAMBODIA/116/2011|EPI_ISL_118605|B:0.0018841508)4:0.0000024436,EPI370727|HA|B/Laos/I973/2011|EPI_ISL_118950|B:0.0018857167)1:0.0000017522,(EPI370095|HA|B/PHILIPPINES/3971/2011|EPI_ISL_118595|B:0.0018956912,EPI370731|HA|B/Laos/I1000/2011|EPI_ISL_118952|B:0.0018889684)4:0.0000023258)7:0.0000027013)68:0.0018863363,EPI356988|HA|B/OSAKA-C/1035/2011|EPI_ISL_106377|B:0.0037777997)63:0.0000027722)40:0.0000021909,EPI347665|HA|B/Cambodia/1402/2011|EPI_ISL_100508|B:0.0018845145)50:0.0018820957,EPI357557|HA|B/SYDNEY/515/2011|EPI_ISL_106826|B:0.0018850877)0:0.0000026764,EPI333093|HA|B/WAIKATO/1/2011|EPI_ISL_95244|B:0.0018862723)0:0.0000025563,(EPI366198|HA|B/Bangladesh/4013/2011|EPI_ISL_115042|B:0.0018813198,EPI331382|HA|B/BRISBANE/3/2011|EPI_ISL_94815|B:0.0037739674)2:0.0000026001)0:0.0000028556,(((EPI902523|HA|B/Hong_Kong/767/2011|EPI_ISL_246527|B:0.0018899192,EPI346069|HA|B/NEWCASTLE/21/2011|EPI_ISL_99663|B:0.0018843322)8:0.0000028297,(EPI334449|HA|B/Bangladesh/1585/2011|EPI_ISL_93497|B:0.0018871296,EPI370160|HA|B/WELLINGTON/39/2011|EPI_ISL_118617|B:0.0018812700)7:0.0000022207)0:0.0000024214,VicB_2011_Consensus_Aligned:0.0000026764)0:0.0000023137)0:0.0000020268)0:0.0000026764)0:0.0000022880,(((EPI346979|HA|B/Bangladesh/1006/2011|EPI_ISL_100088|B:0.0000028744,EPI357742|HA|B/Qatar/2311005072/2011|EPI_ISL_106897|B:0.0018885200)65:0.0018868296,(EPI347875|HA|B/Jiangsu-Nanjinggulou/11208/2011|EPI_ISL_100809|B:0.0018850456,EPI366221|HA|B/Hong_Kong/746/2011|EPI_ISL_115049|B:0.0000021187)64:0.0018869273)32:0.0000029038,(EPI356973|HA|B/HYOGO/1123/2011|EPI_ISL_106362|B:0.0037866845,EPI2474338|HA|B/Christchurch/108/2011|EPI_ISL_17265026|B:0.0056916822)10:0.0000023487)0:0.0000024172)0:0.0000023095,((EPI346033|HA|B/SRI_LANKA/4/2011|EPI_ISL_99651|B:0.0018827112,EPI346968|HA|B/California/11/2011|EPI_ISL_100084|B:0.0018853171)0:0.0000026764,EPI352465|HA|B/Israel/14/2011|EPI_ISL_103138|B:0.0018849740)0:0.0000023192)0:0.0000022237,(((EPI348418|HA|B/TOKYO/91107/2011|EPI_ISL_101353|B:0.0037813315,((EPI340843|HA|B/Utah/05/2011|EPI_ISL_98589|B:0.0018839593,(EPI309180|HA|B/Florida/04/2011|EPI_ISL_87823|B:0.0018782357,EPI325110|HA|B/Idaho/03/2011|EPI_ISL_93509|B:0.0019014640)91:0.0018859289)24:0.0000026200,(((((((((((EPI340967|HA|B/Minnesota/04/2011|EPI_ISL_98655|B:0.0037773261,EPI325270|HA|B/North_Dakota/02/2011|EPI_ISL_93552|B:0.0018927793)94:0.0018862766,EPI325289|HA|B/Tennessee/02/2011|EPI_ISL_93559|B:0.0018799933)1:0.0000022481,((EPI342038|HA|B/Washington/01/2011|EPI_ISL_98939|B:0.0018921163,EPI333008|HA|B/SOUTH_AUSTRALIA/18/2011|EPI_ISL_95215|B:0.0018926071)2:0.0000025526,((EPI325116|HA|B/Idaho/05/2011|EPI_ISL_93511|B:0.0018750524,EPI325113|HA|B/Idaho/04/2011|EPI_ISL_93510|B:0.0000026764)100:0.0017605312,EPI325334|HA|B/Washington/05/2011|EPI_ISL_93568|B:0.0017581450)65:0.0002512655)0:0.0000028466)0:0.0000022873,((((EPI341981|HA|B/California/02/2011|EPI_ISL_98922|B:0.0000028995,EPI309236|HA|B/Nebraska/04/2011|EPI_ISL_87842|B:0.0018841438)99:0.0018906259,EPI335738|HA|B/Indiana/09/2011|EPI_ISL_96039|B:0.0057086682)67:0.0000028290,EPI335750|HA|B/Arizona/02/2011|EPI_ISL_96043|B:0.0018890376)6:0.0000023924,(((EPI348444|HA|B/Wisconsin/06/2011|EPI_ISL_101358|B:0.0018850937,EPI307192|HA|B/North_Carolina/05/2011|EPI_ISL_87416|B:0.0018799077)1:0.0000026764,EPI333043|HA|B/VICTORIA/1/2011|EPI_ISL_95226|B:0.0018840017)0:0.0000026764,(EPI312976|HA|B/Wyoming/02/2011|EPI_ISL_88933|B:0.0018817957,EPI325204|HA|B/Nevada/11/2011|EPI_ISL_93537|B:0.0018791427)1:0.0000026764)0:0.0000022605)0:0.0000021096)0:0.0000020725,(((EPI342016|HA|B/Louisiana/05/2011|EPI_ISL_98933|B:0.0037661968,((EPI346474|HA|B/Michigan/09/2011|EPI_ISL_99806|B:0.0000026764,EPI349749|HA|B/Michigan/09/2011|EPI_ISL_101914|B:0.0018781358)96:0.0000029703,EPI331141|HA|B/Massachusetts/03/2011|EPI_ISL_94743|B:0.0018781016)77:0.0018801201)1:0.0000028208,EPI312948|HA|B/Utah/04/2011|EPI_ISL_88925|B:0.0018788840)0:0.0000023933,(EPI325191|HA|B/Nebraska/06/2011|EPI_ISL_93534|B:0.0018801150,EPI357563|HA|B/BRISBANE/83/2011|EPI_ISL_106828|B:0.0018839624)6:0.0000028091)0:0.0000020861)0:0.0000021587,((EPI312794|HA|B/Indiana/04/2011|EPI_ISL_88871|B:0.0018794051,(EPI312800|HA|B/Iowa/01/2011|EPI_ISL_88873|B:0.0037730096,EPI334431|HA|B/Ohio/03/2011|EPI_ISL_93553|B:0.0018800858)14:0.0000024584)1:0.0000028242,(EPI312821|HA|B/Maine/05/2011|EPI_ISL_88879|B:0.0018792740,EPI331195|HA|B/Virginia/06/2011|EPI_ISL_94759|B:0.0018834251)2:0.0000028049)0:0.0000020351)0:0.0000021899,((EPI312761|HA|B/California/09/2011|EPI_ISL_88859|B:0.0018800447,EPI325157|HA|B/Massachusetts/02/2011|EPI_ISL_93524|B:0.0037823884)11:0.0000024292,EPI357548|HA|B/SOUTH_AUSTRALIA/258/2011|EPI_ISL_106823|B:0.0018782733)2:0.0000010000)0:0.0000021312,((EPI312890|HA|B/North_Carolina/16/2011|EPI_ISL_88907|B:0.0011750485,(EPI325078|HA|B/Colorado/03/2011|EPI_ISL_93499|B:0.0000026764,EPI331585|HA|B/SOUTH_AUSTRALIA/6/2011|EPI_ISL_94882|B:0.0018783142)99:0.0013751429)68:0.0012105255,EPI346075|HA|B/NEWCASTLE/27/2011|EPI_ISL_99665|B:0.0018834881)2:0.0000021803)0:0.0000028336,EPI325293|HA|B/Texas/08/2011|EPI_ISL_93560|B:0.0018850930)1:0.0000024338,(EPI312918|HA|B/Tennessee/01/2011|EPI_ISL_88917|B:0.0037491868,EPI325143|HA|B/Louisiana/11/2011|EPI_ISL_93520|B:0.0000021008)97:0.0018787390)84:0.0018801012,EPI325083|HA|B/Connecticut/03/2011|EPI_ISL_93501|B:0.0018849245)85:0.0000020010)46:0.0000022216)94:0.0018819641,EPI325061|HA|B/Alaska/08/2011|EPI_ISL_93493|B:0.0018844419)0:0.0000028318,((EPI354066|HA|B/Bangladesh/5549/2011|EPI_ISL_104055|B:0.0000020181,EPI330945|HA|B/Hunan-Yuhua/1316/2011|EPI_ISL_94664|B:0.0018807313)98:0.0018819662,EPI312954|HA|B/Vermont/03/2011|EPI_ISL_88927|B:0.0075726539)28:0.0000028611)0:0.0000028006)1:0.0000025762,EPI357554|HA|B/TASMANIA/16/2011|EPI_ISL_106825|B:0.0018902430)2:0.0000028666,EPI335759|HA|B/Bangladesh/9234/2011|EPI_ISL_96046|B:0.0018819912)99:0.0018856590,VicB_2011_COBRA_Aligned:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -3585.260422
+Robinson-Foulds distance between ML tree and consensus tree: 197
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--EPI340813|HA|B/Bangladesh/4622/2011|EPI_ISL_98579|B
+|
+|                                                                            +--EPI340816|HA|B/Fujian-Tongan/1150/2011|EPI_ISL_98580|B
+|                                                                         +--| (18)
+|                                                                         |  +---EPI346763|HA|B/Sivas/TR-14/2011|EPI_ISL_99957|B
+|                                                                      +--| (15)
+|                                                                      |  +---EPI902432|HA|B/Kazakhstan/2078/2011|EPI_ISL_246482|B
+|                                                                   +--| (2)
+|                                                                   |  |                       +--EPI340822|HA|B/Hubei-Fancheng/2277/2011|EPI_ISL_98582|B
+|                                                                   |  |                    +--| (62)
+|                                                                   |  |                    |  +---EPI330793|HA|B/Hunan-Yuhua/1265/2011|EPI_ISL_94645|B
+|                                                                   |  |            +-------| (96)
+|                                                                   |  |            |       +-----------EPI347893|HA|B/Shanghai-Chongming/1458/2011|EPI_ISL_100818|B
+|                                                                   |  |        +---| (90)
+|                                                                   |  |        |   |                         +--EPI346736|HA|B/Hong_Kong/591/2011|EPI_ISL_99943|B
+|                                                                   |  |        |   |                     +---| (63)
+|                                                                   |  |        |   |                     |   +---EPI347832|HA|B/Shanghai-Xuhui/1374/2011|EPI_ISL_100787|B
+|                                                                   |  |        |   |                  +--| (58)
+|                                                                   |  |        |   |                  |  +---EPI330116|HA|B/Shanghai-Songjiang/176/2011|EPI_ISL_94556|B
+|                                                                   |  |        |   |               +--| (22)
+|                                                                   |  |        |   |               |  +---EPI347913|HA|B/Jiangsu-Canglang/1538/2011|EPI_ISL_100828|B
+|                                                                   |  |        |   |            +--| (5)
+|                                                                   |  |        |   |            |  |  +---EPI347911|HA|B/Hunan-Lusong/1645/2011|EPI_ISL_100827|B
+|                                                                   |  |        |   |            |  +--| (14)
+|                                                                   |  |        |   |            |     +---EPI354013|HA|B/Sichuan-Bazhou/1249/2011|EPI_ISL_104042|B
+|                                                                   |  |        |   |         +--| (5)
+|                                                                   |  |        |   |         |  +--EPI346738|HA|B/Hong_Kong/591/2011|EPI_ISL_99944|B
+|                                                                   |  |        |   |      +--| (3)
+|                                                                   |  |        |   |      |  |  +---EPI347917|HA|B/Jiangxi-Donghu/1468/2011|EPI_ISL_100830|B
+|                                                                   |  |        |   |      |  +--| (20)
+|                                                                   |  |        |   |      |     |   +---EPI352432|HA|B/Hong_Kong/1153/2011|EPI_ISL_103121|B
+|                                                                   |  |        |   |      |     +---| (97)
+|                                                                   |  |        |   |      |         +--EPI352431|HA|B/Hong_Kong/1129/2011|EPI_ISL_103120|B
+|                                                                   |  |        |   |   +--| (37)
+|                                                                   |  |        |   |   |  |   +--EPI347867|HA|B/Jiangxi-Donghu/1439/2011|EPI_ISL_100805|B
+|                                                                   |  |        |   |   |  +---| (99)
+|                                                                   |  |        |   |   |      |   +--EPI330388|HA|B/Hunan-Hecheng/1104/2011|EPI_ISL_94590|B
+|                                                                   |  |        |   |   |      +---| (99)
+|                                                                   |  |        |   |   |          +---EPI330737|HA|B/Hunan-Lusong/1325/2011|EPI_ISL_94638|B
+|                                                                   |  |        |   +---| (94)
+|                                                                   |  |        |       +---EPI347871|HA|B/Fujian-Zhangpu/319/2011|EPI_ISL_100807|B
+|                                                                   |  |     +--| (20)
+|                                                                   |  |     |  +---EPI347877|HA|B/Hubei-Jingzhou/5104/2011|EPI_ISL_100810|B
+|                                                                   |  |  +--| (14)
+|                                                                   |  |  |  |            +--EPI340828|HA|B/Sichuan-Maerkang/166/2011|EPI_ISL_98584|B
+|                                                                   |  |  |  |         +--| (70)
+|                                                                   |  |  |  |         |  +-------EPI330625|HA|B/Chongqing-Jiulongpo/39/2011|EPI_ISL_94624|B
+|                                                                   |  |  |  |  +------| (95)
+|                                                                   |  |  |  |  |      +-------EPI330364|HA|B/Sichuan-Jinjiang/277/2011|EPI_ISL_94587|B
+|                                                                   |  |  |  +--| (63)
+|                                                                   |  |  |     +--EPI332670|HA|B/NONG_KHAI/40/2011|EPI_ISL_95089|B
+|                                                                   |  +--| (2)
+|                                                                   |     |   +--EPI304392|HA|B/DARWIN/11/2011|EPI_ISL_86448|B
+|                                                                   |     +---| (97)
+|                                                                   |         +---EPI331708|HA|B/SOUTH_AUSTRALIA/3/2011|EPI_ISL_94924|B
+|                                                                +--| (13)
+|                                                                |  |      +--EPI340825|HA|B/Fujian-Siming/1134/2011|EPI_ISL_98583|B
+|                                                                |  |   +--| (95)
+|                                                                |  |   |  +--VicB_2011_Ancestral_Aligned_Node20
+|                                                                |  +---| (71)
+|                                                                |      +---EPI347644|HA|B/Hunan-Lusong/1540/2011|EPI_ISL_100500|B
+|                                                             +--| (16)
+|                                                             |  |          +-------EPI340837|HA|B/Shizuoka/57/2011|EPI_ISL_98587|B
+|                                                             |  |  +-------| (89)
+|                                                             |  |  |       +--EPI357744|HA|B/Qatar/2311002267/2011|EPI_ISL_106898|B
+|                                                             |  +--| (14)
+|                                                             |     |  +---EPI347854|HA|B/Guangdong-Luohu/1351/2011|EPI_ISL_100798|B
+|                                                             |     +--| (32)
+|                                                             |        |  +-------EPI354034|HA|B/Chongqing-Yuzhong/1651/2011|EPI_ISL_104047|B
+|                                                             |        +--| (42)
+|                                                             |           |  +--EPI354055|HA|B/Shanghai-Jingan/1392/2011|EPI_ISL_104052|B
+|                                                             |           +--| (70)
+|                                                             |              +------EPI330460|HA|B/Fujian-Cangshan/192/2011|EPI_ISL_94599|B
+|                                                          +--| (10)
+|                                                          |  |  +---EPI330372|HA|B/Fujian-Gulou/1174/2011|EPI_ISL_94588|B
+|                                                          |  +--| (15)
+|                                                          |     +---EPI346018|HA|B/SOUTH_AUSTRALIA/127/2011|EPI_ISL_99646|B
+|                                                       +--| (13)
+|                                                       |  |  +---EPI342010|HA|B/Kyrgyztan/01/2011|EPI_ISL_98931|B
+|                                                       |  +--| (22)
+|                                                       |     +---EPI347834|HA|B/Hubei-Qiaokou/1393/2011|EPI_ISL_100788|B
+|                                                    +--| (5)
+|                                                    |  |     +---EPI340840|HA|B/Anhui-Baohe/1421/2011|EPI_ISL_98588|B
+|                                                    |  |  +--| (60)
+|                                                    |  |  |  +-------EPI330833|HA|B/Guangdong-Chikan/1155/2011|EPI_ISL_94650|B
+|                                                    |  +--| (3)
+|                                                    |  |  |  +---EPI370086|HA|B/FIJI/16/2011|EPI_ISL_118592|B
+|                                                    |  |  +--| (14)
+|                                                    |  |     +-------EPI331522|HA|B/PERTH/5/2011|EPI_ISL_94861|B
+|                                                    |  |
+|                                                    |  |   +---EPI346078|HA|B/CAMBODIA/23/2011|EPI_ISL_99666|B
+|                                                    |  +---| (46)
+|                                                    |  |   |  +---EPI346117|HA|B/PHILIPPINES/2519/2011|EPI_ISL_99679|B
+|                                                    |  |   +--| (54)
+|                                                    |  |      +--EPI330092|HA|B/Shanghai-Baoshan/152/2011|EPI_ISL_94553|B
+|                                                    |  |
+|                                                    |  |     +---EPI346108|HA|B/NONTHABURI/1766/2011|EPI_ISL_99676|B
+|                                                    |  |  +--| (57)
+|                                                    |  |  |  +---EPI312844|HA|B/Nevada/06/2011|EPI_ISL_88887|B
+|                                                    |  +--| (4)
+|                                                    |  |  |  +-----------EPI347873|HA|B/Jiangsu-Tianning/1467/2011|EPI_ISL_100808|B
+|                                                    |  |  +--| (31)
+|                                                    |  |     +-------EPI331531|HA|B/MACAU/200392/2011|EPI_ISL_94864|B
+|                                                    |  |
+|                                                    |  |  +-------EPI330124|HA|B/Shanghai-Huangpu/171/2011|EPI_ISL_94557|B
+|                                                    |  +--| (16)
+|                                                    |     +--VicB_2011_Medoid_Aligned|EPI340816|HA|B/Fujian-Tongan/1150/2011|EPI_ISL_98580|B
+|                                                 +--| (32)
+|                                                 |  |  +---EPI330969|HA|B/Jiangsu-Chongchuan/11150/2011|EPI_ISL_94667|B
+|                                                 |  +--| (15)
+|                                                 |     |   +--EPI309224|HA|B/Michigan/01/2011|EPI_ISL_87838|B
+|                                                 |     +---| (84)
+|                                                 |         +----------------------------------------------EPI370098|HA|B/FIJI/11/2011|EPI_ISL_118596|B
+|                                             +---| (36)
+|                                             |   |      +---EPI346099|HA|B/PHILIPPINES/2533/2011|EPI_ISL_99673|B
+|                                             |   |   +--| (54)
+|                                             |   |   |  +--EPI346096|HA|B/PHILIPPINES/2394/2011|EPI_ISL_99672|B
+|                                             |   +---| (96)
+|                                             |       +---EPI370315|HA|B/PHILIPPINES/3701/2011|EPI_ISL_118650|B
+|                                          +--| (9)
+|                                          |  |   +---EPI353982|HA|B/India/5875/2011|EPI_ISL_104031|B
+|                                          |  +---| (91)
+|                                          |      +---EPI346959|HA|B/Alaska/09/2011|EPI_ISL_100081|B
+|                                       +--| (3)
+|                                       |  |         +--EPI346760|HA|B/Ankara/TR-10/2011|EPI_ISL_99955|B
+|                                       |  |      +--| (45)
+|                                       |  |      |  +---EPI347665|HA|B/Cambodia/1402/2011|EPI_ISL_100508|B
+|                                       |  |  +---| (50)
+|                                       |  |  |   |               +-------EPI348417|HA|B/IBARAKI/18/2011|EPI_ISL_101352|B
+|                                       |  |  |   |            +--| (29)
+|                                       |  |  |   |            |  +---EPI370126|HA|B/CAMBODIA/116/2011|EPI_ISL_118605|B
+|                                       |  |  |   |         +--| (5)
+|                                       |  |  |   |         |  +---EPI370727|HA|B/Laos/I973/2011|EPI_ISL_118950|B
+|                                       |  |  |   |      +--| (21)
+|                                       |  |  |   |      |  |  +---EPI370057|HA|B/CAMBODIA/122/2011|EPI_ISL_118581|B
+|                                       |  |  |   |      |  +--| (22)
+|                                       |  |  |   |      |     +---EPI370731|HA|B/Laos/I1000/2011|EPI_ISL_118952|B
+|                                       |  |  |   |  +---| (68)
+|                                       |  |  |   |  |   +---EPI370095|HA|B/PHILIPPINES/3971/2011|EPI_ISL_118595|B
+|                                       |  |  |   +--| (63)
+|                                       |  |  |      +-------EPI356988|HA|B/OSAKA-C/1035/2011|EPI_ISL_106377|B
+|                                       |  +--| (17)
+|                                       |     +-----------EPI2474338|HA|B/Christchurch/108/2011|EPI_ISL_17265026|B
+|                                    +--| (3)
+|                                    |  |                            +---EPI340849|HA|B/Vietnam/92/2011|EPI_ISL_98591|B
+|                                    |  |                         +--| (23)
+|                                    |  |                         |  +---EPI331272|HA|B/CAMBODIA/2/2011|EPI_ISL_94780|B
+|                                    |  |                      +--| (11)
+|                                    |  |                      |  |     +------EPI348452|HA|B/Cambodia/1412/2011|EPI_ISL_101361|B
+|                                    |  |                      |  |  +--| (52)
+|                                    |  |                      |  |  |  +--EPI2474360|HA|B/Hanoi/EL467/2011|EPI_ISL_17265036|B
+|                                    |  |                      |  +--| (26)
+|                                    |  |                      |     |   +--EPI2474332|HA|B/Cambodia/8/2011|EPI_ISL_17265023|B
+|                                    |  |                      |     +---| (61)
+|                                    |  |                      |         +---EPI331384|HA|B/CAMBODIA/30/2011|EPI_ISL_94816|B
+|                                    |  |                   +--| (28)
+|                                    |  |                   |  |  +---EPI339399|HA|B/Vietnam/85/2011|EPI_ISL_97467|B
+|                                    |  |                   |  +--| (23)
+|                                    |  |                   |     +---EPI302435|HA|B/DARWIN/3/2011|EPI_ISL_86143|B
+|                                    |  |  +----------------| (100)
+|                                    |  |  |                +-------EPI339387|HA|B/Vietnam/107/2011|EPI_ISL_97463|B
+|                                    |  +--| (3)
+|                                    |     |  +---EPI356968|HA|B/CHIBA/19/2011|EPI_ISL_106357|B
+|                                    |     +--| (28)
+|                                    |        +-------EPI356973|HA|B/HYOGO/1123/2011|EPI_ISL_106362|B
+|                                 +--| (12)
+|                                 |  +--VicB_2011_Consensus_Aligned
+|                              +--| (10)
+|                              |  |  +---EPI335759|HA|B/Bangladesh/9234/2011|EPI_ISL_96046|B
+|                              |  +--| (23)
+|                              |     +-------EPI331382|HA|B/BRISBANE/3/2011|EPI_ISL_94815|B
+|                           +--| (14)
+|                           |  |  +-------EPI346981|HA|B/Bangladesh/5004/2011|EPI_ISL_100089|B
+|                           |  +--| (37)
+|                           |     +---EPI341994|HA|B/Florida/02/2011|EPI_ISL_98926|B
+|                        +--| (10)
+|                        |  |  +---EPI357557|HA|B/SYDNEY/515/2011|EPI_ISL_106826|B
+|                        |  +--| (15)
+|                        |     +---EPI333093|HA|B/WAIKATO/1/2011|EPI_ISL_95244|B
+|                     +--| (12)
+|                     |  |  +---EPI345978|HA|B/Washington/08/2011|EPI_ISL_99628|B
+|                     |  +--| (14)
+|                     |     +---EPI346968|HA|B/California/11/2011|EPI_ISL_100084|B
+|                  +--| (10)
+|                  |  |  +---EPI352465|HA|B/Israel/14/2011|EPI_ISL_103138|B
+|                  |  +--| (13)
+|                  |     +---EPI334449|HA|B/Bangladesh/1585/2011|EPI_ISL_93497|B
+|               +--| (13)
+|               |  |  +---EPI346030|HA|B/SRI_LANKA/2/2011|EPI_ISL_99650|B
+|               |  +--| (16)
+|               |     +---EPI325061|HA|B/Alaska/08/2011|EPI_ISL_93493|B
+|            +--| (12)
+|            |  |  +---EPI357554|HA|B/TASMANIA/16/2011|EPI_ISL_106825|B
+|            |  +--| (12)
+|            |     +---EPI331376|HA|B/VICTORIA/502/2011|EPI_ISL_94813|B
+|         +--| (10)
+|         |  |  +---EPI346033|HA|B/SRI_LANKA/4/2011|EPI_ISL_99651|B
+|         |  +--| (14)
+|         |     +---EPI346069|HA|B/NEWCASTLE/21/2011|EPI_ISL_99663|B
+|      +--| (12)
+|      |  |  +---EPI366198|HA|B/Bangladesh/4013/2011|EPI_ISL_115042|B
+|      |  +--| (19)
+|      |     +---EPI370160|HA|B/WELLINGTON/39/2011|EPI_ISL_118617|B
+|   +--| (10)
+|   |  |      +-------EPI348418|HA|B/TOKYO/91107/2011|EPI_ISL_101353|B
+|   |  |  +---| (94)
+|   |  |  |   |     +---EPI340843|HA|B/Utah/05/2011|EPI_ISL_98589|B
+|   |  |  |   |  +--| (24)
+|   |  |  |   |  |  |   +---EPI309180|HA|B/Florida/04/2011|EPI_ISL_87823|B
+|   |  |  |   |  |  +---| (91)
+|   |  |  |   |  |      +---EPI325110|HA|B/Idaho/03/2011|EPI_ISL_93509|B
+|   |  |  |   +--| (46)
+|   |  |  |      |          +-------EPI340967|HA|B/Minnesota/04/2011|EPI_ISL_98655|B
+|   |  |  |      |      +---| (94)
+|   |  |  |      |      |   +---EPI325270|HA|B/North_Dakota/02/2011|EPI_ISL_93552|B
+|   |  |  |      |  +---| (84)
+|   |  |  |      |  |   |               +--EPI341981|HA|B/California/02/2011|EPI_ISL_98922|B
+|   |  |  |      |  |   |           +---| (99)
+|   |  |  |      |  |   |           |   +---EPI309236|HA|B/Nebraska/04/2011|EPI_ISL_87842|B
+|   |  |  |      |  |   |        +--| (67)
+|   |  |  |      |  |   |        |  +-----------EPI335738|HA|B/Indiana/09/2011|EPI_ISL_96039|B
+|   |  |  |      |  |   |     +--| (2)
+|   |  |  |      |  |   |     |  |           +-------EPI342016|HA|B/Louisiana/05/2011|EPI_ISL_98933|B
+|   |  |  |      |  |   |     |  |        +--| (14)
+|   |  |  |      |  |   |     |  |        |  |     +---EPI348444|HA|B/Wisconsin/06/2011|EPI_ISL_101358|B
+|   |  |  |      |  |   |     |  |        |  |  +--| (19)
+|   |  |  |      |  |   |     |  |        |  |  |  +---EPI325293|HA|B/Texas/08/2011|EPI_ISL_93560|B
+|   |  |  |      |  |   |     |  |        |  +--| (11)
+|   |  |  |      |  |   |     |  |        |     |     +---EPI325116|HA|B/Idaho/05/2011|EPI_ISL_93511|B
+|   |  |  |      |  |   |     |  |        |     |  +--| (100)
+|   |  |  |      |  |   |     |  |        |     |  |  +--EPI325113|HA|B/Idaho/04/2011|EPI_ISL_93510|B
+|   |  |  |      |  |   |     |  |        |     +--| (65)
+|   |  |  |      |  |   |     |  |        |        +--EPI325334|HA|B/Washington/05/2011|EPI_ISL_93568|B
+|   |  |  |      |  |   |     |  |     +--| (10)
+|   |  |  |      |  |   |     |  |     |  |              +---EPI342038|HA|B/Washington/01/2011|EPI_ISL_98939|B
+|   |  |  |      |  |   |     |  |     |  |           +--| (16)
+|   |  |  |      |  |   |     |  |     |  |           |  +---EPI312821|HA|B/Maine/05/2011|EPI_ISL_88879|B
+|   |  |  |      |  |   |     |  |     |  |        +--| (10)
+|   |  |  |      |  |   |     |  |     |  |        |  |     +---EPI312761|HA|B/California/09/2011|EPI_ISL_88859|B
+|   |  |  |      |  |   |     |  |     |  |        |  |  +--| (17)
+|   |  |  |      |  |   |     |  |     |  |        |  |  |  +---EPI312794|HA|B/Indiana/04/2011|EPI_ISL_88871|B
+|   |  |  |      |  |   |     |  |     |  |        |  +--| (12)
+|   |  |  |      |  |   |     |  |     |  |        |     |        +---EPI312948|HA|B/Utah/04/2011|EPI_ISL_88925|B
+|   |  |  |      |  |   |     |  |     |  |        |     |     +--| (19)
+|   |  |  |      |  |   |     |  |     |  |        |     |     |  +---EPI331195|HA|B/Virginia/06/2011|EPI_ISL_94759|B
+|   |  |  |      |  |   |     |  |     |  |        |     |  +--| (12)
+|   |  |  |      |  |   |     |  |     |  |        |     |  |  |        +---EPI312976|HA|B/Wyoming/02/2011|EPI_ISL_88933|B
+|   |  |  |      |  |   |     |  |     |  |        |     |  |  |     +--| (16)
+|   |  |  |      |  |   |     |  |     |  |        |     |  |  |     |  +-------EPI325157|HA|B/Massachusetts/02/2011|EPI_ISL_93524|B
+|   |  |  |      |  |   |     |  |     |  |        |     |  |  |  +--| (1)
+|   |  |  |      |  |   |     |  |     |  |        |     |  |  |  |  +---EPI335750|HA|B/Arizona/02/2011|EPI_ISL_96043|B
+|   |  |  |      |  |   |     |  |     |  |        |     |  |  +--| (2)
+|   |  |  |      |  |   |     |  |     |  |        |     |  |     +---EPI333043|HA|B/VICTORIA/1/2011|EPI_ISL_95226|B
+|   |  |  |      |  |   |     |  |     |  |        |     +--| (10)
+|   |  |  |      |  |   |     |  |     |  |        |        +---EPI346075|HA|B/NEWCASTLE/27/2011|EPI_ISL_99665|B
+|   |  |  |      |  |   |     |  |     |  |     +--| (12)
+|   |  |  |      |  |   |     |  |     |  |     |  |  +---EPI325204|HA|B/Nevada/11/2011|EPI_ISL_93537|B
+|   |  |  |      |  |   |     |  |     |  |     |  +--| (13)
+|   |  |  |      |  |   |     |  |     |  |     |     +---EPI357563|HA|B/BRISBANE/83/2011|EPI_ISL_106828|B
+|   |  |  |      |  |   |     |  |     |  |  +--| (10)
+|   |  |  |      |  |   |     |  |     |  |  |  |  +---EPI307192|HA|B/North_Carolina/05/2011|EPI_ISL_87416|B
+|   |  |  |      |  |   |     |  |     |  |  |  +--| (20)
+|   |  |  |      |  |   |     |  |     |  |  |     +---EPI325191|HA|B/Nebraska/06/2011|EPI_ISL_93534|B
+|   |  |  |      |  |   |     |  |     |  +--| (12)
+|   |  |  |      |  |   |     |  |     |     |   +-------EPI312918|HA|B/Tennessee/01/2011|EPI_ISL_88917|B
+|   |  |  |      |  |   |     |  |     |     +---| (97)
+|   |  |  |      |  |   |     |  |     |         +--EPI325143|HA|B/Louisiana/11/2011|EPI_ISL_93520|B
+|   |  |  |      |  |   |     |  |  +--| (10)
+|   |  |  |      |  |   |     |  |  |  |  +---EPI334431|HA|B/Ohio/03/2011|EPI_ISL_93553|B
+|   |  |  |      |  |   |     |  |  |  +--| (17)
+|   |  |  |      |  |   |     |  |  |  |  +---EPI357548|HA|B/SOUTH_AUSTRALIA/258/2011|EPI_ISL_106823|B
+|   |  |  |      |  |   |     |  |  |  |
+|   |  |  |      |  |   |     |  |  |  +---EPI325289|HA|B/Tennessee/02/2011|EPI_ISL_93559|B
+|   |  |  |      |  |   |     |  +--| (13)
+|   |  |  |      |  |   |     |     +-------EPI312800|HA|B/Iowa/01/2011|EPI_ISL_88873|B
+|   |  |  |      |  |   |  +--| (5)
+|   |  |  |      |  |   |  |  |         +--EPI346474|HA|B/Michigan/09/2011|EPI_ISL_99806|B
+|   |  |  |      |  |   |  |  |      +--| (96)
+|   |  |  |      |  |   |  |  |      |  +---EPI349749|HA|B/Michigan/09/2011|EPI_ISL_101914|B
+|   |  |  |      |  |   |  |  |  +---| (77)
+|   |  |  |      |  |   |  |  |  |   +---EPI331141|HA|B/Massachusetts/03/2011|EPI_ISL_94743|B
+|   |  |  |      |  |   |  |  +--| (9)
+|   |  |  |      |  |   |  |     |  +--EPI312890|HA|B/North_Carolina/16/2011|EPI_ISL_88907|B
+|   |  |  |      |  |   |  |     +--| (68)
+|   |  |  |      |  |   |  |        |  +--EPI325078|HA|B/Colorado/03/2011|EPI_ISL_93499|B
+|   |  |  |      |  |   |  |        +--| (99)
+|   |  |  |      |  |   |  |           +---EPI331585|HA|B/SOUTH_AUSTRALIA/6/2011|EPI_ISL_94882|B
+|   |  |  |      |  |   +--| (15)
+|   |  |  |      |  |      +---EPI333008|HA|B/SOUTH_AUSTRALIA/18/2011|EPI_ISL_95215|B
+|   |  |  |      +--| (85)
+|   |  |  |         +---EPI325083|HA|B/Connecticut/03/2011|EPI_ISL_93501|B
+|   |  +--| (31)
+|   |     +---EPI309293|HA|B/Wisconsin/02/2011|EPI_ISL_87859|B
++---| (99)
+|   |               +--EPI346979|HA|B/Bangladesh/1006/2011|EPI_ISL_100088|B
+|   |           +---| (65)
+|   |           |   +---EPI357742|HA|B/Qatar/2311005072/2011|EPI_ISL_106897|B
+|   |        +--| (32)
+|   |        |  |   +---EPI347875|HA|B/Jiangsu-Nanjinggulou/11208/2011|EPI_ISL_100809|B
+|   |        |  +---| (64)
+|   |        |      +--EPI366221|HA|B/Hong_Kong/746/2011|EPI_ISL_115049|B
+|   |     +--| (15)
+|   |     |  +---EPI902523|HA|B/Hong_Kong/767/2011|EPI_ISL_246527|B
+|   |  +--| (10)
+|   |  |  |               +---EPI348464|HA|B/Gwangju/649/2011|EPI_ISL_101365|B
+|   |  |  |            +--| (41)
+|   |  |  |            |  +---EPI330745|HA|B/Shanghai-Luwan/1216/2011|EPI_ISL_94639|B
+|   |  |  |        +---| (45)
+|   |  |  |        |   +-------EPI378489|HA|B/Taiwan/1557/2011|EPI_ISL_122337|B
+|   |  |  |     +--| (41)
+|   |  |  |     |  +---EPI370063|HA|B/SRI_LANKA/15/2011|EPI_ISL_118584|B
+|   |  |  |  +--| (25)
+|   |  |  |  |  +-------EPI1399068|HA|B/Taiwan/6970/2011|EPI_ISL_348549|B
+|   |  |  +--| (12)
+|   |  |  |  +-------EPI331417|HA|B/BRISBANE/10/2011|EPI_ISL_94827|B
+|   |  |  |
+|   |  |  |      +--EPI354066|HA|B/Bangladesh/5549/2011|EPI_ISL_104055|B
+|   |  |  |  +---| (98)
+|   |  |  |  |   +---EPI330945|HA|B/Hunan-Yuhua/1316/2011|EPI_ISL_94664|B
+|   |  |  +--| (28)
+|   |  |     +----------------EPI312954|HA|B/Vermont/03/2011|EPI_ISL_88927|B
+|   +--| (12)
+|      |   +---EPI366201|HA|B/Bangladesh/8008/2011|EPI_ISL_115043|B
+|      +---| (97)
+|          +--EPI312921|HA|B/Texas/05/2011|EPI_ISL_88918|B
+|
++--VicB_2011_COBRA_Aligned
+
+
+Consensus tree in newick format: 
+
+(EPI340813|HA|B/Bangladesh/4622/2011|EPI_ISL_98579|B:0.0000025259,(((((((((((((((((((((((((EPI340816|HA|B/Fujian-Tongan/1150/2011|EPI_ISL_98580|B:0.0000025259,EPI346763|HA|B/Sivas/TR-14/2011|EPI_ISL_99957|B:0.0018862082)18:0.0000025259,EPI902432|HA|B/Kazakhstan/2078/2011|EPI_ISL_246482|B:0.0018971888)15:0.0000025259,((((((EPI340822|HA|B/Hubei-Fancheng/2277/2011|EPI_ISL_98582|B:0.0000025259,EPI330793|HA|B/Hunan-Yuhua/1265/2011|EPI_ISL_94645|B:0.0018780730)62:0.0000025259,EPI347893|HA|B/Shanghai-Chongming/1458/2011|EPI_ISL_100818|B:0.0056727088)96:0.0038064788,((((((((EPI346736|HA|B/Hong_Kong/591/2011|EPI_ISL_99943|B:0.0000025259,EPI347832|HA|B/Shanghai-Xuhui/1374/2011|EPI_ISL_100787|B:0.0018911305)63:0.0018900192,EPI330116|HA|B/Shanghai-Songjiang/176/2011|EPI_ISL_94556|B:0.0018870971)58:0.0000025259,EPI347913|HA|B/Jiangsu-Canglang/1538/2011|EPI_ISL_100828|B:0.0018881335)22:0.0000025259,(EPI347911|HA|B/Hunan-Lusong/1645/2011|EPI_ISL_100827|B:0.0018889831,EPI354013|HA|B/Sichuan-Bazhou/1249/2011|EPI_ISL_104042|B:0.0018954067)14:0.0000025259)5:0.0000025259,EPI346738|HA|B/Hong_Kong/591/2011|EPI_ISL_99944|B:0.0000025259)5:0.0000025259,(EPI347917|HA|B/Jiangxi-Donghu/1468/2011|EPI_ISL_100830|B:0.0018876129,(EPI352432|HA|B/Hong_Kong/1153/2011|EPI_ISL_103121|B:0.0018886426,EPI352431|HA|B/Hong_Kong/1129/2011|EPI_ISL_103120|B:0.0000025259)97:0.0018908301)20:0.0000025259)3:0.0000025259,(EPI347867|HA|B/Jiangxi-Donghu/1439/2011|EPI_ISL_100805|B:0.0000025259,(EPI330388|HA|B/Hunan-Hecheng/1104/2011|EPI_ISL_94590|B:0.0000025259,EPI330737|HA|B/Hunan-Lusong/1325/2011|EPI_ISL_94638|B:0.0018822768)99:0.0018832984)99:0.0018902969)37:0.0000025259,EPI347871|HA|B/Fujian-Zhangpu/319/2011|EPI_ISL_100807|B:0.0018969766)94:0.0018881233)90:0.0018871059,EPI347877|HA|B/Hubei-Jingzhou/5104/2011|EPI_ISL_100810|B:0.0018862170)20:0.0000025259,(((EPI340828|HA|B/Sichuan-Maerkang/166/2011|EPI_ISL_98584|B:0.0000025259,EPI330625|HA|B/Chongqing-Jiulongpo/39/2011|EPI_ISL_94624|B:0.0037934768)70:0.0000025259,EPI330364|HA|B/Sichuan-Jinjiang/277/2011|EPI_ISL_94587|B:0.0037902665)95:0.0032607710,EPI332670|HA|B/NONG_KHAI/40/2011|EPI_ISL_95089|B:0.0008483810)63:0.0015722122)14:0.0000025259,(EPI304392|HA|B/DARWIN/11/2011|EPI_ISL_86448|B:0.0000025259,EPI331708|HA|B/SOUTH_AUSTRALIA/3/2011|EPI_ISL_94924|B:0.0018905174)97:0.0018911617)2:0.0000025259)2:0.0000025259,((EPI340825|HA|B/Fujian-Siming/1134/2011|EPI_ISL_98583|B:0.0000025259,VicB_2011_Ancestral_Aligned_Node20:0.0000025259)95:0.0000026464,EPI347644|HA|B/Hunan-Lusong/1540/2011|EPI_ISL_100500|B:0.0018913872)71:0.0018987629)13:0.0000025259,((EPI340837|HA|B/Shizuoka/57/2011|EPI_ISL_98587|B:0.0037858520,EPI357744|HA|B/Qatar/2311002267/2011|EPI_ISL_106898|B:0.0000025259)89:0.0037811492,(EPI347854|HA|B/Guangdong-Luohu/1351/2011|EPI_ISL_100798|B:0.0018889425,(EPI354034|HA|B/Chongqing-Yuzhong/1651/2011|EPI_ISL_104047|B:0.0037875744,(EPI354055|HA|B/Shanghai-Jingan/1392/2011|EPI_ISL_104052|B:0.0009060431,EPI330460|HA|B/Fujian-Cangshan/192/2011|EPI_ISL_94599|B:0.0032355644)70:0.0015283718)42:0.0000025259)32:0.0000025259)14:0.0000025259)16:0.0000025259,(EPI330372|HA|B/Fujian-Gulou/1174/2011|EPI_ISL_94588|B:0.0018893179,EPI346018|HA|B/SOUTH_AUSTRALIA/127/2011|EPI_ISL_99646|B:0.0018868290)15:0.0000025259)10:0.0000025259,(EPI342010|HA|B/Kyrgyztan/01/2011|EPI_ISL_98931|B:0.0018925459,EPI347834|HA|B/Hubei-Qiaokou/1393/2011|EPI_ISL_100788|B:0.0018868255)22:0.0000025259)13:0.0000025259,((EPI340840|HA|B/Anhui-Baohe/1421/2011|EPI_ISL_98588|B:0.0018946830,EPI330833|HA|B/Guangdong-Chikan/1155/2011|EPI_ISL_94650|B:0.0037927290)60:0.0000025259,(EPI370086|HA|B/FIJI/16/2011|EPI_ISL_118592|B:0.0018874706,EPI331522|HA|B/PERTH/5/2011|EPI_ISL_94861|B:0.0037800794)14:0.0000025259)3:0.0000025259,(EPI346078|HA|B/CAMBODIA/23/2011|EPI_ISL_99666|B:0.0018908133,(EPI346117|HA|B/PHILIPPINES/2519/2011|EPI_ISL_99679|B:0.0018972650,EPI330092|HA|B/Shanghai-Baoshan/152/2011|EPI_ISL_94553|B:0.0000025259)54:0.0000025259)46:0.0018860836,((EPI346108|HA|B/NONTHABURI/1766/2011|EPI_ISL_99676|B:0.0018915229,EPI312844|HA|B/Nevada/06/2011|EPI_ISL_88887|B:0.0018853742)57:0.0000025259,(EPI347873|HA|B/Jiangsu-Tianning/1467/2011|EPI_ISL_100808|B:0.0056804240,EPI331531|HA|B/MACAU/200392/2011|EPI_ISL_94864|B:0.0037757502)31:0.0000025259)4:0.0000025259,(EPI330124|HA|B/Shanghai-Huangpu/171/2011|EPI_ISL_94557|B:0.0037766194,VicB_2011_Medoid_Aligned|EPI340816|HA|B/Fujian-Tongan/1150/2011|EPI_ISL_98580|B:0.0000025259)16:0.0000025259)5:0.0000025259,(EPI330969|HA|B/Jiangsu-Chongchuan/11150/2011|EPI_ISL_94667|B:0.0018859464,(EPI309224|HA|B/Michigan/01/2011|EPI_ISL_87838|B:0.0000025259,EPI370098|HA|B/FIJI/11/2011|EPI_ISL_118596|B:0.0207160795)84:0.0018988699)15:0.0000025259)32:0.0000025259,((EPI346099|HA|B/PHILIPPINES/2533/2011|EPI_ISL_99673|B:0.0018714951,EPI346096|HA|B/PHILIPPINES/2394/2011|EPI_ISL_99672|B:0.0000025259)54:0.0000025259,EPI370315|HA|B/PHILIPPINES/3701/2011|EPI_ISL_118650|B:0.0018800049)96:0.0018815942)36:0.0018875855,(EPI353982|HA|B/India/5875/2011|EPI_ISL_104031|B:0.0018980098,EPI346959|HA|B/Alaska/09/2011|EPI_ISL_100081|B:0.0018933125)91:0.0018751555)9:0.0000025259,(((EPI346760|HA|B/Ankara/TR-10/2011|EPI_ISL_99955|B:0.0000025259,EPI347665|HA|B/Cambodia/1402/2011|EPI_ISL_100508|B:0.0018832205)45:0.0000025259,(((((EPI348417|HA|B/IBARAKI/18/2011|EPI_ISL_101352|B:0.0037738892,EPI370126|HA|B/CAMBODIA/116/2011|EPI_ISL_118605|B:0.0018833764)29:0.0000025259,EPI370727|HA|B/Laos/I973/2011|EPI_ISL_118950|B:0.0018849496)5:0.0000025259,(EPI370057|HA|B/CAMBODIA/122/2011|EPI_ISL_118581|B:0.0018872932,EPI370731|HA|B/Laos/I1000/2011|EPI_ISL_118952|B:0.0018876814)22:0.0000025259)21:0.0000025259,EPI370095|HA|B/PHILIPPINES/3971/2011|EPI_ISL_118595|B:0.0018943930)68:0.0018856104,EPI356988|HA|B/OSAKA-C/1035/2011|EPI_ISL_106377|B:0.0037763082)63:0.0000025259)50:0.0018813221,EPI2474338|HA|B/Christchurch/108/2011|EPI_ISL_17265026|B:0.0056907360)17:0.0000025259)3:0.0000025259,(((((EPI340849|HA|B/Vietnam/92/2011|EPI_ISL_98591|B:0.0018712822,EPI331272|HA|B/CAMBODIA/2/2011|EPI_ISL_94780|B:0.0018659814)23:0.0000025259,((EPI348452|HA|B/Cambodia/1412/2011|EPI_ISL_101361|B:0.0031882205,EPI2474360|HA|B/Hanoi/EL467/2011|EPI_ISL_17265036|B:0.0009002807)52:0.0015119189,(EPI2474332|HA|B/Cambodia/8/2011|EPI_ISL_17265023|B:0.0000025259,EPI331384|HA|B/CAMBODIA/30/2011|EPI_ISL_94816|B:0.0018537727)61:0.0018624567)26:0.0000025259)11:0.0000025259,(EPI339399|HA|B/Vietnam/85/2011|EPI_ISL_97467|B:0.0018656981,EPI302435|HA|B/DARWIN/3/2011|EPI_ISL_86143|B:0.0018659874)23:0.0000025259)28:0.0000025259,EPI339387|HA|B/Vietnam/107/2011|EPI_ISL_97463|B:0.0037396878)100:0.0075997973,(EPI356968|HA|B/CHIBA/19/2011|EPI_ISL_106357|B:0.0018818414,EPI356973|HA|B/HYOGO/1123/2011|EPI_ISL_106362|B:0.0037851638)28:0.0000025259)3:0.0000025259)3:0.0000025259,VicB_2011_Consensus_Aligned:0.0000025259)12:0.0000025259,(EPI335759|HA|B/Bangladesh/9234/2011|EPI_ISL_96046|B:0.0018811914,EPI331382|HA|B/BRISBANE/3/2011|EPI_ISL_94815|B:0.0037723602)23:0.0000025259)10:0.0000025259,(EPI346981|HA|B/Bangladesh/5004/2011|EPI_ISL_100089|B:0.0037791070,EPI341994|HA|B/Florida/02/2011|EPI_ISL_98926|B:0.0018826993)37:0.0000025259)14:0.0000025259,(EPI357557|HA|B/SYDNEY/515/2011|EPI_ISL_106826|B:0.0018851342,EPI333093|HA|B/WAIKATO/1/2011|EPI_ISL_95244|B:0.0018868055)15:0.0000025259)10:0.0000025259,(EPI345978|HA|B/Washington/08/2011|EPI_ISL_99628|B:0.0018848580,EPI346968|HA|B/California/11/2011|EPI_ISL_100084|B:0.0018848548)14:0.0000025259)12:0.0000025259,(EPI352465|HA|B/Israel/14/2011|EPI_ISL_103138|B:0.0018850779,EPI334449|HA|B/Bangladesh/1585/2011|EPI_ISL_93497|B:0.0018871509)13:0.0000025259)10:0.0000025259,(EPI346030|HA|B/SRI_LANKA/2/2011|EPI_ISL_99650|B:0.0018912242,EPI325061|HA|B/Alaska/08/2011|EPI_ISL_93493|B:0.0018845584)16:0.0000025259)13:0.0000025259,(EPI357554|HA|B/TASMANIA/16/2011|EPI_ISL_106825|B:0.0018903454,EPI331376|HA|B/VICTORIA/502/2011|EPI_ISL_94813|B:0.0018913950)12:0.0000025259)12:0.0000025259,(EPI346033|HA|B/SRI_LANKA/4/2011|EPI_ISL_99651|B:0.0018827715,EPI346069|HA|B/NEWCASTLE/21/2011|EPI_ISL_99663|B:0.0018847810)14:0.0000025259)10:0.0000025259,(EPI366198|HA|B/Bangladesh/4013/2011|EPI_ISL_115042|B:0.0018817768,EPI370160|HA|B/WELLINGTON/39/2011|EPI_ISL_118617|B:0.0018812436)19:0.0000025259)12:0.0000025259,((EPI348418|HA|B/TOKYO/91107/2011|EPI_ISL_101353|B:0.0037799259,((EPI340843|HA|B/Utah/05/2011|EPI_ISL_98589|B:0.0018838845,(EPI309180|HA|B/Florida/04/2011|EPI_ISL_87823|B:0.0018781572,EPI325110|HA|B/Idaho/03/2011|EPI_ISL_93509|B:0.0019013825)91:0.0018858475)24:0.0000025259,(((EPI340967|HA|B/Minnesota/04/2011|EPI_ISL_98655|B:0.0037762106,EPI325270|HA|B/North_Dakota/02/2011|EPI_ISL_93552|B:0.0018928130)94:0.0018863070,(((((EPI341981|HA|B/California/02/2011|EPI_ISL_98922|B:0.0000025259,EPI309236|HA|B/Nebraska/04/2011|EPI_ISL_87842|B:0.0018842062)99:0.0018907161,EPI335738|HA|B/Indiana/09/2011|EPI_ISL_96039|B:0.0057072323)67:0.0000025259,((((EPI342016|HA|B/Louisiana/05/2011|EPI_ISL_98933|B:0.0037649298,((EPI348444|HA|B/Wisconsin/06/2011|EPI_ISL_101358|B:0.0018842461,EPI325293|HA|B/Texas/08/2011|EPI_ISL_93560|B:0.0018842415)19:0.0000025259,((EPI325116|HA|B/Idaho/05/2011|EPI_ISL_93511|B:0.0018750086,EPI325113|HA|B/Idaho/04/2011|EPI_ISL_93510|B:0.0000025259)100:0.0017602077,EPI325334|HA|B/Washington/05/2011|EPI_ISL_93568|B:0.0017578283)65:0.0002511021)11:0.0000025259)14:0.0000025259,(((((EPI342038|HA|B/Washington/01/2011|EPI_ISL_98939|B:0.0018920115,EPI312821|HA|B/Maine/05/2011|EPI_ISL_88879|B:0.0018790704)16:0.0000025259,((EPI312761|HA|B/California/09/2011|EPI_ISL_88859|B:0.0018798366,EPI312794|HA|B/Indiana/04/2011|EPI_ISL_88871|B:0.0018791944)17:0.0000025259,(((EPI312948|HA|B/Utah/04/2011|EPI_ISL_88925|B:0.0018786884,EPI331195|HA|B/Virginia/06/2011|EPI_ISL_94759|B:0.0018831975)19:0.0000025259,(((EPI312976|HA|B/Wyoming/02/2011|EPI_ISL_88933|B:0.0018816795,EPI325157|HA|B/Massachusetts/02/2011|EPI_ISL_93524|B:0.0037818713)16:0.0000025259,EPI335750|HA|B/Arizona/02/2011|EPI_ISL_96043|B:0.0018880986)1:0.0000025259,EPI333043|HA|B/VICTORIA/1/2011|EPI_ISL_95226|B:0.0018839047)2:0.0000025259)12:0.0000025259,EPI346075|HA|B/NEWCASTLE/27/2011|EPI_ISL_99665|B:0.0018825769)10:0.0000025259)12:0.0000025259)10:0.0000025259,(EPI325204|HA|B/Nevada/11/2011|EPI_ISL_93537|B:0.0018790773,EPI357563|HA|B/BRISBANE/83/2011|EPI_ISL_106828|B:0.0018837980)13:0.0000025259)12:0.0000025259,(EPI307192|HA|B/North_Carolina/05/2011|EPI_ISL_87416|B:0.0018798712,EPI325191|HA|B/Nebraska/06/2011|EPI_ISL_93534|B:0.0018799543)20:0.0000025259)10:0.0000025259,(EPI312918|HA|B/Tennessee/01/2011|EPI_ISL_88917|B:0.0037477338,EPI325143|HA|B/Louisiana/11/2011|EPI_ISL_93520|B:0.0000025259)97:0.0018785186)12:0.0000025259)10:0.0000025259,(EPI334431|HA|B/Ohio/03/2011|EPI_ISL_93553|B:0.0018799752,EPI357548|HA|B/SOUTH_AUSTRALIA/258/2011|EPI_ISL_106823|B:0.0018774566)17:0.0000025259,EPI325289|HA|B/Tennessee/02/2011|EPI_ISL_93559|B:0.0018799327)10:0.0000025259,EPI312800|HA|B/Iowa/01/2011|EPI_ISL_88873|B:0.0037717427)13:0.0000025259)2:0.0000025259,(((EPI346474|HA|B/Michigan/09/2011|EPI_ISL_99806|B:0.0000025259,EPI349749|HA|B/Michigan/09/2011|EPI_ISL_101914|B:0.0018781054)96:0.0000026345,EPI331141|HA|B/Massachusetts/03/2011|EPI_ISL_94743|B:0.0018782366)77:0.0018801935,(EPI312890|HA|B/North_Carolina/16/2011|EPI_ISL_88907|B:0.0011749809,(EPI325078|HA|B/Colorado/03/2011|EPI_ISL_93499|B:0.0000025259,EPI331585|HA|B/SOUTH_AUSTRALIA/6/2011|EPI_ISL_94882|B:0.0018782229)99:0.0013751337)68:0.0012101993)9:0.0000025259)5:0.0000025259,EPI333008|HA|B/SOUTH_AUSTRALIA/18/2011|EPI_ISL_95215|B:0.0018926325)15:0.0000025259)84:0.0018797691,EPI325083|HA|B/Connecticut/03/2011|EPI_ISL_93501|B:0.0018847925)85:0.0000025259)46:0.0000025259)94:0.0018818921,EPI309293|HA|B/Wisconsin/02/2011|EPI_ISL_87859|B:0.0018861993)31:0.0000025259)10:0.0000025259,(((((EPI346979|HA|B/Bangladesh/1006/2011|EPI_ISL_100088|B:0.0000025259,EPI357742|HA|B/Qatar/2311005072/2011|EPI_ISL_106897|B:0.0018884759)65:0.0018870066,(EPI347875|HA|B/Jiangsu-Nanjinggulou/11208/2011|EPI_ISL_100809|B:0.0018849805,EPI366221|HA|B/Hong_Kong/746/2011|EPI_ISL_115049|B:0.0000025259)64:0.0018869717)32:0.0000025259,EPI902523|HA|B/Hong_Kong/767/2011|EPI_ISL_246527|B:0.0018902913)15:0.0000025259,(((((EPI348464|HA|B/Gwangju/649/2011|EPI_ISL_101365|B:0.0018849219,EPI330745|HA|B/Shanghai-Luwan/1216/2011|EPI_ISL_94639|B:0.0018849570)41:0.0000025259,EPI378489|HA|B/Taiwan/1557/2011|EPI_ISL_122337|B:0.0038017374)45:0.0018873816,EPI370063|HA|B/SRI_LANKA/15/2011|EPI_ISL_118584|B:0.0018800466)41:0.0000025259,EPI1399068|HA|B/Taiwan/6970/2011|EPI_ISL_348549|B:0.0037908551)25:0.0000025259,EPI331417|HA|B/BRISBANE/10/2011|EPI_ISL_94827|B:0.0037834726)12:0.0000025259,((EPI354066|HA|B/Bangladesh/5549/2011|EPI_ISL_104055|B:0.0000025259,EPI330945|HA|B/Hunan-Yuhua/1316/2011|EPI_ISL_94664|B:0.0018807442)98:0.0018819850,EPI312954|HA|B/Vermont/03/2011|EPI_ISL_88927|B:0.0075711252)28:0.0000025259)10:0.0000025259,(EPI366201|HA|B/Bangladesh/8008/2011|EPI_ISL_115043|B:0.0018853693,EPI312921|HA|B/Texas/05/2011|EPI_ISL_88918|B:0.0000025259)97:0.0018837851)12:0.0000025259)99:0.0018857224,VicB_2011_COBRA_Aligned:0.0000025259);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_unclustered/VicB/trees/VicB_2011_with_designs.treefile -m "LG+G4{0.233894}" --length 585
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_unclustered/VicB/alignments/VicB_2011_with_designs.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_unclustered/VicB/alignments/VicB_2011_with_designs.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 22 10:26:21 2025
+Total CPU time used: 7477.962206 seconds (2h:4m:37s)
+Total wall-clock time used: 1130.449103 seconds (0h:18m:50s)
+

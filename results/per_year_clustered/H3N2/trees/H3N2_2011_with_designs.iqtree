@@ -1,0 +1,258 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_clustered/H3N2/alignments/H3N2_2011_with_designs.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 825214
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 36 sequences with 578 amino-acid sites
+Number of constant sites: 236 (= 40.8304% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 236 (= 40.8304% of all sites)
+Number of parsimony informative sites: 318
+Number of distinct site patterns: 282
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 1.0135
+
+ Category  Relative_rate  Proportion
+  1         0.1396         0.2500
+  2         0.4808         0.2500
+  3         1.0022         0.2500
+  4         2.3774         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4059.7501 (s.e. 115.0427)
+Unconstrained log-likelihood (without tree): -2964.1082
+Number of free parameters (#branches + #model parameters): 70
+Akaike information criterion (AIC) score: 8259.5002
+Corrected Akaike information criterion (AICc) score: 8279.1057
+Bayesian information criterion (BIC) score: 8564.6703
+
+Total tree length (sum of branch lengths): 1.6978
+Sum of internal branch lengths: 1.5129 (89.1059% of tree length)
+
+WARNING: 17 near-zero internal branches (<0.0017) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI341586|HA|A/Oman/916/2011|EPI_ISL_98822|A_/_H3N2' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**EPI341586|HA|A/Oman/916/2011|EPI_ISL_98822|A_/_H3N2
+|
+|                 +--EPI346620|HA|A/Kazakhstan/2140/2011|EPI_ISL_99884|A_/_H3N2
+|              +--| (93)
+|              |  |     +--EPI1061747|HA|A/Korea/KUMC-GR116/2011|EPI_ISL_278383|A_/_H3N2
+|              |  |  +**| (71)
+|              |  |  |  +--EPI1061749|HA|A/Korea/KUMC-GR124/2011|EPI_ISL_278385|A_/_H3N2
+|              |  +--| (97)
+|              |     +**H3N2_2011_Ancestral_Aligned_Node6
+|           +--| (58)
+|           |  |     +--EPI349021|HA|A/SAGA/193/2011|EPI_ISL_101482|A_/_H3N2
+|           |  |  +**| (58)
+|           |  |  |  +--EPI357687|HA|A/VICTORIA/892/2011|EPI_ISL_106867|A_/_H3N2
+|           |  +--| (81)
+|           |     |                                                               +--EPI346215|HA|A/ENG/114280400/2011|EPI_ISL_99723|A_/_H1N1
+|           |     |                                                            +--| (95)
+|           |     |                                                            |  +--EPI347567|HA|A/Stockholm/36/2011|EPI_ISL_100461|A_/_H1N1
+|           |     |                                                         +--| (92)
+|           |     |                                                         |  |        +--EPI346387|HA|A/Stockholm/27/2011|EPI_ISL_99779|A_/_H1N1
+|           |     |                                                         |  |     +--| (81)
+|           |     |                                                         |  |     |  +--EPI334702|HA|A/Slovenia/861/2011|EPI_ISL_95550|A_/_H1N1
+|           |     |                                                         |  |  +**| (55)
+|           |     |                                                         |  |  |  +--EPI319615|HA|A/Ukraine/3/2011|EPI_ISL_90800|A_/_H1N1
+|           |     |                                                         |  +--| (75)
+|           |     |                                                         |     +--EPI346663|HA|A/Zaporizhzhya/5200/2011|EPI_ISL_99907|A_/_H1N1
+|           |     +---------------------------------------------------------| (100)
+|           |                                                               +**EPI305529|HA|A/Orebro/1/2011|EPI_ISL_87076|A_/_H1N1
+|        +--| (47)
+|        |  |  +--EPI684763|HA|A/Thailand/CU-B5773/2011|EPI_ISL_205411|A_/_H3N2
+|        |  +--| (67)
+|        |     |     +--EPI484683|HA|A/Stockholm/26/2011|EPI_ISL_149718|A_/_H3N2
+|        |     |  +**| (89)
+|        |     |  |  +--EPI357681|HA|A/SOUTH_AUSTRALIA/299/2011|EPI_ISL_106865|A_/_H3N2
+|        |     +--| (77)
+|        |        +--EPI2120262|HA|A/Brisbane/256/2011|EPI_ISL_14284804|A_/_H3N2
+|     +**| (43)
+|     |  +--EPI842636|HA|A/Thailand/FLU_PMKD0388/2011|EPI_ISL_235290|A_/_H3N2
+|  +--| (72)
+|  |  |                       +--EPI353231|HA|A/YOKOHAMA/156/2011|EPI_ISL_103607|A_/_H3N2
+|  |  |                    +**| (11)
+|  |  |                    |  |  +--EPI353233|HA|A/OSAKA/125/2011|EPI_ISL_103609|A_/_H3N2
+|  |  |                    |  +**| (7)
+|  |  |                    |     +--EPI684766|HA|A/Thailand/CU-B5898/2011|EPI_ISL_205412|A_/_H3N2
+|  |  |                 +**| (5)
+|  |  |                 |  |  +--EPI1061746|HA|A/Korea/KUMC-GR115/2011|EPI_ISL_278382|A_/_H3N2
+|  |  |                 |  +**| (20)
+|  |  |                 |     +--EPI1061751|HA|A/Korea/KUMC-GR157/2011|EPI_ISL_278387|A_/_H3N2
+|  |  |              +--| (94)
+|  |  |              |  |  +--EPI1061759|HA|A/Korea/KUMC-GR226/2011|EPI_ISL_278395|A_/_H3N2
+|  |  |              |  +**| (8)
+|  |  |              |     +--EPI380951|HA|A/Singapore/KK398/2011|EPI_ISL_122993|A_/_H3N2
+|  |  |           +**| (22)
+|  |  |           |  +--EPI347580|HA|A/Karlstad/3/2011|EPI_ISL_100466|A_/_H3N2
+|  |  |        +**| (5)
+|  |  |        |  |  +--EPI895378|HA|A/Jordan/B1370/2011|EPI_ISL_244583|A_/_H3N2
+|  |  |        |  +--| (88)
+|  |  |        |     +--EPI346341|HA|A/VICTORIA/304/2011|EPI_ISL_99766|A_/_H3N2
+|  |  |     +**| (64)
+|  |  |     |  |  +--EPI895371|HA|A/Jordan/A0123/2011|EPI_ISL_244576|A_/_H3N2
+|  |  |     |  +**| (30)
+|  |  |     |     +--EPI353906|HA|A/Victoria/361/2011|EPI_ISL_104004|A_/_H3N2
+|  |  |  +**| (80)
+|  |  |  |  +**H3N2_2011_Consensus_Aligned
+|  |  +--| (79)
+|  |     |  +--EPI380839|HA|A/Singapore/GP1561/2011|EPI_ISL_122937|A_/_H3N2
+|  |     +**| (78)
+|  |        +--EPI381075|HA|A/Singapore/TT713/2011|EPI_ISL_123055|A_/_H3N2
++**| (64)
+|  +**H3N2_2011_COBRA_Aligned
+|
++**H3N2_2011_Medoid_Aligned|EPI341586|HA|A/Oman/916/2011|EPI_ISL_98822|A_/_H3N2
+
+Tree in newick format:
+
+(EPI341586|HA|A/Oman/916/2011|EPI_ISL_98822|A_/_H3N2:0.0000010000,((((((EPI346620|HA|A/Kazakhstan/2140/2011|EPI_ISL_99884|A_/_H3N2:0.0040827165,((EPI1061747|HA|A/Korea/KUMC-GR116/2011|EPI_ISL_278383|A_/_H3N2:0.0052428444,EPI1061749|HA|A/Korea/KUMC-GR124/2011|EPI_ISL_278385|A_/_H3N2:0.0052484838)71:0.0000010000,H3N2_2011_Ancestral_Aligned_Node6:0.0000010000)97:0.0048209096)93:0.0121285795,((EPI349021|HA|A/SAGA/193/2011|EPI_ISL_101482|A_/_H3N2:0.0088248739,EPI357687|HA|A/VICTORIA/892/2011|EPI_ISL_106867|A_/_H3N2:0.0088043713)58:0.0000022818,(((EPI346215|HA|A/ENG/114280400/2011|EPI_ISL_99723|A_/_H1N1:0.0035388060,EPI347567|HA|A/Stockholm/36/2011|EPI_ISL_100461|A_/_H1N1:0.0071175740)95:0.0055503888,(((EPI346387|HA|A/Stockholm/27/2011|EPI_ISL_99779|A_/_H1N1:0.0073078980,EPI334702|HA|A/Slovenia/861/2011|EPI_ISL_95550|A_/_H1N1:0.0086787211)81:0.0035506940,EPI319615|HA|A/Ukraine/3/2011|EPI_ISL_90800|A_/_H1N1:0.0068910092)55:0.0000010000,EPI346663|HA|A/Zaporizhzhya/5200/2011|EPI_ISL_99907|A_/_H1N1:0.0037458560)75:0.0035285190)92:0.0122921407,EPI305529|HA|A/Orebro/1/2011|EPI_ISL_87076|A_/_H1N1:0.0000029868)100:1.4404118020)81:0.0070038477)58:0.0034541905,(EPI684763|HA|A/Thailand/CU-B5773/2011|EPI_ISL_205411|A_/_H3N2:0.0035194154,((EPI484683|HA|A/Stockholm/26/2011|EPI_ISL_149718|A_/_H3N2:0.0044275086,EPI357681|HA|A/SOUTH_AUSTRALIA/299/2011|EPI_ISL_106865|A_/_H3N2:0.0069355732)89:0.0009232417,EPI2120262|HA|A/Brisbane/256/2011|EPI_ISL_14284804|A_/_H3N2:0.0071391505)77:0.0017573824)67:0.0017528099)47:0.0034732704,EPI842636|HA|A/Thailand/FLU_PMKD0388/2011|EPI_ISL_235290|A_/_H3N2:0.0087663089)43:0.0000010000,((((((((EPI353231|HA|A/YOKOHAMA/156/2011|EPI_ISL_103607|A_/_H3N2:0.0053071930,(EPI353233|HA|A/OSAKA/125/2011|EPI_ISL_103609|A_/_H3N2:0.0052625897,EPI684766|HA|A/Thailand/CU-B5898/2011|EPI_ISL_205412|A_/_H3N2:0.0052827098)7:0.0000010000)11:0.0000010000,(EPI1061746|HA|A/Korea/KUMC-GR115/2011|EPI_ISL_278382|A_/_H3N2:0.0071034378,EPI1061751|HA|A/Korea/KUMC-GR157/2011|EPI_ISL_278387|A_/_H3N2:0.0052728282)20:0.0000010000)5:0.0000010000,(EPI1061759|HA|A/Korea/KUMC-GR226/2011|EPI_ISL_278395|A_/_H3N2:0.0106464861,EPI380951|HA|A/Singapore/KK398/2011|EPI_ISL_122993|A_/_H3N2:0.0052704646)8:0.0000010000)94:0.0035064227,EPI347580|HA|A/Karlstad/3/2011|EPI_ISL_100466|A_/_H3N2:0.0035020068)22:0.0000010000,(EPI895378|HA|A/Jordan/B1370/2011|EPI_ISL_244583|A_/_H3N2:0.0052801210,EPI346341|HA|A/VICTORIA/304/2011|EPI_ISL_99766|A_/_H3N2:0.0052818028)88:0.0017599929)5:0.0000010000,(EPI895371|HA|A/Jordan/A0123/2011|EPI_ISL_244576|A_/_H3N2:0.0088256788,EPI353906|HA|A/Victoria/361/2011|EPI_ISL_104004|A_/_H3N2:0.0071150603)30:0.0000010000)64:0.0000010000,H3N2_2011_Consensus_Aligned:0.0000010000)80:0.0017267497,(EPI380839|HA|A/Singapore/GP1561/2011|EPI_ISL_122937|A_/_H3N2:0.0052816600,EPI381075|HA|A/Singapore/TT713/2011|EPI_ISL_123055|A_/_H3N2:0.0052511491)78:0.0000010000)79:0.0034728154)72:0.0017357698,H3N2_2011_COBRA_Aligned:0.0000010000)64:0.0000010000,H3N2_2011_Medoid_Aligned|EPI341586|HA|A/Oman/916/2011|EPI_ISL_98822|A_/_H3N2:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -4059.767531
+Robinson-Foulds distance between ML tree and consensus tree: 12
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--EPI341586|HA|A/Oman/916/2011|EPI_ISL_98822|A_/_H3N2
+|
+|                 +--EPI346620|HA|A/Kazakhstan/2140/2011|EPI_ISL_99884|A_/_H3N2
+|              +--| (93)
+|              |  |     +--EPI1061747|HA|A/Korea/KUMC-GR116/2011|EPI_ISL_278383|A_/_H3N2
+|              |  |  +--| (71)
+|              |  |  |  +--EPI1061749|HA|A/Korea/KUMC-GR124/2011|EPI_ISL_278385|A_/_H3N2
+|              |  +--| (97)
+|              |     +--H3N2_2011_Ancestral_Aligned_Node6
+|           +--| (58)
+|           |  |     +--EPI349021|HA|A/SAGA/193/2011|EPI_ISL_101482|A_/_H3N2
+|           |  |  +--| (58)
+|           |  |  |  +--EPI357687|HA|A/VICTORIA/892/2011|EPI_ISL_106867|A_/_H3N2
+|           |  +--| (81)
+|           |     |                                                               +--EPI346215|HA|A/ENG/114280400/2011|EPI_ISL_99723|A_/_H1N1
+|           |     |                                                            +--| (95)
+|           |     |                                                            |  +--EPI347567|HA|A/Stockholm/36/2011|EPI_ISL_100461|A_/_H1N1
+|           |     |                                                         +--| (92)
+|           |     |                                                         |  |        +--EPI346387|HA|A/Stockholm/27/2011|EPI_ISL_99779|A_/_H1N1
+|           |     |                                                         |  |     +--| (81)
+|           |     |                                                         |  |     |  +--EPI334702|HA|A/Slovenia/861/2011|EPI_ISL_95550|A_/_H1N1
+|           |     |                                                         |  |  +--| (55)
+|           |     |                                                         |  |  |  +--EPI319615|HA|A/Ukraine/3/2011|EPI_ISL_90800|A_/_H1N1
+|           |     |                                                         |  +--| (75)
+|           |     |                                                         |     +--EPI346663|HA|A/Zaporizhzhya/5200/2011|EPI_ISL_99907|A_/_H1N1
+|           |     +---------------------------------------------------------| (100)
+|           |                                                               +--EPI305529|HA|A/Orebro/1/2011|EPI_ISL_87076|A_/_H1N1
+|        +--| (47)
+|        |  |  +--EPI684763|HA|A/Thailand/CU-B5773/2011|EPI_ISL_205411|A_/_H3N2
+|        |  +--| (67)
+|        |     |     +--EPI484683|HA|A/Stockholm/26/2011|EPI_ISL_149718|A_/_H3N2
+|        |     |  +--| (89)
+|        |     |  |  +--EPI357681|HA|A/SOUTH_AUSTRALIA/299/2011|EPI_ISL_106865|A_/_H3N2
+|        |     +--| (77)
+|        |        +--EPI2120262|HA|A/Brisbane/256/2011|EPI_ISL_14284804|A_/_H3N2
+|     +--| (43)
+|     |  +--EPI842636|HA|A/Thailand/FLU_PMKD0388/2011|EPI_ISL_235290|A_/_H3N2
+|  +--| (72)
+|  |  |                    +--EPI353231|HA|A/YOKOHAMA/156/2011|EPI_ISL_103607|A_/_H3N2
+|  |  |                 +--| (27)
+|  |  |                 |  +--EPI380951|HA|A/Singapore/KK398/2011|EPI_ISL_122993|A_/_H3N2
+|  |  |              +--| (11)
+|  |  |              |  |     +--EPI684766|HA|A/Thailand/CU-B5898/2011|EPI_ISL_205412|A_/_H3N2
+|  |  |              |  |  +--| (44)
+|  |  |              |  |  |  +--EPI1061759|HA|A/Korea/KUMC-GR226/2011|EPI_ISL_278395|A_/_H3N2
+|  |  |              |  +--| (9)
+|  |  |              |     +--EPI1061746|HA|A/Korea/KUMC-GR115/2011|EPI_ISL_278382|A_/_H3N2
+|  |  |           +--| (94)
+|  |  |           |  |  +--EPI353233|HA|A/OSAKA/125/2011|EPI_ISL_103609|A_/_H3N2
+|  |  |           |  +--| (22)
+|  |  |           |     +--EPI1061751|HA|A/Korea/KUMC-GR157/2011|EPI_ISL_278387|A_/_H3N2
+|  |  |        +--| (22)
+|  |  |        |  +--EPI347580|HA|A/Karlstad/3/2011|EPI_ISL_100466|A_/_H3N2
+|  |  |     +--| (64)
+|  |  |     |  |     +--EPI895371|HA|A/Jordan/A0123/2011|EPI_ISL_244576|A_/_H3N2
+|  |  |     |  |  +--| (30)
+|  |  |     |  |  |  +--EPI353906|HA|A/Victoria/361/2011|EPI_ISL_104004|A_/_H3N2
+|  |  |     |  +--| (17)
+|  |  |     |     |  +--EPI895378|HA|A/Jordan/B1370/2011|EPI_ISL_244583|A_/_H3N2
+|  |  |     |     +--| (88)
+|  |  |     |        +--EPI346341|HA|A/VICTORIA/304/2011|EPI_ISL_99766|A_/_H3N2
+|  |  |  +--| (80)
+|  |  |  |  +--H3N2_2011_Consensus_Aligned
+|  |  +--| (79)
+|  |     |  +--EPI380839|HA|A/Singapore/GP1561/2011|EPI_ISL_122937|A_/_H3N2
+|  |     +--| (78)
+|  |        +--EPI381075|HA|A/Singapore/TT713/2011|EPI_ISL_123055|A_/_H3N2
++--| (64)
+|  +--H3N2_2011_COBRA_Aligned
+|
++--H3N2_2011_Medoid_Aligned|EPI341586|HA|A/Oman/916/2011|EPI_ISL_98822|A_/_H3N2
+
+
+Consensus tree in newick format: 
+
+(EPI341586|HA|A/Oman/916/2011|EPI_ISL_98822|A_/_H3N2:0.0000026917,((((((EPI346620|HA|A/Kazakhstan/2140/2011|EPI_ISL_99884|A_/_H3N2:0.0040828934,((EPI1061747|HA|A/Korea/KUMC-GR116/2011|EPI_ISL_278383|A_/_H3N2:0.0052434973,EPI1061749|HA|A/Korea/KUMC-GR124/2011|EPI_ISL_278385|A_/_H3N2:0.0052491203)71:0.0000026917,H3N2_2011_Ancestral_Aligned_Node6:0.0000026917)97:0.0048212981)93:0.0121283247,((EPI349021|HA|A/SAGA/193/2011|EPI_ISL_101482|A_/_H3N2:0.0088248527,EPI357687|HA|A/VICTORIA/892/2011|EPI_ISL_106867|A_/_H3N2:0.0088041201)58:0.0000022811,(((EPI346215|HA|A/ENG/114280400/2011|EPI_ISL_99723|A_/_H1N1:0.0035376342,EPI347567|HA|A/Stockholm/36/2011|EPI_ISL_100461|A_/_H1N1:0.0071152052)95:0.0055486406,(((EPI346387|HA|A/Stockholm/27/2011|EPI_ISL_99779|A_/_H1N1:0.0073072814,EPI334702|HA|A/Slovenia/861/2011|EPI_ISL_95550|A_/_H1N1:0.0086743061)81:0.0035495344,EPI319615|HA|A/Ukraine/3/2011|EPI_ISL_90800|A_/_H1N1:0.0068875706)55:0.0000026917,EPI346663|HA|A/Zaporizhzhya/5200/2011|EPI_ISL_99907|A_/_H1N1:0.0037458048)75:0.0035273825)92:0.0122884814,EPI305529|HA|A/Orebro/1/2011|EPI_ISL_87076|A_/_H1N1:0.0000022808)100:1.4404403828)81:0.0070041161)58:0.0034538590,(EPI684763|HA|A/Thailand/CU-B5773/2011|EPI_ISL_205411|A_/_H3N2:0.0035199923,((EPI484683|HA|A/Stockholm/26/2011|EPI_ISL_149718|A_/_H3N2:0.0044280348,EPI357681|HA|A/SOUTH_AUSTRALIA/299/2011|EPI_ISL_106865|A_/_H3N2:0.0069354265)89:0.0009232099,EPI2120262|HA|A/Brisbane/256/2011|EPI_ISL_14284804|A_/_H3N2:0.0071390008)77:0.0017571765)67:0.0017531773)47:0.0034737355,EPI842636|HA|A/Thailand/FLU_PMKD0388/2011|EPI_ISL_235290|A_/_H3N2:0.0087655173)43:0.0000026917,(((((((EPI353231|HA|A/YOKOHAMA/156/2011|EPI_ISL_103607|A_/_H3N2:0.0053073033,EPI380951|HA|A/Singapore/KK398/2011|EPI_ISL_122993|A_/_H3N2:0.0052706351)27:0.0000026917,((EPI684766|HA|A/Thailand/CU-B5898/2011|EPI_ISL_205412|A_/_H3N2:0.0052825582,EPI1061759|HA|A/Korea/KUMC-GR226/2011|EPI_ISL_278395|A_/_H3N2:0.0106463940)44:0.0000026917,EPI1061746|HA|A/Korea/KUMC-GR115/2011|EPI_ISL_278382|A_/_H3N2:0.0071035572)9:0.0000026917)11:0.0000026917,(EPI353233|HA|A/OSAKA/125/2011|EPI_ISL_103609|A_/_H3N2:0.0052627592,EPI1061751|HA|A/Korea/KUMC-GR157/2011|EPI_ISL_278387|A_/_H3N2:0.0052729833)22:0.0000026917)94:0.0035071946,EPI347580|HA|A/Karlstad/3/2011|EPI_ISL_100466|A_/_H3N2:0.0035027694)22:0.0000026917,((EPI895371|HA|A/Jordan/A0123/2011|EPI_ISL_244576|A_/_H3N2:0.0088258134,EPI353906|HA|A/Victoria/361/2011|EPI_ISL_104004|A_/_H3N2:0.0071150920)30:0.0000026917,(EPI895378|HA|A/Jordan/B1370/2011|EPI_ISL_244583|A_/_H3N2:0.0052800403,EPI346341|HA|A/VICTORIA/304/2011|EPI_ISL_99766|A_/_H3N2:0.0052817237)88:0.0017597915)17:0.0000026917)64:0.0000026917,H3N2_2011_Consensus_Aligned:0.0000026917)80:0.0017264525,(EPI380839|HA|A/Singapore/GP1561/2011|EPI_ISL_122937|A_/_H3N2:0.0052815671,EPI381075|HA|A/Singapore/TT713/2011|EPI_ISL_123055|A_/_H3N2:0.0052510489)78:0.0000026917)79:0.0034725717)72:0.0017366488,H3N2_2011_COBRA_Aligned:0.0000026917)64:0.0000026917,H3N2_2011_Medoid_Aligned|EPI341586|HA|A/Oman/916/2011|EPI_ISL_98822|A_/_H3N2:0.0000026917);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_clustered/H3N2/trees/H3N2_2011_with_designs.treefile -m "LG+G4{1.01349}" --length 578
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2011_with_designs.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2011_with_designs.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 22 10:54:05 2025
+Total CPU time used: 313.629106 seconds (0h:5m:13s)
+Total wall-clock time used: 39.88374389 seconds (0h:0m:39s)
+

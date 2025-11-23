@@ -1,0 +1,173 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_clustered/H1N1/alignments/H1N1_2019_aligned.fasta
+User tree file name: results/per_year_clustered/H1N1/trees/H1N1_2019.treefile
+Type of analysis: tree reconstruction
+Random seed number: 449472
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 41 sequences with 566 amino-acid sites
+Number of constant sites: 447 (= 78.9753% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 447 (= 78.9753% of all sites)
+Number of parsimony informative sites: 41
+Number of distinct site patterns: 138
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.3189
+
+ Category  Relative_rate  Proportion
+  1         0.0069         0.2500
+  2         0.1192         0.2500
+  3         0.6262         0.2500
+  4         3.2477         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -3113.8484 (s.e. 123.3405)
+Unconstrained log-likelihood (without tree): -2155.2601
+Number of free parameters (#branches + #model parameters): 80
+Akaike information criterion (AIC) score: 6387.6968
+Corrected Akaike information criterion (AICc) score: 6414.4185
+Bayesian information criterion (BIC) score: 6734.7843
+
+Total tree length (sum of branch lengths): 0.3246
+Sum of internal branch lengths: 0.0609 (18.7683% of tree length)
+
+WARNING: 22 near-zero internal branches (<0.0018) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI1757684|HA|A/Laos/2794/2019|EPI_ISL_491747|A_/_H1N1' is drawn at root
+
++------EPI1757684|HA|A/Laos/2794/2019|EPI_ISL_491747|A_/_H1N1
+| (Node1)
+|                                            +------EPI1604762|HA|A/Lebanon/323/2019|EPI_ISL_394074|A_/_H1N1
+|                                 +----------| (Node12)
+|                                 |          |     +----------EPI1478325|HA|A/Kyrgyzstan_Osh/6/2019|EPI_ISL_361909|A_/_H1N1
+|                                 |          |  +**| (Node14)
+|                                 |          |  |  +----------EPI1396930|HA|A/Arkansas/17/2019|EPI_ISL_348098|A_/_H1N1
+|                                 |          +**| (Node13)
+|                                 |             |  +--------------EPI1370341|HA|A/Catalonia/NSVH100970317/2019|EPI_ISL_341417|A_/_H1N1
+|                                 |             +**| (Node15)
+|                                 |                +------------------EPI1559650|HA|A/Michigan/295/2019|EPI_ISL_380418|A_/_H1N1
+|                              +**| (Node11)
+|                              |  +--------------EPI1443858|HA|A/Catalonia/NSVH100983893/2019|EPI_ISL_356453|A_/_H1N1
+|                           +--| (Node10)
+|                           |  |          +----------EPI1606793|HA|A/Vietnam/018/2019|EPI_ISL_394988|A_/_H1N1
+|                           |  +----------| (Node16)
+|                           |             +-----------EPI1388093|HA|A/Singapore/NTF0009/2019|EPI_ISL_346413|A_/_H1N1
+|                        +**| (Node9)
+|                        |  +---------------------------EPI1491298|HA|A/England/204/2019|EPI_ISL_364688|A_/_H1N1
+|                     +**| (Node8)
+|                     |  |                        +--EPI1608337|HA|A/IBARAKI/93/2019|EPI_ISL_395217|A_/_H1N1
+|                     |  |                 +------| (Node20)
+|                     |  |                 |      |  +-------------------EPI1647174|HA|A/Canberra/337/2019|EPI_ISL_401775|A_/_H1N1
+|                     |  |                 |      +**| (Node21)
+|                     |  |                 |         +------------------EPI1642106|HA|A/California/208/2019|EPI_ISL_400899|A_/_H1N1
+|                     |  |         +-------| (Node19)
+|                     |  |         |       +----------EPI1480139|HA|A/Iowa/12/2019|EPI_ISL_362298|A_/_H1N1
+|                     |  |  +------| (Node18)
+|                     |  |  |      |  +-----------EPI1369937|HA|A/England/27/2019|EPI_ISL_341280|A_/_H1N1
+|                     |  |  |      +**| (Node22)
+|                     |  |  |         +--------------EPI1487896|HA|A/Connecticut/33/2019|EPI_ISL_364053|A_/_H1N1
+|                     |  +--| (Node17)
+|                     |     |                      +--------------EPI1610319|HA|A/SAITAMA/173/2019|EPI_ISL_395546|A_/_H1N1
+|                     |     |  +-------------------| (Node24)
+|                     |     |  |                   +-----------EPI1381335|HA|A/KANAGAWA/AC1823/2019|EPI_ISL_344515|A_/_H1N1
+|                     |     +**| (Node23)
+|                     |        +-------------------EPI1377837|HA|A/Karaganda_NRL/344/2019|EPI_ISL_343414|A_/_H1N1
+|              +------| (Node7)
+|              |      |         +--------------EPI1359897|HA|A/Barry/6142/2019|EPI_ISL_339323|A_/_H1N1
+|              |      |      +**| (Node26)
+|              |      |      |  +--------------EPI1479960|HA|A/Montana/36/2019|EPI_ISL_362275|A_/_H1N1
+|              |      +------| (Node25)
+|              |             +----------EPI1435941|HA|A/Sydney/41/2019|EPI_ISL_354709|A_/_H1N1
+|           +--| (Node6)
+|           |  |  +----------EPI1663791|HA|A/Laos/2879/2019|EPI_ISL_404786|A_/_H1N1
+|           |  +**| (Node27)
+|           |     +----------EPI1584500|HA|A/Malaysia/RP2118/2019|EPI_ISL_389527|A_/_H1N1
+|        +**| (Node5)
+|        |  +--------------EPI1491300|HA|A/England/146/2019|EPI_ISL_364689|A_/_H1N1
+|     +**| (Node4)
+|     |  |  +-------------------EPI1763653|HA|A/Konya/820/2019|EPI_ISL_498330|A_/_H1N1
+|     |  +**| (Node28)
+|     |     +---------------EPI1484058|HA|A/South_Australia/297/2019|EPI_ISL_363162|A_/_H1N1
+|  +**| (Node3)
+|  |  |                      +----------EPI1672598|HA|A/Philippines/34/2019|EPI_ISL_406964|A_/_H1N1
+|  |  |               +------| (Node33)
+|  |  |               |      +----------EPI1636779|HA|A/California/206/2019|EPI_ISL_400059|A_/_H1N1
+|  |  |            +**| (Node32)
+|  |  |            |  +--------------EPI1797977|HA|A/Malaysia/RP_0718/2019|EPI_ISL_514735|A_/_H1N1
+|  |  |     +------| (Node31)
+|  |  |     |      +--------------EPI1679823|HA|A/KANAGAWA/AC1920/2019|EPI_ISL_408542|A_/_H1N1
+|  |  |  +**| (Node30)
+|  |  |  |  |  +----------EPI1506890|HA|A/Linkoping/1/2019|EPI_ISL_367960|A_/_H1N1
+|  |  |  |  +--| (Node34)
+|  |  |  |     +----------EPI1508590|HA|A/Novi_Sad/4336/2019|EPI_ISL_368276|A_/_H1N1
+|  |  +**| (Node29)
+|  |     |  +--------------EPI1566682|HA|A/Myanmar/19M064/2019|EPI_ISL_381708|A_/_H1N1
+|  |     +**| (Node35)
+|  |        +--------------EPI1594066|HA|A/Victoria/1001/2019|EPI_ISL_391483|A_/_H1N1
++**| (Node2)
+|  |  +--------------EPI1646278|HA|A/Singapore/GP2220/2019|EPI_ISL_401475|A_/_H1N1
+|  +--| (Node36)
+|     +----------EPI1852427|HA|A/Vietnam/Vnhcm-Gs394/2019|EPI_ISL_1296413|A_/_H1N1
+|
+|     +-----------EPI1605036|HA|A/OKINAWA/64/2019|EPI_ISL_394196|A_/_H1N1
+|  +**| (Node38)
+|  |  +---------------EPI1378056|HA|A/Sweden/27/2019|EPI_ISL_343451|A_/_H1N1
++**| (Node37)
+   |  +-------EPI1506986|HA|A/Ukraine/8294/2019|EPI_ISL_368008|A_/_H1N1
+   +--| (Node39)
+      +--------------EPI1647539|HA|A/South_Australia/477/2019|EPI_ISL_401895|A_/_H1N1
+
+Tree in newick format:
+
+(EPI1757684|HA|A/Laos/2794/2019|EPI_ISL_491747|A_/_H1N1:0.0035646832,(((((((((((EPI1604762|HA|A/Lebanon/323/2019|EPI_ISL_394074|A_/_H1N1:0.0035579500,((EPI1478325|HA|A/Kyrgyzstan_Osh/6/2019|EPI_ISL_361909|A_/_H1N1:0.0053703397,EPI1396930|HA|A/Arkansas/17/2019|EPI_ISL_348098|A_/_H1N1:0.0053726808)Node14:0.0017560568,(EPI1370341|HA|A/Catalonia/NSVH100970317/2019|EPI_ISL_341417|A_/_H1N1:0.0071171239,EPI1559650|HA|A/Michigan/295/2019|EPI_ISL_380418|A_/_H1N1:0.0089742879)Node15:0.0000010000)Node13:0.0000010000)Node12:0.0053355052,EPI1443858|HA|A/Catalonia/NSVH100983893/2019|EPI_ISL_356453|A_/_H1N1:0.0071397441)Node11:0.0000027323,(EPI1606793|HA|A/Vietnam/018/2019|EPI_ISL_394988|A_/_H1N1:0.0052103618,EPI1388093|HA|A/Singapore/NTF0009/2019|EPI_ISL_346413|A_/_H1N1:0.0054488222)Node16:0.0053117503)Node10:0.0017747581,EPI1491298|HA|A/England/204/2019|EPI_ISL_364688|A_/_H1N1:0.0126225184)Node9:0.0000027291,((((EPI1608337|HA|A/IBARAKI/93/2019|EPI_ISL_395217|A_/_H1N1:0.0017696497,(EPI1647174|HA|A/Canberra/337/2019|EPI_ISL_401775|A_/_H1N1:0.0091078072,EPI1642106|HA|A/California/208/2019|EPI_ISL_400899|A_/_H1N1:0.0088934677)Node21:0.0000010000)Node20:0.0035593943,EPI1480139|HA|A/Iowa/12/2019|EPI_ISL_362298|A_/_H1N1:0.0053906262)Node19:0.0035985855,(EPI1369937|HA|A/England/27/2019|EPI_ISL_341280|A_/_H1N1:0.0054350197,EPI1487896|HA|A/Connecticut/33/2019|EPI_ISL_364053|A_/_H1N1:0.0068749053)Node22:0.0002863559)Node18:0.0035748067,((EPI1610319|HA|A/SAITAMA/173/2019|EPI_ISL_395546|A_/_H1N1:0.0070734610,EPI1381335|HA|A/KANAGAWA/AC1823/2019|EPI_ISL_344515|A_/_H1N1:0.0054388529)Node24:0.0089936638,EPI1377837|HA|A/Karaganda_NRL/344/2019|EPI_ISL_343414|A_/_H1N1:0.0094118481)Node23:0.0017283758)Node17:0.0017795192)Node8:0.0000010000,((EPI1359897|HA|A/Barry/6142/2019|EPI_ISL_339323|A_/_H1N1:0.0071642696,EPI1479960|HA|A/Montana/36/2019|EPI_ISL_362275|A_/_H1N1:0.0071656205)Node26:0.0000010000,EPI1435941|HA|A/Sydney/41/2019|EPI_ISL_354709|A_/_H1N1:0.0053664622)Node25:0.0035837113)Node7:0.0035695091,(EPI1663791|HA|A/Laos/2879/2019|EPI_ISL_404786|A_/_H1N1:0.0053799893,EPI1584500|HA|A/Malaysia/RP2118/2019|EPI_ISL_389527|A_/_H1N1:0.0053641165)Node27:0.0000010000)Node6:0.0017752321,EPI1491300|HA|A/England/146/2019|EPI_ISL_364689|A_/_H1N1:0.0071797904)Node5:0.0000010000,(EPI1763653|HA|A/Konya/820/2019|EPI_ISL_498330|A_/_H1N1:0.0089951880,EPI1484058|HA|A/South_Australia/297/2019|EPI_ISL_363162|A_/_H1N1:0.0072218080)Node28:0.0000010000)Node4:0.0000010000,(((((EPI1672598|HA|A/Philippines/34/2019|EPI_ISL_406964|A_/_H1N1:0.0053899799,EPI1636779|HA|A/California/206/2019|EPI_ISL_400059|A_/_H1N1:0.0053780683)Node33:0.0035853597,EPI1797977|HA|A/Malaysia/RP_0718/2019|EPI_ISL_514735|A_/_H1N1:0.0071832967)Node32:0.0000010000,EPI1679823|HA|A/KANAGAWA/AC1920/2019|EPI_ISL_408542|A_/_H1N1:0.0071412662)Node31:0.0035862479,(EPI1506890|HA|A/Linkoping/1/2019|EPI_ISL_367960|A_/_H1N1:0.0053634220,EPI1508590|HA|A/Novi_Sad/4336/2019|EPI_ISL_368276|A_/_H1N1:0.0053932764)Node34:0.0017704526)Node30:0.0000010000,(EPI1566682|HA|A/Myanmar/19M064/2019|EPI_ISL_381708|A_/_H1N1:0.0071726985,EPI1594066|HA|A/Victoria/1001/2019|EPI_ISL_391483|A_/_H1N1:0.0071360203)Node35:0.0000010000)Node29:0.0000010000)Node3:0.0000010000,(EPI1646278|HA|A/Singapore/GP2220/2019|EPI_ISL_401475|A_/_H1N1:0.0071701176,EPI1852427|HA|A/Vietnam/Vnhcm-Gs394/2019|EPI_ISL_1296413|A_/_H1N1:0.0053440110)Node36:0.0017910723)Node2:0.0000010000,((EPI1605036|HA|A/OKINAWA/64/2019|EPI_ISL_394196|A_/_H1N1:0.0054112521,EPI1378056|HA|A/Sweden/27/2019|EPI_ISL_343451|A_/_H1N1:0.0072394003)Node38:0.0000022369,(EPI1506986|HA|A/Ukraine/8294/2019|EPI_ISL_368008|A_/_H1N1:0.0035978902,EPI1647539|HA|A/South_Australia/477/2019|EPI_ISL_401895|A_/_H1N1:0.0071297915)Node39:0.0017956552)Node37:0.0017396023)Node1;
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_clustered/H1N1/trees/H1N1_2019_asr.treefile -m "LG+G4{0.318864}" --length 566
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2019_aligned.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2019_aligned.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 22 10:58:39 2025
+Total CPU time used: 0.292423 seconds (0h:0m:0s)
+Total wall-clock time used: 0.348996 seconds (0h:0m:0s)
+

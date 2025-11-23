@@ -1,0 +1,194 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_clustered/H1N1/alignments/H1N1_2020_with_designs.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 812746
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 20 sequences with 566 amino-acid sites
+Number of constant sites: 490 (= 86.5724% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 490 (= 86.5724% of all sites)
+Number of parsimony informative sites: 29
+Number of distinct site patterns: 96
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.4424
+
+ Category  Relative_rate  Proportion
+  1         0.0233         0.2500
+  2         0.2127         0.2500
+  3         0.7734         0.2500
+  4         2.9907         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -2376.4726 (s.e. 71.5303)
+Unconstrained log-likelihood (without tree): -1973.7916
+Number of free parameters (#branches + #model parameters): 38
+Akaike information criterion (AIC) score: 4828.9451
+Corrected Akaike information criterion (AICc) score: 4834.5694
+Bayesian information criterion (BIC) score: 4993.8117
+
+Total tree length (sum of branch lengths): 0.1634
+Sum of internal branch lengths: 0.0436 (26.6762% of tree length)
+
+WARNING: 11 near-zero internal branches (<0.0018) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI1885077|HA|A/Dubai/DH112/2020|EPI_ISL_3376994|A_/_H1N1' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**EPI1885077|HA|A/Dubai/DH112/2020|EPI_ISL_3376994|A_/_H1N1
+|
+|                                +------EPI2248017|HA|A/Yamaguchi/19FS198/2020|EPI_ISL_16196752|A_/_H1N1
+|                             +**| (51)
+|                             |  +------EPI1852579|HA|A/Nonthaburi/76/2020|EPI_ISL_1296433|A_/_H1N1
+|                          +**| (78)
+|                          |  +**H1N1_2020_Ancestral_Aligned_Node7
+|                       +**| (47)
+|                       |  |    +------EPI1746185|HA|A/AKITA/15/2020|EPI_ISL_470819|A_/_H1N1
+|                       |  +----| (90)
+|                       |       +------EPI1717509|HA|A/Arkansas/15/2020|EPI_ISL_416874|A_/_H1N1
+|                    +**| (27)
+|                    |  |  +---------EPI1852611|HA|A/Chiang_Rai/68/2020|EPI_ISL_1296437|A_/_H1N1
+|                    |  +**| (26)
+|                    |     +-----------EPI1870400|HA|A/Michigan/28/2020|EPI_ISL_2521404|A_/_H1N1
+|               +----| (85)
+|               |    +---------EPI1725366|HA|A/Maryland/17/2020|EPI_ISL_424687|A_/_H1N1
+|           +---| (63)
+|           |   |                                     +----EPI2650460|HA|A/Saudi_Arabia/39/2020|EPI_ISL_18037990|A_/_H1N1
+|           |   |        +----------------------------| (100)
+|           |   |        |                            +---------EPI2650473|HA|A/Saudi_Arabia/40/2020|EPI_ISL_18037993|A_/_H1N1
+|           |   |     +**| (55)
+|           |   |     |  |            +**EPI1814766|HA|A/Beirut/AUB_1246_N/2020|EPI_ISL_671771|A_/_H1N1
+|           |   |     |  |     +------| (96)
+|           |   |     |  |     |      +**H1N1_2020_Medoid_Aligned|EPI1814766|HA|A/Beirut/AUB_1246_N/2020|EPI_ISL_671771|A_/_H1N1
+|           |   |     |  |  +**| (21)
+|           |   |     |  |  |  +---------------------------EPI1729001|HA|A/Arizona/11480/2020|EPI_ISL_427834|A_/_H1N1
+|           |   |     |  +**| (44)
+|           |   |     |     |  +---------EPI1750234|HA|A/England/200420376/2020|EPI_ISL_480532|A_/_H1N1
+|           |   |     |     +**| (17)
+|           |   |     |        +------EPI1754899|HA|A/England/46/2020|EPI_ISL_487070|A_/_H1N1
+|           |   |  +**| (15)
+|           |   |  |  +---------EPI1717697|HA|A/Mississippi/13/2020|EPI_ISL_416901|A_/_H1N1
+|           |   +**| (12)
+|           |      +**H1N1_2020_Consensus_Aligned
++-----------| (100)
+|           +---------------------------EPI1727956|HA|A/Sweden/17/2020|EPI_ISL_426280|A_/_H1N1
+|
++**H1N1_2020_COBRA_Aligned
+
+Tree in newick format:
+
+(EPI1885077|HA|A/Dubai/DH112/2020|EPI_ISL_3376994|A_/_H1N1:0.0000010000,(((((((EPI2248017|HA|A/Yamaguchi/19FS198/2020|EPI_ISL_16196752|A_/_H1N1:0.0052893229,EPI1852579|HA|A/Nonthaburi/76/2020|EPI_ISL_1296433|A_/_H1N1:0.0053241777)51:0.0000010000,H1N1_2020_Ancestral_Aligned_Node7:0.0000010000)78:0.0017660137,(EPI1746185|HA|A/AKITA/15/2020|EPI_ISL_470819|A_/_H1N1:0.0053690468,EPI1717509|HA|A/Arkansas/15/2020|EPI_ISL_416874|A_/_H1N1:0.0053070698)90:0.0035403125)47:0.0000010000,(EPI1852611|HA|A/Chiang_Rai/68/2020|EPI_ISL_1296437|A_/_H1N1:0.0070839719,EPI1870400|HA|A/Michigan/28/2020|EPI_ISL_2521404|A_/_H1N1:0.0088792667)26:0.0000010000)27:0.0000010000,EPI1725366|HA|A/Maryland/17/2020|EPI_ISL_424687|A_/_H1N1:0.0070904479)85:0.0035414934,((((EPI2650460|HA|A/Saudi_Arabia/39/2020|EPI_ISL_18037990|A_/_H1N1:0.0036323355,EPI2650473|HA|A/Saudi_Arabia/40/2020|EPI_ISL_18037993|A_/_H1N1:0.0070632260)100:0.0205710463,(((EPI1814766|HA|A/Beirut/AUB_1246_N/2020|EPI_ISL_671771|A_/_H1N1:0.0000010000,H1N1_2020_Medoid_Aligned|EPI1814766|HA|A/Beirut/AUB_1246_N/2020|EPI_ISL_671771|A_/_H1N1:0.0000010000)96:0.0053095220,EPI1729001|HA|A/Arizona/11480/2020|EPI_ISL_427834|A_/_H1N1:0.0198644747)21:0.0000010000,(EPI1750234|HA|A/England/200420376/2020|EPI_ISL_480532|A_/_H1N1:0.0071191671,EPI1754899|HA|A/England/46/2020|EPI_ISL_487070|A_/_H1N1:0.0053046015)17:0.0000010000)44:0.0000010000)55:0.0017602444,EPI1717697|HA|A/Mississippi/13/2020|EPI_ISL_416901|A_/_H1N1:0.0072060651)15:0.0000010000,H1N1_2020_Consensus_Aligned:0.0000010000)12:0.0000010000)63:0.0034632004,EPI1727956|HA|A/Sweden/17/2020|EPI_ISL_426280|A_/_H1N1:0.0199350336)100:0.0089275876,H1N1_2020_COBRA_Aligned:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -2376.674576
+Robinson-Foulds distance between ML tree and consensus tree: 8
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--EPI1885077|HA|A/Dubai/DH112/2020|EPI_ISL_3376994|A_/_H1N1
+|
+|                                        +-------EPI2248017|HA|A/Yamaguchi/19FS198/2020|EPI_ISL_16196752|A_/_H1N1
+|                                     +--| (51)
+|                                     |  +-------EPI1852579|HA|A/Nonthaburi/76/2020|EPI_ISL_1296433|A_/_H1N1
+|                                  +--| (78)
+|                                  |  +--H1N1_2020_Ancestral_Aligned_Node7
+|                               +--| (47)
+|                               |  |    +-------EPI1746185|HA|A/AKITA/15/2020|EPI_ISL_470819|A_/_H1N1
+|                               |  +----| (90)
+|                               |       +-------EPI1717509|HA|A/Arkansas/15/2020|EPI_ISL_416874|A_/_H1N1
+|                            +--| (27)
+|                            |  |  +----------EPI1852611|HA|A/Chiang_Rai/68/2020|EPI_ISL_1296437|A_/_H1N1
+|                            |  +--| (26)
+|                            |     +------------EPI1870400|HA|A/Michigan/28/2020|EPI_ISL_2521404|A_/_H1N1
+|                       +----| (85)
+|                       |    +----------EPI1725366|HA|A/Maryland/17/2020|EPI_ISL_424687|A_/_H1N1
+|                    +--| (27)
+|                    |  +--H1N1_2020_Consensus_Aligned
+|                 +--| (34)
+|                 |  |                                  +-------EPI2650460|HA|A/Saudi_Arabia/39/2020|EPI_ISL_18037990|A_/_H1N1
+|                 |  |  +-------------------------------| (100)
+|                 |  |  |                               +-------EPI2650473|HA|A/Saudi_Arabia/40/2020|EPI_ISL_18037993|A_/_H1N1
+|                 |  +--| (55)
+|                 |     |                +--EPI1814766|HA|A/Beirut/AUB_1246_N/2020|EPI_ISL_671771|A_/_H1N1
+|                 |     |        +-------| (96)
+|                 |     |        |       +--H1N1_2020_Medoid_Aligned|EPI1814766|HA|A/Beirut/AUB_1246_N/2020|EPI_ISL_671771|A_/_H1N1
+|                 |     |     +--| (30)
+|                 |     |     |  +-------EPI1754899|HA|A/England/46/2020|EPI_ISL_487070|A_/_H1N1
+|                 |     |  +--| (30)
+|                 |     |  |  +----------EPI1750234|HA|A/England/200420376/2020|EPI_ISL_480532|A_/_H1N1
+|                 |     +--| (44)
+|                 |        +------------------------------EPI1729001|HA|A/Arizona/11480/2020|EPI_ISL_427834|A_/_H1N1
+|            +----| (63)
+|            |    +----------EPI1717697|HA|A/Mississippi/13/2020|EPI_ISL_416901|A_/_H1N1
++------------| (100)
+|            +------------------------------EPI1727956|HA|A/Sweden/17/2020|EPI_ISL_426280|A_/_H1N1
+|
++--H1N1_2020_COBRA_Aligned
+
+
+Consensus tree in newick format: 
+
+(EPI1885077|HA|A/Dubai/DH112/2020|EPI_ISL_3376994|A_/_H1N1:0.0000027297,(((((((((EPI2248017|HA|A/Yamaguchi/19FS198/2020|EPI_ISL_16196752|A_/_H1N1:0.0052897591,EPI1852579|HA|A/Nonthaburi/76/2020|EPI_ISL_1296433|A_/_H1N1:0.0053245321)51:0.0000027297,H1N1_2020_Ancestral_Aligned_Node7:0.0000027297)78:0.0017663025,(EPI1746185|HA|A/AKITA/15/2020|EPI_ISL_470819|A_/_H1N1:0.0053692136,EPI1717509|HA|A/Arkansas/15/2020|EPI_ISL_416874|A_/_H1N1:0.0053082556)90:0.0035410740)47:0.0000027297,(EPI1852611|HA|A/Chiang_Rai/68/2020|EPI_ISL_1296437|A_/_H1N1:0.0070841156,EPI1870400|HA|A/Michigan/28/2020|EPI_ISL_2521404|A_/_H1N1:0.0088793919)26:0.0000027297)27:0.0000027297,EPI1725366|HA|A/Maryland/17/2020|EPI_ISL_424687|A_/_H1N1:0.0070919832)85:0.0035422750,H1N1_2020_Consensus_Aligned:0.0000027297)27:0.0000027297,((EPI2650460|HA|A/Saudi_Arabia/39/2020|EPI_ISL_18037990|A_/_H1N1:0.0054383205,EPI2650473|HA|A/Saudi_Arabia/40/2020|EPI_ISL_18037993|A_/_H1N1:0.0052642760)100:0.0205961668,((((EPI1814766|HA|A/Beirut/AUB_1246_N/2020|EPI_ISL_671771|A_/_H1N1:0.0000027297,H1N1_2020_Medoid_Aligned|EPI1814766|HA|A/Beirut/AUB_1246_N/2020|EPI_ISL_671771|A_/_H1N1:0.0000027297)96:0.0053104421,EPI1754899|HA|A/England/46/2020|EPI_ISL_487070|A_/_H1N1:0.0053044249)30:0.0000027297,EPI1750234|HA|A/England/200420376/2020|EPI_ISL_480532|A_/_H1N1:0.0071200474)30:0.0000027297,EPI1729001|HA|A/Arizona/11480/2020|EPI_ISL_427834|A_/_H1N1:0.0198656669)44:0.0017590409)55:0.0000022676)34:0.0000027297,EPI1717697|HA|A/Mississippi/13/2020|EPI_ISL_416901|A_/_H1N1:0.0072075335)63:0.0034631340,EPI1727956|HA|A/Sweden/17/2020|EPI_ISL_426280|A_/_H1N1:0.0199367965)100:0.0089285665,H1N1_2020_COBRA_Aligned:0.0000027297);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_clustered/H1N1/trees/H1N1_2020_with_designs.treefile -m "LG+G4{0.442415}" --length 566
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2020_with_designs.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2020_with_designs.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 22 10:59:21 2025
+Total CPU time used: 167.223219 seconds (0h:2m:47s)
+Total wall-clock time used: 21.44922492 seconds (0h:0m:21s)
+

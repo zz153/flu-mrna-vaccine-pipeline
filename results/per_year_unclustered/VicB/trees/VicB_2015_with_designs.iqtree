@@ -1,0 +1,422 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_unclustered/VicB/alignments/VicB_2015_with_designs.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 29259
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 77 sequences with 585 amino-acid sites
+Number of constant sites: 503 (= 85.9829% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 503 (= 85.9829% of all sites)
+Number of parsimony informative sites: 30
+Number of distinct site patterns: 100
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.2666
+
+ Category  Relative_rate  Proportion
+  1         0.0030         0.2500
+  2         0.0789         0.2500
+  3         0.5352         0.2500
+  4         3.3829         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -2666.5999 (s.e. 96.8666)
+Unconstrained log-likelihood (without tree): -2044.5929
+Number of free parameters (#branches + #model parameters): 152
+Akaike information criterion (AIC) score: 5637.1999
+Corrected Akaike information criterion (AICc) score: 5744.8666
+Bayesian information criterion (BIC) score: 6301.6849
+
+Total tree length (sum of branch lengths): 0.1844
+Sum of internal branch lengths: 0.0359 (19.4525% of tree length)
+
+WARNING: 70 near-zero internal branches (<0.0017) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI809657|HA|B/KANAGAWA/14/2015|EPI_ISL_229795|B' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**EPI809657|HA|B/KANAGAWA/14/2015|EPI_ISL_229795|B
+|
+|                                                                                  +**EPI825539|HA|B/Vietnam/5258/2015|EPI_ISL_232207|B
+|                                                                         +--------| (96)
+|                                                                         |        |      +**EPI676511|HA|B/GIFU/3/2015|EPI_ISL_202792|B
+|                                                                         |        |   +**| (18)
+|                                                                         |        |   |  |                  +--------EPI630562|HA|B/Hong_Kong/1337/2015|EPI_ISL_193083|B
+|                                                                         |        |   |  |              +***| (95)
+|                                                                         |        |   |  |              |   +**EPI632763|HA|B/Hong_Kong/1372/2015|EPI_ISL_193649|B
+|                                                                         |        |   |  |           +**| (35)
+|                                                                         |        |   |  |           |  +---------EPI704202|HA|B/Darwin/97/2015|EPI_ISL_209084|B
+|                                                                         |        |   |  |        +**| (8)
+|                                                                         |        |   |  |        |  |   +**EPI636409|HA|B/Darwin/11/2015|EPI_ISL_194577|B
+|                                                                         |        |   |  |        |  +***| (89)
+|                                                                         |        |   |  |        |      +--------------EPI2187233|HA|B/Darwin/11/2015|EPI_ISL_15146486|B
+|                                                                         |        |   |  |     +**| (4)
+|                                                                         |        |   |  |     |  +***EPI662244|HA|B/Hawaii/27/2015|EPI_ISL_199487|B
+|                                                                         |        |   |  |  +**| (4)
+|                                                                         |        |   |  |  |  +**VicB_2015_Ancestral_Aligned_Node28
+|                                                                         |        |   |  +**| (9)
+|                                                                         |        |   |     |      +***EPI648868|HA|B/Canberra/27/2015|EPI_ISL_197393|B
+|                                                                         |        |   |     |  +***| (93)
+|                                                                         |        |   |     |  |   +**EPI746466|HA|B/Victoria/502/2015|EPI_ISL_219057|B
+|                                                                         |        |   |     +**| (18)
+|                                                                         |        |   |        +***EPI704133|HA|B/Sydney/256/2015|EPI_ISL_209059|B
+|                                                                         |        +***| (91)
+|                                                                         |            +***EPI636488|HA|B/Perth/25/2015|EPI_ISL_194594|B
+|                                                                      +**| (27)
+|                                                                      |  |                        +---------EPI693322|HA|B/Taiwan/341/2015|EPI_ISL_206982|B
+|                                                                      |  +------------------------| (100)
+|                                                                      |                           +----EPI717840|HA|B/Singapore/GP488/2015|EPI_ISL_213609|B
+|                                                                   +**| (30)
+|                                                                   |  +***EPI718062|HA|B/Singapore/KK858/2015|EPI_ISL_213672|B
+|                                                               +***| (86)
+|                                                               |   |      +--------------EPI738143|HA|B/Bahrain/921/2015|EPI_ISL_217582|B
+|                                                               |   |   +**| (27)
+|                                                               |   |   |  +-------------EPI675663|HA|B/Sydney/137/2015|EPI_ISL_202492|B
+|                                                               |   +***| (70)
+|                                                               |       |  +***EPI638828|HA|B/Taiwan/113/2015|EPI_ISL_194913|B
+|                                                               |       +**| (12)
+|                                                               |          |   +***EPI956372|HA|B/South_Australia/48/2015|EPI_ISL_255434|B
+|                                                               |          +***| (95)
+|                                                               |              +**EPI636440|HA|B/New_Caledonia/21/2015|EPI_ISL_194583|B
+|                                                            +**| (17)
+|                                                            |  +***EPI586978|HA|B/Utah/11/2015|EPI_ISL_178158|B
+|                                                         +**| (27)
+|                                                         |  |      +**EPI587066|HA|B/Pennsylvania/02/2015|EPI_ISL_178169|B
+|                                                         |  |  +***| (93)
+|                                                         |  |  |   +***EPI587090|HA|B/Pennsylvania/03/2015|EPI_ISL_178172|B
+|                                                         |  +**| (10)
+|                                                         |     |      +---------EPI592761|HA|B/Louisiana/16/2015|EPI_ISL_180333|B
+|                                                         |     |   +**| (44)
+|                                                         |     |   |  +***EPI602964|HA|B/Louisiana/13/2015|EPI_ISL_182670|B
+|                                                         |     +***| (89)
+|                                                         |         +***EPI630916|HA|B/Arizona/06/2015|EPI_ISL_193229|B
+|                                                     +***| (89)
+|                                                     |   +--------EPI630848|HA|B/Maryland/14/2015|EPI_ISL_193220|B
+|                                                  +**| (25)
+|                                                  |  |           +***EPI693110|HA|B/Bangladesh/11005/2015|EPI_ISL_206954|B
+|                                                  |  |        +**| (12)
+|                                                  |  |        |  |     +**EPI708669|HA|B/Bangladesh/11002/2015|EPI_ISL_211586|B
+|                                                  |  |        |  |  +**| (10)
+|                                                  |  |        |  |  |  |     +***EPI737913|HA|B/Bangladesh/11007/2015|EPI_ISL_217553|B
+|                                                  |  |        |  |  |  |  +**| (53)
+|                                                  |  |        |  |  |  |  |  +***EPI582621|HA|B/Texas/14/2015|EPI_ISL_177189|B
+|                                                  |  |        |  |  |  +**| (6)
+|                                                  |  |        |  |  |     |  +***EPI586902|HA|B/Arkansas/13/2015|EPI_ISL_178148|B
+|                                                  |  |        |  |  |     +**| (33)
+|                                                  |  |        |  |  |        +--------EPI602972|HA|B/Oklahoma/05/2015|EPI_ISL_182671|B
+|                                                  |  |        |  +**| (20)
+|                                                  |  |        |     |  +---------EPI625831|HA|B/Missouri/01/2015|EPI_ISL_192091|B
+|                                                  |  |        |     +**| (19)
+|                                                  |  |        |        +--------EPI630940|HA|B/Alaska/19/2015|EPI_ISL_193232|B
+|                                                  |  +--------| (94)
+|                                                  |           +---------EPI587266|HA|B/Texas/19/2015|EPI_ISL_178195|B
+|                                               +**| (2)
+|                                               |  +**VicB_2015_Consensus_Aligned
+|                                            +**| (3)
+|                                            |  |        +---------EPI582701|HA|B/Illinois/03/2015|EPI_ISL_177201|B
+|                                            |  |     +**| (20)
+|                                            |  |     |  |   +**EPI603436|HA|B/Texas/28/2015|EPI_ISL_182730|B
+|                                            |  |     |  +***| (93)
+|                                            |  |     |      +**VicB_2015_Medoid_Aligned|EPI603436|HA|B/Texas/28/2015|EPI_ISL_182730|B
+|                                            |  |  +**| (3)
+|                                            |  |  |  +***EPI2187217|HA|B/Brisbane/287/2015|EPI_ISL_15146478|B
+|                                            |  +**| (15)
+|                                            |     |  +***EPI586833|HA|B/Rhode_Island/01/2015|EPI_ISL_178139|B
+|                                            |     +**| (4)
+|                                            |        +***EPI631228|HA|B/Connecticut/50/2015|EPI_ISL_193273|B
+|                                         +**| (7)
+|                                         |  +***EPI592842|HA|B/Rhode_Island/07/2015|EPI_ISL_180348|B
+|                                     +***| (87)
+|                                     |   |    +***EPI697297|HA|B/Beijing-Huairou/12305/2015|EPI_ISL_207761|B
+|                                     |   +----| (89)
+|                                     |        +***EPI713703|HA|B/Henan-Zhaoling/1617/2015|EPI_ISL_212688|B
+|                                  +**| (15)
+|                                  |  +---------EPI746430|HA|B/Victoria/849/2015|EPI_ISL_219044|B
+|                               +**| (17)
+|                               |  +***EPI808361|HA|B/Florida/79/2015|EPI_ISL_229438|B
+|                            +**| (3)
+|                            |  |     +--------EPI697300|HA|B/Beijing-Xicheng/12806/2015|EPI_ISL_207762|B
+|                            |  |  +**| (22)
+|                            |  |  |  +***EPI731424|HA|B/Oman/6335/2015|EPI_ISL_215952|B
+|                            |  +**| (3)
+|                            |     |  +***EPI706753|HA|B/Taiwan/362/2015|EPI_ISL_210381|B
+|                            |     +**| (11)
+|                            |        +***EPI753805|HA|B/Cambodia/1287/2015|EPI_ISL_220591|B
+|                         +**| (8)
+|                         |  |         +**EPI679857|HA|B/WAKAYAMA-C/69/2015|EPI_ISL_203515|B
+|                         |  |     +***| (69)
+|                         |  |     |   +***EPI679855|HA|B/WAKAYAMA-C/68/2015|EPI_ISL_203514|B
+|                         |  |  +**| (7)
+|                         |  |  |  +***EPI694922|HA|B/Florida/84/2015|EPI_ISL_207235|B
+|                         |  +**| (4)
+|                         |     |  +***EPI718114|HA|B/Singapore/EN787/2015|EPI_ISL_213698|B
+|                         |     +**| (4)
+|                         |        |  +--------EPI603545|HA|B/Georgia/07/2015|EPI_ISL_182744|B
+|                         |        +**| (7)
+|                         |           +***EPI636549|HA|B/Sydney/11/2015|EPI_ISL_194606|B
+|                      +**| (7)
+|                      |  |  +--------EPI700926|HA|B/Florida/86/2015|EPI_ISL_208504|B
+|                      |  +**| (12)
+|                      |     +--------EPI642670|HA|B/Hawaii/14/2015|EPI_ISL_195676|B
+|                   +**| (6)
+|                   |  |         +**EPI672044|HA|B/Kentucky/24/2015|EPI_ISL_201592|B
+|                   |  |      +**| (84)
+|                   |  |      |  +***EPI686432|HA|B/Kentucky/27/2015|EPI_ISL_205689|B
+|                   |  |  +***| (93)
+|                   |  |  |   +***EPI686448|HA|B/Kentucky/29/2015|EPI_ISL_205691|B
+|                   |  +**| (11)
+|                   |     +***EPI587407|HA|B/Wyoming/07/2015|EPI_ISL_178215|B
+|                +**| (19)
+|                |  |  +***EPI713195|HA|B/SENDAI/13/2015|EPI_ISL_212550|B
+|                |  +**| (6)
+|                |     |     +--------EPI718138|HA|B/Singapore/GP2106/2015|EPI_ISL_213710|B
+|                |     |  +**| (6)
+|                |     |  |  +***EPI638832|HA|B/TOKYO/50143/2015|EPI_ISL_194915|B
+|                |     +**| (1)
+|                |        |  +***EPI569214|HA|B/Wisconsin/01/2015|EPI_ISL_173838|B
+|                |        +**| (18)
+|                |           +***EPI614660|HA|B/Nevada/16/2015|EPI_ISL_189826|B
+|            +***| (89)
+|            |   +***EPI718082|HA|B/Singapore/KK888/2015|EPI_ISL_213682|B
+|         +**| (15)
+|         |  +***EPI636369|HA|B/Brisbane/73/2015|EPI_ISL_194567|B
+|      +**| (8)
+|      |  +**EPI717842|HA|B/Singapore/GP507/2015|EPI_ISL_213610|B
+|   +**| (18)
+|   |  +----EPI718056|HA|B/Singapore/KK830/2015|EPI_ISL_213669|B
++***| (93)
+|   +***EPI592763|HA|B/Louisiana/20/2015|EPI_ISL_180334|B
+|
++**VicB_2015_COBRA_Aligned
+
+Tree in newick format:
+
+(EPI809657|HA|B/KANAGAWA/14/2015|EPI_ISL_229795|B:0.0000010000,((((((((((((((((((((((((EPI825539|HA|B/Vietnam/5258/2015|EPI_ISL_232207|B:0.0000010000,((EPI676511|HA|B/GIFU/3/2015|EPI_ISL_202792|B:0.0000010000,((((((EPI630562|HA|B/Hong_Kong/1337/2015|EPI_ISL_193083|B:0.0034084274,EPI632763|HA|B/Hong_Kong/1372/2015|EPI_ISL_193649|B:0.0000010000)95:0.0016986398,EPI704202|HA|B/Darwin/97/2015|EPI_ISL_209084|B:0.0034356726)35:0.0000010000,(EPI636409|HA|B/Darwin/11/2015|EPI_ISL_194577|B:0.0000010000,EPI2187233|HA|B/Darwin/11/2015|EPI_ISL_15146486|B:0.0051437135)89:0.0016988727)8:0.0000010000,EPI662244|HA|B/Hawaii/27/2015|EPI_ISL_199487|B:0.0017039624)4:0.0000010000,VicB_2015_Ancestral_Aligned_Node28:0.0000010000)4:0.0000010000,((EPI648868|HA|B/Canberra/27/2015|EPI_ISL_197393|B:0.0017012703,EPI746466|HA|B/Victoria/502/2015|EPI_ISL_219057|B:0.0000010000)93:0.0016988414,EPI704133|HA|B/Sydney/256/2015|EPI_ISL_209059|B:0.0016996353)18:0.0000010000)9:0.0000010000)18:0.0000010000,EPI636488|HA|B/Perth/25/2015|EPI_ISL_194594|B:0.0016989589)91:0.0017010508)96:0.0034043436,(EPI693322|HA|B/Taiwan/341/2015|EPI_ISL_206982|B:0.0034325009,EPI717840|HA|B/Singapore/GP488/2015|EPI_ISL_213609|B:0.0017182190)100:0.0085681955)27:0.0000010000,EPI718062|HA|B/Singapore/KK858/2015|EPI_ISL_213672|B:0.0017015515)30:0.0000010000,((EPI738143|HA|B/Bahrain/921/2015|EPI_ISL_217582|B:0.0051466860,EPI675663|HA|B/Sydney/137/2015|EPI_ISL_202492|B:0.0051127624)27:0.0000010000,(EPI638828|HA|B/Taiwan/113/2015|EPI_ISL_194913|B:0.0016985309,(EPI956372|HA|B/South_Australia/48/2015|EPI_ISL_255434|B:0.0016974214,EPI636440|HA|B/New_Caledonia/21/2015|EPI_ISL_194583|B:0.0000010000)95:0.0017027527)12:0.0000010000)70:0.0016990553)86:0.0016994909,EPI586978|HA|B/Utah/11/2015|EPI_ISL_178158|B:0.0017040476)17:0.0000010000,((EPI587066|HA|B/Pennsylvania/02/2015|EPI_ISL_178169|B:0.0000010000,EPI587090|HA|B/Pennsylvania/03/2015|EPI_ISL_178172|B:0.0016995757)93:0.0017046269,((EPI592761|HA|B/Louisiana/16/2015|EPI_ISL_180333|B:0.0034288854,EPI602964|HA|B/Louisiana/13/2015|EPI_ISL_182670|B:0.0017040327)44:0.0000010000,EPI630916|HA|B/Arizona/06/2015|EPI_ISL_193229|B:0.0017025218)89:0.0017027983)10:0.0000010000)27:0.0000010000,EPI630848|HA|B/Maryland/14/2015|EPI_ISL_193220|B:0.0034101803)89:0.0017002058,((EPI693110|HA|B/Bangladesh/11005/2015|EPI_ISL_206954|B:0.0017040764,((EPI708669|HA|B/Bangladesh/11002/2015|EPI_ISL_211586|B:0.0000010000,((EPI737913|HA|B/Bangladesh/11007/2015|EPI_ISL_217553|B:0.0017002420,EPI582621|HA|B/Texas/14/2015|EPI_ISL_177189|B:0.0017025610)53:0.0000010000,(EPI586902|HA|B/Arkansas/13/2015|EPI_ISL_178148|B:0.0016996097,EPI602972|HA|B/Oklahoma/05/2015|EPI_ISL_182671|B:0.0034182638)33:0.0000010000)6:0.0000010000)10:0.0000010000,(EPI625831|HA|B/Missouri/01/2015|EPI_ISL_192091|B:0.0034291608,EPI630940|HA|B/Alaska/19/2015|EPI_ISL_193232|B:0.0034104603)19:0.0000010000)20:0.0000010000)12:0.0000010000,EPI587266|HA|B/Texas/19/2015|EPI_ISL_178195|B:0.0034391144)94:0.0034052957)25:0.0000010000,VicB_2015_Consensus_Aligned:0.0000010000)2:0.0000010000,(((EPI582701|HA|B/Illinois/03/2015|EPI_ISL_177201|B:0.0034281558,(EPI603436|HA|B/Texas/28/2015|EPI_ISL_182730|B:0.0000010000,VicB_2015_Medoid_Aligned|EPI603436|HA|B/Texas/28/2015|EPI_ISL_182730|B:0.0000010000)93:0.0016992360)20:0.0000010000,EPI2187217|HA|B/Brisbane/287/2015|EPI_ISL_15146478|B:0.0017051566)3:0.0000010000,(EPI586833|HA|B/Rhode_Island/01/2015|EPI_ISL_178139|B:0.0017050279,EPI631228|HA|B/Connecticut/50/2015|EPI_ISL_193273|B:0.0017060325)4:0.0000010000)15:0.0000010000)3:0.0000010000,EPI592842|HA|B/Rhode_Island/07/2015|EPI_ISL_180348|B:0.0017027231)7:0.0000010000,(EPI697297|HA|B/Beijing-Huairou/12305/2015|EPI_ISL_207761|B:0.0017069922,EPI713703|HA|B/Henan-Zhaoling/1617/2015|EPI_ISL_212688|B:0.0016975195)89:0.0017127855)87:0.0017006815,EPI746430|HA|B/Victoria/849/2015|EPI_ISL_219044|B:0.0034295323)15:0.0000010000,EPI808361|HA|B/Florida/79/2015|EPI_ISL_229438|B:0.0017093969)17:0.0000010000,((EPI697300|HA|B/Beijing-Xicheng/12806/2015|EPI_ISL_207762|B:0.0034109184,EPI731424|HA|B/Oman/6335/2015|EPI_ISL_215952|B:0.0017016819)22:0.0000010000,(EPI706753|HA|B/Taiwan/362/2015|EPI_ISL_210381|B:0.0017017266,EPI753805|HA|B/Cambodia/1287/2015|EPI_ISL_220591|B:0.0017047649)11:0.0000010000)3:0.0000010000)3:0.0000010000,(((EPI679857|HA|B/WAKAYAMA-C/69/2015|EPI_ISL_203515|B:0.0000010000,EPI679855|HA|B/WAKAYAMA-C/68/2015|EPI_ISL_203514|B:0.0017020920)69:0.0017039952,EPI694922|HA|B/Florida/84/2015|EPI_ISL_207235|B:0.0017038521)7:0.0000010000,(EPI718114|HA|B/Singapore/EN787/2015|EPI_ISL_213698|B:0.0017011060,(EPI603545|HA|B/Georgia/07/2015|EPI_ISL_182744|B:0.0034041995,EPI636549|HA|B/Sydney/11/2015|EPI_ISL_194606|B:0.0017014832)7:0.0000010000)4:0.0000010000)4:0.0000010000)8:0.0000010000,(EPI700926|HA|B/Florida/86/2015|EPI_ISL_208504|B:0.0034165223,EPI642670|HA|B/Hawaii/14/2015|EPI_ISL_195676|B:0.0034163039)12:0.0000010000)7:0.0000010000,(((EPI672044|HA|B/Kentucky/24/2015|EPI_ISL_201592|B:0.0000010000,EPI686432|HA|B/Kentucky/27/2015|EPI_ISL_205689|B:0.0017059594)84:0.0000010000,EPI686448|HA|B/Kentucky/29/2015|EPI_ISL_205691|B:0.0017028314)93:0.0017013657,EPI587407|HA|B/Wyoming/07/2015|EPI_ISL_178215|B:0.0017014632)11:0.0000010000)6:0.0000010000,(EPI713195|HA|B/SENDAI/13/2015|EPI_ISL_212550|B:0.0017067903,((EPI718138|HA|B/Singapore/GP2106/2015|EPI_ISL_213710|B:0.0034097679,EPI638832|HA|B/TOKYO/50143/2015|EPI_ISL_194915|B:0.0017050753)6:0.0000010000,(EPI569214|HA|B/Wisconsin/01/2015|EPI_ISL_173838|B:0.0017019926,EPI614660|HA|B/Nevada/16/2015|EPI_ISL_189826|B:0.0017084037)18:0.0000010000)1:0.0000010000)6:0.0000010000)19:0.0000010000,EPI718082|HA|B/Singapore/KK888/2015|EPI_ISL_213682|B:0.0017007628)89:0.0017087828,EPI636369|HA|B/Brisbane/73/2015|EPI_ISL_194567|B:0.0017043130)15:0.0000010000,EPI717842|HA|B/Singapore/GP507/2015|EPI_ISL_213610|B:0.0000010000)8:0.0000010000,EPI718056|HA|B/Singapore/KK830/2015|EPI_ISL_213669|B:0.0017126145)18:0.0000010000,EPI592763|HA|B/Louisiana/20/2015|EPI_ISL_180334|B:0.0017014450)93:0.0017076524,VicB_2015_COBRA_Aligned:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -2666.661909
+Robinson-Foulds distance between ML tree and consensus tree: 93
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--EPI809657|HA|B/KANAGAWA/14/2015|EPI_ISL_229795|B
+|
+|                                                                                        +--EPI825539|HA|B/Vietnam/5258/2015|EPI_ISL_232207|B
+|                                                                               +--------| (96)
+|                                                                               |        |            +--EPI676511|HA|B/GIFU/3/2015|EPI_ISL_202792|B
+|                                                                               |        |         +--| (23)
+|                                                                               |        |         |  |     +---EPI662244|HA|B/Hawaii/27/2015|EPI_ISL_199487|B
+|                                                                               |        |         |  |  +--| (18)
+|                                                                               |        |         |  |  |  +---EPI636488|HA|B/Perth/25/2015|EPI_ISL_194594|B
+|                                                                               |        |         |  +--| (13)
+|                                                                               |        |         |     +--VicB_2015_Ancestral_Aligned_Node28
+|                                                                               |        |      +--| (9)
+|                                                                               |        |      |  |      +--------EPI630562|HA|B/Hong_Kong/1337/2015|EPI_ISL_193083|B
+|                                                                               |        |      |  |  +---| (95)
+|                                                                               |        |      |  |  |   +--EPI632763|HA|B/Hong_Kong/1372/2015|EPI_ISL_193649|B
+|                                                                               |        |      |  +--| (35)
+|                                                                               |        |      |     +---------EPI704202|HA|B/Darwin/97/2015|EPI_ISL_209084|B
+|                                                                               |        |   +--| (8)
+|                                                                               |        |   |  |      +---EPI648868|HA|B/Canberra/27/2015|EPI_ISL_197393|B
+|                                                                               |        |   |  |  +---| (93)
+|                                                                               |        |   |  |  |   +--EPI746466|HA|B/Victoria/502/2015|EPI_ISL_219057|B
+|                                                                               |        |   |  +--| (18)
+|                                                                               |        |   |     +---EPI704133|HA|B/Sydney/256/2015|EPI_ISL_209059|B
+|                                                                               |        +---| (91)
+|                                                                               |            |   +--EPI636409|HA|B/Darwin/11/2015|EPI_ISL_194577|B
+|                                                                               |            +---| (89)
+|                                                                               |                +--------------EPI2187233|HA|B/Darwin/11/2015|EPI_ISL_15146486|B
+|                                                                            +--| (28)
+|                                                                            |  |                          +---------EPI693322|HA|B/Taiwan/341/2015|EPI_ISL_206982|B
+|                                                                            |  |  +-----------------------| (100)
+|                                                                            |  |  |                       +----EPI717840|HA|B/Singapore/GP488/2015|EPI_ISL_213609|B
+|                                                                            |  +--| (31)
+|                                                                            |     |   +--------------EPI738143|HA|B/Bahrain/921/2015|EPI_ISL_217582|B
+|                                                                            |     +---| (70)
+|                                                                            |         |  +---EPI638828|HA|B/Taiwan/113/2015|EPI_ISL_194913|B
+|                                                                            |         +--| (27)
+|                                                                            |            |      +---EPI956372|HA|B/South_Australia/48/2015|EPI_ISL_255434|B
+|                                                                            |            |  +---| (95)
+|                                                                            |            |  |   +--EPI636440|HA|B/New_Caledonia/21/2015|EPI_ISL_194583|B
+|                                                                            |            +--| (34)
+|                                                                            |               +-------------EPI675663|HA|B/Sydney/137/2015|EPI_ISL_202492|B
+|                                                                        +---| (86)
+|                                                                        |   +---EPI718062|HA|B/Singapore/KK858/2015|EPI_ISL_213672|B
+|                                                                     +--| (24)
+|                                                                     |  |   +--EPI587066|HA|B/Pennsylvania/02/2015|EPI_ISL_178169|B
+|                                                                     |  +---| (93)
+|                                                                     |      +---EPI587090|HA|B/Pennsylvania/03/2015|EPI_ISL_178172|B
+|                                                                  +--| (19)
+|                                                                  |  |      +---------EPI592761|HA|B/Louisiana/16/2015|EPI_ISL_180333|B
+|                                                                  |  |  +---| (89)
+|                                                                  |  |  |   |  +---EPI602964|HA|B/Louisiana/13/2015|EPI_ISL_182670|B
+|                                                                  |  |  |   +--| (45)
+|                                                                  |  |  |      +---EPI630916|HA|B/Arizona/06/2015|EPI_ISL_193229|B
+|                                                                  |  +--| (29)
+|                                                                  |     +--------EPI630848|HA|B/Maryland/14/2015|EPI_ISL_193220|B
+|                                                              +---| (89)
+|                                                              |   +---EPI586978|HA|B/Utah/11/2015|EPI_ISL_178158|B
+|                                                           +--| (25)
+|                                                           |  |                    +---EPI693110|HA|B/Bangladesh/11005/2015|EPI_ISL_206954|B
+|                                                           |  |                 +--| (16)
+|                                                           |  |                 |  |  +---EPI586902|HA|B/Arkansas/13/2015|EPI_ISL_178148|B
+|                                                           |  |                 |  +--| (33)
+|                                                           |  |                 |     +--------EPI602972|HA|B/Oklahoma/05/2015|EPI_ISL_182671|B
+|                                                           |  |              +--| (13)
+|                                                           |  |              |  +---------EPI587266|HA|B/Texas/19/2015|EPI_ISL_178195|B
+|                                                           |  |           +--| (18)
+|                                                           |  |           |  +--EPI708669|HA|B/Bangladesh/11002/2015|EPI_ISL_211586|B
+|                                                           |  |        +--| (22)
+|                                                           |  |        |  |     +---EPI737913|HA|B/Bangladesh/11007/2015|EPI_ISL_217553|B
+|                                                           |  |        |  |  +--| (53)
+|                                                           |  |        |  |  |  +---EPI582621|HA|B/Texas/14/2015|EPI_ISL_177189|B
+|                                                           |  |        |  +--| (12)
+|                                                           |  |        |     +---------EPI625831|HA|B/Missouri/01/2015|EPI_ISL_192091|B
+|                                                           |  +--------| (94)
+|                                                           |           +--------EPI630940|HA|B/Alaska/19/2015|EPI_ISL_193232|B
+|                                                        +--| (12)
+|                                                        |  |   +---EPI697297|HA|B/Beijing-Huairou/12305/2015|EPI_ISL_207761|B
+|                                                        |  +---| (89)
+|                                                        |      +---EPI713703|HA|B/Henan-Zhaoling/1617/2015|EPI_ISL_212688|B
+|                                                     +--| (10)
+|                                                     |  +--VicB_2015_Consensus_Aligned
+|                                                  +--| (18)
+|                                                  |  |      +--EPI603436|HA|B/Texas/28/2015|EPI_ISL_182730|B
+|                                                  |  |  +---| (93)
+|                                                  |  |  |   +--VicB_2015_Medoid_Aligned|EPI603436|HA|B/Texas/28/2015|EPI_ISL_182730|B
+|                                                  |  +--| (6)
+|                                                  |     +---EPI631228|HA|B/Connecticut/50/2015|EPI_ISL_193273|B
+|                                               +--| (12)
+|                                               |  |  +---EPI586833|HA|B/Rhode_Island/01/2015|EPI_ISL_178139|B
+|                                               |  +--| (19)
+|                                               |     +---EPI2187217|HA|B/Brisbane/287/2015|EPI_ISL_15146478|B
+|                                            +--| (22)
+|                                            |  +---EPI592842|HA|B/Rhode_Island/07/2015|EPI_ISL_180348|B
+|                                        +---| (87)
+|                                        |   +--------EPI582701|HA|B/Illinois/03/2015|EPI_ISL_177201|B
+|                                     +--| (20)
+|                                     |  +---EPI718114|HA|B/Singapore/EN787/2015|EPI_ISL_213698|B
+|                                  +--| (15)
+|                                  |  +--------EPI718138|HA|B/Singapore/GP2106/2015|EPI_ISL_213710|B
+|                               +--| (6)
+|                               |  |  +---EPI718082|HA|B/Singapore/KK888/2015|EPI_ISL_213682|B
+|                               |  +--| (29)
+|                               |     +---EPI587407|HA|B/Wyoming/07/2015|EPI_ISL_178215|B
+|                            +--| (1)
+|                            |  +---EPI753805|HA|B/Cambodia/1287/2015|EPI_ISL_220591|B
+|                         +--| (3)
+|                         |  |     +--------EPI697300|HA|B/Beijing-Xicheng/12806/2015|EPI_ISL_207762|B
+|                         |  |  +--| (27)
+|                         |  |  |  +---------EPI746430|HA|B/Victoria/849/2015|EPI_ISL_219044|B
+|                         |  +--| (7)
+|                         |  |  +---EPI638832|HA|B/TOKYO/50143/2015|EPI_ISL_194915|B
+|                         |  |
+|                         |  |  +---EPI569214|HA|B/Wisconsin/01/2015|EPI_ISL_173838|B
+|                         |  +--| (18)
+|                         |     +---EPI614660|HA|B/Nevada/16/2015|EPI_ISL_189826|B
+|                      +--| (13)
+|                      |  |      +--EPI679857|HA|B/WAKAYAMA-C/69/2015|EPI_ISL_203515|B
+|                      |  |  +---| (69)
+|                      |  |  |   +---EPI679855|HA|B/WAKAYAMA-C/68/2015|EPI_ISL_203514|B
+|                      |  +--| (20)
+|                      |     +--------EPI603545|HA|B/Georgia/07/2015|EPI_ISL_182744|B
+|                   +--| (9)
+|                   |  |        +---EPI713195|HA|B/SENDAI/13/2015|EPI_ISL_212550|B
+|                   |  |     +--| (14)
+|                   |  |     |  |  +---EPI731424|HA|B/Oman/6335/2015|EPI_ISL_215952|B
+|                   |  |     |  +--| (21)
+|                   |  |     |     |      +--EPI672044|HA|B/Kentucky/24/2015|EPI_ISL_201592|B
+|                   |  |     |     |   +--| (84)
+|                   |  |     |     |   |  +---EPI686432|HA|B/Kentucky/27/2015|EPI_ISL_205689|B
+|                   |  |     |     +---| (93)
+|                   |  |     |         +---EPI686448|HA|B/Kentucky/29/2015|EPI_ISL_205691|B
+|                   |  |  +--| (11)
+|                   |  |  |  +---EPI808361|HA|B/Florida/79/2015|EPI_ISL_229438|B
+|                   |  +--| (13)
+|                   |     |  +---EPI694922|HA|B/Florida/84/2015|EPI_ISL_207235|B
+|                   |     +--| (27)
+|                   |        +--------EPI642670|HA|B/Hawaii/14/2015|EPI_ISL_195676|B
+|                +--| (15)
+|                |  |  +---EPI706753|HA|B/Taiwan/362/2015|EPI_ISL_210381|B
+|                |  +--| (20)
+|                |     +--------EPI700926|HA|B/Florida/86/2015|EPI_ISL_208504|B
+|            +---| (89)
+|            |   +---EPI636549|HA|B/Sydney/11/2015|EPI_ISL_194606|B
+|         +--| (39)
+|         |  +---EPI592763|HA|B/Louisiana/20/2015|EPI_ISL_180334|B
+|      +--| (23)
+|      |  +---EPI718056|HA|B/Singapore/KK830/2015|EPI_ISL_213669|B
+|   +--| (25)
+|   |  +--EPI717842|HA|B/Singapore/GP507/2015|EPI_ISL_213610|B
++---| (93)
+|   +---EPI636369|HA|B/Brisbane/73/2015|EPI_ISL_194567|B
+|
++--VicB_2015_COBRA_Aligned
+
+
+Consensus tree in newick format: 
+
+(EPI809657|HA|B/KANAGAWA/14/2015|EPI_ISL_229795|B:0.0000025259,((((((((((((((((((((((((((EPI825539|HA|B/Vietnam/5258/2015|EPI_ISL_232207|B:0.0000025259,((((EPI676511|HA|B/GIFU/3/2015|EPI_ISL_202792|B:0.0000025259,((EPI662244|HA|B/Hawaii/27/2015|EPI_ISL_199487|B:0.0017052449,EPI636488|HA|B/Perth/25/2015|EPI_ISL_194594|B:0.0017002174)18:0.0000025259,VicB_2015_Ancestral_Aligned_Node28:0.0000025259)13:0.0000025259)23:0.0000025259,((EPI630562|HA|B/Hong_Kong/1337/2015|EPI_ISL_193083|B:0.0034105400,EPI632763|HA|B/Hong_Kong/1372/2015|EPI_ISL_193649|B:0.0000025259)95:0.0017001597,EPI704202|HA|B/Darwin/97/2015|EPI_ISL_209084|B:0.0034374512)35:0.0000025259)9:0.0000025259,((EPI648868|HA|B/Canberra/27/2015|EPI_ISL_197393|B:0.0017022976,EPI746466|HA|B/Victoria/502/2015|EPI_ISL_219057|B:0.0000025259)93:0.0017003460,EPI704133|HA|B/Sydney/256/2015|EPI_ISL_209059|B:0.0017008541)18:0.0000025259)8:0.0000025259,(EPI636409|HA|B/Darwin/11/2015|EPI_ISL_194577|B:0.0000025259,EPI2187233|HA|B/Darwin/11/2015|EPI_ISL_15146486|B:0.0051466895)89:0.0017000817)91:0.0017022141)96:0.0034066325,((EPI693322|HA|B/Taiwan/341/2015|EPI_ISL_206982|B:0.0034343398,EPI717840|HA|B/Singapore/GP488/2015|EPI_ISL_213609|B:0.0017191332)100:0.0085719834,(EPI738143|HA|B/Bahrain/921/2015|EPI_ISL_217582|B:0.0051486919,(EPI638828|HA|B/Taiwan/113/2015|EPI_ISL_194913|B:0.0016994075,((EPI956372|HA|B/South_Australia/48/2015|EPI_ISL_255434|B:0.0016982713,EPI636440|HA|B/New_Caledonia/21/2015|EPI_ISL_194583|B:0.0000025259)95:0.0017041205,EPI675663|HA|B/Sydney/137/2015|EPI_ISL_202492|B:0.0051146841)34:0.0000025259)27:0.0000025259)70:0.0017001119)31:0.0000025259)28:0.0000025259,EPI718062|HA|B/Singapore/KK858/2015|EPI_ISL_213672|B:0.0017025758)86:0.0017008434,(EPI587066|HA|B/Pennsylvania/02/2015|EPI_ISL_178169|B:0.0000025259,EPI587090|HA|B/Pennsylvania/03/2015|EPI_ISL_178172|B:0.0017003910)93:0.0017056068)24:0.0000025259,((EPI592761|HA|B/Louisiana/16/2015|EPI_ISL_180333|B:0.0034307785,(EPI602964|HA|B/Louisiana/13/2015|EPI_ISL_182670|B:0.0017049605,EPI630916|HA|B/Arizona/06/2015|EPI_ISL_193229|B:0.0017034532)45:0.0000025259)89:0.0017037540,EPI630848|HA|B/Maryland/14/2015|EPI_ISL_193220|B:0.0034117833)29:0.0000025259)19:0.0000025259,EPI586978|HA|B/Utah/11/2015|EPI_ISL_178158|B:0.0017053866)89:0.0017015055,(((((EPI693110|HA|B/Bangladesh/11005/2015|EPI_ISL_206954|B:0.0017049396,(EPI586902|HA|B/Arkansas/13/2015|EPI_ISL_178148|B:0.0017008925,EPI602972|HA|B/Oklahoma/05/2015|EPI_ISL_182671|B:0.0034197349)33:0.0000025259)16:0.0000025259,EPI587266|HA|B/Texas/19/2015|EPI_ISL_178195|B:0.0034408656)13:0.0000025259,EPI708669|HA|B/Bangladesh/11002/2015|EPI_ISL_211586|B:0.0000025259)18:0.0000025259,((EPI737913|HA|B/Bangladesh/11007/2015|EPI_ISL_217553|B:0.0017012363,EPI582621|HA|B/Texas/14/2015|EPI_ISL_177189|B:0.0017037757)53:0.0000025259,EPI625831|HA|B/Missouri/01/2015|EPI_ISL_192091|B:0.0034309026)12:0.0000025259)22:0.0000025259,EPI630940|HA|B/Alaska/19/2015|EPI_ISL_193232|B:0.0034121944)94:0.0034071068)25:0.0000025259,(EPI697297|HA|B/Beijing-Huairou/12305/2015|EPI_ISL_207761|B:0.0017085785,EPI713703|HA|B/Henan-Zhaoling/1617/2015|EPI_ISL_212688|B:0.0016991147)89:0.0017150313)12:0.0000025259,VicB_2015_Consensus_Aligned:0.0000025259)10:0.0000025259,((EPI603436|HA|B/Texas/28/2015|EPI_ISL_182730|B:0.0000025259,VicB_2015_Medoid_Aligned|EPI603436|HA|B/Texas/28/2015|EPI_ISL_182730|B:0.0000025259)93:0.0017009070,EPI631228|HA|B/Connecticut/50/2015|EPI_ISL_193273|B:0.0017077592)6:0.0000025259)18:0.0000025259,(EPI586833|HA|B/Rhode_Island/01/2015|EPI_ISL_178139|B:0.0017067053,EPI2187217|HA|B/Brisbane/287/2015|EPI_ISL_15146478|B:0.0017068069)19:0.0000025259)12:0.0000025259,EPI592842|HA|B/Rhode_Island/07/2015|EPI_ISL_180348|B:0.0017043322)22:0.0000025259,EPI582701|HA|B/Illinois/03/2015|EPI_ISL_177201|B:0.0034297922)87:0.0017022111,EPI718114|HA|B/Singapore/EN787/2015|EPI_ISL_213698|B:0.0017025890)20:0.0000025259,EPI718138|HA|B/Singapore/GP2106/2015|EPI_ISL_213710|B:0.0034110102)15:0.0000025259,(EPI718082|HA|B/Singapore/KK888/2015|EPI_ISL_213682|B:0.0017021042,EPI587407|HA|B/Wyoming/07/2015|EPI_ISL_178215|B:0.0017028307)29:0.0000025259)6:0.0000025259,EPI753805|HA|B/Cambodia/1287/2015|EPI_ISL_220591|B:0.0017061790)1:0.0000025259,((EPI697300|HA|B/Beijing-Xicheng/12806/2015|EPI_ISL_207762|B:0.0034122412,EPI746430|HA|B/Victoria/849/2015|EPI_ISL_219044|B:0.0034310751)27:0.0000025259,EPI638832|HA|B/TOKYO/50143/2015|EPI_ISL_194915|B:0.0017063131)7:0.0000025259,(EPI569214|HA|B/Wisconsin/01/2015|EPI_ISL_173838|B:0.0017032660,EPI614660|HA|B/Nevada/16/2015|EPI_ISL_189826|B:0.0017096732)18:0.0000025259)3:0.0000025259,((EPI679857|HA|B/WAKAYAMA-C/69/2015|EPI_ISL_203515|B:0.0000025259,EPI679855|HA|B/WAKAYAMA-C/68/2015|EPI_ISL_203514|B:0.0017032533)69:0.0017052560,EPI603545|HA|B/Georgia/07/2015|EPI_ISL_182744|B:0.0034056345)20:0.0000025259)13:0.0000025259,(((EPI713195|HA|B/SENDAI/13/2015|EPI_ISL_212550|B:0.0017078661,(EPI731424|HA|B/Oman/6335/2015|EPI_ISL_215952|B:0.0017033838,((EPI672044|HA|B/Kentucky/24/2015|EPI_ISL_201592|B:0.0000025259,EPI686432|HA|B/Kentucky/27/2015|EPI_ISL_205689|B:0.0017070265)84:0.0000025259,EPI686448|HA|B/Kentucky/29/2015|EPI_ISL_205691|B:0.0017039177)93:0.0017024579)21:0.0000025259)14:0.0000025259,EPI808361|HA|B/Florida/79/2015|EPI_ISL_229438|B:0.0017106211)11:0.0000025259,(EPI694922|HA|B/Florida/84/2015|EPI_ISL_207235|B:0.0017050784,EPI642670|HA|B/Hawaii/14/2015|EPI_ISL_195676|B:0.0034186558)27:0.0000025259)13:0.0000025259)9:0.0000025259,(EPI706753|HA|B/Taiwan/362/2015|EPI_ISL_210381|B:0.0017028568,EPI700926|HA|B/Florida/86/2015|EPI_ISL_208504|B:0.0034186431)20:0.0000025259)15:0.0000025259,EPI636549|HA|B/Sydney/11/2015|EPI_ISL_194606|B:0.0017025633)89:0.0017097944,EPI592763|HA|B/Louisiana/20/2015|EPI_ISL_180334|B:0.0017024305)39:0.0000025259,EPI718056|HA|B/Singapore/KK830/2015|EPI_ISL_213669|B:0.0017135943)23:0.0000025259,EPI717842|HA|B/Singapore/GP507/2015|EPI_ISL_213610|B:0.0000025259)25:0.0000025259,EPI636369|HA|B/Brisbane/73/2015|EPI_ISL_194567|B:0.0017052915)93:0.0017086130,VicB_2015_COBRA_Aligned:0.0000025259);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_unclustered/VicB/trees/VicB_2015_with_designs.treefile -m "LG+G4{0.2666}" --length 585
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_unclustered/VicB/alignments/VicB_2015_with_designs.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_unclustered/VicB/alignments/VicB_2015_with_designs.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 22 10:42:46 2025
+Total CPU time used: 2367.04856 seconds (0h:39m:27s)
+Total wall-clock time used: 340.9446055 seconds (0h:5m:40s)
+

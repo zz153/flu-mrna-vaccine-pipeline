@@ -1,0 +1,458 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_clustered/H1N1/alignments/H1N1_2023_aligned.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 151168
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 86 sequences with 567 amino-acid sites
+Number of constant sites: 374 (= 65.9612% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 374 (= 65.9612% of all sites)
+Number of parsimony informative sites: 83
+Number of distinct site patterns: 222
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.4390
+
+ Category  Relative_rate  Proportion
+  1         0.0227         0.2500
+  2         0.2102         0.2500
+  3         0.7702         0.2500
+  4         2.9968         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4464.8380 (s.e. 183.0148)
+Unconstrained log-likelihood (without tree): -2507.9240
+Number of free parameters (#branches + #model parameters): 170
+Akaike information criterion (AIC) score: 9269.6759
+Corrected Akaike information criterion (AICc) score: 9416.4941
+Bayesian information criterion (BIC) score: 10007.5370
+
+Total tree length (sum of branch lengths): 0.6840
+Sum of internal branch lengths: 0.0910 (13.3037% of tree length)
+
+WARNING: 71 near-zero internal branches (<0.0018) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI2759303|HA|A/Malaysia/TIDREC_KJA-AUFI030/2023|EPI_ISL_18317772|A_/_H1N1' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--EPI2759303|HA|A/Malaysia/TIDREC_KJA-AUFI030/2023|EPI_ISL_18317772|A_/_H1N1
+|
+|                                                     +--EPI2903666|HA|A/Jeonbuk/2476/2023|EPI_ISL_18744092|A_/_H1N1
+|                                                  +--| (99)
+|                                                  |  |                 +--EPI2903668|HA|A/Jeonnam/2178/2023|EPI_ISL_18744093|A_/_H1N1
+|                                                  |  |              +**| (58)
+|                                                  |  |              |  |  +--EPI3080538|HA|A/CastillaLaMancha/240417/2023|EPI_ISL_18942797|A_/_H1N1
+|                                                  |  |              |  +--| (98)
+|                                                  |  |              |     +--EPI3384396|HA|A/Michigan/UM-CL23-590632/2023|EPI_ISL_19207651|A_/_H1N1
+|                                                  |  |           +**| (99)
+|                                                  |  |           |  +**EPI3237019|HA|A/Los_Angeles_County/LACPHL-INF00095/2023|EPI_ISL_19075445|A_/_H1N1
+|                                                  |  |        +**| (61)
+|                                                  |  |        |  +--EPI2520231|HA|A/Ceuta/808/2023|EPI_ISL_17506002|A_/_H1N1
+|                                                  |  |     +**| (3)
+|                                                  |  |     |  |     +--EPI2737819|HA|A/Victoria/2211/2023|EPI_ISL_18242313|A_/_H1N1
+|                                                  |  |     |  |  +**| (8)
+|                                                  |  |     |  |  |  +--EPI2462648|HA|A/Colorado/18/2023|EPI_ISL_17212543|A_/_H1N1
+|                                                  |  |     |  +**| (3)
+|                                                  |  |     |     |  +--EPI2976788|HA|A/Tasmania/410/2023|EPI_ISL_18852949|A_/_H1N1
+|                                                  |  |     |     +**| (18)
+|                                                  |  |     |        +--EPI2448256|HA|A/Massachusetts/17/2023|EPI_ISL_17102872|A_/_H1N1
+|                                                  |  |  +**| (35)
+|                                                  |  |  |  |           +--EPI2903624|HA|A/Chungbuk/2333/2023|EPI_ISL_18744071|A_/_H1N1
+|                                                  |  |  |  |        +**| (25)
+|                                                  |  |  |  |        |  +--EPI3997728|HA|A/Massachusetts/BI_GH-16498/2023|EPI_ISL_19741082|A_/_H1N1
+|                                                  |  |  |  |     +**| (10)
+|                                                  |  |  |  |     |  |     +--EPI3028603|HA|A/England/240200277/2023|EPI_ISL_18891570|A_/_H1N1
+|                                                  |  |  |  |     |  |  +**| (74)
+|                                                  |  |  |  |     |  |  |  |  +--EPI3121571|HA|A/Minnesota/ISC-1076/2023|EPI_ISL_18988543|A_/_H1N1
+|                                                  |  |  |  |     |  |  |  +**| (33)
+|                                                  |  |  |  |     |  |  |     +--EPI3065029|HA|A/Arizona/ASU106685/2023|EPI_ISL_18930215|A_/_H1N1
+|                                                  |  |  |  |     |  +**| (67)
+|                                                  |  |  |  |     |     |  +--EPI3276801|HA|A/Madrid/92324193656/2023|EPI_ISL_19131155|A_/_H1N1
+|                                                  |  |  |  |     |     +--| (67)
+|                                                  |  |  |  |     |        +--EPI3276651|HA|A/Madrid/1392324178654/2023|EPI_ISL_19131081|A_/_H1N1
+|                                                  |  |  |  |  +**| (91)
+|                                                  |  |  |  |  |  |     +--EPI2881986|HA|A/Oman/CPHL_7236077/2023|EPI_ISL_18716431|A_/_H1N1
+|                                                  |  |  |  |  |  |  +**| (80)
+|                                                  |  |  |  |  |  |  |  +--EPI3997304|HA|A/Massachusetts/BI_GH-16154/2023|EPI_ISL_19741029|A_/_H1N1
+|                                                  |  |  |  |  |  +**| (54)
+|                                                  |  |  |  |  |     +--EPI2744125|HA|A/Ranong/P3102/2023|EPI_ISL_18246518|A_/_H1N1
+|                                                  |  |  |  +**| (13)
+|                                                  |  |  |     +--EPI2457310|HA|A/Nebraska/14113/2023|EPI_ISL_17189229|A_/_H1N1
+|                                                  |  +**| (96)
+|                                                  |     |              +--EPI2903642|HA|A/Gyeonggi/2000/2023|EPI_ISL_18744080|A_/_H1N1
+|                                                  |     |           +**| (13)
+|                                                  |     |           |  +--EPI2999074|HA|A/Michigan/UM-L371630545/2023|EPI_ISL_18868902|A_/_H1N1
+|                                                  |     |        +**| (7)
+|                                                  |     |        |  |  +--EPI3194858|HA|A/CHIBA/162/2023|EPI_ISL_19045755|A_/_H1N1
+|                                                  |     |        |  +**| (12)
+|                                                  |     |        |     +--EPI3094240|HA|A/Colorado/108/2023|EPI_ISL_18957378|A_/_H1N1
+|                                                  |     |     +**| (49)
+|                                                  |     |     |  |  +--EPI2868817|HA|A/HIROSHIMA/135/2023|EPI_ISL_18692906|A_/_H1N1
+|                                                  |     |     |  +**| (11)
+|                                                  |     |     |     +--EPI2842726|HA|A/Catalonia/NSVH199826468/2023|EPI_ISL_18652098|A_/_H1N1
+|                                                  |     |  +**| (88)
+|                                                  |     |  |  +--EPI3104691|HA|A/Madrid/HRYC-72348131/2023|EPI_ISL_18963453|A_/_H1N1
+|                                                  |     +**| (87)
+|                                                  |        +--EPI2895818|HA|A/Michigan/UM-L372229748/2023|EPI_ISL_18737804|A_/_H1N1
+|                                               +--| (96)
+|                                               |  +--EPI3181242|HA|A/ABUDHABI/UAE/0000700/2023|EPI_ISL_19031591|A_/_H1N1
+|                                            +**| (26)
+|                                            |  +----EPI3012555|HA|A/Baleares/2563/2023|EPI_ISL_18884818|A_/_H1N1
+|                                         +**| (13)
+|                                         |  |     +--EPI3782620|HA|A/ABUDHABI/UAE/0017196/2023|EPI_ISL_19660010|A_/_H1N1
+|                                         |  |  +--| (83)
+|                                         |  |  |  |     +--EPI2920493|HA|A/Galicia/21452225735/2023|EPI_ISL_18776508|A_/_H1N1
+|                                         |  |  |  |  +**| (99)
+|                                         |  |  |  |  |  +--EPI2994104|HA|A/Delaware/87/2023|EPI_ISL_18862842|A_/_H1N1
+|                                         |  |  |  +**| (63)
+|                                         |  |  |     +--EPI3112926|HA|A/Madrid/HRYC-12994000/2023|EPI_ISL_18980523|A_/_H1N1
+|                                         |  +**| (70)
+|                                         |     +--EPI3325914|HA|A/Andalucia/241428/2023|EPI_ISL_19159170|A_/_H1N1
+|                                      +**| (4)
+|                                      |  |           +--EPI2904109|HA|A/Laos/F4161/2023|EPI_ISL_18744505|A_/_H1N1
+|                                      |  |        +**| (97)
+|                                      |  |        |  +--EPI3633772|HA|A/Laos/00819-1959/2023|EPI_ISL_19536574|A_/_H1N1
+|                                      |  |     +**| (8)
+|                                      |  |     |  +--EPI2801009|HA|A/Chanthaburi/P4630/2023|EPI_ISL_18540016|A_/_H1N1
+|                                      |  |  +**| (5)
+|                                      |  |  |  +--EPI2441094|HA|A/Ceuta/350/2023|EPI_ISL_17095757|A_/_H1N1
+|                                      |  +**| (8)
+|                                      |     |  +--EPI2963804|HA|A/Singapore/GP13329/2023|EPI_ISL_18831313|A_/_H1N1
+|                                      |     +**| (8)
+|                                      |        +--EPI2895698|HA|A/Michigan/UM-10054114004/2023|EPI_ISL_18737779|A_/_H1N1
+|                                   +**| (12)
+|                                   |  |     +--EPI3181903|HA|A/ABUDHABI/UAE/0015142/2023|EPI_ISL_19031922|A_/_H1N1
+|                                   |  |  +**| (11)
+|                                   |  |  |  |     +--EPI2616592|HA|A/Victoria/201/2023|EPI_ISL_17973504|A_/_H1N1
+|                                   |  |  |  |  +--| (99)
+|                                   |  |  |  |  |  |  +--EPI2611498|HA|A/Wellington/04/2023|EPI_ISL_17957628|A_/_H1N1
+|                                   |  |  |  |  |  +**| (53)
+|                                   |  |  |  |  |     +--EPI2507974|HA|A/Tuvalu/GX23057/2023|EPI_ISL_17445386|A_/_H1N1
+|                                   |  |  |  +**| (12)
+|                                   |  |  |     +--EPI3237152|HA|A/Los_Angeles_County/LACPHL-INF00281/2023|EPI_ISL_19075469|A_/_H1N1
+|                                   |  +**| (5)
+|                                   |     +--EPI2911885|HA|A/Michigan/UM-G43Q95P5/2023|EPI_ISL_18759340|A_/_H1N1
+|                                +**| (3)
+|                                |  |           +--EPI3194850|HA|A/SHIGA/62/2023|EPI_ISL_19045754|A_/_H1N1
+|                                |  |        +**| (67)
+|                                |  |        |  +--EPI2398662|HA|A/Baleares/74/2023|EPI_ISL_16913871|A_/_H1N1
+|                                |  |     +**| (48)
+|                                |  |     |  +--EPI2519991|HA|A/CastillaLaMancha/793/2023|EPI_ISL_17505815|A_/_H1N1
+|                                |  |  +**| (5)
+|                                |  |  |  +--EPI2471811|HA|A/Catalonia/NSAV198266241/2023|EPI_ISL_17256930|A_/_H1N1
+|                                |  +**| (6)
+|                                |     +--EPI2735199|HA|A/Gwangju/983/2023|EPI_ISL_18231896|A_/_H1N1
+|                             +**| (5)
+|                             |  +--EPI2884350|HA|A/Georgia/14276/2023|EPI_ISL_18720458|A_/_H1N1
+|                          +**| (6)
+|                          |  |     +--EPI2759833|HA|A/Chiang_Rai/P3815/2023|EPI_ISL_18320338|A_/_H1N1
+|                          |  |  +**| (34)
+|                          |  |  |  |  +--EPI2793213|HA|A/Seoul/1471/2023|EPI_ISL_18506241|A_/_H1N1
+|                          |  |  |  +**| (63)
+|                          |  |  |     +--EPI3782084|HA|A/ABUDHABI/UAE/0014071/2023|EPI_ISL_19659345|A_/_H1N1
+|                          |  +**| (4)
+|                          |     |     +--EPI2734565|HA|A/Myanmar/I036/2023|EPI_ISL_18231482|A_/_H1N1
+|                          |     |  +**| (41)
+|                          |     |  |  |  +--EPI3782249|HA|A/ABUDHABI/UAE/0012892/2023|EPI_ISL_19659366|A_/_H1N1
+|                          |     |  |  +**| (58)
+|                          |     |  |     +--EPI2973211|HA|A/Michigan/UM-10054980807/2023|EPI_ISL_18851737|A_/_H1N1
+|                          |     +**| (7)
+|                          |        +--EPI2361784|HA|A/Catalonia/NSVH198265699/2023|EPI_ISL_16830774|A_/_H1N1
+|                       +**| (27)
+|                       |  +--EPI3782201|HA|A/ABUDHABI/UAE/0015717/2023|EPI_ISL_19659360|A_/_H1N1
+|                    +**| (54)
+|                    |  |        +--EPI2539436|HA|A/Chiang_Rai/P912/2023|EPI_ISL_17597829|A_/_H1N1
+|                    |  |     +**| (23)
+|                    |  |     |  +--EPI2468145|HA|A/TOKYO/SH01/2023|EPI_ISL_17244640|A_/_H1N1
+|                    |  |  +**| (88)
+|                    |  |  |  |  +--EPI2698780|HA|A/Brisbane/312/2023|EPI_ISL_18127041|A_/_H1N1
+|                    |  |  |  +**| (38)
+|                    |  |  |     +--EPI2571848|HA|A/California/52/2023|EPI_ISL_17699946|A_/_H1N1
+|                    |  +**| (46)
+|                    |     |  +--EPI2963298|HA|A/Singapore/KK1647/2023|EPI_ISL_18831069|A_/_H1N1
+|                    |     +--| (95)
+|                    |        +--EPI2495773|HA|A/Sweden/10/2023|EPI_ISL_17360195|A_/_H1N1
+|                 +--| (92)
+|                 |  |  +---EPI2678866|HA|A/Laos/1952/2023|EPI_ISL_18091923|A_/_H1N1
+|                 |  +**| (13)
+|                 |     |  +--EPI2793243|HA|A/Daejeon/1531/2023|EPI_ISL_18506252|A_/_H1N1
+|                 |     +**| (41)
+|                 |        |     +----EPI3447272|HA|A/Galicia/SCQ/318602/2023|EPI_ISL_19273341|A_/_H1N1
+|                 |        |  +--| (81)
+|                 |        |  |  +**EPI3193642|HA|A/Galicia/SCQ/295786/2023|EPI_ISL_19044478|A_/_H1N1
+|                 |        +--| (82)
+|                 |           |    +--EPI3447240|HA|A/Galicia/SCQ/306480/2023|EPI_ISL_19273337|A_/_H1N1
+|                 |           +----| (77)
+|                 |                +-------------------------------------------------EPI2923381|HA|A/Catalonia/NSAV198289092/2023|EPI_ISL_18782577|A_/_H1N1
+|              +**| (93)
+|              |  +---EPI2539500|HA|A/Surat_Thani/P578/2023|EPI_ISL_17597837|A_/_H1N1
+|           +**| (22)
+|           |  +--EPI2790045|HA|A/Perth/457/2023|EPI_ISL_18484957|A_/_H1N1
+|        +**| (8)
+|        |  +--EPI2789956|HA|A/Victoria/2676/2023|EPI_ISL_18484927|A_/_H1N1
+|     +**| (7)
+|     |  |  +--EPI2790264|HA|A/Perth/407/2023|EPI_ISL_18485039|A_/_H1N1
+|     |  +**| (23)
+|     |     +--EPI2585385|HA|A/Darwin/53/2023|EPI_ISL_17775034|A_/_H1N1
+|  +**| (80)
+|  |  |  +--EPI2794765|HA|A/England/233240349/2023|EPI_ISL_18516493|A_/_H1N1
+|  |  +**| (71)
+|  |     |  +--EPI3006721|HA|A/Darwin/506/2023|EPI_ISL_18876502|A_/_H1N1
+|  |     +**| (76)
+|  |        +--EPI2698680|HA|A/Sydney/654/2023|EPI_ISL_18127007|A_/_H1N1
++**| (90)
+|  +--EPI2861187|HA|A/Victoria/3021/2023|EPI_ISL_18666914|A_/_H1N1
+|
+|  +--EPI3226378|HA|A/Malaysia/IMR-RM509/2023|EPI_ISL_19065702|A_/_H1N1
++--| (96)
+   +--EPI2924196|HA|A/Navarra/2321/2023|EPI_ISL_18784477|A_/_H1N1
+
+Tree in newick format:
+
+(EPI2759303|HA|A/Malaysia/TIDREC_KJA-AUFI030/2023|EPI_ISL_18317772|A_/_H1N1:0.0053095110,((((((((((((((((((EPI2903666|HA|A/Jeonbuk/2476/2023|EPI_ISL_18744092|A_/_H1N1:0.0035046024,((((((EPI2903668|HA|A/Jeonnam/2178/2023|EPI_ISL_18744093|A_/_H1N1:0.0052884551,(EPI3080538|HA|A/CastillaLaMancha/240417/2023|EPI_ISL_18942797|A_/_H1N1:0.0053014778,EPI3384396|HA|A/Michigan/UM-CL23-590632/2023|EPI_ISL_19207651|A_/_H1N1:0.0053016702)98:0.0034892249)58:0.0000021795,EPI3237019|HA|A/Los_Angeles_County/LACPHL-INF00095/2023|EPI_ISL_19075445|A_/_H1N1:0.0000024931)99:0.0017513978,EPI2520231|HA|A/Ceuta/808/2023|EPI_ISL_17506002|A_/_H1N1:0.0052613880)61:0.0000027215,((EPI2737819|HA|A/Victoria/2211/2023|EPI_ISL_18242313|A_/_H1N1:0.0053103199,EPI2462648|HA|A/Colorado/18/2023|EPI_ISL_17212543|A_/_H1N1:0.0052854131)8:0.0000027267,(EPI2976788|HA|A/Tasmania/410/2023|EPI_ISL_18852949|A_/_H1N1:0.0070389253,EPI2448256|HA|A/Massachusetts/17/2023|EPI_ISL_17102872|A_/_H1N1:0.0052646092)18:0.0000020119)3:0.0000020345)3:0.0000026466,((((EPI2903624|HA|A/Chungbuk/2333/2023|EPI_ISL_18744071|A_/_H1N1:0.0034923204,EPI3997728|HA|A/Massachusetts/BI_GH-16498/2023|EPI_ISL_19741082|A_/_H1N1:0.0088447962)25:0.0000027267,((EPI3028603|HA|A/England/240200277/2023|EPI_ISL_18891570|A_/_H1N1:0.0052643060,(EPI3121571|HA|A/Minnesota/ISC-1076/2023|EPI_ISL_18988543|A_/_H1N1:0.0052728357,EPI3065029|HA|A/Arizona/ASU106685/2023|EPI_ISL_18930215|A_/_H1N1:0.0052866327)33:0.0000028764)74:0.0017471907,(EPI3276801|HA|A/Madrid/92324193656/2023|EPI_ISL_19131155|A_/_H1N1:0.0070674278,EPI3276651|HA|A/Madrid/1392324178654/2023|EPI_ISL_19131081|A_/_H1N1:0.0052595143)67:0.0034997649)67:0.0000023013)10:0.0000023850,((EPI2881986|HA|A/Oman/CPHL_7236077/2023|EPI_ISL_18716431|A_/_H1N1:0.0052699768,EPI3997304|HA|A/Massachusetts/BI_GH-16154/2023|EPI_ISL_19741029|A_/_H1N1:0.0052990706)80:0.0017439034,EPI2744125|HA|A/Ranong/P3102/2023|EPI_ISL_18246518|A_/_H1N1:0.0089306587)54:0.0000028142)91:0.0017465241,EPI2457310|HA|A/Nebraska/14113/2023|EPI_ISL_17189229|A_/_H1N1:0.0052846264)13:0.0000023199)35:0.0000027267,(((((EPI2903642|HA|A/Gyeonggi/2000/2023|EPI_ISL_18744080|A_/_H1N1:0.0052458330,EPI2999074|HA|A/Michigan/UM-L371630545/2023|EPI_ISL_18868902|A_/_H1N1:0.0052531509)13:0.0000026086,(EPI3194858|HA|A/CHIBA/162/2023|EPI_ISL_19045755|A_/_H1N1:0.0052535758,EPI3094240|HA|A/Colorado/108/2023|EPI_ISL_18957378|A_/_H1N1:0.0052433149)12:0.0000027267)7:0.0000021106,(EPI2868817|HA|A/HIROSHIMA/135/2023|EPI_ISL_18692906|A_/_H1N1:0.0052791329,EPI2842726|HA|A/Catalonia/NSVH199826468/2023|EPI_ISL_18652098|A_/_H1N1:0.0052722002)11:0.0000026246)49:0.0000023740,EPI3104691|HA|A/Madrid/HRYC-72348131/2023|EPI_ISL_18963453|A_/_H1N1:0.0052387424)88:0.0017437608,EPI2895818|HA|A/Michigan/UM-L372229748/2023|EPI_ISL_18737804|A_/_H1N1:0.0035171010)87:0.0017451832)96:0.0017469571)99:0.0052795049,EPI3181242|HA|A/ABUDHABI/UAE/0000700/2023|EPI_ISL_19031591|A_/_H1N1:0.0017675522)96:0.0052610914,EPI3012555|HA|A/Baleares/2563/2023|EPI_ISL_18884818|A_/_H1N1:0.0123729021)26:0.0000020859,((EPI3782620|HA|A/ABUDHABI/UAE/0017196/2023|EPI_ISL_19660010|A_/_H1N1:0.0070982021,((EPI2920493|HA|A/Galicia/21452225735/2023|EPI_ISL_18776508|A_/_H1N1:0.0035315626,EPI2994104|HA|A/Delaware/87/2023|EPI_ISL_18862842|A_/_H1N1:0.0070996393)99:0.0017457105,EPI3112926|HA|A/Madrid/HRYC-12994000/2023|EPI_ISL_18980523|A_/_H1N1:0.0053237492)63:0.0017129119)83:0.0035680749,EPI3325914|HA|A/Andalucia/241428/2023|EPI_ISL_19159170|A_/_H1N1:0.0035236422)70:0.0017562230)13:0.0000021151,((((EPI2904109|HA|A/Laos/F4161/2023|EPI_ISL_18744505|A_/_H1N1:0.0035680611,EPI3633772|HA|A/Laos/00819-1959/2023|EPI_ISL_19536574|A_/_H1N1:0.0088877925)97:0.0016969299,EPI2801009|HA|A/Chanthaburi/P4630/2023|EPI_ISL_18540016|A_/_H1N1:0.0053082112)8:0.0000027267,EPI2441094|HA|A/Ceuta/350/2023|EPI_ISL_17095757|A_/_H1N1:0.0053049136)5:0.0000026567,(EPI2963804|HA|A/Singapore/GP13329/2023|EPI_ISL_18831313|A_/_H1N1:0.0052683395,EPI2895698|HA|A/Michigan/UM-10054114004/2023|EPI_ISL_18737779|A_/_H1N1:0.0070866660)8:0.0000027267)8:0.0000023859)4:0.0000020287,((EPI3181903|HA|A/ABUDHABI/UAE/0015142/2023|EPI_ISL_19031922|A_/_H1N1:0.0053137577,((EPI2616592|HA|A/Victoria/201/2023|EPI_ISL_17973504|A_/_H1N1:0.0052784397,(EPI2611498|HA|A/Wellington/04/2023|EPI_ISL_17957628|A_/_H1N1:0.0052453315,EPI2507974|HA|A/Tuvalu/GX23057/2023|EPI_ISL_17445386|A_/_H1N1:0.0052581519)53:0.0000022152)99:0.0052706401,EPI3237152|HA|A/Los_Angeles_County/LACPHL-INF00281/2023|EPI_ISL_19075469|A_/_H1N1:0.0052750436)12:0.0000022771)11:0.0000021391,EPI2911885|HA|A/Michigan/UM-G43Q95P5/2023|EPI_ISL_18759340|A_/_H1N1:0.0052740698)5:0.0000025885)12:0.0000020423,((((EPI3194850|HA|A/SHIGA/62/2023|EPI_ISL_19045754|A_/_H1N1:0.0052782212,EPI2398662|HA|A/Baleares/74/2023|EPI_ISL_16913871|A_/_H1N1:0.0070370219)67:0.0000025592,EPI2519991|HA|A/CastillaLaMancha/793/2023|EPI_ISL_17505815|A_/_H1N1:0.0052761826)48:0.0017467160,EPI2471811|HA|A/Catalonia/NSAV198266241/2023|EPI_ISL_17256930|A_/_H1N1:0.0052879774)5:0.0000028414,EPI2735199|HA|A/Gwangju/983/2023|EPI_ISL_18231896|A_/_H1N1:0.0054273244)6:0.0000021838)3:0.0000027267,EPI2884350|HA|A/Georgia/14276/2023|EPI_ISL_18720458|A_/_H1N1:0.0052989392)5:0.0000027267,((EPI2759833|HA|A/Chiang_Rai/P3815/2023|EPI_ISL_18320338|A_/_H1N1:0.0052851960,(EPI2793213|HA|A/Seoul/1471/2023|EPI_ISL_18506241|A_/_H1N1:0.0070768215,EPI3782084|HA|A/ABUDHABI/UAE/0014071/2023|EPI_ISL_19659345|A_/_H1N1:0.0035226207)63:0.0017573367)34:0.0000025616,((EPI2734565|HA|A/Myanmar/I036/2023|EPI_ISL_18231482|A_/_H1N1:0.0053014557,(EPI3782249|HA|A/ABUDHABI/UAE/0012892/2023|EPI_ISL_19659366|A_/_H1N1:0.0071304712,EPI2973211|HA|A/Michigan/UM-10054980807/2023|EPI_ISL_18851737|A_/_H1N1:0.0071078173)58:0.0017610541)41:0.0000020951,EPI2361784|HA|A/Catalonia/NSVH198265699/2023|EPI_ISL_16830774|A_/_H1N1:0.0053051573)7:0.0000021154)4:0.0000027158)6:0.0000028787,EPI3782201|HA|A/ABUDHABI/UAE/0015717/2023|EPI_ISL_19659360|A_/_H1N1:0.0052854946)27:0.0017515539,(((EPI2539436|HA|A/Chiang_Rai/P912/2023|EPI_ISL_17597829|A_/_H1N1:0.0052834317,EPI2468145|HA|A/TOKYO/SH01/2023|EPI_ISL_17244640|A_/_H1N1:0.0052965151)23:0.0000023717,(EPI2698780|HA|A/Brisbane/312/2023|EPI_ISL_18127041|A_/_H1N1:0.0052811527,EPI2571848|HA|A/California/52/2023|EPI_ISL_17699946|A_/_H1N1:0.0071103754)38:0.0000027174)88:0.0017557679,(EPI2963298|HA|A/Singapore/KK1647/2023|EPI_ISL_18831069|A_/_H1N1:0.0053104877,EPI2495773|HA|A/Sweden/10/2023|EPI_ISL_17360195|A_/_H1N1:0.0053098261)95:0.0035142277)46:0.0000027155)54:0.0017574491,(EPI2678866|HA|A/Laos/1952/2023|EPI_ISL_18091923|A_/_H1N1:0.0090705449,(EPI2793243|HA|A/Daejeon/1531/2023|EPI_ISL_18506252|A_/_H1N1:0.0071675127,((EPI3447272|HA|A/Galicia/SCQ/318602/2023|EPI_ISL_19273341|A_/_H1N1:0.0124150476,EPI3193642|HA|A/Galicia/SCQ/295786/2023|EPI_ISL_19044478|A_/_H1N1:0.0017576727)81:0.0055665767,(EPI3447240|HA|A/Galicia/SCQ/306480/2023|EPI_ISL_19273337|A_/_H1N1:0.0048508054,EPI2923381|HA|A/Catalonia/NSAV198289092/2023|EPI_ISL_18782577|A_/_H1N1:0.1130368902)77:0.0118196096)82:0.0034834388)41:0.0017034105)13:0.0000020101)92:0.0017779779,EPI2539500|HA|A/Surat_Thani/P578/2023|EPI_ISL_17597837|A_/_H1N1:0.0106713166)93:0.0017305147,EPI2790045|HA|A/Perth/457/2023|EPI_ISL_18484957|A_/_H1N1:0.0070608747)22:0.0000027267,EPI2789956|HA|A/Victoria/2676/2023|EPI_ISL_18484927|A_/_H1N1:0.0052833368)8:0.0000025080,(EPI2790264|HA|A/Perth/407/2023|EPI_ISL_18485039|A_/_H1N1:0.0052798282,EPI2585385|HA|A/Darwin/53/2023|EPI_ISL_17775034|A_/_H1N1:0.0052693455)23:0.0000022763)7:0.0000021488,(EPI2794765|HA|A/England/233240349/2023|EPI_ISL_18516493|A_/_H1N1:0.0052600448,(EPI3006721|HA|A/Darwin/506/2023|EPI_ISL_18876502|A_/_H1N1:0.0070474926,EPI2698680|HA|A/Sydney/654/2023|EPI_ISL_18127007|A_/_H1N1:0.0035525817)76:0.0017276722)71:0.0000020617)80:0.0017541148,EPI2861187|HA|A/Victoria/3021/2023|EPI_ISL_18666914|A_/_H1N1:0.0052679264)90:0.0000020564,(EPI3226378|HA|A/Malaysia/IMR-RM509/2023|EPI_ISL_19065702|A_/_H1N1:0.0035266292,EPI2924196|HA|A/Navarra/2321/2023|EPI_ISL_18784477|A_/_H1N1:0.0070524185)96:0.0017641954);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -4464.955804
+Robinson-Foulds distance between ML tree and consensus tree: 44
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--EPI2759303|HA|A/Malaysia/TIDREC_KJA-AUFI030/2023|EPI_ISL_18317772|A_/_H1N1
+|
+|                                                     +--EPI2903666|HA|A/Jeonbuk/2476/2023|EPI_ISL_18744092|A_/_H1N1
+|                                                  +--| (99)
+|                                                  |  |                       +--EPI2903668|HA|A/Jeonnam/2178/2023|EPI_ISL_18744093|A_/_H1N1
+|                                                  |  |                    +--| (58)
+|                                                  |  |                    |  |  +--EPI3080538|HA|A/CastillaLaMancha/240417/2023|EPI_ISL_18942797|A_/_H1N1
+|                                                  |  |                    |  +--| (98)
+|                                                  |  |                    |     +--EPI3384396|HA|A/Michigan/UM-CL23-590632/2023|EPI_ISL_19207651|A_/_H1N1
+|                                                  |  |                 +--| (99)
+|                                                  |  |                 |  +--EPI3237019|HA|A/Los_Angeles_County/LACPHL-INF00095/2023|EPI_ISL_19075445|A_/_H1N1
+|                                                  |  |              +--| (61)
+|                                                  |  |              |  +--EPI2520231|HA|A/Ceuta/808/2023|EPI_ISL_17506002|A_/_H1N1
+|                                                  |  |           +--| (11)
+|                                                  |  |           |  +--EPI2737819|HA|A/Victoria/2211/2023|EPI_ISL_18242313|A_/_H1N1
+|                                                  |  |        +--| (3)
+|                                                  |  |        |  |  +--EPI2976788|HA|A/Tasmania/410/2023|EPI_ISL_18852949|A_/_H1N1
+|                                                  |  |        |  +--| (18)
+|                                                  |  |        |     +--EPI2448256|HA|A/Massachusetts/17/2023|EPI_ISL_17102872|A_/_H1N1
+|                                                  |  |     +--| (15)
+|                                                  |  |     |  |           +--EPI2903624|HA|A/Chungbuk/2333/2023|EPI_ISL_18744071|A_/_H1N1
+|                                                  |  |     |  |        +--| (25)
+|                                                  |  |     |  |        |  +--EPI3997728|HA|A/Massachusetts/BI_GH-16498/2023|EPI_ISL_19741082|A_/_H1N1
+|                                                  |  |     |  |     +--| (15)
+|                                                  |  |     |  |     |  |     +--EPI2881986|HA|A/Oman/CPHL_7236077/2023|EPI_ISL_18716431|A_/_H1N1
+|                                                  |  |     |  |     |  |  +--| (80)
+|                                                  |  |     |  |     |  |  |  +--EPI3997304|HA|A/Massachusetts/BI_GH-16154/2023|EPI_ISL_19741029|A_/_H1N1
+|                                                  |  |     |  |     |  +--| (54)
+|                                                  |  |     |  |     |     +--EPI2744125|HA|A/Ranong/P3102/2023|EPI_ISL_18246518|A_/_H1N1
+|                                                  |  |     |  |  +--| (91)
+|                                                  |  |     |  |  |  |        +--EPI3028603|HA|A/England/240200277/2023|EPI_ISL_18891570|A_/_H1N1
+|                                                  |  |     |  |  |  |     +--| (45)
+|                                                  |  |     |  |  |  |     |  +--EPI3121571|HA|A/Minnesota/ISC-1076/2023|EPI_ISL_18988543|A_/_H1N1
+|                                                  |  |     |  |  |  |  +--| (74)
+|                                                  |  |     |  |  |  |  |  +--EPI3065029|HA|A/Arizona/ASU106685/2023|EPI_ISL_18930215|A_/_H1N1
+|                                                  |  |     |  |  |  +--| (67)
+|                                                  |  |     |  |  |     |  +--EPI3276801|HA|A/Madrid/92324193656/2023|EPI_ISL_19131155|A_/_H1N1
+|                                                  |  |     |  |  |     +--| (67)
+|                                                  |  |     |  |  |        +--EPI3276651|HA|A/Madrid/1392324178654/2023|EPI_ISL_19131081|A_/_H1N1
+|                                                  |  |     |  +--| (7)
+|                                                  |  |     |     +--EPI2462648|HA|A/Colorado/18/2023|EPI_ISL_17212543|A_/_H1N1
+|                                                  |  |  +--| (35)
+|                                                  |  |  |  +--EPI2457310|HA|A/Nebraska/14113/2023|EPI_ISL_17189229|A_/_H1N1
+|                                                  |  +--| (96)
+|                                                  |     |              +--EPI2903642|HA|A/Gyeonggi/2000/2023|EPI_ISL_18744080|A_/_H1N1
+|                                                  |     |           +--| (23)
+|                                                  |     |           |  +--EPI3194858|HA|A/CHIBA/162/2023|EPI_ISL_19045755|A_/_H1N1
+|                                                  |     |        +--| (7)
+|                                                  |     |        |  |  +--EPI3094240|HA|A/Colorado/108/2023|EPI_ISL_18957378|A_/_H1N1
+|                                                  |     |        |  +--| (18)
+|                                                  |     |        |     +--EPI2999074|HA|A/Michigan/UM-L371630545/2023|EPI_ISL_18868902|A_/_H1N1
+|                                                  |     |     +--| (49)
+|                                                  |     |     |  |  +--EPI2868817|HA|A/HIROSHIMA/135/2023|EPI_ISL_18692906|A_/_H1N1
+|                                                  |     |     |  +--| (11)
+|                                                  |     |     |     +--EPI2842726|HA|A/Catalonia/NSVH199826468/2023|EPI_ISL_18652098|A_/_H1N1
+|                                                  |     |  +--| (88)
+|                                                  |     |  |  +--EPI3104691|HA|A/Madrid/HRYC-72348131/2023|EPI_ISL_18963453|A_/_H1N1
+|                                                  |     +--| (87)
+|                                                  |        +--EPI2895818|HA|A/Michigan/UM-L372229748/2023|EPI_ISL_18737804|A_/_H1N1
+|                                               +--| (96)
+|                                               |  +--EPI3181242|HA|A/ABUDHABI/UAE/0000700/2023|EPI_ISL_19031591|A_/_H1N1
+|                                            +--| (26)
+|                                            |  +----EPI3012555|HA|A/Baleares/2563/2023|EPI_ISL_18884818|A_/_H1N1
+|                                         +--| (13)
+|                                         |  |     +--EPI3782620|HA|A/ABUDHABI/UAE/0017196/2023|EPI_ISL_19660010|A_/_H1N1
+|                                         |  |  +--| (83)
+|                                         |  |  |  |     +--EPI2920493|HA|A/Galicia/21452225735/2023|EPI_ISL_18776508|A_/_H1N1
+|                                         |  |  |  |  +--| (99)
+|                                         |  |  |  |  |  +--EPI2994104|HA|A/Delaware/87/2023|EPI_ISL_18862842|A_/_H1N1
+|                                         |  |  |  +--| (63)
+|                                         |  |  |     +--EPI3112926|HA|A/Madrid/HRYC-12994000/2023|EPI_ISL_18980523|A_/_H1N1
+|                                         |  +--| (70)
+|                                         |     +--EPI3325914|HA|A/Andalucia/241428/2023|EPI_ISL_19159170|A_/_H1N1
+|                                      +--| (5)
+|                                      |  |        +--EPI3181903|HA|A/ABUDHABI/UAE/0015142/2023|EPI_ISL_19031922|A_/_H1N1
+|                                      |  |     +--| (14)
+|                                      |  |     |  |  +--EPI2616592|HA|A/Victoria/201/2023|EPI_ISL_17973504|A_/_H1N1
+|                                      |  |     |  +--| (99)
+|                                      |  |     |     |  +--EPI2611498|HA|A/Wellington/04/2023|EPI_ISL_17957628|A_/_H1N1
+|                                      |  |     |     +--| (53)
+|                                      |  |     |        +--EPI2507974|HA|A/Tuvalu/GX23057/2023|EPI_ISL_17445386|A_/_H1N1
+|                                      |  |  +--| (11)
+|                                      |  |  |  +--EPI3237152|HA|A/Los_Angeles_County/LACPHL-INF00281/2023|EPI_ISL_19075469|A_/_H1N1
+|                                      |  +--| (5)
+|                                      |     +--EPI2911885|HA|A/Michigan/UM-G43Q95P5/2023|EPI_ISL_18759340|A_/_H1N1
+|                                   +--| (12)
+|                                   |  |        +--EPI2904109|HA|A/Laos/F4161/2023|EPI_ISL_18744505|A_/_H1N1
+|                                   |  |     +--| (97)
+|                                   |  |     |  +--EPI3633772|HA|A/Laos/00819-1959/2023|EPI_ISL_19536574|A_/_H1N1
+|                                   |  |  +--| (20)
+|                                   |  |  |  +--EPI2441094|HA|A/Ceuta/350/2023|EPI_ISL_17095757|A_/_H1N1
+|                                   |  +--| (8)
+|                                   |     |     +--EPI2963804|HA|A/Singapore/GP13329/2023|EPI_ISL_18831313|A_/_H1N1
+|                                   |     |  +--| (14)
+|                                   |     |  |  +--EPI2801009|HA|A/Chanthaburi/P4630/2023|EPI_ISL_18540016|A_/_H1N1
+|                                   |     +--| (4)
+|                                   |        +--EPI2895698|HA|A/Michigan/UM-10054114004/2023|EPI_ISL_18737779|A_/_H1N1
+|                                +--| (6)
+|                                |  |  +--EPI3782201|HA|A/ABUDHABI/UAE/0015717/2023|EPI_ISL_19659360|A_/_H1N1
+|                                |  +--| (15)
+|                                |     +--EPI2884350|HA|A/Georgia/14276/2023|EPI_ISL_18720458|A_/_H1N1
+|                             +--| (2)
+|                             |  |        +--EPI3194850|HA|A/SHIGA/62/2023|EPI_ISL_19045754|A_/_H1N1
+|                             |  |     +--| (67)
+|                             |  |     |  +--EPI2398662|HA|A/Baleares/74/2023|EPI_ISL_16913871|A_/_H1N1
+|                             |  |  +--| (48)
+|                             |  |  |  +--EPI2519991|HA|A/CastillaLaMancha/793/2023|EPI_ISL_17505815|A_/_H1N1
+|                             |  +--| (7)
+|                             |     +--EPI2735199|HA|A/Gwangju/983/2023|EPI_ISL_18231896|A_/_H1N1
+|                          +--| (7)
+|                          |  |     +--EPI2734565|HA|A/Myanmar/I036/2023|EPI_ISL_18231482|A_/_H1N1
+|                          |  |  +--| (41)
+|                          |  |  |  |  +--EPI3782249|HA|A/ABUDHABI/UAE/0012892/2023|EPI_ISL_19659366|A_/_H1N1
+|                          |  |  |  +--| (58)
+|                          |  |  |     +--EPI2973211|HA|A/Michigan/UM-10054980807/2023|EPI_ISL_18851737|A_/_H1N1
+|                          |  +--| (7)
+|                          |     +--EPI2361784|HA|A/Catalonia/NSVH198265699/2023|EPI_ISL_16830774|A_/_H1N1
+|                       +--| (12)
+|                       |  |  +--EPI2759833|HA|A/Chiang_Rai/P3815/2023|EPI_ISL_18320338|A_/_H1N1
+|                       |  +--| (34)
+|                       |     |  +--EPI2793213|HA|A/Seoul/1471/2023|EPI_ISL_18506241|A_/_H1N1
+|                       |     +--| (63)
+|                       |        +--EPI3782084|HA|A/ABUDHABI/UAE/0014071/2023|EPI_ISL_19659345|A_/_H1N1
+|                    +--| (27)
+|                    |  +--EPI2471811|HA|A/Catalonia/NSAV198266241/2023|EPI_ISL_17256930|A_/_H1N1
+|                 +--| (54)
+|                 |  |        +--EPI2539436|HA|A/Chiang_Rai/P912/2023|EPI_ISL_17597829|A_/_H1N1
+|                 |  |     +--| (23)
+|                 |  |     |  +--EPI2468145|HA|A/TOKYO/SH01/2023|EPI_ISL_17244640|A_/_H1N1
+|                 |  |  +--| (88)
+|                 |  |  |  |  +--EPI2698780|HA|A/Brisbane/312/2023|EPI_ISL_18127041|A_/_H1N1
+|                 |  |  |  +--| (38)
+|                 |  |  |     +--EPI2571848|HA|A/California/52/2023|EPI_ISL_17699946|A_/_H1N1
+|                 |  +--| (46)
+|                 |     |  +--EPI2963298|HA|A/Singapore/KK1647/2023|EPI_ISL_18831069|A_/_H1N1
+|                 |     +--| (95)
+|                 |        +--EPI2495773|HA|A/Sweden/10/2023|EPI_ISL_17360195|A_/_H1N1
+|              +--| (63)
+|              |  |  +--EPI2793243|HA|A/Daejeon/1531/2023|EPI_ISL_18506252|A_/_H1N1
+|              |  +--| (41)
+|              |     |     +----EPI3447272|HA|A/Galicia/SCQ/318602/2023|EPI_ISL_19273341|A_/_H1N1
+|              |     |  +--| (81)
+|              |     |  |  +--EPI3193642|HA|A/Galicia/SCQ/295786/2023|EPI_ISL_19044478|A_/_H1N1
+|              |     +--| (82)
+|              |        |    +--EPI3447240|HA|A/Galicia/SCQ/306480/2023|EPI_ISL_19273337|A_/_H1N1
+|              |        +----| (77)
+|              |             +-------------------------------------------------EPI2923381|HA|A/Catalonia/NSAV198289092/2023|EPI_ISL_18782577|A_/_H1N1
+|           +--| (92)
+|           |  +---EPI2678866|HA|A/Laos/1952/2023|EPI_ISL_18091923|A_/_H1N1
+|        +--| (93)
+|        |  +---EPI2539500|HA|A/Surat_Thani/P578/2023|EPI_ISL_17597837|A_/_H1N1
+|     +--| (22)
+|     |  +--EPI2790045|HA|A/Perth/457/2023|EPI_ISL_18484957|A_/_H1N1
+|  +--| (80)
+|  |  |        +--EPI2794765|HA|A/England/233240349/2023|EPI_ISL_18516493|A_/_H1N1
+|  |  |     +--| (71)
+|  |  |     |  |  +--EPI3006721|HA|A/Darwin/506/2023|EPI_ISL_18876502|A_/_H1N1
+|  |  |     |  +--| (76)
+|  |  |     |     +--EPI2698680|HA|A/Sydney/654/2023|EPI_ISL_18127007|A_/_H1N1
+|  |  |  +--| (17)
+|  |  |  |  +--EPI2789956|HA|A/Victoria/2676/2023|EPI_ISL_18484927|A_/_H1N1
+|  |  +--| (8)
+|  |     |  +--EPI2790264|HA|A/Perth/407/2023|EPI_ISL_18485039|A_/_H1N1
+|  |     +--| (23)
+|  |        +--EPI2585385|HA|A/Darwin/53/2023|EPI_ISL_17775034|A_/_H1N1
++--| (90)
+|  +--EPI2861187|HA|A/Victoria/3021/2023|EPI_ISL_18666914|A_/_H1N1
+|
+|  +--EPI3226378|HA|A/Malaysia/IMR-RM509/2023|EPI_ISL_19065702|A_/_H1N1
++--| (96)
+   +--EPI2924196|HA|A/Navarra/2321/2023|EPI_ISL_18784477|A_/_H1N1
+
+
+Consensus tree in newick format: 
+
+(EPI2759303|HA|A/Malaysia/TIDREC_KJA-AUFI030/2023|EPI_ISL_18317772|A_/_H1N1:0.0053103036,((((((((((((((((((EPI2903666|HA|A/Jeonbuk/2476/2023|EPI_ISL_18744092|A_/_H1N1:0.0035059296,((((((((EPI2903668|HA|A/Jeonnam/2178/2023|EPI_ISL_18744093|A_/_H1N1:0.0052930814,(EPI3080538|HA|A/CastillaLaMancha/240417/2023|EPI_ISL_18942797|A_/_H1N1:0.0053061541,EPI3384396|HA|A/Michigan/UM-CL23-590632/2023|EPI_ISL_19207651|A_/_H1N1:0.0053064333)98:0.0034923499)58:0.0000027267,EPI3237019|HA|A/Los_Angeles_County/LACPHL-INF00095/2023|EPI_ISL_19075445|A_/_H1N1:0.0000027267)99:0.0017522751,EPI2520231|HA|A/Ceuta/808/2023|EPI_ISL_17506002|A_/_H1N1:0.0052659102)61:0.0000027267,EPI2737819|HA|A/Victoria/2211/2023|EPI_ISL_18242313|A_/_H1N1:0.0053148257)11:0.0000027267,(EPI2976788|HA|A/Tasmania/410/2023|EPI_ISL_18852949|A_/_H1N1:0.0070447012,EPI2448256|HA|A/Massachusetts/17/2023|EPI_ISL_17102872|A_/_H1N1:0.0052690037)18:0.0000027267)3:0.0000027267,((((EPI2903624|HA|A/Chungbuk/2333/2023|EPI_ISL_18744071|A_/_H1N1:0.0034948458,EPI3997728|HA|A/Massachusetts/BI_GH-16498/2023|EPI_ISL_19741082|A_/_H1N1:0.0088511137)25:0.0000027267,((EPI2881986|HA|A/Oman/CPHL_7236077/2023|EPI_ISL_18716431|A_/_H1N1:0.0052736153,EPI3997304|HA|A/Massachusetts/BI_GH-16154/2023|EPI_ISL_19741029|A_/_H1N1:0.0053026415)80:0.0017446122,EPI2744125|HA|A/Ranong/P3102/2023|EPI_ISL_18246518|A_/_H1N1:0.0089369627)54:0.0000027267)15:0.0000027267,(((EPI3028603|HA|A/England/240200277/2023|EPI_ISL_18891570|A_/_H1N1:0.0052681962,EPI3121571|HA|A/Minnesota/ISC-1076/2023|EPI_ISL_18988543|A_/_H1N1:0.0052766784)45:0.0000027267,EPI3065029|HA|A/Arizona/ASU106685/2023|EPI_ISL_18930215|A_/_H1N1:0.0052905829)74:0.0017476047,(EPI3276801|HA|A/Madrid/92324193656/2023|EPI_ISL_19131155|A_/_H1N1:0.0070726021,EPI3276651|HA|A/Madrid/1392324178654/2023|EPI_ISL_19131081|A_/_H1N1:0.0052638322)67:0.0035025158)67:0.0000027267)91:0.0017472666,EPI2462648|HA|A/Colorado/18/2023|EPI_ISL_17212543|A_/_H1N1:0.0052896976)7:0.0000027267)15:0.0000027267,EPI2457310|HA|A/Nebraska/14113/2023|EPI_ISL_17189229|A_/_H1N1:0.0052881633)35:0.0000027267,(((((EPI2903642|HA|A/Gyeonggi/2000/2023|EPI_ISL_18744080|A_/_H1N1:0.0052490911,EPI3194858|HA|A/CHIBA/162/2023|EPI_ISL_19045755|A_/_H1N1:0.0052568034)23:0.0000027267,(EPI3094240|HA|A/Colorado/108/2023|EPI_ISL_18957378|A_/_H1N1:0.0052466651,EPI2999074|HA|A/Michigan/UM-L371630545/2023|EPI_ISL_18868902|A_/_H1N1:0.0052564602)18:0.0000027267)7:0.0000027267,(EPI2868817|HA|A/HIROSHIMA/135/2023|EPI_ISL_18692906|A_/_H1N1:0.0052825784,EPI2842726|HA|A/Catalonia/NSVH199826468/2023|EPI_ISL_18652098|A_/_H1N1:0.0052756105)11:0.0000027267)49:0.0000027267,EPI3104691|HA|A/Madrid/HRYC-72348131/2023|EPI_ISL_18963453|A_/_H1N1:0.0052421902)88:0.0017444885,EPI2895818|HA|A/Michigan/UM-L372229748/2023|EPI_ISL_18737804|A_/_H1N1:0.0035185873)87:0.0017459143)96:0.0017476049)99:0.0052826562,EPI3181242|HA|A/ABUDHABI/UAE/0000700/2023|EPI_ISL_19031591|A_/_H1N1:0.0017682273)96:0.0052642051,EPI3012555|HA|A/Baleares/2563/2023|EPI_ISL_18884818|A_/_H1N1:0.0123800207)26:0.0000027267,((EPI3782620|HA|A/ABUDHABI/UAE/0017196/2023|EPI_ISL_19660010|A_/_H1N1:0.0071020805,((EPI2920493|HA|A/Galicia/21452225735/2023|EPI_ISL_18776508|A_/_H1N1:0.0035327988,EPI2994104|HA|A/Delaware/87/2023|EPI_ISL_18862842|A_/_H1N1:0.0071034337)99:0.0017462430,EPI3112926|HA|A/Madrid/HRYC-12994000/2023|EPI_ISL_18980523|A_/_H1N1:0.0053266708)63:0.0017134615)83:0.0035693346,EPI3325914|HA|A/Andalucia/241428/2023|EPI_ISL_19159170|A_/_H1N1:0.0035248939)70:0.0017565314)13:0.0000027267,(((EPI3181903|HA|A/ABUDHABI/UAE/0015142/2023|EPI_ISL_19031922|A_/_H1N1:0.0053165873,(EPI2616592|HA|A/Victoria/201/2023|EPI_ISL_17973504|A_/_H1N1:0.0052811787,(EPI2611498|HA|A/Wellington/04/2023|EPI_ISL_17957628|A_/_H1N1:0.0052480066,EPI2507974|HA|A/Tuvalu/GX23057/2023|EPI_ISL_17445386|A_/_H1N1:0.0052608037)53:0.0000027267)99:0.0052733996)14:0.0000027267,EPI3237152|HA|A/Los_Angeles_County/LACPHL-INF00281/2023|EPI_ISL_19075469|A_/_H1N1:0.0052778617)11:0.0000027267,EPI2911885|HA|A/Michigan/UM-G43Q95P5/2023|EPI_ISL_18759340|A_/_H1N1:0.0052769265)5:0.0000027267)5:0.0000027267,(((EPI2904109|HA|A/Laos/F4161/2023|EPI_ISL_18744505|A_/_H1N1:0.0035690788,EPI3633772|HA|A/Laos/00819-1959/2023|EPI_ISL_19536574|A_/_H1N1:0.0088918124)97:0.0016972725,EPI2441094|HA|A/Ceuta/350/2023|EPI_ISL_17095757|A_/_H1N1:0.0053074035)20:0.0000027267,((EPI2963804|HA|A/Singapore/GP13329/2023|EPI_ISL_18831313|A_/_H1N1:0.0052708297,EPI2801009|HA|A/Chanthaburi/P4630/2023|EPI_ISL_18540016|A_/_H1N1:0.0053106634)14:0.0000027267,EPI2895698|HA|A/Michigan/UM-10054114004/2023|EPI_ISL_18737779|A_/_H1N1:0.0070900539)4:0.0000027267)8:0.0000027267)12:0.0000027267,(EPI3782201|HA|A/ABUDHABI/UAE/0015717/2023|EPI_ISL_19659360|A_/_H1N1:0.0052870666,EPI2884350|HA|A/Georgia/14276/2023|EPI_ISL_18720458|A_/_H1N1:0.0053003894)15:0.0000027267)6:0.0000027267,(((EPI3194850|HA|A/SHIGA/62/2023|EPI_ISL_19045754|A_/_H1N1:0.0052795237,EPI2398662|HA|A/Baleares/74/2023|EPI_ISL_16913871|A_/_H1N1:0.0070399079)67:0.0000027267,EPI2519991|HA|A/CastillaLaMancha/793/2023|EPI_ISL_17505815|A_/_H1N1:0.0052785041)48:0.0017467167,EPI2735199|HA|A/Gwangju/983/2023|EPI_ISL_18231896|A_/_H1N1:0.0054298198)7:0.0000027267)2:0.0000027267,((EPI2734565|HA|A/Myanmar/I036/2023|EPI_ISL_18231482|A_/_H1N1:0.0053024659,(EPI3782249|HA|A/ABUDHABI/UAE/0012892/2023|EPI_ISL_19659366|A_/_H1N1:0.0071335814,EPI2973211|HA|A/Michigan/UM-10054980807/2023|EPI_ISL_18851737|A_/_H1N1:0.0071102445)58:0.0017614847)41:0.0000027267,EPI2361784|HA|A/Catalonia/NSVH198265699/2023|EPI_ISL_16830774|A_/_H1N1:0.0053065003)7:0.0000027267)7:0.0000027267,(EPI2759833|HA|A/Chiang_Rai/P3815/2023|EPI_ISL_18320338|A_/_H1N1:0.0052863242,(EPI2793213|HA|A/Seoul/1471/2023|EPI_ISL_18506241|A_/_H1N1:0.0070794252,EPI3782084|HA|A/ABUDHABI/UAE/0014071/2023|EPI_ISL_19659345|A_/_H1N1:0.0035233781)63:0.0017577103)34:0.0000027267)12:0.0000027267,EPI2471811|HA|A/Catalonia/NSAV198266241/2023|EPI_ISL_17256930|A_/_H1N1:0.0052899689)27:0.0000020343,(((EPI2539436|HA|A/Chiang_Rai/P912/2023|EPI_ISL_17597829|A_/_H1N1:0.0052845389,EPI2468145|HA|A/TOKYO/SH01/2023|EPI_ISL_17244640|A_/_H1N1:0.0052976177)23:0.0000027267,(EPI2698780|HA|A/Brisbane/312/2023|EPI_ISL_18127041|A_/_H1N1:0.0052823012,EPI2571848|HA|A/California/52/2023|EPI_ISL_17699946|A_/_H1N1:0.0071129032)38:0.0000027267)88:0.0017706505,(EPI2963298|HA|A/Singapore/KK1647/2023|EPI_ISL_18831069|A_/_H1N1:0.0053116900,EPI2495773|HA|A/Sweden/10/2023|EPI_ISL_17360195|A_/_H1N1:0.0053110400)95:0.0035257578)46:0.0017445166)54:0.0017584936,(EPI2793243|HA|A/Daejeon/1531/2023|EPI_ISL_18506252|A_/_H1N1:0.0071015616,((EPI3447272|HA|A/Galicia/SCQ/318602/2023|EPI_ISL_19273341|A_/_H1N1:0.0124188114,EPI3193642|HA|A/Galicia/SCQ/295786/2023|EPI_ISL_19044478|A_/_H1N1:0.0017579791)81:0.0055628452,(EPI3447240|HA|A/Galicia/SCQ/306480/2023|EPI_ISL_19273337|A_/_H1N1:0.0048468649,EPI2923381|HA|A/Catalonia/NSAV198289092/2023|EPI_ISL_18782577|A_/_H1N1:0.1130711018)77:0.0118210803)82:0.0034328871)41:0.0000027267)63:0.0017348429,EPI2678866|HA|A/Laos/1952/2023|EPI_ISL_18091923|A_/_H1N1:0.0091167749)92:0.0018009967,EPI2539500|HA|A/Surat_Thani/P578/2023|EPI_ISL_17597837|A_/_H1N1:0.0106743359)93:0.0017295280,EPI2790045|HA|A/Perth/457/2023|EPI_ISL_18484957|A_/_H1N1:0.0070618902)22:0.0000027267,(((EPI2794765|HA|A/England/233240349/2023|EPI_ISL_18516493|A_/_H1N1:0.0052605720,(EPI3006721|HA|A/Darwin/506/2023|EPI_ISL_18876502|A_/_H1N1:0.0070482374,EPI2698680|HA|A/Sydney/654/2023|EPI_ISL_18127007|A_/_H1N1:0.0035531479)76:0.0017273723)71:0.0000027267,EPI2789956|HA|A/Victoria/2676/2023|EPI_ISL_18484927|A_/_H1N1:0.0052839890)17:0.0000027267,(EPI2790264|HA|A/Perth/407/2023|EPI_ISL_18485039|A_/_H1N1:0.0052805204,EPI2585385|HA|A/Darwin/53/2023|EPI_ISL_17775034|A_/_H1N1:0.0052700122)23:0.0000027267)8:0.0000027267)80:0.0017535975,EPI2861187|HA|A/Victoria/3021/2023|EPI_ISL_18666914|A_/_H1N1:0.0052686143)90:0.0000027267,(EPI3226378|HA|A/Malaysia/IMR-RM509/2023|EPI_ISL_19065702|A_/_H1N1:0.0035271439,EPI2924196|HA|A/Navarra/2321/2023|EPI_ISL_18784477|A_/_H1N1:0.0070534335)96:0.0017638083);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_clustered/H1N1/trees/H1N1_2023.treefile -m "LG+G4{0.438963}" --length 567
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2023_aligned.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2023_aligned.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Nov 20 17:07:15 2025
+Total CPU time used: 2339.521591 seconds (0h:38m:59s)
+Total wall-clock time used: 149.2993695 seconds (0h:2m:29s)
+

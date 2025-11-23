@@ -1,0 +1,66 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    rtis-hpc-r09.uod.otago.ac.nz (AVX2, FMA3, 1006 GB RAM)
+Command: iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2013_aligned.fasta -m LG+G4 -te results/per_year_clustered/H1N1/trees/H1N1_2013.treefile -asr -pre results/per_year_clustered/H1N1/trees/H1N1_2013_asr -redo -quiet
+Seed:    278653 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Nov 22 10:55:11 2025
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file results/per_year_clustered/H1N1/alignments/H1N1_2013_aligned.fasta ... Fasta format detected
+Reading fasta file: done in 0.00015519 secs using 49.62% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000213901 secs using 49.56% CPU
+Alignment has 16 sequences with 566 columns, 79 distinct patterns
+17 parsimony-informative, 42 singleton sites, 507 constant sites
+                                                                     Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.15999e-06 secs using 38.76% CPU
+   1  EPI1604165|HA|A/Osaka/UT-A01/2013|EPI_ISL_393910|A_/_H1N1              0.00%    passed    100.00%
+   2  EPI540797|HA|A/MACAU/610435/2013|EPI_ISL_165924|A_/_H1N1               0.00%    passed    100.00%
+   3  EPI544626|HA|A/Singapore/CGH001/2013|EPI_ISL_167043|A_/_H1N1           0.00%    passed    100.00%
+   4  EPI439228|HA|A/Surat_Thani/16/2013|EPI_ISL_138660|A_/_H1N1             0.00%    passed    100.00%
+   5  EPI445794|HA|A/Kherlen/658/2013|EPI_ISL_140301|A_/_H1N1                0.00%    passed    100.00%
+   6  EPI567296|HA|A/Philippines/20/2013|EPI_ISL_173214|A_/_H1N1             0.00%    passed    100.00%
+   7  EPI450490|HA|A/MACAU/600062/2013|EPI_ISL_141597|A_/_H1N1               0.00%    passed    100.00%
+   8  EPI465498|HA|A/Vietnam/3029/2013|EPI_ISL_145106|A_/_H1N1               0.00%    passed    100.00%
+   9  EPI466559|HA|A/Jordan/30021/2013|EPI_ISL_145413|A_/_H1N1               0.00%    passed    100.00%
+  10  EPI477014|HA|A/Fukuoka-C/8/2013|EPI_ISL_148586|A_/_H1N1                0.00%    passed    100.00%
+  11  EPI490886|HA|A/Vietnam/CD13-114/2013|EPI_ISL_151419|A_/_H1N1           0.00%    passed    100.00%
+  12  EPI419975|HA|A/Malmoe/1/2013|EPI_ISL_135096|A_/_H1N1                   0.00%    passed    100.00%
+  13  EPI2184453|HA|A/Catalonia/NSVH206354/2013|EPI_ISL_15083856|A_/_H1N1    0.00%    passed    100.00%
+  14  EPI460690|HA|A/Salamanca/43/2013|EPI_ISL_143634|A_/_H1N1               0.00%    passed    100.00%
+  15  EPI442699|HA|A/Colorado/03/2013|EPI_ISL_139492|A_/_H1N1                0.00%    passed    100.00%
+  16  EPI465079|HA|A/Kentucky/06/2013|EPI_ISL_144959|A_/_H1N1                0.00%    passed    100.00%
+****  TOTAL                                                                  0.00%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading input tree file results/per_year_clustered/H1N1/trees/H1N1_2013.treefile ...
+
+NOTE: 1 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2221.320
+2. Current log-likelihood: -2219.669
+Optimal log-likelihood: -2219.669
+Gamma shape alpha: 0.268
+Parameters optimization took 2 rounds (0.028 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -2219.669
+Ancestral state probabilities printed to results/per_year_clustered/H1N1/trees/H1N1_2013_asr.state
+Total tree length: 0.126
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 0.084 sec (0h:0m:0s)
+Total wall-clock time used: 0.143 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/per_year_clustered/H1N1/trees/H1N1_2013_asr.iqtree
+  Maximum-likelihood tree:       results/per_year_clustered/H1N1/trees/H1N1_2013_asr.treefile
+  Ancestral state:               results/per_year_clustered/H1N1/trees/H1N1_2013_asr.state
+  Screen log file:               results/per_year_clustered/H1N1/trees/H1N1_2013_asr.log
+
+Date and Time: Sat Nov 22 10:55:11 2025

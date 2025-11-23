@@ -1,0 +1,292 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_clustered/H1N1/alignments/H1N1_2019_with_designs.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 176676
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 45 sequences with 566 amino-acid sites
+Number of constant sites: 447 (= 78.9753% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 447 (= 78.9753% of all sites)
+Number of parsimony informative sites: 42
+Number of distinct site patterns: 138
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.3130
+
+ Category  Relative_rate  Proportion
+  1         0.0064         0.2500
+  2         0.1146         0.2500
+  3         0.6170         0.2500
+  4         3.2620         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -3118.2147 (s.e. 123.7535)
+Unconstrained log-likelihood (without tree): -2155.2601
+Number of free parameters (#branches + #model parameters): 86
+Akaike information criterion (AIC) score: 6408.4293
+Corrected Akaike information criterion (AICc) score: 6439.6694
+Bayesian information criterion (BIC) score: 6781.5484
+
+Total tree length (sum of branch lengths): 0.3265
+Sum of internal branch lengths: 0.0645 (19.7620% of tree length)
+
+WARNING: 23 near-zero internal branches (<0.0018) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI1757684|HA|A/Laos/2794/2019|EPI_ISL_491747|A_/_H1N1' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**EPI1757684|HA|A/Laos/2794/2019|EPI_ISL_491747|A_/_H1N1
+|
+|                                                          +-----EPI1604762|HA|A/Lebanon/323/2019|EPI_ISL_394074|A_/_H1N1
+|                                                       +**| (13)
+|                                                       |  +------------EPI1370341|HA|A/Catalonia/NSVH100970317/2019|EPI_ISL_341417|A_/_H1N1
+|                                                    +**| (28)
+|                                                    |  |  +---------EPI1478325|HA|A/Kyrgyzstan_Osh/6/2019|EPI_ISL_361909|A_/_H1N1
+|                                                    |  +--| (97)
+|                                                    |     |  +---------EPI1396930|HA|A/Arkansas/17/2019|EPI_ISL_348098|A_/_H1N1
+|                                                    |     +**| (58)
+|                                                    |        +**H1N1_2019_Ancestral_Aligned_Node14
+|                                          +---------| (98)
+|                                          |         +----------------EPI1559650|HA|A/Michigan/295/2019|EPI_ISL_380418|A_/_H1N1
+|                                       +**| (28)
+|                                       |  +-------------EPI1443858|HA|A/Catalonia/NSVH100983893/2019|EPI_ISL_356453|A_/_H1N1
+|                                    +--| (74)
+|                                    |  |         +---------EPI1606793|HA|A/Vietnam/018/2019|EPI_ISL_394988|A_/_H1N1
+|                                    |  +---------| (99)
+|                                    |            +---------EPI1388093|HA|A/Singapore/NTF0009/2019|EPI_ISL_346413|A_/_H1N1
+|                                 +**| (47)
+|                                 |  +-----------------------EPI1491298|HA|A/England/204/2019|EPI_ISL_364688|A_/_H1N1
+|                              +**| (47)
+|                              |  |      +-------------EPI1359897|HA|A/Barry/6142/2019|EPI_ISL_339323|A_/_H1N1
+|                              |  +------| (98)
+|                              |         |  +---------EPI1435941|HA|A/Sydney/41/2019|EPI_ISL_354709|A_/_H1N1
+|                              |         +**| (44)
+|                              |            +-------------EPI1479960|HA|A/Montana/36/2019|EPI_ISL_362275|A_/_H1N1
+|                        +-----| (93)
+|                        |     |                      +--EPI1608337|HA|A/IBARAKI/93/2019|EPI_ISL_395217|A_/_H1N1
+|                        |     |                +-----| (85)
+|                        |     |                |     |  +----------------EPI1647174|HA|A/Canberra/337/2019|EPI_ISL_401775|A_/_H1N1
+|                        |     |                |     +**| (38)
+|                        |     |                |        +----------------EPI1642106|HA|A/California/208/2019|EPI_ISL_400899|A_/_H1N1
+|                        |     |         +------| (92)
+|                        |     |         |      +---------EPI1480139|HA|A/Iowa/12/2019|EPI_ISL_362298|A_/_H1N1
+|                        |     |  +------| (92)
+|                        |     |  |      |  +---------EPI1369937|HA|A/England/27/2019|EPI_ISL_341280|A_/_H1N1
+|                        |     |  |      +**| (78)
+|                        |     |  |         +------------EPI1487896|HA|A/Connecticut/33/2019|EPI_ISL_364053|A_/_H1N1
+|                        |     +--| (66)
+|                        |        |                   +------------EPI1610319|HA|A/SAITAMA/173/2019|EPI_ISL_395546|A_/_H1N1
+|                        |        |  +----------------| (99)
+|                        |        |  |                +---------EPI1381335|HA|A/KANAGAWA/AC1823/2019|EPI_ISL_344515|A_/_H1N1
+|                        |        +**| (87)
+|                        |           +-----------------EPI1377837|HA|A/Karaganda_NRL/344/2019|EPI_ISL_343414|A_/_H1N1
+|                     +**| (38)
+|                     |  +---------EPI1508590|HA|A/Novi_Sad/4336/2019|EPI_ISL_368276|A_/_H1N1
+|                  +--| (57)
+|                  |  +**H1N1_2019_Consensus_Aligned
+|               +**| (12)
+|               |  |  +---------EPI1663791|HA|A/Laos/2879/2019|EPI_ISL_404786|A_/_H1N1
+|               |  +--| (84)
+|               |     +---------EPI1584500|HA|A/Malaysia/RP2118/2019|EPI_ISL_389527|A_/_H1N1
+|            +**| (6)
+|            |  |        +---------EPI1605036|HA|A/OKINAWA/64/2019|EPI_ISL_394196|A_/_H1N1
+|            |  |     +**| (53)
+|            |  |     |  +-------------EPI1378056|HA|A/Sweden/27/2019|EPI_ISL_343451|A_/_H1N1
+|            |  |  +**| (49)
+|            |  |  |  |  +------EPI1506986|HA|A/Ukraine/8294/2019|EPI_ISL_368008|A_/_H1N1
+|            |  |  |  +--| (56)
+|            |  |  |     +-------------EPI1647539|HA|A/South_Australia/477/2019|EPI_ISL_401895|A_/_H1N1
+|            |  +**| (10)
+|            |     |                +---------EPI1672598|HA|A/Philippines/34/2019|EPI_ISL_406964|A_/_H1N1
+|            |     |         +------| (97)
+|            |     |         |      +---------EPI1636779|HA|A/California/206/2019|EPI_ISL_400059|A_/_H1N1
+|            |     |      +**| (68)
+|            |     |      |  +-------------EPI1797977|HA|A/Malaysia/RP_0718/2019|EPI_ISL_514735|A_/_H1N1
+|            |     +------| (98)
+|            |            +-------------EPI1679823|HA|A/KANAGAWA/AC1920/2019|EPI_ISL_408542|A_/_H1N1
+|         +**| (1)
+|         |  |        +----------------EPI1763653|HA|A/Konya/820/2019|EPI_ISL_498330|A_/_H1N1
+|         |  |     +**| (17)
+|         |  |     |  +-------------EPI1506890|HA|A/Linkoping/1/2019|EPI_ISL_367960|A_/_H1N1
+|         |  |  +**| (10)
+|         |  |  |  +-------------EPI1484058|HA|A/South_Australia/297/2019|EPI_ISL_363162|A_/_H1N1
+|         |  +**| (13)
+|         |     |  +-------------EPI1646278|HA|A/Singapore/GP2220/2019|EPI_ISL_401475|A_/_H1N1
+|         |     +--| (87)
+|         |        +---------EPI1852427|HA|A/Vietnam/Vnhcm-Gs394/2019|EPI_ISL_1296413|A_/_H1N1
+|      +**| (15)
+|      |  |  +-------------EPI1566682|HA|A/Myanmar/19M064/2019|EPI_ISL_381708|A_/_H1N1
+|      |  +**| (26)
+|      |     +-------------EPI1594066|HA|A/Victoria/1001/2019|EPI_ISL_391483|A_/_H1N1
++------| (96)
+|      +-------------EPI1491300|HA|A/England/146/2019|EPI_ISL_364689|A_/_H1N1
+|
++**H1N1_2019_Medoid_Aligned|EPI1757684|HA|A/Laos/2794/2019|EPI_ISL_491747|A_/_H1N1
+
+Tree in newick format:
+
+(EPI1757684|HA|A/Laos/2794/2019|EPI_ISL_491747|A_/_H1N1:0.0000010000,(((((((((((((((EPI1604762|HA|A/Lebanon/323/2019|EPI_ISL_394074|A_/_H1N1:0.0035581175,EPI1370341|HA|A/Catalonia/NSVH100970317/2019|EPI_ISL_341417|A_/_H1N1:0.0071173277)13:0.0000010000,(EPI1478325|HA|A/Kyrgyzstan_Osh/6/2019|EPI_ISL_361909|A_/_H1N1:0.0053451070,(EPI1396930|HA|A/Arkansas/17/2019|EPI_ISL_348098|A_/_H1N1:0.0053469763,H1N1_2019_Ancestral_Aligned_Node14:0.0000010000)58:0.0000010000)97:0.0017704969)28:0.0000010000,EPI1559650|HA|A/Michigan/295/2019|EPI_ISL_380418|A_/_H1N1:0.0089749506)98:0.0053357028,EPI1443858|HA|A/Catalonia/NSVH100983893/2019|EPI_ISL_356453|A_/_H1N1:0.0071402635)28:0.0000010000,(EPI1606793|HA|A/Vietnam/018/2019|EPI_ISL_394988|A_/_H1N1:0.0052110734,EPI1388093|HA|A/Singapore/NTF0009/2019|EPI_ISL_346413|A_/_H1N1:0.0054493880)99:0.0053121929)74:0.0017742492,EPI1491298|HA|A/England/204/2019|EPI_ISL_364688|A_/_H1N1:0.0126255723)47:0.0000010000,(EPI1359897|HA|A/Barry/6142/2019|EPI_ISL_339323|A_/_H1N1:0.0071670512,(EPI1435941|HA|A/Sydney/41/2019|EPI_ISL_354709|A_/_H1N1:0.0053682949,EPI1479960|HA|A/Montana/36/2019|EPI_ISL_362275|A_/_H1N1:0.0071683384)44:0.0000010000)98:0.0035849471)47:0.0000010000,((((EPI1608337|HA|A/IBARAKI/93/2019|EPI_ISL_395217|A_/_H1N1:0.0017697032,(EPI1647174|HA|A/Canberra/337/2019|EPI_ISL_401775|A_/_H1N1:0.0091115751,EPI1642106|HA|A/California/208/2019|EPI_ISL_400899|A_/_H1N1:0.0088962662)38:0.0000010000)85:0.0035605879,EPI1480139|HA|A/Iowa/12/2019|EPI_ISL_362298|A_/_H1N1:0.0053926863)92:0.0035999401,(EPI1369937|HA|A/England/27/2019|EPI_ISL_341280|A_/_H1N1:0.0054369919,EPI1487896|HA|A/Connecticut/33/2019|EPI_ISL_364053|A_/_H1N1:0.0068736216)78:0.0002908038)92:0.0035755982,((EPI1610319|HA|A/SAITAMA/173/2019|EPI_ISL_395546|A_/_H1N1:0.0070749662,EPI1381335|HA|A/KANAGAWA/AC1823/2019|EPI_ISL_344515|A_/_H1N1:0.0054408476)99:0.0089963872,EPI1377837|HA|A/Karaganda_NRL/344/2019|EPI_ISL_343414|A_/_H1N1:0.0094167632)87:0.0017287709)66:0.0017789597)93:0.0035574994,EPI1508590|HA|A/Novi_Sad/4336/2019|EPI_ISL_368276|A_/_H1N1:0.0053597832)38:0.0000010000,H1N1_2019_Consensus_Aligned:0.0000010000)57:0.0017865990,(EPI1663791|HA|A/Laos/2879/2019|EPI_ISL_404786|A_/_H1N1:0.0054013617,EPI1584500|HA|A/Malaysia/RP2118/2019|EPI_ISL_389527|A_/_H1N1:0.0053896099)84:0.0017696436)12:0.0000010000,(((EPI1605036|HA|A/OKINAWA/64/2019|EPI_ISL_394196|A_/_H1N1:0.0054139389,EPI1378056|HA|A/Sweden/27/2019|EPI_ISL_343451|A_/_H1N1:0.0072445153)53:0.0000024627,(EPI1506986|HA|A/Ukraine/8294/2019|EPI_ISL_368008|A_/_H1N1:0.0035998362,EPI1647539|HA|A/South_Australia/477/2019|EPI_ISL_401895|A_/_H1N1:0.0071341601)56:0.0017965356)49:0.0017400591,(((EPI1672598|HA|A/Philippines/34/2019|EPI_ISL_406964|A_/_H1N1:0.0053939587,EPI1636779|HA|A/California/206/2019|EPI_ISL_400059|A_/_H1N1:0.0053819999)97:0.0035872971,EPI1797977|HA|A/Malaysia/RP_0718/2019|EPI_ISL_514735|A_/_H1N1:0.0071884976)68:0.0000010000,EPI1679823|HA|A/KANAGAWA/AC1920/2019|EPI_ISL_408542|A_/_H1N1:0.0071461764)98:0.0035878466)10:0.0000010000)6:0.0000010000,(((EPI1763653|HA|A/Konya/820/2019|EPI_ISL_498330|A_/_H1N1:0.0090008359,EPI1506890|HA|A/Linkoping/1/2019|EPI_ISL_367960|A_/_H1N1:0.0071489945)17:0.0000010000,EPI1484058|HA|A/South_Australia/297/2019|EPI_ISL_363162|A_/_H1N1:0.0072255888)10:0.0000010000,(EPI1646278|HA|A/Singapore/GP2220/2019|EPI_ISL_401475|A_/_H1N1:0.0071745298,EPI1852427|HA|A/Vietnam/Vnhcm-Gs394/2019|EPI_ISL_1296413|A_/_H1N1:0.0053464617)87:0.0017918875)13:0.0000010000)1:0.0000010000,(EPI1566682|HA|A/Myanmar/19M064/2019|EPI_ISL_381708|A_/_H1N1:0.0071768714,EPI1594066|HA|A/Victoria/1001/2019|EPI_ISL_391483|A_/_H1N1:0.0071400576)26:0.0000010000)15:0.0000010000,EPI1491300|HA|A/England/146/2019|EPI_ISL_364689|A_/_H1N1:0.0071833972)96:0.0035665251,H1N1_2019_Medoid_Aligned|EPI1757684|HA|A/Laos/2794/2019|EPI_ISL_491747|A_/_H1N1:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -3118.229402
+Robinson-Foulds distance between ML tree and consensus tree: 17
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++**EPI1757684|HA|A/Laos/2794/2019|EPI_ISL_491747|A_/_H1N1
+|
+|                                                 +-----EPI1604762|HA|A/Lebanon/323/2019|EPI_ISL_394074|A_/_H1N1
+|                                              +--| (28)
+|                                              |  |     +---------EPI1478325|HA|A/Kyrgyzstan_Osh/6/2019|EPI_ISL_361909|A_/_H1N1
+|                                              |  |  +--| (97)
+|                                              |  |  |  |  +---------EPI1396930|HA|A/Arkansas/17/2019|EPI_ISL_348098|A_/_H1N1
+|                                              |  |  |  +--| (58)
+|                                              |  |  |     +--H1N1_2019_Ancestral_Aligned_Node14
+|                                              |  +--| (31)
+|                                              |     +------------EPI1370341|HA|A/Catalonia/NSVH100970317/2019|EPI_ISL_341417|A_/_H1N1
+|                                    +---------| (98)
+|                                    |         +----------------EPI1559650|HA|A/Michigan/295/2019|EPI_ISL_380418|A_/_H1N1
+|                                 +--| (74)
+|                                 |  |            +---------EPI1606793|HA|A/Vietnam/018/2019|EPI_ISL_394988|A_/_H1N1
+|                                 |  |  +---------| (99)
+|                                 |  |  |         +---------EPI1388093|HA|A/Singapore/NTF0009/2019|EPI_ISL_346413|A_/_H1N1
+|                                 |  +--| (36)
+|                                 |     +-------------EPI1443858|HA|A/Catalonia/NSVH100983893/2019|EPI_ISL_356453|A_/_H1N1
+|                              +--| (47)
+|                              |  +-----------------------EPI1491298|HA|A/England/204/2019|EPI_ISL_364688|A_/_H1N1
+|                           +--| (47)
+|                           |  |      +-------------EPI1359897|HA|A/Barry/6142/2019|EPI_ISL_339323|A_/_H1N1
+|                           |  +------| (98)
+|                           |         |  +---------EPI1435941|HA|A/Sydney/41/2019|EPI_ISL_354709|A_/_H1N1
+|                           |         +--| (44)
+|                           |            +-------------EPI1479960|HA|A/Montana/36/2019|EPI_ISL_362275|A_/_H1N1
+|                     +-----| (93)
+|                     |     |                      +--EPI1608337|HA|A/IBARAKI/93/2019|EPI_ISL_395217|A_/_H1N1
+|                     |     |                +-----| (85)
+|                     |     |                |     |  +----------------EPI1647174|HA|A/Canberra/337/2019|EPI_ISL_401775|A_/_H1N1
+|                     |     |                |     +--| (38)
+|                     |     |                |        +----------------EPI1642106|HA|A/California/208/2019|EPI_ISL_400899|A_/_H1N1
+|                     |     |         +------| (92)
+|                     |     |         |      +---------EPI1480139|HA|A/Iowa/12/2019|EPI_ISL_362298|A_/_H1N1
+|                     |     |  +------| (92)
+|                     |     |  |      |  +---------EPI1369937|HA|A/England/27/2019|EPI_ISL_341280|A_/_H1N1
+|                     |     |  |      +--| (78)
+|                     |     |  |         +------------EPI1487896|HA|A/Connecticut/33/2019|EPI_ISL_364053|A_/_H1N1
+|                     |     +--| (66)
+|                     |        |                   +------------EPI1610319|HA|A/SAITAMA/173/2019|EPI_ISL_395546|A_/_H1N1
+|                     |        |  +----------------| (99)
+|                     |        |  |                +---------EPI1381335|HA|A/KANAGAWA/AC1823/2019|EPI_ISL_344515|A_/_H1N1
+|                     |        +--| (87)
+|                     |           +-----------------EPI1377837|HA|A/Karaganda_NRL/344/2019|EPI_ISL_343414|A_/_H1N1
+|                  +--| (38)
+|                  |  +--H1N1_2019_Consensus_Aligned
+|               +--| (57)
+|               |  +---------EPI1508590|HA|A/Novi_Sad/4336/2019|EPI_ISL_368276|A_/_H1N1
+|            +--| (19)
+|            |  +-------------EPI1506890|HA|A/Linkoping/1/2019|EPI_ISL_367960|A_/_H1N1
+|         +--| (15)
+|         |  |        +---------EPI1605036|HA|A/OKINAWA/64/2019|EPI_ISL_394196|A_/_H1N1
+|         |  |     +--| (53)
+|         |  |     |  +-------------EPI1378056|HA|A/Sweden/27/2019|EPI_ISL_343451|A_/_H1N1
+|         |  |  +--| (49)
+|         |  |  |  |  +------EPI1506986|HA|A/Ukraine/8294/2019|EPI_ISL_368008|A_/_H1N1
+|         |  |  |  +--| (56)
+|         |  |  |     +-------------EPI1647539|HA|A/South_Australia/477/2019|EPI_ISL_401895|A_/_H1N1
+|         |  +--| (10)
+|         |  |  +-------------EPI1484058|HA|A/South_Australia/297/2019|EPI_ISL_363162|A_/_H1N1
+|         |  |
+|         |  |  +----------------EPI1763653|HA|A/Konya/820/2019|EPI_ISL_498330|A_/_H1N1
+|         |  +--| (16)
+|         |  |  |                +---------EPI1672598|HA|A/Philippines/34/2019|EPI_ISL_406964|A_/_H1N1
+|         |  |  |         +------| (97)
+|         |  |  |         |      +---------EPI1636779|HA|A/California/206/2019|EPI_ISL_400059|A_/_H1N1
+|         |  |  |      +--| (68)
+|         |  |  |      |  +-------------EPI1797977|HA|A/Malaysia/RP_0718/2019|EPI_ISL_514735|A_/_H1N1
+|         |  |  +------| (98)
+|         |  |         +-------------EPI1679823|HA|A/KANAGAWA/AC1920/2019|EPI_ISL_408542|A_/_H1N1
+|         |  |
+|         |  |     +-------------EPI1646278|HA|A/Singapore/GP2220/2019|EPI_ISL_401475|A_/_H1N1
+|         |  |  +--| (87)
+|         |  |  |  +---------EPI1852427|HA|A/Vietnam/Vnhcm-Gs394/2019|EPI_ISL_1296413|A_/_H1N1
+|         |  +--| (8)
+|         |  |  |  +-------------EPI1566682|HA|A/Myanmar/19M064/2019|EPI_ISL_381708|A_/_H1N1
+|         |  |  +--| (26)
+|         |  |     +-------------EPI1594066|HA|A/Victoria/1001/2019|EPI_ISL_391483|A_/_H1N1
+|         |  |
+|         |  |  +---------EPI1663791|HA|A/Laos/2879/2019|EPI_ISL_404786|A_/_H1N1
+|         |  +--| (84)
+|         |     +---------EPI1584500|HA|A/Malaysia/RP2118/2019|EPI_ISL_389527|A_/_H1N1
+|  +------| (96)
+|  |      +-------------EPI1491300|HA|A/England/146/2019|EPI_ISL_364689|A_/_H1N1
++--|
+|  +--H1N1_2019_Medoid_Aligned|EPI1757684|HA|A/Laos/2794/2019|EPI_ISL_491747|A_/_H1N1
+|
++**H1N1_2019_COBRA_Aligned
+
+
+Consensus tree in newick format: 
+
+(EPI1757684|HA|A/Laos/2794/2019|EPI_ISL_491747|A_/_H1N1:0.0000000000,((((((((((((EPI1604762|HA|A/Lebanon/323/2019|EPI_ISL_394074|A_/_H1N1:0.0035566216,((EPI1478325|HA|A/Kyrgyzstan_Osh/6/2019|EPI_ISL_361909|A_/_H1N1:0.0053443383,(EPI1396930|HA|A/Arkansas/17/2019|EPI_ISL_348098|A_/_H1N1:0.0053462069,H1N1_2019_Ancestral_Aligned_Node14:0.0000025259)58:0.0000025259)97:0.0017698145,EPI1370341|HA|A/Catalonia/NSVH100970317/2019|EPI_ISL_341417|A_/_H1N1:0.0071160949)31:0.0000025259)28:0.0000025259,EPI1559650|HA|A/Michigan/295/2019|EPI_ISL_380418|A_/_H1N1:0.0089736887)98:0.0053349593,((EPI1606793|HA|A/Vietnam/018/2019|EPI_ISL_394988|A_/_H1N1:0.0052101949,EPI1388093|HA|A/Singapore/NTF0009/2019|EPI_ISL_346413|A_/_H1N1:0.0054484712)99:0.0053114600,EPI1443858|HA|A/Catalonia/NSVH100983893/2019|EPI_ISL_356453|A_/_H1N1:0.0071393159)36:0.0000025259)74:0.0017741209,EPI1491298|HA|A/England/204/2019|EPI_ISL_364688|A_/_H1N1:0.0126234999)47:0.0000025259,(EPI1359897|HA|A/Barry/6142/2019|EPI_ISL_339323|A_/_H1N1:0.0071661736,(EPI1435941|HA|A/Sydney/41/2019|EPI_ISL_354709|A_/_H1N1:0.0053676755,EPI1479960|HA|A/Montana/36/2019|EPI_ISL_362275|A_/_H1N1:0.0071675110)44:0.0000025259)98:0.0035844859)47:0.0000025259,((((EPI1608337|HA|A/IBARAKI/93/2019|EPI_ISL_395217|A_/_H1N1:0.0017691067,(EPI1647174|HA|A/Canberra/337/2019|EPI_ISL_401775|A_/_H1N1:0.0091108653,EPI1642106|HA|A/California/208/2019|EPI_ISL_400899|A_/_H1N1:0.0088955454)38:0.0000025259)85:0.0035600378,EPI1480139|HA|A/Iowa/12/2019|EPI_ISL_362298|A_/_H1N1:0.0053918711)92:0.0035993829,(EPI1369937|HA|A/England/27/2019|EPI_ISL_341280|A_/_H1N1:0.0054361866,EPI1487896|HA|A/Connecticut/33/2019|EPI_ISL_364053|A_/_H1N1:0.0068731032)78:0.0002902027)92:0.0035747778,((EPI1610319|HA|A/SAITAMA/173/2019|EPI_ISL_395546|A_/_H1N1:0.0070738300,EPI1381335|HA|A/KANAGAWA/AC1823/2019|EPI_ISL_344515|A_/_H1N1:0.0054400059)99:0.0089950014,EPI1377837|HA|A/Karaganda_NRL/344/2019|EPI_ISL_343414|A_/_H1N1:0.0094154206)87:0.0017280189)66:0.0017789041)93:0.0035566802,H1N1_2019_Consensus_Aligned:0.0000025259)38:0.0000025259,EPI1508590|HA|A/Novi_Sad/4336/2019|EPI_ISL_368276|A_/_H1N1:0.0053590114)57:0.0017859560,EPI1506890|HA|A/Linkoping/1/2019|EPI_ISL_367960|A_/_H1N1:0.0071487623)19:0.0000025259,(((EPI1605036|HA|A/OKINAWA/64/2019|EPI_ISL_394196|A_/_H1N1:0.0054146271,EPI1378056|HA|A/Sweden/27/2019|EPI_ISL_343451|A_/_H1N1:0.0072441543)53:0.0000026956,(EPI1506986|HA|A/Ukraine/8294/2019|EPI_ISL_368008|A_/_H1N1:0.0036012792,EPI1647539|HA|A/South_Australia/477/2019|EPI_ISL_401895|A_/_H1N1:0.0071336358)56:0.0017961832)49:0.0017400656,EPI1484058|HA|A/South_Australia/297/2019|EPI_ISL_363162|A_/_H1N1:0.0072257059)10:0.0000025259,(EPI1763653|HA|A/Konya/820/2019|EPI_ISL_498330|A_/_H1N1:0.0090002602,(((EPI1672598|HA|A/Philippines/34/2019|EPI_ISL_406964|A_/_H1N1:0.0053927442,EPI1636779|HA|A/California/206/2019|EPI_ISL_400059|A_/_H1N1:0.0053807831)97:0.0035877320,EPI1797977|HA|A/Malaysia/RP_0718/2019|EPI_ISL_514735|A_/_H1N1:0.0071880764)68:0.0000025259,EPI1679823|HA|A/KANAGAWA/AC1920/2019|EPI_ISL_408542|A_/_H1N1:0.0071458047)98:0.0035877040)16:0.0000025259,((EPI1646278|HA|A/Singapore/GP2220/2019|EPI_ISL_401475|A_/_H1N1:0.0071736382,EPI1852427|HA|A/Vietnam/Vnhcm-Gs394/2019|EPI_ISL_1296413|A_/_H1N1:0.0053465024)87:0.0017909593,(EPI1566682|HA|A/Myanmar/19M064/2019|EPI_ISL_381708|A_/_H1N1:0.0071766109,EPI1594066|HA|A/Victoria/1001/2019|EPI_ISL_391483|A_/_H1N1:0.0071397540)26:0.0000025259)8:0.0000025259,(EPI1663791|HA|A/Laos/2879/2019|EPI_ISL_404786|A_/_H1N1:0.0054006260,EPI1584500|HA|A/Malaysia/RP2118/2019|EPI_ISL_389527|A_/_H1N1:0.0053888853)84:0.0017688782)15:0.0000025259,EPI1491300|HA|A/England/146/2019|EPI_ISL_364689|A_/_H1N1:0.0071831437)96:0.0035663783,H1N1_2019_Medoid_Aligned|EPI1757684|HA|A/Laos/2794/2019|EPI_ISL_491747|A_/_H1N1:0.0000025259):0.0000025259,H1N1_2019_COBRA_Aligned:0.0000000000);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_clustered/H1N1/trees/H1N1_2019_with_designs.treefile -m "LG+G4{0.312986}" --length 566
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2019_with_designs.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2019_with_designs.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 22 10:58:56 2025
+Total CPU time used: 111.407723 seconds (0h:1m:51s)
+Total wall-clock time used: 14.39974115 seconds (0h:0m:14s)
+

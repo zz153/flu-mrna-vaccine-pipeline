@@ -1,0 +1,123 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_clustered/H1N1/alignments/H1N1_2012_aligned.fasta
+User tree file name: results/per_year_clustered/H1N1/trees/H1N1_2012.treefile
+Type of analysis: tree reconstruction
+Random seed number: 802107
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 16 sequences with 566 amino-acid sites
+Number of constant sites: 506 (= 89.3993% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 506 (= 89.3993% of all sites)
+Number of parsimony informative sites: 18
+Number of distinct site patterns: 79
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.0959
+
+ Category  Relative_rate  Proportion
+  1         0.0000         0.2500
+  2         0.0008         0.2500
+  3         0.0828         0.2500
+  4         3.9164         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -2278.0117 (s.e. 73.7089)
+Unconstrained log-likelihood (without tree): -1902.4867
+Number of free parameters (#branches + #model parameters): 30
+Akaike information criterion (AIC) score: 4616.0234
+Corrected Akaike information criterion (AICc) score: 4619.5001
+Bayesian information criterion (BIC) score: 4746.1813
+
+Total tree length (sum of branch lengths): 0.1401
+Sum of internal branch lengths: 0.0244 (17.4417% of tree length)
+
+WARNING: 8 near-zero internal branches (<0.0018) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI1604164|HA|A/Yokohama/UT-K101/2012|EPI_ISL_393909|A_/_H1N1' is drawn at root
+
++------------EPI1604164|HA|A/Yokohama/UT-K101/2012|EPI_ISL_393909|A_/_H1N1
+| (Node1)
+|   +--------EPI406032|HA|A/Ayutthaya/283/2012|EPI_ISL_132102|A_/_H1N1
++***| (Node2)
+|   |   +------------EPI413167|HA|A/YOKOHAMA/154/2012|EPI_ISL_133539|A_/_H1N1
+|   +---| (Node3)
+|       |   +----------------------EPI378229|HA|A/HIROSHIMA/17/2012|EPI_ISL_122175|A_/_H1N1
+|       +***| (Node4)
+|           |               +------------EPI379559|HA|A/BRISBANE/19/2012|EPI_ISL_122593|A_/_H1N1
+|           |            +**| (Node6)
+|           |            |  +------------EPI370386|HA|A/California/21/2012|EPI_ISL_118684|A_/_H1N1
+|           +------------| (Node5)
+|                        +------------EPI394212|HA|A/BRISBANE/57/2012|EPI_ISL_128664|A_/_H1N1
+|
+|                   +--------EPI406035|HA|A/Chiang_Rai/312/2012|EPI_ISL_132103|A_/_H1N1
+|          +--------| (Node10)
+|          |        |      +------------EPI379995|HA|A/Stockholm/25/2012|EPI_ISL_122761|A_/_H1N1
+|          |        |  +***| (Node12)
+|          |        |  |   +------------EPI397599|HA|A/Stockholm/16/2012|EPI_ISL_129669|A_/_H1N1
+|          |        +**| (Node11)
+|          |           +-----------------EPI394286|HA|A/VICTORIA/637/2012|EPI_ISL_128689|A_/_H1N1
+|       +**| (Node9)
+|       |  +-----------------EPI394869|HA|A/Nebraska/10/2012|EPI_ISL_129013|A_/_H1N1
+|   +***| (Node8)
+|   |   |   +---------------------EPI450759|HA|A/Jericho/18/2012|EPI_ISL_141724|A_/_H1N1
+|   |   +***| (Node13)
+|   |       +------------EPI383002|HA|A/Boras/1/2012|EPI_ISL_123787|A_/_H1N1
++---| (Node7)
+    |       +------------------------------------EPI413170|HA|A/SAITAMA/88/2012|EPI_ISL_133540|A_/_H1N1
+    +-------| (Node14)
+            +----------------------------------------------EPI417288|HA|A/SOUTH_AUSTRALIA/162/2012|EPI_ISL_134468|A_/_H1N1
+
+Tree in newick format:
+
+(EPI1604164|HA|A/Yokohama/UT-K101/2012|EPI_ISL_393909|A_/_H1N1:0.0053179071,(EPI406032|HA|A/Ayutthaya/283/2012|EPI_ISL_132102|A_/_H1N1:0.0035718193,(EPI413167|HA|A/YOKOHAMA/154/2012|EPI_ISL_133539|A_/_H1N1:0.0053559878,(EPI378229|HA|A/HIROSHIMA/17/2012|EPI_ISL_122175|A_/_H1N1:0.0090686805,((EPI379559|HA|A/BRISBANE/19/2012|EPI_ISL_122593|A_/_H1N1:0.0053683561,EPI370386|HA|A/California/21/2012|EPI_ISL_118684|A_/_H1N1:0.0053728719)Node6:0.0000010000,EPI394212|HA|A/BRISBANE/57/2012|EPI_ISL_128664|A_/_H1N1:0.0054078206)Node5:0.0053827879)Node4:0.0017373558)Node3:0.0017686834)Node2:0.0017446144,((((EPI406035|HA|A/Chiang_Rai/312/2012|EPI_ISL_132103|A_/_H1N1:0.0035369497,((EPI379995|HA|A/Stockholm/25/2012|EPI_ISL_122761|A_/_H1N1:0.0054475752,EPI397599|HA|A/Stockholm/16/2012|EPI_ISL_129669|A_/_H1N1:0.0054305111)Node12:0.0016943295,EPI394286|HA|A/VICTORIA/637/2012|EPI_ISL_128689|A_/_H1N1:0.0071583903)Node11:0.0000010000)Node10:0.0035471232,EPI394869|HA|A/Nebraska/10/2012|EPI_ISL_129013|A_/_H1N1:0.0070708019)Node9:0.0000010000,(EPI450759|HA|A/Jericho/18/2012|EPI_ISL_141724|A_/_H1N1:0.0089173155,EPI383002|HA|A/Boras/1/2012|EPI_ISL_123787|A_/_H1N1:0.0053495451)Node13:0.0017528619)Node8:0.0017554730,(EPI413170|HA|A/SAITAMA/88/2012|EPI_ISL_133540|A_/_H1N1:0.0148648678,EPI417288|HA|A/SOUTH_AUSTRALIA/162/2012|EPI_ISL_134468|A_/_H1N1:0.0184517866)Node14:0.0032844751)Node7:0.0017707417)Node1;
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_clustered/H1N1/trees/H1N1_2012_asr.treefile -m "LG+G4{0.0958577}" --length 566
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2012_aligned.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2012_aligned.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 22 10:54:56 2025
+Total CPU time used: 0.085073 seconds (0h:0m:0s)
+Total wall-clock time used: 0.117884 seconds (0h:0m:0s)
+

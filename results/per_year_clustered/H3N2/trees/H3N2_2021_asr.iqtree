@@ -1,0 +1,137 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_clustered/H3N2/alignments/H3N2_2021_aligned.fasta
+User tree file name: results/per_year_clustered/H3N2/trees/H3N2_2021.treefile
+Type of analysis: tree reconstruction
+Random seed number: 308780
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 23 sequences with 579 amino-acid sites
+Number of constant sites: 247 (= 42.6598% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 247 (= 42.6598% of all sites)
+Number of parsimony informative sites: 46
+Number of distinct site patterns: 275
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.9916
+
+ Category  Relative_rate  Proportion
+  1         0.1353         0.2500
+  2         0.4742         0.2500
+  3         0.9986         0.2500
+  4         2.3919         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -3833.4344 (s.e. 103.0924)
+Unconstrained log-likelihood (without tree): -2955.9431
+Number of free parameters (#branches + #model parameters): 44
+Akaike information criterion (AIC) score: 7754.8688
+Corrected Akaike information criterion (AICc) score: 7762.2846
+Bayesian information criterion (BIC) score: 7946.7661
+
+Total tree length (sum of branch lengths): 1.7533
+Sum of internal branch lengths: 0.0735 (4.1924% of tree length)
+
+WARNING: 8 near-zero internal branches (<0.0017) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI2082985|HA|A/Myanmar/21M017/2021|EPI_ISL_13631686|A_/_H3N2' is drawn at root
+
++--EPI2082985|HA|A/Myanmar/21M017/2021|EPI_ISL_13631686|A_/_H3N2
+| (Node1)
+|                    +--EPI1924397|HA|A/Singapore/INFKK0002/2021|EPI_ISL_5933270|A_/_H3N2
+|                 +--| (Node8)
+|                 |  +--EPI1967925|HA|A/Pakistan/ICT14/2021|EPI_ISL_9346128|A_/_H3N2
+|              +**| (Node7)
+|              |  |              +**EPI1924389|HA|A/Thailand/4/2021|EPI_ISL_5933269|A_/_H3N2
+|              |  |           +--| (Node13)
+|              |  |           |  +----------------------------------------------------------EPI1962229|HA|A/Murcia/10211/2021|EPI_ISL_8896338|A_/_H1N1
+|              |  |        +**| (Node12)
+|              |  |        |  +--EPI1883377|HA|A/Timor-Leste/33/2021|EPI_ISL_3101063|A_/_H3N2
+|              |  |     +--| (Node11)
+|              |  |     |  +--EPI1859990|HA|A/Darwin/1/2021|EPI_ISL_2233237|A_/_H3N2
+|              |  |  +--| (Node10)
+|              |  |  |  |        +--EPI1888048|HA|A/Philippines/1/2021|EPI_ISL_3836431|A_/_H3N2
+|              |  |  |  |     +**| (Node16)
+|              |  |  |  |     |  +--EPI1889178|HA|A/Philippines/8/2021|EPI_ISL_3950047|A_/_H3N2
+|              |  |  |  |  +--| (Node15)
+|              |  |  |  |  |  +--EPI1887976|HA|A/Stockholm/7/2021|EPI_ISL_3797777|A_/_H3N2
+|              |  |  |  +--| (Node14)
+|              |  |  |     |  +--EPI1889181|HA|A/Philippines/6/2021|EPI_ISL_3950048|A_/_H3N2
+|              |  |  |     +--| (Node17)
+|              |  |  |        +--EPI1924447|HA|A/Newcastle/1/2021|EPI_ISL_5933276|A_/_H3N2
+|              |  +**| (Node9)
+|              |     +--EPI1843602|HA|A/AbuDhabi/01/2021|EPI_ISL_956319|A_/_H3N2
+|           +--| (Node6)
+|           |  |  +--EPI1925481|HA|A/Qatar/24-VI-21-3752470/2021|EPI_ISL_6075484|A_/_H3N2
+|           |  +--| (Node18)
+|           |     |  +--EPI2047029|HA|A/Kazakhstan/582/2021|EPI_ISL_12942452|A_/_H3N2
+|           |     +**| (Node19)
+|           |        +--EPI1937577|HA|A/Andalucia/9561/2021|EPI_ISL_6917670|A_/_H3N2
+|        +--| (Node5)
+|        |  +--EPI1947371|HA|A/Seeb/72126898/2021|EPI_ISL_7992165|A_/_H3N2
+|     +--| (Node4)
+|     |  +--EPI2069106|HA|A/Saudi_Arabia/44642/2021|EPI_ISL_13339918|A_/_H3N2
+|  +**| (Node3)
+|  |  |  +--EPI2069098|HA|A/Saudi_Arabia/22-23/2021|EPI_ISL_13339914|A_/_H3N2
+|  |  +--| (Node20)
+|  |     |  +--EPI2044679|HA|A/Nur-Sultan/343/2021|EPI_ISL_12869830|A_/_H3N2
+|  |     +**| (Node21)
+|  |        +--EPI1947373|HA|A/Zghorta.LBN/7493/2021|EPI_ISL_7992166|A_/_H3N2
++**| (Node2)
+|  +--EPI2024254|HA|A/Qatar/10-VI-21-4396149/2021|EPI_ISL_12240190|A_/_H3N2
+|
++--EPI2194981|HA|A/Maldives/758/2021|EPI_ISL_15394467|A_/_H3N2
+
+Tree in newick format:
+
+(EPI2082985|HA|A/Myanmar/21M017/2021|EPI_ISL_13631686|A_/_H3N2:0.0052507878,(((((((EPI1924397|HA|A/Singapore/INFKK0002/2021|EPI_ISL_5933270|A_/_H3N2:0.0035028024,EPI1967925|HA|A/Pakistan/ICT14/2021|EPI_ISL_9346128|A_/_H3N2:0.0070706333)Node8:0.0035199777,(((((EPI1924389|HA|A/Thailand/4/2021|EPI_ISL_5933269|A_/_H3N2:0.0000021669,EPI1962229|HA|A/Murcia/10211/2021|EPI_ISL_8896338|A_/_H1N1:1.5419958753)Node13:0.0017575672,EPI1883377|HA|A/Timor-Leste/33/2021|EPI_ISL_3101063|A_/_H3N2:0.0035920814)Node12:0.0000010000,EPI1859990|HA|A/Darwin/1/2021|EPI_ISL_2233237|A_/_H3N2:0.0088697244)Node11:0.0033587078,(((EPI1888048|HA|A/Philippines/1/2021|EPI_ISL_3836431|A_/_H3N2:0.0088800289,EPI1889178|HA|A/Philippines/8/2021|EPI_ISL_3950047|A_/_H3N2:0.0088790323)Node16:0.0017252532,EPI1887976|HA|A/Stockholm/7/2021|EPI_ISL_3797777|A_/_H3N2:0.0071677014)Node15:0.0019846802,(EPI1889181|HA|A/Philippines/6/2021|EPI_ISL_3950048|A_/_H3N2:0.0089536742,EPI1924447|HA|A/Newcastle/1/2021|EPI_ISL_5933276|A_/_H3N2:0.0070134906)Node17:0.0291086918)Node14:0.0143668798)Node10:0.0072760315,EPI1843602|HA|A/AbuDhabi/01/2021|EPI_ISL_956319|A_/_H3N2:0.0052679199)Node9:0.0000010000)Node7:0.0000010000,(EPI1925481|HA|A/Qatar/24-VI-21-3752470/2021|EPI_ISL_6075484|A_/_H3N2:0.0070042637,(EPI2047029|HA|A/Kazakhstan/582/2021|EPI_ISL_12942452|A_/_H3N2:0.0052761064,EPI1937577|HA|A/Andalucia/9561/2021|EPI_ISL_6917670|A_/_H3N2:0.0087740492)Node19:0.0000010000)Node18:0.0017574688)Node6:0.0017507981,EPI1947371|HA|A/Seeb/72126898/2021|EPI_ISL_7992165|A_/_H3N2:0.0052592158)Node5:0.0017545060,EPI2069106|HA|A/Saudi_Arabia/44642/2021|EPI_ISL_13339918|A_/_H3N2:0.0052479092)Node4:0.0017374251,(EPI2069098|HA|A/Saudi_Arabia/22-23/2021|EPI_ISL_13339914|A_/_H3N2:0.0034950800,(EPI2044679|HA|A/Nur-Sultan/343/2021|EPI_ISL_12869830|A_/_H3N2:0.0088934647,EPI1947373|HA|A/Zghorta.LBN/7493/2021|EPI_ISL_7992166|A_/_H3N2:0.0089032445)Node21:0.0016484064)Node20:0.0017512702)Node3:0.0000020496,EPI2024254|HA|A/Qatar/10-VI-21-4396149/2021|EPI_ISL_12240190|A_/_H3N2:0.0052368922)Node2:0.0000010000,EPI2194981|HA|A/Maldives/758/2021|EPI_ISL_15394467|A_/_H3N2:0.0052294194)Node1;
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_clustered/H3N2/trees/H3N2_2021_asr.treefile -m "LG+G4{0.991603}" --length 579
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2021_aligned.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2021_aligned.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 22 11:01:43 2025
+Total CPU time used: 0.136017 seconds (0h:0m:0s)
+Total wall-clock time used: 0.173972 seconds (0h:0m:0s)
+

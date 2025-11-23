@@ -1,0 +1,75 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=9;
+TAXLABELS
+[1] 'EPI2024417|HA|A/Ibri/52121896/2021|EPI_ISL_12241633|A_/_H1N1'
+[2] 'EPI1937582|HA|A/Canarias/9656/2021|EPI_ISL_6917705|A_/_H1N1'
+[3] 'EPI1921887|HA|A/Maine/01/2021|EPI_ISL_5329262|A_/_H1N1'
+[4] 'EPI1868847|HA|A/Iowa/02/2021|EPI_ISL_2479995|A_/_H1N1'
+[5] 'EPI1941466|HA|A/Iowa/05/2021|EPI_ISL_7334894|A_/_H1N1'
+[6] 'H1N1_2021_Consensus_Aligned'
+[7] 'H1N1_2021_Medoid_Aligned|EPI1921887|HA|A/Maine/01/2021|EPI_ISL_5329262|A_/_H1N1'
+[8] 'H1N1_2021_Ancestral_Aligned_Node3'
+[9] 'H1N1_2021_COBRA_Aligned'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=9 nsplits=51;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 7,
+	98	 3 7,
+	34	 2 3 7,
+	100	 8,
+	67	 2 3 7 8,
+	100	 5,
+	100	 6,
+	15	 5 6,
+	94	 1 4 9,
+	100	 4,
+	100	 1 9,
+	100	 9,
+	100	 1,
+	5	 4 5,
+	1	 1 6 9,
+	21	 2 8,
+	38	 1 4 6 9,
+	0	 2 3 6 7,
+	0	 1 8 9,
+	34	 1 4 5 9,
+	27	 3 7 8,
+	23	 2 5,
+	10	 2 3 5 7,
+	1	 3 5 6 7,
+	1	 1 2 4 9,
+	0	 1 5 6 9,
+	4	 1 4 8 9,
+	5	 2 5 8,
+	5	 3 6 7,
+	5	 2 5 6,
+	1	 2 3,
+	2	 3 6 7 8,
+	3	 2 5 6 8,
+	0	 6 8,
+	1	 4 6,
+	0	 1 5 9,
+	0	 5 6 8,
+	2	 2 6 8,
+	1	 2 7,
+	1	 5 8,
+	0	 4 5 8,
+	1	 3 5 7,
+	0	 2 7 8,
+	0	 2 6,
+	0	 4 5 6,
+	0	 2 5 7,
+	0	 3 5 7 8,
+	0	 3 4 7 8,
+	0	 1 3 7 9,
+;
+END; [Splits]
+

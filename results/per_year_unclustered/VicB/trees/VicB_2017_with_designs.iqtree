@@ -1,0 +1,1202 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_unclustered/VicB/alignments/VicB_2017_with_designs.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 314605
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 272 sequences with 585 amino-acid sites
+Number of constant sites: 409 (= 69.9145% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 409 (= 69.9145% of all sites)
+Number of parsimony informative sites: 70
+Number of distinct site patterns: 196
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.4123
+
+ Category  Relative_rate  Proportion
+  1         0.0185         0.2500
+  2         0.1909         0.2500
+  3         0.7442         0.2500
+  4         3.0464         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4529.0404 (s.e. 220.9606)
+Unconstrained log-likelihood (without tree): -2439.9430
+Number of free parameters (#branches + #model parameters): 542
+Akaike information criterion (AIC) score: 10142.0808
+Corrected Akaike information criterion (AICc) score: 24156.6523
+Bayesian information criterion (BIC) score: 12511.4945
+
+Total tree length (sum of branch lengths): 0.5877
+Sum of internal branch lengths: 0.1140 (19.3977% of tree length)
+
+WARNING: 212 near-zero internal branches (<0.0017) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI1158001|HA|B/Hong_Kong/1089/2017|EPI_ISL_294975|B' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**EPI1158001|HA|B/Hong_Kong/1089/2017|EPI_ISL_294975|B
+|
+|                                              +**EPI1158011|HA|B/Hong_Kong/1095/2017|EPI_ISL_294980|B
+|                                           +**| (82)
+|                                           |  +-----------EPI1182265|HA|B/Hong_Kong/1133/2017|EPI_ISL_300118|B
+|                                     +-----| (98)
+|                                     |     |                    +**EPI1168599|HA|B/Hubei-Zhangwan/36/2017|EPI_ISL_297024|B
+|                                     |     |                 +**| (82)
+|                                     |     |                 |  |  +-----EPI1125331|HA|B/Hubei-Maojian/11662/2017|EPI_ISL_288707|B
+|                                     |     |                 |  +**| (73)
+|                                     |     |                 |     +-----EPI1147891|HA|B/Hubei-Yunyang/310/2017|EPI_ISL_292775|B
+|                                     |     |           +-----| (99)
+|                                     |     |           |     +**VicB_2017_Ancestral_Aligned_Node28
+|                                     |     |     +-----| (97)
+|                                     |     |     |     +**EPI1198131|HA|B/Hubei-Jiangan/1974/2017|EPI_ISL_303188|B
+|                                     |     +-----| (95)
+|                                     |           +-----------EPI1147906|HA|B/Yunnan-Funing/37/2017|EPI_ISL_292780|B
+|                                  +**| (5)
+|                                  |  |  +-----EPI1064984|HA|B/KANAGAWA/AC1629/2017|EPI_ISL_279046|B
+|                                  |  +**| (68)
+|                                  |     +-----EPI1064998|HA|B/KANAGAWA/AC1635/2017|EPI_ISL_279053|B
+|                               +**| (4)
+|                               |  |  +**EPI1004846|HA|B/SAITAMA/93/2017|EPI_ISL_265165|B
+|                               |  +**| (5)
+|                               |     |     +-----EPI1012576|HA|B/KOBE/871/2017|EPI_ISL_267605|B
+|                               |     |  +**| (16)
+|                               |     |  |  +-----EPI1033142|HA|B/OKAYAMA/3/2017|EPI_ISL_271956|B
+|                               |     +**| (14)
+|                               |        +-----EPI1012560|HA|B/HYOGO/3233/2017|EPI_ISL_267603|B
+|                            +**| (10)
+|                            |  |  +-----EPI1065000|HA|B/KANAGAWA/IC1644/2017|EPI_ISL_279054|B
+|                            |  +**| (50)
+|                            |     +-----EPI1064994|HA|B/KANAGAWA/IC1639/2017|EPI_ISL_279051|B
+|                      +-----| (71)
+|                      |     +-----------EPI1057984|HA|B/NAGANO-C/39/2017|EPI_ISL_277458|B
+|                   +**| (2)
+|                   |  |        +**EPI1004798|HA|B/Almaty/ZVL599/2017|EPI_ISL_264549|B
+|                   |  |     +**| (23)
+|                   |  |     |  |     +-----EPI1022724|HA|B/Hong_Kong/194/2017|EPI_ISL_269528|B
+|                   |  |     |  |  +**| (37)
+|                   |  |     |  |  |  +-----EPI1030267|HA|B/Guangxi-Xixiangtang/1136/2017|EPI_ISL_270721|B
+|                   |  |     |  +**| (8)
+|                   |  |     |     +-----EPI975712|HA|B/KANAGAWA/AC1623/2017|EPI_ISL_259047|B
+|                   |  +-----| (39)
+|                   |        |  +-----EPI1030168|HA|B/Zhejiang-Lucheng/1434/2017|EPI_ISL_270688|B
+|                   |        +**| (14)
+|                   |           +-----EPI1152788|HA|B/Darwin/109/2017|EPI_ISL_293749|B
+|                +**| (55)
+|                |  |                             +**EPI1158009|HA|B/Hong_Kong/1094/2017|EPI_ISL_294979|B
+|                |  |                          +**| (66)
+|                |  |                          |  +-----EPI1158031|HA|B/Hong_Kong/695/2017|EPI_ISL_294990|B
+|                |  |                    +-----| (16)
+|                |  |                    |     |     +------------------EPI1040144|HA|B/Virginia/17/2017|EPI_ISL_273833|B
+|                |  |                    |     +-----| (20)
+|                |  |                    |           +**EPI1082841|HA|B/Perth/11/2017|EPI_ISL_282369|B
+|                |  |                 +**| (0)
+|                |  |                 |  |        +-----EPI1164055|HA|B/Laos/F1664/2017|EPI_ISL_296175|B
+|                |  |                 |  |     +**| (44)
+|                |  |                 |  |     |  |         +**EPI1023378|HA|B/Singapore/KK0243/2017|EPI_ISL_269675|B
+|                |  |                 |  |     |  |      +**| (22)
+|                |  |                 |  |     |  |      |  +**EPI1094272|HA|B/Laos/2106/2017|EPI_ISL_284125|B
+|                |  |                 |  |     |  |  +***| (15)
+|                |  |                 |  |     |  |  |   +-----EPI1094264|HA|B/Laos/1675/2017|EPI_ISL_284124|B
+|                |  |                 |  |     |  +**| (8)
+|                |  |                 |  |     |     +-----EPI1094280|HA|B/Laos/2152/2017|EPI_ISL_284126|B
+|                |  |                 |  |  +**| (43)
+|                |  |                 |  |  |  |           +**EPI1029937|HA|B/Jiangsu-Gaoyou/1396/2017|EPI_ISL_270611|B
+|                |  |                 |  |  |  +-----------| (97)
+|                |  |                 |  |  |              +-----EPI1106283|HA|B/Jiangsu-Qingpu/1932/2017|EPI_ISL_285914|B
+|                |  |                 |  +**| (46)
+|                |  |                 |     |                    +-----EPI1340173|HA|B/Chongqing-Yongchuan/331/2017|EPI_ISL_334877|B
+|                |  |                 |     |                 +**| (67)
+|                |  |                 |     |                 |  +-----------EPI1125337|HA|B/Chongqing-Shapingba/37/2017|EPI_ISL_288709|B
+|                |  |                 |     |           +-----| (92)
+|                |  |                 |     |           |     +------------------EPI1340191|HA|B/Chongqing-Fuling/1886/2017|EPI_ISL_334883|B
+|                |  |                 |     +-----------| (96)
+|                |  |                 |                 +**EPI1147885|HA|B/Hubei-Danjiangkou/31/2017|EPI_ISL_292773|B
+|                |  |              +**| (0)
+|                |  |              |  |              +**EPI1167080|HA|B/Bangladesh/1312/2017|EPI_ISL_296624|B
+|                |  |              |  |           +**| (6)
+|                |  |              |  |           |  |     +-----EPI1026248|HA|B/Louisiana/26/2017|EPI_ISL_270097|B
+|                |  |              |  |           |  |  +**| (13)
+|                |  |              |  |           |  |  |  +-----EPI964346|HA|B/Washington/12/2017|EPI_ISL_256932|B
+|                |  |              |  |           |  +**| (4)
+|                |  |              |  |           |     +-----EPI1040208|HA|B/Virginia/25/2017|EPI_ISL_273841|B
+|                |  |              |  |        +**| (27)
+|                |  |              |  |        |  +-----EPI1107663|HA|B/Bahrain/8/2017|EPI_ISL_286114|B
+|                |  |              |  |  +-----| (83)
+|                |  |              |  |  |     +-----EPI1179623|HA|B/Philippines/13/2017|EPI_ISL_299708|B
+|                |  |              |  +**| (6)
+|                |  |              |     |     +**EPI1033989|HA|B/Hawaii/38/2017|EPI_ISL_272632|B
+|                |  |              |     +-----| (73)
+|                |  |              |           +-----EPI1089741|HA|B/Hawaii/55/2017|EPI_ISL_283379|B
+|                |  |           +**| (0)
+|                |  |           |  |                       +**EPI1174887|HA|B/Bangladesh/1294/2017|EPI_ISL_298416|B
+|                |  |           |  |                    +**| (48)
+|                |  |           |  |                    |  +-----EPI3126405|HA|B/USA/PV00290/2017|EPI_ISL_18989220|B
+|                |  |           |  |                 +**| (96)
+|                |  |           |  |                 |  +-----EPI995126|HA|B/Kentucky/09/2017|EPI_ISL_262827|B
+|                |  |           |  |           +-----| (64)
+|                |  |           |  |           |     +-----EPI1152765|HA|B/Sydney/82/2017|EPI_ISL_293741|B
+|                |  |           |  |        +**| (57)
+|                |  |           |  |        |  +-----------EPI1046025|HA|B/Ankara/551/2017|EPI_ISL_275443|B
+|                |  |           |  |     +**| (5)
+|                |  |           |  |     |  |  +-----EPI1341140|HA|B/shenzhen/2018-22502/2017|EPI_ISL_335198|B
+|                |  |           |  |     |  +**| (49)
+|                |  |           |  |     |     +-----EPI1036470|HA|B/Georgia/566/2017|EPI_ISL_273308|B
+|                |  |           |  |  +**| (0)
+|                |  |           |  |  |  |           +**EPI1052664|HA|B/Hong_Kong/283/2017|EPI_ISL_276541|B
+|                |  |           |  |  |  |        +**| (84)
+|                |  |           |  |  |  |        |  +**VicB_2017_Medoid_Aligned|EPI1052664|HA|B/Hong_Kong/283/2017|EPI_ISL_276541|B
+|                |  |           |  |  |  |  +-----| (97)
+|                |  |           |  |  |  |  |     |                       +-----EPI1244572|HA|B/KAWASAKI/79/2017|EPI_ISL_312690|B
+|                |  |           |  |  |  |  |     |                    +**| (3)
+|                |  |           |  |  |  |  |     |                    |  +-----EPI984913|HA|B/Utah/19/2017|EPI_ISL_260507|B
+|                |  |           |  |  |  |  |     |                 +**| (1)
+|                |  |           |  |  |  |  |     |                 |  |  +-----EPI1018008|HA|B/Hawaii/29/2017|EPI_ISL_268488|B
+|                |  |           |  |  |  |  |     |                 |  +**| (11)
+|                |  |           |  |  |  |  |     |                 |     +-----EPI1026441|HA|B/Wisconsin/40/2017|EPI_ISL_270122|B
+|                |  |           |  |  |  |  |     |              +**| (0)
+|                |  |           |  |  |  |  |     |              |  |     +-----EPI1040120|HA|B/Texas/76/2017|EPI_ISL_273830|B
+|                |  |           |  |  |  |  |     |              |  |  +**| (7)
+|                |  |           |  |  |  |  |     |              |  |  |  +-----EPI1137505|HA|B/California/74/2017|EPI_ISL_290794|B
+|                |  |           |  |  |  |  |     |              |  +**| (0)
+|                |  |           |  |  |  |  |     |              |     |  +-----EPI1051291|HA|B/Arizona/61/2017|EPI_ISL_276363|B
+|                |  |           |  |  |  |  |     |              |     +**| (1)
+|                |  |           |  |  |  |  |     |              |        +-----EPI972104|HA|B/Illinois/12/2017|EPI_ISL_258184|B
+|                |  |           |  |  |  |  |     |           +**| (1)
+|                |  |           |  |  |  |  |     |           |  |  +-----EPI1012039|HA|B/Florida/55/2017|EPI_ISL_267536|B
+|                |  |           |  |  |  |  |     |           |  +**| (10)
+|                |  |           |  |  |  |  |     |           |     +-----EPI1026147|HA|B/Iowa/18/2017|EPI_ISL_270084|B
+|                |  |           |  |  |  |  |     |        +**| (0)
+|                |  |           |  |  |  |  |     |        |  |                 +-----EPI994715|HA|B/Kentucky/14/2017|EPI_ISL_262775|B
+|                |  |           |  |  |  |  |     |        |  |              +**| (28)
+|                |  |           |  |  |  |  |     |        |  |              |  +-----EPI1020680|HA|B/Illinois/32/2017|EPI_ISL_268874|B
+|                |  |           |  |  |  |  |     |        |  |           +**| (54)
+|                |  |           |  |  |  |  |     |        |  |           |  +**EPI1020233|HA|B/Illinois/23/2017|EPI_ISL_268816|B
+|                |  |           |  |  |  |  |     |        |  |     +-----| (62)
+|                |  |           |  |  |  |  |     |        |  |     |     |     +-----------EPI1008231|HA|B/South_Dakota/19/2017|EPI_ISL_266657|B
+|                |  |           |  |  |  |  |     |        |  |     |     +-----| (61)
+|                |  |           |  |  |  |  |     |        |  |     |           +**EPI1026178|HA|B/Iowa/22/2017|EPI_ISL_270088|B
+|                |  |           |  |  |  |  |     |        |  |  +**| (18)
+|                |  |           |  |  |  |  |     |        |  |  |  +-----EPI1012295|HA|B/Maryland/34/2017|EPI_ISL_267568|B
+|                |  |           |  |  |  |  |     |        |  +**| (0)
+|                |  |           |  |  |  |  |     |        |     |  +-----EPI1051243|HA|B/Arizona/74/2017|EPI_ISL_276357|B
+|                |  |           |  |  |  |  |     |        |     +**| (1)
+|                |  |           |  |  |  |  |     |        |        +-----EPI1124658|HA|B/Oklahoma/15/2017|EPI_ISL_288602|B
+|                |  |           |  |  |  |  |     |     +**| (1)
+|                |  |           |  |  |  |  |     |     |  |  +-----EPI1162444|HA|B/Idaho/31/2017|EPI_ISL_295949|B
+|                |  |           |  |  |  |  |     |     |  +**| (0)
+|                |  |           |  |  |  |  |     |     |     |  +-----EPI1020776|HA|B/Illinois/38/2017|EPI_ISL_268886|B
+|                |  |           |  |  |  |  |     |     |     +**| (3)
+|                |  |           |  |  |  |  |     |     |        +-----EPI955175|HA|B/Texas/24/2017|EPI_ISL_255258|B
+|                |  |           |  |  |  |  |     +-----| (99)
+|                |  |           |  |  |  |  |           +-----EPI984688|HA|B/Colorado/10/2017|EPI_ISL_260479|B
+|                |  |           |  |  |  +**| (14)
+|                |  |           |  |  |     +-----------EPI1017912|HA|B/California/28/2017|EPI_ISL_268476|B
+|                |  |           |  +**| (6)
+|                |  |           |     |        +**EPI1179385|HA|B/Sri_Lanka/14/2017|EPI_ISL_299620|B
+|                |  |           |     |  +-----| (66)
+|                |  |           |     |  |     |  +-----EPI1003236|HA|B/North_Carolina/17/2017|EPI_ISL_264401|B
+|                |  |           |     |  |     +**| (34)
+|                |  |           |     |  |        +-----EPI971066|HA|B/Wisconsin/19/2017|EPI_ISL_257979|B
+|                |  |           |     +**| (1)
+|                |  |           |        |     +****EPI1030249|HA|B/Guangxi-Lingshan/35/2017|EPI_ISL_270715|B
+|                |  |           |        |  +**| (61)
+|                |  |           |        |  |  +***EPI1009845|HA|B/Hawaii/22/2017|EPI_ISL_266881|B
+|                |  |           |        +**| (2)
+|                |  |           |           +-----EPI1012095|HA|B/Michigan/58/2017|EPI_ISL_267543|B
+|                |  |        +**| (1)
+|                |  |        |  |           +**EPI1030318|HA|B/Hubei-Echeng/11730/2017|EPI_ISL_270738|B
+|                |  |        |  |     +-----| (81)
+|                |  |        |  |     |     +-----------EPI1062874|HA|B/Hubei-Echeng/38/2017|EPI_ISL_278699|B
+|                |  |        |  |  +**| (63)
+|                |  |        |  |  |  +-----EPI1113709|HA|B/Armenia/9/2017|EPI_ISL_287055|B
+|                |  |        |  +**| (8)
+|                |  |        |     |        +-----EPI1145822|HA|B/Sur/2294/2017|EPI_ISL_292489|B
+|                |  |        |     |  +-----| (82)
+|                |  |        |     |  |     +-----EPI1244038|HA|B/New_Caledonia/26/2017|EPI_ISL_312540|B
+|                |  |        |     +**| (10)
+|                |  |        |        |           +**EPI1009986|HA|B/Colorado/17/2017|EPI_ISL_266899|B
+|                |  |        |        |        +**| (7)
+|                |  |        |        |        |  |  +-----EPI1026592|HA|B/Wisconsin/59/2017|EPI_ISL_270141|B
+|                |  |        |        |        |  +**| (16)
+|                |  |        |        |        |     +-----EPI917862|HA|B/Missouri/01/2017|EPI_ISL_248985|B
+|                |  |        |        |     +**| (20)
+|                |  |        |        |     |  +-----EPI1051403|HA|B/Arizona/56/2017|EPI_ISL_276377|B
+|                |  |        |        +-----| (56)
+|                |  |        |              +-----EPI1026513|HA|B/Wisconsin/49/2017|EPI_ISL_270131|B
+|                |  |     +**| (9)
+|                |  |     |  |                 +-----EPI3230642|HA|B/Okinawa/16T022/2017|EPI_ISL_19071163|B
+|                |  |     |  |              +**| (58)
+|                |  |     |  |              |  +-----EPI3230634|HA|B/Okinawa/16T016/2017|EPI_ISL_19071162|B
+|                |  |     |  |        +-----| (83)
+|                |  |     |  |        |     +**EPI1012552|HA|B/OITA/8/2017|EPI_ISL_267602|B
+|                |  |     |  |     +**| (1)
+|                |  |     |  |     |  |     +**EPI1012762|HA|B/Kyrgyzstan/119/2017|EPI_ISL_267629|B
+|                |  |     |  |     |  +-----| (69)
+|                |  |     |  |     |        +-----------EPI1012786|HA|B/Kyrgyzstan/125/2017|EPI_ISL_267632|B
+|                |  |     |  |  +**| (0)
+|                |  |     |  |  |  |                                   +-----------EPI1168614|HA|B/Hunan-Yuhua/11919/2017|EPI_ISL_297029|B
+|                |  |     |  |  |  |                                +**| (61)
+|                |  |     |  |  |  |                                |  +**EPI1062802|HA|B/Jiangsu-Gaoyou/1585/2017|EPI_ISL_278675|B
+|                |  |     |  |  |  |                          +-----| (48)
+|                |  |     |  |  |  |                          |     +-----EPI1062763|HA|B/Shanghai-Putuo/1407/2017|EPI_ISL_278662|B
+|                |  |     |  |  |  |                       +**| (41)
+|                |  |     |  |  |  |                       |  +-----EPI1029964|HA|B/Anhui-Dangtu/1136/2017|EPI_ISL_270620|B
+|                |  |     |  |  |  |                    +**| (3)
+|                |  |     |  |  |  |                    |  |  +-----------EPI1029940|HA|B/Hubei-Shashi/1244/2017|EPI_ISL_270612|B
+|                |  |     |  |  |  |                    |  +**| (7)
+|                |  |     |  |  |  |                    |     +-----EPI1145644|HA|B/Singapore/EN0958/2017|EPI_ISL_292457|B
+|                |  |     |  |  |  |                 +**| (1)
+|                |  |     |  |  |  |                 |  |        +-----------EPI1030258|HA|B/Zhejiang-Xiacheng/1233/2017|EPI_ISL_270718|B
+|                |  |     |  |  |  |                 |  |     +**| (6)
+|                |  |     |  |  |  |                 |  |     |  +-----------EPI1062769|HA|B/Guizhou-Kaili/8103/2017|EPI_ISL_278664|B
+|                |  |     |  |  |  |                 |  |  +**| (1)
+|                |  |     |  |  |  |                 |  |  |  +-----EPI1125358|HA|B/Sichuan-Qingyang/11469/2017|EPI_ISL_288716|B
+|                |  |     |  |  |  |                 |  +**| (1)
+|                |  |     |  |  |  |                 |     |     +-----EPI1062361|HA|B/Shanghai-Chongming/1638/2017|EPI_ISL_278528|B
+|                |  |     |  |  |  |                 |     |  +**| (56)
+|                |  |     |  |  |  |                 |     |  |  +-----EPI1125361|HA|B/Shanghai-Baoshan/1864/2017|EPI_ISL_288717|B
+|                |  |     |  |  |  |                 |     +**| (0)
+|                |  |     |  |  |  |                 |        +-----EPI1062760|HA|B/Sichuan-Jiangyang/1904/2017|EPI_ISL_278661|B
+|                |  |     |  |  |  |              +**| (2)
+|                |  |     |  |  |  |              |  +**EPI1012738|HA|B/Kyrgyzstan/115/2017|EPI_ISL_267626|B
+|                |  |     |  |  |  |           +**| (0)
+|                |  |     |  |  |  |           |  |  +-----EPI1022738|HA|B/Hong_Kong/245/2017|EPI_ISL_269536|B
+|                |  |     |  |  |  |           |  +**| (2)
+|                |  |     |  |  |  |           |     +-----EPI1062754|HA|B/Anhui-Huashan/1275/2017|EPI_ISL_278659|B
+|                |  |     |  |  |  |        +**| (0)
+|                |  |     |  |  |  |        |  |  +-----EPI1062358|HA|B/Jiangxi-Yuehu/1589/2017|EPI_ISL_278527|B
+|                |  |     |  |  |  |        |  +**| (2)
+|                |  |     |  |  |  |        |     +-----------EPI1062772|HA|B/Shanghai-Changning/1405/2017|EPI_ISL_278665|B
+|                |  |     |  |  |  |  +-----| (31)
+|                |  |     |  |  |  |  |     |  +-----EPI1012952|HA|B/Kyrgyzstan/99/2017|EPI_ISL_267653|B
+|                |  |     |  |  |  |  |     +**| (2)
+|                |  |     |  |  |  |  |        +-----EPI1062877|HA|B/Yunnan-Anning/1391/2017|EPI_ISL_278700|B
+|                |  |     |  |  |  +**| (0)
+|                |  |     |  |  |     |           +-----EPI1054216|HA|B/FUKUI/12/2017|EPI_ISL_276811|B
+|                |  |     |  |  |     |     +-----| (66)
+|                |  |     |  |  |     |     |     +**EPI1132234|HA|B/Wellington/42/2017|EPI_ISL_289931|B
+|                |  |     |  |  |     +-----| (53)
+|                |  |     |  |  |           |  +**EPI1082843|HA|B/Wellington/28/2017|EPI_ISL_282370|B
+|                |  |     |  |  |           +**| (81)
+|                |  |     |  |  |              +-----EPI1183763|HA|B/Fiji/33/2017|EPI_ISL_300401|B
+|                |  |     |  +**| (1)
+|                |  |     |     |                 +**EPI1004818|HA|B/SAITAMA-C/1/2017|EPI_ISL_265151|B
+|                |  |     |     |           +-----| (98)
+|                |  |     |     |           |     +-----EPI1062388|HA|B/Yunnan-Wenshan/1619/2017|EPI_ISL_278537|B
+|                |  |     |     |        +**| (7)
+|                |  |     |     |        |  +-----EPI1082654|HA|B/Cambodia/FSS34628/2017|EPI_ISL_282297|B
+|                |  |     |     |     +**| (0)
+|                |  |     |     |     |  |        +-----EPI1030165|HA|B/Shanghai-Baoshan/1325/2017|EPI_ISL_270687|B
+|                |  |     |     |     |  |  +-----| (91)
+|                |  |     |     |     |  |  |     +**EPI924431|HA|B/Utah/06/2017|EPI_ISL_249905|B
+|                |  |     |     |     |  +**| (12)
+|                |  |     |     |     |     +-----EPI1052103|HA|B/Bangladesh/1003/2017|EPI_ISL_276469|B
+|                |  |     |     |  +**| (1)
+|                |  |     |     |  |  |           +-----------EPI1174863|HA|B/Bangladesh/1221/2017|EPI_ISL_298413|B
+|                |  |     |     |  |  |     +-----| (91)
+|                |  |     |     |  |  |     |     +-----EPI986263|HA|B/Qatar/10-VI-17-0001338/2017|EPI_ISL_261282|B
+|                |  |     |     |  |  |  +**| (0)
+|                |  |     |     |  |  |  |  +-----EPI1022575|HA|B/Laos/F0318/2017|EPI_ISL_269496|B
+|                |  |     |     |  |  +**| (0)
+|                |  |     |     |  |     |           +**EPI995118|HA|B/Florida/22/2017|EPI_ISL_262826|B
+|                |  |     |     |  |     |        +**| (85)
+|                |  |     |     |  |     |        |  +-----EPI963719|HA|B/Florida/10/2017|EPI_ISL_256846|B
+|                |  |     |     |  |     |  +-----| (70)
+|                |  |     |     |  |     |  |     +-----------EPI1051564|HA|B/Ohio/14/2017|EPI_ISL_276398|B
+|                |  |     |     |  |     +**| (1)
+|                |  |     |     |  |        |     +-----EPI1012087|HA|B/Michigan/57/2017|EPI_ISL_267542|B
+|                |  |     |     |  |        +-----| (96)
+|                |  |     |     |  |              +-----------EPI963806|HA|B/North_Carolina/03/2017|EPI_ISL_256857|B
+|                |  |     |     +**| (0)
+|                |  |     |        |           +--------EPI1177508|HA|B/Kazakhstan/7527/2017|EPI_ISL_299103|B
+|                |  |     |        |     +-----| (63)
+|                |  |     |        |     |     +--------EPI1012111|HA|B/Michigan/67/2017|EPI_ISL_267545|B
+|                |  |     |        |  +**| (1)
+|                |  |     |        |  |  |           +**EPI1211661|HA|B/Philippines/0875/2017|EPI_ISL_306117|B
+|                |  |     |        |  |  |     +-----| (69)
+|                |  |     |        |  |  |     |     +-----EPI1141313|HA|B/Philippines/0875/2017|EPI_ISL_291568|B
+|                |  |     |        |  |  +-----| (31)
+|                |  |     |        |  |        +**EPI1003324|HA|B/West_Virginia/12/2017|EPI_ISL_264412|B
+|                |  |     |        +**| (0)
+|                |  |     |           |  +-----EPI1340975|HA|B/shenzhen/2018-28139/2017|EPI_ISL_335143|B
+|                |  |     |           +**| (30)
+|                |  |     |              +-----EPI1107590|HA|B/New_Zealand/2197/2017|EPI_ISL_286103|B
+|                |  |  +**| (2)
+|                |  |  |  |              +-----EPI1158023|HA|B/Hong_Kong/1118/2017|EPI_ISL_294986|B
+|                |  |  |  |           +**| (22)
+|                |  |  |  |           |  |     +------------------------EPI1177451|HA|B/Ankara/1110/2017|EPI_ISL_299074|B
+|                |  |  |  |           |  +-----| (95)
+|                |  |  |  |           |        +**EPI1022583|HA|B/NAGANO/2272/2017|EPI_ISL_269500|B
+|                |  |  |  |        +**| (1)
+|                |  |  |  |        |  +**VicB_2017_Consensus_Aligned
+|                |  |  |  |     +**| (1)
+|                |  |  |  |     |  |                 +-----EPI994761|HA|B/Maldives/49/2017|EPI_ISL_262781|B
+|                |  |  |  |     |  |              +**| (0)
+|                |  |  |  |     |  |              |  |  +-----------EPI1012520|HA|B/KANAGAWA/5/2017|EPI_ISL_267598|B
+|                |  |  |  |     |  |              |  +**| (26)
+|                |  |  |  |     |  |              |     +-----EPI1033154|HA|B/KITAKYUSYU/5/2017|EPI_ISL_271962|B
+|                |  |  |  |     |  |           +**| (0)
+|                |  |  |  |     |  |           |  |  +-----EPI1340185|HA|B/Neimenggu-Keerqin/1544/2017|EPI_ISL_334881|B
+|                |  |  |  |     |  |           |  +**| (1)
+|                |  |  |  |     |  |           |     +-----EPI1244612|HA|B/KOCHI/106/2017|EPI_ISL_312695|B
+|                |  |  |  |     |  |        +**| (0)
+|                |  |  |  |     |  |        |  |                                   +**EPI1174879|HA|B/Bangladesh/1302/2017|EPI_ISL_298415|B
+|                |  |  |  |     |  |        |  |                             +-----| (62)
+|                |  |  |  |     |  |        |  |                             |     +-----------EPI1051347|HA|B/Arizona/49/2017|EPI_ISL_276370|B
+|                |  |  |  |     |  |        |  |                          +**| (12)
+|                |  |  |  |     |  |        |  |                          |  |                                                                 +****EPI1381174|HA|B/Colorado/06/2017|EPI_ISL_344415|B
+|                |  |  |  |     |  |        |  |                          |  |                                                              +**| (63)
+|                |  |  |  |     |  |        |  |                          |  |                                                              |  +****EPI1138021|HA|B/Florida/97/2017|EPI_ISL_290859|B
+|                |  |  |  |     |  |        |  |                          |  |                                                           +**| (0)
+|                |  |  |  |     |  |        |  |                          |  |                                                           |  |  +-----EPI1025891|HA|B/Colorado/22/2017|EPI_ISL_270051|B
+|                |  |  |  |     |  |        |  |                          |  |                                                           |  +**| (25)
+|                |  |  |  |     |  |        |  |                          |  |                                                           |     +------------------EPI1026417|HA|B/Utah/40/2017|EPI_ISL_270119|B
+|                |  |  |  |     |  |        |  |                          |  |                                                        +**| (0)
+|                |  |  |  |     |  |        |  |                          |  |                                                        |  |           +**EPI994769|HA|B/Maryland/14/2017|EPI_ISL_262782|B
+|                |  |  |  |     |  |        |  |                          |  |                                                        |  |     +-----| (65)
+|                |  |  |  |     |  |        |  |                          |  |                                                        |  |     |     +-----EPI1042200|HA|B/Florida/89/2017|EPI_ISL_274393|B
+|                |  |  |  |     |  |        |  |                          |  |                                                        |  |  +**| (2)
+|                |  |  |  |     |  |        |  |                          |  |                                                        |  |  |  +-----EPI1025955|HA|B/Connecticut/38/2017|EPI_ISL_270059|B
+|                |  |  |  |     |  |        |  |                          |  |                                                        |  +**| (0)
+|                |  |  |  |     |  |        |  |                          |  |                                                        |     |  +-----EPI1010050|HA|B/North_Dakota/12/2017|EPI_ISL_266907|B
+|                |  |  |  |     |  |        |  |                          |  |                                                        |     +**| (0)
+|                |  |  |  |     |  |        |  |                          |  |                                                        |        +-----EPI1018056|HA|B/South_Carolina/14/2017|EPI_ISL_268494|B
+|                |  |  |  |     |  |        |  |                          |  |                                                     +**| (1)
+|                |  |  |  |     |  |        |  |                          |  |                                                     |  |     +-----EPI1008023|HA|B/New_Jersey/24/2017|EPI_ISL_266630|B
+|                |  |  |  |     |  |        |  |                          |  |                                                     |  |  +**| (4)
+|                |  |  |  |     |  |        |  |                          |  |                                                     |  |  |  +-----EPI1020997|HA|B/Florida/62/2017|EPI_ISL_268914|B
+|                |  |  |  |     |  |        |  |                          |  |                                                     |  +**| (1)
+|                |  |  |  |     |  |        |  |                          |  |                                                     |     +-----EPI1026208|HA|B/Louisiana/21/2017|EPI_ISL_270092|B
+|                |  |  |  |     |  |        |  |                          |  |                                                  +**| (1)
+|                |  |  |  |     |  |        |  |                          |  |                                                  |  +-----EPI1162380|HA|B/North_Carolina/30/2017|EPI_ISL_295941|B
+|                |  |  |  |     |  |        |  |                          |  |                                               +**| (1)
+|                |  |  |  |     |  |        |  |                          |  |                                               |  |        +-----EPI994880|HA|B/New_Jersey/21/2017|EPI_ISL_262796|B
+|                |  |  |  |     |  |        |  |                          |  |                                               |  |     +**| (9)
+|                |  |  |  |     |  |        |  |                          |  |                                               |  |     |  +-----EPI1056912|HA|B/Florida/94/2017|EPI_ISL_277267|B
+|                |  |  |  |     |  |        |  |                          |  |                                               |  |  +**| (2)
+|                |  |  |  |     |  |        |  |                          |  |                                               |  |  |  +-----EPI972216|HA|B/Florida/12/2017|EPI_ISL_258199|B
+|                |  |  |  |     |  |        |  |                          |  |                                               |  +**| (1)
+|                |  |  |  |     |  |        |  |                          |  |                                               |     |     +-----EPI1162698|HA|B/West_Virginia/21/2017|EPI_ISL_295981|B
+|                |  |  |  |     |  |        |  |                          |  |                                               |     |  +**| (6)
+|                |  |  |  |     |  |        |  |                          |  |                                               |     |  |  +-----EPI1026425|HA|B/Utah/41/2017|EPI_ISL_270120|B
+|                |  |  |  |     |  |        |  |                          |  |                                               |     +**| (2)
+|                |  |  |  |     |  |        |  |                          |  |                                               |        |  +-----------EPI1164788|HA|B/New_Hampshire/14/2017|EPI_ISL_296276|B
+|                |  |  |  |     |  |        |  |                          |  |                                               |        +**| (11)
+|                |  |  |  |     |  |        |  |                          |  |                                               |           +-----EPI1003292|HA|B/Texas/62/2017|EPI_ISL_264408|B
+|                |  |  |  |     |  |        |  |                          |  |                                            +**| (17)
+|                |  |  |  |     |  |        |  |                          |  |                                            |  |  +-----EPI1033949|HA|B/Florida/84/2017|EPI_ISL_272627|B
+|                |  |  |  |     |  |        |  |                          |  |                                            |  +**| (0)
+|                |  |  |  |     |  |        |  |                          |  |                                            |     +-----EPI1124943|HA|B/Indiana/24/2017|EPI_ISL_288638|B
+|                |  |  |  |     |  |        |  |                          |  |                                      +-----| (98)
+|                |  |  |  |     |  |        |  |                          |  |                                      |     +-----EPI1025979|HA|B/Connecticut/41/2017|EPI_ISL_270062|B
+|                |  |  |  |     |  |        |  |                          |  |                                   +**| (4)
+|                |  |  |  |     |  |        |  |                          |  |                                   |  |  +-----------EPI1026027|HA|B/Connecticut/47/2017|EPI_ISL_270069|B
+|                |  |  |  |     |  |        |  |                          |  |                                   |  +**| (32)
+|                |  |  |  |     |  |        |  |                          |  |                                   |     +-----EPI3125851|HA|B/USA/PV00276/2017|EPI_ISL_18989152|B
+|                |  |  |  |     |  |        |  |                          |  |                                +**| (6)
+|                |  |  |  |     |  |        |  |                          |  |                                |  |        +-----EPI994809|HA|B/Minnesota/18/2017|EPI_ISL_262787|B
+|                |  |  |  |     |  |        |  |                          |  |                                |  |     +**| (8)
+|                |  |  |  |     |  |        |  |                          |  |                                |  |     |  +-----EPI1001974|HA|B/Connecticut/29/2017|EPI_ISL_264105|B
+|                |  |  |  |     |  |        |  |                          |  |                                |  |  +**| (0)
+|                |  |  |  |     |  |        |  |                          |  |                                |  |  |  +-----EPI1002185|HA|B/Pennsylvania/11/2017|EPI_ISL_264132|B
+|                |  |  |  |     |  |        |  |                          |  |                                |  +**| (0)
+|                |  |  |  |     |  |        |  |                          |  |                                |     |  +-----EPI1114062|HA|B/Michigan/76/2017|EPI_ISL_287130|B
+|                |  |  |  |     |  |        |  |                          |  |                                |     +**| (15)
+|                |  |  |  |     |  |        |  |                          |  |                                |        +-----EPI1130997|HA|B/Wisconsin/76/2017|EPI_ISL_289655|B
+|                |  |  |  |     |  |        |  |                          |  |                             +**| (13)
+|                |  |  |  |     |  |        |  |                          |  |                             |  +-----EPI1040008|HA|B/New_York/28/2017|EPI_ISL_273816|B
+|                |  |  |  |     |  |        |  |                          |  |                       +-----| (98)
+|                |  |  |  |     |  |        |  |                          |  |                       |     +-----EPI1007822|HA|B/Connecticut/31/2017|EPI_ISL_266604|B
+|                |  |  |  |     |  |        |  |                          |  |                    +**| (15)
+|                |  |  |  |     |  |        |  |                          |  |                    |  +-----EPI1012175|HA|B/Minnesota/31/2017|EPI_ISL_267553|B
+|                |  |  |  |     |  |        |  |                          |  |                 +**| (30)
+|                |  |  |  |     |  |        |  |                          |  |                 |  |        +**EPI1008675|HA|B/Michigan/29/2017|EPI_ISL_266714|B
+|                |  |  |  |     |  |        |  |                          |  |                 |  |     +**| (65)
+|                |  |  |  |     |  |        |  |                          |  |                 |  |     |  +-----EPI1113638|HA|B/Michigan/50/2017|EPI_ISL_287033|B
+|                |  |  |  |     |  |        |  |                          |  |                 |  +-----| (99)
+|                |  |  |  |     |  |        |  |                          |  |                 |        +-----EPI1025518|HA|B/Alabama/02/2017|EPI_ISL_270001|B
+|                |  |  |  |     |  |        |  |                          |  |              +**| (0)
+|                |  |  |  |     |  |        |  |                          |  |              |  |  +-----EPI969626|HA|B/South_Dakota/10/2017|EPI_ISL_257767|B
+|                |  |  |  |     |  |        |  |                          |  |              |  +**| (30)
+|                |  |  |  |     |  |        |  |                          |  |              |     +-----EPI977903|HA|B/Michigan/34/2017|EPI_ISL_259403|B
+|                |  |  |  |     |  |        |  |                          |  |           +**| (1)
+|                |  |  |  |     |  |        |  |                          |  |           |  |     +**EPI994644|HA|B/Georgia/06/2017|EPI_ISL_262766|B
+|                |  |  |  |     |  |        |  |                          |  |           |  |  +**| (5)
+|                |  |  |  |     |  |        |  |                          |  |           |  |  |  |     +**EPI1115795|HA|B/Michigan/46/2017|EPI_ISL_287373|B
+|                |  |  |  |     |  |        |  |                          |  |           |  |  |  +-----| (98)
+|                |  |  |  |     |  |        |  |                          |  |           |  |  |        +-----EPI971017|HA|B/Michigan/20/2017|EPI_ISL_257972|B
+|                |  |  |  |     |  |        |  |                          |  |           |  +**| (6)
+|                |  |  |  |     |  |        |  |                          |  |           |     +**EPI1008199|HA|B/South_Dakota/15/2017|EPI_ISL_266653|B
+|                |  |  |  |     |  |        |  |                          |  |        +**| (16)
+|                |  |  |  |     |  |        |  |                          |  |        |  |  +-----EPI1012071|HA|B/Michigan/56/2017|EPI_ISL_267540|B
+|                |  |  |  |     |  |        |  |                          |  |        |  +**| (5)
+|                |  |  |  |     |  |        |  |                          |  |        |     +-----EPI909229|HA|B/South_Dakota/05/2017|EPI_ISL_247695|B
+|                |  |  |  |     |  |        |  |                          |  |  +-----| (91)
+|                |  |  |  |     |  |        |  |                          |  |  |     +-----EPI1040112|HA|B/South_Dakota/31/2017|EPI_ISL_273829|B
+|                |  |  |  |     |  |        |  |                          |  +**| (20)
+|                |  |  |  |     |  |        |  |                          |     +-----EPI1107647|HA|B/Bangladesh/1156/2017|EPI_ISL_286112|B
+|                |  |  |  |     |  |        |  |                       +**| (8)
+|                |  |  |  |     |  |        |  |                       |  +**EPI1017848|HA|B/Bangladesh/3004/2017|EPI_ISL_268468|B
+|                |  |  |  |     |  |        |  |                 +-----| (60)
+|                |  |  |  |     |  |        |  |                 |     +-----EPI1130504|HA|B/Bangladesh/1269/2017|EPI_ISL_289592|B
+|                |  |  |  |     |  |        |  |              +**| (18)
+|                |  |  |  |     |  |        |  |              |  +-----EPI1179381|HA|B/Townsville/4/2017|EPI_ISL_299618|B
+|                |  |  |  |     |  |        |  |           +**| (0)
+|                |  |  |  |     |  |        |  |           |  |  +-----EPI1046028|HA|B/Ankara/561/2017|EPI_ISL_275444|B
+|                |  |  |  |     |  |        |  |           |  +**| (17)
+|                |  |  |  |     |  |        |  |           |     +-----EPI960385|HA|B/Arizona/07/2017|EPI_ISL_256111|B
+|                |  |  |  |     |  |        |  |        +**| (0)
+|                |  |  |  |     |  |        |  |        |  |     +-----EPI1141368|HA|B/Philippines/0838/2017|EPI_ISL_291575|B
+|                |  |  |  |     |  |        |  |        |  |  +**| (3)
+|                |  |  |  |     |  |        |  |        |  |  |  +-----EPI978262|HA|B/New_York/09/2017|EPI_ISL_259452|B
+|                |  |  |  |     |  |        |  |        |  +**| (2)
+|                |  |  |  |     |  |        |  |        |     +-----EPI975808|HA|B/KANAGAWA/IC1638/2017|EPI_ISL_259059|B
+|                |  |  |  |     |  |        |  |     +**| (0)
+|                |  |  |  |     |  |        |  |     |  |     +-----EPI1059624|HA|B/KAGOSHIMA/4067/2017|EPI_ISL_277722|B
+|                |  |  |  |     |  |        |  |     |  |  +**| (2)
+|                |  |  |  |     |  |        |  |     |  |  |  |     +------------------EPI1062871|HA|B/Zhejiang-Nanhu/1345/2017|EPI_ISL_278698|B
+|                |  |  |  |     |  |        |  |     |  |  |  +-----| (50)
+|                |  |  |  |     |  |        |  |     |  |  |        +**EPI3139339|HA|B/Michigan/UOMMH15236/2017|EPI_ISL_18999052|B
+|                |  |  |  |     |  |        |  |     |  +**| (1)
+|                |  |  |  |     |  |        |  |     |     |  +-----EPI912611|HA|B/Massachusetts/03/2017|EPI_ISL_248271|B
+|                |  |  |  |     |  |        |  |     |     +**| (0)
+|                |  |  |  |     |  |        |  |     |        +-----EPI917963|HA|B/Texas/08/2017|EPI_ISL_248998|B
+|                |  |  |  |     |  |        |  |  +**| (1)
+|                |  |  |  |     |  |        |  |  |  |        +-----------EPI1179379|HA|B/Sri_Lanka/19/2017|EPI_ISL_299617|B
+|                |  |  |  |     |  |        |  |  |  |     +**| (22)
+|                |  |  |  |     |  |        |  |  |  |     |  +-----EPI1340239|HA|B/Guangxi-Youjiang/1928/2017|EPI_ISL_334899|B
+|                |  |  |  |     |  |        |  |  |  |  +**| (3)
+|                |  |  |  |     |  |        |  |  |  |  |  |  +-----EPI1059628|HA|B/NIIGATA-C/22/2017|EPI_ISL_277724|B
+|                |  |  |  |     |  |        |  |  |  |  |  +**| (5)
+|                |  |  |  |     |  |        |  |  |  |  |     +-----EPI1026544|HA|B/Wisconsin/53/2017|EPI_ISL_270135|B
+|                |  |  |  |     |  |        |  |  |  +**| (1)
+|                |  |  |  |     |  |        |  |  |     |        +**EPI1192388|HA|B/NAGANO/2774/2017|EPI_ISL_302254|B
+|                |  |  |  |     |  |        |  |  |     |  +-----| (70)
+|                |  |  |  |     |  |        |  |  |     |  |     +-----EPI1192396|HA|B/NAGANO/2778/2017|EPI_ISL_302258|B
+|                |  |  |  |     |  |        |  |  |     +**| (7)
+|                |  |  |  |     |  |        |  |  |        |  +-----EPI1022732|HA|B/Hong_Kong/219/2017|EPI_ISL_269533|B
+|                |  |  |  |     |  |        |  |  |        +**| (6)
+|                |  |  |  |     |  |        |  |  |           |     +**EPI1030147|HA|B/Sichuan-Dongxin/1297/2017|EPI_ISL_270681|B
+|                |  |  |  |     |  |        |  |  |           +-----| (45)
+|                |  |  |  |     |  |        |  |  |                 +-----------EPI1036494|HA|B/Georgia/523/2017|EPI_ISL_273320|B
+|                |  |  |  |     |  |        |  +**| (1)
+|                |  |  |  |     |  |        |     |     +-----EPI1033134|HA|B/EHIME/3/2017|EPI_ISL_271952|B
+|                |  |  |  |     |  |        |     |  +**| (1)
+|                |  |  |  |     |  |        |     |  |  +-----EPI1039982|HA|B/Hawaii/47/2017|EPI_ISL_273813|B
+|                |  |  |  |     |  |        |     +**| (0)
+|                |  |  |  |     |  |        |        |     +-----EPI1062757|HA|B/Guangxi-Hengxian/335/2017|EPI_ISL_278660|B
+|                |  |  |  |     |  |        |        |  +**| (2)
+|                |  |  |  |     |  |        |        |  |  +-----------EPI995268|HA|B/Tennessee/12/2017|EPI_ISL_262845|B
+|                |  |  |  |     |  |        |        +**| (1)
+|                |  |  |  |     |  |        |           |  +-----EPI986259|HA|B/Qatar/10-VI-17-0001141/2017|EPI_ISL_261280|B
+|                |  |  |  |     |  |        |           +**| (6)
+|                |  |  |  |     |  |        |              +-----EPI1025947|HA|B/Connecticut/37/2017|EPI_ISL_270058|B
+|                |  |  |  |     |  |     +**| (0)
+|                |  |  |  |     |  |     |  |        +-----EPI1172916|HA|B/Astana/ZVL988/2017|EPI_ISL_297936|B
+|                |  |  |  |     |  |     |  |     +**| (2)
+|                |  |  |  |     |  |     |  |     |  +-----EPI1192390|HA|B/GIFU/65/2017|EPI_ISL_302255|B
+|                |  |  |  |     |  |     |  |  +**| (0)
+|                |  |  |  |     |  |     |  |  |  +-----EPI1078781|HA|B/India/7284/2017|EPI_ISL_281651|B
+|                |  |  |  |     |  |     |  +**| (5)
+|                |  |  |  |     |  |     |     |  +-----EPI1340969|HA|B/shenzhen/2018-28141/2017|EPI_ISL_335141|B
+|                |  |  |  |     |  |     |     +**| (4)
+|                |  |  |  |     |  |     |        +-----EPI1125340|HA|B/Guangxi-Xinbin/1832/2017|EPI_ISL_288710|B
+|                |  |  |  |     |  |  +**| (1)
+|                |  |  |  |     |  |  |  |           +**EPI1187942|HA|B/Laos/F2882/2017|EPI_ISL_301183|B
+|                |  |  |  |     |  |  |  |     +-----| (99)
+|                |  |  |  |     |  |  |  |     |     +-----EPI1113223|HA|B/Laos/F1473/2017|EPI_ISL_286978|B
+|                |  |  |  |     |  |  |  |  +**| (61)
+|                |  |  |  |     |  |  |  |  |  +-----EPI1025438|HA|B/Bangladesh/8008/2017|EPI_ISL_269991|B
+|                |  |  |  |     |  |  |  +**| (0)
+|                |  |  |  |     |  |  |     +-----EPI1056593|HA|B/Hawaii/53/2017|EPI_ISL_277225|B
+|                |  |  |  |     |  +**| (1)
+|                |  |  |  |     |     |     +-----EPI1182280|HA|B/Hong_Kong/1148/2017|EPI_ISL_300120|B
+|                |  |  |  |     |     |  +**| (0)
+|                |  |  |  |     |     |  |  |     +**EPI1059616|HA|B/TOKYO/17111/2017|EPI_ISL_277718|B
+|                |  |  |  |     |     |  |  +-----| (65)
+|                |  |  |  |     |     |  |        +-----EPI1026186|HA|B/Iowa/24/2017|EPI_ISL_270089|B
+|                |  |  |  |     |     +**| (0)
+|                |  |  |  |     |        |     +-----EPI1001997|HA|B/Florida/28/2017|EPI_ISL_264108|B
+|                |  |  |  |     |        |  +**| (6)
+|                |  |  |  |     |        |  |  +-----EPI1051549|HA|B/Tennessee/35/2017|EPI_ISL_276396|B
+|                |  |  |  |     |        +**| (1)
+|                |  |  |  |     |           +-----EPI1026216|HA|B/Louisiana/22/2017|EPI_ISL_270093|B
+|                |  |  |  |  +**| (1)
+|                |  |  |  |  |  |           +-----EPI1004826|HA|B/TOCHIGI/17218/2017|EPI_ISL_265155|B
+|                |  |  |  |  |  |     +-----| (98)
+|                |  |  |  |  |  |     |     +**EPI986271|HA|B/Qatar/32-VI-17-0001834/2017|EPI_ISL_261286|B
+|                |  |  |  |  |  |  +**| (6)
+|                |  |  |  |  |  |  |  |        +**EPI1012544|HA|B/SHIZUOKA/48/2017|EPI_ISL_267601|B
+|                |  |  |  |  |  |  |  |  +-----| (62)
+|                |  |  |  |  |  |  |  |  |     +-------------------------------------EPI1106277|HA|B/Guangxi-Yuzhou/1773/2017|EPI_ISL_285912|B
+|                |  |  |  |  |  |  |  +**| (5)
+|                |  |  |  |  |  |  |     +-----EPI1012802|HA|B/Kyrgyzstan/136/2017|EPI_ISL_267634|B
+|                |  |  |  |  |  +**| (3)
+|                |  |  |  |  |     |              +-----EPI1492118|HA|B/Ashgabat/5/2017|EPI_ISL_364905|B
+|                |  |  |  |  |     |           +**| (27)
+|                |  |  |  |  |     |           |  +-----------EPI944064|HA|B/Jiangsu-Haizhou/123/2017|EPI_ISL_253322|B
+|                |  |  |  |  |     |        +**| (10)
+|                |  |  |  |  |     |        |  |     +-----------EPI1125352|HA|B/Neimenggu-Keerqin/1495/2017|EPI_ISL_288714|B
+|                |  |  |  |  |     |        |  +-----| (69)
+|                |  |  |  |  |     |        |        +**EPI1128000|HA|B/Pennsylvania/26/2017|EPI_ISL_289241|B
+|                |  |  |  |  |     |  +-----| (42)
+|                |  |  |  |  |     |  |     +-----------EPI1113221|HA|B/OITA/11/2017|EPI_ISL_286977|B
+|                |  |  |  |  |     +**| (5)
+|                |  |  |  |  |        |     +**EPI1012584|HA|B/GUNMA/82/2017|EPI_ISL_267606|B
+|                |  |  |  |  |        +-----| (99)
+|                |  |  |  |  |              +-----EPI1029970|HA|B/Zhejiang-Haishu/1806/2017|EPI_ISL_270622|B
+|                |  |  |  +**| (0)
+|                |  |  |     |     +-----EPI1020317|HA|B/Kazakhstan/6718/2017|EPI_ISL_268827|B
+|                |  |  |     |  +**| (7)
+|                |  |  |     |  |  +-----EPI1107537|HA|B/Bangladesh/702014/2017|EPI_ISL_286096|B
+|                |  |  |     +**| (7)
+|                |  |  |        |  +-----EPI1399085|HA|B/Taiwan/78141/2017|EPI_ISL_348566|B
+|                |  |  |        +**| (7)
+|                |  |  |           +-----EPI3177289|HA|B/USA/PV00265/2017|EPI_ISL_19029324|B
+|                |  +**| (1)
+|                |     |     +-----EPI1168584|HA|B/Guizhou-Honghuagang/1952/2017|EPI_ISL_297019|B
+|                |     |  +**| (10)
+|                |     |  |  +-----EPI1022730|HA|B/Hong_Kong/218/2017|EPI_ISL_269532|B
+|                |     +**| (6)
+|                |        |     +**EPI1004836|HA|B/SAGA/73/2017|EPI_ISL_265160|B
+|                |        +-----| (86)
+|                |              |  +-----EPI1105670|HA|B/Bangladesh/2014/2017|EPI_ISL_285817|B
+|                |              +**| (55)
+|                |                 +-----EPI924222|HA|B/Kentucky/04/2017|EPI_ISL_249878|B
+|            +***| (56)
+|            |   +-----EPI1034056|HA|B/Michigan/27/2017|EPI_ISL_272641|B
+|        +***| (82)
+|        |   |  +**EPI1033878|HA|B/Bangladesh/0010/2017|EPI_ISL_272618|B
+|        |   +**| (100)
+|        |      +-----EPI1054180|HA|B/KANAGAWA/IC1647/2017|EPI_ISL_276793|B
+|     +**| (35)
+|     |  |  +-----EPI1023354|HA|B/Singapore/TT0739/2017|EPI_ISL_269672|B
+|     |  +**| (32)
+|     |     +-----EPI1085159|HA|B/KANAGAWA/ZC1701/2017|EPI_ISL_282747|B
++-----| (99)
+|     +-----EPI1130753|HA|B/Indonesia/Nihrd-Lpg584/2017|EPI_ISL_289624|B
+|
++**VicB_2017_COBRA_Aligned
+
+Tree in newick format:
+
+(EPI1158001|HA|B/Hong_Kong/1089/2017|EPI_ISL_294975|B:0.0000010000,((((((((((((EPI1158011|HA|B/Hong_Kong/1095/2017|EPI_ISL_294980|B:0.0000027261,EPI1182265|HA|B/Hong_Kong/1133/2017|EPI_ISL_300118|B:0.0036801878)82:0.0000026882,((((EPI1168599|HA|B/Hubei-Zhangwan/36/2017|EPI_ISL_297024|B:0.0000026737,(EPI1125331|HA|B/Hubei-Maojian/11662/2017|EPI_ISL_288707|B:0.0018371515,EPI1147891|HA|B/Hubei-Yunyang/310/2017|EPI_ISL_292775|B:0.0018736839)73:0.0000029031)82:0.0000021047,VicB_2017_Ancestral_Aligned_Node28:0.0000021704)99:0.0018157067,EPI1198131|HA|B/Hubei-Jiangan/1974/2017|EPI_ISL_303188|B:0.0000028132)97:0.0018224705,EPI1147906|HA|B/Yunnan-Funing/37/2017|EPI_ISL_292780|B:0.0036742572)95:0.0018120179)98:0.0018170092,(EPI1064984|HA|B/KANAGAWA/AC1629/2017|EPI_ISL_279046|B:0.0018183531,EPI1064998|HA|B/KANAGAWA/AC1635/2017|EPI_ISL_279053|B:0.0018159809)68:0.0000023268)5:0.0000025720,(EPI1004846|HA|B/SAITAMA/93/2017|EPI_ISL_265165|B:0.0000026737,((EPI1012576|HA|B/KOBE/871/2017|EPI_ISL_267605|B:0.0018087405,EPI1033142|HA|B/OKAYAMA/3/2017|EPI_ISL_271956|B:0.0018099128)16:0.0000027790,EPI1012560|HA|B/HYOGO/3233/2017|EPI_ISL_267603|B:0.0018097990)14:0.0000022871)5:0.0000023262)4:0.0000027433,(EPI1065000|HA|B/KANAGAWA/IC1644/2017|EPI_ISL_279054|B:0.0018166984,EPI1064994|HA|B/KANAGAWA/IC1639/2017|EPI_ISL_279051|B:0.0018095022)50:0.0000026737)10:0.0000027317,EPI1057984|HA|B/NAGANO-C/39/2017|EPI_ISL_277458|B:0.0036273220)71:0.0018106307,((EPI1004798|HA|B/Almaty/ZVL599/2017|EPI_ISL_264549|B:0.0000026737,((EPI1022724|HA|B/Hong_Kong/194/2017|EPI_ISL_269528|B:0.0018076898,EPI1030267|HA|B/Guangxi-Xixiangtang/1136/2017|EPI_ISL_270721|B:0.0018096737)37:0.0000027793,EPI975712|HA|B/KANAGAWA/AC1623/2017|EPI_ISL_259047|B:0.0018136017)8:0.0000020620)23:0.0000027419,(EPI1030168|HA|B/Zhejiang-Lucheng/1434/2017|EPI_ISL_270688|B:0.0018081754,EPI1152788|HA|B/Darwin/109/2017|EPI_ISL_293749|B:0.0018132481)14:0.0000027527)39:0.0018188392)2:0.0000027411,(((((((((EPI1158009|HA|B/Hong_Kong/1094/2017|EPI_ISL_294979|B:0.0000026737,EPI1158031|HA|B/Hong_Kong/695/2017|EPI_ISL_294990|B:0.0018508164)66:0.0000022912,(EPI1040144|HA|B/Virginia/17/2017|EPI_ISL_273833|B:0.0054867205,EPI1082841|HA|B/Perth/11/2017|EPI_ISL_282369|B:0.0000020060)20:0.0018183057)16:0.0018163600,(((EPI1164055|HA|B/Laos/F1664/2017|EPI_ISL_296175|B:0.0018359486,(((EPI1023378|HA|B/Singapore/KK0243/2017|EPI_ISL_269675|B:0.0000196143,EPI1094272|HA|B/Laos/2106/2017|EPI_ISL_284125|B:0.0000029202)22:0.0000014928,EPI1094264|HA|B/Laos/1675/2017|EPI_ISL_284124|B:0.0018421838)15:0.0012300487,EPI1094280|HA|B/Laos/2152/2017|EPI_ISL_284126|B:0.0018342656)8:0.0005530155)44:0.0000027432,(EPI1029937|HA|B/Jiangsu-Gaoyou/1396/2017|EPI_ISL_270611|B:0.0000021049,EPI1106283|HA|B/Jiangsu-Qingpu/1932/2017|EPI_ISL_285914|B:0.0018062232)97:0.0036522025)43:0.0000026499,(((EPI1340173|HA|B/Chongqing-Yongchuan/331/2017|EPI_ISL_334877|B:0.0018083863,EPI1125337|HA|B/Chongqing-Shapingba/37/2017|EPI_ISL_288709|B:0.0036911343)67:0.0000020996,EPI1340191|HA|B/Chongqing-Fuling/1886/2017|EPI_ISL_334883|B:0.0054416335)92:0.0018068391,EPI1147885|HA|B/Hubei-Danjiangkou/31/2017|EPI_ISL_292773|B:0.0000027645)96:0.0036325071)46:0.0000026005)0:0.0000027285,((((EPI1167080|HA|B/Bangladesh/1312/2017|EPI_ISL_296624|B:0.0000026737,((EPI1026248|HA|B/Louisiana/26/2017|EPI_ISL_270097|B:0.0018122153,EPI964346|HA|B/Washington/12/2017|EPI_ISL_256932|B:0.0018133073)13:0.0000026737,EPI1040208|HA|B/Virginia/25/2017|EPI_ISL_273841|B:0.0018209388)4:0.0000027009)6:0.0000010000,EPI1107663|HA|B/Bahrain/8/2017|EPI_ISL_286114|B:0.0018153448)27:0.0000023582,EPI1179623|HA|B/Philippines/13/2017|EPI_ISL_299708|B:0.0018112658)83:0.0018120114,(EPI1033989|HA|B/Hawaii/38/2017|EPI_ISL_272632|B:0.0000022964,EPI1089741|HA|B/Hawaii/55/2017|EPI_ISL_283379|B:0.0018152161)73:0.0018152939)6:0.0000022308)0:0.0000026140,(((((((EPI1174887|HA|B/Bangladesh/1294/2017|EPI_ISL_298416|B:0.0000026737,EPI3126405|HA|B/USA/PV00290/2017|EPI_ISL_18989220|B:0.0018083177)48:0.0000026737,EPI995126|HA|B/Kentucky/09/2017|EPI_ISL_262827|B:0.0018123348)96:0.0000027628,EPI1152765|HA|B/Sydney/82/2017|EPI_ISL_293741|B:0.0018126739)64:0.0018063510,EPI1046025|HA|B/Ankara/551/2017|EPI_ISL_275443|B:0.0036407547)57:0.0000028393,(EPI1341140|HA|B/shenzhen/2018-22502/2017|EPI_ISL_335198|B:0.0018082146,EPI1036470|HA|B/Georgia/566/2017|EPI_ISL_273308|B:0.0018134135)49:0.0000026737)5:0.0000029509,(((EPI1052664|HA|B/Hong_Kong/283/2017|EPI_ISL_276541|B:0.0000010000,VicB_2017_Medoid_Aligned|EPI1052664|HA|B/Hong_Kong/283/2017|EPI_ISL_276541|B:0.0000023753)84:0.0000027669,(((((((EPI1244572|HA|B/KAWASAKI/79/2017|EPI_ISL_312690|B:0.0018124087,EPI984913|HA|B/Utah/19/2017|EPI_ISL_260507|B:0.0018206922)3:0.0000020303,(EPI1018008|HA|B/Hawaii/29/2017|EPI_ISL_268488|B:0.0018138734,EPI1026441|HA|B/Wisconsin/40/2017|EPI_ISL_270122|B:0.0018129115)11:0.0000022409)1:0.0000025146,((EPI1040120|HA|B/Texas/76/2017|EPI_ISL_273830|B:0.0018132082,EPI1137505|HA|B/California/74/2017|EPI_ISL_290794|B:0.0018195522)7:0.0000021407,(EPI1051291|HA|B/Arizona/61/2017|EPI_ISL_276363|B:0.0018148153,EPI972104|HA|B/Illinois/12/2017|EPI_ISL_258184|B:0.0018176328)1:0.0000027345)0:0.0000026737)0:0.0000027811,(EPI1012039|HA|B/Florida/55/2017|EPI_ISL_267536|B:0.0018149981,EPI1026147|HA|B/Iowa/18/2017|EPI_ISL_270084|B:0.0018119864)10:0.0000026737)1:0.0000016158,(((((EPI994715|HA|B/Kentucky/14/2017|EPI_ISL_262775|B:0.0018140178,EPI1020680|HA|B/Illinois/32/2017|EPI_ISL_268874|B:0.0018207344)28:0.0000027923,EPI1020233|HA|B/Illinois/23/2017|EPI_ISL_268816|B:0.0000026737)54:0.0000028016,(EPI1008231|HA|B/South_Dakota/19/2017|EPI_ISL_266657|B:0.0036361180,EPI1026178|HA|B/Iowa/22/2017|EPI_ISL_270088|B:0.0000027748)61:0.0018133057)62:0.0018142712,EPI1012295|HA|B/Maryland/34/2017|EPI_ISL_267568|B:0.0018141991)18:0.0000027347,(EPI1051243|HA|B/Arizona/74/2017|EPI_ISL_276357|B:0.0018160247,EPI1124658|HA|B/Oklahoma/15/2017|EPI_ISL_288602|B:0.0018143449)1:0.0000020661)0:0.0000029772)0:0.0000010000,(EPI1162444|HA|B/Idaho/31/2017|EPI_ISL_295949|B:0.0018167223,(EPI1020776|HA|B/Illinois/38/2017|EPI_ISL_268886|B:0.0018147485,EPI955175|HA|B/Texas/24/2017|EPI_ISL_255258|B:0.0018139209)3:0.0000026675)0:0.0000027273)1:0.0000026737,EPI984688|HA|B/Colorado/10/2017|EPI_ISL_260479|B:0.0018157375)99:0.0018138373)97:0.0018109121,EPI1017912|HA|B/California/28/2017|EPI_ISL_268476|B:0.0036268622)14:0.0000027312)0:0.0000024551,((EPI1179385|HA|B/Sri_Lanka/14/2017|EPI_ISL_299620|B:0.0000027278,(EPI1003236|HA|B/North_Carolina/17/2017|EPI_ISL_264401|B:0.0018072071,EPI971066|HA|B/Wisconsin/19/2017|EPI_ISL_257979|B:0.0018043333)34:0.0000029680)66:0.0018093689,((EPI1030249|HA|B/Guangxi-Lingshan/35/2017|EPI_ISL_270715|B:0.0015879156,EPI1009845|HA|B/Hawaii/22/2017|EPI_ISL_266881|B:0.0012553486)61:0.0007804934,EPI1012095|HA|B/Michigan/58/2017|EPI_ISL_267543|B:0.0018149733)2:0.0000028221)1:0.0000027693)6:0.0000022870)0:0.0000022937,(((EPI1030318|HA|B/Hubei-Echeng/11730/2017|EPI_ISL_270738|B:0.0000027784,EPI1062874|HA|B/Hubei-Echeng/38/2017|EPI_ISL_278699|B:0.0036336738)81:0.0018147809,EPI1113709|HA|B/Armenia/9/2017|EPI_ISL_287055|B:0.0018147949)63:0.0000024493,((EPI1145822|HA|B/Sur/2294/2017|EPI_ISL_292489|B:0.0018026211,EPI1244038|HA|B/New_Caledonia/26/2017|EPI_ISL_312540|B:0.0018212380)82:0.0018157153,(((EPI1009986|HA|B/Colorado/17/2017|EPI_ISL_266899|B:0.0000026737,(EPI1026592|HA|B/Wisconsin/59/2017|EPI_ISL_270141|B:0.0018171893,EPI917862|HA|B/Missouri/01/2017|EPI_ISL_248985|B:0.0018164021)16:0.0000020687)7:0.0000023323,EPI1051403|HA|B/Arizona/56/2017|EPI_ISL_276377|B:0.0018135834)20:0.0000028320,EPI1026513|HA|B/Wisconsin/49/2017|EPI_ISL_270131|B:0.0018145185)56:0.0018136127)10:0.0000021986)8:0.0000027440)1:0.0000020743,(((((EPI3230642|HA|B/Okinawa/16T022/2017|EPI_ISL_19071163|B:0.0018121846,EPI3230634|HA|B/Okinawa/16T016/2017|EPI_ISL_19071162|B:0.0018090441)58:0.0000027829,EPI1012552|HA|B/OITA/8/2017|EPI_ISL_267602|B:0.0000022270)83:0.0018140555,(EPI1012762|HA|B/Kyrgyzstan/119/2017|EPI_ISL_267629|B:0.0000022005,EPI1012786|HA|B/Kyrgyzstan/125/2017|EPI_ISL_267632|B:0.0036591999)69:0.0018122428)1:0.0000027287,((((((((((EPI1168614|HA|B/Hunan-Yuhua/11919/2017|EPI_ISL_297029|B:0.0036365186,EPI1062802|HA|B/Jiangsu-Gaoyou/1585/2017|EPI_ISL_278675|B:0.0000027656)61:0.0000025479,EPI1062763|HA|B/Shanghai-Putuo/1407/2017|EPI_ISL_278662|B:0.0018100751)48:0.0018111656,EPI1029964|HA|B/Anhui-Dangtu/1136/2017|EPI_ISL_270620|B:0.0018133525)41:0.0000023646,(EPI1029940|HA|B/Hubei-Shashi/1244/2017|EPI_ISL_270612|B:0.0036510654,EPI1145644|HA|B/Singapore/EN0958/2017|EPI_ISL_292457|B:0.0018167548)7:0.0000027132)3:0.0000024491,(((EPI1030258|HA|B/Zhejiang-Xiacheng/1233/2017|EPI_ISL_270718|B:0.0036301445,EPI1062769|HA|B/Guizhou-Kaili/8103/2017|EPI_ISL_278664|B:0.0036492465)6:0.0000027358,EPI1125358|HA|B/Sichuan-Qingyang/11469/2017|EPI_ISL_288716|B:0.0018185315)1:0.0000027361,((EPI1062361|HA|B/Shanghai-Chongming/1638/2017|EPI_ISL_278528|B:0.0018204518,EPI1125361|HA|B/Shanghai-Baoshan/1864/2017|EPI_ISL_288717|B:0.0018169158)56:0.0000021645,EPI1062760|HA|B/Sichuan-Jiangyang/1904/2017|EPI_ISL_278661|B:0.0018171025)0:0.0000025539)1:0.0000026737)1:0.0000010000,EPI1012738|HA|B/Kyrgyzstan/115/2017|EPI_ISL_267626|B:0.0000026737)2:0.0000027775,(EPI1022738|HA|B/Hong_Kong/245/2017|EPI_ISL_269536|B:0.0018139884,EPI1062754|HA|B/Anhui-Huashan/1275/2017|EPI_ISL_278659|B:0.0018135405)2:0.0000027710)0:0.0000024384,(EPI1062358|HA|B/Jiangxi-Yuehu/1589/2017|EPI_ISL_278527|B:0.0018126589,EPI1062772|HA|B/Shanghai-Changning/1405/2017|EPI_ISL_278665|B:0.0036343770)2:0.0000026739)0:0.0000028054,(EPI1012952|HA|B/Kyrgyzstan/99/2017|EPI_ISL_267653|B:0.0018141462,EPI1062877|HA|B/Yunnan-Anning/1391/2017|EPI_ISL_278700|B:0.0018118713)2:0.0000027693)31:0.0018122637,((EPI1054216|HA|B/FUKUI/12/2017|EPI_ISL_276811|B:0.0018099288,EPI1132234|HA|B/Wellington/42/2017|EPI_ISL_289931|B:0.0000020519)66:0.0018138680,(EPI1082843|HA|B/Wellington/28/2017|EPI_ISL_282370|B:0.0000021929,EPI1183763|HA|B/Fiji/33/2017|EPI_ISL_300401|B:0.0018128294)81:0.0000021895)53:0.0018100038)0:0.0000027425)0:0.0000027700,(((((EPI1004818|HA|B/SAITAMA-C/1/2017|EPI_ISL_265151|B:0.0000025029,EPI1062388|HA|B/Yunnan-Wenshan/1619/2017|EPI_ISL_278537|B:0.0018088722)98:0.0018106521,EPI1082654|HA|B/Cambodia/FSS34628/2017|EPI_ISL_282297|B:0.0018117428)7:0.0000027795,((EPI1030165|HA|B/Shanghai-Baoshan/1325/2017|EPI_ISL_270687|B:0.0018118313,EPI924431|HA|B/Utah/06/2017|EPI_ISL_249905|B:0.0000027770)91:0.0018109984,EPI1052103|HA|B/Bangladesh/1003/2017|EPI_ISL_276469|B:0.0018118397)12:0.0000025553)0:0.0000027675,(((EPI1174863|HA|B/Bangladesh/1221/2017|EPI_ISL_298413|B:0.0036406330,EPI986263|HA|B/Qatar/10-VI-17-0001338/2017|EPI_ISL_261282|B:0.0018133248)91:0.0018132418,EPI1022575|HA|B/Laos/F0318/2017|EPI_ISL_269496|B:0.0018116820)0:0.0000027714,(((EPI995118|HA|B/Florida/22/2017|EPI_ISL_262826|B:0.0000026737,EPI963719|HA|B/Florida/10/2017|EPI_ISL_256846|B:0.0018104620)85:0.0000024806,EPI1051564|HA|B/Ohio/14/2017|EPI_ISL_276398|B:0.0036265537)70:0.0018104833,(EPI1012087|HA|B/Michigan/57/2017|EPI_ISL_267542|B:0.0018141583,EPI963806|HA|B/North_Carolina/03/2017|EPI_ISL_256857|B:0.0036279776)96:0.0018146921)1:0.0000027466)0:0.0000027301)1:0.0000020466,(((EPI1177508|HA|B/Kazakhstan/7527/2017|EPI_ISL_299103|B:0.0028242797,EPI1012111|HA|B/Michigan/67/2017|EPI_ISL_267545|B:0.0026950434)63:0.0017587260,((EPI1211661|HA|B/Philippines/0875/2017|EPI_ISL_306117|B:0.0000021436,EPI1141313|HA|B/Philippines/0875/2017|EPI_ISL_291568|B:0.0018121439)69:0.0018111791,EPI1003324|HA|B/West_Virginia/12/2017|EPI_ISL_264412|B:0.0000022783)31:0.0018107255)1:0.0000026567,(EPI1340975|HA|B/shenzhen/2018-28139/2017|EPI_ISL_335143|B:0.0018140048,EPI1107590|HA|B/New_Zealand/2197/2017|EPI_ISL_286103|B:0.0018127008)30:0.0000024938)0:0.0000025218)0:0.0000027617)1:0.0000020668)9:0.0000021199,(((((EPI1158023|HA|B/Hong_Kong/1118/2017|EPI_ISL_294986|B:0.0018116161,(EPI1177451|HA|B/Ankara/1110/2017|EPI_ISL_299074|B:0.0073058745,EPI1022583|HA|B/NAGANO/2272/2017|EPI_ISL_269500|B:0.0000027526)95:0.0018108069)22:0.0000027306,VicB_2017_Consensus_Aligned:0.0000026737)1:0.0000023390,((((((EPI994761|HA|B/Maldives/49/2017|EPI_ISL_262781|B:0.0018125942,(EPI1012520|HA|B/KANAGAWA/5/2017|EPI_ISL_267598|B:0.0036338818,EPI1033154|HA|B/KITAKYUSYU/5/2017|EPI_ISL_271962|B:0.0018099583)26:0.0000026553)0:0.0000024792,(EPI1340185|HA|B/Neimenggu-Keerqin/1544/2017|EPI_ISL_334881|B:0.0018141741,EPI1244612|HA|B/KOCHI/106/2017|EPI_ISL_312695|B:0.0018085184)1:0.0000023297)0:0.0000022079,((((((((((EPI1174879|HA|B/Bangladesh/1302/2017|EPI_ISL_298415|B:0.0000027905,EPI1051347|HA|B/Arizona/49/2017|EPI_ISL_276370|B:0.0036408402)62:0.0018135486,(((((((((((((((((((EPI1381174|HA|B/Colorado/06/2017|EPI_ISL_344415|B:0.0016884790,EPI1138021|HA|B/Florida/97/2017|EPI_ISL_290859|B:0.0016759264)63:0.0002936863,(EPI1025891|HA|B/Colorado/22/2017|EPI_ISL_270051|B:0.0018237492,EPI1026417|HA|B/Utah/40/2017|EPI_ISL_270119|B:0.0055090403)25:0.0000027590)0:0.0000024023,(((EPI994769|HA|B/Maryland/14/2017|EPI_ISL_262782|B:0.0000025936,EPI1042200|HA|B/Florida/89/2017|EPI_ISL_274393|B:0.0018274124)65:0.0018233383,EPI1025955|HA|B/Connecticut/38/2017|EPI_ISL_270059|B:0.0018269252)2:0.0000027485,(EPI1010050|HA|B/North_Dakota/12/2017|EPI_ISL_266907|B:0.0018291491,EPI1018056|HA|B/South_Carolina/14/2017|EPI_ISL_268494|B:0.0018297055)0:0.0000029774)0:0.0000027428)0:0.0000022587,((EPI1008023|HA|B/New_Jersey/24/2017|EPI_ISL_266630|B:0.0018228117,EPI1020997|HA|B/Florida/62/2017|EPI_ISL_268914|B:0.0018338428)4:0.0000026430,EPI1026208|HA|B/Louisiana/21/2017|EPI_ISL_270092|B:0.0018286112)1:0.0000020380)1:0.0000022275,EPI1162380|HA|B/North_Carolina/30/2017|EPI_ISL_295941|B:0.0018278373)1:0.0000026446,(((EPI994880|HA|B/New_Jersey/21/2017|EPI_ISL_262796|B:0.0018252939,EPI1056912|HA|B/Florida/94/2017|EPI_ISL_277267|B:0.0018310911)9:0.0000026737,EPI972216|HA|B/Florida/12/2017|EPI_ISL_258199|B:0.0018334445)2:0.0000027053,((EPI1162698|HA|B/West_Virginia/21/2017|EPI_ISL_295981|B:0.0018259882,EPI1026425|HA|B/Utah/41/2017|EPI_ISL_270120|B:0.0018277766)6:0.0000010000,(EPI1164788|HA|B/New_Hampshire/14/2017|EPI_ISL_296276|B:0.0036866233,EPI1003292|HA|B/Texas/62/2017|EPI_ISL_264408|B:0.0018252689)11:0.0000024113)2:0.0000025420)1:0.0000010000)1:0.0000021801,(EPI1033949|HA|B/Florida/84/2017|EPI_ISL_272627|B:0.0018254020,EPI1124943|HA|B/Indiana/24/2017|EPI_ISL_288638|B:0.0018249616)0:0.0000026737)17:0.0000028882,EPI1025979|HA|B/Connecticut/41/2017|EPI_ISL_270062|B:0.0018251623)98:0.0018258800,(EPI1026027|HA|B/Connecticut/47/2017|EPI_ISL_270069|B:0.0036804707,EPI3125851|HA|B/USA/PV00276/2017|EPI_ISL_18989152|B:0.0018270213)32:0.0000026737)4:0.0000010000,(((EPI994809|HA|B/Minnesota/18/2017|EPI_ISL_262787|B:0.0018264206,EPI1001974|HA|B/Connecticut/29/2017|EPI_ISL_264105|B:0.0018263747)8:0.0000029151,EPI1002185|HA|B/Pennsylvania/11/2017|EPI_ISL_264132|B:0.0018243474)0:0.0000029263,(EPI1114062|HA|B/Michigan/76/2017|EPI_ISL_287130|B:0.0018273448,EPI1130997|HA|B/Wisconsin/76/2017|EPI_ISL_289655|B:0.0018288243)15:0.0000027469)0:0.0000025375)6:0.0000025618,EPI1040008|HA|B/New_York/28/2017|EPI_ISL_273816|B:0.0018269246)13:0.0000024788,EPI1007822|HA|B/Connecticut/31/2017|EPI_ISL_266604|B:0.0018254775)98:0.0018275343,EPI1012175|HA|B/Minnesota/31/2017|EPI_ISL_267553|B:0.0018231347)15:0.0000028006,((EPI1008675|HA|B/Michigan/29/2017|EPI_ISL_266714|B:0.0000022707,EPI1113638|HA|B/Michigan/50/2017|EPI_ISL_287033|B:0.0018220388)65:0.0000028060,EPI1025518|HA|B/Alabama/02/2017|EPI_ISL_270001|B:0.0018220172)99:0.0018227069)30:0.0000027506,(EPI969626|HA|B/South_Dakota/10/2017|EPI_ISL_257767|B:0.0018097328,EPI977903|HA|B/Michigan/34/2017|EPI_ISL_259403|B:0.0018097470)30:0.0000029166)0:0.0000027478,((EPI994644|HA|B/Georgia/06/2017|EPI_ISL_262766|B:0.0000021678,(EPI1115795|HA|B/Michigan/46/2017|EPI_ISL_287373|B:0.0000029085,EPI971017|HA|B/Michigan/20/2017|EPI_ISL_257972|B:0.0018113781)98:0.0018326299)5:0.0000024736,EPI1008199|HA|B/South_Dakota/15/2017|EPI_ISL_266653|B:0.0000026737)6:0.0000026737)1:0.0000027798,(EPI1012071|HA|B/Michigan/56/2017|EPI_ISL_267540|B:0.0018134124,EPI909229|HA|B/South_Dakota/05/2017|EPI_ISL_247695|B:0.0018147750)5:0.0000027694)16:0.0000021388,EPI1040112|HA|B/South_Dakota/31/2017|EPI_ISL_273829|B:0.0018129159)91:0.0018097557,EPI1107647|HA|B/Bangladesh/1156/2017|EPI_ISL_286112|B:0.0018090962)20:0.0000023845)12:0.0000020904,EPI1017848|HA|B/Bangladesh/3004/2017|EPI_ISL_268468|B:0.0000024335)8:0.0000027321,EPI1130504|HA|B/Bangladesh/1269/2017|EPI_ISL_289592|B:0.0018105293)60:0.0018100093,EPI1179381|HA|B/Townsville/4/2017|EPI_ISL_299618|B:0.0018097318)18:0.0000027311,(EPI1046028|HA|B/Ankara/561/2017|EPI_ISL_275444|B:0.0018104122,EPI960385|HA|B/Arizona/07/2017|EPI_ISL_256111|B:0.0018109069)17:0.0000026737)0:0.0000022207,((EPI1141368|HA|B/Philippines/0838/2017|EPI_ISL_291575|B:0.0018091030,EPI978262|HA|B/New_York/09/2017|EPI_ISL_259452|B:0.0018166560)3:0.0000026660,EPI975808|HA|B/KANAGAWA/IC1638/2017|EPI_ISL_259059|B:0.0018081375)2:0.0000021144)0:0.0000026737,((EPI1059624|HA|B/KAGOSHIMA/4067/2017|EPI_ISL_277722|B:0.0018121670,(EPI1062871|HA|B/Zhejiang-Nanhu/1345/2017|EPI_ISL_278698|B:0.0054713477,EPI3139339|HA|B/Michigan/UOMMH15236/2017|EPI_ISL_18999052|B:0.0000027371)50:0.0018153838)2:0.0000025442,(EPI912611|HA|B/Massachusetts/03/2017|EPI_ISL_248271|B:0.0018107382,EPI917963|HA|B/Texas/08/2017|EPI_ISL_248998|B:0.0018103873)0:0.0000029502)1:0.0000024418)0:0.0000017633,(((EPI1179379|HA|B/Sri_Lanka/19/2017|EPI_ISL_299617|B:0.0036305051,EPI1340239|HA|B/Guangxi-Youjiang/1928/2017|EPI_ISL_334899|B:0.0018112228)22:0.0000026784,(EPI1059628|HA|B/NIIGATA-C/22/2017|EPI_ISL_277724|B:0.0018111061,EPI1026544|HA|B/Wisconsin/53/2017|EPI_ISL_270135|B:0.0018113308)5:0.0000026737)3:0.0000026737,((EPI1192388|HA|B/NAGANO/2774/2017|EPI_ISL_302254|B:0.0000020309,EPI1192396|HA|B/NAGANO/2778/2017|EPI_ISL_302258|B:0.0018207736)70:0.0018149007,(EPI1022732|HA|B/Hong_Kong/219/2017|EPI_ISL_269533|B:0.0018104780,(EPI1030147|HA|B/Sichuan-Dongxin/1297/2017|EPI_ISL_270681|B:0.0000026984,EPI1036494|HA|B/Georgia/523/2017|EPI_ISL_273320|B:0.0036283250)45:0.0018107632)6:0.0000027287)7:0.0000022967)1:0.0000027426)1:0.0000026737,((EPI1033134|HA|B/EHIME/3/2017|EPI_ISL_271952|B:0.0018099447,EPI1039982|HA|B/Hawaii/47/2017|EPI_ISL_273813|B:0.0018122316)1:0.0000026737,((EPI1062757|HA|B/Guangxi-Hengxian/335/2017|EPI_ISL_278660|B:0.0018112213,EPI995268|HA|B/Tennessee/12/2017|EPI_ISL_262845|B:0.0036264608)2:0.0000028938,(EPI986259|HA|B/Qatar/10-VI-17-0001141/2017|EPI_ISL_261280|B:0.0018189570,EPI1025947|HA|B/Connecticut/37/2017|EPI_ISL_270058|B:0.0018099719)6:0.0000026678)1:0.0000021436)0:0.0000026737)1:0.0000021063)0:0.0000027071,(((EPI1172916|HA|B/Astana/ZVL988/2017|EPI_ISL_297936|B:0.0018116567,EPI1192390|HA|B/GIFU/65/2017|EPI_ISL_302255|B:0.0018112174)2:0.0000026737,EPI1078781|HA|B/India/7284/2017|EPI_ISL_281651|B:0.0018131316)0:0.0000026737,(EPI1340969|HA|B/shenzhen/2018-28141/2017|EPI_ISL_335141|B:0.0018141846,EPI1125340|HA|B/Guangxi-Xinbin/1832/2017|EPI_ISL_288710|B:0.0018108335)4:0.0000026737)5:0.0000026737)0:0.0000025599,(((EPI1187942|HA|B/Laos/F2882/2017|EPI_ISL_301183|B:0.0000026737,EPI1113223|HA|B/Laos/F1473/2017|EPI_ISL_286978|B:0.0018146636)99:0.0018168322,EPI1025438|HA|B/Bangladesh/8008/2017|EPI_ISL_269991|B:0.0018191151)61:0.0000026837,EPI1056593|HA|B/Hawaii/53/2017|EPI_ISL_277225|B:0.0018108679)0:0.0000027668)1:0.0000021265,((EPI1182280|HA|B/Hong_Kong/1148/2017|EPI_ISL_300120|B:0.0018099220,(EPI1059616|HA|B/TOKYO/17111/2017|EPI_ISL_277718|B:0.0000027756,EPI1026186|HA|B/Iowa/24/2017|EPI_ISL_270089|B:0.0018120492)65:0.0018124732)0:0.0000026737,((EPI1001997|HA|B/Florida/28/2017|EPI_ISL_264108|B:0.0018111855,EPI1051549|HA|B/Tennessee/35/2017|EPI_ISL_276396|B:0.0018111889)6:0.0000026737,EPI1026216|HA|B/Louisiana/22/2017|EPI_ISL_270093|B:0.0018130838)1:0.0000026737)0:0.0000021925)1:0.0000023278)1:0.0000020204,(((EPI1004826|HA|B/TOCHIGI/17218/2017|EPI_ISL_265155|B:0.0018126067,EPI986271|HA|B/Qatar/32-VI-17-0001834/2017|EPI_ISL_261286|B:0.0000027886)98:0.0018153548,((EPI1012544|HA|B/SHIZUOKA/48/2017|EPI_ISL_267601|B:0.0000023970,EPI1106277|HA|B/Guangxi-Yuzhou/1773/2017|EPI_ISL_285912|B:0.0109774409)62:0.0018155475,EPI1012802|HA|B/Kyrgyzstan/136/2017|EPI_ISL_267634|B:0.0018099909)5:0.0000027412)6:0.0000024496,((((EPI1492118|HA|B/Ashgabat/5/2017|EPI_ISL_364905|B:0.0018086698,EPI944064|HA|B/Jiangsu-Haizhou/123/2017|EPI_ISL_253322|B:0.0036361561)27:0.0000021319,(EPI1125352|HA|B/Neimenggu-Keerqin/1495/2017|EPI_ISL_288714|B:0.0036293419,EPI1128000|HA|B/Pennsylvania/26/2017|EPI_ISL_289241|B:0.0000028437)69:0.0018102996)10:0.0000027964,EPI1113221|HA|B/OITA/11/2017|EPI_ISL_286977|B:0.0036301323)42:0.0018099577,(EPI1012584|HA|B/GUNMA/82/2017|EPI_ISL_267606|B:0.0000027981,EPI1029970|HA|B/Zhejiang-Haishu/1806/2017|EPI_ISL_270622|B:0.0018129068)99:0.0018149847)5:0.0000025084)3:0.0000026575)1:0.0000020119,((EPI1020317|HA|B/Kazakhstan/6718/2017|EPI_ISL_268827|B:0.0018102562,EPI1107537|HA|B/Bangladesh/702014/2017|EPI_ISL_286096|B:0.0018126243)7:0.0000026737,(EPI1399085|HA|B/Taiwan/78141/2017|EPI_ISL_348566|B:0.0018111116,EPI3177289|HA|B/USA/PV00265/2017|EPI_ISL_19029324|B:0.0018134744)7:0.0000026737)7:0.0000024313)0:0.0000021545)2:0.0000027327,((EPI1168584|HA|B/Guizhou-Honghuagang/1952/2017|EPI_ISL_297019|B:0.0018112519,EPI1022730|HA|B/Hong_Kong/218/2017|EPI_ISL_269532|B:0.0018122438)10:0.0000027368,(EPI1004836|HA|B/SAGA/73/2017|EPI_ISL_265160|B:0.0000027831,(EPI1105670|HA|B/Bangladesh/2014/2017|EPI_ISL_285817|B:0.0018091636,EPI924222|HA|B/Kentucky/04/2017|EPI_ISL_249878|B:0.0018119979)55:0.0000027862)86:0.0018126182)6:0.0000027709)1:0.0000027333)55:0.0000025235,EPI1034056|HA|B/Michigan/27/2017|EPI_ISL_272641|B:0.0018150980)56:0.0011649586,(EPI1033878|HA|B/Bangladesh/0010/2017|EPI_ISL_272618|B:0.0000026764,EPI1054180|HA|B/KANAGAWA/IC1647/2017|EPI_ISL_276793|B:0.0018071992)100:0.0011326702)82:0.0013235864,(EPI1023354|HA|B/Singapore/TT0739/2017|EPI_ISL_269672|B:0.0018087896,EPI1085159|HA|B/KANAGAWA/ZC1701/2017|EPI_ISL_282747|B:0.0018151888)32:0.0000010000)35:0.0000027383,EPI1130753|HA|B/Indonesia/Nihrd-Lpg584/2017|EPI_ISL_289624|B:0.0018092970)99:0.0018143366,VicB_2017_COBRA_Aligned:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -4534.407787
+Robinson-Foulds distance between ML tree and consensus tree: 322
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--EPI1158001|HA|B/Hong_Kong/1089/2017|EPI_ISL_294975|B
+|
+|                                              +--EPI1158011|HA|B/Hong_Kong/1095/2017|EPI_ISL_294980|B
+|                                           +--| (82)
+|                                           |  +-----------EPI1182265|HA|B/Hong_Kong/1133/2017|EPI_ISL_300118|B
+|                                     +-----| (98)
+|                                     |     |                    +--EPI1168599|HA|B/Hubei-Zhangwan/36/2017|EPI_ISL_297024|B
+|                                     |     |                 +--| (82)
+|                                     |     |                 |  |  +-----EPI1125331|HA|B/Hubei-Maojian/11662/2017|EPI_ISL_288707|B
+|                                     |     |                 |  +--| (73)
+|                                     |     |                 |     +-----EPI1147891|HA|B/Hubei-Yunyang/310/2017|EPI_ISL_292775|B
+|                                     |     |           +-----| (99)
+|                                     |     |           |     +--VicB_2017_Ancestral_Aligned_Node28
+|                                     |     |     +-----| (97)
+|                                     |     |     |     +--EPI1198131|HA|B/Hubei-Jiangan/1974/2017|EPI_ISL_303188|B
+|                                     |     +-----| (95)
+|                                     |           +-----------EPI1147906|HA|B/Yunnan-Funing/37/2017|EPI_ISL_292780|B
+|                               +-----| (71)
+|                               |     |           +--EPI1004846|HA|B/SAITAMA/93/2017|EPI_ISL_265165|B
+|                               |     |        +--| (2)
+|                               |     |        |  |  +-----EPI1012576|HA|B/KOBE/871/2017|EPI_ISL_267605|B
+|                               |     |        |  +--| (27)
+|                               |     |        |     +-----EPI1012560|HA|B/HYOGO/3233/2017|EPI_ISL_267603|B
+|                               |     |     +--| (6)
+|                               |     |     |  |  +-----EPI1033142|HA|B/OKAYAMA/3/2017|EPI_ISL_271956|B
+|                               |     |     |  +--| (14)
+|                               |     |     |     +-----------EPI1057984|HA|B/NAGANO-C/39/2017|EPI_ISL_277458|B
+|                               |     |  +--| (6)
+|                               |     |  |  |  +-----EPI1065000|HA|B/KANAGAWA/IC1644/2017|EPI_ISL_279054|B
+|                               |     |  |  +--| (50)
+|                               |     |  |     +-----EPI1064994|HA|B/KANAGAWA/IC1639/2017|EPI_ISL_279051|B
+|                               |     +--| (10)
+|                               |        |  +-----EPI1064984|HA|B/KANAGAWA/AC1629/2017|EPI_ISL_279046|B
+|                               |        +--| (68)
+|                               |           +-----EPI1064998|HA|B/KANAGAWA/AC1635/2017|EPI_ISL_279053|B
+|                            +--| (12)
+|                            |  +-----EPI1022730|HA|B/Hong_Kong/218/2017|EPI_ISL_269532|B
+|                         +--| (7)
+|                         |  |              +--EPI1174879|HA|B/Bangladesh/1302/2017|EPI_ISL_298415|B
+|                         |  |        +-----| (62)
+|                         |  |        |     +-----------EPI1051347|HA|B/Arizona/49/2017|EPI_ISL_276370|B
+|                         |  |  +-----| (60)
+|                         |  |  |     |  +--EPI1017848|HA|B/Bangladesh/3004/2017|EPI_ISL_268468|B
+|                         |  |  |     +--| (36)
+|                         |  |  |        |                                               +----EPI1381174|HA|B/Colorado/06/2017|EPI_ISL_344415|B
+|                         |  |  |        |                                            +--| (63)
+|                         |  |  |        |                                            |  +----EPI1138021|HA|B/Florida/97/2017|EPI_ISL_290859|B
+|                         |  |  |        |                                         +--| (4)
+|                         |  |  |        |                                         |  |           +--EPI994769|HA|B/Maryland/14/2017|EPI_ISL_262782|B
+|                         |  |  |        |                                         |  |     +-----| (65)
+|                         |  |  |        |                                         |  |     |     +-----EPI1042200|HA|B/Florida/89/2017|EPI_ISL_274393|B
+|                         |  |  |        |                                         |  |  +--| (18)
+|                         |  |  |        |                                         |  |  |  +-----EPI1003292|HA|B/Texas/62/2017|EPI_ISL_264408|B
+|                         |  |  |        |                                         |  +--| (12)
+|                         |  |  |        |                                         |     |        +-----EPI994880|HA|B/New_Jersey/21/2017|EPI_ISL_262796|B
+|                         |  |  |        |                                         |     |     +--| (20)
+|                         |  |  |        |                                         |     |     |  +-----EPI1124943|HA|B/Indiana/24/2017|EPI_ISL_288638|B
+|                         |  |  |        |                                         |     |  +--| (9)
+|                         |  |  |        |                                         |     |  |  +-----EPI1162380|HA|B/North_Carolina/30/2017|EPI_ISL_295941|B
+|                         |  |  |        |                                         |     +--| (6)
+|                         |  |  |        |                                         |        |           +-----EPI1162698|HA|B/West_Virginia/21/2017|EPI_ISL_295981|B
+|                         |  |  |        |                                         |        |        +--| (8)
+|                         |  |  |        |                                         |        |        |  +-----EPI1026208|HA|B/Louisiana/21/2017|EPI_ISL_270092|B
+|                         |  |  |        |                                         |        |     +--| (2)
+|                         |  |  |        |                                         |        |     |  |     +-----EPI1025891|HA|B/Colorado/22/2017|EPI_ISL_270051|B
+|                         |  |  |        |                                         |        |     |  |  +--| (25)
+|                         |  |  |        |                                         |        |     |  |  |  +------------------EPI1026417|HA|B/Utah/40/2017|EPI_ISL_270119|B
+|                         |  |  |        |                                         |        |     |  +--| (4)
+|                         |  |  |        |                                         |        |     |     +-----EPI1033949|HA|B/Florida/84/2017|EPI_ISL_272627|B
+|                         |  |  |        |                                         |        |  +--| (14)
+|                         |  |  |        |                                         |        |  |  |        +-----------EPI1164788|HA|B/New_Hampshire/14/2017|EPI_ISL_296276|B
+|                         |  |  |        |                                         |        |  |  |     +--| (13)
+|                         |  |  |        |                                         |        |  |  |     |  +-----EPI1026425|HA|B/Utah/41/2017|EPI_ISL_270120|B
+|                         |  |  |        |                                         |        |  |  |  +--| (8)
+|                         |  |  |        |                                         |        |  |  |  |  +-----EPI1010050|HA|B/North_Dakota/12/2017|EPI_ISL_266907|B
+|                         |  |  |        |                                         |        |  |  +--| (10)
+|                         |  |  |        |                                         |        |  |     |  +-----EPI1020997|HA|B/Florida/62/2017|EPI_ISL_268914|B
+|                         |  |  |        |                                         |        |  |     +--| (6)
+|                         |  |  |        |                                         |        |  |        +-----EPI972216|HA|B/Florida/12/2017|EPI_ISL_258199|B
+|                         |  |  |        |                                         |        +--| (9)
+|                         |  |  |        |                                         |           |     +-----EPI1008023|HA|B/New_Jersey/24/2017|EPI_ISL_266630|B
+|                         |  |  |        |                                         |           |  +--| (17)
+|                         |  |  |        |                                         |           |  |  +-----EPI1025955|HA|B/Connecticut/38/2017|EPI_ISL_270059|B
+|                         |  |  |        |                                         |           +--| (5)
+|                         |  |  |        |                                         |              +-----EPI1056912|HA|B/Florida/94/2017|EPI_ISL_277267|B
+|                         |  |  |        |                                      +--| (17)
+|                         |  |  |        |                                      |  +-----EPI1018056|HA|B/South_Carolina/14/2017|EPI_ISL_268494|B
+|                         |  |  |        |                                +-----| (98)
+|                         |  |  |        |                                |     +-----EPI1025979|HA|B/Connecticut/41/2017|EPI_ISL_270062|B
+|                         |  |  |        |                          +-----| (98)
+|                         |  |  |        |                          |     |        +-----EPI994809|HA|B/Minnesota/18/2017|EPI_ISL_262787|B
+|                         |  |  |        |                          |     |     +--| (14)
+|                         |  |  |        |                          |     |     |  +-----EPI1007822|HA|B/Connecticut/31/2017|EPI_ISL_266604|B
+|                         |  |  |        |                          |     |  +--| (9)
+|                         |  |  |        |                          |     |  |  |        +-----EPI1001974|HA|B/Connecticut/29/2017|EPI_ISL_264105|B
+|                         |  |  |        |                          |     |  |  |     +--| (14)
+|                         |  |  |        |                          |     |  |  |     |  +-----EPI1002185|HA|B/Pennsylvania/11/2017|EPI_ISL_264132|B
+|                         |  |  |        |                          |     |  |  |  +--| (6)
+|                         |  |  |        |                          |     |  |  |  |  |  +-----------EPI1026027|HA|B/Connecticut/47/2017|EPI_ISL_270069|B
+|                         |  |  |        |                          |     |  |  |  |  +--| (32)
+|                         |  |  |        |                          |     |  |  |  |     +-----EPI3125851|HA|B/USA/PV00276/2017|EPI_ISL_18989152|B
+|                         |  |  |        |                          |     |  |  +--| (6)
+|                         |  |  |        |                          |     |  |     +-----EPI1040008|HA|B/New_York/28/2017|EPI_ISL_273816|B
+|                         |  |  |        |                          |     +--| (7)
+|                         |  |  |        |                          |        |  +-----EPI1114062|HA|B/Michigan/76/2017|EPI_ISL_287130|B
+|                         |  |  |        |                          |        +--| (15)
+|                         |  |  |        |                          |           +-----EPI1130997|HA|B/Wisconsin/76/2017|EPI_ISL_289655|B
+|                         |  |  |        |                       +--| (30)
+|                         |  |  |        |                       |  |           +--EPI1008675|HA|B/Michigan/29/2017|EPI_ISL_266714|B
+|                         |  |  |        |                       |  |        +--| (65)
+|                         |  |  |        |                       |  |        |  +-----EPI1113638|HA|B/Michigan/50/2017|EPI_ISL_287033|B
+|                         |  |  |        |                       |  |  +-----| (99)
+|                         |  |  |        |                       |  |  |     +-----EPI1025518|HA|B/Alabama/02/2017|EPI_ISL_270001|B
+|                         |  |  |        |                       |  +--| (30)
+|                         |  |  |        |                       |     +-----EPI1012175|HA|B/Minnesota/31/2017|EPI_ISL_267553|B
+|                         |  |  |        |                    +--| (32)
+|                         |  |  |        |                    |  +--EPI994644|HA|B/Georgia/06/2017|EPI_ISL_262766|B
+|                         |  |  |        |                 +--| (3)
+|                         |  |  |        |                 |  |  +--EPI1008199|HA|B/South_Dakota/15/2017|EPI_ISL_266653|B
+|                         |  |  |        |                 |  +--| (6)
+|                         |  |  |        |                 |     |     +--EPI1115795|HA|B/Michigan/46/2017|EPI_ISL_287373|B
+|                         |  |  |        |                 |     +-----| (98)
+|                         |  |  |        |                 |           +-----EPI971017|HA|B/Michigan/20/2017|EPI_ISL_257972|B
+|                         |  |  |        |              +--| (10)
+|                         |  |  |        |              |  |  +-----EPI1012071|HA|B/Michigan/56/2017|EPI_ISL_267540|B
+|                         |  |  |        |              |  +--| (11)
+|                         |  |  |        |              |     |  +-----EPI969626|HA|B/South_Dakota/10/2017|EPI_ISL_257767|B
+|                         |  |  |        |              |     +--| (30)
+|                         |  |  |        |              |        +-----EPI977903|HA|B/Michigan/34/2017|EPI_ISL_259403|B
+|                         |  |  |        |           +--| (25)
+|                         |  |  |        |           |  +-----EPI1040112|HA|B/South_Dakota/31/2017|EPI_ISL_273829|B
+|                         |  |  |        |     +-----| (91)
+|                         |  |  |        |     |     +-----EPI909229|HA|B/South_Dakota/05/2017|EPI_ISL_247695|B
+|                         |  |  |        |  +--| (26)
+|                         |  |  |        |  |  +-----EPI1130504|HA|B/Bangladesh/1269/2017|EPI_ISL_289592|B
+|                         |  |  |        +--| (16)
+|                         |  |  |           +-----EPI1107647|HA|B/Bangladesh/1156/2017|EPI_ISL_286112|B
+|                         |  +--| (18)
+|                         |     +-----EPI1179381|HA|B/Townsville/4/2017|EPI_ISL_299618|B
+|                      +--| (9)
+|                      |  |           +-----EPI1158023|HA|B/Hong_Kong/1118/2017|EPI_ISL_294986|B
+|                      |  |        +--| (22)
+|                      |  |        |  |     +------------------------EPI1177451|HA|B/Ankara/1110/2017|EPI_ISL_299074|B
+|                      |  |        |  +-----| (95)
+|                      |  |        |        +--EPI1022583|HA|B/NAGANO/2272/2017|EPI_ISL_269500|B
+|                      |  |     +--| (2)
+|                      |  |     |  |                          +-----EPI3230642|HA|B/Okinawa/16T022/2017|EPI_ISL_19071163|B
+|                      |  |     |  |                       +--| (58)
+|                      |  |     |  |                       |  +-----EPI3230634|HA|B/Okinawa/16T016/2017|EPI_ISL_19071162|B
+|                      |  |     |  |                 +-----| (83)
+|                      |  |     |  |                 |     +--EPI1012552|HA|B/OITA/8/2017|EPI_ISL_267602|B
+|                      |  |     |  |              +--| (5)
+|                      |  |     |  |              |  |           +--EPI1052664|HA|B/Hong_Kong/283/2017|EPI_ISL_276541|B
+|                      |  |     |  |              |  |        +--| (84)
+|                      |  |     |  |              |  |        |  +--VicB_2017_Medoid_Aligned|EPI1052664|HA|B/Hong_Kong/283/2017|EPI_ISL_276541|B
+|                      |  |     |  |              |  |  +-----| (97)
+|                      |  |     |  |              |  |  |     |                          +-----EPI1244572|HA|B/KAWASAKI/79/2017|EPI_ISL_312690|B
+|                      |  |     |  |              |  |  |     |                       +--| (24)
+|                      |  |     |  |              |  |  |     |                       |  +-----EPI1020776|HA|B/Illinois/38/2017|EPI_ISL_268886|B
+|                      |  |     |  |              |  |  |     |                    +--| (7)
+|                      |  |     |  |              |  |  |     |                    |  |        +-----EPI1162444|HA|B/Idaho/31/2017|EPI_ISL_295949|B
+|                      |  |     |  |              |  |  |     |                    |  |     +--| (10)
+|                      |  |     |  |              |  |  |     |                    |  |     |  +-----EPI972104|HA|B/Illinois/12/2017|EPI_ISL_258184|B
+|                      |  |     |  |              |  |  |     |                    |  |  +--| (5)
+|                      |  |     |  |              |  |  |     |                    |  |  |  |  +-----EPI1018008|HA|B/Hawaii/29/2017|EPI_ISL_268488|B
+|                      |  |     |  |              |  |  |     |                    |  |  |  +--| (16)
+|                      |  |     |  |              |  |  |     |                    |  |  |     +-----EPI1040120|HA|B/Texas/76/2017|EPI_ISL_273830|B
+|                      |  |     |  |              |  |  |     |                    |  +--| (6)
+|                      |  |     |  |              |  |  |     |                    |     +-----EPI1124658|HA|B/Oklahoma/15/2017|EPI_ISL_288602|B
+|                      |  |     |  |              |  |  |     |                 +--| (11)
+|                      |  |     |  |              |  |  |     |                 |  |  +-----EPI1051243|HA|B/Arizona/74/2017|EPI_ISL_276357|B
+|                      |  |     |  |              |  |  |     |                 |  +--| (10)
+|                      |  |     |  |              |  |  |     |                 |     +-----EPI984913|HA|B/Utah/19/2017|EPI_ISL_260507|B
+|                      |  |     |  |              |  |  |     |              +--| (3)
+|                      |  |     |  |              |  |  |     |              |  |  +-----EPI1012039|HA|B/Florida/55/2017|EPI_ISL_267536|B
+|                      |  |     |  |              |  |  |     |              |  +--| (16)
+|                      |  |     |  |              |  |  |     |              |     +-----EPI984688|HA|B/Colorado/10/2017|EPI_ISL_260479|B
+|                      |  |     |  |              |  |  |     |           +--| (5)
+|                      |  |     |  |              |  |  |     |           |  +-----EPI1137505|HA|B/California/74/2017|EPI_ISL_290794|B
+|                      |  |     |  |              |  |  |     |        +--| (8)
+|                      |  |     |  |              |  |  |     |        |  |                 +-----EPI994715|HA|B/Kentucky/14/2017|EPI_ISL_262775|B
+|                      |  |     |  |              |  |  |     |        |  |              +--| (28)
+|                      |  |     |  |              |  |  |     |        |  |              |  +-----EPI1020680|HA|B/Illinois/32/2017|EPI_ISL_268874|B
+|                      |  |     |  |              |  |  |     |        |  |        +-----| (54)
+|                      |  |     |  |              |  |  |     |        |  |        |     +--EPI1020233|HA|B/Illinois/23/2017|EPI_ISL_268816|B
+|                      |  |     |  |              |  |  |     |        |  |     +--| (62)
+|                      |  |     |  |              |  |  |     |        |  |     |  |     +-----EPI1008231|HA|B/South_Dakota/19/2017|EPI_ISL_266657|B
+|                      |  |     |  |              |  |  |     |        |  |     |  +-----| (61)
+|                      |  |     |  |              |  |  |     |        |  |     |        +-----EPI1026178|HA|B/Iowa/22/2017|EPI_ISL_270088|B
+|                      |  |     |  |              |  |  |     |        |  |  +--| (18)
+|                      |  |     |  |              |  |  |     |        |  |  |  +-----EPI1012295|HA|B/Maryland/34/2017|EPI_ISL_267568|B
+|                      |  |     |  |              |  |  |     |        |  +--| (7)
+|                      |  |     |  |              |  |  |     |        |     +-----EPI1051291|HA|B/Arizona/61/2017|EPI_ISL_276363|B
+|                      |  |     |  |              |  |  |     |     +--| (16)
+|                      |  |     |  |              |  |  |     |     |  |  +-----EPI1026147|HA|B/Iowa/18/2017|EPI_ISL_270084|B
+|                      |  |     |  |              |  |  |     |     |  +--| (9)
+|                      |  |     |  |              |  |  |     |     |     +-----EPI1026441|HA|B/Wisconsin/40/2017|EPI_ISL_270122|B
+|                      |  |     |  |              |  |  |     +-----| (99)
+|                      |  |     |  |              |  |  |           +-----EPI955175|HA|B/Texas/24/2017|EPI_ISL_255258|B
+|                      |  |     |  |              |  +--| (15)
+|                      |  |     |  |              |     +-----EPI1082654|HA|B/Cambodia/FSS34628/2017|EPI_ISL_282297|B
+|                      |  |     |  |           +--| (6)
+|                      |  |     |  |           |  |                                         +-----------EPI1168614|HA|B/Hunan-Yuhua/11919/2017|EPI_ISL_297029|B
+|                      |  |     |  |           |  |                                      +--| (61)
+|                      |  |     |  |           |  |                                      |  +--EPI1062802|HA|B/Jiangsu-Gaoyou/1585/2017|EPI_ISL_278675|B
+|                      |  |     |  |           |  |                                +-----| (48)
+|                      |  |     |  |           |  |                                |     +-----EPI1062763|HA|B/Shanghai-Putuo/1407/2017|EPI_ISL_278662|B
+|                      |  |     |  |           |  |                             +--| (41)
+|                      |  |     |  |           |  |                             |  +-----EPI1029964|HA|B/Anhui-Dangtu/1136/2017|EPI_ISL_270620|B
+|                      |  |     |  |           |  |                          +--| (14)
+|                      |  |     |  |           |  |                          |  +-----------EPI1062772|HA|B/Shanghai-Changning/1405/2017|EPI_ISL_278665|B
+|                      |  |     |  |           |  |                       +--| (15)
+|                      |  |     |  |           |  |                       |  +-----------EPI1029940|HA|B/Hubei-Shashi/1244/2017|EPI_ISL_270612|B
+|                      |  |     |  |           |  |                    +--| (18)
+|                      |  |     |  |           |  |                    |  |        +--EPI1012738|HA|B/Kyrgyzstan/115/2017|EPI_ISL_267626|B
+|                      |  |     |  |           |  |                    |  |     +--| (10)
+|                      |  |     |  |           |  |                    |  |     |  |  +-----EPI1062760|HA|B/Sichuan-Jiangyang/1904/2017|EPI_ISL_278661|B
+|                      |  |     |  |           |  |                    |  |     |  +--| (7)
+|                      |  |     |  |           |  |                    |  |     |     |  +-----EPI1062877|HA|B/Yunnan-Anning/1391/2017|EPI_ISL_278700|B
+|                      |  |     |  |           |  |                    |  |     |     +--| (23)
+|                      |  |     |  |           |  |                    |  |     |        +-----EPI1145644|HA|B/Singapore/EN0958/2017|EPI_ISL_292457|B
+|                      |  |     |  |           |  |                    |  |  +--| (2)
+|                      |  |     |  |           |  |                    |  |  |  |  +-----EPI1022738|HA|B/Hong_Kong/245/2017|EPI_ISL_269536|B
+|                      |  |     |  |           |  |                    |  |  |  +--| (18)
+|                      |  |     |  |           |  |                    |  |  |     +-----------EPI1030258|HA|B/Zhejiang-Xiacheng/1233/2017|EPI_ISL_270718|B
+|                      |  |     |  |           |  |                    |  +--| (12)
+|                      |  |     |  |           |  |                    |     |        +-----EPI1062361|HA|B/Shanghai-Chongming/1638/2017|EPI_ISL_278528|B
+|                      |  |     |  |           |  |                    |     |     +--| (56)
+|                      |  |     |  |           |  |                    |     |     |  +-----EPI1125361|HA|B/Shanghai-Baoshan/1864/2017|EPI_ISL_288717|B
+|                      |  |     |  |           |  |                    |     |  +--| (53)
+|                      |  |     |  |           |  |                    |     |  |  +-----------EPI1062769|HA|B/Guizhou-Kaili/8103/2017|EPI_ISL_278664|B
+|                      |  |     |  |           |  |                    |     +--| (11)
+|                      |  |     |  |           |  |                    |        +-----EPI1125358|HA|B/Sichuan-Qingyang/11469/2017|EPI_ISL_288716|B
+|                      |  |     |  |           |  |              +-----| (25)
+|                      |  |     |  |           |  |              |     +-----EPI1062358|HA|B/Jiangxi-Yuehu/1589/2017|EPI_ISL_278527|B
+|                      |  |     |  |           |  |           +--| (6)
+|                      |  |     |  |           |  |           |  +-----------EPI1017912|HA|B/California/28/2017|EPI_ISL_268476|B
+|                      |  |     |  |           |  |        +--| (5)
+|                      |  |     |  |           |  |        |  |     +--EPI1022575|HA|B/Laos/F0318/2017|EPI_ISL_269496|B
+|                      |  |     |  |           |  |        |  +-----| (52)
+|                      |  |     |  |           |  |        |        +-----EPI1062754|HA|B/Anhui-Huashan/1275/2017|EPI_ISL_278659|B
+|                      |  |     |  |           |  |     +--| (5)
+|                      |  |     |  |           |  |     |  |           +--EPI1012762|HA|B/Kyrgyzstan/119/2017|EPI_ISL_267629|B
+|                      |  |     |  |           |  |     |  |        +--| (69)
+|                      |  |     |  |           |  |     |  |        |  +-----------EPI1012786|HA|B/Kyrgyzstan/125/2017|EPI_ISL_267632|B
+|                      |  |     |  |           |  |     |  |  +-----| (48)
+|                      |  |     |  |           |  |     |  |  |     +-----EPI1012952|HA|B/Kyrgyzstan/99/2017|EPI_ISL_267653|B
+|                      |  |     |  |           |  |     |  +--| (7)
+|                      |  |     |  |           |  |     |     |        +-----EPI1211661|HA|B/Philippines/0875/2017|EPI_ISL_306117|B
+|                      |  |     |  |           |  |     |     |  +-----| (69)
+|                      |  |     |  |           |  |     |     |  |     +--EPI1141313|HA|B/Philippines/0875/2017|EPI_ISL_291568|B
+|                      |  |     |  |           |  |     |     +--| (31)
+|                      |  |     |  |           |  |     |        +-----EPI1003324|HA|B/West_Virginia/12/2017|EPI_ISL_264412|B
+|                      |  |     |  |           |  |  +--| (5)
+|                      |  |     |  |           |  |  |  |     +--------EPI1177508|HA|B/Kazakhstan/7527/2017|EPI_ISL_299103|B
+|                      |  |     |  |           |  |  |  +-----| (63)
+|                      |  |     |  |           |  |  |        +--------EPI1012111|HA|B/Michigan/67/2017|EPI_ISL_267545|B
+|                      |  |     |  |           |  +--| (5)
+|                      |  |     |  |           |     |        +-----EPI1145822|HA|B/Sur/2294/2017|EPI_ISL_292489|B
+|                      |  |     |  |           |     |  +-----| (82)
+|                      |  |     |  |           |     |  |     +-----EPI1244038|HA|B/New_Caledonia/26/2017|EPI_ISL_312540|B
+|                      |  |     |  |           |     +--| (12)
+|                      |  |     |  |           |        +------------------EPI1040144|HA|B/Virginia/17/2017|EPI_ISL_273833|B
+|                      |  |     |  |        +--| (5)
+|                      |  |     |  |        |  |     +-----EPI1340975|HA|B/shenzhen/2018-28139/2017|EPI_ISL_335143|B
+|                      |  |     |  |        |  |  +--| (30)
+|                      |  |     |  |        |  |  |  +-----EPI1107590|HA|B/New_Zealand/2197/2017|EPI_ISL_286103|B
+|                      |  |     |  |        |  +--| (9)
+|                      |  |     |  |        |     |     +-----EPI1012087|HA|B/Michigan/57/2017|EPI_ISL_267542|B
+|                      |  |     |  |        |     +-----| (96)
+|                      |  |     |  |        |           +-----------EPI963806|HA|B/North_Carolina/03/2017|EPI_ISL_256857|B
+|                      |  |     |  |     +--| (7)
+|                      |  |     |  |     |  |                                   +-----EPI994761|HA|B/Maldives/49/2017|EPI_ISL_262781|B
+|                      |  |     |  |     |  |                                +--| (12)
+|                      |  |     |  |     |  |                                |  +-----EPI1340185|HA|B/Neimenggu-Keerqin/1544/2017|EPI_ISL_334881|B
+|                      |  |     |  |     |  |                             +--| (4)
+|                      |  |     |  |     |  |                             |  |  +-----EPI986259|HA|B/Qatar/10-VI-17-0001141/2017|EPI_ISL_261280|B
+|                      |  |     |  |     |  |                             |  +--| (10)
+|                      |  |     |  |     |  |                             |     |  +-----------EPI995268|HA|B/Tennessee/12/2017|EPI_ISL_262845|B
+|                      |  |     |  |     |  |                             |     +--| (40)
+|                      |  |     |  |     |  |                             |        +-----EPI1025947|HA|B/Connecticut/37/2017|EPI_ISL_270058|B
+|                      |  |     |  |     |  |                          +--| (11)
+|                      |  |     |  |     |  |                          |  |     +-----------EPI1179379|HA|B/Sri_Lanka/19/2017|EPI_ISL_299617|B
+|                      |  |     |  |     |  |                          |  |  +--| (22)
+|                      |  |     |  |     |  |                          |  |  |  +-----EPI1340239|HA|B/Guangxi-Youjiang/1928/2017|EPI_ISL_334899|B
+|                      |  |     |  |     |  |                          |  +--| (7)
+|                      |  |     |  |     |  |                          |     |  +-----------EPI1012520|HA|B/KANAGAWA/5/2017|EPI_ISL_267598|B
+|                      |  |     |  |     |  |                          |     +--| (26)
+|                      |  |     |  |     |  |                          |        +-----EPI1033154|HA|B/KITAKYUSYU/5/2017|EPI_ISL_271962|B
+|                      |  |     |  |     |  |                       +--| (6)
+|                      |  |     |  |     |  |                       |  |     +-----EPI1340969|HA|B/shenzhen/2018-28141/2017|EPI_ISL_335141|B
+|                      |  |     |  |     |  |                       |  |  +--| (5)
+|                      |  |     |  |     |  |                       |  |  |  |     +-----EPI1078781|HA|B/India/7284/2017|EPI_ISL_281651|B
+|                      |  |     |  |     |  |                       |  |  |  |  +--| (11)
+|                      |  |     |  |     |  |                       |  |  |  |  |  +-----EPI1026216|HA|B/Louisiana/22/2017|EPI_ISL_270093|B
+|                      |  |     |  |     |  |                       |  |  |  +--| (3)
+|                      |  |     |  |     |  |                       |  |  |     |  +-----EPI3177289|HA|B/USA/PV00265/2017|EPI_ISL_19029324|B
+|                      |  |     |  |     |  |                       |  |  |     +--| (14)
+|                      |  |     |  |     |  |                       |  |  |        +-----EPI978262|HA|B/New_York/09/2017|EPI_ISL_259452|B
+|                      |  |     |  |     |  |                       |  +--| (7)
+|                      |  |     |  |     |  |                       |     |  +-----EPI1059628|HA|B/NIIGATA-C/22/2017|EPI_ISL_277724|B
+|                      |  |     |  |     |  |                       |     +--| (6)
+|                      |  |     |  |     |  |                       |        |  +-----EPI1059624|HA|B/KAGOSHIMA/4067/2017|EPI_ISL_277722|B
+|                      |  |     |  |     |  |                       |        +--| (10)
+|                      |  |     |  |     |  |                       |           +-----EPI1107537|HA|B/Bangladesh/702014/2017|EPI_ISL_286096|B
+|                      |  |     |  |     |  |                    +--| (6)
+|                      |  |     |  |     |  |                    |  |  +-----EPI1244612|HA|B/KOCHI/106/2017|EPI_ISL_312695|B
+|                      |  |     |  |     |  |                    |  +--| (14)
+|                      |  |     |  |     |  |                    |     +-----EPI1039982|HA|B/Hawaii/47/2017|EPI_ISL_273813|B
+|                      |  |     |  |     |  |                 +--| (12)
+|                      |  |     |  |     |  |                 |  |        +-----EPI1046028|HA|B/Ankara/561/2017|EPI_ISL_275444|B
+|                      |  |     |  |     |  |                 |  |     +--| (17)
+|                      |  |     |  |     |  |                 |  |     |  +-----EPI960385|HA|B/Arizona/07/2017|EPI_ISL_256111|B
+|                      |  |     |  |     |  |                 |  |  +--| (3)
+|                      |  |     |  |     |  |                 |  |  |  |     +-----EPI1141368|HA|B/Philippines/0838/2017|EPI_ISL_291575|B
+|                      |  |     |  |     |  |                 |  |  |  |  +--| (11)
+|                      |  |     |  |     |  |                 |  |  |  |  |  +-----EPI917963|HA|B/Texas/08/2017|EPI_ISL_248998|B
+|                      |  |     |  |     |  |                 |  |  |  +--| (10)
+|                      |  |     |  |     |  |                 |  |  |     +-----EPI975808|HA|B/KANAGAWA/IC1638/2017|EPI_ISL_259059|B
+|                      |  |     |  |     |  |                 |  +--| (2)
+|                      |  |     |  |     |  |                 |     +-----EPI1026544|HA|B/Wisconsin/53/2017|EPI_ISL_270135|B
+|                      |  |     |  |     |  |              +--| (8)
+|                      |  |     |  |     |  |              |  |        +-----EPI1182280|HA|B/Hong_Kong/1148/2017|EPI_ISL_300120|B
+|                      |  |     |  |     |  |              |  |     +--| (11)
+|                      |  |     |  |     |  |              |  |     |  +-----EPI1125340|HA|B/Guangxi-Xinbin/1832/2017|EPI_ISL_288710|B
+|                      |  |     |  |     |  |              |  |  +--| (5)
+|                      |  |     |  |     |  |              |  |  |  |  +-----EPI1399085|HA|B/Taiwan/78141/2017|EPI_ISL_348566|B
+|                      |  |     |  |     |  |              |  |  |  +--| (21)
+|                      |  |     |  |     |  |              |  |  |     +-----EPI1001997|HA|B/Florida/28/2017|EPI_ISL_264108|B
+|                      |  |     |  |     |  |              |  +--| (6)
+|                      |  |     |  |     |  |              |     |     +-----EPI1192390|HA|B/GIFU/65/2017|EPI_ISL_302255|B
+|                      |  |     |  |     |  |              |     |  +--| (19)
+|                      |  |     |  |     |  |              |     |  |  +-----EPI1022732|HA|B/Hong_Kong/219/2017|EPI_ISL_269533|B
+|                      |  |     |  |     |  |              |     +--| (11)
+|                      |  |     |  |     |  |              |        |  +-----EPI1033134|HA|B/EHIME/3/2017|EPI_ISL_271952|B
+|                      |  |     |  |     |  |              |        +--| (7)
+|                      |  |     |  |     |  |              |           +-----EPI912611|HA|B/Massachusetts/03/2017|EPI_ISL_248271|B
+|                      |  |     |  |     |  |           +--| (5)
+|                      |  |     |  |     |  |           |  |  +-----EPI1020317|HA|B/Kazakhstan/6718/2017|EPI_ISL_268827|B
+|                      |  |     |  |     |  |           |  +--| (11)
+|                      |  |     |  |     |  |           |     +-----EPI1062757|HA|B/Guangxi-Hengxian/335/2017|EPI_ISL_278660|B
+|                      |  |     |  |     |  |        +--| (1)
+|                      |  |     |  |     |  |        |  |     +-----EPI1172916|HA|B/Astana/ZVL988/2017|EPI_ISL_297936|B
+|                      |  |     |  |     |  |        |  |  +--| (18)
+|                      |  |     |  |     |  |        |  |  |  +-----EPI1056593|HA|B/Hawaii/53/2017|EPI_ISL_277225|B
+|                      |  |     |  |     |  |        |  +--| (4)
+|                      |  |     |  |     |  |        |     +-----EPI1051549|HA|B/Tennessee/35/2017|EPI_ISL_276396|B
+|                      |  |     |  |     |  |     +--| (5)
+|                      |  |     |  |     |  |     |  |        +--EPI1187942|HA|B/Laos/F2882/2017|EPI_ISL_301183|B
+|                      |  |     |  |     |  |     |  |  +-----| (99)
+|                      |  |     |  |     |  |     |  |  |     +-----EPI1113223|HA|B/Laos/F1473/2017|EPI_ISL_286978|B
+|                      |  |     |  |     |  |     |  +--| (61)
+|                      |  |     |  |     |  |     |     +-----EPI1025438|HA|B/Bangladesh/8008/2017|EPI_ISL_269991|B
+|                      |  |     |  |     |  |  +--| (11)
+|                      |  |     |  |     |  |  |  |                    +--EPI1174887|HA|B/Bangladesh/1294/2017|EPI_ISL_298416|B
+|                      |  |     |  |     |  |  |  |                 +--| (50)
+|                      |  |     |  |     |  |  |  |                 |  +-----EPI995126|HA|B/Kentucky/09/2017|EPI_ISL_262827|B
+|                      |  |     |  |     |  |  |  |              +--| (96)
+|                      |  |     |  |     |  |  |  |              |  +-----EPI3126405|HA|B/USA/PV00290/2017|EPI_ISL_18989220|B
+|                      |  |     |  |     |  |  |  |        +-----| (64)
+|                      |  |     |  |     |  |  |  |        |     +-----EPI1152765|HA|B/Sydney/82/2017|EPI_ISL_293741|B
+|                      |  |     |  |     |  |  |  |     +--| (57)
+|                      |  |     |  |     |  |  |  |     |  +-----------EPI1046025|HA|B/Ankara/551/2017|EPI_ISL_275443|B
+|                      |  |     |  |     |  |  |  |  +--| (13)
+|                      |  |     |  |     |  |  |  |  |  +-----EPI1012095|HA|B/Michigan/58/2017|EPI_ISL_267543|B
+|                      |  |     |  |     |  |  |  +--| (16)
+|                      |  |     |  |     |  |  |     |           +--EPI1179385|HA|B/Sri_Lanka/14/2017|EPI_ISL_299620|B
+|                      |  |     |  |     |  |  |     |        +--| (46)
+|                      |  |     |  |     |  |  |     |        |  +-----EPI1003236|HA|B/North_Carolina/17/2017|EPI_ISL_264401|B
+|                      |  |     |  |     |  |  |     |  +-----| (66)
+|                      |  |     |  |     |  |  |     |  |     +-----EPI971066|HA|B/Wisconsin/19/2017|EPI_ISL_257979|B
+|                      |  |     |  |     |  |  |     +--| (11)
+|                      |  |     |  |     |  |  |        |        +--EPI1059616|HA|B/TOKYO/17111/2017|EPI_ISL_277718|B
+|                      |  |     |  |     |  |  |        |  +-----| (65)
+|                      |  |     |  |     |  |  |        |  |     +-----EPI1026186|HA|B/Iowa/24/2017|EPI_ISL_270089|B
+|                      |  |     |  |     |  |  |        +--| (23)
+|                      |  |     |  |     |  |  |           |        +--EPI1009986|HA|B/Colorado/17/2017|EPI_ISL_266899|B
+|                      |  |     |  |     |  |  |           |     +--| (20)
+|                      |  |     |  |     |  |  |           |     |  |     +-----EPI1026592|HA|B/Wisconsin/59/2017|EPI_ISL_270141|B
+|                      |  |     |  |     |  |  |           |     |  |  +--| (16)
+|                      |  |     |  |     |  |  |           |     |  |  |  +-----EPI917862|HA|B/Missouri/01/2017|EPI_ISL_248985|B
+|                      |  |     |  |     |  |  |           |     |  +--| (8)
+|                      |  |     |  |     |  |  |           |     |     +-----EPI1051403|HA|B/Arizona/56/2017|EPI_ISL_276377|B
+|                      |  |     |  |     |  |  |           +-----| (56)
+|                      |  |     |  |     |  |  |                 +-----EPI1026513|HA|B/Wisconsin/49/2017|EPI_ISL_270131|B
+|                      |  |     |  |     |  +--| (5)
+|                      |  |     |  |     |     |     +-----EPI1341140|HA|B/shenzhen/2018-22502/2017|EPI_ISL_335198|B
+|                      |  |     |  |     |     |  +--| (49)
+|                      |  |     |  |     |     |  |  +-----EPI1036470|HA|B/Georgia/566/2017|EPI_ISL_273308|B
+|                      |  |     |  |     |     +--| (8)
+|                      |  |     |  |     |        |           +--EPI1030318|HA|B/Hubei-Echeng/11730/2017|EPI_ISL_270738|B
+|                      |  |     |  |     |        |     +-----| (81)
+|                      |  |     |  |     |        |     |     +-----------EPI1062874|HA|B/Hubei-Echeng/38/2017|EPI_ISL_278699|B
+|                      |  |     |  |     |        |  +--| (63)
+|                      |  |     |  |     |        |  |  +-----EPI1113709|HA|B/Armenia/9/2017|EPI_ISL_287055|B
+|                      |  |     |  |     |        +--| (8)
+|                      |  |     |  |     |           |           +--EPI1054216|HA|B/FUKUI/12/2017|EPI_ISL_276811|B
+|                      |  |     |  |     |           |     +-----| (66)
+|                      |  |     |  |     |           |     |     +-----EPI1132234|HA|B/Wellington/42/2017|EPI_ISL_289931|B
+|                      |  |     |  |     |           |  +--| (53)
+|                      |  |     |  |     |           |  |  |     +--EPI1082843|HA|B/Wellington/28/2017|EPI_ISL_282370|B
+|                      |  |     |  |     |           |  |  +-----| (81)
+|                      |  |     |  |     |           |  |        +-----EPI1183763|HA|B/Fiji/33/2017|EPI_ISL_300401|B
+|                      |  |     |  |     |           +--| (8)
+|                      |  |     |  |     |              +--VicB_2017_Consensus_Aligned
+|                      |  |     |  |  +--| (6)
+|                      |  |     |  |  |  |     +--EPI1004818|HA|B/SAITAMA-C/1/2017|EPI_ISL_265151|B
+|                      |  |     |  |  |  +-----| (98)
+|                      |  |     |  |  |        +-----EPI1062388|HA|B/Yunnan-Wenshan/1619/2017|EPI_ISL_278537|B
+|                      |  |     |  +--| (1)
+|                      |  |     |  |  |                    +-----EPI1164055|HA|B/Laos/F1664/2017|EPI_ISL_296175|B
+|                      |  |     |  |  |                 +--| (19)
+|                      |  |     |  |  |                 |  |  +-----EPI1023378|HA|B/Singapore/KK0243/2017|EPI_ISL_269675|B
+|                      |  |     |  |  |                 |  +--| (22)
+|                      |  |     |  |  |                 |     +--EPI1094272|HA|B/Laos/2106/2017|EPI_ISL_284125|B
+|                      |  |     |  |  |              +--| (32)
+|                      |  |     |  |  |              |  +-----EPI1094264|HA|B/Laos/1675/2017|EPI_ISL_284124|B
+|                      |  |     |  |  |           +--| (44)
+|                      |  |     |  |  |           |  +-----EPI1094280|HA|B/Laos/2152/2017|EPI_ISL_284126|B
+|                      |  |     |  |  |        +--| (43)
+|                      |  |     |  |  |        |  |           +--EPI1029937|HA|B/Jiangsu-Gaoyou/1396/2017|EPI_ISL_270611|B
+|                      |  |     |  |  |        |  +-----------| (97)
+|                      |  |     |  |  |        |              +-----EPI1106283|HA|B/Jiangsu-Qingpu/1932/2017|EPI_ISL_285914|B
+|                      |  |     |  |  |     +--| (46)
+|                      |  |     |  |  |     |  |                    +-----EPI1340173|HA|B/Chongqing-Yongchuan/331/2017|EPI_ISL_334877|B
+|                      |  |     |  |  |     |  |                 +--| (67)
+|                      |  |     |  |  |     |  |                 |  +-----------EPI1125337|HA|B/Chongqing-Shapingba/37/2017|EPI_ISL_288709|B
+|                      |  |     |  |  |     |  |           +-----| (92)
+|                      |  |     |  |  |     |  |           |     +------------------EPI1340191|HA|B/Chongqing-Fuling/1886/2017|EPI_ISL_334883|B
+|                      |  |     |  |  |     |  +-----------| (96)
+|                      |  |     |  |  |     |              +--EPI1147885|HA|B/Hubei-Danjiangkou/31/2017|EPI_ISL_292773|B
+|                      |  |     |  |  |  +--| (15)
+|                      |  |     |  |  |  |  +-----EPI1052103|HA|B/Bangladesh/1003/2017|EPI_ISL_276469|B
+|                      |  |     |  |  +--| (17)
+|                      |  |     |  |     |                 +--EPI1167080|HA|B/Bangladesh/1312/2017|EPI_ISL_296624|B
+|                      |  |     |  |     |              +--| (17)
+|                      |  |     |  |     |              |  |  +-----EPI1107663|HA|B/Bahrain/8/2017|EPI_ISL_286114|B
+|                      |  |     |  |     |              |  +--| (16)
+|                      |  |     |  |     |              |     +-----EPI964346|HA|B/Washington/12/2017|EPI_ISL_256932|B
+|                      |  |     |  |     |           +--| (21)
+|                      |  |     |  |     |           |  +-----EPI1040208|HA|B/Virginia/25/2017|EPI_ISL_273841|B
+|                      |  |     |  |     |        +--| (27)
+|                      |  |     |  |     |        |  +-----EPI1026248|HA|B/Louisiana/26/2017|EPI_ISL_270097|B
+|                      |  |     |  |     |  +-----| (83)
+|                      |  |     |  |     |  |     +-----EPI1179623|HA|B/Philippines/13/2017|EPI_ISL_299708|B
+|                      |  |     |  |     +--| (22)
+|                      |  |     |  |        |     +-----------EPI1174863|HA|B/Bangladesh/1221/2017|EPI_ISL_298413|B
+|                      |  |     |  |        +-----| (91)
+|                      |  |     |  |              +-----EPI986263|HA|B/Qatar/10-VI-17-0001338/2017|EPI_ISL_261282|B
+|                      |  |     |  |
+|                      |  |     |  |  +----EPI1030249|HA|B/Guangxi-Lingshan/35/2017|EPI_ISL_270715|B
+|                      |  |     |  +--| (61)
+|                      |  |     |     +---EPI1009845|HA|B/Hawaii/22/2017|EPI_ISL_266881|B
+|                      |  |  +--| (2)
+|                      |  |  |  |  +-----EPI1168584|HA|B/Guizhou-Honghuagang/1952/2017|EPI_ISL_297019|B
+|                      |  |  |  +--| (10)
+|                      |  |  |  |  |     +--EPI1004836|HA|B/SAGA/73/2017|EPI_ISL_265160|B
+|                      |  |  |  |  +-----| (86)
+|                      |  |  |  |        |  +-----EPI1105670|HA|B/Bangladesh/2014/2017|EPI_ISL_285817|B
+|                      |  |  |  |        +--| (55)
+|                      |  |  |  |           +-----EPI924222|HA|B/Kentucky/04/2017|EPI_ISL_249878|B
+|                      |  |  |  |
+|                      |  |  |  |           +-----EPI1004826|HA|B/TOCHIGI/17218/2017|EPI_ISL_265155|B
+|                      |  |  |  |     +-----| (98)
+|                      |  |  |  |     |     +--EPI986271|HA|B/Qatar/32-VI-17-0001834/2017|EPI_ISL_261286|B
+|                      |  |  |  |  +--| (8)
+|                      |  |  |  |  |  |        +--EPI1012584|HA|B/GUNMA/82/2017|EPI_ISL_267606|B
+|                      |  |  |  |  |  |  +-----| (99)
+|                      |  |  |  |  |  |  |     +-----EPI1029970|HA|B/Zhejiang-Haishu/1806/2017|EPI_ISL_270622|B
+|                      |  |  |  |  |  +--| (26)
+|                      |  |  |  |  |     |     +-----EPI1030165|HA|B/Shanghai-Baoshan/1325/2017|EPI_ISL_270687|B
+|                      |  |  |  |  |     +-----| (91)
+|                      |  |  |  |  |           +--EPI924431|HA|B/Utah/06/2017|EPI_ISL_249905|B
+|                      |  |  |  +--| (1)
+|                      |  |  |     |              +-----EPI1492118|HA|B/Ashgabat/5/2017|EPI_ISL_364905|B
+|                      |  |  |     |           +--| (27)
+|                      |  |  |     |           |  +-----------EPI944064|HA|B/Jiangsu-Haizhou/123/2017|EPI_ISL_253322|B
+|                      |  |  |     |        +--| (15)
+|                      |  |  |     |        |  +-----------EPI1113221|HA|B/OITA/11/2017|EPI_ISL_286977|B
+|                      |  |  |     |  +-----| (42)
+|                      |  |  |     |  |     |     +-----------EPI1125352|HA|B/Neimenggu-Keerqin/1495/2017|EPI_ISL_288714|B
+|                      |  |  |     |  |     +-----| (69)
+|                      |  |  |     |  |           +--EPI1128000|HA|B/Pennsylvania/26/2017|EPI_ISL_289241|B
+|                      |  |  |     +--| (26)
+|                      |  |  |        |     +--EPI1030147|HA|B/Sichuan-Dongxin/1297/2017|EPI_ISL_270681|B
+|                      |  |  |        +-----| (45)
+|                      |  |  |              +-----------EPI1036494|HA|B/Georgia/523/2017|EPI_ISL_273320|B
+|                      |  +--| (7)
+|                      |     |        +--EPI1192388|HA|B/NAGANO/2774/2017|EPI_ISL_302254|B
+|                      |     |  +-----| (70)
+|                      |     |  |     +-----EPI1192396|HA|B/NAGANO/2778/2017|EPI_ISL_302258|B
+|                      |     +--| (15)
+|                      |        |     +------------------EPI1062871|HA|B/Zhejiang-Nanhu/1345/2017|EPI_ISL_278698|B
+|                      |        +-----| (50)
+|                      |              +--EPI3139339|HA|B/Michigan/UOMMH15236/2017|EPI_ISL_18999052|B
+|                   +--| (6)
+|                   |  |              +--EPI1158009|HA|B/Hong_Kong/1094/2017|EPI_ISL_294979|B
+|                   |  |           +--| (66)
+|                   |  |           |  +-----EPI1158031|HA|B/Hong_Kong/695/2017|EPI_ISL_294990|B
+|                   |  |     +-----| (60)
+|                   |  |     |     +-----EPI1082841|HA|B/Perth/11/2017|EPI_ISL_282369|B
+|                   |  |  +--| (16)
+|                   |  |  |  |           +--EPI1004798|HA|B/Almaty/ZVL599/2017|EPI_ISL_264549|B
+|                   |  |  |  |        +--| (14)
+|                   |  |  |  |        |  +-----EPI975712|HA|B/KANAGAWA/AC1623/2017|EPI_ISL_259047|B
+|                   |  |  |  |     +--| (23)
+|                   |  |  |  |     |  |  +-----EPI1022724|HA|B/Hong_Kong/194/2017|EPI_ISL_269528|B
+|                   |  |  |  |     |  +--| (37)
+|                   |  |  |  |     |     +-----EPI1030267|HA|B/Guangxi-Xixiangtang/1136/2017|EPI_ISL_270721|B
+|                   |  |  |  +-----| (26)
+|                   |  |  |        +-----EPI1152788|HA|B/Darwin/109/2017|EPI_ISL_293749|B
+|                   |  +--| (11)
+|                   |     |        +--EPI1012544|HA|B/SHIZUOKA/48/2017|EPI_ISL_267601|B
+|                   |     |  +-----| (62)
+|                   |     |  |     +-------------------------------------EPI1106277|HA|B/Guangxi-Yuzhou/1773/2017|EPI_ISL_285912|B
+|                   |     +--| (26)
+|                   |        |     +--EPI1033989|HA|B/Hawaii/38/2017|EPI_ISL_272632|B
+|                   |        +-----| (73)
+|                   |              +-----EPI1089741|HA|B/Hawaii/55/2017|EPI_ISL_283379|B
+|                +--| (55)
+|                |  |        +--EPI1012802|HA|B/Kyrgyzstan/136/2017|EPI_ISL_267634|B
+|                |  |  +-----| (39)
+|                |  |  |     +-----EPI1030168|HA|B/Zhejiang-Lucheng/1434/2017|EPI_ISL_270688|B
+|                |  +--| (16)
+|                |     |        +--EPI995118|HA|B/Florida/22/2017|EPI_ISL_262826|B
+|                |     |     +--| (85)
+|                |     |     |  +-----EPI963719|HA|B/Florida/10/2017|EPI_ISL_256846|B
+|                |     +-----| (70)
+|                |           +-----------EPI1051564|HA|B/Ohio/14/2017|EPI_ISL_276398|B
+|            +---| (56)
+|            |   +-----EPI1034056|HA|B/Michigan/27/2017|EPI_ISL_272641|B
+|        +---| (82)
+|        |   |  +--EPI1033878|HA|B/Bangladesh/0010/2017|EPI_ISL_272618|B
+|        |   +--| (100)
+|        |      +-----EPI1054180|HA|B/KANAGAWA/IC1647/2017|EPI_ISL_276793|B
+|     +--| (35)
+|     |  |  +-----EPI1023354|HA|B/Singapore/TT0739/2017|EPI_ISL_269672|B
+|     |  +--| (32)
+|     |     +-----EPI1085159|HA|B/KANAGAWA/ZC1701/2017|EPI_ISL_282747|B
++-----| (99)
+|     +-----EPI1130753|HA|B/Indonesia/Nihrd-Lpg584/2017|EPI_ISL_289624|B
+|
++--VicB_2017_COBRA_Aligned
+
+
+Consensus tree in newick format: 
+
+(EPI1158001|HA|B/Hong_Kong/1089/2017|EPI_ISL_294975|B:0.0000025259,((((((((((((EPI1158011|HA|B/Hong_Kong/1095/2017|EPI_ISL_294980|B:0.0000025259,EPI1182265|HA|B/Hong_Kong/1133/2017|EPI_ISL_300118|B:0.0036767495)82:0.0000025259,((((EPI1168599|HA|B/Hubei-Zhangwan/36/2017|EPI_ISL_297024|B:0.0000025259,(EPI1125331|HA|B/Hubei-Maojian/11662/2017|EPI_ISL_288707|B:0.0018362454,EPI1147891|HA|B/Hubei-Yunyang/310/2017|EPI_ISL_292775|B:0.0018727452)73:0.0000025259)82:0.0000025259,VicB_2017_Ancestral_Aligned_Node28:0.0000025259)99:0.0018139969,EPI1198131|HA|B/Hubei-Jiangan/1974/2017|EPI_ISL_303188|B:0.0000025259)97:0.0018207367,EPI1147906|HA|B/Yunnan-Funing/37/2017|EPI_ISL_292780|B:0.0036708333)95:0.0018102581)98:0.0018161313,((((EPI1004846|HA|B/SAITAMA/93/2017|EPI_ISL_265165|B:0.0000025259,(EPI1012576|HA|B/KOBE/871/2017|EPI_ISL_267605|B:0.0018078653,EPI1012560|HA|B/HYOGO/3233/2017|EPI_ISL_267603|B:0.0018089244)27:0.0000025259)2:0.0000025259,(EPI1033142|HA|B/OKAYAMA/3/2017|EPI_ISL_271956|B:0.0018090262,EPI1057984|HA|B/NAGANO-C/39/2017|EPI_ISL_277458|B:0.0036239598)14:0.0000025259)6:0.0000025259,(EPI1065000|HA|B/KANAGAWA/IC1644/2017|EPI_ISL_279054|B:0.0018149522,EPI1064994|HA|B/KANAGAWA/IC1639/2017|EPI_ISL_279051|B:0.0018078220)50:0.0000025259)6:0.0000025259,(EPI1064984|HA|B/KANAGAWA/AC1629/2017|EPI_ISL_279046|B:0.0018165921,EPI1064998|HA|B/KANAGAWA/AC1635/2017|EPI_ISL_279053|B:0.0018142126)68:0.0000025259)10:0.0000025259)71:0.0018097336,EPI1022730|HA|B/Hong_Kong/218/2017|EPI_ISL_269532|B:0.0018104711)12:0.0000025259,(((EPI1174879|HA|B/Bangladesh/1302/2017|EPI_ISL_298415|B:0.0000025259,EPI1051347|HA|B/Arizona/49/2017|EPI_ISL_276370|B:0.0036374844)62:0.0018115468,(EPI1017848|HA|B/Bangladesh/3004/2017|EPI_ISL_268468|B:0.0000025259,(((((((((((((EPI1381174|HA|B/Colorado/06/2017|EPI_ISL_344415|B:0.0016943554,EPI1138021|HA|B/Florida/97/2017|EPI_ISL_290859|B:0.0016824467)63:0.0002756811,(((EPI994769|HA|B/Maryland/14/2017|EPI_ISL_262782|B:0.0000021320,EPI1042200|HA|B/Florida/89/2017|EPI_ISL_274393|B:0.0018254052)65:0.0018216584,EPI1003292|HA|B/Texas/62/2017|EPI_ISL_264408|B:0.0018231995)18:0.0000025259,(((EPI994880|HA|B/New_Jersey/21/2017|EPI_ISL_262796|B:0.0018231978,EPI1124943|HA|B/Indiana/24/2017|EPI_ISL_288638|B:0.0018237988)20:0.0000025259,EPI1162380|HA|B/North_Carolina/30/2017|EPI_ISL_295941|B:0.0018266468)9:0.0000025259,((((EPI1162698|HA|B/West_Virginia/21/2017|EPI_ISL_295981|B:0.0018247830,EPI1026208|HA|B/Louisiana/21/2017|EPI_ISL_270092|B:0.0018274011)8:0.0000025259,((EPI1025891|HA|B/Colorado/22/2017|EPI_ISL_270051|B:0.0018215899,EPI1026417|HA|B/Utah/40/2017|EPI_ISL_270119|B:0.0055035735)25:0.0000025259,EPI1033949|HA|B/Florida/84/2017|EPI_ISL_272627|B:0.0018241986)4:0.0000025259)2:0.0000025259,(((EPI1164788|HA|B/New_Hampshire/14/2017|EPI_ISL_296276|B:0.0036829670,EPI1026425|HA|B/Utah/41/2017|EPI_ISL_270120|B:0.0018265832)13:0.0000025259,EPI1010050|HA|B/North_Dakota/12/2017|EPI_ISL_266907|B:0.0018279347)8:0.0000025259,(EPI1020997|HA|B/Florida/62/2017|EPI_ISL_268914|B:0.0018326253,EPI972216|HA|B/Florida/12/2017|EPI_ISL_258199|B:0.0018322418)6:0.0000025259)10:0.0000025259)14:0.0000025259,((EPI1008023|HA|B/New_Jersey/24/2017|EPI_ISL_266630|B:0.0018216220,EPI1025955|HA|B/Connecticut/38/2017|EPI_ISL_270059|B:0.0018248037)17:0.0000025259,EPI1056912|HA|B/Florida/94/2017|EPI_ISL_277267|B:0.0018289648)5:0.0000025259)9:0.0000025259)6:0.0000025259)12:0.0000025259)4:0.0000025259,EPI1018056|HA|B/South_Carolina/14/2017|EPI_ISL_268494|B:0.0018277804)17:0.0000025259,EPI1025979|HA|B/Connecticut/41/2017|EPI_ISL_270062|B:0.0018232577)98:0.0018239707,(((EPI994809|HA|B/Minnesota/18/2017|EPI_ISL_262787|B:0.0018236112,EPI1007822|HA|B/Connecticut/31/2017|EPI_ISL_266604|B:0.0018235623)14:0.0000025259,(((EPI1001974|HA|B/Connecticut/29/2017|EPI_ISL_264105|B:0.0018235148,EPI1002185|HA|B/Pennsylvania/11/2017|EPI_ISL_264132|B:0.0018223890)14:0.0000025259,(EPI1026027|HA|B/Connecticut/47/2017|EPI_ISL_270069|B:0.0036770551,EPI3125851|HA|B/USA/PV00276/2017|EPI_ISL_18989152|B:0.0018241728)32:0.0000025259)6:0.0000025259,EPI1040008|HA|B/New_York/28/2017|EPI_ISL_273816|B:0.0018249902)6:0.0000025259)9:0.0000025259,(EPI1114062|HA|B/Michigan/76/2017|EPI_ISL_287130|B:0.0018245176,EPI1130997|HA|B/Wisconsin/76/2017|EPI_ISL_289655|B:0.0018259901)15:0.0000025259)7:0.0000025259)98:0.0018255612,(((EPI1008675|HA|B/Michigan/29/2017|EPI_ISL_266714|B:0.0000025259,EPI1113638|HA|B/Michigan/50/2017|EPI_ISL_287033|B:0.0018200710)65:0.0000025259,EPI1025518|HA|B/Alabama/02/2017|EPI_ISL_270001|B:0.0018200532)99:0.0018207478,EPI1012175|HA|B/Minnesota/31/2017|EPI_ISL_267553|B:0.0018211739)30:0.0000025259)30:0.0000025259,EPI994644|HA|B/Georgia/06/2017|EPI_ISL_262766|B:0.0000025259)32:0.0000025259,(EPI1008199|HA|B/South_Dakota/15/2017|EPI_ISL_266653|B:0.0000025259,(EPI1115795|HA|B/Michigan/46/2017|EPI_ISL_287373|B:0.0000025259,EPI971017|HA|B/Michigan/20/2017|EPI_ISL_257972|B:0.0018084980)98:0.0018306557)6:0.0000025259)3:0.0000025259,(EPI1012071|HA|B/Michigan/56/2017|EPI_ISL_267540|B:0.0018114441,(EPI969626|HA|B/South_Dakota/10/2017|EPI_ISL_257767|B:0.0018077547,EPI977903|HA|B/Michigan/34/2017|EPI_ISL_259403|B:0.0018077658)30:0.0000025259)11:0.0000025259)10:0.0000025259,EPI1040112|HA|B/South_Dakota/31/2017|EPI_ISL_273829|B:0.0018100085)25:0.0000025259,EPI909229|HA|B/South_Dakota/05/2017|EPI_ISL_247695|B:0.0018127890)91:0.0018077712,EPI1130504|HA|B/Bangladesh/1269/2017|EPI_ISL_289592|B:0.0018076309)26:0.0000025259,EPI1107647|HA|B/Bangladesh/1156/2017|EPI_ISL_286112|B:0.0018070977)16:0.0000025259)36:0.0000025259)60:0.0018079956,EPI1179381|HA|B/Townsville/4/2017|EPI_ISL_299618|B:0.0018077193)18:0.0000025259)7:0.0000025259,((((EPI1158023|HA|B/Hong_Kong/1118/2017|EPI_ISL_294986|B:0.0018093208,(EPI1177451|HA|B/Ankara/1110/2017|EPI_ISL_299074|B:0.0072996428,EPI1022583|HA|B/NAGANO/2272/2017|EPI_ISL_269500|B:0.0000025259)95:0.0018085161)22:0.0000025259,((((((((EPI3230642|HA|B/Okinawa/16T022/2017|EPI_ISL_19071163|B:0.0018115046,EPI3230634|HA|B/Okinawa/16T016/2017|EPI_ISL_19071162|B:0.0018083720)58:0.0000025259,EPI1012552|HA|B/OITA/8/2017|EPI_ISL_267602|B:0.0000025259)83:0.0018133715,(((EPI1052664|HA|B/Hong_Kong/283/2017|EPI_ISL_276541|B:0.0000025259,VicB_2017_Medoid_Aligned|EPI1052664|HA|B/Hong_Kong/283/2017|EPI_ISL_276541|B:0.0000025259)84:0.0000025259,((((((((EPI1244572|HA|B/KAWASAKI/79/2017|EPI_ISL_312690|B:0.0018103828,EPI1020776|HA|B/Illinois/38/2017|EPI_ISL_268886|B:0.0018127232)24:0.0000025259,(((EPI1162444|HA|B/Idaho/31/2017|EPI_ISL_295949|B:0.0018143532,EPI972104|HA|B/Illinois/12/2017|EPI_ISL_258184|B:0.0018156254)10:0.0000025259,(EPI1018008|HA|B/Hawaii/29/2017|EPI_ISL_268488|B:0.0018125104,EPI1040120|HA|B/Texas/76/2017|EPI_ISL_273830|B:0.0018118432)16:0.0000025259)5:0.0000025259,EPI1124658|HA|B/Oklahoma/15/2017|EPI_ISL_288602|B:0.0018123186)6:0.0000025259)7:0.0000025259,(EPI1051243|HA|B/Arizona/74/2017|EPI_ISL_276357|B:0.0018140027,EPI984913|HA|B/Utah/19/2017|EPI_ISL_260507|B:0.0018186631)10:0.0000025259)11:0.0000025259,(EPI1012039|HA|B/Florida/55/2017|EPI_ISL_267536|B:0.0018129691,EPI984688|HA|B/Colorado/10/2017|EPI_ISL_260479|B:0.0018137035)16:0.0000025259)3:0.0000025259,EPI1137505|HA|B/California/74/2017|EPI_ISL_290794|B:0.0018181545)5:0.0000025259,(((((EPI994715|HA|B/Kentucky/14/2017|EPI_ISL_262775|B:0.0018119943,EPI1020680|HA|B/Illinois/32/2017|EPI_ISL_268874|B:0.0018186909)28:0.0000025259,EPI1020233|HA|B/Illinois/23/2017|EPI_ISL_268816|B:0.0000025259)54:0.0018103263,(EPI1008231|HA|B/South_Dakota/19/2017|EPI_ISL_266657|B:0.0018199525,EPI1026178|HA|B/Iowa/22/2017|EPI_ISL_270088|B:0.0018076071)61:0.0018128472)62:0.0000025259,EPI1012295|HA|B/Maryland/34/2017|EPI_ISL_267568|B:0.0018121559)18:0.0000025259,EPI1051291|HA|B/Arizona/61/2017|EPI_ISL_276363|B:0.0018127629)7:0.0000025259)8:0.0000025259,(EPI1026147|HA|B/Iowa/18/2017|EPI_ISL_270084|B:0.0018099388,EPI1026441|HA|B/Wisconsin/40/2017|EPI_ISL_270122|B:0.0018115142)9:0.0000025259)16:0.0000025259,EPI955175|HA|B/Texas/24/2017|EPI_ISL_255258|B:0.0018118521)99:0.0018117865)97:0.0018095132,EPI1082654|HA|B/Cambodia/FSS34628/2017|EPI_ISL_282297|B:0.0018110484)15:0.0000025259)5:0.0000025259,((((((((((((EPI1168614|HA|B/Hunan-Yuhua/11919/2017|EPI_ISL_297029|B:0.0036334126,EPI1062802|HA|B/Jiangsu-Gaoyou/1585/2017|EPI_ISL_278675|B:0.0000025259)61:0.0000026728,EPI1062763|HA|B/Shanghai-Putuo/1407/2017|EPI_ISL_278662|B:0.0018087686)48:0.0018096200,EPI1029964|HA|B/Anhui-Dangtu/1136/2017|EPI_ISL_270620|B:0.0018119398)41:0.0000025259,EPI1062772|HA|B/Shanghai-Changning/1405/2017|EPI_ISL_278665|B:0.0036311676)14:0.0000025259,EPI1029940|HA|B/Hubei-Shashi/1244/2017|EPI_ISL_270612|B:0.0036478711)15:0.0000025259,(((EPI1012738|HA|B/Kyrgyzstan/115/2017|EPI_ISL_267626|B:0.0000025259,(EPI1062760|HA|B/Sichuan-Jiangyang/1904/2017|EPI_ISL_278661|B:0.0018141951,(EPI1062877|HA|B/Yunnan-Anning/1391/2017|EPI_ISL_278700|B:0.0018099476,EPI1145644|HA|B/Singapore/EN0958/2017|EPI_ISL_292457|B:0.0018148338)23:0.0000025259)7:0.0000025259)10:0.0000025259,(EPI1022738|HA|B/Hong_Kong/245/2017|EPI_ISL_269536|B:0.0018117476,EPI1030258|HA|B/Zhejiang-Xiacheng/1233/2017|EPI_ISL_270718|B:0.0036269685)18:0.0000025259)2:0.0000025259,(((EPI1062361|HA|B/Shanghai-Chongming/1638/2017|EPI_ISL_278528|B:0.0018181733,EPI1125361|HA|B/Shanghai-Baoshan/1864/2017|EPI_ISL_288717|B:0.0018145635)56:0.0000025259,EPI1062769|HA|B/Guizhou-Kaili/8103/2017|EPI_ISL_278664|B:0.0036460358)53:0.0000025259,EPI1125358|HA|B/Sichuan-Qingyang/11469/2017|EPI_ISL_288716|B:0.0018157034)11:0.0000025259)12:0.0000025259)18:0.0000025259,EPI1062358|HA|B/Jiangxi-Yuehu/1589/2017|EPI_ISL_278527|B:0.0018104649)25:0.0018113661,EPI1017912|HA|B/California/28/2017|EPI_ISL_268476|B:0.0036234026)6:0.0000025259,(EPI1022575|HA|B/Laos/F0318/2017|EPI_ISL_269496|B:0.0000025259,EPI1062754|HA|B/Anhui-Huashan/1275/2017|EPI_ISL_278659|B:0.0018102200)52:0.0018099363)5:0.0000025259,(((EPI1012762|HA|B/Kyrgyzstan/119/2017|EPI_ISL_267629|B:0.0000025259,EPI1012786|HA|B/Kyrgyzstan/125/2017|EPI_ISL_267632|B:0.0036553689)69:0.0000025259,EPI1012952|HA|B/Kyrgyzstan/99/2017|EPI_ISL_267653|B:0.0018138258)48:0.0018107118,((EPI1211661|HA|B/Philippines/0875/2017|EPI_ISL_306117|B:0.0018098226,EPI1141313|HA|B/Philippines/0875/2017|EPI_ISL_291568|B:0.0000025259)69:0.0018096623,EPI1003324|HA|B/West_Virginia/12/2017|EPI_ISL_264412|B:0.0018084110)31:0.0000025259)7:0.0000025259)5:0.0000025259,(EPI1177508|HA|B/Kazakhstan/7527/2017|EPI_ISL_299103|B:0.0028212138,EPI1012111|HA|B/Michigan/67/2017|EPI_ISL_267545|B:0.0026920101)63:0.0017571275)5:0.0000025259,((EPI1145822|HA|B/Sur/2294/2017|EPI_ISL_292489|B:0.0018005174,EPI1244038|HA|B/New_Caledonia/26/2017|EPI_ISL_312540|B:0.0018191694)82:0.0018135647,EPI1040144|HA|B/Virginia/17/2017|EPI_ISL_273833|B:0.0054705021)12:0.0000025259)5:0.0000025259)6:0.0000025259,((EPI1340975|HA|B/shenzhen/2018-28139/2017|EPI_ISL_335143|B:0.0018117861,EPI1107590|HA|B/New_Zealand/2197/2017|EPI_ISL_286103|B:0.0018104766)30:0.0000025259,(EPI1012087|HA|B/Michigan/57/2017|EPI_ISL_267542|B:0.0018120165,EPI963806|HA|B/North_Carolina/03/2017|EPI_ISL_256857|B:0.0036248982)96:0.0018125490)9:0.0000025259)5:0.0000025259,((((((((((((EPI994761|HA|B/Maldives/49/2017|EPI_ISL_262781|B:0.0018112051,EPI1340185|HA|B/Neimenggu-Keerqin/1544/2017|EPI_ISL_334881|B:0.0018127723)12:0.0000025259,(EPI986259|HA|B/Qatar/10-VI-17-0001141/2017|EPI_ISL_261280|B:0.0018175232,(EPI995268|HA|B/Tennessee/12/2017|EPI_ISL_262845|B:0.0036234483,EPI1025947|HA|B/Connecticut/37/2017|EPI_ISL_270058|B:0.0018085265)40:0.0000025259)10:0.0000025259)4:0.0000025259,((EPI1179379|HA|B/Sri_Lanka/19/2017|EPI_ISL_299617|B:0.0036274876,EPI1340239|HA|B/Guangxi-Youjiang/1928/2017|EPI_ISL_334899|B:0.0018089515)22:0.0000025259,(EPI1012520|HA|B/KANAGAWA/5/2017|EPI_ISL_267598|B:0.0036308546,EPI1033154|HA|B/KITAKYUSYU/5/2017|EPI_ISL_271962|B:0.0018085843)26:0.0000025259)7:0.0000025259)11:0.0000025259,((EPI1340969|HA|B/shenzhen/2018-28141/2017|EPI_ISL_335141|B:0.0018119975,((EPI1078781|HA|B/India/7284/2017|EPI_ISL_281651|B:0.0018118304,EPI1026216|HA|B/Louisiana/22/2017|EPI_ISL_270093|B:0.0018108857)11:0.0000025259,(EPI3177289|HA|B/USA/PV00265/2017|EPI_ISL_19029324|B:0.0018113716,EPI978262|HA|B/New_York/09/2017|EPI_ISL_259452|B:0.0018153206)14:0.0000025259)3:0.0000025259)5:0.0000025259,(EPI1059628|HA|B/NIIGATA-C/22/2017|EPI_ISL_277724|B:0.0018098354,(EPI1059624|HA|B/KAGOSHIMA/4067/2017|EPI_ISL_277722|B:0.0018108765,EPI1107537|HA|B/Bangladesh/702014/2017|EPI_ISL_286096|B:0.0018114019)10:0.0000025259)6:0.0000025259)7:0.0000025259)6:0.0000025259,(EPI1244612|HA|B/KOCHI/106/2017|EPI_ISL_312695|B:0.0018072964,EPI1039982|HA|B/Hawaii/47/2017|EPI_ISL_273813|B:0.0018109840)14:0.0000025259)6:0.0000025259,(((EPI1046028|HA|B/Ankara/561/2017|EPI_ISL_275444|B:0.0018082815,EPI960385|HA|B/Arizona/07/2017|EPI_ISL_256111|B:0.0018087692)17:0.0000025259,((EPI1141368|HA|B/Philippines/0838/2017|EPI_ISL_291575|B:0.0018078610,EPI917963|HA|B/Texas/08/2017|EPI_ISL_248998|B:0.0018091377)11:0.0000025259,EPI975808|HA|B/KANAGAWA/IC1638/2017|EPI_ISL_259059|B:0.0018069064)10:0.0000025259)3:0.0000025259,EPI1026544|HA|B/Wisconsin/53/2017|EPI_ISL_270135|B:0.0018101508)2:0.0000025259)12:0.0000025259,(((EPI1182280|HA|B/Hong_Kong/1148/2017|EPI_ISL_300120|B:0.0018088178,EPI1125340|HA|B/Guangxi-Xinbin/1832/2017|EPI_ISL_288710|B:0.0018088069)11:0.0000025259,(EPI1399085|HA|B/Taiwan/78141/2017|EPI_ISL_348566|B:0.0018091690,EPI1001997|HA|B/Florida/28/2017|EPI_ISL_264108|B:0.0018091581)21:0.0000025259)5:0.0000025259,((EPI1192390|HA|B/GIFU/65/2017|EPI_ISL_302255|B:0.0018092345,EPI1022732|HA|B/Hong_Kong/219/2017|EPI_ISL_269533|B:0.0018093767)19:0.0000025259,(EPI1033134|HA|B/EHIME/3/2017|EPI_ISL_271952|B:0.0018088397,EPI912611|HA|B/Massachusetts/03/2017|EPI_ISL_248271|B:0.0018095983)7:0.0000025259)11:0.0000025259)6:0.0000025259)8:0.0000025259,(EPI1020317|HA|B/Kazakhstan/6718/2017|EPI_ISL_268827|B:0.0018092578,EPI1062757|HA|B/Guangxi-Hengxian/335/2017|EPI_ISL_278660|B:0.0018092466)11:0.0000025259)5:0.0000025259,((EPI1172916|HA|B/Astana/ZVL988/2017|EPI_ISL_297936|B:0.0018097231,EPI1056593|HA|B/Hawaii/53/2017|EPI_ISL_277225|B:0.0018089336)18:0.0000025259,EPI1051549|HA|B/Tennessee/35/2017|EPI_ISL_276396|B:0.0018092918)4:0.0000025259)1:0.0000025259,((EPI1187942|HA|B/Laos/F2882/2017|EPI_ISL_301183|B:0.0000025259,EPI1113223|HA|B/Laos/F1473/2017|EPI_ISL_286978|B:0.0018127750)99:0.0018149634,EPI1025438|HA|B/Bangladesh/8008/2017|EPI_ISL_269991|B:0.0018172381)61:0.0000025259)5:0.0000025259,((((((EPI1174887|HA|B/Bangladesh/1294/2017|EPI_ISL_298416|B:0.0000025259,EPI995126|HA|B/Kentucky/09/2017|EPI_ISL_262827|B:0.0018102178)50:0.0000025259,EPI3126405|HA|B/USA/PV00290/2017|EPI_ISL_18989220|B:0.0018062235)96:0.0000021161,EPI1152765|HA|B/Sydney/82/2017|EPI_ISL_293741|B:0.0018108127)64:0.0018047728,EPI1046025|HA|B/Ankara/551/2017|EPI_ISL_275443|B:0.0036374806)57:0.0000028330,EPI1012095|HA|B/Michigan/58/2017|EPI_ISL_267543|B:0.0018127322)13:0.0000025259,(((EPI1179385|HA|B/Sri_Lanka/14/2017|EPI_ISL_299620|B:0.0000025259,EPI1003236|HA|B/North_Carolina/17/2017|EPI_ISL_264401|B:0.0018050659)46:0.0000025259,EPI971066|HA|B/Wisconsin/19/2017|EPI_ISL_257979|B:0.0018022009)66:0.0018072385,((EPI1059616|HA|B/TOKYO/17111/2017|EPI_ISL_277718|B:0.0000025259,EPI1026186|HA|B/Iowa/24/2017|EPI_ISL_270089|B:0.0018102634)65:0.0018107024,((EPI1009986|HA|B/Colorado/17/2017|EPI_ISL_266899|B:0.0000025259,((EPI1026592|HA|B/Wisconsin/59/2017|EPI_ISL_270141|B:0.0018149481,EPI917862|HA|B/Missouri/01/2017|EPI_ISL_248985|B:0.0018141709)16:0.0000025259,EPI1051403|HA|B/Arizona/56/2017|EPI_ISL_276377|B:0.0018113523)8:0.0000025259)20:0.0000025259,EPI1026513|HA|B/Wisconsin/49/2017|EPI_ISL_270131|B:0.0018123133)56:0.0018114222)23:0.0000025259)11:0.0000025259)16:0.0000025259)11:0.0000025259,((EPI1341140|HA|B/shenzhen/2018-22502/2017|EPI_ISL_335198|B:0.0018069127,EPI1036470|HA|B/Georgia/566/2017|EPI_ISL_273308|B:0.0018119859)49:0.0000025259,(((EPI1030318|HA|B/Hubei-Echeng/11730/2017|EPI_ISL_270738|B:0.0000025259,EPI1062874|HA|B/Hubei-Echeng/38/2017|EPI_ISL_278699|B:0.0036308997)81:0.0018132854,EPI1113709|HA|B/Armenia/9/2017|EPI_ISL_287055|B:0.0018133261)63:0.0000025259,(((EPI1054216|HA|B/FUKUI/12/2017|EPI_ISL_276811|B:0.0000025259,EPI1132234|HA|B/Wellington/42/2017|EPI_ISL_289931|B:0.0018083478)66:0.0018132568,(EPI1082843|HA|B/Wellington/28/2017|EPI_ISL_282370|B:0.0000025259,EPI1183763|HA|B/Fiji/33/2017|EPI_ISL_300401|B:0.0018120005)81:0.0018091780)53:0.0000025259,VicB_2017_Consensus_Aligned:0.0000025259)8:0.0000025259)8:0.0000025259)8:0.0000025259)5:0.0000025259)7:0.0000025259,(EPI1004818|HA|B/SAITAMA-C/1/2017|EPI_ISL_265151|B:0.0000025259,EPI1062388|HA|B/Yunnan-Wenshan/1619/2017|EPI_ISL_278537|B:0.0018073585)98:0.0018099366)6:0.0000025259,(((((((EPI1164055|HA|B/Laos/F1664/2017|EPI_ISL_296175|B:0.0018345500,(EPI1023378|HA|B/Singapore/KK0243/2017|EPI_ISL_269675|B:0.0017971965,EPI1094272|HA|B/Laos/2106/2017|EPI_ISL_284125|B:0.0000025259)22:0.0000025259)19:0.0000025259,EPI1094264|HA|B/Laos/1675/2017|EPI_ISL_284124|B:0.0018401043)32:0.0000025259,EPI1094280|HA|B/Laos/2152/2017|EPI_ISL_284126|B:0.0018335902)44:0.0000025259,(EPI1029937|HA|B/Jiangsu-Gaoyou/1396/2017|EPI_ISL_270611|B:0.0000025259,EPI1106283|HA|B/Jiangsu-Qingpu/1932/2017|EPI_ISL_285914|B:0.0018048831)97:0.0036493514)43:0.0000025259,(((EPI1340173|HA|B/Chongqing-Yongchuan/331/2017|EPI_ISL_334877|B:0.0018064460,EPI1125337|HA|B/Chongqing-Shapingba/37/2017|EPI_ISL_288709|B:0.0036882177)67:0.0000025259,EPI1340191|HA|B/Chongqing-Fuling/1886/2017|EPI_ISL_334883|B:0.0054373850)92:0.0018050546,EPI1147885|HA|B/Hubei-Danjiangkou/31/2017|EPI_ISL_292773|B:0.0000025259)96:0.0036296707)46:0.0000025259,EPI1052103|HA|B/Bangladesh/1003/2017|EPI_ISL_276469|B:0.0018105661)15:0.0000025259,(((((EPI1167080|HA|B/Bangladesh/1312/2017|EPI_ISL_296624|B:0.0000025259,(EPI1107663|HA|B/Bahrain/8/2017|EPI_ISL_286114|B:0.0018135107,EPI964346|HA|B/Washington/12/2017|EPI_ISL_256932|B:0.0018114956)16:0.0000025259)17:0.0000025259,EPI1040208|HA|B/Virginia/25/2017|EPI_ISL_273841|B:0.0018191276)21:0.0000025259,EPI1026248|HA|B/Louisiana/26/2017|EPI_ISL_270097|B:0.0018104109)27:0.0000025259,EPI1179623|HA|B/Philippines/13/2017|EPI_ISL_299708|B:0.0018095022)83:0.0018102611,(EPI1174863|HA|B/Bangladesh/1221/2017|EPI_ISL_298413|B:0.0036375036,EPI986263|HA|B/Qatar/10-VI-17-0001338/2017|EPI_ISL_261282|B:0.0018121824)91:0.0018128774)22:0.0000025259)17:0.0000025259)1:0.0000025259,(EPI1030249|HA|B/Guangxi-Lingshan/35/2017|EPI_ISL_270715|B:0.0015865820,EPI1009845|HA|B/Hawaii/22/2017|EPI_ISL_266881|B:0.0012590594)61:0.0007701807)2:0.0000025259,(EPI1168584|HA|B/Guizhou-Honghuagang/1952/2017|EPI_ISL_297019|B:0.0018095873,(EPI1004836|HA|B/SAGA/73/2017|EPI_ISL_265160|B:0.0000025259,(EPI1105670|HA|B/Bangladesh/2014/2017|EPI_ISL_285817|B:0.0018083529,EPI924222|HA|B/Kentucky/04/2017|EPI_ISL_249878|B:0.0018111879)55:0.0000025259)86:0.0018118023)10:0.0000025259,(((EPI1004826|HA|B/TOCHIGI/17218/2017|EPI_ISL_265155|B:0.0018109002,EPI986271|HA|B/Qatar/32-VI-17-0001834/2017|EPI_ISL_261286|B:0.0000025259)98:0.0018145045,((EPI1012584|HA|B/GUNMA/82/2017|EPI_ISL_267606|B:0.0000025259,EPI1029970|HA|B/Zhejiang-Haishu/1806/2017|EPI_ISL_270622|B:0.0018112268)99:0.0018141529,(EPI1030165|HA|B/Shanghai-Baoshan/1325/2017|EPI_ISL_270687|B:0.0018102822,EPI924431|HA|B/Utah/06/2017|EPI_ISL_249905|B:0.0000025259)91:0.0018094459)26:0.0000025259)8:0.0000025259,((((EPI1492118|HA|B/Ashgabat/5/2017|EPI_ISL_364905|B:0.0018072678,EPI944064|HA|B/Jiangsu-Haizhou/123/2017|EPI_ISL_253322|B:0.0036330307)27:0.0000025259,EPI1113221|HA|B/OITA/11/2017|EPI_ISL_286977|B:0.0036269991)15:0.0000020945,(EPI1125352|HA|B/Neimenggu-Keerqin/1495/2017|EPI_ISL_288714|B:0.0036262138,EPI1128000|HA|B/Pennsylvania/26/2017|EPI_ISL_289241|B:0.0000023312)69:0.0018088709)42:0.0018083599,(EPI1030147|HA|B/Sichuan-Dongxin/1297/2017|EPI_ISL_270681|B:0.0000025259,EPI1036494|HA|B/Georgia/523/2017|EPI_ISL_273320|B:0.0036252335)45:0.0018099047)26:0.0000025259)1:0.0000025259)2:0.0000025259,((EPI1192388|HA|B/NAGANO/2774/2017|EPI_ISL_302254|B:0.0000025259,EPI1192396|HA|B/NAGANO/2778/2017|EPI_ISL_302258|B:0.0018189405)70:0.0018140057,(EPI1062871|HA|B/Zhejiang-Nanhu/1345/2017|EPI_ISL_278698|B:0.0054665780,EPI3139339|HA|B/Michigan/UOMMH15236/2017|EPI_ISL_18999052|B:0.0000027059)50:0.0018144778)15:0.0000025259)7:0.0000025259)9:0.0000025259,((((EPI1158009|HA|B/Hong_Kong/1094/2017|EPI_ISL_294979|B:0.0000025259,EPI1158031|HA|B/Hong_Kong/695/2017|EPI_ISL_294990|B:0.0018474640)66:0.0000025259,EPI1082841|HA|B/Perth/11/2017|EPI_ISL_282369|B:0.0018150982)60:0.0018132286,(((EPI1004798|HA|B/Almaty/ZVL599/2017|EPI_ISL_264549|B:0.0000025259,EPI975712|HA|B/KANAGAWA/AC1623/2017|EPI_ISL_259047|B:0.0018127518)14:0.0000025259,(EPI1022724|HA|B/Hong_Kong/194/2017|EPI_ISL_269528|B:0.0018068436,EPI1030267|HA|B/Guangxi-Xixiangtang/1136/2017|EPI_ISL_270721|B:0.0018088296)37:0.0000025259)23:0.0000025259,EPI1152788|HA|B/Darwin/109/2017|EPI_ISL_293749|B:0.0018114517)26:0.0018179741)16:0.0000025259,((EPI1012544|HA|B/SHIZUOKA/48/2017|EPI_ISL_267601|B:0.0000025259,EPI1106277|HA|B/Guangxi-Yuzhou/1773/2017|EPI_ISL_285912|B:0.0109675743)62:0.0018146153,(EPI1033989|HA|B/Hawaii/38/2017|EPI_ISL_272632|B:0.0000025259,EPI1089741|HA|B/Hawaii/55/2017|EPI_ISL_283379|B:0.0018136798)73:0.0018137793)26:0.0000025259)11:0.0000025259)6:0.0000025259,((EPI1012802|HA|B/Kyrgyzstan/136/2017|EPI_ISL_267634|B:0.0000025259,EPI1030168|HA|B/Zhejiang-Lucheng/1434/2017|EPI_ISL_270688|B:0.0018172034)39:0.0018090987,((EPI995118|HA|B/Florida/22/2017|EPI_ISL_262826|B:0.0000025259,EPI963719|HA|B/Florida/10/2017|EPI_ISL_256846|B:0.0018096772)85:0.0000025259,EPI1051564|HA|B/Ohio/14/2017|EPI_ISL_276398|B:0.0036232746)70:0.0018096981)16:0.0000025259)55:0.0000025259,EPI1034056|HA|B/Michigan/27/2017|EPI_ISL_272641|B:0.0018134015)56:0.0011648174,(EPI1033878|HA|B/Bangladesh/0010/2017|EPI_ISL_272618|B:0.0000025259,EPI1054180|HA|B/KANAGAWA/IC1647/2017|EPI_ISL_276793|B:0.0018055313)100:0.0011314832)82:0.0013215642,(EPI1023354|HA|B/Singapore/TT0739/2017|EPI_ISL_269672|B:0.0018079714,EPI1085159|HA|B/KANAGAWA/ZC1701/2017|EPI_ISL_282747|B:0.0018143677)32:0.0000025259)35:0.0000025259,EPI1130753|HA|B/Indonesia/Nihrd-Lpg584/2017|EPI_ISL_289624|B:0.0018076353)99:0.0018126728,VicB_2017_COBRA_Aligned:0.0000025259);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_unclustered/VicB/trees/VicB_2017_with_designs.treefile -m "LG+G4{0.412292}" --length 585
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_unclustered/VicB/alignments/VicB_2017_with_designs.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_unclustered/VicB/alignments/VicB_2017_with_designs.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 22 11:18:47 2025
+Total CPU time used: 10398.80082 seconds (2h:53m:18s)
+Total wall-clock time used: 1494.267801 seconds (0h:24m:54s)
+

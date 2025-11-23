@@ -1,0 +1,156 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    rtis-hpc-r01.uod.otago.ac.nz (AVX2, FMA3, 1007 GB RAM)
+Command: iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2024_aligned.fasta -m LG+G4 -te results/per_year_clustered/H3N2/trees/H3N2_2024.treefile -asr -pre results/per_year_clustered/H3N2/trees/H3N2_2024_asr -redo -quiet
+Seed:    626420 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Nov 22 11:07:29 2025
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file results/per_year_clustered/H3N2/alignments/H3N2_2024_aligned.fasta ... Fasta format detected
+Reading fasta file: done in 0.000884829 secs using 57.64% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000582953 secs using 99.32% CPU
+Alignment has 105 sequences with 580 columns, 393 distinct patterns
+340 parsimony-informative, 57 singleton sites, 183 constant sites
+                                                                                  Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 8.76039e-05 secs using 94.74% CPU
+   1  EPI3476662|HA|A/Philippines/ILI24-1272/2024|EPI_ISL_19300813|A_/_H3N2               2.41%    passed     99.82%
+   2  EPI3954964|HA|A/Laos/2825/2024|EPI_ISL_19727510|A_/_H3N2                            2.41%    passed     99.98%
+   3  EPI3007297|HA|A/Sri_Lanka/38/2024|EPI_ISL_18876716|A_/_H3N2                         2.41%    passed     99.92%
+   4  EPI3957290|HA|A/KOBE/24328/2024|EPI_ISL_19729250|A_/_H3N2                           2.41%    passed     99.93%
+   5  EPI3611454|HA|A/Phra_Nakhon_Si_Ayutthaya/B409/2024|EPI_ISL_19500366|A_/_H3N2        2.41%    passed     99.98%
+   6  EPI4409312|HA|A/Malaysia/MKAI_CL43218/2024|EPI_ISL_19893417|A_/_H3N2                2.41%    passed     99.97%
+   7  EPI3736128|HA|A/Oman/CPHL_7248732/2024|EPI_ISL_19631336|A_/_H3N2                    2.41%    passed     99.95%
+   8  EPI3739244|HA|A/Daejeon/3779/2024|EPI_ISL_19632813|A_/_H3N2                         2.41%    passed     99.97%
+   9  EPI3662892|HA|A/Philippines/OBI24-0018/2024|EPI_ISL_19567669|A_/_H3N2               2.41%    passed     99.96%
+  10  EPI3389082|HA|A/Abu_Dhabi/8914/2024|EPI_ISL_19208703|A_/_H3N2                       2.41%    passed     99.94%
+  11  EPI3794940|HA|A/Philippines/1597/2024|EPI_ISL_19668077|A_/_H3N2                     2.41%    passed     99.97%
+  12  EPI3616358|HA|A/YOKOHAMA/31/2024|EPI_ISL_19504976|A_/_H3N2                          2.41%    passed     99.95%
+  13  EPI3637488|HA|A/Malaysia/MKAI/CL37898/2024|EPI_ISL_19539819|A_/_H3N2                2.41%    passed     99.98%
+  14  EPI2958566|HA|A/Bangkok/P212/2024|EPI_ISL_18819751|A_/_H3N2                         2.41%    passed     99.97%
+  15  EPI3249927|HA|A/Malaysia/IMR-SARI0356/2024|EPI_ISL_19084229|A_/_H3N2                4.14%    passed     99.94%
+  16  EPI3750151|HA|A/Seoul/4069/2024|EPI_ISL_19642622|A_/_H3N2                           2.41%    passed     99.99%
+  17  EPI3456835|HA|A/Singapore/KK0210/2024|EPI_ISL_19283579|A_/_H3N2                     2.41%    passed     99.92%
+  18  EPI3456819|HA|A/Singapore/KK0151/2024|EPI_ISL_19283577|A_/_H3N2                     2.41%    passed     99.97%
+  19  EPI3899532|HA|A/ABUDHABI/UAE/0012976/2024|EPI_ISL_19709691|A_/_H3N2                 2.41%    passed     99.98%
+  20  EPI4372560|HA|A/Myanmar/I264/2024|EPI_ISL_19874533|A_/_H3N2                         2.24%    passed     99.97%
+  21  EPI3904018|HA|A/ABUDHABI/UAE/0017838/2024|EPI_ISL_19711823|A_/_H3N2                 2.41%    passed     99.82%
+  22  EPI3904417|HA|A/ABUDHABI/UAE/0020453/2024|EPI_ISL_19711873|A_/_H3N2                 2.41%    passed     99.86%
+  23  EPI3558087|HA|A/TOKYO/EIS10-294/2024|EPI_ISL_19417565|A_/_H3N2                      2.41%    passed     99.93%
+  24  EPI3558031|HA|A/TOKYO/EIS10-210/2024|EPI_ISL_19417558|A_/_H3N2                      2.41%    passed     99.87%
+  25  EPI4379883|HA|A/Malaysia/MKAI_CL47914/2024|EPI_ISL_19878697|A_/_H3N2                2.41%    passed     99.99%
+  26  EPI3913255|HA|A/Singapore/GP14277/2024|EPI_ISL_19715098|A_/_H3N2                    2.41%    passed     99.91%
+  27  EPI4387603|HA|A/Riyadh/45/2024|EPI_ISL_19881899|A_/_H3N2                            2.41%    passed     99.86%
+  28  EPI3844439|HA|A/Malaysia/TIDREC_KLA-AUFI286/2024|EPI_ISL_19689145|A_/_H3N2          2.41%    passed     99.88%
+  29  EPI3475352|HA|A/Singapore/TT0237/2024|EPI_ISL_19299278|A_/_H3N2                     2.41%    passed     99.87%
+  30  EPI3476488|HA|A/Singapore/KK1119/2024|EPI_ISL_19300350|A_/_H3N2                     2.41%    passed     99.92%
+  31  EPI3866763|HA|A/Switzerland/UN-SNRCI-HUG-46747581/2024|EPI_ISL_19698113|A_/_H3N2    2.41%    passed     99.95%
+  32  EPI3790919|HA|A/England/0100130/2024|EPI_ISL_19667487|A_/_H3N2                      2.41%    passed     99.81%
+  33  EPI3751097|HA|A/Switzerland/59652/2024|EPI_ISL_19643984|A_/_H3N2                    2.41%    passed     99.88%
+  34  EPI3726461|HA|A/Galicia/33348842/2024|EPI_ISL_19615419|A_/_H3N2                     2.41%    passed    100.00%
+  35  EPI3726478|HA|A/Galicia/22347908/2024|EPI_ISL_19615421|A_/_H3N2                     2.41%    passed    100.00%
+  36  EPI3726506|HA|A/Galicia/33156584/2024|EPI_ISL_19615425|A_/_H3N2                     2.41%    passed    100.00%
+  37  EPI3726498|HA|A/Galicia/44143091/2024|EPI_ISL_19615424|A_/_H3N2                     2.41%    passed    100.00%
+  38  EPI3258732|HA|A/England/241560836/2024|EPI_ISL_19093779|A_/_H3N2                    2.41%    passed     99.97%
+  39  EPI4304684|HA|A/Asturias/232461330/2024|EPI_ISL_19855166|A_/_H3N2                   2.41%    passed    100.00%
+  40  EPI4038595|HA|A/Madrid/342425187428/2024|EPI_ISL_19756825|A_/_H3N2                  2.41%    passed     99.37%
+  41  EPI3786347|HA|A/Perth/1144/2024|EPI_ISL_19661484|A_/_H3N2                           2.41%    passed     99.96%
+  42  EPI3786403|HA|A/Sydney/1321/2024|EPI_ISL_19661498|A_/_H3N2                          2.41%    passed     99.99%
+  43  EPI3786387|HA|A/Victoria/3131/2024|EPI_ISL_19661494|A_/_H3N2                        2.41%    passed     99.96%
+  44  EPI3786375|HA|A/Victoria/3124/2024|EPI_ISL_19661491|A_/_H3N2                        2.41%    passed     99.97%
+  45  EPI4244815|HA|A/Perth/1111/2024|EPI_ISL_19825838|A_/_H3N2                           2.41%    passed     99.99%
+  46  EPI3480055|HA|A/Sydney/289/2024|EPI_ISL_19301908|A_/_H3N2                           2.41%    passed     99.98%
+  47  EPI3480424|HA|A/Darwin/916/2024|EPI_ISL_19301978|A_/_H3N2                           2.41%    passed     99.97%
+  48  EPI3480627|HA|A/Victoria/968/2024|EPI_ISL_19302029|A_/_H3N2                         2.41%    passed     99.94%
+  49  EPI3612870|HA|A/Queensland/IN000279/2024|EPI_ISL_19500707|A_/_H3N2                  2.41%    passed     99.97%
+  50  EPI3633261|HA|A/Auckland/257/2024|EPI_ISL_19534695|A_/_H3N2                         2.41%    passed     99.94%
+  51  EPI3633314|HA|A/Auckland/276/2024|EPI_ISL_19534716|A_/_H3N2                         2.41%    passed     99.89%
+  52  EPI3633230|HA|A/Auckland/242/2024|EPI_ISL_19534685|A_/_H3N2                         2.41%    passed     99.95%
+  53  EPI3508411|HA|A/South_Australia/136/2024|EPI_ISL_19338369|A_/_H3N2                  2.41%    passed     99.99%
+  54  EPI3509982|HA|A/Victoria/1304/2024|EPI_ISL_19341743|A_/_H3N2                        2.41%    passed     99.95%
+  55  EPI3509909|HA|A/Victoria/1534/2024|EPI_ISL_19341705|A_/_H3N2                        2.41%    passed     99.97%
+  56  EPI3634645|HA|A/Wellington/80/2024|EPI_ISL_19539110|A_/_H3N2                        2.41%    passed     99.99%
+  57  EPI3666891|HA|A/South_Australia/274/2024|EPI_ISL_19574581|A_/_H3N2                  2.41%    passed     99.99%
+  58  EPI3640371|HA|A/Queensland/IN000647/2024|EPI_ISL_19543614|A_/_H3N2                  2.41%    passed     99.83%
+  59  EPI3640446|HA|A/Queensland/IN000659/2024|EPI_ISL_19543624|A_/_H3N2                  2.41%    passed     99.99%
+  60  EPI3817714|HA|A/Victoria/3318/2024|EPI_ISL_19676540|A_/_H3N2                        2.41%    passed     99.97%
+  61  EPI3817956|HA|A/Tasmania/874/2024|EPI_ISL_19676611|A_/_H3N2                         2.41%    passed     99.91%
+  62  EPI3399783|HA|A/Timor-Leste/223/2024|EPI_ISL_19218236|A_/_H3N2                      2.41%    passed     99.93%
+  63  EPI3539116|HA|A/Victoria/1588/2024|EPI_ISL_19383456|A_/_H3N2                        2.41%    passed     99.96%
+  64  EPI3585522|HA|A/South_Australia/168/2024|EPI_ISL_19458277|A_/_H3N2                  2.41%    passed     99.79%
+  65  EPI3606682|HA|A/Brisbane/409/2024|EPI_ISL_19493393|A_/_H3N2                         2.41%    passed     99.95%
+  66  EPI3658048|HA|A/Victoria/3265/2024|EPI_ISL_19561258|A_/_H3N2                        2.41%    passed     99.98%
+  67  EPI3680409|HA|A/England/4700123/2024|EPI_ISL_19596134|A_/_H1N1                      2.41%    passed     87.43%
+  68  EPI3680344|HA|A/England/4620270/2024|EPI_ISL_19596124|A_/_H1N1                      2.41%    passed     71.55%
+  69  EPI3787123|HA|A/Catalonia/NSJO560000050/2024|EPI_ISL_19661810|A_/_H1N1              2.41%    passed     86.56%
+  70  EPI3441791|HA|A/Swansea/5888/2024|EPI_ISL_19269744|A_/_H1N1                         2.41%    passed     76.49%
+  71  EPI3080459|HA|A/Aragon/558/2024|EPI_ISL_18942787|A_/_H1N1                           2.41%    passed     87.86%
+  72  EPI3080466|HA|A/Aragon/560/2024|EPI_ISL_18942788|A_/_H1N1                           2.41%    passed     88.00%
+  73  EPI3082085|HA|A/Madrid/150/2024|EPI_ISL_18943819|A_/_H1N1                           2.41%    passed     87.82%
+  74  EPI4318253|HA|A/Melilla/01677727/2024|EPI_ISL_19861764|A_/_H1N1                     2.41%    passed     90.01%
+  75  EPI3050064|HA|A/Badajoz/18615142/2024|EPI_ISL_18912986|A_/_H1N1                     2.41%    passed     92.87%
+  76  EPI3791769|HA|A/England/0120311/2024|EPI_ISL_19667609|A_/_H1N1                      2.41%    passed     87.06%
+  77  EPI3419895|HA|A/Cardiff/4190/2024|EPI_ISL_19243251|A_/_H1N1                         2.41%    passed     87.57%
+  78  EPI3687261|HA|A/Murcia/2159/2024|EPI_ISL_19603666|A_/_H1N1                          2.41%    passed     89.47%
+  79  EPI3300584|HA|A/Madrid/HULP-072638331/2024|EPI_ISL_19147390|A_/_H1N1                2.24%    passed     91.62%
+  80  EPI3054103|HA|A/Badajoz/18619790/2024|EPI_ISL_18918494|A_/_H1N1                     2.41%    passed     81.49%
+  81  EPI3884129|HA|A/Catalonia/NSVH170145573/2024|EPI_ISL_19705055|A_/_H1N1              2.41%    passed     88.00%
+  82  EPI3512991|HA|A/England/242960235/2024|EPI_ISL_19345292|A_/_H1N1                    2.41%    passed     94.53%
+  83  EPI2978047|HA|A/Badajoz/18616368/2024|EPI_ISL_18854264|A_/_H1N1                     2.41%    passed     77.96%
+  84  EPI3197133|HA|A/Serbia/328/2024|EPI_ISL_19050842|A_/_H1N1                           2.41%    passed     84.36%
+  85  EPI3197155|HA|A/Serbia/196/2024|EPI_ISL_19050845|A_/_H1N1                           2.41%    passed     88.51%
+  86  EPI3268826|HA|A/Trollhattan/SE24-04471/2024|EPI_ISL_19116439|A_/_H1N1               2.41%    passed     77.74%
+  87  EPI3889484|HA|A/Andalucia/PMC-00587/2024|EPI_ISL_19707937|A_/_H1N1                  2.41%    passed     88.32%
+  88  EPI3898109|HA|A/Baleares/250061/2024|EPI_ISL_19709436|A_/_H1N1                      2.41%    passed     65.98%
+  89  EPI3513291|HA|A/England/243060223/2024|EPI_ISL_19348510|A_/_H1N1                    2.41%    passed     76.65%
+  90  EPI3828065|HA|A/England/5160975/2024|EPI_ISL_19680996|A_/_H1N1                      2.41%    passed     73.23%
+  91  EPI3100469|HA|A/England/240561251/2024|EPI_ISL_18961932|A_/_H1N1                    2.41%    passed     84.21%
+  92  EPI3258270|HA|A/Serbia/113/2024|EPI_ISL_19093576|A_/_H1N1                           2.41%    passed     81.73%
+  93  EPI3326190|HA|A/Madrid/1058/2024|EPI_ISL_19159205|A_/_H1N1                          2.41%    passed     84.89%
+  94  EPI3493268|HA|A/Galicia/SCQ/140189/2024|EPI_ISL_19323908|A_/_H1N1                   2.41%    passed     93.96%
+  95  EPI3769322|HA|A/Catalonia/NSVH102488391/2024|EPI_ISL_19652392|A_/_H1N1              2.41%    passed     81.18%
+  96  EPI3582939|HA|A/England/1940422/2024|EPI_ISL_19455545|A_/_H1N1                      2.41%    passed     85.67%
+  97  EPI3330761|HA|A/Alicante/VAHNSI-GIHSN-16_3554/2024|EPI_ISL_19160593|A_/_H1N1        2.41%    passed     81.33%
+  98  EPI3179398|HA|A/Madrid/HRYC-13069536/2024|EPI_ISL_19030052|A_/_H1N1                 2.24%    passed     84.73%
+  99  EPI3179470|HA|A/Madrid/HRYC-13089164/2024|EPI_ISL_19030061|A_/_H1N1                 2.24%    passed     91.83%
+ 100  EPI3834736|HA|A/Segovia/167/2024|EPI_ISL_19685460|A_/_H1N1                          2.41%    passed     79.75%
+ 101  EPI3522000|HA|A/Switzerland/46021/2024|EPI_ISL_19359901|A_/_H1N1                    2.41%    passed     79.64%
+ 102  EPI3183899|HA|A/Slovakia/uvzsr-457/2024|EPI_ISL_19033650|A_/_H1N1                   2.41%    passed     87.26%
+ 103  EPI3184267|HA|A/Slovakia/uvzsr-331/2024|EPI_ISL_19033719|A_/_H1N1                   2.41%    passed     78.96%
+ 104  EPI4038587|HA|A/Madrid/302425181704/2024|EPI_ISL_19756821|A_/_H1N1                  2.41%    passed     84.96%
+ 105  EPI3229553|HA|A/Galicia/GA-CHUAC-90/2024|EPI_ISL_19069709|A_/_H1N1                  2.41%    passed     88.21%
+****  TOTAL                                                                               2.42%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading input tree file results/per_year_clustered/H3N2/trees/H3N2_2024.treefile ...
+
+NOTE: 27 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6639.977
+2. Current log-likelihood: -6639.367
+3. Current log-likelihood: -6639.239
+Optimal log-likelihood: -6639.231
+Gamma shape alpha: 1.150
+Parameters optimization took 3 rounds (1.616 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -6639.231
+Ancestral state probabilities printed to results/per_year_clustered/H3N2/trees/H3N2_2024_asr.state
+Total tree length: 2.348
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 2.037 sec (0h:0m:2s)
+Total wall-clock time used: 2.198 sec (0h:0m:2s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/per_year_clustered/H3N2/trees/H3N2_2024_asr.iqtree
+  Maximum-likelihood tree:       results/per_year_clustered/H3N2/trees/H3N2_2024_asr.treefile
+  Ancestral state:               results/per_year_clustered/H3N2/trees/H3N2_2024_asr.state
+  Screen log file:               results/per_year_clustered/H3N2/trees/H3N2_2024_asr.log
+
+Date and Time: Sat Nov 22 11:07:31 2025

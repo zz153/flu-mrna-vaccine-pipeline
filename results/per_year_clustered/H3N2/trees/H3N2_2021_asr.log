@@ -1,0 +1,72 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    rtis-hpc-r01.uod.otago.ac.nz (AVX2, FMA3, 1007 GB RAM)
+Command: iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2021_aligned.fasta -m LG+G4 -te results/per_year_clustered/H3N2/trees/H3N2_2021.treefile -asr -pre results/per_year_clustered/H3N2/trees/H3N2_2021_asr -redo -quiet
+Seed:    308780 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Nov 22 11:01:43 2025
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file results/per_year_clustered/H3N2/alignments/H3N2_2021_aligned.fasta ... Fasta format detected
+Reading fasta file: done in 0.000209603 secs
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000277551 secs
+Alignment has 23 sequences with 579 columns, 275 distinct patterns
+46 parsimony-informative, 286 singleton sites, 247 constant sites
+                                                                       Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 2.04174e-05 secs using 97.96% CPU
+   1  EPI2082985|HA|A/Myanmar/21M017/2021|EPI_ISL_13631686|A_/_H3N2            2.25%    passed    100.00%
+   2  EPI1924397|HA|A/Singapore/INFKK0002/2021|EPI_ISL_5933270|A_/_H3N2        2.25%    passed    100.00%
+   3  EPI1924389|HA|A/Thailand/4/2021|EPI_ISL_5933269|A_/_H3N2                 2.25%    passed    100.00%
+   4  EPI1888048|HA|A/Philippines/1/2021|EPI_ISL_3836431|A_/_H3N2              2.25%    passed    100.00%
+   5  EPI2069098|HA|A/Saudi_Arabia/22-23/2021|EPI_ISL_13339914|A_/_H3N2        2.25%    passed    100.00%
+   6  EPI2069106|HA|A/Saudi_Arabia/44642/2021|EPI_ISL_13339918|A_/_H3N2        2.25%    passed    100.00%
+   7  EPI1843602|HA|A/AbuDhabi/01/2021|EPI_ISL_956319|A_/_H3N2                 2.25%    passed    100.00%
+   8  EPI1967925|HA|A/Pakistan/ICT14/2021|EPI_ISL_9346128|A_/_H3N2             2.25%    passed    100.00%
+   9  EPI1925481|HA|A/Qatar/24-VI-21-3752470/2021|EPI_ISL_6075484|A_/_H3N2     2.25%    passed    100.00%
+  10  EPI2024254|HA|A/Qatar/10-VI-21-4396149/2021|EPI_ISL_12240190|A_/_H3N2    2.25%    passed    100.00%
+  11  EPI1889181|HA|A/Philippines/6/2021|EPI_ISL_3950048|A_/_H3N2              2.25%    passed    100.00%
+  12  EPI1889178|HA|A/Philippines/8/2021|EPI_ISL_3950047|A_/_H3N2              2.25%    passed    100.00%
+  13  EPI2044679|HA|A/Nur-Sultan/343/2021|EPI_ISL_12869830|A_/_H3N2            2.25%    passed    100.00%
+  14  EPI2194981|HA|A/Maldives/758/2021|EPI_ISL_15394467|A_/_H3N2              2.25%    passed    100.00%
+  15  EPI1947371|HA|A/Seeb/72126898/2021|EPI_ISL_7992165|A_/_H3N2              2.25%    passed    100.00%
+  16  EPI1947373|HA|A/Zghorta.LBN/7493/2021|EPI_ISL_7992166|A_/_H3N2           2.25%    passed    100.00%
+  17  EPI2047029|HA|A/Kazakhstan/582/2021|EPI_ISL_12942452|A_/_H3N2            2.25%    passed    100.00%
+  18  EPI1937577|HA|A/Andalucia/9561/2021|EPI_ISL_6917670|A_/_H3N2             2.25%    passed    100.00%
+  19  EPI1887976|HA|A/Stockholm/7/2021|EPI_ISL_3797777|A_/_H3N2                2.25%    passed    100.00%
+  20  EPI1924447|HA|A/Newcastle/1/2021|EPI_ISL_5933276|A_/_H3N2                2.25%    passed    100.00%
+  21  EPI1859990|HA|A/Darwin/1/2021|EPI_ISL_2233237|A_/_H3N2                   2.25%    passed    100.00%
+  22  EPI1883377|HA|A/Timor-Leste/33/2021|EPI_ISL_3101063|A_/_H3N2             3.80%    passed    100.00%
+  23  EPI1962229|HA|A/Murcia/10211/2021|EPI_ISL_8896338|A_/_H1N1               2.25%    failed      1.35%
+****  TOTAL                                                                    2.31%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading input tree file results/per_year_clustered/H3N2/trees/H3N2_2021.treefile ...
+
+NOTE: 4 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3833.439
+Optimal log-likelihood: -3833.434
+Gamma shape alpha: 0.992
+Parameters optimization took 1 rounds (0.046 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -3833.434
+Ancestral state probabilities printed to results/per_year_clustered/H3N2/trees/H3N2_2021_asr.state
+Total tree length: 1.753
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 0.136 sec (0h:0m:0s)
+Total wall-clock time used: 0.169 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/per_year_clustered/H3N2/trees/H3N2_2021_asr.iqtree
+  Maximum-likelihood tree:       results/per_year_clustered/H3N2/trees/H3N2_2021_asr.treefile
+  Ancestral state:               results/per_year_clustered/H3N2/trees/H3N2_2021_asr.state
+  Screen log file:               results/per_year_clustered/H3N2/trees/H3N2_2021_asr.log
+
+Date and Time: Sat Nov 22 11:01:43 2025

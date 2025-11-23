@@ -1,0 +1,55 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    rtis-hpc-r09.uod.otago.ac.nz (AVX2, FMA3, 1006 GB RAM)
+Command: iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2021_aligned.fasta -m LG+G4 -te results/per_year_clustered/H1N1/trees/H1N1_2021.treefile -asr -pre results/per_year_clustered/H1N1/trees/H1N1_2021_asr -redo -quiet
+Seed:    732956 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Nov 22 10:59:22 2025
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file results/per_year_clustered/H1N1/alignments/H1N1_2021_aligned.fasta ... Fasta format detected
+Reading fasta file: done in 6.8818e-05 secs using 47.95% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.0002029 secs using 17.74% CPU
+Alignment has 5 sequences with 566 columns, 57 distinct patterns
+7 parsimony-informative, 35 singleton sites, 524 constant sites
+                                                              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.84706e-06 secs
+   1  EPI2024417|HA|A/Ibri/52121896/2021|EPI_ISL_12241633|A_/_H1N1    0.00%    passed    100.00%
+   2  EPI1937582|HA|A/Canarias/9656/2021|EPI_ISL_6917705|A_/_H1N1     0.00%    passed    100.00%
+   3  EPI1921887|HA|A/Maine/01/2021|EPI_ISL_5329262|A_/_H1N1          0.00%    passed    100.00%
+   4  EPI1868847|HA|A/Iowa/02/2021|EPI_ISL_2479995|A_/_H1N1           0.00%    passed    100.00%
+   5  EPI1941466|HA|A/Iowa/05/2021|EPI_ISL_7334894|A_/_H1N1           0.00%    passed    100.00%
+****  TOTAL                                                           0.00%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading input tree file results/per_year_clustered/H1N1/trees/H1N1_2021.treefile ...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -1980.110
+2. Current log-likelihood: -1979.658
+Optimal log-likelihood: -1979.655
+Gamma shape alpha: 0.299
+Parameters optimization took 2 rounds (0.005 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -1979.655
+Ancestral state probabilities printed to results/per_year_clustered/H1N1/trees/H1N1_2021_asr.state
+Total tree length: 0.084
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 0.024 sec (0h:0m:0s)
+Total wall-clock time used: 0.043 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/per_year_clustered/H1N1/trees/H1N1_2021_asr.iqtree
+  Maximum-likelihood tree:       results/per_year_clustered/H1N1/trees/H1N1_2021_asr.treefile
+  Ancestral state:               results/per_year_clustered/H1N1/trees/H1N1_2021_asr.state
+  Screen log file:               results/per_year_clustered/H1N1/trees/H1N1_2021_asr.log
+
+Date and Time: Sat Nov 22 10:59:22 2025

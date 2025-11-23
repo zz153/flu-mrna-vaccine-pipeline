@@ -1,0 +1,83 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    rtis-hpc-r01.uod.otago.ac.nz (AVX2, FMA3, 1007 GB RAM)
+Command: iqtree -s results/per_year_clustered/H3N2/alignments/H3N2_2011_aligned.fasta -m LG+G4 -te results/per_year_clustered/H3N2/trees/H3N2_2011.treefile -asr -pre results/per_year_clustered/H3N2/trees/H3N2_2011_asr -redo -quiet
+Seed:    542789 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Nov 22 10:53:23 2025
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file results/per_year_clustered/H3N2/alignments/H3N2_2011_aligned.fasta ... Fasta format detected
+Reading fasta file: done in 0.000334366 secs
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00033644 secs
+Alignment has 32 sequences with 578 columns, 280 distinct patterns
+318 parsimony-informative, 24 singleton sites, 236 constant sites
+                                                                   Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.42242e-05 secs
+   1  EPI341586|HA|A/Oman/916/2011|EPI_ISL_98822|A_/_H3N2                  2.08%    passed    100.00%
+   2  EPI346620|HA|A/Kazakhstan/2140/2011|EPI_ISL_99884|A_/_H3N2           2.08%    passed    100.00%
+   3  EPI349021|HA|A/SAGA/193/2011|EPI_ISL_101482|A_/_H3N2                 2.08%    passed    100.00%
+   4  EPI353231|HA|A/YOKOHAMA/156/2011|EPI_ISL_103607|A_/_H3N2             2.08%    passed    100.00%
+   5  EPI353233|HA|A/OSAKA/125/2011|EPI_ISL_103609|A_/_H3N2                2.08%    passed    100.00%
+   6  EPI842636|HA|A/Thailand/FLU_PMKD0388/2011|EPI_ISL_235290|A_/_H3N2    2.08%    passed    100.00%
+   7  EPI684763|HA|A/Thailand/CU-B5773/2011|EPI_ISL_205411|A_/_H3N2        2.08%    passed    100.00%
+   8  EPI684766|HA|A/Thailand/CU-B5898/2011|EPI_ISL_205412|A_/_H3N2        2.08%    passed    100.00%
+   9  EPI895371|HA|A/Jordan/A0123/2011|EPI_ISL_244576|A_/_H3N2             2.08%    passed    100.00%
+  10  EPI895378|HA|A/Jordan/B1370/2011|EPI_ISL_244583|A_/_H3N2             2.08%    passed    100.00%
+  11  EPI1061746|HA|A/Korea/KUMC-GR115/2011|EPI_ISL_278382|A_/_H3N2        2.08%    passed    100.00%
+  12  EPI1061747|HA|A/Korea/KUMC-GR116/2011|EPI_ISL_278383|A_/_H3N2        2.08%    passed    100.00%
+  13  EPI1061749|HA|A/Korea/KUMC-GR124/2011|EPI_ISL_278385|A_/_H3N2        2.08%    passed    100.00%
+  14  EPI1061751|HA|A/Korea/KUMC-GR157/2011|EPI_ISL_278387|A_/_H3N2        2.08%    passed    100.00%
+  15  EPI1061759|HA|A/Korea/KUMC-GR226/2011|EPI_ISL_278395|A_/_H3N2        2.08%    passed    100.00%
+  16  EPI380839|HA|A/Singapore/GP1561/2011|EPI_ISL_122937|A_/_H3N2         2.08%    passed    100.00%
+  17  EPI380951|HA|A/Singapore/KK398/2011|EPI_ISL_122993|A_/_H3N2          2.08%    passed    100.00%
+  18  EPI381075|HA|A/Singapore/TT713/2011|EPI_ISL_123055|A_/_H3N2          2.08%    passed    100.00%
+  19  EPI347580|HA|A/Karlstad/3/2011|EPI_ISL_100466|A_/_H3N2               2.08%    passed    100.00%
+  20  EPI484683|HA|A/Stockholm/26/2011|EPI_ISL_149718|A_/_H3N2             2.08%    passed    100.00%
+  21  EPI346341|HA|A/VICTORIA/304/2011|EPI_ISL_99766|A_/_H3N2              2.08%    passed    100.00%
+  22  EPI353906|HA|A/Victoria/361/2011|EPI_ISL_104004|A_/_H3N2             2.08%    passed    100.00%
+  23  EPI357681|HA|A/SOUTH_AUSTRALIA/299/2011|EPI_ISL_106865|A_/_H3N2      2.08%    passed    100.00%
+  24  EPI357687|HA|A/VICTORIA/892/2011|EPI_ISL_106867|A_/_H3N2             2.08%    passed    100.00%
+  25  EPI2120262|HA|A/Brisbane/256/2011|EPI_ISL_14284804|A_/_H3N2          2.08%    passed    100.00%
+  26  EPI346215|HA|A/ENG/114280400/2011|EPI_ISL_99723|A_/_H1N1             2.08%    passed     34.47%
+  27  EPI346387|HA|A/Stockholm/27/2011|EPI_ISL_99779|A_/_H1N1              2.08%    passed     58.77%
+  28  EPI346663|HA|A/Zaporizhzhya/5200/2011|EPI_ISL_99907|A_/_H1N1         2.08%    passed     56.18%
+  29  EPI347567|HA|A/Stockholm/36/2011|EPI_ISL_100461|A_/_H1N1             2.08%    passed     63.72%
+  30  EPI305529|HA|A/Orebro/1/2011|EPI_ISL_87076|A_/_H1N1                  2.08%    passed     53.89%
+  31  EPI319615|HA|A/Ukraine/3/2011|EPI_ISL_90800|A_/_H1N1                 2.08%    passed     55.83%
+  32  EPI334702|HA|A/Slovenia/861/2011|EPI_ISL_95550|A_/_H1N1              2.08%    passed     51.85%
+****  TOTAL                                                                2.08%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading input tree file results/per_year_clustered/H3N2/trees/H3N2_2011.treefile ...
+
+NOTE: 5 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -4050.412
+2. Current log-likelihood: -4050.356
+3. Current log-likelihood: -4050.340
+Optimal log-likelihood: -4050.338
+Gamma shape alpha: 1.058
+Parameters optimization took 3 rounds (0.259 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -4050.338
+Ancestral state probabilities printed to results/per_year_clustered/H3N2/trees/H3N2_2011_asr.state
+Total tree length: 1.739
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 0.377 sec (0h:0m:0s)
+Total wall-clock time used: 0.421 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/per_year_clustered/H3N2/trees/H3N2_2011_asr.iqtree
+  Maximum-likelihood tree:       results/per_year_clustered/H3N2/trees/H3N2_2011_asr.treefile
+  Ancestral state:               results/per_year_clustered/H3N2/trees/H3N2_2011_asr.state
+  Screen log file:               results/per_year_clustered/H3N2/trees/H3N2_2011_asr.log
+
+Date and Time: Sat Nov 22 10:53:23 2025

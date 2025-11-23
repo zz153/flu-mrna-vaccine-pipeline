@@ -1,0 +1,35 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=5;
+TAXLABELS
+[1] 'EPI2024417|HA|A/Ibri/52121896/2021|EPI_ISL_12241633|A_/_H1N1'
+[2] 'EPI1937582|HA|A/Canarias/9656/2021|EPI_ISL_6917705|A_/_H1N1'
+[3] 'EPI1921887|HA|A/Maine/01/2021|EPI_ISL_5329262|A_/_H1N1'
+[4] 'EPI1868847|HA|A/Iowa/02/2021|EPI_ISL_2479995|A_/_H1N1'
+[5] 'EPI1941466|HA|A/Iowa/05/2021|EPI_ISL_7334894|A_/_H1N1'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=5 nsplits=15;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	56	 2 3,
+	100	 5,
+	92	 1 4,
+	100	 4,
+	100	 1,
+	35	 2 5,
+	8	 3 5,
+	7	 4 5,
+	1	 1 3,
+	0	 1 5,
+	1	 1 2,
+	0	 3 4,
+	0	 2 4,
+;
+END; [Splits]
+

@@ -1,0 +1,194 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_clustered/H1N1/alignments/H1N1_2022_with_designs.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 460385
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 20 sequences with 566 amino-acid sites
+Number of constant sites: 404 (= 71.3781% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 404 (= 71.3781% of all sites)
+Number of parsimony informative sites: 29
+Number of distinct site patterns: 146
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.8165
+
+ Category  Relative_rate  Proportion
+  1         0.0991         0.2500
+  2         0.4137         0.2500
+  3         0.9614         0.2500
+  4         2.5259         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -2798.2163 (s.e. 78.4707)
+Unconstrained log-likelihood (without tree): -2275.2097
+Number of free parameters (#branches + #model parameters): 38
+Akaike information criterion (AIC) score: 5672.4326
+Corrected Akaike information criterion (AICc) score: 5678.0569
+Bayesian information criterion (BIC) score: 5837.2992
+
+Total tree length (sum of branch lengths): 0.4297
+Sum of internal branch lengths: 0.0379 (8.8087% of tree length)
+
+WARNING: 13 near-zero internal branches (<0.0018) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI2667042|HA|A/Surat_Thani/P3935/2022|EPI_ISL_16613583|A_/_H1N1' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**EPI2667042|HA|A/Surat_Thani/P3935/2022|EPI_ISL_16613583|A_/_H1N1
+|
+|                    +**EPI2093894|HA|A/Abu_Dhabi/4277354/2022|EPI_ISL_13894471|A_/_H1N1
+|                 +**| (82)
+|                 |  +**H1N1_2022_Medoid_Aligned|EPI2093894|HA|A/Abu_Dhabi/4277354/2022|EPI_ISL_13894471|A_/_H1N1
+|              +**| (70)
+|              |  |           +--EPI2541975|HA|A/Palestine/8T/2022|EPI_ISL_17608695|A_/_H1N1
+|              |  |        +**| (47)
+|              |  |        |  +--EPI2363642|HA|A/Pakistan/353/2022|EPI_ISL_16830554|A_/_H1N1
+|              |  |     +**| (37)
+|              |  |     |  |  +--EPI2260226|HA|A/Catalonia/NSVH101974424/2022|EPI_ISL_16258264|A_/_H1N1
+|              |  |     |  +**| (73)
+|              |  |     |     +--EPI2235637|HA|A/Sydney/1325/2022|EPI_ISL_16003421|A_/_H1N1
+|              |  |  +**| (44)
+|              |  |  |  +**H1N1_2022_Ancestral_Aligned_Node8
+|              |  +**| (78)
+|              |     +--EPI2585769|HA|A/ABUDHABI/UAE/0003318/2022|EPI_ISL_17776869|A_/_H1N1
+|           +**| (38)
+|           |  +--EPI2249111|HA|A/Iowa/39/2022|EPI_ISL_16199375|A_/_H1N1
+|        +**| (24)
+|        |  +**H1N1_2022_Consensus_Aligned
+|     +**| (34)
+|     |  |     +--EPI2461271|HA|A/Qatar/10-VI-22-2099096/2022|EPI_ISL_17204416|A_/_H1N1
+|     |  |  +**| (28)
+|     |  |  |  +--EPI2347151|HA|A/Florida/116/2022|EPI_ISL_16764981|A_/_H1N1
+|     |  +**| (73)
+|     |     |  +--EPI2214090|HA|A/England/223840510/2022|EPI_ISL_15740756|A_/_H1N1
+|     |     +**| (13)
+|     |        +--EPI2384217|HA|A/Canberra/538/2022|EPI_ISL_16864421|A_/_H1N1
+|  +--| (81)
+|  |  |  +--EPI2318975|HA|A/Bishkek/S-58SARI/2022|EPI_ISL_16714052|A_/_H1N1
+|  |  +--| (65)
+|  |     |  +--EPI2207119|HA|A/Deeside/1535/2022|EPI_ISL_15677016|A_/_H1N1
+|  |     +--| (67)
+|  |        +--EPI2345064|HA|A/Maine/35/2022|EPI_ISL_16764045|A_/_H1N1
++--| (94)
+|  +--------------------------------------------------------EPI2240803|HA|A/Navarra/4050/2022|EPI_ISL_16074739|A_/_H1N1
+|
++**H1N1_2022_COBRA_Aligned
+
+Tree in newick format:
+
+(EPI2667042|HA|A/Surat_Thani/P3935/2022|EPI_ISL_16613583|A_/_H1N1:0.0000010000,(((((((EPI2093894|HA|A/Abu_Dhabi/4277354/2022|EPI_ISL_13894471|A_/_H1N1:0.0000010000,H1N1_2022_Medoid_Aligned|EPI2093894|HA|A/Abu_Dhabi/4277354/2022|EPI_ISL_13894471|A_/_H1N1:0.0000010000)82:0.0017458399,((((EPI2541975|HA|A/Palestine/8T/2022|EPI_ISL_17608695|A_/_H1N1:0.0069751226,EPI2363642|HA|A/Pakistan/353/2022|EPI_ISL_16830554|A_/_H1N1:0.0069960648)47:0.0000010000,(EPI2260226|HA|A/Catalonia/NSVH101974424/2022|EPI_ISL_16258264|A_/_H1N1:0.0070467448,EPI2235637|HA|A/Sydney/1325/2022|EPI_ISL_16003421|A_/_H1N1:0.0069971624)73:0.0000010000)37:0.0000010000,H1N1_2022_Ancestral_Aligned_Node8:0.0000010000)44:0.0000010000,EPI2585769|HA|A/ABUDHABI/UAE/0003318/2022|EPI_ISL_17776869|A_/_H1N1:0.0070300409)78:0.0017415639)70:0.0017468455,EPI2249111|HA|A/Iowa/39/2022|EPI_ISL_16199375|A_/_H1N1:0.0069810408)38:0.0000010000,H1N1_2022_Consensus_Aligned:0.0000010000)24:0.0000010000,((EPI2461271|HA|A/Qatar/10-VI-22-2099096/2022|EPI_ISL_17204416|A_/_H1N1:0.0070220107,EPI2347151|HA|A/Florida/116/2022|EPI_ISL_16764981|A_/_H1N1:0.0052523933)28:0.0000010000,(EPI2214090|HA|A/England/223840510/2022|EPI_ISL_15740756|A_/_H1N1:0.0052574339,EPI2384217|HA|A/Canberra/538/2022|EPI_ISL_16864421|A_/_H1N1:0.0052681863)13:0.0000010000)73:0.0017438763)34:0.0000010000,(EPI2318975|HA|A/Bishkek/S-58SARI/2022|EPI_ISL_16714052|A_/_H1N1:0.0047632051,(EPI2207119|HA|A/Deeside/1535/2022|EPI_ISL_15677016|A_/_H1N1:0.0147162385,EPI2345064|HA|A/Maine/35/2022|EPI_ISL_16764045|A_/_H1N1:0.0119153326)67:0.0052266103)65:0.0022137337)81:0.0130112645,EPI2240803|HA|A/Navarra/4050/2022|EPI_ISL_16074739|A_/_H1N1:0.2938957567)94:0.0121599891,H1N1_2022_COBRA_Aligned:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -2798.230491
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--EPI2667042|HA|A/Surat_Thani/P3935/2022|EPI_ISL_16613583|A_/_H1N1
+|
+|                    +--EPI2093894|HA|A/Abu_Dhabi/4277354/2022|EPI_ISL_13894471|A_/_H1N1
+|                 +--| (82)
+|                 |  +--H1N1_2022_Medoid_Aligned|EPI2093894|HA|A/Abu_Dhabi/4277354/2022|EPI_ISL_13894471|A_/_H1N1
+|              +--| (70)
+|              |  |           +--EPI2541975|HA|A/Palestine/8T/2022|EPI_ISL_17608695|A_/_H1N1
+|              |  |        +--| (47)
+|              |  |        |  +--EPI2363642|HA|A/Pakistan/353/2022|EPI_ISL_16830554|A_/_H1N1
+|              |  |     +--| (37)
+|              |  |     |  |  +--EPI2260226|HA|A/Catalonia/NSVH101974424/2022|EPI_ISL_16258264|A_/_H1N1
+|              |  |     |  +--| (73)
+|              |  |     |     +--EPI2235637|HA|A/Sydney/1325/2022|EPI_ISL_16003421|A_/_H1N1
+|              |  |  +--| (44)
+|              |  |  |  +--H1N1_2022_Ancestral_Aligned_Node8
+|              |  +--| (78)
+|              |     +--EPI2585769|HA|A/ABUDHABI/UAE/0003318/2022|EPI_ISL_17776869|A_/_H1N1
+|           +--| (38)
+|           |  +--EPI2249111|HA|A/Iowa/39/2022|EPI_ISL_16199375|A_/_H1N1
+|        +--| (24)
+|        |  +--H1N1_2022_Consensus_Aligned
+|     +--| (34)
+|     |  |        +--EPI2461271|HA|A/Qatar/10-VI-22-2099096/2022|EPI_ISL_17204416|A_/_H1N1
+|     |  |     +--| (28)
+|     |  |     |  +--EPI2347151|HA|A/Florida/116/2022|EPI_ISL_16764981|A_/_H1N1
+|     |  |  +--| (19)
+|     |  |  |  +--EPI2214090|HA|A/England/223840510/2022|EPI_ISL_15740756|A_/_H1N1
+|     |  +--| (73)
+|     |     +--EPI2384217|HA|A/Canberra/538/2022|EPI_ISL_16864421|A_/_H1N1
+|  +--| (81)
+|  |  |  +--EPI2318975|HA|A/Bishkek/S-58SARI/2022|EPI_ISL_16714052|A_/_H1N1
+|  |  +--| (65)
+|  |     |  +--EPI2207119|HA|A/Deeside/1535/2022|EPI_ISL_15677016|A_/_H1N1
+|  |     +--| (67)
+|  |        +--EPI2345064|HA|A/Maine/35/2022|EPI_ISL_16764045|A_/_H1N1
++--| (94)
+|  +--------------------------------------------------------EPI2240803|HA|A/Navarra/4050/2022|EPI_ISL_16074739|A_/_H1N1
+|
++--H1N1_2022_COBRA_Aligned
+
+
+Consensus tree in newick format: 
+
+(EPI2667042|HA|A/Surat_Thani/P3935/2022|EPI_ISL_16613583|A_/_H1N1:0.0000027280,(((((((EPI2093894|HA|A/Abu_Dhabi/4277354/2022|EPI_ISL_13894471|A_/_H1N1:0.0000027280,H1N1_2022_Medoid_Aligned|EPI2093894|HA|A/Abu_Dhabi/4277354/2022|EPI_ISL_13894471|A_/_H1N1:0.0000027280)82:0.0017459805,((((EPI2541975|HA|A/Palestine/8T/2022|EPI_ISL_17608695|A_/_H1N1:0.0069758415,EPI2363642|HA|A/Pakistan/353/2022|EPI_ISL_16830554|A_/_H1N1:0.0069968752)47:0.0000027280,(EPI2260226|HA|A/Catalonia/NSVH101974424/2022|EPI_ISL_16258264|A_/_H1N1:0.0070464592,EPI2235637|HA|A/Sydney/1325/2022|EPI_ISL_16003421|A_/_H1N1:0.0069975957)73:0.0000027280)37:0.0000027280,H1N1_2022_Ancestral_Aligned_Node8:0.0000027280)44:0.0000027280,EPI2585769|HA|A/ABUDHABI/UAE/0003318/2022|EPI_ISL_17776869|A_/_H1N1:0.0070306554)78:0.0017417104)70:0.0017469432,EPI2249111|HA|A/Iowa/39/2022|EPI_ISL_16199375|A_/_H1N1:0.0069814584)38:0.0000027280,H1N1_2022_Consensus_Aligned:0.0000027280)24:0.0000027280,(((EPI2461271|HA|A/Qatar/10-VI-22-2099096/2022|EPI_ISL_17204416|A_/_H1N1:0.0070222263,EPI2347151|HA|A/Florida/116/2022|EPI_ISL_16764981|A_/_H1N1:0.0052524289)28:0.0000027280,EPI2214090|HA|A/England/223840510/2022|EPI_ISL_15740756|A_/_H1N1:0.0052575967)19:0.0000027280,EPI2384217|HA|A/Canberra/538/2022|EPI_ISL_16864421|A_/_H1N1:0.0052683672)73:0.0017439629)34:0.0000027280,(EPI2318975|HA|A/Bishkek/S-58SARI/2022|EPI_ISL_16714052|A_/_H1N1:0.0047636768,(EPI2207119|HA|A/Deeside/1535/2022|EPI_ISL_15677016|A_/_H1N1:0.0147158513,EPI2345064|HA|A/Maine/35/2022|EPI_ISL_16764045|A_/_H1N1:0.0119160999)67:0.0052268630)65:0.0022135958)81:0.0129964274,EPI2240803|HA|A/Navarra/4050/2022|EPI_ISL_16074739|A_/_H1N1:0.2939145220)94:0.0121653602,H1N1_2022_COBRA_Aligned:0.0000027280);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_clustered/H1N1/trees/H1N1_2022_with_designs.treefile -m "LG+G4{0.816462}" --length 566
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2022_with_designs.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2022_with_designs.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 22 11:00:08 2025
+Total CPU time used: 305.047683 seconds (0h:5m:5s)
+Total wall-clock time used: 39.32451212 seconds (0h:0m:39s)
+

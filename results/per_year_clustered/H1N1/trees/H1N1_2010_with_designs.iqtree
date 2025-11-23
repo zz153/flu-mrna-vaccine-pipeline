@@ -1,0 +1,226 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: results/per_year_clustered/H1N1/alignments/H1N1_2010_with_designs.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 939677
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 28 sequences with 575 amino-acid sites
+Number of constant sites: 403 (= 70.087% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 403 (= 70.087% of all sites)
+Number of parsimony informative sites: 23
+Number of distinct site patterns: 161
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 1.1783
+
+ Category  Relative_rate  Proportion
+  1         0.1711         0.2500
+  2         0.5245         0.2500
+  3         1.0242         0.2500
+  4         2.2802         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -2971.2642 (s.e. 85.0581)
+Unconstrained log-likelihood (without tree): -2372.8679
+Number of free parameters (#branches + #model parameters): 54
+Akaike information criterion (AIC) score: 6050.5284
+Corrected Akaike information criterion (AICc) score: 6061.9515
+Bayesian information criterion (BIC) score: 6285.6644
+
+Total tree length (sum of branch lengths): 0.4315
+Sum of internal branch lengths: 0.0221 (5.1203% of tree length)
+
+WARNING: 18 near-zero internal branches (<0.0017) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EPI349529|HA|A/Taiwan/3994/2010|EPI_ISL_101899|A_/_H1N1' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**EPI349529|HA|A/Taiwan/3994/2010|EPI_ISL_101899|A_/_H1N1
+|
+|                                +--EPI349528|HA|A/Taiwan/1164/2010|EPI_ISL_101898|A_/_H1N1
+|                             +**| (66)
+|                             |  +--EPI250026|HA|A/Maryland/04/2010|EPI_ISL_71959|A_/_H1N1
+|                          +--| (92)
+|                          |  +**H1N1_2010_Ancestral_Aligned_Node10
+|                       +**| (60)
+|                       |  |  +**EPI324760|HA|A/Thailand/CU-MV6/2010|EPI_ISL_93119|A_/_H1N1
+|                       |  +--| (90)
+|                       |     +**H1N1_2010_COBRA_Aligned
+|                    +**| (63)
+|                    |  |     +--EPI249899|HA|A/Nagasaki/HA-10-5/2010|EPI_ISL_71903|A_/_H1N1
+|                    |  |  +**| (19)
+|                    |  |  |  +--EPI273891|HA|A/Dnipropetrovsk/445/2010|EPI_ISL_77716|A_/_H1N1
+|                    |  +**| (34)
+|                    |     |  +--EPI334839|HA|A/Aichi/118/2010|EPI_ISL_95637|A_/_H1N1
+|                    |     +**| (21)
+|                    |        |        +--EPI278514|HA|A/Ukraine/123/2010|EPI_ISL_79191|A_/_H1N1
+|                    |        |     +--| (74)
+|                    |        |     |  +--------------------------------------------------------EPI299615|HA|A/Switzerland/5165/2010|EPI_ISL_85201|A_/_H1N1
+|                    |        |  +**| (59)
+|                    |        |  |  +--EPI295619|HA|A/Slovakia/1623/2010|EPI_ISL_84236|A_/_H1N1
+|                    |        +**| (25)
+|                    |           +--EPI492960|HA|A/Extremadura/6530/2010|EPI_ISL_151911|A_/_H1N1
+|                 +**| (70)
+|                 |  +--EPI252143|HA|A/Minnesota/02/2010|EPI_ISL_73406|A_/_H1N1
+|              +**| (63)
+|              |  +**H1N1_2010_Consensus_Aligned
+|           +**| (18)
+|           |  |     +--EPI272412|HA|A/NIIGATA/194/2010|EPI_ISL_77265|A_/_H1N1
+|           |  |  +**| (9)
+|           |  |  |  |  +--EPI403823|HA|A/England/03220137/2010|EPI_ISL_131599|A_/_H1N1
+|           |  |  |  +--| (72)
+|           |  |  |     +--EPI300969|HA|A/Indiana/06/2010|EPI_ISL_85569|A_/_H1N1
+|           |  +**| (22)
+|           |     |  +--EPI598885|HA|A/Bangkok/SIMI508/2010|EPI_ISL_181408|A_/_H1N1
+|           |     +**| (45)
+|           |        +--EPI295631|HA|A/Switzerland/3628824/2010|EPI_ISL_84242|A_/_H1N1
+|        +**| (33)
+|        |  |  +--EPI273717|HA|A/Minnesota/03/2010|EPI_ISL_77664|A_/_H1N1
+|        |  +**| (46)
+|        |     +--EPI301713|HA|A/Hawaii/16/2010|EPI_ISL_85813|A_/_H1N1
+|     +--| (75)
+|     |  +--EPI598887|HA|A/Bangkok/SIMI510/2010|EPI_ISL_181410|A_/_H1N1
+|  +**| (80)
+|  |  |  +--EPI302108|HA|A/Taiwan/733/2010|EPI_ISL_86017|A_/_H1N1
+|  |  +**| (54)
+|  |     |  +--EPI403839|HA|A/Northern_Ireland/04380108/2010|EPI_ISL_131604|A_/_H1N1
+|  |     +--| (72)
+|  |        +--EPI278832|HA|A/California/11/2010|EPI_ISL_79343|A_/_H1N1
++--| (90)
+|  +--EPI280341|HA|A/Christchurch/16/2010|EPI_ISL_79721|A_/_H1N1
+|
++**H1N1_2010_Medoid_Aligned|EPI349529|HA|A/Taiwan/3994/2010|EPI_ISL_101899|A_/_H1N1
+
+Tree in newick format:
+
+(EPI349529|HA|A/Taiwan/3994/2010|EPI_ISL_101899|A_/_H1N1:0.0000010000,(((((((((((EPI349528|HA|A/Taiwan/1164/2010|EPI_ISL_101898|A_/_H1N1:0.0053200506,EPI250026|HA|A/Maryland/04/2010|EPI_ISL_71959|A_/_H1N1:0.0052644029)66:0.0000010000,H1N1_2010_Ancestral_Aligned_Node10:0.0000010000)92:0.0051822240,(EPI324760|HA|A/Thailand/CU-MV6/2010|EPI_ISL_93119|A_/_H1N1:0.0000010000,H1N1_2010_COBRA_Aligned:0.0000010000)90:0.0034511492)60:0.0000010000,((EPI249899|HA|A/Nagasaki/HA-10-5/2010|EPI_ISL_71903|A_/_H1N1:0.0070664553,EPI273891|HA|A/Dnipropetrovsk/445/2010|EPI_ISL_77716|A_/_H1N1:0.0088041338)19:0.0000010000,(EPI334839|HA|A/Aichi/118/2010|EPI_ISL_95637|A_/_H1N1:0.0070635429,(((EPI278514|HA|A/Ukraine/123/2010|EPI_ISL_79191|A_/_H1N1:0.0042286730,EPI299615|HA|A/Switzerland/5165/2010|EPI_ISL_85201|A_/_H1N1:0.2677784712)74:0.0046763902,EPI295619|HA|A/Slovakia/1623/2010|EPI_ISL_84236|A_/_H1N1:0.0052898421)59:0.0017354617,EPI492960|HA|A/Extremadura/6530/2010|EPI_ISL_151911|A_/_H1N1:0.0088518201)25:0.0000010000)21:0.0000010000)34:0.0000010000)63:0.0000010000,EPI252143|HA|A/Minnesota/02/2010|EPI_ISL_73406|A_/_H1N1:0.0088457384)70:0.0017247565,H1N1_2010_Consensus_Aligned:0.0000010000)63:0.0000010000,((EPI272412|HA|A/NIIGATA/194/2010|EPI_ISL_77265|A_/_H1N1:0.0052881274,(EPI403823|HA|A/England/03220137/2010|EPI_ISL_131599|A_/_H1N1:0.0052928266,EPI300969|HA|A/Indiana/06/2010|EPI_ISL_85569|A_/_H1N1:0.0052805199)72:0.0017457246)9:0.0000010000,(EPI598885|HA|A/Bangkok/SIMI508/2010|EPI_ISL_181408|A_/_H1N1:0.0052635412,EPI295631|HA|A/Switzerland/3628824/2010|EPI_ISL_84242|A_/_H1N1:0.0070450703)45:0.0000010000)22:0.0000010000)18:0.0000010000,(EPI273717|HA|A/Minnesota/03/2010|EPI_ISL_77664|A_/_H1N1:0.0052725708,EPI301713|HA|A/Hawaii/16/2010|EPI_ISL_85813|A_/_H1N1:0.0105991498)46:0.0000010000)33:0.0000010000,EPI598887|HA|A/Bangkok/SIMI510/2010|EPI_ISL_181410|A_/_H1N1:0.0052736507)75:0.0017521236,(EPI302108|HA|A/Taiwan/733/2010|EPI_ISL_86017|A_/_H1N1:0.0088257328,(EPI403839|HA|A/Northern_Ireland/04380108/2010|EPI_ISL_131604|A_/_H1N1:0.0052652695,EPI278832|HA|A/California/11/2010|EPI_ISL_79343|A_/_H1N1:0.0052718810)72:0.0017497958)54:0.0000010000)80:0.0000010000,EPI280341|HA|A/Christchurch/16/2010|EPI_ISL_79721|A_/_H1N1:0.0087903060)90:0.0035135445,H1N1_2010_Medoid_Aligned|EPI349529|HA|A/Taiwan/3994/2010|EPI_ISL_101899|A_/_H1N1:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -2971.284311
+Robinson-Foulds distance between ML tree and consensus tree: 6
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--EPI349529|HA|A/Taiwan/3994/2010|EPI_ISL_101899|A_/_H1N1
+|
+|                                +--EPI349528|HA|A/Taiwan/1164/2010|EPI_ISL_101898|A_/_H1N1
+|                             +--| (66)
+|                             |  +--EPI250026|HA|A/Maryland/04/2010|EPI_ISL_71959|A_/_H1N1
+|                          +--| (92)
+|                          |  +--H1N1_2010_Ancestral_Aligned_Node10
+|                       +--| (60)
+|                       |  |  +--EPI324760|HA|A/Thailand/CU-MV6/2010|EPI_ISL_93119|A_/_H1N1
+|                       |  +--| (90)
+|                       |     +--H1N1_2010_COBRA_Aligned
+|                    +--| (63)
+|                    |  |  +--EPI249899|HA|A/Nagasaki/HA-10-5/2010|EPI_ISL_71903|A_/_H1N1
+|                    |  +--| (34)
+|                    |     |        +--EPI334839|HA|A/Aichi/118/2010|EPI_ISL_95637|A_/_H1N1
+|                    |     |     +--| (26)
+|                    |     |     |  |     +--EPI278514|HA|A/Ukraine/123/2010|EPI_ISL_79191|A_/_H1N1
+|                    |     |     |  |  +--| (74)
+|                    |     |     |  |  |  +--------------------------------------------------------EPI299615|HA|A/Switzerland/5165/2010|EPI_ISL_85201|A_/_H1N1
+|                    |     |     |  +--| (59)
+|                    |     |     |     +--EPI295619|HA|A/Slovakia/1623/2010|EPI_ISL_84236|A_/_H1N1
+|                    |     |  +--| (21)
+|                    |     |  |  +--EPI492960|HA|A/Extremadura/6530/2010|EPI_ISL_151911|A_/_H1N1
+|                    |     +--| (21)
+|                    |        +--EPI273891|HA|A/Dnipropetrovsk/445/2010|EPI_ISL_77716|A_/_H1N1
+|                 +--| (70)
+|                 |  +--EPI252143|HA|A/Minnesota/02/2010|EPI_ISL_73406|A_/_H1N1
+|              +--| (63)
+|              |  +--H1N1_2010_Consensus_Aligned
+|           +--| (18)
+|           |  |     +--EPI272412|HA|A/NIIGATA/194/2010|EPI_ISL_77265|A_/_H1N1
+|           |  |  +--| (25)
+|           |  |  |  |  +--EPI598885|HA|A/Bangkok/SIMI508/2010|EPI_ISL_181408|A_/_H1N1
+|           |  |  |  +--| (45)
+|           |  |  |     +--EPI295631|HA|A/Switzerland/3628824/2010|EPI_ISL_84242|A_/_H1N1
+|           |  +--| (22)
+|           |     |  +--EPI403823|HA|A/England/03220137/2010|EPI_ISL_131599|A_/_H1N1
+|           |     +--| (72)
+|           |        +--EPI300969|HA|A/Indiana/06/2010|EPI_ISL_85569|A_/_H1N1
+|        +--| (33)
+|        |  |  +--EPI273717|HA|A/Minnesota/03/2010|EPI_ISL_77664|A_/_H1N1
+|        |  +--| (46)
+|        |     +--EPI301713|HA|A/Hawaii/16/2010|EPI_ISL_85813|A_/_H1N1
+|     +--| (75)
+|     |  +--EPI598887|HA|A/Bangkok/SIMI510/2010|EPI_ISL_181410|A_/_H1N1
+|  +--| (80)
+|  |  |  +--EPI302108|HA|A/Taiwan/733/2010|EPI_ISL_86017|A_/_H1N1
+|  |  +--| (54)
+|  |     |  +--EPI403839|HA|A/Northern_Ireland/04380108/2010|EPI_ISL_131604|A_/_H1N1
+|  |     +--| (72)
+|  |        +--EPI278832|HA|A/California/11/2010|EPI_ISL_79343|A_/_H1N1
++--| (90)
+|  +--EPI280341|HA|A/Christchurch/16/2010|EPI_ISL_79721|A_/_H1N1
+|
++--H1N1_2010_Medoid_Aligned|EPI349529|HA|A/Taiwan/3994/2010|EPI_ISL_101899|A_/_H1N1
+
+
+Consensus tree in newick format: 
+
+(EPI349529|HA|A/Taiwan/3994/2010|EPI_ISL_101899|A_/_H1N1:0.0000027003,(((((((((((EPI349528|HA|A/Taiwan/1164/2010|EPI_ISL_101898|A_/_H1N1:0.0053199982,EPI250026|HA|A/Maryland/04/2010|EPI_ISL_71959|A_/_H1N1:0.0052643505)66:0.0000027003,H1N1_2010_Ancestral_Aligned_Node10:0.0000027003)92:0.0051821774,(EPI324760|HA|A/Thailand/CU-MV6/2010|EPI_ISL_93119|A_/_H1N1:0.0000027003,H1N1_2010_COBRA_Aligned:0.0000027003)90:0.0034511103)60:0.0000027003,(EPI249899|HA|A/Nagasaki/HA-10-5/2010|EPI_ISL_71903|A_/_H1N1:0.0070663621,(((EPI334839|HA|A/Aichi/118/2010|EPI_ISL_95637|A_/_H1N1:0.0070635263,((EPI278514|HA|A/Ukraine/123/2010|EPI_ISL_79191|A_/_H1N1:0.0042179296,EPI299615|HA|A/Switzerland/5165/2010|EPI_ISL_85201|A_/_H1N1:0.2678018643)74:0.0046802803,EPI295619|HA|A/Slovakia/1623/2010|EPI_ISL_84236|A_/_H1N1:0.0052898088)59:0.0017354444)26:0.0000027003,EPI492960|HA|A/Extremadura/6530/2010|EPI_ISL_151911|A_/_H1N1:0.0088517089)21:0.0000027003,EPI273891|HA|A/Dnipropetrovsk/445/2010|EPI_ISL_77716|A_/_H1N1:0.0088040688)21:0.0000027003)34:0.0000027003)63:0.0000027003,EPI252143|HA|A/Minnesota/02/2010|EPI_ISL_73406|A_/_H1N1:0.0088456060)70:0.0017239107,H1N1_2010_Consensus_Aligned:0.0000027003)63:0.0000027003,((EPI272412|HA|A/NIIGATA/194/2010|EPI_ISL_77265|A_/_H1N1:0.0052881090,(EPI598885|HA|A/Bangkok/SIMI508/2010|EPI_ISL_181408|A_/_H1N1:0.0052635252,EPI295631|HA|A/Switzerland/3628824/2010|EPI_ISL_84242|A_/_H1N1:0.0070450685)45:0.0000027003)25:0.0000027003,(EPI403823|HA|A/England/03220137/2010|EPI_ISL_131599|A_/_H1N1:0.0052927905,EPI300969|HA|A/Indiana/06/2010|EPI_ISL_85569|A_/_H1N1:0.0052804937)72:0.0017461867)22:0.0000027003)18:0.0000027003,(EPI273717|HA|A/Minnesota/03/2010|EPI_ISL_77664|A_/_H1N1:0.0052725663,EPI301713|HA|A/Hawaii/16/2010|EPI_ISL_85813|A_/_H1N1:0.0105991968)46:0.0000027003)33:0.0000027003,EPI598887|HA|A/Bangkok/SIMI510/2010|EPI_ISL_181410|A_/_H1N1:0.0052736789)75:0.0017525535,(EPI302108|HA|A/Taiwan/733/2010|EPI_ISL_86017|A_/_H1N1:0.0088258184,(EPI403839|HA|A/Northern_Ireland/04380108/2010|EPI_ISL_131604|A_/_H1N1:0.0052653133,EPI278832|HA|A/California/11/2010|EPI_ISL_79343|A_/_H1N1:0.0052724949)72:0.0017500677)54:0.0000027003)80:0.0000027003,EPI280341|HA|A/Christchurch/16/2010|EPI_ISL_79721|A_/_H1N1:0.0087898193)90:0.0035138678,H1N1_2010_Medoid_Aligned|EPI349529|HA|A/Taiwan/3994/2010|EPI_ISL_101899|A_/_H1N1:0.0000027003);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/per_year_clustered/H1N1/trees/H1N1_2010_with_designs.treefile -m "LG+G4{1.17832}" --length 575
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2010_with_designs.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/per_year_clustered/H1N1/alignments/H1N1_2010_with_designs.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 22 10:54:17 2025
+Total CPU time used: 593.001834 seconds (0h:9m:53s)
+Total wall-clock time used: 81.54270093 seconds (0h:1m:21s)
+
