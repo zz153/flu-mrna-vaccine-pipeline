@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=filter_seqs
-#SBATCH --time=02:00:00
+#SBATCH --time=12:00:00
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=16G
 #SBATCH --output=logs/filter_%x_%j.out

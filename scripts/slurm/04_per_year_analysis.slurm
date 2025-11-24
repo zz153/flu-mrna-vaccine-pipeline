@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=per_year_analysis
-#SBATCH --time=04:00:00
+#SBATCH --time=2-00:00:00
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=32G
 #SBATCH --output=logs/per_year_%x_%j.out

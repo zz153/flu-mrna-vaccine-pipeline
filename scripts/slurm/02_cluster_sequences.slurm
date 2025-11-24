@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=cluster_seqs
-#SBATCH --time=04:00:00
+#SBATCH --time=12:00:00
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=32G
 #SBATCH --output=logs/cluster_%x_%j.out

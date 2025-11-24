@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=visualize
-#SBATCH --time=00:30:00
+#SBATCH --time=12:00:00
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=8G
 #SBATCH --output=logs/visualize_%x_%j.out

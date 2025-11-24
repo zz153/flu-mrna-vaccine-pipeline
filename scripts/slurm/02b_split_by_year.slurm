@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=split_years
-#SBATCH --time=01:00:00
+#SBATCH --time=12:00:00
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=8G
 #SBATCH --output=logs/split_years_%x_%j.out

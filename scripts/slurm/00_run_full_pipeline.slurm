@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=flu_pipeline
-#SBATCH --time=12:00:00
+#SBATCH --time=2-00:00:00
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=16G
 #SBATCH --output=logs/pipeline_master_%j.out
@@ -20,6 +20,11 @@
 #   - VicB (unclustered)
 
 set -e
+
+# Navigate to project root (one level up from scripts directory)
+cd ..
+echo "Working directory: $(pwd)"
+echo ""
 
 echo "=========================================="
 echo "FluHub: Master Pipeline Orchestrator"
@@ -50,7 +55,7 @@ submit_lineage_pipeline() {
     # Step 1: Filter sequences
     local job1=$(sbatch --parsable --export=${export_base} \
         scripts/slurm/01_filter_sequences.slurm)
-    echo "  [1/7] Filter sequences: Job ${job1}"
+    echo "  [1/6] Filter sequences: Job ${job1}"
     
     if [ "$use_unclustered" = "false" ]; then
         # CLUSTERED PIPELINE (H1N1, H3N2)
@@ -59,68 +64,60 @@ submit_lineage_pipeline() {
         local job2=$(sbatch --parsable --dependency=afterok:${job1} \
             --export=${export_base} \
             scripts/slurm/02_cluster_sequences.slurm)
-        echo "  [2/7] Cluster sequences: Job ${job2}"
+        echo "  [2/6] Cluster sequences: Job ${job2}"
         
         # Step 3: Split by year
         local job3=$(sbatch --parsable --dependency=afterok:${job2} \
             --export=${export_base} \
             scripts/slurm/02b_split_by_year.slurm)
-        echo "  [3/7] Split by year: Job ${job3}"
+        echo "  [3/6] Split by year: Job ${job3}"
         
-        # Step 4: Combined alignment
+        # Step 4: Per-year analysis & vaccine design (does its own alignment)
         local job4=$(sbatch --parsable --dependency=afterok:${job3} \
             --export=${export_base} \
-            scripts/slurm/03_combined_alignment.slurm)
-        echo "  [4/7] Combined alignment: Job ${job4}"
+            scripts/slurm/04_per_year_analysis.slurm)
+        echo "  [4/6] Vaccine design: Job ${job4}"
         
-        # Step 5: Per-year analysis & vaccine design
+        # Step 5: Calculate distances
         local job5=$(sbatch --parsable --dependency=afterok:${job4} \
             --export=${export_base} \
-            scripts/slurm/04_per_year_analysis.slurm)
-        echo "  [5/7] Vaccine design: Job ${job5}"
+            scripts/slurm/05_calculate_distances.slurm)
+        echo "  [5/6] Calculate distances: Job ${job5}"
         
-        # Step 6: Calculate distances
+        # Step 6: Visualizations
         local job6=$(sbatch --parsable --dependency=afterok:${job5} \
             --export=${export_base} \
-            scripts/slurm/05_calculate_distances.slurm)
-        echo "  [6/7] Calculate distances: Job ${job6}"
-        
-        # Step 7: Visualizations
-        local job7=$(sbatch --parsable --dependency=afterok:${job6} \
-            --export=${export_base} \
             scripts/slurm/06_visualize_distances.slurm)
-        echo "  [7/7] Visualizations: Job ${job7}"
+        echo "  [6/6] Visualizations: Job ${job6}"
         
     else
         # UNCLUSTERED PIPELINE (VicB)
         
-        echo "  [2/7] Skipping clustering (unclustered mode)"
+        echo "  [2/6] Skipping clustering (unclustered mode)"
         
         # Step 3: Split by year
         local job3=$(sbatch --parsable --dependency=afterok:${job1} \
             --export=${export_base},USE_UNCLUSTERED=true \
             scripts/slurm/02b_split_by_year.slurm)
-        echo "  [3/7] Split by year: Job ${job3}"
+        echo "  [3/6] Split by year: Job ${job3}"
         
-        echo "  [4/7] Skipping combined alignment (unclustered mode)"
-        
-        # Step 5: Per-year analysis & vaccine design
-        local job5=$(sbatch --parsable --dependency=afterok:${job3} \
+        # Step 4: Per-year analysis & vaccine design
+        local job4=$(sbatch --parsable --dependency=afterok:${job3} \
             --export=${export_base},USE_UNCLUSTERED=true \
             scripts/slurm/04_per_year_analysis.slurm)
-        echo "  [5/7] Vaccine design: Job ${job5}"
+        echo "  [4/6] Vaccine design: Job ${job4}"
         
-        # Step 6: Calculate distances
-        local job6=$(sbatch --parsable --dependency=afterok:${job5} \
+        # Step 5: Calculate distances
+        local job5=$(sbatch --parsable --dependency=afterok:${job4} \
             --export=${export_base},SOURCE_TYPE=unclustered \
             scripts/slurm/05_calculate_distances.slurm)
-        echo "  [6/7] Calculate distances: Job ${job6}"
+        echo "  [5/6] Calculate distances: Job ${job5}"
         
-        # Step 7: Visualizations
-        local job7=$(sbatch --parsable --dependency=afterok:${job6} \
+        # Step 6: Visualizations
+        local job6=$(sbatch --parsable --dependency=afterok:${job5} \
             --export=${export_base},SOURCE_TYPE=unclustered \
             scripts/slurm/06_visualize_distances.slurm)
-        echo "  [7/7] Visualizations: Job ${job7}"
+        echo "  [6/6] Visualizations: Job ${job6}"
     fi
     
     echo ""
