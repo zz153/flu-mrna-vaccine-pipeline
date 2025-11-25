@@ -204,3 +204,15 @@ Software used:
 
 **Last Updated:** November 23, 2025  
 **Pipeline Version:** v1.0
+
+## Pre-Generated Figures
+
+The repository includes pre-generated publication-ready figures for immediate viewing:
+- `results/per_year_clustered/H1N1/figures/` (H1N1 lineage)
+- `results/per_year_clustered/H3N2/figures/` (H3N2 lineage)  
+- `results/per_year_unclustered/VicB/figures/` (VicB lineage)
+
+**To reproduce:** Simply run the pipeline - all outputs are automatically overwritten with fresh results. No cleanup required.
+```bash
+sbatch scripts/slurm/00_run_full_pipeline.slurm
+```
