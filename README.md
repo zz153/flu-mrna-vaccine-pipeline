@@ -42,10 +42,10 @@ Analysis of H1N1 and H3N2 (2009-2025) reveals:
 ## 🧬 Sequence Data
 
 ### Lineages Analyzed
-- **A/H1N1** - 16 years (2009-2025, excluding 2015)
-- **A/H3N2** - 17 years (2009-2025)
-- **B/Victoria (VicB)** - 14-15 years (2009-2025)
-
+### Lineages Analyzed
+- **A/H1N1** - 16 years (2009-2025, excluding 2015) - *Clustered at 99% identity*
+- **A/H3N2** - 17 years (2009-2025) - *Clustered at 99% identity*
+- **B/Victoria (VicB)** - 17 years (2009-2025) - *Unclustered (low diversity)*
 ### Geographic Coverage
 - Europe
 - USA
@@ -134,14 +134,17 @@ bash scripts/run_full_pipeline.sh check
 
 ### 3. Add Your Data
 
-Place GISAID HA sequences in `data/raw/`:
+Place GISAID HA sequences in `data/raw/[LINEAGE]/`:
 ```
 data/raw/
-├── H1N1_raw.fasta
-├── H3N2_raw.fasta
-└── VicB_raw.fasta
+├── H1N1/
+│   ├── Asia_H1N1_gisaid_epiflu_sequence.fasta
+│   ├── Europe_H1N1_gisaid_epiflu_sequence.fasta
+│   ├── USA_H1N1_HA_gisaid_epiflu_sequence.fasta
+│   └── Oceania_H1N1_HA_gisaid_epiflu_sequence.fasta
+├── H3N2/ (same structure)
+└── VicB/ (same structure)
 ```
-
 ---
 
 ## 🎮 Execution Modes
@@ -171,7 +174,7 @@ bash scripts/run_full_pipeline.sh local
 bash scripts/01_filter_sequences.sh H1N1
 bash scripts/02_cluster_sequences.sh H1N1
 bash scripts/02b_split_by_year.sh H1N1
-bash scripts/03_combined_alignment.sh H1N1
+bash scripts/03_align_sequences.sh H1N1
 bash scripts/04_per_year_analysis.sh H1N1 2009 2025 4
 bash scripts/05_calculate_distances.sh H1N1 2009 2025 clustered
 bash scripts/06_visualize_distances.sh H1N1 clustered
@@ -218,7 +221,7 @@ tail -f logs/pipeline_master_*.out
 sbatch --export=LINEAGE=H1N1 scripts/slurm/01_filter_sequences.slurm
 sbatch --export=LINEAGE=H1N1 scripts/slurm/02_cluster_sequences.slurm
 sbatch --export=LINEAGE=H1N1 scripts/slurm/02b_split_by_year.slurm
-sbatch --export=LINEAGE=H1N1 scripts/slurm/03_combined_alignment.slurm
+sbatch --export=LINEAGE=H1N1 scripts/slurm/03_align_sequences.slurm
 sbatch --export=LINEAGE=H1N1 scripts/slurm/04_per_year_analysis.slurm
 sbatch --export=LINEAGE=H1N1 scripts/slurm/05_calculate_distances.slurm
 sbatch --export=LINEAGE=H1N1 scripts/slurm/06_visualize_distances.slurm
@@ -264,7 +267,7 @@ flu-mrna-vaccine-pipeline/
 │   ├── 01_filter_sequences.sh
 │   ├── 02_cluster_sequences.sh
 │   ├── 02b_split_by_year.sh
-│   ├── 03_combined_alignment.sh
+│   ├── 03_align_sequences.sh
 │   ├── 04_per_year_analysis.sh
 │   ├── 05_calculate_distances.sh
 │   ├── 06_visualize_distances.sh
@@ -274,7 +277,7 @@ flu-mrna-vaccine-pipeline/
 │       ├── 01_filter_sequences.slurm
 │       ├── 02_cluster_sequences.slurm
 │       ├── 02b_split_by_year.slurm
-│       ├── 03_combined_alignment.slurm
+│       ├── 03_align_sequences.slurm
 │       ├── 04_per_year_analysis.slurm
 │       ├── 05_calculate_distances.slurm
 │       └── 06_visualize_distances.slurm

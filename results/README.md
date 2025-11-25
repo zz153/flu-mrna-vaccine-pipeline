@@ -4,7 +4,7 @@ This directory contains two parallel analyses:
 
 ## Clustered Analysis (Primary)
 
-**Location:** `results/clustered/`
+**Location:** `results/per_year_clustered/`
 
 **Data:** Sequences clustered at 99% identity using CD-HIT
 - H1N1: 535 representative sequences
@@ -22,7 +22,7 @@ This directory contains two parallel analyses:
 
 ## Unclustered Analysis (Validation)
 
-**Location:** `results/unclustered/`
+**Location:** `results/per_year_unclustered/`
 
 **Data:** All filtered, high-quality sequences (no clustering)
 - H1N1: 12,835 sequences

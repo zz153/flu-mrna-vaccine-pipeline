@@ -88,7 +88,7 @@ Parallel execution (~2-4 hours)
 bash scripts/01_filter_sequences.sh H1N1
 bash scripts/02_cluster_sequences.sh H1N1
 bash scripts/02b_split_by_year.sh H1N1
-bash scripts/03_combined_alignment.sh H1N1
+bash scripts/03_align_sequences.sh H1N1
 bash scripts/04_per_year_analysis.sh H1N1 2009 2025 4
 bash scripts/05_calculate_distances.sh H1N1 2009 2025 clustered
 bash scripts/06_visualize_distances.sh H1N1 clustered
