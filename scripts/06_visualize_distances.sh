@@ -138,45 +138,45 @@ plt.close()
 print(f"  ✅ Saved: {output_file}")
 
 # ============================================
-# Plot 2: Heatmap of Mean Distances (CLEANER!)
-# ============================================
-print("\n📊 Creating Plot 2: Distance heatmap...")
-
-# Prepare data for heatmap
-heatmap_data = []
-years = sorted(set().union(*[set(df['Year']) for df in summary_data.values()]))
-
-for year in years:
-    row = {'Year': year}
-    for design, df in summary_data.items():
-        year_data = df[df['Year'] == year]
-        if len(year_data) > 0:
-            row[design.capitalize()] = year_data['Mean_ML_Distance'].values[0]
-        else:
-            row[design.capitalize()] = np.nan
-    heatmap_data.append(row)
-
-heatmap_df = pd.DataFrame(heatmap_data).set_index('Year')
-
-# Create cleaner heatmap WITHOUT numbers
-fig, ax = plt.subplots(figsize=(14, 8))
-sns.heatmap(heatmap_df.T, annot=False, cmap='RdYlGn_r',
-            cbar_kws={'label': 'Mean P-Distance'},
-            linewidths=1, linecolor='white', ax=ax,
-            vmin=0, vmax=0.5)  # Fixed scale for consistency
-
-ax.set_title(f'{lineage} Mean P-Distance by Design and Year',
-             fontsize=16, fontweight='bold', pad=20)
-ax.set_xlabel('Year', fontsize=13, fontweight='bold')
-ax.set_ylabel('Design Type', fontsize=13, fontweight='bold')
-ax.tick_params(axis='both', labelsize=11)
-
-plt.tight_layout()
-output_file = output_dir / f"{lineage}_distance_heatmap.png"
-plt.savefig(output_file, dpi=300, bbox_inches='tight')
-plt.close()
-print(f"  ✅ Saved: {output_file}")
-
+# # # Plot 2: Heatmap of Mean Distances (CLEANER!)
+# # # ============================================
+# # print("\n📊 Creating Plot 2: Distance heatmap...")
+# # 
+# # # Prepare data for heatmap
+# # heatmap_data = []
+# # years = sorted(set().union(*[set(df['Year']) for df in summary_data.values()]))
+# # 
+# # for year in years:
+# #     row = {'Year': year}
+# #     for design, df in summary_data.items():
+# #         year_data = df[df['Year'] == year]
+# #         if len(year_data) > 0:
+# #             row[design.capitalize()] = year_data['Mean_ML_Distance'].values[0]
+# #         else:
+# #             row[design.capitalize()] = np.nan
+# #     heatmap_data.append(row)
+# # 
+# # heatmap_df = pd.DataFrame(heatmap_data).set_index('Year')
+# # 
+# # # Create cleaner heatmap WITHOUT numbers
+# # fig, ax = plt.subplots(figsize=(14, 8))
+# # sns.heatmap(heatmap_df.T, annot=False, cmap='RdYlGn_r',
+# #             cbar_kws={'label': 'Mean P-Distance'},
+# #             linewidths=1, linecolor='white', ax=ax,
+# #             vmin=0, vmax=0.5)  # Fixed scale for consistency
+# # 
+# # ax.set_title(f'{lineage} Mean P-Distance by Design and Year',
+# #              fontsize=16, fontweight='bold', pad=20)
+# # ax.set_xlabel('Year', fontsize=13, fontweight='bold')
+# # ax.set_ylabel('Design Type', fontsize=13, fontweight='bold')
+# # ax.tick_params(axis='both', labelsize=11)
+# # 
+# # plt.tight_layout()
+# # output_file = output_dir / f"{lineage}_distance_heatmap.png"
+# # plt.savefig(output_file, dpi=300, bbox_inches='tight')
+# # plt.close()
+# # print(f"  ✅ Saved: {output_file}")
+# # 
 # ============================================
 # Plot 3: Overall Performance Comparison
 # ============================================
