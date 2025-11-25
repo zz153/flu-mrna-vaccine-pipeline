@@ -95,13 +95,13 @@ colors = {
 
 # Plot mean p-distance
 for design, df in summary_data.items():
-    ax1.plot(df['Year'], df['Mean_P_Distance'], 
+    ax1.plot(df['Year'], df['Mean_ML_Distance'], 
              marker='o', linewidth=2.5, markersize=7, 
              label=design.capitalize(), alpha=0.85,
              color=colors.get(design, '#95a5a6'))
     ax1.fill_between(df['Year'], 
-                      df['Mean_P_Distance'] - df['SD_P_Distance'],
-                      df['Mean_P_Distance'] + df['SD_P_Distance'],
+                      df['Mean_ML_Distance'] - df['SD_ML_Distance'],
+                      df['Mean_ML_Distance'] + df['SD_ML_Distance'],
                       alpha=0.15, color=colors.get(design, '#95a5a6'))
 
 ax1.set_xlabel('Year', fontsize=13, fontweight='bold')
@@ -151,7 +151,7 @@ for year in years:
     for design, df in summary_data.items():
         year_data = df[df['Year'] == year]
         if len(year_data) > 0:
-            row[design.capitalize()] = year_data['Mean_P_Distance'].values[0]
+            row[design.capitalize()] = year_data['Mean_ML_Distance'].values[0]
         else:
             row[design.capitalize()] = np.nan
     heatmap_data.append(row)
@@ -186,7 +186,7 @@ fig, axes = plt.subplots(2, 2, figsize=(16, 12))
 
 # Plot A: Mean distance comparison
 ax = axes[0, 0]
-means = {design: df['Mean_P_Distance'].mean() for design, df in summary_data.items()}
+means = {design: df['Mean_ML_Distance'].mean() for design, df in summary_data.items()}
 design_colors = [colors.get(d, '#95a5a6') for d in means.keys()]
 bars = ax.bar(means.keys(), means.values(), color=design_colors, alpha=0.8, edgecolor='black', linewidth=1.5)
 ax.set_ylabel('Overall Mean P-Distance', fontsize=12, fontweight='bold')
@@ -200,7 +200,7 @@ for bar in bars:
 
 # Plot B: Median distance comparison
 ax = axes[0, 1]
-medians = {design: df['Median_P_Distance'].median() for design, df in summary_data.items()}
+medians = {design: df['Median_ML_Distance'].median() for design, df in summary_data.items()}
 bars = ax.bar(medians.keys(), medians.values(), color=design_colors, alpha=0.8, edgecolor='black', linewidth=1.5)
 ax.set_ylabel('Overall Median P-Distance', fontsize=12, fontweight='bold')
 ax.set_title('Median Performance Across All Years', fontsize=13, fontweight='bold')
@@ -223,7 +223,7 @@ ax.grid(True, alpha=0.3, axis='y')
 
 # Plot D: Variability comparison
 ax = axes[1, 1]
-variability = {design: df['SD_P_Distance'].mean() for design, df in summary_data.items()}
+variability = {design: df['SD_ML_Distance'].mean() for design, df in summary_data.items()}
 bars = ax.bar(variability.keys(), variability.values(), color=design_colors, alpha=0.8, edgecolor='black', linewidth=1.5)
 ax.set_ylabel('Average Standard Deviation', fontsize=12, fontweight='bold')
 ax.set_title('Distance Variability Across Years', fontsize=13, fontweight='bold')
@@ -249,11 +249,11 @@ summary_stats = []
 for design, df in summary_data.items():
     stats = {
         'Design': design.capitalize(),
-        'Mean_Distance': df['Mean_P_Distance'].mean(),
-        'Median_Distance': df['Median_P_Distance'].median(),
-        'Min_Distance': df['Mean_P_Distance'].min(),
-        'Max_Distance': df['Mean_P_Distance'].max(),
-        'Avg_SD': df['SD_P_Distance'].mean(),
+        'Mean_Distance': df['Mean_ML_Distance'].mean(),
+        'Median_Distance': df['Median_ML_Distance'].median(),
+        'Min_Distance': df['Mean_ML_Distance'].min(),
+        'Max_Distance': df['Mean_ML_Distance'].max(),
+        'Avg_SD': df['SD_ML_Distance'].mean(),
         'Years_Analyzed': len(df)
     }
     summary_stats.append(stats)
