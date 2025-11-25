@@ -127,7 +127,7 @@ echo "Checking data availability..."
 echo ""
 
 # H1N1 (clustered)
-if [ -f "data/raw/H1N1_raw.fasta" ]; then
+if [ -d "data/raw/H1N1" ] && [ -n "$(ls -A data/raw/H1N1/*.fasta 2>/dev/null)" ]; then
     echo "✓ H1N1 data found"
     submit_lineage_pipeline H1N1 false
 else
@@ -136,7 +136,7 @@ else
 fi
 
 # H3N2 (clustered)
-if [ -f "data/raw/H3N2_raw.fasta" ]; then
+if [ -d "data/raw/H3N2" ] && [ -n "$(ls -A data/raw/H3N2/*.fasta 2>/dev/null)" ]; then
     echo "✓ H3N2 data found"
     submit_lineage_pipeline H3N2 false
 else
@@ -145,7 +145,7 @@ else
 fi
 
 # VicB (unclustered)
-if [ -f "data/raw/VicB_raw.fasta" ]; then
+if [ -d "data/raw/VicB" ] && [ -n "$(ls -A data/raw/VicB/*.fasta 2>/dev/null)" ]; then
     echo "✓ VicB data found"
     submit_lineage_pipeline VicB true
 else
