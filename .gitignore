@@ -1,83 +1,42 @@
-nano .gitignore
-```
-
-**Delete everything and paste this:**
-```
-#############################
-# Data
-#############################
-# - data/raw/         → TRACKED (full raw data for paper-level reproducibility)
-# - data/processed/   → TRACKED (processed data / key intermediates)
-# - data/metadata/    → not used (removed)
-
-data/metadata/
-
-
-#############################
-# Results & logs (generated)
-#############################
-
-# All generated results (alignments, trees, designs, distances, figures, etc.)
-# These can always be regenerated from data + scripts.
+# Generated results - can be reproduced from scripts
 results/*
-
-# But keep a small README to explain the structure of results/
 !results/README.md
 
-# Keep figures (publication-quality visualizations)
-!results/per_year_clustered/
-!results/per_year_clustered/H1N1/
+# Keep only publication-quality figures
 !results/per_year_clustered/H1N1/figures/
 !results/per_year_clustered/H1N1/figures/*.png
-!results/per_year_clustered/H1N1/figures/*.csv
-!results/per_year_clustered/H3N2/
 !results/per_year_clustered/H3N2/figures/
 !results/per_year_clustered/H3N2/figures/*.png
-!results/per_year_clustered/H3N2/figures/*.csv
-!results/per_year_unclustered/
-!results/per_year_unclustered/VicB/
 !results/per_year_unclustered/VicB/figures/
 !results/per_year_unclustered/VicB/figures/*.png
-!results/per_year_unclustered/VicB/figures/*.csv
 
-# Keep a small curated set of paper-level outputs
-!results/per_year_clustered/H1N1/analysis_summary.csv
-!results/per_year_clustered/H3N2/analysis_summary.csv
-!results/per_year_clustered/VicB/analysis_summary.csv
-!results/per_year_clustered/H1N1/distances/distance_summary_medoid.csv
-!results/per_year_clustered/H3N2/distances/distance_summary.csv
+# Processed data - generated from raw data
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/*/.gitkeep
 
-# Pipeline & SLURM logs — users get their own when they run the pipeline
+# Logs
 logs/
-slurm-*.out
-slurm-*.err
+*.out
+*.err
 
-# CD-HIT cluster log files
+# CD-HIT cluster files
 *.clstr
 
+# Backup files
+*.backup
+*~
 
-#############################
-# Environments & caches
-#############################
-
-# Conda env directory (we only track env/environment.yml)
-env/*
-!env/environment.yml
-
-# Local virtualenvs / env files
-.venv/
-.env/
-
-# Python caches (in case you add Python utilities)
+# Python
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 
+# Environment
+.env
+.venv/
 
-#############################
-# OS / editor cruft
-#############################
-
+# OS
 .DS_Store
 Thumbs.db
 *.swp
