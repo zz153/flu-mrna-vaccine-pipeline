@@ -1,4 +1,4 @@
-# FluHub: Influenza Vaccine Design and Evolutionary Analysis Pipeline
+# Influenza Vaccine Design and Distance Analysis Pipeline
 
 A fully reproducible computational pipeline for designing and evaluating influenza vaccine candidates using evolutionary analysis, phylogenetic methods, and distance-based metrics.
 
@@ -116,8 +116,8 @@ Sequences obtained from GISAID (requires authenticated access).
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/zz153/flu-mrna-vaccine-pipeline.git
-cd flu-mrna-vaccine-pipeline
+git clone https://github.com/zz153/flu-vaccine-design-distance-analysis.git
+cd flu-vaccine-design-distance-analysis
 ```
 
 ### 2. Set Up Environment
@@ -246,7 +246,7 @@ sbatch scripts/slurm/00_run_full_pipeline.slurm
 
 ## 📁 Repository Structure
 ```
-flu-mrna-vaccine-pipeline/
+flu-vaccine-design-distance-analysis/
 ├── data/
 │   ├── raw/                    # Raw GISAID sequences (user-provided)
 │   └── processed/              # Cleaned and clustered sequences
