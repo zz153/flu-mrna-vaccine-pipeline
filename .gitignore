@@ -1,16 +1,24 @@
-# Generated results - can be reproduced from scripts
-results/*
-!results/README.md
+# Exclude all results by default
+results/
 
-# Keep only publication-quality figures
+# But INCLUDE the figures directories and their contents
+!results/README.md
+!results/per_year_clustered/
+!results/per_year_clustered/H1N1/
 !results/per_year_clustered/H1N1/figures/
 !results/per_year_clustered/H1N1/figures/*.png
+!results/per_year_clustered/H1N1/figures/*.csv
+!results/per_year_clustered/H3N2/
 !results/per_year_clustered/H3N2/figures/
 !results/per_year_clustered/H3N2/figures/*.png
+!results/per_year_clustered/H3N2/figures/*.csv
+!results/per_year_unclustered/
+!results/per_year_unclustered/VicB/
 !results/per_year_unclustered/VicB/figures/
 !results/per_year_unclustered/VicB/figures/*.png
+!results/per_year_unclustered/VicB/figures/*.csv
 
-# Processed data - generated from raw data
+# Processed data
 data/processed/*
 !data/processed/.gitkeep
 !data/processed/*/.gitkeep
@@ -30,14 +38,9 @@ logs/
 # Python
 __pycache__/
 *.py[cod]
-.ipynb_checkpoints/
-
-# Environment
-.env
-.venv/
+*.so
+.Python
 
 # OS
 .DS_Store
 Thumbs.db
-*.swp
-*.swo
