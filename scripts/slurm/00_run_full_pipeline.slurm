@@ -22,7 +22,6 @@
 set -e
 
 # Navigate to project root (one level up from scripts directory)
-cd ..
 echo "Working directory: $(pwd)"
 echo ""
 
