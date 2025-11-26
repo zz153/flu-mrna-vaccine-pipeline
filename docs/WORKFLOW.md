@@ -18,7 +18,7 @@ conda activate flu-vaccine-pipeline
 sbatch scripts/slurm/00_run_full_pipeline.slurm
 ```
 
-**That's it!** Data is included, no additional downloads required.
+
 
 ---
 
