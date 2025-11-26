@@ -59,7 +59,7 @@ flu-vaccine-design-distance-analysis/
 ├── scripts/
 │   ├── 01_filter_sequences.sh
 │   ├── 02_split_by_year.sh
-│   ├── 03_align_sequences.sh
+│   ├── 03_cluster_sequences.sh
 │   ├── 04_per_year_analysis.sh
 │   ├── 05_calculate_distances.sh
 │   ├── 06_visualize_distances.sh
@@ -123,10 +123,10 @@ Run each step manually for a specific lineage:
 
 #### Step 1: Filter Sequences
 ```bash
-# H1N1 example
+# Option A: Run with bash
 bash scripts/01_filter_sequences.sh H1N1
 
-# Or submit as SLURM job
+# Option B: Submit as SLURM job
 sbatch --export=LINEAGE=H1N1 scripts/slurm/01_filter_sequences.slurm
 ```
 
@@ -136,6 +136,7 @@ sbatch --export=LINEAGE=H1N1 scripts/slurm/01_filter_sequences.slurm
 
 #### Step 2: Split by Year
 ```bash
+# Run with bash
 bash scripts/02_split_by_year.sh H1N1 2009 2025
 ```
 
@@ -145,9 +146,14 @@ bash scripts/02_split_by_year.sh H1N1 2009 2025
 
 #### Step 3: Cluster Sequences (H1N1, H3N2 only)
 ```bash
-# Cluster at 99% identity
+# Option A: Run with bash
+bash scripts/03_cluster_sequences.sh H1N1
+
+# Option B: Submit as SLURM job
 sbatch --export=LINEAGE=H1N1 scripts/slurm/03_cluster_sequences.slurm
 ```
+
+**Clusters at 99% identity using CD-HIT**
 
 **Output:** `data/processed/H1N1/clustered/H1N1_2009_clustered.fasta`
 
@@ -155,7 +161,10 @@ sbatch --export=LINEAGE=H1N1 scripts/slurm/03_cluster_sequences.slurm
 
 #### Step 4: Per-Year Analysis
 ```bash
-# Process all years for H1N1
+# Option A: Run with bash
+bash scripts/04_per_year_analysis.sh H1N1 2009 2025 clustered
+
+# Option B: Submit as SLURM job
 sbatch --export=LINEAGE=H1N1,START_YEAR=2009,END_YEAR=2025,USE_UNCLUSTERED=false \
        scripts/slurm/04_per_year_analysis.slurm
 ```
@@ -172,7 +181,10 @@ sbatch --export=LINEAGE=H1N1,START_YEAR=2009,END_YEAR=2025,USE_UNCLUSTERED=false
 
 #### Step 5: Calculate Distances
 ```bash
-# Calculate ML distances for all designs
+# Option A: Run with bash
+bash scripts/05_calculate_distances.sh H1N1 2009 2025 clustered
+
+# Option B: Submit as SLURM job
 sbatch --export=LINEAGE=H1N1,SOURCE_TYPE=clustered \
        scripts/slurm/05_calculate_distances.slurm
 ```
@@ -187,7 +199,7 @@ sbatch --export=LINEAGE=H1N1,SOURCE_TYPE=clustered \
 
 #### Step 6: Visualize Results
 ```bash
-# Generate publication figures
+# Run with bash
 bash scripts/06_visualize_distances.sh H1N1 clustered
 ```
 
