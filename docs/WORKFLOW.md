@@ -1,238 +1,372 @@
 # Pipeline Workflow Guide
 
-This document provides step-by-step instructions for running the complete flu vaccine design pipeline.
+This document describes the complete flu vaccine design pipeline workflow.
 
 ---
 
-## Prerequisites
-
-1. **Environment Setup:**
+## Quick Start
 ```bash
-   conda env create -f env/environment.yml
-   conda activate flu-vaccine-pipeline
+# Clone repository
+git clone https://github.com/zz153/flu-vaccine-design-distance-analysis.git
+cd flu-vaccine-design-distance-analysis
+
+# Create conda environment
+conda env create -f env/environment.yml
+conda activate flu-vaccine-pipeline
+
+# Run complete pipeline
+sbatch scripts/slurm/00_run_full_pipeline.slurm
 ```
 
-2. **Data Acquisition:**
-   - Follow instructions in [DATA_ACQUISITION.md](DATA_ACQUISITION.md)
-   - Ensure raw FASTA files are in `data/raw/[Lineage]/`
+**That's it!** Data is included, no additional downloads required.
 
 ---
 
 ## Pipeline Overview
 
-The pipeline consists of the following steps:
+The pipeline processes three influenza lineages:
+- **H1N1** (clustered at 99% identity)
+- **H3N2** (clustered at 99% identity)  
+- **VicB** (unclustered - low diversity)
 
-1. **Data Cleaning & Quality Control**
-2. **Sequence Alignment** (MAFFT)
-3. **Phylogenetic Tree Building** (IQ-TREE)
-4. **Vaccine Design** (Consensus, Medoid, ASR, COBRA)
-5. **Distance Analysis** (p-distance and ML distance)
-6. **Diversity Analysis** (Shannon entropy, sequence logos)
-7. **Statistical Analysis & Visualization**
+### Processing Steps
 
----
-
-## Step-by-Step Execution
-
-### Step 1: Clean and Filter Sequences
-
-**Purpose:** Remove low-quality sequences, duplicates, and cluster at 99% identity
-
-**For each lineage (H1N1, H3N2, VicB):**
-```bash
-# Example for H1N1
-LINEAGE="H1N1"
-YEAR_START=2009
-YEAR_END=2025
-
-# Combine regional files (if needed)
-cat data/raw/${LINEAGE}/*.fasta > data/raw/${LINEAGE}/${LINEAGE}_all_regions.fasta
-
-# Filter sequences (≥550 aa, no ambiguous characters, years 2009-2025)
-seqkit seq -m 550 data/raw/${LINEAGE}/${LINEAGE}_all_regions.fasta | \
-  seqkit grep -s -r -p "^[ACDEFGHIKLMNPQRSTVWY]+$" > \
-  data/processed/${LINEAGE}/${LINEAGE}_filtered.fasta
-
-# Remove duplicates
-seqkit rmdup -s data/processed/${LINEAGE}/${LINEAGE}_filtered.fasta > \
-  data/processed/${LINEAGE}/${LINEAGE}_unique.fasta
-
-# Cluster at 99% identity using CD-HIT
-cd-hit -i data/processed/${LINEAGE}/${LINEAGE}_unique.fasta \
-  -o data/processed/${LINEAGE}/${LINEAGE}_cdhit99.fasta \
-  -c 0.99 -n 5 -M 8000 -T 4
-```
-
-**Output:** `data/processed/[Lineage]/[Lineage]_cdhit99.fasta`
+1. **Filter sequences** - Quality control, length filtering
+2. **Split by year** - Organize sequences 2009-2025
+3. **Cluster sequences** - CD-HIT at 99% (H1N1, H3N2 only)
+4. **Per-year analysis** - For each year:
+   - Align sequences (MAFFT)
+   - Build phylogenetic tree (IQ-TREE)
+   - Generate 4 vaccine designs:
+     - Consensus sequence
+     - Medoid (most representative)
+     - Ancestral (phylogenetic reconstruction)
+     - COBRA (2-round clustering)
+5. **Calculate distances** - ML distances (LG+G4 model)
+6. **Visualize results** - Generate publication figures
 
 ---
 
-### Step 2: Multiple Sequence Alignment
-
-**Purpose:** Align sequences using MAFFT
-```bash
-# Run alignment for each lineage
-bash scripts/modules/run_yearly_alignments.sh H1N1 2009 2025
-
-# Or manually:
-mafft --auto --thread 4 \
-  data/processed/${LINEAGE}/${LINEAGE}_cdhit99.fasta > \
-  results/alignments/${LINEAGE}_aligned.fasta
+## Directory Structure
 ```
-
-**Output:** `results/alignments/[Lineage]_aligned.fasta`
+flu-vaccine-design-distance-analysis/
+├── data/
+│   ├── raw/                    # Input sequences (included)
+│   │   ├── H1N1/
+│   │   ├── H3N2/
+│   │   └── VicB/
+│   └── processed/              # Filtered/clustered sequences
+├── scripts/
+│   ├── 01_filter_sequences.sh
+│   ├── 02_split_by_year.sh
+│   ├── 03_align_sequences.sh
+│   ├── 04_per_year_analysis.sh
+│   ├── 05_calculate_distances.sh
+│   ├── 06_visualize_distances.sh
+│   └── slurm/
+│       ├── 00_run_full_pipeline.slurm  # Master script
+│       ├── 01_filter_sequences.slurm
+│       ├── 02_split_by_year.slurm
+│       ├── 03_cluster_sequences.slurm
+│       ├── 04_per_year_analysis.slurm
+│       ├── 05_calculate_distances.slurm
+│       └── 06_visualize_distances.slurm
+└── results/
+    ├── per_year_clustered/
+    │   ├── H1N1/
+    │   │   ├── alignments/
+    │   │   ├── designs/
+    │   │   ├── distances/
+    │   │   ├── trees/
+    │   │   ├── figures/        # Publication-ready outputs
+    │   │   └── logs/
+    │   └── H3N2/
+    └── per_year_unclustered/
+        └── VicB/
+```
 
 ---
 
-### Step 3: Build Phylogenetic Trees
+## Running the Pipeline
 
-**Purpose:** Construct maximum-likelihood trees with IQ-TREE
+### Method 1: Complete Pipeline (Recommended)
+
+Submit the master SLURM script that runs all steps with proper dependencies:
 ```bash
-# Submit SLURM job (on HPC)
-sbatch scripts/modules/run_yearly_asr_generic.slurm H1N1 2009 2025
-
-# Or run locally:
-iqtree2 -s results/alignments/${LINEAGE}_aligned.fasta \
-  -m LG+G4 -bb 1000 -nt AUTO \
-  --prefix results/trees/${LINEAGE}
+sbatch scripts/slurm/00_run_full_pipeline.slurm
 ```
 
-**Output:** 
-- `results/trees/[Lineage].treefile`
-- `results/trees/[Lineage].iqtree` (log file)
+**What happens:**
+1. Master script submits 18 jobs
+2. Jobs run in dependency order:
+   - Filter → Split → Cluster → Per-year → Distances → Visualize
+3. Jobs run in parallel where possible (3 lineages simultaneously)
+4. Total runtime: 2-4 hours on HPC
+
+**Monitor progress:**
+```bash
+# Check job status
+squeue -u $USER
+
+# Watch real-time (updates every 5 seconds)
+watch -n 5 squeue -u $USER
+
+# Check logs
+tail -f logs/master_pipeline_*.out
+```
 
 ---
 
-### Step 4: Create Vaccine Designs
+### Method 2: Individual Steps
 
-**Purpose:** Generate candidate vaccine sequences using multiple strategies
+Run each step manually for a specific lineage:
 
-#### 4a. Consensus Sequence
+#### Step 1: Filter Sequences
 ```bash
-bash scripts/modules/run_yearly_consensus.sh H1N1 2009 2025
+# H1N1 example
+bash scripts/01_filter_sequences.sh H1N1
+
+# Or submit as SLURM job
+sbatch --export=LINEAGE=H1N1 scripts/slurm/01_filter_sequences.slurm
 ```
 
-#### 4b. Medoid Sequence
-```bash
-sbatch scripts/modules/run_yearly_medoid.slurm H1N1 2009 2025
-```
-
-#### 4c. Ancestral Sequence Reconstruction (ASR)
-```bash
-sbatch scripts/modules/run_yearly_asr_generic.slurm H1N1 2009 2025
-```
-
-#### 4d. COBRA Design
-```bash
-sbatch scripts/modules/run_yearly_cobra.slurm H1N1 2009 2025
-```
-
-**Output:** `results/designs/[Lineage]_[Year]_[DesignType].fasta`
+**Output:** `data/processed/H1N1/H1N1_filtered.fasta`
 
 ---
 
-### Step 5: Calculate Evolutionary Distances
-
-**Purpose:** Compute pairwise distances between vaccine designs and circulating strains
+#### Step 2: Split by Year
 ```bash
-sbatch scripts/modules/run_yearly_distances.slurm H1N1 2009 2025
+bash scripts/02_split_by_year.sh H1N1 2009 2025
 ```
 
-**Output:**
-- `results/distances/[Lineage]_[Year]_distance_matrix.csv`
-- `results/distances/[Lineage]_distance_summary.csv`
+**Output:** `data/processed/H1N1/per_year/H1N1_2009.fasta`, etc.
 
 ---
 
-### Step 6: Diversity Analysis
-
-**Purpose:** Analyze sequence variability and conservation patterns
+#### Step 3: Cluster Sequences (H1N1, H3N2 only)
 ```bash
-# Shannon entropy calculation
-python scripts/utils/calculate_entropy.py \
-  --alignment results/alignments/${LINEAGE}_aligned.fasta \
-  --output results/entropy/${LINEAGE}_entropy.csv
-
-# Generate sequence logos
-python scripts/utils/generate_sequence_logo.py \
-  --alignment results/alignments/${LINEAGE}_aligned.fasta \
-  --output results/figures/${LINEAGE}_logo.png
+# Cluster at 99% identity
+sbatch --export=LINEAGE=H1N1 scripts/slurm/03_cluster_sequences.slurm
 ```
 
-**Output:**
-- `results/entropy/[Lineage]_entropy.csv`
-- `results/figures/[Lineage]_logo.png`
+**Output:** `data/processed/H1N1/clustered/H1N1_2009_clustered.fasta`
 
 ---
 
-### Step 7: Statistical Analysis & Visualization
-
-**Purpose:** Generate summary statistics and publication-quality figures
+#### Step 4: Per-Year Analysis
 ```bash
-# Comprehensive distance analysis
-python scripts/analyze_distances.py \
-  --lineage H1N1 \
-  --output results/figures/
-
-# Generate heatmaps
-python scripts/plot_distances.py \
-  --input results/distances/H1N1_distance_summary.csv \
-  --output results/figures/H1N1_heatmap.png
+# Process all years for H1N1
+sbatch --export=LINEAGE=H1N1,START_YEAR=2009,END_YEAR=2025,USE_UNCLUSTERED=false \
+       scripts/slurm/04_per_year_analysis.slurm
 ```
 
-**Output:**
-- `results/figures/[Lineage]_heatmap.png`
-- `results/tables/[Lineage]_summary_statistics.csv`
+**For each year, creates:**
+- Aligned sequences
+- Phylogenetic tree
+- 4 vaccine designs (consensus, medoid, ancestral, COBRA)
+- Tree with designs included
+
+**Output:** `results/per_year_clustered/H1N1/`
 
 ---
 
-## Running the Complete Pipeline
-
-### Option 1: Run All Steps Automatically (Coming Soon)
+#### Step 5: Calculate Distances
 ```bash
-bash scripts/run_full_pipeline.sh --lineage H1N1 --start-year 2009 --end-year 2025
+# Calculate ML distances for all designs
+sbatch --export=LINEAGE=H1N1,SOURCE_TYPE=clustered \
+       scripts/slurm/05_calculate_distances.slurm
 ```
 
-### Option 2: Run Steps Individually
+**For each design and year:**
+- Computes ML distance (LG+G4 model) between design and each circulating strain
+- Generates summary statistics
 
-Follow Steps 1-7 above sequentially for each lineage.
+**Output:** `results/per_year_clustered/H1N1/distances/`
+
+---
+
+#### Step 6: Visualize Results
+```bash
+# Generate publication figures
+bash scripts/06_visualize_distances.sh H1N1 clustered
+```
+
+**Creates:**
+- `H1N1_yearly_comparison.png` - Distance trends over time
+- `H1N1_overall_comparison.png` - Mean distances by design type
+- `H1N1_summary_statistics.csv` - Numerical summary
+
+**Output:** `results/per_year_clustered/H1N1/figures/`
 
 ---
 
 ## Expected Runtime
 
-On NeSI Aoraki HPC (using SLURM):
-- **Data cleaning:** ~5-10 minutes per lineage
-- **Alignment:** ~30-60 minutes per lineage
-- **Tree building:** ~2-4 hours per lineage
-- **Vaccine designs:** ~1-2 hours per lineage
-- **Distance analysis:** ~30 minutes per lineage
-- **Total:** ~6-10 hours per lineage (parallelizable)
+On Aoraki HPC (8 CPUs, 16GB RAM):
+
+| Step | H1N1 | H3N2 | VicB | Notes |
+|------|------|------|------|-------|
+| Filter | 2 min | 2 min | 2 min | Sequential |
+| Split | 1 min | 1 min | 1 min | Sequential |
+| Cluster | 5 min | 5 min | N/A | Parallel |
+| Per-year | 50 min | 67 min | 4-6 hrs | **Longest step** |
+| Distances | 10 min | 12 min | 15 min | Sequential |
+| Visualize | 2 min | 2 min | 2 min | Sequential |
+| **Total** | **~1.2 hrs** | **~1.5 hrs** | **~5-7 hrs** | Parallel |
+
+**Overall pipeline:** 2-4 hours (depends on VicB large datasets)
+
+---
+
+## Pipeline Details
+
+### Vaccine Design Strategies
+
+1. **Consensus Sequence**
+   - Most common amino acid at each position
+   - Simple, interpretable
+   - May not represent any real strain
+
+2. **Medoid Sequence**
+   - Real strain closest to all others
+   - Guaranteed viable sequence
+   - Represents "average" strain
+
+3. **Ancestral Sequence**
+   - Reconstructed using phylogenetic tree (IQ-TREE ASR)
+   - Theoretically optimal for past evolution
+   - May include extinct variants
+
+4. **COBRA (Computationally Optimized Broadly Reactive Antigen)**
+   - 2-round clustering approach
+   - Combines diversity from multiple clusters
+   - Designed for broad coverage
+
+### Distance Metrics
+
+**ML Distance (LG+G4):**
+- Maximum likelihood distance
+- Le-Gascuel amino acid substitution model
+- Gamma distribution for rate variation
+- Accounts for multiple substitutions at same site
+- **More accurate than simple p-distance**
+
+Calculated between each vaccine design and all circulating strains for that year.
+
+### Quality Control
+
+- Minimum sequence length: 550 amino acids
+- Remove sequences with ambiguous characters
+- Remove duplicate sequences
+- Cluster at 99% identity (H1N1, H3N2)
+- Skip years with <3 sequences
+
+---
+
+## Output Files
+
+### Per Lineage (9 files total):
+
+**Publication Figures (3):**
+- `*_yearly_comparison.png` - Time series of distances
+- `*_overall_comparison.png` - Design comparison
+- `*_summary_statistics.csv` - Numerical data
+
+**Intermediate Files (tracked in results/, excluded from Git):**
+- Alignments (MAFFT output)
+- Trees (IQ-TREE output)
+- Designs (FASTA sequences)
+- Distance matrices (CSV files)
 
 ---
 
 ## Troubleshooting
 
-### Common Issues
+### Job Fails with Memory Error
 
-1. **Memory errors during tree building:**
-   - Increase memory allocation in SLURM script
-   - Use `-mem 32G` or higher
+**Solution:** Increase memory in SLURM script
+```bash
+#SBATCH --mem=32G  # Default is 16G
+```
 
-2. **CD-HIT clustering fails:**
-   - Reduce `-M` parameter (memory)
-   - Split input file into smaller chunks
+### Per-Year Analysis Stuck on Large Year
 
-3. **MAFFT alignment too slow:**
-   - Use `--auto` instead of `--maxiterate`
-   - Consider `mafft-linsi` for very large datasets
+**Symptom:** Job runs for >2 hours on single year
+
+**Explanation:** Years with 500+ sequences take much longer
+- 2023-2024 VicB can have 600+ sequences
+- IQ-TREE with 1000 bootstraps is slow
+- Expected behavior, not a bug
+
+**Solution:** Be patient or reduce bootstrap replicates in script
+
+### Visualization Creates Old Heatmap
+
+**Solution:** You have old scripts - pull latest:
+```bash
+git pull origin main
+```
+
+Current version creates 3 plots (no heatmap).
+
+### Distance Files Empty
+
+**Symptom:** CSV files exist but have no data
+
+**Check:** ML distance files from IQ-TREE
+```bash
+ls results/per_year_clustered/H1N1/trees/*_with_designs.mldist
+```
+
+If missing, per-year analysis didn't complete properly.
+
+---
+
+## Advanced Usage
+
+### Run Single Year
+```bash
+# Process only 2023 for H1N1
+bash scripts/04_per_year_analysis.sh H1N1 2023 2023 clustered
+```
+
+### Run Specific Design Strategy
+Edit `scripts/04_per_year_analysis.sh` and comment out unwanted designs.
+
+### Change Clustering Threshold
+Edit `scripts/03_cluster_sequences.sh`:
+```bash
+cd-hit -c 0.99  # Change to 0.95 for 95% identity
+```
+
+### Use Different Substitution Model
+Edit `scripts/04_per_year_analysis.sh`:
+```bash
+iqtree -m LG+G4  # Change to JTT+I+G4 or other
+```
 
 ---
 
 ## Citation
 
 If you use this pipeline, please cite:
-- MAFFT: Katoh & Standley (2013)
-- IQ-TREE: Nguyen et al. (2015)
-- CD-HIT: Fu et al. (2012)
-- GISAID: Shu & McCauley (2017)
+
+**Software:**
+```
+Rana, Z. (2025). Influenza Vaccine Design and Distance Analysis Pipeline.
+GitHub: https://github.com/zz153/flu-vaccine-design-distance-analysis
+```
+
+**Tools:**
+- MAFFT: Katoh & Standley (2013) *Mol Biol Evol* 30(4):772-780
+- IQ-TREE: Nguyen et al. (2015) *Mol Biol Evol* 32(1):268-274
+- CD-HIT: Fu et al. (2012) *Bioinformatics* 28(23):3150-3152
+
+---
+
+## Support
+
+For questions or issues:
+1. Check this WORKFLOW.md
+2. Review [REPRODUCIBILITY.md](REPRODUCIBILITY.md)
+3. Open an issue on GitHub
