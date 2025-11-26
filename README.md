@@ -337,10 +337,7 @@ For each year and lineage:
 ### Year-by-Year Comparison
 Shows mean p-distance and ML distance for all 4 designs across years.
 
-### Distance Heatmap
-Clean visualization of mean p-distances (no cluttered numbers).
-
-### Overall Comparison
+### Overall Comparison of ML distances:
 4-panel figure showing:
 - Average performance across all years
 - Median performance
@@ -430,7 +427,8 @@ See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for detailed step-by-step instructi
 
 If you use this pipeline in your research, please cite:
 ```
-[Your citation information here]
+Rana, Z. (2025). Influenza Vaccine Design and Distance Analysis Pipeline. 
+GitHub repository: https://github.com/zz153/flu-vaccine-design-distance-analysis
 ```
 
 ---
@@ -447,16 +445,17 @@ RNA & Cancer Therapeutics
 
 ## 📄 License
 
-[Specify your license here - e.g., MIT, GPL, etc.]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+This permissive license allows others to freely use, modify, and distribute this software, encouraging open science and reproducibility.
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request with clear description of changes
+This pipeline is actively maintained for research purposes. 
+
+For bug reports or feature suggestions, please open an issue. 
+Pull requests will be reviewed on a case-by-case basis.
 
 ---
 
